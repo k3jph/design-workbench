@@ -1,5 +1,5 @@
-@import "@martlet/theme/css";
-@import "@martlet/theme/foundation.css";
+@import "@martlet/core/css";
+@import "@martlet/core/foundation.css";
 /* Source roles: see docs/languages/martlet/decisions.md. Theme 2.1.0 is unchanged. */
 .martlet {
   --ui-bg: var(--martlet-surface-canvas);

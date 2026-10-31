@@ -41,8 +41,8 @@
     "test:analytics-empty": "node examples/page-archetypes/tests/analytics-empty.mjs"
   },
   "dependencies": {
-    "@krigsvold/react": "0.1.0",
-    "@martlet/react": "0.1.0",
+    "@krigsvold/react": "0.2.0",
+    "@martlet/react": "0.2.0",
     "@modelcontextprotocol/server": "2.3.1",
     "react": "19.3.1",
     "react-dom": "19.3.1",
@@ -51,6 +51,8 @@
   "devDependencies": {
     "@axe-core/playwright": "4.11.1",
     "@cfworker/json-schema": "^4.1.1",
+    "@krigsvold/theme": "2.1.0",
+    "@martlet/theme": "2.1.0",
     "@modelcontextprotocol/client": "2.3.1",
     "@playwright/test": "1.64.1",
     "@types/node": "^24.0.0",

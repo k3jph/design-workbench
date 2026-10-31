@@ -5,7 +5,7 @@ Experimental 0.1.0. MIT licensed. Source package in the [design workbench](https
 ```tsx
 import { Button, Field, TextInput } from '@krigsvold/react';
 import '@krigsvold/react/styles.css';
-import '@krigsvold/theme/fonts.css'; // optional local fonts
+import '@krigsvold/core/fonts.css'; // optional local fonts
 
 <div className="krigsvold" data-krigsvold="light">
   <Field label="Component name" hint="Use the exported API name.">
