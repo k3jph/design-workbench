@@ -3,16 +3,16 @@
   "families": {
     "martlet": {
       "coreVersion": "2.2.2",
-      "coreCommit": "f4c18540e643388c71da2308607cc8f944b32391",
-      "coreSha256": "e9964e785a86ac9ca8788ba8740d14f232a5a37d214b1f2e493502e874fdcc00",
+      "coreCommit": "4bc45ff0bd1ee2e93ee61917b023f7b45686895f",
+      "coreSha256": "e1fde61cdc818dbdc5b91eb77041111f5651316a63fc9dd3ab5d4dac9536011c",
       "reactSourceCommit": "af9b22320cca37b8d39951a071b2a2813655a926",
       "legacyThemeVersion": "2.1.0",
       "reactSourceTree": "c00a849f7f7fbbb398700e2dcc9ccdf4fda328df"
     },
     "krigsvold": {
       "coreVersion": "2.2.3",
-      "coreCommit": "4e6b49131ebc9035796906e7c075e4cf50256e29",
-      "coreSha256": "1360f49768abd105668d3fe96585b8f4740f02e161037526e4e17d16b36bba6b",
+      "coreCommit": "2675078f5fb292920f927b088b87d267dab99701",
+      "coreSha256": "c74177f9b344b7e517b138b5d0afa9ec0b6b78c1bfdf66f6ffe0570c60b26c66",
       "reactSourceCommit": "8e639da4b4ad2ef6f5fe5ea87c9a2809b656cc6f",
       "legacyThemeVersion": "2.1.0",
       "reactSourceTree": "32c161b09341ae34587dbebb6f9f6a488152fde4"
