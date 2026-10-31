@@ -18,7 +18,7 @@ try{for(const family of ['martlet','krigsvold']){
  try{
   await writeFile(join(temp,'package.json'),JSON.stringify({name:`consumer-${family}`,private:true,type:'module'}));
   const version=lane==='theme'?'2.1.0':family==='martlet'?'2.2.3':'2.2.4',reactVersion=lane==='theme'?'0.1.0':'0.2.0';
-  execFileSync('npm',['install','--offline','--ignore-scripts','--no-audit','--no-fund','--package-lock=false','react@19.3.1','react-dom@19.3.1',resolve(dir,`${family}-${lane}-${version}.tgz`),resolve(reactDir,`${family}-react-${reactVersion}.tgz`)],{cwd:temp,stdio:'pipe'});
+  execFileSync('npm',['install','--ignore-scripts','--no-audit','--no-fund','--package-lock=false','react@19.3.1','react-dom@19.3.1',resolve(dir,`${family}-${lane}-${version}.tgz`),resolve(reactDir,`${family}-react-${reactVersion}.tgz`)],{cwd:temp,stdio:'pipe'});
   const other=lane==='theme'?'core':'theme';assert.equal(existsSync(join(temp,'node_modules',`@${family}`,other)),false,`${family}: ${lane} lane unexpectedly installed ${other}`);
   await writeFile(join(temp,'index.html'),'<html lang="en"><head><meta charset="utf-8"><title>Core consumer</title></head><body><div id="root"></div><script type="module" src="/main.jsx"></script></body></html>');
   await writeFile(join(temp,'main.jsx'),`import React,{useState} from 'react';import {createRoot} from 'react-dom/client';import {Button} from '@${family}/react';import '@${family}/react/styles.css';import '@${family}/${lane}/fonts.css';function App(){const[n,setN]=useState(0);return <main className="${family}" data-${family}="light"><h1>Core consumer</h1><Button onClick={()=>setN(n+1)}>Count {n}</Button></main>}createRoot(document.getElementById('root')).render(<App/>);`);
