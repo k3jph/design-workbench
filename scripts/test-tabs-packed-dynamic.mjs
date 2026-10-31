@@ -19,7 +19,7 @@ try { for(const family of families) {
  try {
   await writeFile(resolve(temp,'package.json'),JSON.stringify({name:'packed-tabs-consumer',private:true,type:'module'}));
   const supplied=process.env.NIGHTJAR_REACT_ARCHIVE_DIR;
-  const archive=supplied?resolve(supplied,`${family}-react-0.1.0.tgz`):resolve(temp,JSON.parse(execFileSync('npm',['pack','--json','--workspace',`@${family}/react`,'--pack-destination',temp],{cwd:root,encoding:'utf8'}))[0].filename);
+  const archive=supplied?resolve(supplied,`${family}-react-${process.env.NIGHTJAR_REACT_ARCHIVE_VERSION || "0.2.0"}.tgz`):resolve(temp,JSON.parse(execFileSync('npm',['pack','--json','--workspace',`@${family}/react`,'--pack-destination',temp],{cwd:root,encoding:'utf8'}))[0].filename);
   const coreVersion=family==='martlet'?'2.2.2':'2.2.3';
   const core=resolve(root,`fixtures/core-candidates/${family}-core-${coreVersion}.tgz`);
   const expected=family==='martlet'?'e1fde61cdc818dbdc5b91eb77041111f5651316a63fc9dd3ab5d4dac9536011c':'c74177f9b344b7e517b138b5d0afa9ec0b6b78c1bfdf66f6ffe0570c60b26c66';
