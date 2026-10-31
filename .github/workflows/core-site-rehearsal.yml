@@ -38,6 +38,8 @@ jobs:
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
         with:
           node-version: '24.19.0'
+      - name: Install the site test prerequisite
+        run: sudo apt-get update && sudo apt-get install -y zsh
       - name: Reconstruct and verify reviewed site tree
         env:
           FAMILY: ${{ matrix.site.family }}
