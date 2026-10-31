@@ -26,7 +26,7 @@
     "react": "^19.0.0"
   },
   "dependencies": {
-    "@martlet/core": "2.2.2"
+    "@martlet/core": "2.2.3"
   },
   "scripts": {
     "build": "node ../../scripts/clean-package.mjs martlet && tsc -p tsconfig.json && node ../../scripts/copy-styles.mjs martlet"

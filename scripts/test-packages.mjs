@@ -6,8 +6,8 @@ import { execFileSync } from "node:child_process";
 const directory = mkdtempSync(join(tmpdir(), "design-packages-"));
 try {
   const inputs = [
-    ["martlet", "2.2.2", "e1fde61cdc818dbdc5b91eb77041111f5651316a63fc9dd3ab5d4dac9536011c"],
-    ["krigsvold", "2.2.3", "c74177f9b344b7e517b138b5d0afa9ec0b6b78c1bfdf66f6ffe0570c60b26c66"],
+    ["martlet", "2.2.3", "e8a209a29db580d88a2d1c5e0a3a6158d5200c0dcbfeac6e063ce93d88cacbc5"],
+    ["krigsvold", "2.2.4", "057539e5ff9afa518cc249ca8bf7966d13781028f77c279616dfa9293e9a29e1"],
   ].map(([family, version, expected]) => {
     const file = resolve(`fixtures/core-candidates/${family}-core-${version}.tgz`);
     if (createHash("sha256").update(readFileSync(file)).digest("hex") !== expected) throw new Error(`Unexpected ${family} core bytes`);

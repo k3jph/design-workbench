@@ -20,9 +20,9 @@ try { for(const family of families) {
   await writeFile(resolve(temp,'package.json'),JSON.stringify({name:'packed-tabs-consumer',private:true,type:'module'}));
   const supplied=process.env.NIGHTJAR_REACT_ARCHIVE_DIR;
   const archive=supplied?resolve(supplied,`${family}-react-${process.env.NIGHTJAR_REACT_ARCHIVE_VERSION || "0.2.0"}.tgz`):resolve(temp,JSON.parse(execFileSync('npm',['pack','--json','--workspace',`@${family}/react`,'--pack-destination',temp],{cwd:root,encoding:'utf8'}))[0].filename);
-  const coreVersion=family==='martlet'?'2.2.2':'2.2.3';
+  const coreVersion=family==='martlet'?'2.2.3':'2.2.4';
   const core=resolve(root,`fixtures/core-candidates/${family}-core-${coreVersion}.tgz`);
-  const expected=family==='martlet'?'e1fde61cdc818dbdc5b91eb77041111f5651316a63fc9dd3ab5d4dac9536011c':'c74177f9b344b7e517b138b5d0afa9ec0b6b78c1bfdf66f6ffe0570c60b26c66';
+  const expected=family==='martlet'?'e8a209a29db580d88a2d1c5e0a3a6158d5200c0dcbfeac6e063ce93d88cacbc5':'057539e5ff9afa518cc249ca8bf7966d13781028f77c279616dfa9293e9a29e1';
   assert.equal(createHash('sha256').update(await readFile(core)).digest('hex'),expected,'exact corrected core archive');
   execFileSync('npm',['install','--ignore-scripts','--no-audit','--no-fund','--package-lock=false','react@19.3.1','react-dom@19.3.1',core,archive],{cwd:temp,stdio:'pipe'});
   await writeFile(resolve(temp,'index.html'),'<html lang="en"><head><meta charset="utf-8"><title>Dynamic tabs</title></head><body><div id="root"></div><script type="module" src="/main.jsx"></script></body></html>');

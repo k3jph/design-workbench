@@ -26,7 +26,7 @@
     "react": "^19.0.0"
   },
   "dependencies": {
-    "@krigsvold/core": "2.2.3"
+    "@krigsvold/core": "2.2.4"
   },
   "scripts": {
     "build": "node ../../scripts/clean-package.mjs krigsvold && tsc -p tsconfig.json && node ../../scripts/copy-styles.mjs krigsvold"

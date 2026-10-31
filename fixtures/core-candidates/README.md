@@ -4,7 +4,7 @@ The tarballs in this directory are the selected contrast-corrected **private** c
 
 | Package | Source commit | Version | SHA-256 |
 | --- | --- | --- | --- |
-| @martlet/core | 4bc45ff0bd1ee2e93ee61917b023f7b45686895f | 2.2.2 | e1fde61cdc818dbdc5b91eb77041111f5651316a63fc9dd3ab5d4dac9536011c |
-| @krigsvold/core | 2675078f5fb292920f927b088b87d267dab99701 | 2.2.3 | c74177f9b344b7e517b138b5d0afa9ec0b6b78c1bfdf66f6ffe0570c60b26c66 |
+| @martlet/core | 7200e334acc98d7fb14b61bef767d0e511e38df2 | 2.2.3 | e8a209a29db580d88a2d1c5e0a3a6158d5200c0dcbfeac6e063ce93d88cacbc5 |
+| @krigsvold/core | 24d5a7eb9a25f4464f29c4d30e3c675e10ad4888 | 2.2.4 | 057539e5ff9afa518cc249ca8bf7966d13781028f77c279616dfa9293e9a29e1 |
 
 React 0.2.0 is a private proposed release, not a published version. Before any separately authorized release, select final core versions and registry artifacts, replace the local lock resolutions with registry-backed integrity, and repeat the package and consumer matrix. Removing private guards changes package bytes and requires new verification. Never publish these fixture tarballs.
