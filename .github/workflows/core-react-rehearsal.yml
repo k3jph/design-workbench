@@ -75,3 +75,45 @@ jobs:
           npm run test:tabs-consumer
           node scripts/nightjar3/test-packed-shell-table.mjs
           node scripts/nightjar3/test-core-react-bases.mjs
+  permanent-consumers:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chromium, firefox, webkit]
+    env:
+      WORKBENCH_BROWSER: ${{ matrix.browser }}
+      NIGHTJAR_REACT_ARCHIVE_VERSION: '0.2.0'
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          repository: k3jph/design-workbench
+          ref: f846ea02fb8d241bd1c21a739834d7d91b494d13
+          path: .react-source
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '24.19.0'
+      - run: npm ci --ignore-scripts
+      - name: Build and pack the permanent React migration
+        run: |
+          mkdir -p "$RUNNER_TEMP/permanent-react"
+          (cd .react-source && npm ci --ignore-scripts && npm run build --workspaces && node --test tests/core-migration-inputs.test.mjs && npm pack --workspace @martlet/react --workspace @krigsvold/react --ignore-scripts --pack-destination "$RUNNER_TEMP/permanent-react")
+          cp .react-source/fixtures/core-candidates/*.tgz "$RUNNER_TEMP/permanent-react/"
+      - run: npx playwright install --with-deps "${{ matrix.browser }}"
+      - name: Test the permanent packed consumers
+        env:
+          NIGHTJAR_REACT_ARCHIVE_DIR: ${{ runner.temp }}/permanent-react
+          NIGHTJAR_CORE_ARCHIVE_DIR: ${{ runner.temp }}/permanent-react
+        run: |
+          npm run test:dialog-consumer
+          npm run test:pagination-consumer
+          npm run test:error-summary-consumer
+          npm run test:fields-consumer
+          npm run test:tabs-consumer
+          node scripts/nightjar3/test-packed-shell-table.mjs
+          node scripts/nightjar3/test-core-react-bases.mjs
