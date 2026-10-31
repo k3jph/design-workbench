@@ -7,11 +7,12 @@ import {createServer} from 'node:http';
 import {tmpdir} from 'node:os';
 import {extname,join,resolve,sep} from 'node:path';
 import {build} from 'vite';
-import {chromium} from 'playwright';
+import {chromium,firefox,webkit} from 'playwright';
 const dir=process.env.NIGHTJAR_CORE_ARCHIVE_DIR,reactDir=process.env.NIGHTJAR_REACT_ARCHIVE_DIR;
 assert.ok(dir&&reactDir,'Supply local core and React archive directories');
 const lane=process.env.NIGHTJAR_REACT_LANE||'core';assert.ok(['theme','core'].includes(lane));
-const browser=await chromium.launch(process.env.PLAYWRIGHT_EXECUTABLE_PATH?{executablePath:process.env.PLAYWRIGHT_EXECUTABLE_PATH}:{headless:true});
+const engine=process.env.WORKBENCH_BROWSER||'chromium';assert.ok(['chromium','firefox','webkit'].includes(engine));
+const browser=await ({chromium,firefox,webkit})[engine].launch(engine==='chromium'&&process.env.PLAYWRIGHT_EXECUTABLE_PATH?{executablePath:process.env.PLAYWRIGHT_EXECUTABLE_PATH}:{headless:true});
 try{for(const family of ['martlet','krigsvold']){
  const temp=await mkdtemp(join(tmpdir(),`nightjar-react-${family}-`));
  try{
