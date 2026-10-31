@@ -8,5 +8,10 @@ export function installPackedConsumer(directory,family){
  if(!source)return;
  if(!['martlet','krigsvold'].includes(family))throw Error('Unknown family');
  writeFileSync(resolve(directory,'package.json'),JSON.stringify({name:'nightjar-packed-consumer',private:true,type:'module'}));
- execFileSync('npm',['install','--ignore-scripts','--no-audit','--no-fund','--package-lock=false','react@19.3.1','react-dom@19.3.1',resolve(source,`${family}-react-0.1.0.tgz`)],{cwd:directory,stdio:'pipe'});
+ const coreDir=process.env.NIGHTJAR_CORE_ARCHIVE_DIR;
+ const version=family==='martlet'?'2.2.2':'2.2.3';
+ const core=coreDir?[resolve(coreDir,`${family}-core-${version}.tgz`)]:[];
+ const reactVersion=process.env.NIGHTJAR_REACT_ARCHIVE_VERSION||'0.1.0';
+ if(!/^\d+\.\d+\.\d+$/.test(reactVersion))throw Error('Invalid React archive version');
+ execFileSync('npm',['install','--ignore-scripts','--no-audit','--no-fund','--package-lock=false','react@19.3.1','react-dom@19.3.1',...core,resolve(source,`${family}-react-${reactVersion}.tgz`)],{cwd:directory,stdio:'pipe'});
 }

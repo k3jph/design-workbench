@@ -1,0 +1,119 @@
+name: Verify unpublished React core consumers
+on:
+  pull_request:
+    paths:
+      - 'scripts/nightjar3/**'
+      - 'scripts/test-*-consumer.mjs'
+      - 'scripts/test-tabs-packed-dynamic.mjs'
+      - 'fixtures/core-migration/**'
+      - 'fixtures/nightjar3/react-locks/**'
+      - '.github/workflows/core-react-rehearsal.yml'
+permissions:
+  contents: read
+jobs:
+  core-consumers:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chromium, firefox, webkit]
+    env:
+      WORKBENCH_BROWSER: ${{ matrix.browser }}
+      NIGHTJAR_REACT_ARCHIVE_VERSION: '0.2.0'
+      NIGHTJAR_RECONSTRUCTED_REACT_TREE: '1'
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          repository: martletdesign/core
+          ref: 4bc45ff0bd1ee2e93ee61917b023f7b45686895f
+          path: .core-martlet
+          persist-credentials: false
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          repository: krigsvolddesign/core
+          ref: 2675078f5fb292920f927b088b87d267dab99701
+          path: .core-krigsvold
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '24.19.0'
+      # Match the npm version used to create the verified core archives.
+      - run: npm install --global npm@11.9.0
+      - run: npm ci --ignore-scripts
+      - name: Build exact core tarballs and reconstruct React source trees
+        run: |
+          # The verified original archives record owner-only file modes.
+          umask 077
+          chmod -R go-rwx .core-martlet .core-krigsvold
+          mkdir -p "$RUNNER_TEMP/core-inputs"
+          for family in martlet krigsvold; do
+            (cd ".core-$family" && npm ci --ignore-scripts && npm run build && npm pack --ignore-scripts --pack-destination "$RUNNER_TEMP/core-inputs")
+          done
+          node --test scripts/nightjar3/react-extraction.test.mjs
+          node scripts/nightjar3/react-extraction.mjs --out "$RUNNER_TEMP/react-source"
+          for family in martlet krigsvold; do
+            git -C "$RUNNER_TEMP/react-source/$family" init -q
+            git -C "$RUNNER_TEMP/react-source/$family" add -A
+            git -C "$RUNNER_TEMP/react-source/$family" -c user.name='Local rehearsal' -c user.email='rehearsal@example.invalid' commit -qm 'Local reconstructed tree'
+          done
+          node scripts/nightjar3/core-react-rehearsal.mjs "$RUNNER_TEMP/react-source/martlet" "$RUNNER_TEMP/react-source/krigsvold" "$RUNNER_TEMP/core-inputs/martlet-core-2.2.2.tgz" "$RUNNER_TEMP/core-inputs/krigsvold-core-2.2.3.tgz" "$RUNNER_TEMP/react-archives"
+      - run: npx playwright install --with-deps "${{ matrix.browser }}"
+      - name: Test the packed core consumer
+        env:
+          NIGHTJAR_REACT_ARCHIVE_DIR: ${{ runner.temp }}/react-archives
+          NIGHTJAR_CORE_ARCHIVE_DIR: ${{ runner.temp }}/react-archives
+        run: |
+          npm run test:dialog-consumer
+          npm run test:pagination-consumer
+          npm run test:error-summary-consumer
+          npm run test:fields-consumer
+          npm run test:tabs-consumer
+          node scripts/nightjar3/test-packed-shell-table.mjs
+          node scripts/nightjar3/test-core-react-bases.mjs
+  permanent-consumers:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chromium, firefox, webkit]
+    env:
+      WORKBENCH_BROWSER: ${{ matrix.browser }}
+      NIGHTJAR_REACT_ARCHIVE_VERSION: '0.2.0'
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          repository: k3jph/design-workbench
+          ref: b66e18bb87d6894e1eeca590c54492b78b462bfc
+          path: .react-source
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '24.19.0'
+      - run: npm ci --ignore-scripts
+      - name: Build and pack the permanent React migration
+        run: |
+          mkdir -p "$RUNNER_TEMP/permanent-react"
+          (cd .react-source && npm ci --ignore-scripts && npm run build --workspaces && node --test tests/core-migration-inputs.test.mjs && npm pack --workspace @martlet/react --workspace @krigsvold/react --ignore-scripts --pack-destination "$RUNNER_TEMP/permanent-react")
+          cp .react-source/fixtures/core-candidates/*.tgz "$RUNNER_TEMP/permanent-react/"
+      - run: npx playwright install --with-deps "${{ matrix.browser }}"
+      - name: Test the permanent packed consumers
+        env:
+          NIGHTJAR_REACT_ARCHIVE_DIR: ${{ runner.temp }}/permanent-react
+          NIGHTJAR_CORE_ARCHIVE_DIR: ${{ runner.temp }}/permanent-react
+        run: |
+          npm run test:dialog-consumer
+          npm run test:pagination-consumer
+          npm run test:error-summary-consumer
+          npm run test:fields-consumer
+          npm run test:tabs-consumer
+          node scripts/nightjar3/test-packed-shell-table.mjs
+          node scripts/nightjar3/test-core-react-bases.mjs
