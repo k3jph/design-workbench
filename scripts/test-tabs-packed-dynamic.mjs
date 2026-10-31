@@ -2,6 +2,7 @@
 import assert from 'node:assert/strict';
 import {mkdtemp,readFile,rm,writeFile} from 'node:fs/promises';
 import {execFileSync} from 'node:child_process';
+import {createHash} from 'node:crypto';
 import {createServer} from 'node:http';
 import {extname,resolve} from 'node:path';
 import {build} from 'vite';
@@ -19,7 +20,11 @@ try { for(const family of families) {
   await writeFile(resolve(temp,'package.json'),JSON.stringify({name:'packed-tabs-consumer',private:true,type:'module'}));
   const supplied=process.env.NIGHTJAR_REACT_ARCHIVE_DIR;
   const archive=supplied?resolve(supplied,`${family}-react-0.1.0.tgz`):resolve(temp,JSON.parse(execFileSync('npm',['pack','--json','--workspace',`@${family}/react`,'--pack-destination',temp],{cwd:root,encoding:'utf8'}))[0].filename);
-  execFileSync('npm',['install','--ignore-scripts','--no-audit','--no-fund','--package-lock=false','react@19.3.1','react-dom@19.3.1',archive],{cwd:temp,stdio:'pipe'});
+  const coreVersion=family==='martlet'?'2.2.2':'2.2.3';
+  const core=resolve(root,`fixtures/core-candidates/${family}-core-${coreVersion}.tgz`);
+  const expected=family==='martlet'?'e1fde61cdc818dbdc5b91eb77041111f5651316a63fc9dd3ab5d4dac9536011c':'c74177f9b344b7e517b138b5d0afa9ec0b6b78c1bfdf66f6ffe0570c60b26c66';
+  assert.equal(createHash('sha256').update(await readFile(core)).digest('hex'),expected,'exact corrected core archive');
+  execFileSync('npm',['install','--ignore-scripts','--no-audit','--no-fund','--package-lock=false','react@19.3.1','react-dom@19.3.1',core,archive],{cwd:temp,stdio:'pipe'});
   await writeFile(resolve(temp,'index.html'),'<html lang="en"><head><meta charset="utf-8"><title>Dynamic tabs</title></head><body><div id="root"></div><script type="module" src="/main.jsx"></script></body></html>');
   await writeFile(resolve(temp,'main.jsx'),`import React,{useState} from 'react';import{createRoot}from'react-dom/client';import{Tabs}from'@${family}/react';function App(){const[mode,setMode]=useState('normal');window.setMode=setMode;return <main><button id="outside">Outside</button><Tabs label="Views" value="alpha" onValueChange={()=>{}} items={[{id:'alpha',label:'Alpha',content:'Alpha content',disabled:mode==='disable-alpha'},...(mode==='remove'?[]:[{id:'beta',label:'Beta',content:'Beta content',disabled:mode==='disable'}]),{id:'gamma',label:'Gamma',content:'Gamma content'}]}/></main>}createRoot(document.getElementById('root')).render(<React.StrictMode><App/></React.StrictMode>);`);
   await build({root:temp,configFile:false,logLevel:'warn',build:{outDir:'dist',emptyOutDir:true}});
