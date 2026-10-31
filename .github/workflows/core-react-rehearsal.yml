@@ -41,7 +41,7 @@ jobs:
           persist-credentials: false
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
         with:
-          node-version: '24'
+          node-version: '24.19.0'
       # Match the npm version used to create the verified core archives.
       - run: npm install --global npm@11.9.0
       - run: npm ci --ignore-scripts
