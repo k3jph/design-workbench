@@ -47,6 +47,9 @@ jobs:
       - run: npm ci --ignore-scripts
       - name: Build exact core tarballs and reconstruct React source trees
         run: |
+          # The verified original archives record owner-only file modes.
+          umask 077
+          chmod -R go-rwx .core-martlet .core-krigsvold
           mkdir -p "$RUNNER_TEMP/core-inputs"
           for family in martlet krigsvold; do
             (cd ".core-$family" && npm ci --ignore-scripts && npm run build && npm pack --ignore-scripts --pack-destination "$RUNNER_TEMP/core-inputs")
