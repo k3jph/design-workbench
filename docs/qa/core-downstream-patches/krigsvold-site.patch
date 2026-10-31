@@ -1,0 +1,105 @@
+diff --git a/CORE-MIGRATION-REHEARSAL.md b/CORE-MIGRATION-REHEARSAL.md
+new file mode 100644
+index 0000000..87bca15
+--- /dev/null
++++ b/CORE-MIGRATION-REHEARSAL.md
+@@ -0,0 +1,9 @@
++# Local-only source site core rehearsal
++
++This is an incomplete, nondeployable review candidate. It changes runtime imports and package manifests to the unpublished `@krigsvold/core` and private Astro 2.0.0 tarballs while preserving historical public `/theme` installation guidance. The existing lockfile still describes the released packages and must be replaced after approved `/core` and Astro publication; no machine-specific tarball lock is suitable for commit. Existing public distribution and generated agent records remain historical and require a separate carefully reviewed update after release.
++
++The source-site GitHub Actions workflow is verification-only, but external Cloudflare preview triggers cannot be enumerated from this environment. Do not push this branch, create a site PR, merge, or deploy until the preview triggers are verified not to deploy. Deployment requires separate authorization. Local builds use explicit tarballs and do not prove deployment readiness.
++
++The immutable source-shell snapshot retains its historical `@krigsvold/theme/legacy.css` import. The local candidate maps only that specific CSS path to the byte-equivalent core legacy stylesheet in its build and shell generator. This is not an npm alias and does not satisfy an Astro peer; the old snapshot/provenance is unchanged.
++
++At this local candidate, the full site unit tests and token generation passed and a direct Astro root build succeeded with locally installed tarballs; the full `npm run build` failed at its pinned React-reference fetch with DNS `EAI_AGAIN`; no checksum assertion was bypassed. An Astro `/preview` build completed but local-link verification failed because existing site links are root-relative. Do not treat this as subpath-ready. The npm lockfile is intentionally not updated with an unpublishable local path. Public download, generated agent and historic provenance references require coordinated review before any release.
+diff --git a/package.json b/package.json
+index 8ad5643..d9075fd 100644
+--- a/package.json
++++ b/package.json
+@@ -28,2 +28,2 @@
+-    "@krigsvold/astro": "1.2.2",
+-    "@krigsvold/theme": "2.2.3"
++    "@krigsvold/astro": "2.0.0",
++    "@krigsvold/core": "2.2.3"
+diff --git a/scripts/check-consent.mjs b/scripts/check-consent.mjs
+index dae9588..d36d669 100644
+--- a/scripts/check-consent.mjs
++++ b/scripts/check-consent.mjs
+@@ -3 +3 @@ import { chromium } from 'playwright';
+-import { version as coreVersion, foundation, design, capabilities } from '@krigsvold/theme';
++import { version as coreVersion, foundation, design, capabilities } from '@krigsvold/core';
+diff --git a/scripts/distributions.mjs b/scripts/distributions.mjs
+index 5eca171..a4a8221 100644
+--- a/scripts/distributions.mjs
++++ b/scripts/distributions.mjs
+@@ -56 +56 @@ const require=createRequire(import.meta.url);
+-const coreRoot=dirname(require.resolve('@krigsvold/theme/package.json'));
++const coreRoot=dirname(require.resolve('@krigsvold/core/package.json'));
+diff --git a/scripts/generate-shell.mjs b/scripts/generate-shell.mjs
+index 002dd08..b1df165 100644
+--- a/scripts/generate-shell.mjs
++++ b/scripts/generate-shell.mjs
+@@ -11 +11 @@ async function flatten(path) {
+-  out+=css.slice(at,match.index)+await flatten(match[1].startsWith('.')?resolve(dirname(path),match[1]):require.resolve(match[1]));at=match.index+match[0].length;
++  out+=css.slice(at,match.index)+await flatten(match[1].startsWith('.')?resolve(dirname(path),match[1]):require.resolve(match[1] === '@krigsvold/theme/legacy.css' ? '@krigsvold/core/legacy.css' : match[1]));at=match.index+match[0].length;
+diff --git a/site/astro.config.mjs b/site/astro.config.mjs
+index 65ecc35..dceec94 100644
+--- a/site/astro.config.mjs
++++ b/site/astro.config.mjs
+@@ -2 +2 @@ import {defineConfig} from 'astro/config';
+-export default defineConfig({site:'https://krigsvolddesign.dev',output:'static',outDir:'../dist'});
++export default defineConfig({site:'https://krigsvolddesign.dev',output:'static',outDir:'../dist',vite:{resolve:{alias:[{find:'@krigsvold/theme/legacy.css',replacement:'@krigsvold/core/legacy.css'}]}}});
+diff --git a/site/src/components/AppDownloads.astro b/site/src/components/AppDownloads.astro
+index 03e70c7..a0c2b1d 100644
+--- a/site/src/components/AppDownloads.astro
++++ b/site/src/components/AppDownloads.astro
+@@ -2 +2 @@
+-import {version as coreVersion} from '@krigsvold/theme';
++import {version as coreVersion} from '@krigsvold/core';
+@@ -16 +16 @@ console.log(dark.tokens.accent);`}</code></pre><p>Set <code>data-{family}="light
+-  <article aria-labelledby="astro-title"><h4 id="astro-title">Build with Astro.</h4><p>Layouts, containers, headings, cards, and buttons using the same core definitions. Start with the neutral starter or add components to your existing site.</p><p><code>@krigsvold/astro</code> · v{astroVersion}</p><p class="port-links"><a href="https://www.npmjs.com/package/@krigsvold/astro">Astro on npm ↗</a><a href="/design-system/#astro">Setup and starter guide ↗</a><a href="/design-system/">Design system specification ↗</a></p><details><summary>Use the Astro package</summary><pre><code>npm install @krigsvold/theme @krigsvold/astro</code></pre><pre><code>{`---
++  <article aria-labelledby="astro-title"><h4 id="astro-title">Build with Astro.</h4><p>Layouts, containers, headings, cards, and buttons using the same core definitions. Start with the neutral starter or add components to your existing site.</p><p><code>@krigsvold/astro</code> · local unpublished candidate</p><p class="port-links"><a href="https://www.npmjs.com/package/@krigsvold/astro">Astro on npm ↗</a><a href="/design-system/#astro">Setup and starter guide ↗</a><a href="/design-system/">Design system specification ↗</a></p><details><summary>Use the Astro package</summary><pre><code>npm install @krigsvold/theme @krigsvold/astro</code></pre><pre><code>{`---
+diff --git a/site/src/components/FoundationSpecimen.astro b/site/src/components/FoundationSpecimen.astro
+index 9250a44..9eb940c 100644
+--- a/site/src/components/FoundationSpecimen.astro
++++ b/site/src/components/FoundationSpecimen.astro
+@@ -3 +3 @@ import { Card, Button, SectionHeading } from '@krigsvold/astro';
+-import { foundation } from '@krigsvold/theme';
++import { foundation } from '@krigsvold/core';
+diff --git a/site/src/pages/design-system.astro b/site/src/pages/design-system.astro
+index 9881996..a38e10e 100644
+--- a/site/src/pages/design-system.astro
++++ b/site/src/pages/design-system.astro
+@@ -4 +4 @@ import PageMasthead from '../components/PageMasthead.astro';
+-import { version as coreVersion, foundation, capabilities } from '@krigsvold/theme';
++import { version as coreVersion, foundation, capabilities } from '@krigsvold/core';
+@@ -81 +81 @@ npm run dev`;
+-      <p>The installed wrapper supports <code>astro {peerDependencies.astro}</code> with <code>@krigsvold/theme {peerDependencies['@krigsvold/theme']}</code>. Install both peer packages in an existing Astro project:</p>
++      <p>The installed wrapper supports <code>astro {peerDependencies.astro}</code> with <code>@krigsvold/core {peerDependencies['@krigsvold/core']}</code>. This local preview uses unpublished tarballs; the published Astro 1.2.2 lane continues to require theme:</p>
+diff --git a/site/src/pages/design-system.json.ts b/site/src/pages/design-system.json.ts
+index 10c3e82..549b94f 100644
+--- a/site/src/pages/design-system.json.ts
++++ b/site/src/pages/design-system.json.ts
+@@ -4 +4 @@ import languageSource from '../../../docs/language/snapshot.json';
+-import { version as coreVersion, foundation, design, capabilities, themes, heritage } from '@krigsvold/theme';
++import { version as coreVersion, foundation, design, capabilities, themes, heritage } from '@krigsvold/core';
+@@ -10 +10 @@ export function GET() {
+-    packages: { core: {name: '@krigsvold/theme', version: coreVersion}, astro: {name: '@krigsvold/astro', version: astroVersion, peerDependencies} },
++    packages: { core: {name: '@krigsvold/core', version: coreVersion, published: false}, astro: {name: '@krigsvold/astro', version: astroVersion, published: false, peerDependencies} },
+diff --git a/site/src/styles/shell.css b/site/src/styles/shell.css
+index 2ceb4de..20f91e5 100644
+--- a/site/src/styles/shell.css
++++ b/site/src/styles/shell.css
+@@ -1,2 +1,2 @@
+-@import '@krigsvold/theme/css';
+-@import '@krigsvold/theme/foundation.css';
++@import '@krigsvold/core/css';
++@import '@krigsvold/core/foundation.css';
+diff --git a/src/palettes.mjs b/src/palettes.mjs
+index 5636814..1ef53f1 100644
+--- a/src/palettes.mjs
++++ b/src/palettes.mjs
+@@ -2 +2 @@
+-export { themes, heritage, design, foundation, capabilities } from '@krigsvold/theme';
++export { themes, heritage, design, foundation, capabilities } from '@krigsvold/core';
