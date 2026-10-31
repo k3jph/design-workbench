@@ -18,11 +18,11 @@ jobs:
           - family: martlet
             repository: martlettheme/martlettheme
             ref: b588542b36cb67ed84a57700ce26ce845d475df9
-            tree: 619165d31ea41d1a2885db495c2f3c772e5f8898
+            tree: 7784bb0b79daf05af59dc0f84097e76096618dea
           - family: krigsvold
             repository: krigsvoldtheme/krigsvoldtheme
             ref: fa4a66c8675d9258f733250f1e32149c3622ea39
-            tree: a39e7ac11f51074fd94544680337c6ede69fe0c1
+            tree: f4ad71779939f811ce514417639c381113dac690
     env:
       WORKBENCH_BROWSER: ${{ matrix.browser }}
     steps:
