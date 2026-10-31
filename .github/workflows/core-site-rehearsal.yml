@@ -1,0 +1,73 @@
+name: Verify unpublished core site candidates
+on:
+  pull_request:
+    paths:
+      - 'docs/qa/core-downstream-patches/**'
+      - '.github/workflows/core-site-rehearsal.yml'
+permissions:
+  contents: read
+jobs:
+  site-consumers:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chromium, firefox, webkit]
+        site:
+          - family: martlet
+            repository: martlettheme/martlettheme
+            ref: b588542b36cb67ed84a57700ce26ce845d475df9
+            tree: 619165d31ea41d1a2885db495c2f3c772e5f8898
+          - family: krigsvold
+            repository: krigsvoldtheme/krigsvoldtheme
+            ref: fa4a66c8675d9258f733250f1e32149c3622ea39
+            tree: a39e7ac11f51074fd94544680337c6ede69fe0c1
+    env:
+      WORKBENCH_BROWSER: ${{ matrix.browser }}
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          repository: ${{ matrix.site.repository }}
+          ref: ${{ matrix.site.ref }}
+          path: .site-source
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '24.19.0'
+      - name: Reconstruct and verify reviewed site tree
+        env:
+          FAMILY: ${{ matrix.site.family }}
+          EXPECTED_TREE: ${{ matrix.site.tree }}
+        run: |
+          git -C .site-source apply --index --unidiff-zero "$GITHUB_WORKSPACE/docs/qa/core-downstream-patches/$FAMILY-site.patch"
+          test "$(git -C .site-source write-tree)" = "$EXPECTED_TREE"
+          cd .site-source
+          npm ci --ignore-scripts
+          npm test
+      - run: cd .site-source && npx playwright install --with-deps "${{ matrix.browser }}"
+      - name: Build and inspect root and subpath consumers
+        env:
+          FAMILY: ${{ matrix.site.family }}
+        run: |
+          cd .site-source
+          ref_url=$(node -e "process.stdout.write(JSON.parse(require('fs').readFileSync('site/react-reference.json')).archiveUrl)")
+          curl --fail --location --retry 3 "$ref_url" --output "$RUNNER_TEMP/react-reference.tgz"
+          export DESIGN_REACT_ARCHIVE="$RUNNER_TEMP/react-reference.tgz"
+          for base in / /preview; do
+            export SITE_BASE="$base"
+            npm run build
+            node scripts/check-base.mjs
+            # The embedded React reference is an SPA, checked above in a browser.
+            # Check every server-rendered site page with the common static verifier.
+            python3 - "$GITHUB_WORKSPACE/examples/page-archetypes/scripts/verify-html.py" <<'PY'
+          import os,shutil,subprocess,sys,tempfile
+          with tempfile.TemporaryDirectory(prefix='site-static-check-') as tmp:
+              shutil.copytree('dist',tmp,dirs_exist_ok=True,ignore=shutil.ignore_patterns('react'))
+              base=os.environ['SITE_BASE']
+              subprocess.run(['python3',sys.argv[1],tmp,'--baseurl','' if base=='/' else base],check=True)
+          PY
+          done
