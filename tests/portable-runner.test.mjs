@@ -42,6 +42,14 @@ test('complete-matrix mode refuses partial coverage before opening repositories'
  await assert.rejects(execute(manifest(),{requireMatrix:true}),/complete matrix missing targets/);
 });
 
+test('strict declared-input mode rejects unchecked packages before opening repositories',async()=>{
+ const data=manifest();data.repositories.package={path:'/tmp/missing',commit:sha};data.targets[0].inputs=['package'];
+ await assert.rejects(execute(data,{requireCheckedInputs:true}),/declared input package lacks/);
+ data.targets[0].input_checks={package:{package_name:'@martlet/core',package_version:'2.2.3',files:{'index.js':'a'.repeat(64)}}};
+ // The strict guard accepted the check and execution reached the pinned-repo read.
+ await assert.rejects(execute(data,{requireCheckedInputs:true}),/failed/);
+});
+
 test('existing result files are never overwritten or mistaken for a new run',async()=>{
  const temp=mkdtempSync(join(tmpdir(),'nightjar-result-test-'));try{const output=join(temp,'result.json');writeFileSync(output,'prior evidence');await assert.rejects(execute(manifest(),{output}),/Output already exists/);assert.equal(readFileSync(output,'utf8'),'prior evidence');}finally{rmSync(temp,{recursive:true,force:true});}
 });

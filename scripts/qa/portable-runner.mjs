@@ -161,8 +161,10 @@ export async function auditSmoke(page,root,base,catalog,label){
  assert.ok(found.main.includes(norm(record.summary)),`${label}/${record.id}: canonical summary`);
  return {cells:[{example:record.id,base,static_content:'checked',scope:'adapter-smoke',interactive_behavior:'not_assessed',automated_accessibility:'not_assessed',visual_conformance:'not_assessed'}],science:{status:'not_assessed'}};
 }
-export async function execute(manifest,{browserName='chromium',output,requireMatrix=false}={}){
+export async function execute(manifest,{browserName='chromium',output,requireMatrix=false,requireCheckedInputs=false}={}){
  validateManifest(manifest);assert.ok(['chromium','firefox','webkit'].includes(browserName),'unsupported browser');
+ if(requireCheckedInputs)for(const target of manifest.targets)for(const input of target.inputs||[])
+  assert.ok(Object.hasOwn(target.input_checks||{},input),`${target.family}/${target.framework}: declared input ${input} lacks a package identity and file hash check`);
  const matrix=manifest.matrix||defaultMatrix;
  const expected=matrix.families.flatMap(f=>matrix.frameworks.map(fr=>`${f}/${fr}`));
  const present=new Set(manifest.targets.map(t=>`${t.family}/${t.framework}`));
@@ -197,14 +199,14 @@ export async function execute(manifest,{browserName='chromium',output,requireMat
   await context.close();
   assert.equal(await hashFile(runnerFile),scriptHash,'Runner changed during execution');assert.equal(await hashFile(verifier),verifierHash,'HTML verifier changed during execution');assert.equal(git(here,['rev-parse','HEAD']).trim(),runnerCommit,'Runner commit changed during execution');
   assert.equal(await hashFile(matrixFile),matrixFileHash,'Default matrix configuration changed during execution');
-  const result={version:1,runner_scope:'Capability-scoped static content and local link/fragment inventory; catalog additionally checks experimental static-result presence. Not full conformance or an accessibility audit.',network_policy:'Runner performs no fetch; build commands are trusted code and network isolation is not enforced.',runner:{commit:runnerCommit,script_sha256:scriptHash,html_verifier_sha256:verifierHash,default_matrix_sha256:matrixFileHash,worktree_dirty:dirty},matrix,fixture:{repository:manifest.fixture.repository,commit:fixtureRepo.commit,catalog_path:manifest.fixture.catalog,dashboards_path:manifest.fixture.dashboards,catalog_sha256:createHash('sha256').update(catalogText).digest('hex'),dashboards_sha256:createHash('sha256').update(dashboardText).digest('hex')},repositories:Object.fromEntries(Object.entries(repos).map(([name,repo])=>[name,{commit:repo.commit}])),browser:{engine:browserName,version:browser.version()},node:process.version,javascript:'disabled',results,missing,not_assessed:['declared package input consumption','interactive behavior','JavaScript failure recovery','automated accessibility','contrast incomplete findings','visual identity','manual assistive technology','physical print','performance']};
+  const result={version:1,runner_scope:'Capability-scoped static content and local link/fragment inventory; catalog additionally checks experimental static-result presence. Not full conformance or an accessibility audit.',network_policy:'Runner performs no fetch; build commands are trusted code and network isolation is not enforced.',runner:{commit:runnerCommit,script_sha256:scriptHash,html_verifier_sha256:verifierHash,default_matrix_sha256:matrixFileHash,worktree_dirty:dirty},require_checked_declared_inputs:requireCheckedInputs,matrix,fixture:{repository:manifest.fixture.repository,commit:fixtureRepo.commit,catalog_path:manifest.fixture.catalog,dashboards_path:manifest.fixture.dashboards,catalog_sha256:createHash('sha256').update(catalogText).digest('hex'),dashboards_sha256:createHash('sha256').update(dashboardText).digest('hex')},repositories:Object.fromEntries(Object.entries(repos).map(([name,repo])=>[name,{commit:repo.commit}])),browser:{engine:browserName,version:browser.version()},node:process.version,javascript:'disabled',results,missing,not_assessed:['declared package input consumption','interactive behavior','JavaScript failure recovery','automated accessibility','contrast incomplete findings','visual identity','manual assistive technology','physical print','performance']};
   if(output)await writeFile(resolve(output),JSON.stringify(result,null,2)+'\n',{flag:'wx'});return result;
  }finally{if(browser)await browser.close();await rm(temp,{recursive:true,force:true});}
 }
 if(process.argv[1]&&resolve(process.argv[1])===fileURLToPath(import.meta.url)){
- const args=process.argv.slice(2);let manifestPath,output,browserName='chromium',requireMatrix=false;
- for(let i=0;i<args.length;i++){if(args[i]==='--manifest')manifestPath=args[++i];else if(args[i]==='--output')output=args[++i];else if(args[i]==='--browser')browserName=args[++i];else if(args[i]==='--require-matrix')requireMatrix=true;else throw Error(`Unknown argument: ${args[i]}`);}
+ const args=process.argv.slice(2);let manifestPath,output,browserName='chromium',requireMatrix=false,requireCheckedInputs=false;
+ for(let i=0;i<args.length;i++){if(args[i]==='--manifest')manifestPath=args[++i];else if(args[i]==='--output')output=args[++i];else if(args[i]==='--browser')browserName=args[++i];else if(args[i]==='--require-matrix')requireMatrix=true;else if(args[i]==='--require-checked-inputs')requireCheckedInputs=true;else throw Error(`Unknown argument: ${args[i]}`);}
  assert.ok(manifestPath&&output,'Usage: node scripts/qa/portable-runner.mjs --manifest manifest.json --output result.json [--browser chromium|firefox|webkit] [--require-matrix]');
- const manifest=JSON.parse(await readFile(resolve(manifestPath),'utf8'));const result=await execute(manifest,{browserName,output,requireMatrix});
+ const manifest=JSON.parse(await readFile(resolve(manifestPath),'utf8'));const result=await execute(manifest,{browserName,output,requireMatrix,requireCheckedInputs});
  console.log(`Recorded ${result.results.reduce((n,r)=>n+r.cells.length,0)} bounded static route checks; missing targets: ${result.missing.join(', ')||'none'}.`);
 }
