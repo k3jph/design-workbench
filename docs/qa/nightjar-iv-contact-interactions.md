@@ -6,6 +6,8 @@ Each target in the version-1 JSON manifest specifies `family`, `framework`, abso
 
 The shared contact form check exercises keyboard submission of whitespace, the error's focus and invalid state, correction, an immediate pointer retry, reset, the disabled no-JavaScript fallback, 320px reflow, request failures and an axe scan. This is one interaction, not full framework conformance. Incomplete axe results are recorded with their selectors and require assessment. The unit test includes an actual browser negative control that removes the contact form, plus manifest and missing-matrix rejection.
 
+The hosted adapter workflow runs the negative-control tests in Chromium, Firefox and WebKit. This tests the harness against each browser; it does not run the six independently built implementations in that workflow. Locally set `NIGHTJAR_TEST_BROWSER` to the chosen engine, and install the corresponding Playwright browser, to repeat a negative-control run.
+
 ## Local six-implementation observation
 
 The adjacent JSON records a Chromium 151 run of the contract on local candidate outputs for both languages and all three frameworks. Jekyll and Astro used `/preview/docs/v/2.0.0/`; React used `/preview/`. The Astro outputs were local archives generated from the claimed source commits, and their catalog was a synthetic local fixture, not a production catalog. The Jekyll outputs came from the local source checkouts named by the recorded commits. React gallery output was built before final documentation/CI and TypeScript declaration changes; the gallery source and lockfiles were reported unchanged. These are source claims, not independently verified attestations.
