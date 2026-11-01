@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "observed_at_utc": "2026-11-01 20:09:31 UTC",
+  "observed_at_utc": "2026-11-01 20:25:09 UTC",
   "description": "Point-in-time observed refs and open PRs; CI and import status can change. Refreshed independently of production controls; historical runs do not verify later commits.",
   "repositories": [
     {
@@ -125,8 +125,8 @@
         "refs/heads/feature/astro-release-integration": "31eee31020870a95a64fbaa8ac2d96d224880bab",
         "refs/heads/feature/docs-r2-archive-gateway": "727a8faebc90220e731ab32ff109613cc42b9fe7",
         "refs/heads/feature/gitflow-policy": "f1daf48dcc5653b9edecea98745b73285f2bf72d",
-        "refs/heads/feature/nightjar-iv-docs-combined": "18fe98188792519ceb426384bbd7ade489904731",
-        "refs/heads/feature/nightjar-iv-reference": "d84e09ba830cc694ecafcdd9c244c6e0c06e8c1c",
+        "refs/heads/feature/nightjar-iv-docs-combined": "7a3d8c97071cdc88965d8a565946d968ddd7f350",
+        "refs/heads/feature/nightjar-iv-reference": "391f5e3a088fb392d6c775e976c3706e0327148e",
         "refs/heads/feature/tag-release-automation": "726bb904457728db29561c1a71bdfffbc45695de",
         "refs/heads/feature/versioned-docs-archive": "9efee0373ab5003742fe94aca2ace49910f85e54",
         "refs/heads/fix/adoption-repair-03": "b600ac6d91c6d25885e55b7597fb7754aa5f7988",
@@ -147,7 +147,7 @@
           "number": 13,
           "title": "Integrate full Astro reference with archive gateway rehearsal",
           "head": "feature/nightjar-iv-docs-combined",
-          "sha": "18fe98188792519ceb426384bbd7ade489904731",
+          "sha": "7a3d8c97071cdc88965d8a565946d968ddd7f350",
           "base": "feature/astro-release-integration",
           "draft": true,
           "url": "https://github.com/martletdesign/astro/pull/13"
@@ -156,7 +156,7 @@
           "number": 12,
           "title": "Extract canonical standalone Astro reference examples",
           "head": "feature/nightjar-iv-reference",
-          "sha": "d84e09ba830cc694ecafcdd9c244c6e0c06e8c1c",
+          "sha": "391f5e3a088fb392d6c775e976c3706e0327148e",
           "base": "feature/astro-release-integration",
           "draft": true,
           "url": "https://github.com/martletdesign/astro/pull/12"
@@ -228,11 +228,51 @@
       "gitflow_exempt": false,
       "refs": {
         "refs/heads/develop": "3c77b664ea80d0a58599dc5d7391b3d013c9570e",
+        "refs/heads/feature/combined-react-candidate": "16cf4285a915309eacd5139f04096d674d3c3f1a",
         "refs/heads/feature/independent-react-source": "7acbcdc17a99b70734aace9028ef00a2cef9b7cf",
+        "refs/heads/feature/independent-reference-gallery": "579470889695727b19505a2ef95350f1084024e6",
+        "refs/heads/feature/local-docs-archives": "51eb10c15129407de393b46c7549bd21623165ae",
+        "refs/heads/feature/react-r2-archive": "377272e8797db7958231be7cfd75e57d1623321a",
         "refs/heads/feature/react-tag-release": "f7e2cf172ede7721dd133e7a71f0cc83e9c0a497",
         "refs/heads/main": "3c77b664ea80d0a58599dc5d7391b3d013c9570e"
       },
       "open_pull_requests": [
+        {
+          "number": 6,
+          "title": "Rehearse React snapshots with R2 archive gateway",
+          "head": "feature/react-r2-archive",
+          "sha": "377272e8797db7958231be7cfd75e57d1623321a",
+          "base": "feature/local-docs-archives",
+          "draft": true,
+          "url": "https://github.com/martletdesign/react/pull/6"
+        },
+        {
+          "number": 5,
+          "title": "Prepare local versioned React reference archives",
+          "head": "feature/local-docs-archives",
+          "sha": "51eb10c15129407de393b46c7549bd21623165ae",
+          "base": "feature/combined-react-candidate",
+          "draft": true,
+          "url": "https://github.com/martletdesign/react/pull/5"
+        },
+        {
+          "number": 4,
+          "title": "Integrate standalone gallery and disabled release candidate",
+          "head": "feature/combined-react-candidate",
+          "sha": "16cf4285a915309eacd5139f04096d674d3c3f1a",
+          "base": "feature/independent-react-source",
+          "draft": true,
+          "url": "https://github.com/martletdesign/react/pull/4"
+        },
+        {
+          "number": 3,
+          "title": "Extract independent React reference gallery",
+          "head": "feature/independent-reference-gallery",
+          "sha": "579470889695727b19505a2ef95350f1084024e6",
+          "base": "feature/independent-react-source",
+          "draft": true,
+          "url": "https://github.com/martletdesign/react/pull/3"
+        },
         {
           "number": 2,
           "title": "Prepare disabled tag release and nonpublishing rehearsal",
@@ -275,11 +315,31 @@
         "refs/heads/develop": "afcf62bc9bb676f1ae5fe27757d79db6dde94021",
         "refs/heads/feature/nightjar-iv-jekyll-browser": "3fabff42c6e01f745ef28aff90d4da993b6b890d",
         "refs/heads/feature/nightjar-iv-jekyll-docs-gate": "97ab6443bad6db68e013ca27d1ab6a8a729d00de",
+        "refs/heads/feature/nightjar-iv-jekyll-r2-experiment": "6e24ae571a040a5da7d7c7100656ca31464d634f",
         "refs/heads/feature/nightjar-iv-jekyll-release": "94170981a026a5b45f184561508f41250fe2f053",
+        "refs/heads/feature/nightjar-iv-jekyll-versioned-source": "dc1606e7e6a0c786d8f456bec39b0ba04499c0c4",
         "refs/heads/feature/nightjar-iv-source-transfer": "657503a191db2509405a2e2ca3cc05f274b9161f",
         "refs/heads/main": "afcf62bc9bb676f1ae5fe27757d79db6dde94021"
       },
       "open_pull_requests": [
+        {
+          "number": 6,
+          "title": "Rehearse actual Jekyll snapshots through archive gateway",
+          "head": "feature/nightjar-iv-jekyll-r2-experiment",
+          "sha": "6e24ae571a040a5da7d7c7100656ca31464d634f",
+          "base": "feature/nightjar-iv-jekyll-versioned-source",
+          "draft": true,
+          "url": "https://github.com/martletdesign/jekyll/pull/6"
+        },
+        {
+          "number": 5,
+          "title": "Build full Jekyll reference snapshots from source",
+          "head": "feature/nightjar-iv-jekyll-versioned-source",
+          "sha": "dc1606e7e6a0c786d8f456bec39b0ba04499c0c4",
+          "base": "feature/nightjar-iv-jekyll-docs-gate",
+          "draft": true,
+          "url": "https://github.com/martletdesign/jekyll/pull/5"
+        },
         {
           "number": 4,
           "title": "Block Jekyll release until immutable documentation is verified",
@@ -673,8 +733,8 @@
         "refs/heads/feature/astro-release-integration": "2f0fa4c34a1c508bcff000b84fbd52dab0c271a5",
         "refs/heads/feature/docs-r2-archive-gateway": "e979a406dae145e7d8ed6f178695fea5c4896d41",
         "refs/heads/feature/gitflow-policy": "14f70454bb57cd3a51618fd5191fbaaead594bc2",
-        "refs/heads/feature/nightjar-iv-docs-combined": "299a1c39042f72bf61ecbaf41b1defde1a1da527",
-        "refs/heads/feature/nightjar-iv-reference": "79a2e3731696922909cc2e9d1c48488e58528721",
+        "refs/heads/feature/nightjar-iv-docs-combined": "4fee24717bb3c823b0ac3e9812de970cc24bc349",
+        "refs/heads/feature/nightjar-iv-reference": "afe4fff7712f1a1f38a21d08220fc641c75a6f11",
         "refs/heads/feature/tag-release-automation": "0ed4fee4c0a6ba1a191f523927095f3e78936436",
         "refs/heads/feature/versioned-docs-archive": "ab866003ecc04d92c7ee4c6592f9c8c58acd3c89",
         "refs/heads/fix/adoption-repair-03": "878a61014852f83618c575a27154b7820ac5e017",
@@ -694,7 +754,7 @@
           "number": 13,
           "title": "Integrate full Astro reference with archive gateway rehearsal",
           "head": "feature/nightjar-iv-docs-combined",
-          "sha": "299a1c39042f72bf61ecbaf41b1defde1a1da527",
+          "sha": "4fee24717bb3c823b0ac3e9812de970cc24bc349",
           "base": "feature/astro-release-integration",
           "draft": true,
           "url": "https://github.com/krigsvolddesign/astro/pull/13"
@@ -703,7 +763,7 @@
           "number": 12,
           "title": "Extract canonical standalone Astro reference examples",
           "head": "feature/nightjar-iv-reference",
-          "sha": "79a2e3731696922909cc2e9d1c48488e58528721",
+          "sha": "afe4fff7712f1a1f38a21d08220fc641c75a6f11",
           "base": "feature/astro-release-integration",
           "draft": true,
           "url": "https://github.com/krigsvolddesign/astro/pull/12"
@@ -775,11 +835,51 @@
       "gitflow_exempt": false,
       "refs": {
         "refs/heads/develop": "742b5cd33cfc080ca1d6d94987df9dafc45049b4",
+        "refs/heads/feature/combined-react-candidate": "9bc0e39174db28dc0156fe45a1f143afadbf8ed5",
         "refs/heads/feature/independent-react-source": "8cf7b26a9209a4fd4e3d4f072e46da0eaf00119a",
+        "refs/heads/feature/independent-reference-gallery": "b0e5591aeed09dd36adc08667d07668ab55afbc0",
+        "refs/heads/feature/local-docs-archives": "7a9469019a824a202fdd430fb7c9d02bf5877b78",
+        "refs/heads/feature/react-r2-archive": "44d44eb79dc04757dfb04e11a0887357096d7eea",
         "refs/heads/feature/react-tag-release": "25140ac4cbbdec46660f595f8b2eb6648e540b04",
         "refs/heads/main": "742b5cd33cfc080ca1d6d94987df9dafc45049b4"
       },
       "open_pull_requests": [
+        {
+          "number": 6,
+          "title": "Rehearse React snapshots with R2 archive gateway",
+          "head": "feature/react-r2-archive",
+          "sha": "44d44eb79dc04757dfb04e11a0887357096d7eea",
+          "base": "feature/local-docs-archives",
+          "draft": true,
+          "url": "https://github.com/krigsvolddesign/react/pull/6"
+        },
+        {
+          "number": 5,
+          "title": "Prepare local versioned React reference archives",
+          "head": "feature/local-docs-archives",
+          "sha": "7a9469019a824a202fdd430fb7c9d02bf5877b78",
+          "base": "feature/combined-react-candidate",
+          "draft": true,
+          "url": "https://github.com/krigsvolddesign/react/pull/5"
+        },
+        {
+          "number": 4,
+          "title": "Integrate standalone gallery and disabled release candidate",
+          "head": "feature/combined-react-candidate",
+          "sha": "9bc0e39174db28dc0156fe45a1f143afadbf8ed5",
+          "base": "feature/independent-react-source",
+          "draft": true,
+          "url": "https://github.com/krigsvolddesign/react/pull/4"
+        },
+        {
+          "number": 3,
+          "title": "Extract independent React reference gallery",
+          "head": "feature/independent-reference-gallery",
+          "sha": "b0e5591aeed09dd36adc08667d07668ab55afbc0",
+          "base": "feature/independent-react-source",
+          "draft": true,
+          "url": "https://github.com/krigsvolddesign/react/pull/3"
+        },
         {
           "number": 2,
           "title": "Prepare disabled tag release and nonpublishing rehearsal",
@@ -822,11 +922,31 @@
         "refs/heads/develop": "8c5f4c3fe096c4bc107fe8f16e6c485709751c1f",
         "refs/heads/feature/nightjar-iv-jekyll-browser": "aab91b948bff2ffa9864201d24764c1020e3307b",
         "refs/heads/feature/nightjar-iv-jekyll-docs-gate": "8c369048000d1ef1df0975b4add693b8f699e321",
+        "refs/heads/feature/nightjar-iv-jekyll-r2-experiment": "1e83f741e2cd35a5525b75cad2bc3751c5702196",
         "refs/heads/feature/nightjar-iv-jekyll-release": "e4513920d66c1355bfdd41d688badda0c6d44f0d",
+        "refs/heads/feature/nightjar-iv-jekyll-versioned-source": "8151bd3cf1acbc5dbf111dd9d6a006e75d9d878d",
         "refs/heads/feature/nightjar-iv-source-transfer": "9c8aaec5a614645ce3d20dcf196bcbad2983764b",
         "refs/heads/main": "8c5f4c3fe096c4bc107fe8f16e6c485709751c1f"
       },
       "open_pull_requests": [
+        {
+          "number": 6,
+          "title": "Rehearse actual Jekyll snapshots through archive gateway",
+          "head": "feature/nightjar-iv-jekyll-r2-experiment",
+          "sha": "1e83f741e2cd35a5525b75cad2bc3751c5702196",
+          "base": "feature/nightjar-iv-jekyll-versioned-source",
+          "draft": true,
+          "url": "https://github.com/krigsvolddesign/jekyll/pull/6"
+        },
+        {
+          "number": 5,
+          "title": "Build full Jekyll reference snapshots from source",
+          "head": "feature/nightjar-iv-jekyll-versioned-source",
+          "sha": "8151bd3cf1acbc5dbf111dd9d6a006e75d9d878d",
+          "base": "feature/nightjar-iv-jekyll-docs-gate",
+          "draft": true,
+          "url": "https://github.com/krigsvolddesign/jekyll/pull/5"
+        },
         {
           "number": 4,
           "title": "Block Jekyll release until immutable documentation is verified",
@@ -1109,7 +1229,8 @@
         "refs/heads/feat/reference-research-page": "0295a1d82a1b39a5811db09f8bb6780669d43d79",
         "refs/heads/feature/gitflow-release-preparation": "a492e12618dd178fd5cee7fbe5487d512f1e3cc7",
         "refs/heads/feature/nightjar-iv-checked-inputs": "948acddfd153fadbd36e83de3efcbecf353216b0",
-        "refs/heads/feature/nightjar-iv-ledger": "ce02f06746b8dfe30e88729ec7c1607cd1734ce8",
+        "refs/heads/feature/nightjar-iv-interaction-contract": "16348c4d2ea5b873506d37855fc434f348f21d06",
+        "refs/heads/feature/nightjar-iv-ledger": "eb20bec8484e52bbde835be2b0eede8ed6b4ff8a",
         "refs/heads/feature/nightjar-iv-ruleset-audit": "623a7797ced40791db6950718468d2d0e8de5daf",
         "refs/heads/feature/versioned-docs-contract": "366dd2114cf08115a58e58cfc4c1f1d4bb781e7e",
         "refs/heads/fix/adoption-completion": "8d1e9b3e0991ad5568fb3f950e4789d17848cc0b",
@@ -1194,6 +1315,15 @@
       },
       "open_pull_requests": [
         {
+          "number": 76,
+          "title": "Check standalone contact interactions with a shared browser contract",
+          "head": "feature/nightjar-iv-interaction-contract",
+          "sha": "16348c4d2ea5b873506d37855fc434f348f21d06",
+          "base": "feature/nightjar-iv-checked-inputs",
+          "draft": true,
+          "url": "https://github.com/k3jph/design-workbench/pull/76"
+        },
+        {
           "number": 75,
           "title": "Require verification for declared portable package inputs",
           "head": "feature/nightjar-iv-checked-inputs",
@@ -1206,7 +1336,7 @@
           "number": 74,
           "title": "Track Nightjar IV implementation and repository evidence",
           "head": "feature/nightjar-iv-ledger",
-          "sha": "ce02f06746b8dfe30e88729ec7c1607cd1734ce8",
+          "sha": "eb20bec8484e52bbde835be2b0eede8ed6b4ff8a",
           "base": "develop",
           "draft": true,
           "url": "https://github.com/k3jph/design-workbench/pull/74"
@@ -1844,6 +1974,82 @@
       "limitations": [
         "Krigsvold latest browser run pending; underlying #2 matrix passed.",
         "Synthetic core provenance does not validate the vendored shell. Storage, serving and version navigation are incomplete."
+      ]
+    },
+    {
+      "scope": "Final combined Astro #13",
+      "commits": {
+        "martlet": "7a3d8c97071cdc88965d8a565946d968ddd7f350",
+        "krigsvold": "4fee24717bb3c823b0ac3e9812de970cc24bc349"
+      },
+      "checks": [
+        "All hosted checks passed on both exact heads, including package matrices, archive matrices, gateway, and existing-version checks; Martlet historical provenance passed.",
+        "Local full build to gateway verified every archive byte for both languages at root and /preview."
+      ],
+      "runs": [
+        "https://github.com/martletdesign/astro/actions/runs/41345840715",
+        "https://github.com/martletdesign/astro/actions/runs/41345840634",
+        "https://github.com/martletdesign/astro/actions/runs/41345840693",
+        "https://github.com/krigsvolddesign/astro/actions/runs/41345843853",
+        "https://github.com/krigsvolddesign/astro/actions/runs/41345843879",
+        "https://github.com/krigsvolddesign/astro/actions/runs/41345843849"
+      ],
+      "limitations": [
+        "Emulated storage is not production immutability; independently protected checkpoint, IAM, serving and release gate remain unresolved."
+      ]
+    },
+    {
+      "scope": "React full gallery, archives and R2 drafts",
+      "commits": {
+        "martlet": "377272e8797db7958231be7cfd75e57d1623321a",
+        "krigsvold": "44d44eb79dc04757dfb04e11a0887357096d7eea"
+      },
+      "checks": [
+        "Local successive-version archive preservation, exact core pins, Chromium preview JS/no-JS navigation and automated axe passed.",
+        "Local R2 emulation verified all full snapshot bytes at root and /preview; 11 gateway/archive tests passed.",
+        "Previously failed #5 release rehearsal corrected by exporting full source; corrected rehearsal passed locally."
+      ],
+      "limitations": [
+        "Latest #6 hosted runs queued at snapshot.",
+        "No independent protected checkpoint, live bucket IAM or serving; disabled release gate remains."
+      ]
+    },
+    {
+      "scope": "Jekyll historical documentation and R2 drafts",
+      "commits": {
+        "martlet": "6e24ae571a040a5da7d7c7100656ca31464d634f",
+        "krigsvold": "1e83f741e2cd35a5525b75cad2bc3751c5702196"
+      },
+      "checks": [
+        "#5 hosted three-browser root/subpath and no-JS archive checks passed for both languages.",
+        "Local #6 in-memory R2 verification passed root and subpath; pinned Miniflare verified every full snapshot byte and create-only conflict in /preview.",
+        "Vendored shells reproducibly originate from legacy @martlet/theme@2.2.2 and @krigsvold/theme@2.2.3 with registry tarball and historical lock integrity verified."
+      ],
+      "runs": [
+        "https://github.com/martletdesign/jekyll/actions/runs/41345886546",
+        "https://github.com/martletdesign/jekyll/actions/runs/41345886509",
+        "https://github.com/krigsvolddesign/jekyll/actions/runs/41345882735",
+        "https://github.com/krigsvolddesign/jekyll/actions/runs/41345882847"
+      ],
+      "limitations": [
+        "Latest #6 hosted runs queued at snapshot.",
+        "Catalog promotion deliberately blocked: the shared contract does not yet represent the verified legacy theme dependencies.",
+        "No live bucket, trusted checkpoint, serving or publication."
+      ]
+    },
+    {
+      "scope": "Six-implementation shared form contract",
+      "commit": "16348c4d2ea5b873506d37855fc434f348f21d06",
+      "checks": [
+        "Local Chromium contact interaction passed on six provisional outputs at /preview, including keyboard, correction and pointer retry, reset, no-JS and reflow.",
+        "Hosted harness and negative controls passed."
+      ],
+      "runs": [
+        "https://github.com/k3jph/design-workbench/actions/runs/41345892467"
+      ],
+      "limitations": [
+        "Both Jekyll form scans returned incomplete axe color-contrast checks.",
+        "The input build identities were caller-asserted; Firefox/WebKit and other interactions were not assessed."
       ]
     }
   ],
