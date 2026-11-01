@@ -43,6 +43,8 @@ export async function main(args) {
   const current = actual?.head?.sha;
   if (pr.sha !== current) return assess(pr.sha, current, []);
   const response = gh(`repos/${repository}/actions/runs?head_sha=${current}&per_page=100`);
+  if (!Number.isSafeInteger(response.total_count) || response.total_count < 0 || !Array.isArray(response.workflow_runs))
+    throw new Error('Incomplete workflow response');
   if (response.total_count > 100) throw new Error('More than 100 runs; inspect paginated results manually');
   return assess(pr.sha, current, response.workflow_runs);
 }
