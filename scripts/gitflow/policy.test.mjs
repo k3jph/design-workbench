@@ -5,6 +5,7 @@ import {tmpdir} from 'node:os';
 import {join} from 'node:path';
 import {execFileSync} from 'node:child_process';
 import {branchAllowed, parseReleaseTag, checkRelease} from './policy.mjs';
+import {isMainFirstParent} from './preflight.mjs';
 
 test('only approved same-repository sources can target protected branches', () => {
   for (const h of ['release/1.2.3','hotfix/1.2.4']) assert.equal(branchAllowed('main',h),true);
@@ -40,6 +41,8 @@ test('feature, release and hotfix merges preserve both integration histories', (
     git('checkout','main'); git('merge','--no-ff','hotfix/1.0.1','-m','hotfix release'); git('tag','v1.0.1');
     git('checkout','develop'); git('merge','--no-ff','main','-m','hotfix back merge');
     git('merge-base','--is-ancestor','v1.0.0','develop'); git('merge-base','--is-ancestor','v1.0.1','develop');
-    assert.ok(git('rev-list','--first-parent','main').split('\n').includes(git('rev-parse','v1.0.1')));
+    git('update-ref','refs/remotes/origin/main',git('rev-parse','main'));
+    assert.equal(isMainFirstParent(dir,'v1.0.1'),true);
+    assert.equal(isMainFirstParent(dir,'feature/example'),false);
   } finally { rmSync(dir,{recursive:true,force:true}); }
 });

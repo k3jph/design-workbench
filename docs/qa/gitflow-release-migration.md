@@ -2,6 +2,19 @@
 
 This branch is a proposal, not a production release system. No workflow in this branch publishes. The machine-readable [pre-change inventory](gitflow-inventory.json) records branch heads and open PR relationships. `develop` was created from the inventoried `main` head for each of the 13 nonempty repositories. The four empty React and Jekyll repositories cannot have branches until an authorized source transfer creates their first commit. The two private websites are outside this migration.
 
+Initial policy drafts, all targeting `develop`:
+
+| Repository type | Martlet | Krigsvold |
+| --- | --- | --- |
+| Core | [#15](https://github.com/martletdesign/core/pull/15) | [#16](https://github.com/krigsvolddesign/core/pull/16) |
+| Astro | [#7](https://github.com/martletdesign/astro/pull/7) | [#7](https://github.com/krigsvolddesign/astro/pull/7) |
+| Vim | [#1](https://github.com/martletdesign/vim/pull/1) | [#1](https://github.com/krigsvolddesign/vim/pull/1) |
+| Emacs | [#1](https://github.com/martletdesign/emacs/pull/1) | [#1](https://github.com/krigsvolddesign/emacs/pull/1) |
+| Chrome | [#1](https://github.com/martletdesign/chrome/pull/1) | [#1](https://github.com/krigsvolddesign/chrome/pull/1) |
+| Firefox | [#1](https://github.com/martletdesign/firefox/pull/1) | [#1](https://github.com/krigsvolddesign/firefox/pull/1) |
+
+The workbench proposal is [#71](https://github.com/k3jph/design-workbench/pull/71). All 13 hosted policy checks passed at their initial reviewed commits; package and browser workflows must be checked separately for their current results. The policy is not protected against modification by a PR and must not be treated as an enforcement boundary by itself.
+
 | Repositories | Current distribution and remaining work |
 | --- | --- |
 | `martletdesign/core`, `krigsvolddesign/core` | Unpublished `@*/core` candidates. Preserve private source manifests, hash-pinned packaging, and current stage-only trust. Replace the disabled release-event direct-publish path only through a reviewed, tested tag-release design; do not reuse legacy `/theme` tags. |
@@ -29,4 +42,4 @@ Each npm publisher needs exact repository, workflow and environment identity; co
 
 ## Evidence and outstanding gates
 
-`node --test scripts/gitflow/*.test.mjs` exercises tag syntax/channel selection, version mismatches, missing or unknown registry status, unverified protection, isolated GitFlow merge history, simulated failed build/test rejection and post-publish verification failure. The release rehearsal uses injected fake adapters; it does not exercise a production publisher. Separately, `npm publish --dry-run --ignore-scripts --tag next --registry=http://127.0.0.1:9` passed for each reviewed core tarball with npm 11.15.0; it warned that the deliberately unreachable local registry had no authentication. These checks do not verify OIDC or a real registry transaction. Real registry-query failure handling, package inspection and post-publish recovery remain to implement and test. No production tag, package, release, branch rule or npm trust configuration was changed by this proposal.
+`node --test scripts/gitflow/*.test.mjs` exercises tag syntax/channel selection, version mismatches, missing or unknown registry status, unverified protection, isolated GitFlow merge history including first-parent rejection, simulated failed build/test rejection and post-publish verification failure. The registry preflight prototype fails closed for inaccessible packages, malformed responses and network errors, using injected responses in its tests. A public-registry version 404 cannot reveal a private staged version or guarantee freedom from races; npm remains the final authority on version reservation. The release rehearsal uses injected fake adapters; it does not exercise a production publisher. Separately, `npm publish --dry-run --ignore-scripts --tag next --registry=http://127.0.0.1:9` passed for each reviewed core tarball with npm 11.15.0; it warned that the deliberately unreachable local registry had no authentication. These checks do not verify OIDC or a real registry transaction. Integrating and testing preflight with an actual tag workflow, package inspection and post-publish recovery remains outstanding. No production tag, package, release, branch rule or npm trust configuration was changed by this proposal.
