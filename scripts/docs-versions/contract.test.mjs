@@ -4,7 +4,7 @@ import {mkdtemp,mkdir,writeFile,rm,symlink,rename} from 'node:fs/promises';
 import {tmpdir} from 'node:os';
 import {join} from 'node:path';
 import {spawnSync} from 'node:child_process';
-import {sha256,parseVersion,validateManifest,createManifest,verifyArchive,validateCatalog,versionTopicURL} from './contract.mjs';
+import {sha256,parseVersion,validateManifest,createManifest,verifyArchive,validateCatalog,versionTopicURL,versionNavigationModel} from './contract.mjs';
 
 async function snapshot(root,family,framework,version='2.1.0'){
   const dir=join(root,`${family}-${framework}-${version}`);await mkdir(dir,{recursive:true});
@@ -41,6 +41,11 @@ test('catalog keeps prior snapshots immutable and preserves topics with fallback
   assert.equal(validateCatalog(next,old),next);
   assert.equal(versionTopicURL(next,'2.0.0','forms/index.html'),'/docs/v/2.0.0/forms/index.html');
   assert.equal(versionTopicURL(next,'1.0.0','removed/index.html'),'/docs/v/1.0.0/');
+  assert.equal(versionTopicURL(next,'2.0.0','forms/index.html','/preview/'),'/preview/docs/v/2.0.0/forms/index.html');
+  assert.equal(versionTopicURL(next,'1.0.0','missing.html','/preview'),'/preview/docs/v/1.0.0/');
+  assert.throws(()=>versionTopicURL(next,'2.0.0','forms/index.html','//evil.example/'));
+  const navigation=versionNavigationModel(next,'1.0.0','forms/index.html','/preview');
+  assert.equal(navigation[0].active,true);assert.equal(navigation[1].latestStable,true);assert.equal(navigation[2].channel,'prerelease');
   assert.throws(()=>validateCatalog({...next,versions:next.versions.slice(1)},old));
   assert.throws(()=>validateCatalog({...next,versions:[{...old.versions[0],manifestSha256:'f'.repeat(64)},...next.versions.slice(1)]},old));
   assert.throws(()=>validateCatalog({...next,latestStable:'3.0.0-rc.1'}));

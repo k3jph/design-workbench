@@ -82,9 +82,16 @@ export function validateCatalog(catalog,previous){
     for(const old of previous.versions){const now=catalog.versions.find(x=>x.version===old.version);need(now&&now.manifestSha256===old.manifestSha256&&now.channel===old.channel&&isDeepStrictEqual(now.topics,old.topics),'Historical snapshot removed or rewritten');}
   }return catalog;
 }
-export function versionTopicURL(catalog,version,topic){
+export function versionTopicURL(catalog,version,topic,basePath='/'){
   validateCatalog(catalog);const entry=catalog.versions.find(x=>x.version===version);need(entry,'Unknown documentation version');
+  need(typeof basePath==='string'&&basePath.startsWith('/')&&!basePath.startsWith('//')&&(basePath==='/'||validPath(basePath.replace(/^\//,'').replace(/\/$/,''))),'Invalid deployment base path');
   const path=validPath(topic)&&entry.topics.includes(topic)?topic:'';
-  return `/docs/v/${entry.version}/${path}`;
+  const prefix=basePath==='/'?'':basePath.replace(/\/$/,'');
+  return `${prefix}/docs/v/${entry.version}/${path}`;
+}
+// Framework adapters render this neutral model with their own accessible UI.
+export function versionNavigationModel(catalog,activeVersion,topic,basePath='/'){
+  validateCatalog(catalog);need(catalog.versions.some(x=>x.version===activeVersion),'Unknown active documentation version');
+  return catalog.versions.map(x=>({version:x.version,channel:x.channel,supported:x.supported,active:x.version===activeVersion,latestStable:x.version===catalog.latestStable,href:versionTopicURL(catalog,x.version,topic,basePath)}));
 }
 export {sha256};
