@@ -22,7 +22,7 @@ export function validateManifest(m){
   need(m.core?.name===`@${m.family}/core`,'Invalid core identity');parseVersion(m.core?.version);
   need(typeof m.core.integrity==='string' && /^sha512-[A-Za-z0-9+/]{86}==$/.test(m.core.integrity),'Invalid core integrity');
   need(m.source?.repository===`${m.family}design/${m.framework}` && /^[a-f0-9]{40}$/.test(m.source?.commit??'') && m.source.tag===m.implementation.tag,'Invalid source provenance');
-  need(/^[a-f0-9]{40}$/.test(m.fixtures?.workbenchCommit??''),'Unpinned shared fixtures');
+  need((m.fixtures?.source==='repository' && m.fixtures.workbenchCommit===undefined) || ((m.fixtures?.source===undefined || m.fixtures.source==='workbench') && /^[a-f0-9]{40}$/.test(m.fixtures?.workbenchCommit??'')),'Unpinned or ambiguous fixtures');
   need(m.toolchain && typeof m.toolchain==='object' && !Array.isArray(m.toolchain) && Object.keys(m.toolchain).length>0 && Object.values(m.toolchain).every(x=>typeof x==='string'&&/^\d+\.\d+\.\d+(?:-[0-9A-Za-z.-]+)?$/.test(x)),'Missing or unpinned build toolchain');
   need(typeof m.toolchain[m.framework==='jekyll'?'ruby':'node']==='string','Missing framework runtime');
   need(typeof m.createdAt==='string' && !Number.isNaN(Date.parse(m.createdAt)) && new Date(m.createdAt).toISOString()===m.createdAt,'Invalid snapshot timestamp');

@@ -29,6 +29,8 @@ test('tampering, unlisted files, malformed paths and invalid identities fail clo
     assert.throws(()=>validateManifest({...s.manifest,implementation:{...s.manifest.implementation,version:'1.4.0'}}));
     assert.throws(()=>validateManifest({...s.manifest,core:{...s.manifest.core,integrity:'sha512-fake'}}));
     assert.throws(()=>validateManifest({...s.manifest,toolchain:{node:'latest'}}));
+    assert.throws(()=>validateManifest({...s.manifest,fixtures:{source:'workbench'}}));
+    assert.doesNotThrow(()=>validateManifest({...s.manifest,fixtures:{source:'repository'}}));
     await assert.rejects(verifyArchive(s.dir,s.manifest,'f'.repeat(64)));
     await writeFile(join(s.dir,'other.js'),'unlisted');await assert.rejects(verifyArchive(s.dir,s.manifest,s.hash));await rm(join(s.dir,'other.js'));
     await symlink('index.html',join(s.dir,'link'));await assert.rejects(verifyArchive(s.dir,s.manifest,s.hash));await rm(join(s.dir,'link'));
