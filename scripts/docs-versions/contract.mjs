@@ -41,6 +41,20 @@ async function listRegularFiles(root,dir=''){
     else {need(stat.isFile(),'Only regular files are allowed');files.push(relative);}
   }return files;
 }
+function requireNoindex(path,bytes){
+  if(!path.endsWith('.html'))return;
+  const tags=bytes.toString('utf8').match(/<meta\b[^>]*>/gi)??[];
+  need(tags.some(t=>/\bname\s*=\s*["']robots["']/i.test(t)&&/\bcontent\s*=\s*["'][^"']*\bnoindex\b/i.test(t)),`Missing archive noindex: ${path}`);
+}
+export async function createManifest(root,metadata){
+  const absolute=resolve(root),stat=await lstat(absolute);need(stat.isDirectory()&&!stat.isSymbolicLink(),'Archive root must be a real directory');
+  const paths=(await listRegularFiles(absolute)).sort();need(!paths.includes('manifest.json'),'Refusing to overwrite an existing snapshot manifest');
+  const files=[];for(const path of paths){
+    need(validPath(path),'Invalid archive path');const bytes=await readFile(join(absolute,path));requireNoindex(path,bytes);
+    files.push({path,size:bytes.length,sha256:sha256(bytes)});
+  }
+  return validateManifest({...metadata,files});
+}
 export async function verifyArchive(root,manifest,expectedManifestSha256){
   validateManifest(manifest);const absolute=resolve(root);need((await lstat(absolute)).isDirectory() && !(await lstat(absolute)).isSymbolicLink(),'Archive root must be a real directory');
   const disk=(await listRegularFiles(absolute)).sort(),listed=[...manifest.files.map(x=>x.path),'manifest.json'].sort();
@@ -50,10 +64,7 @@ export async function verifyArchive(root,manifest,expectedManifestSha256){
   for(const entry of manifest.files){
     const path=resolve(absolute,entry.path);need(path.startsWith(absolute+sep),'Archive path escapes root');
     const bytes=await readFile(path);need(bytes.length===entry.size && sha256(bytes)===entry.sha256,`Integrity mismatch: ${entry.path}`);
-    if(entry.path.endsWith('.html')){
-      const tags=bytes.toString('utf8').match(/<meta\b[^>]*>/gi)??[];
-      need(tags.some(t=>/\bname\s*=\s*["']robots["']/i.test(t)&&/\bcontent\s*=\s*["'][^"']*\bnoindex\b/i.test(t)),`Missing archive noindex: ${entry.path}`);
-    }
+    requireNoindex(entry.path,bytes);
   }return true;
 }
 

@@ -4,7 +4,7 @@ import {mkdtemp,mkdir,writeFile,rm,symlink,rename} from 'node:fs/promises';
 import {tmpdir} from 'node:os';
 import {join} from 'node:path';
 import {spawnSync} from 'node:child_process';
-import {sha256,parseVersion,validateManifest,verifyArchive,validateCatalog,versionTopicURL} from './contract.mjs';
+import {sha256,parseVersion,validateManifest,createManifest,verifyArchive,validateCatalog,versionTopicURL} from './contract.mjs';
 
 async function snapshot(root,family,framework,version='2.1.0'){
   const dir=join(root,`${family}-${framework}-${version}`);await mkdir(dir,{recursive:true});
@@ -55,5 +55,23 @@ test('CLI verifies a complete catalog and rejects links to missing topics',async
     const run=()=>spawnSync(process.execPath,['scripts/docs-versions/verify.mjs',file,archives],{encoding:'utf8'});
     assert.equal(run().status,0);
     catalog.versions[0].topics=['missing.html'];await writeFile(file,JSON.stringify(catalog));assert.notEqual(run().status,0);
+  }finally{await rm(root,{recursive:true,force:true});}
+});
+test('archived HTML must declare noindex even when its digest is correct',async()=>{
+  const root=await mkdtemp(join(tmpdir(),'docs-indexing-'));try{
+    const s=await snapshot(root,'martlet','astro');const html=Buffer.from('<!doctype html><h1>No robots policy</h1>');
+    s.manifest.files[0]={path:'index.html',size:html.length,sha256:sha256(html)};
+    await writeFile(join(s.dir,'index.html'),html);const bytes=Buffer.from(JSON.stringify(s.manifest,null,2)+'\n');await writeFile(join(s.dir,'manifest.json'),bytes);
+    await assert.rejects(verifyArchive(s.dir,s.manifest,sha256(bytes)),/Missing archive noindex/);
+  }finally{await rm(root,{recursive:true,force:true});}
+});
+test('snapshot manifest generation hashes all content and refuses an existing manifest',async()=>{
+  const root=await mkdtemp(join(tmpdir(),'docs-generate-'));try{
+    const s=await snapshot(root,'krigsvold','react');
+    await assert.rejects(createManifest(s.dir,s.manifest),/Refusing to overwrite/);
+    await rm(join(s.dir,'manifest.json'));
+    const generated=await createManifest(s.dir,s.manifest);assert.deepEqual(generated,s.manifest);
+    const bytes=Buffer.from(JSON.stringify(generated,null,2)+'\n');await writeFile(join(s.dir,'manifest.json'),bytes);
+    assert.equal(await verifyArchive(s.dir,generated,sha256(bytes)),true);
   }finally{await rm(root,{recursive:true,force:true});}
 });
