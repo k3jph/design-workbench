@@ -1,0 +1,33 @@
+# Nightjar documentation hosting: reviewed configuration proposal
+
+This file describes the proposed routing and the checks needed before an administrator makes changes. It is not deployment authorization. No credentials, Cloudflare resources, records, or live settings are supplied or changed by this branch.
+
+## Observed inputs and limitations
+
+The two private website `main` branches name the existing Workers `martlettheme` and `krigsvoldtheme`; their checked-in `wrangler.json` files specify static asset bindings, but no custom routes. Cloudflare's dashboard, DNS, certificate state, Worker deployments, buckets and public source revision were not available for independent inspection. The maintainer previously reported both production branches as `main` and preview builds as disabled; recheck before any feature-branch push or configuration change.
+
+The executor's enforced network allowlist omits the eight proposed domains. A proxy-respecting HEAD request to `martletdesign.dev` returned curl exit 56, `CONNECT tunnel failed, response 403`, and HTTP `000`; the public web viewer could not access any of the eight hosts. These observations are an environment-access failure, not proof of a DNS, TLS, origin, or deployment failure. No Cloudflare identity is configured in the execution environment.
+
+Run `python3 scripts/docs-versions/check-site-hosts.py` for an offline schema check. From an administrator's network, run `python3 scripts/docs-versions/check-site-hosts.py --online > observations.json`; this makes only HTTPS HEAD requests using the inherited proxy and normal TLS verification. A transport, proxy, certificate or timeout error is **inconclusive**. An HTTP response records only what curl received; verify the actual origin and deployed revision separately. No host gets added dynamically from a remote response. For archive checks, specify a real immutable version and expected independently authenticated manifest digest and run the framework archive client's verification procedure; the HEAD probe does not do that work.
+
+## Host and route plan
+
+`nightjar-site-hosts.json` is the reviewed eight-host matrix. Main sites remain under their existing private-repository Git/Cloudflare process. Each of the six framework hosts needs an independently reviewed framework authority, full source-generated reference site and an archive gateway for `/docs/*` and `/_archive/*`. The upload route must require the reviewed authentication token; normal public clients only need GET/HEAD. Never expose a bucket directly as a public bucket to bypass manifest checks.
+
+Choose routing only after examining actual host ownership:
+
+1. If a framework Worker is the *entire* origin for a new hostname in the same Cloudflare zone and no existing DNS/Worker ownership conflicts, a Workers Custom Domain can bind that exact hostname. Cloudflare creates the DNS and certificate for this binding. The Worker must serve both the main framework site and archive endpoints; the archive-only draft currently does not provide the rest of the site.
+2. If an existing origin already owns the hostname, use specific proxied Worker Routes for `HOST/docs/*` and `HOST/_archive/*` only after verifying routing precedence, the existing proxied DNS record and origin fallback. Routes require a proxied DNS record. Ensure both read and authenticated write routes reach the intended Worker; do not add a catch-all route that displaces the site's other endpoints.
+
+The exact proposed archive routes are the Cartesian product of `astro`, `react`, and `jekyll` with `martletdesign.dev` and `krigsvolddesign.dev`, with the two paths above. The private R2 bucket, Worker name, zone ID, token secret, and independent checkpoint authority are deliberately **not** guessed. Their ownership and service binding need review. A Worker-bound R2 bucket is not write-once against a privileged bucket administrator; independently authenticated, anti-rollback history is still required before publication can be activated.
+
+For each host, record prior DNS records including type, target, TTL, proxy status and zone; existing Worker routes and deployment/version; TLS certificate hostname and expiration; current origin and repository revision; archive bucket/account and all principal permissions. Set TLS to an authenticated mode compatible with the existing origin and confirm certificate coverage; do not weaken it to accommodate a broken origin. Confirm the site, archive bytes and source identity from a network able to reach the actual hostname, at root and subpath, before linking it from a main site.
+
+## Later authorized activation and rollback
+
+1. Complete the independent checkpoint, catalog/promotion verification and actual storage/serving implementation, including every prior archive. Provision a test-only environment and verify conditional create, attempted overwrite/delete, concurrent promotion, recovery and every archived byte with independently pinned digests.
+2. Only after separate authorization, apply the reviewed Worker/bucket/DNS configuration to one framework host. Confirm TLS, origin identity, caching/MIME types, version selection, authorization rejection and historical URLs externally. Record the Cloudflare deployment and prior configuration.
+3. Activate remaining reviewed hosts, then separately integrate main-site cross-links. Never overwrite or delete a historical archive during activation or rollback.
+4. For a Worker code regression, an authorized operator may roll back to the recorded prior Worker version with Cloudflare's dashboard or `wrangler rollback`; this creates a new active deployment, so assess compatibility with stored data. Restore a previously captured route/DNS configuration only after confirming it still targets the intended origin. For a bad version promotion, use the reviewed append-only withdrawal and pointer-reconciliation procedure, preserving all archive bytes and independent checkpoints. Verify historical URLs, latest pointer, TLS and cache behavior after either rollback.
+
+Cloudflare references: [Custom Domains](https://developers.cloudflare.com/workers/configuration/routing/custom-domains/), [Routes](https://developers.cloudflare.com/workers/configuration/routing/routes/), [Worker rollbacks](https://developers.cloudflare.com/workers/versions-and-deployments/rollbacks/), and [R2 Workers API](https://developers.cloudflare.com/r2/api/workers/workers-api-reference/). The proposed runtime code and trust model need their own security and integration review; this document does not represent them as production-ready.

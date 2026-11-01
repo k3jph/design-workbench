@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "main": {
+    "martlet": "martletdesign.dev",
+    "krigsvold": "krigsvolddesign.dev"
+  },
+  "reference": {
+    "martlet": {
+      "astro": "astro.martletdesign.dev",
+      "react": "react.martletdesign.dev",
+      "jekyll": "jekyll.martletdesign.dev"
+    },
+    "krigsvold": {
+      "astro": "astro.krigsvolddesign.dev",
+      "react": "react.krigsvolddesign.dev",
+      "jekyll": "jekyll.krigsvolddesign.dev"
+    }
+  }
+}

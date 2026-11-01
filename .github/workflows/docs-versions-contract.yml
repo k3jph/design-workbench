@@ -14,3 +14,4 @@ jobs:
         with:
           node-version: '24'
       - run: node --test scripts/docs-versions/*.test.mjs
+      - run: python3 -m unittest discover -s tests -p 'test_site_hosts.py'
