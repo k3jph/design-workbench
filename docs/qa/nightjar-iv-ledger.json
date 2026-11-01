@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "observed_at_utc": "2026-11-01 20:06:18 UTC",
+  "observed_at_utc": "2026-11-01 20:09:09 UTC",
   "description": "Point-in-time observed refs and open PRs; CI and import status can change. Refreshed independently of production controls; historical runs do not verify later commits.",
   "repositories": [
     {
@@ -125,6 +125,7 @@
         "refs/heads/feature/astro-release-integration": "31eee31020870a95a64fbaa8ac2d96d224880bab",
         "refs/heads/feature/docs-r2-archive-gateway": "727a8faebc90220e731ab32ff109613cc42b9fe7",
         "refs/heads/feature/gitflow-policy": "f1daf48dcc5653b9edecea98745b73285f2bf72d",
+        "refs/heads/feature/nightjar-iv-docs-combined": "18fe98188792519ceb426384bbd7ade489904731",
         "refs/heads/feature/nightjar-iv-reference": "d84e09ba830cc694ecafcdd9c244c6e0c06e8c1c",
         "refs/heads/feature/tag-release-automation": "726bb904457728db29561c1a71bdfffbc45695de",
         "refs/heads/feature/versioned-docs-archive": "9efee0373ab5003742fe94aca2ace49910f85e54",
@@ -142,6 +143,15 @@
         "refs/tags/v1.2.2": "ed1f121ae991fd868e757228664d1c3a737c3c10"
       },
       "open_pull_requests": [
+        {
+          "number": 13,
+          "title": "Integrate full Astro reference with archive gateway rehearsal",
+          "head": "feature/nightjar-iv-docs-combined",
+          "sha": "18fe98188792519ceb426384bbd7ade489904731",
+          "base": "feature/astro-release-integration",
+          "draft": true,
+          "url": "https://github.com/martletdesign/astro/pull/13"
+        },
         {
           "number": 12,
           "title": "Extract canonical standalone Astro reference examples",
@@ -663,6 +673,7 @@
         "refs/heads/feature/astro-release-integration": "2f0fa4c34a1c508bcff000b84fbd52dab0c271a5",
         "refs/heads/feature/docs-r2-archive-gateway": "e979a406dae145e7d8ed6f178695fea5c4896d41",
         "refs/heads/feature/gitflow-policy": "14f70454bb57cd3a51618fd5191fbaaead594bc2",
+        "refs/heads/feature/nightjar-iv-docs-combined": "299a1c39042f72bf61ecbaf41b1defde1a1da527",
         "refs/heads/feature/nightjar-iv-reference": "79a2e3731696922909cc2e9d1c48488e58528721",
         "refs/heads/feature/tag-release-automation": "0ed4fee4c0a6ba1a191f523927095f3e78936436",
         "refs/heads/feature/versioned-docs-archive": "ab866003ecc04d92c7ee4c6592f9c8c58acd3c89",
@@ -680,10 +691,19 @@
       },
       "open_pull_requests": [
         {
+          "number": 13,
+          "title": "Integrate full Astro reference with archive gateway rehearsal",
+          "head": "feature/nightjar-iv-docs-combined",
+          "sha": "299a1c39042f72bf61ecbaf41b1defde1a1da527",
+          "base": "feature/astro-release-integration",
+          "draft": true,
+          "url": "https://github.com/krigsvolddesign/astro/pull/13"
+        },
+        {
           "number": 12,
           "title": "Extract canonical standalone Astro reference examples",
           "head": "feature/nightjar-iv-reference",
-          "sha": "9a4f423602557b9931c7e02e4b59933fcd8d0fa4",
+          "sha": "79a2e3731696922909cc2e9d1c48488e58528721",
           "base": "feature/astro-release-integration",
           "draft": true,
           "url": "https://github.com/krigsvolddesign/astro/pull/12"
@@ -1089,7 +1109,7 @@
         "refs/heads/feat/reference-research-page": "0295a1d82a1b39a5811db09f8bb6780669d43d79",
         "refs/heads/feature/gitflow-release-preparation": "a492e12618dd178fd5cee7fbe5487d512f1e3cc7",
         "refs/heads/feature/nightjar-iv-checked-inputs": "948acddfd153fadbd36e83de3efcbecf353216b0",
-        "refs/heads/feature/nightjar-iv-ledger": "bfc18ee21052284b7e0e1739695d1079ed7dfec4",
+        "refs/heads/feature/nightjar-iv-ledger": "ce02f06746b8dfe30e88729ec7c1607cd1734ce8",
         "refs/heads/feature/nightjar-iv-ruleset-audit": "623a7797ced40791db6950718468d2d0e8de5daf",
         "refs/heads/feature/versioned-docs-contract": "366dd2114cf08115a58e58cfc4c1f1d4bb781e7e",
         "refs/heads/fix/adoption-completion": "8d1e9b3e0991ad5568fb3f950e4789d17848cc0b",
@@ -1177,7 +1197,7 @@
           "number": 75,
           "title": "Require verification for declared portable package inputs",
           "head": "feature/nightjar-iv-checked-inputs",
-          "sha": "3ae94f8b3a02f9a005c39d7bcabdf1836cfa6b9a",
+          "sha": "948acddfd153fadbd36e83de3efcbecf353216b0",
           "base": "nightjar3/framework-extensibility",
           "draft": true,
           "url": "https://github.com/k3jph/design-workbench/pull/75"
@@ -1186,7 +1206,7 @@
           "number": 74,
           "title": "Track Nightjar IV implementation and repository evidence",
           "head": "feature/nightjar-iv-ledger",
-          "sha": "90169fd40344543a74345f6020a04a991b65c223",
+          "sha": "ce02f06746b8dfe30e88729ec7c1607cd1734ce8",
           "base": "develop",
           "draft": true,
           "url": "https://github.com/k3jph/design-workbench/pull/74"
@@ -1195,7 +1215,7 @@
           "number": 73,
           "title": "Audit GitFlow rulesets without changing production settings",
           "head": "feature/nightjar-iv-ruleset-audit",
-          "sha": "73c45de7e55d127a8b516e73d83006cf3e6f149a",
+          "sha": "623a7797ced40791db6950718468d2d0e8de5daf",
           "base": "feature/gitflow-release-preparation",
           "draft": true,
           "url": "https://github.com/k3jph/design-workbench/pull/73"
@@ -1733,6 +1753,59 @@
       "limitations": [
         "Archive adapter and full references remain separate branches; integration, independent protected checkpoint, live IAM and production serving remain unverified.",
         "No actual publication or deployment."
+      ]
+    },
+    {
+      "scope": "Astro combined full-reference and R2 test-gateway candidate",
+      "checks": [
+        "Both integration candidates passed 23 local tests and built 57 pages.",
+        "Full local build, upload to in-memory R2 gateway and verification of every archive byte passed for both languages at root and /preview.",
+        "Hosted R2 gateway and existing-version checks passed on #13 heads."
+      ],
+      "commits": {
+        "martlet": "18fe98188792519ceb426384bbd7ade489904731",
+        "krigsvold": "299a1c39042f72bf61ecbaf41b1defde1a1da527"
+      },
+      "runs": [
+        "https://github.com/martletdesign/astro/actions/runs/41345285192",
+        "https://github.com/krigsvolddesign/astro/actions/runs/41345288999"
+      ],
+      "limitations": [
+        "Browser and package workflows for #13 are pending at this snapshot.",
+        "No independent off-bucket trust anchor, verified live IAM, production serving or deployed archive. Release gate remains disabled.",
+        "Local snapshot digests vary with timestamp and source commit; they are not release artifact hashes."
+      ]
+    },
+    {
+      "scope": "React nonpublishing release drafts",
+      "checks": [
+        "Both hosted standalone package and nonpublishing release rehearsal workflows passed on #2 heads."
+      ],
+      "runs": [
+        "https://github.com/martletdesign/react/actions/runs/41344956684",
+        "https://github.com/martletdesign/react/actions/runs/41344956678",
+        "https://github.com/krigsvolddesign/react/actions/runs/41344957769",
+        "https://github.com/krigsvolddesign/react/actions/runs/41344957743"
+      ],
+      "limitations": [
+        "Tag protection simulated; no actual npm OIDC publication or authority handoff.",
+        "Immutable documentation gate is deliberately unresolved."
+      ]
+    },
+    {
+      "scope": "Workbench policy and conformance",
+      "checks": [
+        "GitFlow #73 local 14 tests and hosted workbench checks passed.",
+        "Conformance #75 hosted adapter contract and workbench checks passed; local static Jekyll runner checks cover 50 routes in both languages and two bases."
+      ],
+      "runs": [
+        "https://github.com/k3jph/design-workbench/actions/runs/41344622975",
+        "https://github.com/k3jph/design-workbench/actions/runs/41344545208",
+        "https://github.com/k3jph/design-workbench/actions/runs/41344545204"
+      ],
+      "limitations": [
+        "Live repository rulesets remain unverified by administrator-authenticated audit.",
+        "Package input mode cannot prove an implementation declares every actual dependency."
       ]
     }
   ],
