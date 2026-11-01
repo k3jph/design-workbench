@@ -2114,6 +2114,37 @@
         "gh attestation commands and GitHub release metadata were simulated; no live cryptographic verification.",
         "Immutable releases can be deleted; anti-rollback head, live storage controls and serving remain outstanding."
       ]
+    },
+    {
+      "scope": "Native 1.0.0 local reproducible ZIPs",
+      "artifacts_sha256": {
+        "martletdesign/vim": "fe2251be7ac591daa438812ba57cfdab3aa7339c6629685b1016eff1719d2d83",
+        "martletdesign/emacs": "41508873ec0cdc764a139ffc3ec0b1dd0890f111ae4c7c178283bb89c13841c0",
+        "martletdesign/chrome-dark": "d8050bcacf3fbad2e98d36687e942c58d8b389cc84a27e380ef7d1f40d224e62",
+        "martletdesign/chrome-light": "0934d182de92b232cdf8b3f88f29005b0335991064921cf497f50b0696ecff41",
+        "martletdesign/firefox": "cb82e04565469d8db9daf2ea236d08fa24755ac0f6777a3e68f60819d68ebea3",
+        "krigsvolddesign/vim": "751bc32bc3959230e27ba009c2275d7da5da9518b8a011bbb060d8eb926afe33",
+        "krigsvolddesign/emacs": "a4136a2281c6d229321f51747fc9902478679e1a42e60741cc35c521449079b4",
+        "krigsvolddesign/chrome-dark": "2b4b73423258a3a6089e86fe76c1ba604712955ce6871c5d50830a215ecf64dd",
+        "krigsvolddesign/chrome-light": "1f1df30997f7dbccf18c26d4e707ea8668c9422f4869738bed1e7fae6b59fba8",
+        "krigsvolddesign/firefox": "93a804f61a9ae3de6df2f4cbf2f9d2cab5c842e0a45f5ed7450442da49b93c75"
+      },
+      "limitations": [
+        "These local archive digests are rehearsal outputs, not published or approved release artifacts."
+      ]
+    },
+    {
+      "scope": "Latest React #6 hosted status",
+      "checks": [
+        "Martlet R2 gateway and nonpublishing release rehearsal passed."
+      ],
+      "runs": [
+        "https://github.com/martletdesign/react/actions/runs/41346590585",
+        "https://github.com/martletdesign/react/actions/runs/41346590597"
+      ],
+      "limitations": [
+        "Other latest Martlet and Krigsvold React #6 workflows were queued at observation."
+      ]
     }
   ],
   "blockers": [
