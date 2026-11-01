@@ -82,3 +82,29 @@ test('snapshot manifest generation hashes all content and refuses an existing ma
     assert.equal(await verifyArchive(s.dir,generated,sha256(bytes)),true);
   }finally{await rm(root,{recursive:true,force:true});}
 });
+
+test('legacy Jekyll manifests bind historical theme identity to exact archived shell bytes',async()=>{
+  const root=await mkdtemp(join(tmpdir(),'legacy-jekyll-contract-'));try{
+    for(const family of ['martlet','krigsvold']){
+      const s=await snapshot(root,family,'jekyll');const css=Buffer.from(`/* ${family} historical shell */`);
+      await mkdir(join(s.dir,'assets/css'),{recursive:true});await writeFile(join(s.dir,'assets/css/shell.css'),css);
+      const legacy={name:`@${family}/theme`,version:'2.2.2',integrity:`sha512-${Buffer.alloc(64,2).toString('base64')}`,sourceShellSha256:sha256(css)};
+      const m={...s.manifest,core:null,legacyTheme:legacy,files:[...s.manifest.files,{path:'assets/css/shell.css',size:css.length,sha256:sha256(css)}]};
+      const bytes=Buffer.from(JSON.stringify(m,null,2)+'\n');await writeFile(join(s.dir,'manifest.json'),bytes);
+      assert.equal(await verifyArchive(s.dir,m,sha256(bytes)),true);
+      assert.throws(()=>validateManifest({...m,framework:'astro'}));
+      assert.throws(()=>validateManifest({...m,core:{name:`@${family}/core`,version:'2.2.3',integrity:legacy.integrity}}),/ambiguous/);
+      assert.throws(()=>validateManifest({...m,legacyTheme:{...legacy,name:`@${family}/core`}}));
+      assert.throws(()=>validateManifest({...m,legacyTheme:{...legacy,integrity:'fake'}}));
+      assert.throws(()=>validateManifest({...m,legacyTheme:{...legacy,sourceShellSha256:'f'.repeat(64)}}),/shell digest/);
+      await writeFile(join(s.dir,'assets/css/shell.css'),'tampered');await assert.rejects(verifyArchive(s.dir,m,sha256(bytes)));
+    }
+  }finally{await rm(root,{recursive:true,force:true});}
+});
+
+test('prerelease-only catalogs have no stable promotion target',()=>{
+ const c={schemaVersion:1,family:'martlet',framework:'jekyll',latestStable:null,versions:[{version:'0.1.0-rc.1',channel:'prerelease',manifestSha256:'a'.repeat(64),supported:false,topics:['index.html']}]};
+ assert.equal(validateCatalog(c),c);assert.equal(versionNavigationModel(c,'0.1.0-rc.1','index.html')[0].latestStable,false);
+ assert.throws(()=>validateCatalog({...c,latestStable:'0.1.0-rc.1'}));
+ assert.throws(()=>validateCatalog({...c,latestStable:undefined}));
+});
