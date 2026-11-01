@@ -26,13 +26,13 @@ jobs:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
           repository: martletdesign/core
-          ref: 70ebe3a8677088ba70e50dfb71593ae3acadb6d5
+          ref: 107257a176b960cdf94f87fda95a3fe563c48111
           path: .core-martlet
           persist-credentials: false
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
           repository: krigsvolddesign/core
-          ref: 83312be5d77139e8357b3b363be07ea956c4774e
+          ref: 39e000864082b93cce75df368a9bbeccbd5284ce
           path: .core-krigsvold
           persist-credentials: false
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
@@ -52,8 +52,8 @@ jobs:
           chmod -R go-rwx .core-martlet .core-krigsvold
           for family in martlet krigsvold; do (cd ".core-$family" && npm ci --ignore-scripts); done
           export NIGHTJAR_NPM_CLI="$(readlink -f "$(command -v npm)")"
-          node scripts/core-release/prepare-artifact.mjs .core-martlet 70ebe3a8677088ba70e50dfb71593ae3acadb6d5 @martlet/core 2.2.3 "$RUNNER_TEMP/martlet"
-          node scripts/core-release/prepare-artifact.mjs .core-krigsvold 83312be5d77139e8357b3b363be07ea956c4774e @krigsvold/core 2.2.4 "$RUNNER_TEMP/krigsvold"
+          node scripts/core-release/prepare-artifact.mjs .core-martlet 107257a176b960cdf94f87fda95a3fe563c48111 @martlet/core 2.2.3 "$RUNNER_TEMP/martlet"
+          node scripts/core-release/prepare-artifact.mjs .core-krigsvold 39e000864082b93cce75df368a9bbeccbd5284ce @krigsvold/core 2.2.4 "$RUNNER_TEMP/krigsvold"
           printf '%s  %s\n' '1395eb206514b54500e4a098b1aafe59492c516c301a7e8c81a18672f6f4ce42' "$RUNNER_TEMP/martlet/martlet-core-2.2.3.tgz" | sha256sum --check
           printf '%s  %s\n' 'c2088b2585e913c11f74a045805bcef186e8e830f5c626e46c0c299e6a6eb7c4' "$RUNNER_TEMP/krigsvold/krigsvold-core-2.2.4.tgz" | sha256sum --check
           node scripts/core-release/verify-consumer.mjs "$RUNNER_TEMP/martlet/martlet-core-2.2.3.tgz" @martlet/core 2.2.3 1395eb206514b54500e4a098b1aafe59492c516c301a7e8c81a18672f6f4ce42
