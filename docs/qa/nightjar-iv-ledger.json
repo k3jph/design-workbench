@@ -1,0 +1,1364 @@
+{
+  "schema_version": 1,
+  "observed_at_utc": "2026-11-01 19:57:25 UTC",
+  "description": "Point-in-time inventory; a recorded draft or historic run is not an integration or production approval. Refresh refs and pull requests before decisions.",
+  "repositories": [
+    {
+      "repository": "martletdesign/core",
+      "visibility": "public",
+      "default_branch": "main",
+      "gitflow_exempt": false,
+      "refs": {
+        "refs/heads/develop": "3a504ce2c2d34c7dc44cf5ec094d255eaf1aeac6",
+        "refs/heads/feature/gitflow-policy": "7fc6d426aa0f65443199beea0026bb29ea745167",
+        "refs/heads/feature/tag-release-automation": "2e63a0c95b8e8a573c8edf355a1c651addb8f342",
+        "refs/heads/fix/adoption-repair-03": "7e130a937b730292e940deb4c41a9b164ef0b0a2",
+        "refs/heads/main": "3a504ce2c2d34c7dc44cf5ec094d255eaf1aeac6",
+        "refs/heads/migration/core-contrast": "4bc45ff0bd1ee2e93ee61917b023f7b45686895f",
+        "refs/heads/migration/core-package": "f4c18540e643388c71da2308607cc8f944b32391",
+        "refs/heads/migration/core-release-proposal": "7200e334acc98d7fb14b61bef767d0e511e38df2",
+        "refs/heads/migration/staged-publication-proposal": "107257a176b960cdf94f87fda95a3fe563c48111",
+        "refs/heads/nightjar/design-types": "8a777801eb8385ea532e2b960084453f03a37ad0",
+        "refs/heads/preparation/activate-core-stage": "390206eda2495f5950717e1621a584a7c7274182",
+        "refs/heads/preparation/stage-gate-hardening": "8bbc9493c7b580577595f3f3192d49d378dcb620",
+        "refs/heads/work/design-charter": "1825b49e497d72dff0d463cee9baac7ad35041e8",
+        "refs/heads/work/experimental-release-fixes": "8190e1ad71788c15bec19eac4875af7e15f4f8cf",
+        "refs/heads/work/foundations-spec": "7e083536e0a4943029f3b3c801d65b776cc21552",
+        "refs/heads/work/layout-system": "36f6d52e5e3e25f5843243a9d644341c4d54f958",
+        "refs/heads/work/martlet-design-system": "ade0d4a16bea7e43f15e8ec029cca8def378f7f0",
+        "refs/tags/v2.1.0": "a693b5b2aa26a31c0b24fba13b2cab56153e36ca",
+        "refs/tags/v2.2.0": "93612a7c2cb876e6204110fc022be8cc0d5487bf",
+        "refs/tags/v2.2.1": "8da4493e97f384bd498c4f5982c6618cdb9fba6c",
+        "refs/tags/v2.2.2": "0ee1de92350aa3c1f6c4abacc253a0a0e02fab1b"
+      },
+      "open_pull_requests": [
+        {
+          "number": 16,
+          "title": "Prepare disabled tag-driven core releases",
+          "head": "feature/tag-release-automation",
+          "sha": "fdd40ad1b23a703b32d79bf59dca9722b4c38905",
+          "base": "develop",
+          "draft": true,
+          "url": "https://github.com/martletdesign/core/pull/16"
+        },
+        {
+          "number": 15,
+          "title": "Prepare GitFlow branch policy and checks",
+          "head": "feature/gitflow-policy",
+          "sha": "7fc6d426aa0f65443199beea0026bb29ea745167",
+          "base": "develop",
+          "draft": true,
+          "url": "https://github.com/martletdesign/core/pull/15"
+        },
+        {
+          "number": 12,
+          "title": "Harden the disabled core staging proposal",
+          "head": "preparation/stage-gate-hardening",
+          "sha": "8bbc9493c7b580577595f3f3192d49d378dcb620",
+          "base": "migration/staged-publication-proposal",
+          "draft": true,
+          "url": "https://github.com/martletdesign/core/pull/12"
+        },
+        {
+          "number": 11,
+          "title": "Propose disabled human-reviewed npm staging workflow",
+          "head": "migration/staged-publication-proposal",
+          "sha": "107257a176b960cdf94f87fda95a3fe563c48111",
+          "base": "migration/core-release-proposal",
+          "draft": true,
+          "url": "https://github.com/martletdesign/core/pull/11"
+        },
+        {
+          "number": 10,
+          "title": "Propose 2.2.3 for the first core release",
+          "head": "migration/core-release-proposal",
+          "sha": "7200e334acc98d7fb14b61bef767d0e511e38df2",
+          "base": "migration/core-contrast",
+          "draft": true,
+          "url": "https://github.com/martletdesign/core/pull/10"
+        },
+        {
+          "number": 9,
+          "title": "Preserve button contrast during enable transitions",
+          "head": "migration/core-contrast",
+          "sha": "4bc45ff0bd1ee2e93ee61917b023f7b45686895f",
+          "base": "migration/core-package",
+          "draft": true,
+          "url": "https://github.com/martletdesign/core/pull/9"
+        },
+        {
+          "number": 7,
+          "title": "Expose all design tokens and provenance in TypeScript",
+          "head": "nightjar/design-types",
+          "sha": "8a777801eb8385ea532e2b960084453f03a37ad0",
+          "base": "develop",
+          "draft": true,
+          "url": "https://github.com/martletdesign/core/pull/7"
+        }
+      ],
+      "verification": [],
+      "blockers": []
+    },
+    {
+      "repository": "martletdesign/astro",
+      "visibility": "public",
+      "default_branch": "main",
+      "gitflow_exempt": false,
+      "refs": {
+        "refs/heads/develop": "ed1f121ae991fd868e757228664d1c3a737c3c10",
+        "refs/heads/feature/astro-release-integration": "155fb9b96dc98812269269f6704447a72e19fecb",
+        "refs/heads/feature/gitflow-policy": "f1daf48dcc5653b9edecea98745b73285f2bf72d",
+        "refs/heads/feature/tag-release-automation": "726bb904457728db29561c1a71bdfffbc45695de",
+        "refs/heads/feature/versioned-docs-archive": "9efee0373ab5003742fe94aca2ace49910f85e54",
+        "refs/heads/fix/adoption-repair-03": "b600ac6d91c6d25885e55b7597fb7754aa5f7988",
+        "refs/heads/main": "ed1f121ae991fd868e757228664d1c3a737c3c10",
+        "refs/heads/migration/core-package": "178a0f48aedefa1295f48f33098c0ad16b0d8d47",
+        "refs/heads/work/experimental-release-fixes": "114c43c09c868ae41f57e33acb340594a31940b9",
+        "refs/heads/work/layout-system": "bd6b836fd4c50abd34675ca1a1606f5ec1de0e53",
+        "refs/heads/work/martlet-astro-package": "fb44283147f639f59f370b72d846961b1c291071",
+        "refs/heads/work/source-consolidation": "968ed365184aa1112b897f81342cdc3e98c0a736",
+        "refs/heads/work/stop-layout-run": "f6114454a3d7eb3ef89ecf2935c7971f154bd7ca",
+        "refs/tags/v1.1.0": "c7ae7b0ee9c964b1ffb098422c0dec412ef70749",
+        "refs/tags/v1.2.0": "6f5bfd5e575b2bd589e6ad0976732cecf11508cf",
+        "refs/tags/v1.2.1": "f04e19a16eac29eb8c144816f027d84e6c83f083",
+        "refs/tags/v1.2.2": "ed1f121ae991fd868e757228664d1c3a737c3c10"
+      },
+      "open_pull_requests": [
+        {
+          "number": 10,
+          "title": "Integrate disabled Astro tag release and documentation gates",
+          "head": "feature/astro-release-integration",
+          "sha": "155fb9b96dc98812269269f6704447a72e19fecb",
+          "base": "feature/versioned-docs-archive",
+          "draft": true,
+          "url": "https://github.com/martletdesign/astro/pull/10"
+        },
+        {
+          "number": 9,
+          "title": "Rehearse pinned immutable Astro documentation archives",
+          "head": "feature/versioned-docs-archive",
+          "sha": "9efee0373ab5003742fe94aca2ace49910f85e54",
+          "base": "migration/core-package",
+          "draft": true,
+          "url": "https://github.com/martletdesign/astro/pull/9"
+        },
+        {
+          "number": 8,
+          "title": "Prepare disabled Astro tag releases",
+          "head": "feature/tag-release-automation",
+          "sha": "726bb904457728db29561c1a71bdfffbc45695de",
+          "base": "develop",
+          "draft": true,
+          "url": "https://github.com/martletdesign/astro/pull/8"
+        },
+        {
+          "number": 7,
+          "title": "Prepare GitFlow branch policy and checks",
+          "head": "feature/gitflow-policy",
+          "sha": "f1daf48dcc5653b9edecea98745b73285f2bf72d",
+          "base": "develop",
+          "draft": true,
+          "url": "https://github.com/martletdesign/astro/pull/7"
+        },
+        {
+          "number": 6,
+          "title": "Rehearse Astro migration to @martlet/core",
+          "head": "migration/core-package",
+          "sha": "178a0f48aedefa1295f48f33098c0ad16b0d8d47",
+          "base": "develop",
+          "draft": true,
+          "url": "https://github.com/martletdesign/astro/pull/6"
+        }
+      ],
+      "verification": [],
+      "blockers": []
+    },
+    {
+      "repository": "martletdesign/react",
+      "visibility": "public",
+      "default_branch": "main",
+      "gitflow_exempt": false,
+      "refs": {
+        "refs/heads/develop": "3c77b664ea80d0a58599dc5d7391b3d013c9570e",
+        "refs/heads/feature/independent-react-source": "3c77b664ea80d0a58599dc5d7391b3d013c9570e",
+        "refs/heads/main": "3c77b664ea80d0a58599dc5d7391b3d013c9570e"
+      },
+      "open_pull_requests": [],
+      "verification": [],
+      "blockers": []
+    },
+    {
+      "repository": "martletdesign/jekyll",
+      "visibility": "public",
+      "default_branch": "main",
+      "gitflow_exempt": false,
+      "refs": {
+        "refs/heads/develop": "afcf62bc9bb676f1ae5fe27757d79db6dde94021",
+        "refs/heads/feature/nightjar-iv-source-transfer": "afcf62bc9bb676f1ae5fe27757d79db6dde94021",
+        "refs/heads/main": "afcf62bc9bb676f1ae5fe27757d79db6dde94021"
+      },
+      "open_pull_requests": [],
+      "verification": [],
+      "blockers": []
+    },
+    {
+      "repository": "martletdesign/vim",
+      "visibility": "public",
+      "default_branch": "main",
+      "gitflow_exempt": false,
+      "refs": {
+        "refs/heads/develop": "cc11258a7e98125cc8524d0bac8725b1983d3264",
+        "refs/heads/feature/gitflow-policy": "8fe66697b4abc748bd382660798f316177d1bc59",
+        "refs/heads/feature/native-tag-artifacts": "b62b410730b2b2992578a65276b61a78bc58306a",
+        "refs/heads/main": "cc11258a7e98125cc8524d0bac8725b1983d3264"
+      },
+      "open_pull_requests": [
+        {
+          "number": 2,
+          "title": "Prepare disabled native tag artifact rehearsal",
+          "head": "feature/native-tag-artifacts",
+          "sha": "b62b410730b2b2992578a65276b61a78bc58306a",
+          "base": "develop",
+          "draft": true,
+          "url": "https://github.com/martletdesign/vim/pull/2"
+        },
+        {
+          "number": 1,
+          "title": "Prepare GitFlow branch policy and checks",
+          "head": "feature/gitflow-policy",
+          "sha": "8fe66697b4abc748bd382660798f316177d1bc59",
+          "base": "develop",
+          "draft": true,
+          "url": "https://github.com/martletdesign/vim/pull/1"
+        }
+      ],
+      "verification": [],
+      "blockers": []
+    },
+    {
+      "repository": "martletdesign/emacs",
+      "visibility": "public",
+      "default_branch": "main",
+      "gitflow_exempt": false,
+      "refs": {
+        "refs/heads/develop": "a5bc82518e7c1269f961a031519f2939e2e99735",
+        "refs/heads/feature/gitflow-policy": "6eb76589af3279d212dc53d44ba3b8e5c55e6b84",
+        "refs/heads/feature/native-tag-artifacts": "254fd21e7ed77c25af81141087d584cab9425b37",
+        "refs/heads/main": "a5bc82518e7c1269f961a031519f2939e2e99735"
+      },
+      "open_pull_requests": [
+        {
+          "number": 2,
+          "title": "Prepare disabled native tag artifact rehearsal",
+          "head": "feature/native-tag-artifacts",
+          "sha": "254fd21e7ed77c25af81141087d584cab9425b37",
+          "base": "develop",
+          "draft": true,
+          "url": "https://github.com/martletdesign/emacs/pull/2"
+        },
+        {
+          "number": 1,
+          "title": "Prepare GitFlow branch policy and checks",
+          "head": "feature/gitflow-policy",
+          "sha": "6eb76589af3279d212dc53d44ba3b8e5c55e6b84",
+          "base": "develop",
+          "draft": true,
+          "url": "https://github.com/martletdesign/emacs/pull/1"
+        }
+      ],
+      "verification": [],
+      "blockers": []
+    },
+    {
+      "repository": "martletdesign/chrome",
+      "visibility": "public",
+      "default_branch": "main",
+      "gitflow_exempt": false,
+      "refs": {
+        "refs/heads/develop": "08dbd2c2ea04203e8059bc25cc48b58598c6bbc8",
+        "refs/heads/feature/gitflow-policy": "94295876add096b86915cd022f23cab7301e17e5",
+        "refs/heads/feature/native-tag-artifacts": "4025cae52220cb7e5aba20fcd3051c600a156987",
+        "refs/heads/main": "08dbd2c2ea04203e8059bc25cc48b58598c6bbc8"
+      },
+      "open_pull_requests": [
+        {
+          "number": 2,
+          "title": "Prepare disabled native tag artifact rehearsal",
+          "head": "feature/native-tag-artifacts",
+          "sha": "4025cae52220cb7e5aba20fcd3051c600a156987",
+          "base": "develop",
+          "draft": true,
+          "url": "https://github.com/martletdesign/chrome/pull/2"
+        },
+        {
+          "number": 1,
+          "title": "Prepare GitFlow branch policy and checks",
+          "head": "feature/gitflow-policy",
+          "sha": "94295876add096b86915cd022f23cab7301e17e5",
+          "base": "develop",
+          "draft": true,
+          "url": "https://github.com/martletdesign/chrome/pull/1"
+        }
+      ],
+      "verification": [],
+      "blockers": []
+    },
+    {
+      "repository": "martletdesign/firefox",
+      "visibility": "public",
+      "default_branch": "main",
+      "gitflow_exempt": false,
+      "refs": {
+        "refs/heads/develop": "37331f26d67ec51e0c7e12e78d4ff1b16b4b1553",
+        "refs/heads/feature/gitflow-policy": "1c4a7a447ebae727c6307d6bd471d43c54c629b5",
+        "refs/heads/feature/native-tag-artifacts": "a95ad9035d9c85c910865888b61506da50dd8aa2",
+        "refs/heads/main": "37331f26d67ec51e0c7e12e78d4ff1b16b4b1553"
+      },
+      "open_pull_requests": [
+        {
+          "number": 2,
+          "title": "Prepare disabled native tag artifact rehearsal",
+          "head": "feature/native-tag-artifacts",
+          "sha": "a95ad9035d9c85c910865888b61506da50dd8aa2",
+          "base": "develop",
+          "draft": true,
+          "url": "https://github.com/martletdesign/firefox/pull/2"
+        },
+        {
+          "number": 1,
+          "title": "Prepare GitFlow branch policy and checks",
+          "head": "feature/gitflow-policy",
+          "sha": "1c4a7a447ebae727c6307d6bd471d43c54c629b5",
+          "base": "develop",
+          "draft": true,
+          "url": "https://github.com/martletdesign/firefox/pull/1"
+        }
+      ],
+      "verification": [],
+      "blockers": []
+    },
+    {
+      "repository": "martletdesign/website",
+      "visibility": "private",
+      "default_branch": "main",
+      "gitflow_exempt": true,
+      "refs": null,
+      "open_pull_requests": [
+        {
+          "number": 34,
+          "title": "Prepare martlet website for core package migration",
+          "head": "migration/core-website-release-proposals",
+          "sha": "fae4502a5b1aa3d745c4f4d90171c717ccc76c8a",
+          "base": "main",
+          "draft": true,
+          "url": "https://github.com/martletdesign/website/pull/34"
+        },
+        {
+          "number": 32,
+          "title": "Update site dependencies for Astro security fixes",
+          "head": "nightjar/site-security",
+          "sha": "6dfce8703cb31f4ae84092806b3dd6ccff9534b5",
+          "base": "main",
+          "draft": true,
+          "url": "https://github.com/martletdesign/website/pull/32"
+        },
+        {
+          "number": 7,
+          "title": "Show layout primitives and complete page compositions",
+          "head": "work/layout-showcase",
+          "sha": "23fc0385ac339841a148886e49c5f37b99b1119f",
+          "base": "main",
+          "draft": true,
+          "url": "https://github.com/martletdesign/website/pull/7"
+        }
+      ],
+      "verification": [],
+      "blockers": []
+    },
+    {
+      "repository": "krigsvolddesign/core",
+      "visibility": "public",
+      "default_branch": "main",
+      "gitflow_exempt": false,
+      "refs": {
+        "refs/heads/develop": "d7b6c2c9d09aa4b82f24dfc84a751c0946fa458a",
+        "refs/heads/feature/gitflow-policy": "21bae6e8475964810ea8aad0b59e8e133b59b3c1",
+        "refs/heads/feature/tag-release-automation": "1ec3336dcf91eb46f8810b52d470168c39f56638",
+        "refs/heads/fix/adoption-repair-03": "cb1ed336f4fb0204735ca4751d2928d0bdeb2501",
+        "refs/heads/fix/nested-source-actions": "86e610a6f5f79115d740d1c989fcbc71c1ef52f4",
+        "refs/heads/main": "d7b6c2c9d09aa4b82f24dfc84a751c0946fa458a",
+        "refs/heads/migration/core-contrast": "2675078f5fb292920f927b088b87d267dab99701",
+        "refs/heads/migration/core-package": "4e6b49131ebc9035796906e7c075e4cf50256e29",
+        "refs/heads/migration/core-release-proposal": "24d5a7eb9a25f4464f29c4d30e3c675e10ad4888",
+        "refs/heads/migration/staged-publication-proposal": "39e000864082b93cce75df368a9bbeccbd5284ce",
+        "refs/heads/nightjar/design-types": "191196d090bd3495dcf8274d379e42ef80d96f4d",
+        "refs/heads/preparation/activate-core-stage": "7c5e72ef8566c41de354c63ef003ddba7be42a2b",
+        "refs/heads/preparation/stage-gate-hardening": "d03154614f8308b7485daa4a8126b2fccc29a3c4",
+        "refs/heads/work/design-charter": "fad1972eabf7d7afe21fbd9ce0554600ad930517",
+        "refs/heads/work/experimental-release-fixes": "f567b51abbe199f89cbb09b5a8cb9e77bed1e117",
+        "refs/heads/work/foundations-spec": "e1d77048df1c5b3ecfe5b214e3fda4f9fa4de259",
+        "refs/heads/work/krigsvold-design-system": "a8f79e1aa34ce0e179627c0e810702e47fc95671",
+        "refs/heads/work/layout-system": "9d4c8bab6d5ab1afe6c593e56eb81bcdee2b3494",
+        "refs/tags/v2.1.0": "b2e25c33b884e8b7253c1d12a8f00a7c33509df7",
+        "refs/tags/v2.2.0": "91219e04565df915a63cfd3ffd4d40a84f213637",
+        "refs/tags/v2.2.1": "a1c9287d8c85e46f90d40db9fca30de53ee44fa7",
+        "refs/tags/v2.2.2": "b07a726bbc8728e7badbd18df6db09bbfceb5752",
+        "refs/tags/v2.2.3": "5deb567f7afcd8bedb50f9ea3f3fb501bc2ae7a8"
+      },
+      "open_pull_requests": [
+        {
+          "number": 17,
+          "title": "Prepare disabled tag-driven core releases",
+          "head": "feature/tag-release-automation",
+          "sha": "7270c5735a8dea130a921a5abb440ff8dda2abe6",
+          "base": "develop",
+          "draft": true,
+          "url": "https://github.com/krigsvolddesign/core/pull/17"
+        },
+        {
+          "number": 16,
+          "title": "Prepare GitFlow branch policy and checks",
+          "head": "feature/gitflow-policy",
+          "sha": "21bae6e8475964810ea8aad0b59e8e133b59b3c1",
+          "base": "develop",
+          "draft": true,
+          "url": "https://github.com/krigsvolddesign/core/pull/16"
+        },
+        {
+          "number": 13,
+          "title": "Harden the disabled core staging proposal",
+          "head": "preparation/stage-gate-hardening",
+          "sha": "d03154614f8308b7485daa4a8126b2fccc29a3c4",
+          "base": "migration/staged-publication-proposal",
+          "draft": true,
+          "url": "https://github.com/krigsvolddesign/core/pull/13"
+        },
+        {
+          "number": 12,
+          "title": "Propose disabled human-reviewed npm staging workflow",
+          "head": "migration/staged-publication-proposal",
+          "sha": "39e000864082b93cce75df368a9bbeccbd5284ce",
+          "base": "migration/core-release-proposal",
+          "draft": true,
+          "url": "https://github.com/krigsvolddesign/core/pull/12"
+        },
+        {
+          "number": 11,
+          "title": "Propose 2.2.4 for the first core release",
+          "head": "migration/core-release-proposal",
+          "sha": "24d5a7eb9a25f4464f29c4d30e3c675e10ad4888",
+          "base": "migration/core-contrast",
+          "draft": true,
+          "url": "https://github.com/krigsvolddesign/core/pull/11"
+        },
+        {
+          "number": 10,
+          "title": "Preserve button contrast during enable transitions",
+          "head": "migration/core-contrast",
+          "sha": "2675078f5fb292920f927b088b87d267dab99701",
+          "base": "migration/core-package",
+          "draft": true,
+          "url": "https://github.com/krigsvolddesign/core/pull/10"
+        },
+        {
+          "number": 8,
+          "title": "Expose all design tokens and provenance in TypeScript",
+          "head": "nightjar/design-types",
+          "sha": "191196d090bd3495dcf8274d379e42ef80d96f4d",
+          "base": "develop",
+          "draft": true,
+          "url": "https://github.com/krigsvolddesign/core/pull/8"
+        }
+      ],
+      "verification": [],
+      "blockers": []
+    },
+    {
+      "repository": "krigsvolddesign/astro",
+      "visibility": "public",
+      "default_branch": "main",
+      "gitflow_exempt": false,
+      "refs": {
+        "refs/heads/develop": "af57afbc6413d7690cea8a839c7c0e1d48e2730c",
+        "refs/heads/feature/astro-release-integration": "032c9f92ec57847255ac4e22ec5c15ee1af0e1a9",
+        "refs/heads/feature/gitflow-policy": "14f70454bb57cd3a51618fd5191fbaaead594bc2",
+        "refs/heads/feature/tag-release-automation": "0ed4fee4c0a6ba1a191f523927095f3e78936436",
+        "refs/heads/feature/versioned-docs-archive": "ab866003ecc04d92c7ee4c6592f9c8c58acd3c89",
+        "refs/heads/fix/adoption-repair-03": "878a61014852f83618c575a27154b7820ac5e017",
+        "refs/heads/main": "af57afbc6413d7690cea8a839c7c0e1d48e2730c",
+        "refs/heads/migration/core-package": "6599b3c28def5e24aa3971cf129427e3e6e1f082",
+        "refs/heads/work/experimental-release-fixes": "ec77611e390220163d5fd38aa36835100f11f57a",
+        "refs/heads/work/krigsvold-astro-package": "5ffff1e2f48bebb3c7d3460e24c4e0f2d32b25b7",
+        "refs/heads/work/layout-system": "1bd349afa299cbdd4ad21cdbefc46ff04b142985",
+        "refs/heads/work/source-consolidation": "2a2e51305b198dfbc79c7b1a47123646038cd242",
+        "refs/tags/v1.1.0": "ac3eca2a2d73c87bbd8a754650050e7544ff2f34",
+        "refs/tags/v1.2.0": "314884001143ff3b4700bc3ee878560c80f7b2df",
+        "refs/tags/v1.2.1": "1444b83a7bc120c4b24bfc605dfae25c0ea4e550",
+        "refs/tags/v1.2.2": "af57afbc6413d7690cea8a839c7c0e1d48e2730c"
+      },
+      "open_pull_requests": [
+        {
+          "number": 10,
+          "title": "Integrate disabled Astro tag release and documentation gates",
+          "head": "feature/astro-release-integration",
+          "sha": "032c9f92ec57847255ac4e22ec5c15ee1af0e1a9",
+          "base": "feature/versioned-docs-archive",
+          "draft": true,
+          "url": "https://github.com/krigsvolddesign/astro/pull/10"
+        },
+        {
+          "number": 9,
+          "title": "Rehearse pinned immutable Astro documentation archives",
+          "head": "feature/versioned-docs-archive",
+          "sha": "ab866003ecc04d92c7ee4c6592f9c8c58acd3c89",
+          "base": "migration/core-package",
+          "draft": true,
+          "url": "https://github.com/krigsvolddesign/astro/pull/9"
+        },
+        {
+          "number": 8,
+          "title": "Prepare disabled Astro tag releases",
+          "head": "feature/tag-release-automation",
+          "sha": "0ed4fee4c0a6ba1a191f523927095f3e78936436",
+          "base": "develop",
+          "draft": true,
+          "url": "https://github.com/krigsvolddesign/astro/pull/8"
+        },
+        {
+          "number": 7,
+          "title": "Prepare GitFlow branch policy and checks",
+          "head": "feature/gitflow-policy",
+          "sha": "14f70454bb57cd3a51618fd5191fbaaead594bc2",
+          "base": "develop",
+          "draft": true,
+          "url": "https://github.com/krigsvolddesign/astro/pull/7"
+        },
+        {
+          "number": 6,
+          "title": "Rehearse Astro migration to @krigsvold/core",
+          "head": "migration/core-package",
+          "sha": "6599b3c28def5e24aa3971cf129427e3e6e1f082",
+          "base": "develop",
+          "draft": true,
+          "url": "https://github.com/krigsvolddesign/astro/pull/6"
+        }
+      ],
+      "verification": [],
+      "blockers": []
+    },
+    {
+      "repository": "krigsvolddesign/react",
+      "visibility": "public",
+      "default_branch": "main",
+      "gitflow_exempt": false,
+      "refs": {
+        "refs/heads/develop": "742b5cd33cfc080ca1d6d94987df9dafc45049b4",
+        "refs/heads/feature/independent-react-source": "742b5cd33cfc080ca1d6d94987df9dafc45049b4",
+        "refs/heads/main": "742b5cd33cfc080ca1d6d94987df9dafc45049b4"
+      },
+      "open_pull_requests": [],
+      "verification": [],
+      "blockers": []
+    },
+    {
+      "repository": "krigsvolddesign/jekyll",
+      "visibility": "public",
+      "default_branch": "main",
+      "gitflow_exempt": false,
+      "refs": {
+        "refs/heads/develop": "8c5f4c3fe096c4bc107fe8f16e6c485709751c1f",
+        "refs/heads/feature/nightjar-iv-source-transfer": "8c5f4c3fe096c4bc107fe8f16e6c485709751c1f",
+        "refs/heads/main": "8c5f4c3fe096c4bc107fe8f16e6c485709751c1f"
+      },
+      "open_pull_requests": [],
+      "verification": [],
+      "blockers": []
+    },
+    {
+      "repository": "krigsvolddesign/vim",
+      "visibility": "public",
+      "default_branch": "main",
+      "gitflow_exempt": false,
+      "refs": {
+        "refs/heads/develop": "ae56216ff691e9fb2b2e6e49840e4d6c7ba2094a",
+        "refs/heads/feature/gitflow-policy": "27ad0fdcda8f2af14ffc23bcc4b97338c9a74fba",
+        "refs/heads/feature/native-tag-artifacts": "8a871a68667c2b3e4cfe6919fbf7eac23e2a7bd8",
+        "refs/heads/main": "ae56216ff691e9fb2b2e6e49840e4d6c7ba2094a"
+      },
+      "open_pull_requests": [
+        {
+          "number": 2,
+          "title": "Prepare disabled native tag artifact rehearsal",
+          "head": "feature/native-tag-artifacts",
+          "sha": "8a871a68667c2b3e4cfe6919fbf7eac23e2a7bd8",
+          "base": "develop",
+          "draft": true,
+          "url": "https://github.com/krigsvolddesign/vim/pull/2"
+        },
+        {
+          "number": 1,
+          "title": "Prepare GitFlow branch policy and checks",
+          "head": "feature/gitflow-policy",
+          "sha": "27ad0fdcda8f2af14ffc23bcc4b97338c9a74fba",
+          "base": "develop",
+          "draft": true,
+          "url": "https://github.com/krigsvolddesign/vim/pull/1"
+        }
+      ],
+      "verification": [],
+      "blockers": []
+    },
+    {
+      "repository": "krigsvolddesign/emacs",
+      "visibility": "public",
+      "default_branch": "main",
+      "gitflow_exempt": false,
+      "refs": {
+        "refs/heads/develop": "78c57a6fbc6329e4c870764111368040cd073f5c",
+        "refs/heads/feature/gitflow-policy": "2dc68281e8b92af7d8b0ae1f01be3ef271611167",
+        "refs/heads/feature/native-tag-artifacts": "9538feb20cdae18c90f1cab478ed47dd9ec5d243",
+        "refs/heads/main": "78c57a6fbc6329e4c870764111368040cd073f5c"
+      },
+      "open_pull_requests": [
+        {
+          "number": 2,
+          "title": "Prepare disabled native tag artifact rehearsal",
+          "head": "feature/native-tag-artifacts",
+          "sha": "9538feb20cdae18c90f1cab478ed47dd9ec5d243",
+          "base": "develop",
+          "draft": true,
+          "url": "https://github.com/krigsvolddesign/emacs/pull/2"
+        },
+        {
+          "number": 1,
+          "title": "Prepare GitFlow branch policy and checks",
+          "head": "feature/gitflow-policy",
+          "sha": "2dc68281e8b92af7d8b0ae1f01be3ef271611167",
+          "base": "develop",
+          "draft": true,
+          "url": "https://github.com/krigsvolddesign/emacs/pull/1"
+        }
+      ],
+      "verification": [],
+      "blockers": []
+    },
+    {
+      "repository": "krigsvolddesign/chrome",
+      "visibility": "public",
+      "default_branch": "main",
+      "gitflow_exempt": false,
+      "refs": {
+        "refs/heads/develop": "9c9a06799034ffb1a862ab5b859ec8e369f3a40c",
+        "refs/heads/feature/gitflow-policy": "f753c6cf6ba29af0258e565c17fa4eaee3ce436e",
+        "refs/heads/feature/native-tag-artifacts": "80d1a9886d9db203565770cfc5e11f571b02d189",
+        "refs/heads/main": "9c9a06799034ffb1a862ab5b859ec8e369f3a40c"
+      },
+      "open_pull_requests": [
+        {
+          "number": 2,
+          "title": "Prepare disabled native tag artifact rehearsal",
+          "head": "feature/native-tag-artifacts",
+          "sha": "80d1a9886d9db203565770cfc5e11f571b02d189",
+          "base": "develop",
+          "draft": true,
+          "url": "https://github.com/krigsvolddesign/chrome/pull/2"
+        },
+        {
+          "number": 1,
+          "title": "Prepare GitFlow branch policy and checks",
+          "head": "feature/gitflow-policy",
+          "sha": "f753c6cf6ba29af0258e565c17fa4eaee3ce436e",
+          "base": "develop",
+          "draft": true,
+          "url": "https://github.com/krigsvolddesign/chrome/pull/1"
+        }
+      ],
+      "verification": [],
+      "blockers": []
+    },
+    {
+      "repository": "krigsvolddesign/firefox",
+      "visibility": "public",
+      "default_branch": "main",
+      "gitflow_exempt": false,
+      "refs": {
+        "refs/heads/develop": "3f247c18fb7ee58985fc6d12b75fdc5b9a5ea6bd",
+        "refs/heads/feature/gitflow-policy": "8adea5455f320153aaed9aff4d068c85096c131e",
+        "refs/heads/feature/native-tag-artifacts": "6817cfe94fcdb94be2070d0d59064f9571cac003",
+        "refs/heads/main": "3f247c18fb7ee58985fc6d12b75fdc5b9a5ea6bd"
+      },
+      "open_pull_requests": [
+        {
+          "number": 2,
+          "title": "Prepare disabled native tag artifact rehearsal",
+          "head": "feature/native-tag-artifacts",
+          "sha": "6817cfe94fcdb94be2070d0d59064f9571cac003",
+          "base": "develop",
+          "draft": true,
+          "url": "https://github.com/krigsvolddesign/firefox/pull/2"
+        },
+        {
+          "number": 1,
+          "title": "Prepare GitFlow branch policy and checks",
+          "head": "feature/gitflow-policy",
+          "sha": "8adea5455f320153aaed9aff4d068c85096c131e",
+          "base": "develop",
+          "draft": true,
+          "url": "https://github.com/krigsvolddesign/firefox/pull/1"
+        }
+      ],
+      "verification": [],
+      "blockers": []
+    },
+    {
+      "repository": "krigsvolddesign/website",
+      "visibility": "private",
+      "default_branch": "main",
+      "gitflow_exempt": true,
+      "refs": null,
+      "open_pull_requests": [
+        {
+          "number": 32,
+          "title": "Prepare krigsvold website for core package migration",
+          "head": "migration/core-website-release-proposals",
+          "sha": "dcdd8044891f4d9a824e1dbf71bdfb1bd139179c",
+          "base": "main",
+          "draft": true,
+          "url": "https://github.com/krigsvolddesign/website/pull/32"
+        },
+        {
+          "number": 31,
+          "title": "Update site dependencies and repair foundation styles",
+          "head": "nightjar/site-security",
+          "sha": "1a0f3c13aa04200308e031398d4b79f81c745704",
+          "base": "main",
+          "draft": true,
+          "url": "https://github.com/krigsvolddesign/website/pull/31"
+        },
+        {
+          "number": 6,
+          "title": "Show layout primitives and complete page compositions",
+          "head": "work/layout-showcase",
+          "sha": "3af7e2a4fbee2a236b86ee816b062501d14781ef",
+          "base": "main",
+          "draft": true,
+          "url": "https://github.com/krigsvolddesign/website/pull/6"
+        }
+      ],
+      "verification": [],
+      "blockers": []
+    },
+    {
+      "repository": "k3jph/design-workbench",
+      "visibility": "public",
+      "default_branch": "main",
+      "gitflow_exempt": false,
+      "refs": {
+        "refs/heads/automation/react-reference-releases": "41c3d8f0b1135bfb09826d118f8dd55a5a6a2eba",
+        "refs/heads/develop": "aafd9a8443e0c6cdc4afd6f973a605faa74b8f2c",
+        "refs/heads/docs/reference-demo-data": "d2faf5a585806728a46c657f1c087fadeabd3b3e",
+        "refs/heads/feat/portable-page-archetypes": "4935a11ab299483e0c16cfb16789ee653d71b7cb",
+        "refs/heads/feat/reference-research-page": "0295a1d82a1b39a5811db09f8bb6780669d43d79",
+        "refs/heads/feature/gitflow-release-preparation": "a492e12618dd178fd5cee7fbe5487d512f1e3cc7",
+        "refs/heads/feature/nightjar-iv-ledger": "aafd9a8443e0c6cdc4afd6f973a605faa74b8f2c",
+        "refs/heads/feature/nightjar-iv-ruleset-audit": "73c45de7e55d127a8b516e73d83006cf3e6f149a",
+        "refs/heads/feature/versioned-docs-contract": "366dd2114cf08115a58e58cfc4c1f1d4bb781e7e",
+        "refs/heads/fix/adoption-completion": "8d1e9b3e0991ad5568fb3f950e4789d17848cc0b",
+        "refs/heads/fix/documentation-nav-surfaces": "400aacb6c282a383d7915085125cd7724036b5c3",
+        "refs/heads/fix/martlet-left-contents": "11785384d1439a9452eeabfcd0e27b10f11fa16f",
+        "refs/heads/fix/npm-react-subdomains": "39d664082bb0dbdb09bc182a6abffebef75518ff",
+        "refs/heads/fix/origin-frames-20261027": "b4fd27bb5dc996f3a5f88f968dea8f049af8198c",
+        "refs/heads/fix/origin-link-hover": "671ff340f6c156430d8fd3a7b9eb8c50b5f7cf4f",
+        "refs/heads/fix/react-footer-domain": "f702aa0de2c4e50960778bf44acc9a7cd0875150",
+        "refs/heads/fix/reference-polish": "afab79ccd5e4044591e8e45fdc8d22f528745670",
+        "refs/heads/fix/shared-astro-shell": "d6338f1c8afee7ae6e3058e2c7cf675ce726aad3",
+        "refs/heads/fix/source-font-rendering-20261027": "cd1af7d920b2cbe5ed2dea66271012fcc859b9cc",
+        "refs/heads/fix/transferred-release-identity": "b4e722e5e21ecb2adefcc9187a7f3ba0b9f770e6",
+        "refs/heads/main": "aafd9a8443e0c6cdc4afd6f973a605faa74b8f2c",
+        "refs/heads/migration/core-downstream": "d592a8a826e6174922f419e9d6bed2323d6bd669",
+        "refs/heads/migration/core-first-release-checklist": "7b905a7462682e11aa228b585586e6249df5ec57",
+        "refs/heads/migration/core-stage-preparation": "30538b6e45d54c61a67978c537f1781242f920e3",
+        "refs/heads/migration/react-core": "b66e18bb87d6894e1eeca590c54492b78b462bfc",
+        "refs/heads/migration/react-core-release-proposals": "04d3e14b1b1943cbf2a90f1a727822d87327b2ae",
+        "refs/heads/nightjar-ii/astro-source-icon": "4617766f50ce9f4c9b8c1b11f284f68956b55448",
+        "refs/heads/nightjar-ii/contrast": "c858a0585b053dbfdee5a9f937ab7412a0709178",
+        "refs/heads/nightjar-ii/jekyll-readiness": "568270977679312da2af7ab087eb41b2c5e1b2a5",
+        "refs/heads/nightjar-ii/publication-design": "6d0ec979e27646fd347e2afcdfa1589832813c22",
+        "refs/heads/nightjar-ii/react-static-slice": "ed186ab6d6dd45a2ffa436e76de2bdeb1185cc9d",
+        "refs/heads/nightjar-iii/astro-adoption": "36898eb7a18c69d4340a0a911045b2af3a410415",
+        "refs/heads/nightjar-iii/astro-hosted-checks": "df59e43787e234bb75c57321e7843aa76b4431ef",
+        "refs/heads/nightjar-iii/theme-transition": "b32e7b0d706590ebb2ed8dd9220b568534b16d15",
+        "refs/heads/nightjar/audit": "6d160287312c8e03fadd3c6ed2ac5f9a70939677",
+        "refs/heads/nightjar/ii": "f5d9b03e630bccaf5a04ffcd7238da46455ed915",
+        "refs/heads/nightjar/ii-integration-candidate": "80a5635abe4de7a07a1983de0b3ef796b101e047",
+        "refs/heads/nightjar/integration-review": "5138a89fc2956d9019d5bd720c987b8b9e24533b",
+        "refs/heads/nightjar/release-readiness": "d6230680b08aa1176e74657e3849958916028172",
+        "refs/heads/nightjar/worker-zod-generator": "730124144ef23fb5d9c06b7d9ec189d0e32d5ba6",
+        "refs/heads/nightjar2/admin-bulk-state": "e9cd8f19109cb0b432452659e7fe7cdffd891ad0",
+        "refs/heads/nightjar2/admin-draft": "adb92727984b048ac3ded1fb1c40f8d4ccd79df3",
+        "refs/heads/nightjar2/adversarial": "31a572a9eed61fae334a2950c8db1cb47a996ee9",
+        "refs/heads/nightjar2/agent-security": "a3435695cfef96ca066abcfa14dd93969f27f693",
+        "refs/heads/nightjar2/api-followup": "e37df1d2bbba6c96ff0e2b1d22932fc65871222e",
+        "refs/heads/nightjar2/component-audit": "0485b75b8e5d5353655826e9511775610008495f",
+        "refs/heads/nightjar2/extended-edge": "e765079c29a11ae1718037d19acdb94b8e9a5bd7",
+        "refs/heads/nightjar2/firefox-investigation": "4c7140d12f3834595b4663da2ca346fda0383888",
+        "refs/heads/nightjar2/form-popup-fix": "caf8753a09e23deda9255944270a16841eca4229",
+        "refs/heads/nightjar2/forms-stress": "05d28d4ad701efce91e8805331069fe680b6a099",
+        "refs/heads/nightjar2/host-state": "afa033bc73c8a982cb9cd33fc73d91ba74951d90",
+        "refs/heads/nightjar2/science-robustness": "8f6a9760737ccea965f8df2434416842673cf798",
+        "refs/heads/nightjar2/worker-validation": "7178fb0a56e6014b7fcfb230b2a19400977d4cfb",
+        "refs/heads/nightjar3/adoption": "5141857be03d103732275fb18e05e042505381df",
+        "refs/heads/nightjar3/authority-map": "2895f22c9b7d05ba50de06013b51cf5978217f2f",
+        "refs/heads/nightjar3/clean-room": "77a87933b9813c2edc6802604ab686093d959c38",
+        "refs/heads/nightjar3/finish-consumption": "36b8a053455f15e239275d1f76759cdfb4578ef8",
+        "refs/heads/nightjar3/fixture-bundle": "189e54fe7dac589032ccc680b0fa8553e3d6abb0",
+        "refs/heads/nightjar3/framework-extensibility": "f1f312a0a47e6414818117933ceec62b73afb2d6",
+        "refs/heads/nightjar3/integration": "4a1b0991c970f4c182234273c01f9e97d35992cc",
+        "refs/heads/nightjar3/jekyll-dashboard-adoption": "c2e112b11abd016ea2a2ddb3ae84853ad06dcfa6",
+        "refs/heads/nightjar3/jekyll-dashboard-crossbrowser": "cc751c030182dea20b277871502291fa3e5fa6b0",
+        "refs/heads/nightjar3/jekyll-fixture-check": "dd0be62f36029d32ce8862b102db64a18e1381f6",
+        "refs/heads/nightjar3/jekyll-rehearsal": "1d61f47b0bfb262d86e7a18b777d564c2bb54f3e",
+        "refs/heads/nightjar3/portable-runner": "f131981186f04531d976ea1f478552865fb87928",
+        "refs/heads/nightjar3/progress": "9ae757693f85bb7395261e2ddb9eb846f4ad6615",
+        "refs/heads/nightjar3/publication-control-review": "bbebb677cd204e56e3cfc746bd254ef4fec65251",
+        "refs/heads/nightjar3/react-extraction": "a0c62c2db73e57360c53f6ba56bfd52766b6a1e9",
+        "refs/heads/preparation/core-release-safety": "ece4e1921febb0e1936db9107301bf71e5fd854d",
+        "refs/heads/test/grammar-conformance": "d073f30f937e71df3fa86a4e69e44ec188593773",
+        "refs/heads/work/design-preview-0.3": "4e8509c60eef5e8b36984e6164984152bb4f33c2",
+        "refs/heads/work/registry-foundations": "4a757ae073afaa57441b6b3240ab9ba29cfe239b",
+        "refs/tags/design-v0.3.0": "91fe9e49c9303f9461af998c662a7a27f1c2893e",
+        "refs/tags/design-v0.3.0-adoption.1": "57754ff53f9a86f115065e00131b87d609958027",
+        "refs/tags/design-v0.3.0-adoption.2": "55ac429f119d59a5b186b08b89ba58a274f8b7ab",
+        "refs/tags/design-v0.3.0-adoption.3": "00a04a018d444bcfe7b0c7d44fb62a909c743306",
+        "refs/tags/design-v0.3.0-adoption.4": "5d09b06bf3ef80d47876170a94021960e9eefbd5",
+        "refs/tags/design-v0.3.0-adoption.5": "7e51c0eadafa910cf75aa04681613f4de4452c36",
+        "refs/tags/design-v0.3.0-nav.1": "00a599acf8a07f15c4b4ffd1bb7394c2f49a83ae",
+        "refs/tags/design-v0.3.0-nav.2": "ed4e3f344e85113032939e973d3a798f2ee6938a",
+        "refs/tags/design-v0.3.0-sha.474540d25339896a689c663547e4d6ff0d8ed34b": "474540d25339896a689c663547e4d6ff0d8ed34b",
+        "refs/tags/design-v0.3.0-sha.a6d42669a28f341977e11468c34da90c27b882ba": "a6d42669a28f341977e11468c34da90c27b882ba",
+        "refs/tags/design-v0.3.0-sha.aafd9a8443e0c6cdc4afd6f973a605faa74b8f2c": "aafd9a8443e0c6cdc4afd6f973a605faa74b8f2c",
+        "refs/tags/design-v0.3.0-sha.e218dd006b77287eb58ed8ede93d8d78af62e477": "e218dd006b77287eb58ed8ede93d8d78af62e477",
+        "refs/tags/design-v0.3.0-sha.f44610195904e953a888b19b508c0e4de4a85195": "f44610195904e953a888b19b508c0e4de4a85195",
+        "refs/tags/design-v0.3.0-source.1": "e08edb4bb0ee33e8c10cee6574c0e0b36d0600a7",
+        "refs/tags/design-v0.3.0-source.2": "a01fa72db2ed9d3cfb97476694050f66784f4477",
+        "refs/tags/react-v0.1.0": "48bfa2afcc27112b3e73ef160d16daa1005dd5b4"
+      },
+      "open_pull_requests": [
+        {
+          "number": 72,
+          "title": "Prepare immutable framework documentation contract",
+          "head": "feature/versioned-docs-contract",
+          "sha": "366dd2114cf08115a58e58cfc4c1f1d4bb781e7e",
+          "base": "develop",
+          "draft": true,
+          "url": "https://github.com/k3jph/design-workbench/pull/72"
+        },
+        {
+          "number": 71,
+          "title": "Prepare GitFlow policy and release migration rehearsal",
+          "head": "feature/gitflow-release-preparation",
+          "sha": "a492e12618dd178fd5cee7fbe5487d512f1e3cc7",
+          "base": "develop",
+          "draft": true,
+          "url": "https://github.com/k3jph/design-workbench/pull/71"
+        },
+        {
+          "number": 70,
+          "title": "Record core staging integration safeguards",
+          "head": "preparation/core-release-safety",
+          "sha": "ece4e1921febb0e1936db9107301bf71e5fd854d",
+          "base": "migration/core-stage-preparation",
+          "draft": true,
+          "url": "https://github.com/k3jph/design-workbench/pull/70"
+        },
+        {
+          "number": 69,
+          "title": "Prepare reproducible staged first core releases",
+          "head": "migration/core-stage-preparation",
+          "sha": "30538b6e45d54c61a67978c537f1781242f920e3",
+          "base": "migration/core-first-release-checklist",
+          "draft": true,
+          "url": "https://github.com/k3jph/design-workbench/pull/69"
+        },
+        {
+          "number": 68,
+          "title": "Rehearse React against collision-free core proposals",
+          "head": "migration/react-core-release-proposals",
+          "sha": "04d3e14b1b1943cbf2a90f1a727822d87327b2ae",
+          "base": "migration/react-core",
+          "draft": true,
+          "url": "https://github.com/k3jph/design-workbench/pull/68"
+        },
+        {
+          "number": 67,
+          "title": "Record core release tag collision and publisher gates",
+          "head": "migration/core-first-release-checklist",
+          "sha": "7b905a7462682e11aa228b585586e6249df5ec57",
+          "base": "migration/core-downstream",
+          "draft": true,
+          "url": "https://github.com/k3jph/design-workbench/pull/67"
+        },
+        {
+          "number": 66,
+          "title": "Migrate React package candidates to corrected core inputs",
+          "head": "migration/react-core",
+          "sha": "b66e18bb87d6894e1eeca590c54492b78b462bfc",
+          "base": "nightjar3/react-extraction",
+          "draft": true,
+          "url": "https://github.com/k3jph/design-workbench/pull/66"
+        },
+        {
+          "number": 65,
+          "title": "Rehearse separate React core and legacy theme lanes",
+          "head": "migration/core-downstream",
+          "sha": "d592a8a826e6174922f419e9d6bed2323d6bd669",
+          "base": "nightjar3/jekyll-fixture-check",
+          "draft": true,
+          "url": "https://github.com/k3jph/design-workbench/pull/65"
+        },
+        {
+          "number": 62,
+          "title": "Detect stale standalone Jekyll fixture routes",
+          "head": "nightjar3/jekyll-fixture-check",
+          "sha": "dd0be62f36029d32ce8862b102db64a18e1381f6",
+          "base": "nightjar3/fixture-bundle",
+          "draft": true,
+          "url": "https://github.com/k3jph/design-workbench/pull/62"
+        },
+        {
+          "number": 61,
+          "title": "Rehearse pinned offline fixture handoff",
+          "head": "nightjar3/fixture-bundle",
+          "sha": "189e54fe7dac589032ccc680b0fa8553e3d6abb0",
+          "base": "nightjar3/framework-extensibility",
+          "draft": true,
+          "url": "https://github.com/k3jph/design-workbench/pull/61"
+        },
+        {
+          "number": 59,
+          "title": "Make the conformance matrix framework configurable",
+          "head": "nightjar3/framework-extensibility",
+          "sha": "f1f312a0a47e6414818117933ceec62b73afb2d6",
+          "base": "nightjar3/finish-consumption",
+          "draft": true,
+          "url": "https://github.com/k3jph/design-workbench/pull/59"
+        },
+        {
+          "number": 58,
+          "title": "Bind package inputs and test broken consumers",
+          "head": "nightjar3/finish-consumption",
+          "sha": "36b8a053455f15e239275d1f76759cdfb4578ef8",
+          "base": "nightjar3/integration",
+          "draft": true,
+          "url": "https://github.com/k3jph/design-workbench/pull/58"
+        },
+        {
+          "number": 56,
+          "title": "Rehearse paired action transition contrast corrections",
+          "head": "nightjar-iii/theme-transition",
+          "sha": "b32e7b0d706590ebb2ed8dd9220b568534b16d15",
+          "base": "nightjar-iii/astro-adoption",
+          "draft": true,
+          "url": "https://github.com/k3jph/design-workbench/pull/56"
+        },
+        {
+          "number": 55,
+          "title": "Test pinned Astro starter patches across browser engines",
+          "head": "nightjar-iii/astro-hosted-checks",
+          "sha": "df59e43787e234bb75c57321e7843aa76b4431ef",
+          "base": "nightjar-iii/astro-adoption",
+          "draft": true,
+          "url": "https://github.com/k3jph/design-workbench/pull/55"
+        },
+        {
+          "number": 54,
+          "title": "Verify standalone Jekyll adoption in three browsers",
+          "head": "nightjar3/jekyll-dashboard-crossbrowser",
+          "sha": "cc751c030182dea20b277871502291fa3e5fa6b0",
+          "base": "nightjar3/jekyll-dashboard-adoption",
+          "draft": true,
+          "url": "https://github.com/k3jph/design-workbench/pull/54"
+        },
+        {
+          "number": 53,
+          "title": "Document standalone Jekyll directory composition",
+          "head": "nightjar3/jekyll-dashboard-adoption",
+          "sha": "c2e112b11abd016ea2a2ddb3ae84853ad06dcfa6",
+          "base": "nightjar3/adoption",
+          "draft": true,
+          "url": "https://github.com/k3jph/design-workbench/pull/53"
+        },
+        {
+          "number": 52,
+          "title": "Exercise clean-room adoption across the paired frameworks",
+          "head": "nightjar3/clean-room",
+          "sha": "77a87933b9813c2edc6802604ab686093d959c38",
+          "base": "nightjar3/adoption",
+          "draft": true,
+          "url": "https://github.com/k3jph/design-workbench/pull/52"
+        },
+        {
+          "number": 51,
+          "title": "Plan independent publication and migration approval boundaries",
+          "head": "nightjar3/publication-control-review",
+          "sha": "bbebb677cd204e56e3cfc746bd254ef4fec65251",
+          "base": "nightjar/ii-integration-candidate",
+          "draft": true,
+          "url": "https://github.com/k3jph/design-workbench/pull/51"
+        },
+        {
+          "number": 50,
+          "title": "Prototype pinned portable conformance runner",
+          "head": "nightjar3/portable-runner",
+          "sha": "f131981186f04531d976ea1f478552865fb87928",
+          "base": "nightjar/ii-integration-candidate",
+          "draft": true,
+          "url": "https://github.com/k3jph/design-workbench/pull/50"
+        },
+        {
+          "number": 49,
+          "title": "Nightjar III independent implementation integration",
+          "head": "nightjar3/integration",
+          "sha": "4a1b0991c970f4c182234273c01f9e97d35992cc",
+          "base": "nightjar/ii-integration-candidate",
+          "draft": true,
+          "url": "https://github.com/k3jph/design-workbench/pull/49"
+        },
+        {
+          "number": 48,
+          "title": "Distinguish the directory table landmark",
+          "head": "nightjar3/adoption",
+          "sha": "5141857be03d103732275fb18e05e042505381df",
+          "base": "nightjar/ii-integration-candidate",
+          "draft": true,
+          "url": "https://github.com/k3jph/design-workbench/pull/48"
+        },
+        {
+          "number": 47,
+          "title": "Prepare paired Astro starter safety and subpath patches",
+          "head": "nightjar-iii/astro-adoption",
+          "sha": "36898eb7a18c69d4340a0a911045b2af3a410415",
+          "base": "nightjar/ii-integration-candidate",
+          "draft": true,
+          "url": "https://github.com/k3jph/design-workbench/pull/47"
+        },
+        {
+          "number": 46,
+          "title": "Rehearse standalone Jekyll candidates without a cutover",
+          "head": "nightjar3/jekyll-rehearsal",
+          "sha": "1d61f47b0bfb262d86e7a18b777d564c2bb54f3e",
+          "base": "nightjar/ii-integration-candidate",
+          "draft": true,
+          "url": "https://github.com/k3jph/design-workbench/pull/46"
+        },
+        {
+          "number": 45,
+          "title": "Rehearse independent family React packages",
+          "head": "nightjar3/react-extraction",
+          "sha": "a0c62c2db73e57360c53f6ba56bfd52766b6a1e9",
+          "base": "nightjar/ii-integration-candidate",
+          "draft": true,
+          "url": "https://github.com/k3jph/design-workbench/pull/45"
+        },
+        {
+          "number": 44,
+          "title": "Map Nightjar III source authority and package identities",
+          "head": "nightjar3/authority-map",
+          "sha": "2895f22c9b7d05ba50de06013b51cf5978217f2f",
+          "base": "nightjar/ii-integration-candidate",
+          "draft": true,
+          "url": "https://github.com/k3jph/design-workbench/pull/44"
+        },
+        {
+          "number": 43,
+          "title": "Track Nightjar III independent implementation work",
+          "head": "nightjar3/progress",
+          "sha": "9ae757693f85bb7395261e2ddb9eb846f4ad6615",
+          "base": "nightjar/ii-integration-candidate",
+          "draft": true,
+          "url": "https://github.com/k3jph/design-workbench/pull/43"
+        },
+        {
+          "number": 41,
+          "title": "Keep embedded error summary focus in its document",
+          "head": "nightjar2/api-followup",
+          "sha": "e37df1d2bbba6c96ff0e2b1d22932fc65871222e",
+          "base": "nightjar/ii-integration-candidate",
+          "draft": true,
+          "url": "https://github.com/k3jph/design-workbench/pull/41"
+        },
+        {
+          "number": 40,
+          "title": "Keep custom form errors from blocking pointer recovery",
+          "head": "nightjar2/form-popup-fix",
+          "sha": "caf8753a09e23deda9255944270a16841eca4229",
+          "base": "nightjar2/forms-stress",
+          "draft": true,
+          "url": "https://github.com/k3jph/design-workbench/pull/40"
+        },
+        {
+          "number": 39,
+          "title": "Preserve administration drafts across bulk status changes",
+          "head": "nightjar2/admin-bulk-state",
+          "sha": "e9cd8f19109cb0b432452659e7fe7cdffd891ad0",
+          "base": "nightjar/ii-integration-candidate",
+          "draft": true,
+          "url": "https://github.com/k3jph/design-workbench/pull/39"
+        },
+        {
+          "number": 38,
+          "title": "Investigate Firefox form pointer delivery",
+          "head": "nightjar2/firefox-investigation",
+          "sha": "4c7140d12f3834595b4663da2ca346fda0383888",
+          "base": "nightjar2/forms-stress",
+          "draft": true,
+          "url": "https://github.com/k3jph/design-workbench/pull/38"
+        },
+        {
+          "number": 37,
+          "title": "Nightjar II integration candidate",
+          "head": "nightjar/ii-integration-candidate",
+          "sha": "80a5635abe4de7a07a1983de0b3ef796b101e047",
+          "base": "nightjar/integration-review",
+          "draft": true,
+          "url": "https://github.com/k3jph/design-workbench/pull/37"
+        },
+        {
+          "number": 36,
+          "title": "Preserve React pagination focus in embedded documents",
+          "head": "nightjar2/extended-edge",
+          "sha": "e765079c29a11ae1718037d19acdb94b8e9a5bd7",
+          "base": "nightjar/integration-review",
+          "draft": true,
+          "url": "https://github.com/k3jph/design-workbench/pull/36"
+        },
+        {
+          "number": 35,
+          "title": "Protect unsaved administration drafts and stable field names",
+          "head": "nightjar2/admin-draft",
+          "sha": "adb92727984b048ac3ded1fb1c40f8d4ccd79df3",
+          "base": "nightjar/integration-review",
+          "draft": true,
+          "url": "https://github.com/k3jph/design-workbench/pull/35"
+        },
+        {
+          "number": 34,
+          "title": "Revalidate current form values before local submission",
+          "head": "nightjar2/forms-stress",
+          "sha": "05d28d4ad701efce91e8805331069fe680b6a099",
+          "base": "nightjar/integration-review",
+          "draft": true,
+          "url": "https://github.com/k3jph/design-workbench/pull/34"
+        },
+        {
+          "number": 33,
+          "title": "Use existing family marks as Astro favicons",
+          "head": "nightjar-ii/astro-source-icon",
+          "sha": "4617766f50ce9f4c9b8c1b11f284f68956b55448",
+          "base": "nightjar/integration-review",
+          "draft": true,
+          "url": "https://github.com/k3jph/design-workbench/pull/33"
+        },
+        {
+          "number": 32,
+          "title": "Measure paired article transfer before changing hydration",
+          "head": "nightjar-ii/react-static-slice",
+          "sha": "ed186ab6d6dd45a2ffa436e76de2bdeb1185cc9d",
+          "base": "nightjar/integration-review",
+          "draft": true,
+          "url": "https://github.com/k3jph/design-workbench/pull/32"
+        },
+        {
+          "number": 31,
+          "title": "Preserve a reopened bulk confirmation",
+          "head": "nightjar2/adversarial",
+          "sha": "31a572a9eed61fae334a2950c8db1cb47a996ee9",
+          "base": "nightjar/integration-review",
+          "draft": true,
+          "url": "https://github.com/k3jph/design-workbench/pull/31"
+        },
+        {
+          "number": 30,
+          "title": "Keep scientific workspace readable with long valid values",
+          "head": "nightjar2/science-robustness",
+          "sha": "8f6a9760737ccea965f8df2434416842673cf798",
+          "base": "nightjar/integration-review",
+          "draft": true,
+          "url": "https://github.com/k3jph/design-workbench/pull/30"
+        },
+        {
+          "number": 29,
+          "title": "Document incomplete contrast cases and exercise real zoom",
+          "head": "nightjar-ii/contrast",
+          "sha": "c858a0585b053dbfdee5a9f937ab7412a0709178",
+          "base": "nightjar/integration-review",
+          "draft": true,
+          "url": "https://github.com/k3jph/design-workbench/pull/29"
+        },
+        {
+          "number": 28,
+          "title": "Bound MCP initialization icon validation",
+          "head": "nightjar2/worker-validation",
+          "sha": "7178fb0a56e6014b7fcfb230b2a19400977d4cfb",
+          "base": "nightjar2/agent-security",
+          "draft": true,
+          "url": "https://github.com/k3jph/design-workbench/pull/28"
+        },
+        {
+          "number": 27,
+          "title": "Retain keyboard focus when a tab becomes unavailable",
+          "head": "nightjar2/component-audit",
+          "sha": "0485b75b8e5d5353655826e9511775610008495f",
+          "base": "nightjar/integration-review",
+          "draft": true,
+          "url": "https://github.com/k3jph/design-workbench/pull/27"
+        },
+        {
+          "number": 26,
+          "title": "Preserve Jekyll shell provenance and refine extraction gates",
+          "head": "nightjar-ii/jekyll-readiness",
+          "sha": "568270977679312da2af7ab087eb41b2c5e1b2a5",
+          "base": "nightjar/integration-review",
+          "draft": true,
+          "url": "https://github.com/k3jph/design-workbench/pull/26"
+        },
+        {
+          "number": 25,
+          "title": "Preserve embedding host history state in dashboards",
+          "head": "nightjar2/host-state",
+          "sha": "afa033bc73c8a982cb9cd33fc73d91ba74951d90",
+          "base": "nightjar/integration-review",
+          "draft": true,
+          "url": "https://github.com/k3jph/design-workbench/pull/25"
+        },
+        {
+          "number": 24,
+          "title": "Propose a fail-closed reference publication gate",
+          "head": "nightjar-ii/publication-design",
+          "sha": "6d0ec979e27646fd347e2afcdfa1589832813c22",
+          "base": "nightjar/integration-review",
+          "draft": true,
+          "url": "https://github.com/k3jph/design-workbench/pull/24"
+        },
+        {
+          "number": 23,
+          "title": "Patch generated agent dependency and check archive reproducibility",
+          "head": "nightjar2/agent-security",
+          "sha": "a3435695cfef96ca066abcfa14dd93969f27f693",
+          "base": "nightjar/integration-review",
+          "draft": true,
+          "url": "https://github.com/k3jph/design-workbench/pull/23"
+        },
+        {
+          "number": 22,
+          "title": "Track Operation Nightjar II evidence and gates",
+          "head": "nightjar/ii",
+          "sha": "f5d9b03e630bccaf5a04ffcd7238da46455ed915",
+          "base": "nightjar/integration-review",
+          "draft": true,
+          "url": "https://github.com/k3jph/design-workbench/pull/22"
+        },
+        {
+          "number": 20,
+          "title": "Review complete Nightjar integration candidate",
+          "head": "nightjar/integration-review",
+          "sha": "5138a89fc2956d9019d5bd720c987b8b9e24533b",
+          "base": "main",
+          "draft": true,
+          "url": "https://github.com/k3jph/design-workbench/pull/20"
+        },
+        {
+          "number": 19,
+          "title": "Complete portable examples and consolidate design-language contracts",
+          "head": "nightjar/audit",
+          "sha": "6d160287312c8e03fadd3c6ed2ac5f9a70939677",
+          "base": "feat/portable-page-archetypes",
+          "draft": true,
+          "url": "https://github.com/k3jph/design-workbench/pull/19"
+        },
+        {
+          "number": 18,
+          "title": "Add paired Jekyll example library and canonical dashboards",
+          "head": "feat/portable-page-archetypes",
+          "sha": "4935a11ab299483e0c16cfb16789ee653d71b7cb",
+          "base": "main",
+          "draft": false,
+          "url": "https://github.com/k3jph/design-workbench/pull/18"
+        }
+      ],
+      "verification": [],
+      "blockers": []
+    }
+  ],
+  "evidence": [
+    {
+      "scope": "workbench frozen Nightjar III extensibility candidate",
+      "commit": "f1f312a",
+      "checks": [
+        "portable runner 8/8: missing, wrong-family, wrong-version, tampering and incomplete matrix rejected",
+        "50 recipe verifier and 28 application model tests passed"
+      ],
+      "limitations": [
+        "These results do not verify the newly imported standalone repositories or manual accessibility."
+      ]
+    },
+    {
+      "scope": "workbench versioned documentation prototype",
+      "commit": "658698c",
+      "checks": [
+        "seven local archive contract tests passed"
+      ],
+      "limitations": [
+        "Filesystem immutability is not proof of remote archive immutability."
+      ]
+    }
+  ],
+  "blockers": [
+    "The R2 or other production archive adapter, independent catalog trust, historical serving and full reference sites require implementation and integration verification.",
+    "Manual assistive technology and physical-device checks remain unperformed.",
+    "Production release rulesets, npm trust changes, real tag publication, and deployment require separate authorization.",
+    "The eight public hostnames were not verifiable from this environment; the browser inspection service could not access them."
+  ],
+  "sites": [
+    {
+      "host": "martletdesign.dev",
+      "status": "unverified",
+      "reason": "The web inspection service returned inaccessible; this does not establish deployment or DNS absence."
+    },
+    {
+      "host": "astro.martletdesign.dev",
+      "status": "unverified",
+      "reason": "The web inspection service returned inaccessible; this does not establish deployment or DNS absence."
+    },
+    {
+      "host": "react.martletdesign.dev",
+      "status": "unverified",
+      "reason": "The web inspection service returned inaccessible; this does not establish deployment or DNS absence."
+    },
+    {
+      "host": "jekyll.martletdesign.dev",
+      "status": "unverified",
+      "reason": "The web inspection service returned inaccessible; this does not establish deployment or DNS absence."
+    },
+    {
+      "host": "krigsvolddesign.dev",
+      "status": "unverified",
+      "reason": "The web inspection service returned inaccessible; this does not establish deployment or DNS absence."
+    },
+    {
+      "host": "astro.krigsvolddesign.dev",
+      "status": "unverified",
+      "reason": "The web inspection service returned inaccessible; this does not establish deployment or DNS absence."
+    },
+    {
+      "host": "react.krigsvolddesign.dev",
+      "status": "unverified",
+      "reason": "The web inspection service returned inaccessible; this does not establish deployment or DNS absence."
+    },
+    {
+      "host": "jekyll.krigsvolddesign.dev",
+      "status": "unverified",
+      "reason": "The web inspection service returned inaccessible; this does not establish deployment or DNS absence."
+    }
+  ]
+}
