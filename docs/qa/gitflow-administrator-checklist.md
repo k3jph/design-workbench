@@ -12,3 +12,34 @@ For each non-website repository after reviewing its existing protections and pla
 6. Separately make `krigsvolddesign/astro` public as requested. The current integration lacks repository administration access. Preserve both private website repositories and do not change Cloudflare, DNS, deployment or trusted-publisher settings as part of this checklist.
 
 The currently active Astro release-event workflows and workbench reference/React publication paths require coordinated replacement. The core tag-release drafts are disabled, and their existing stage-only workflow is separate. Do not activate tag publication before resolving those paths and independently verifying all controls.
+
+## Draft release identities and remaining work
+
+| Package | Proposed repository | Proposed workflow | Proposed environment |
+| --- | --- | --- | --- |
+| `@martlet/core` | `martletdesign/core` | `tag-release.yml` | `core-production-release` |
+| `@krigsvold/core` | `krigsvolddesign/core` | `tag-release.yml` | `core-production-release` |
+| `@martlet/astro` | `martletdesign/astro` | `tag-release.yml` | `astro-production-release` |
+| `@krigsvold/astro` | `krigsvolddesign/astro` | `tag-release.yml` | `astro-production-release` |
+
+These are proposed inputs for **future** direct-publish trust; no npm configuration is made here. Separate stage-only core publishers remain in place. The drafts are [Martlet core #16](https://github.com/martletdesign/core/pull/16), [Krigsvold core #17](https://github.com/krigsvolddesign/core/pull/17), [Martlet Astro #8](https://github.com/martletdesign/astro/pull/8), and [Krigsvold Astro #8](https://github.com/krigsvolddesign/astro/pull/8). Both prerequisite CI and release jobs remain disabled. Core has a separate manual staged-publishing path; its ultimate relationship to direct tag publication remains an explicit decision. Astro drafts remove the release-event publisher in their proposed trees, but that old path remains active on current main.
+
+Each Vim, Emacs, Chrome and Firefox repository has a disabled artifact-only proposal:
+
+| Platform | Martlet | Krigsvold |
+| --- | --- | --- |
+| Vim | [#2](https://github.com/martletdesign/vim/pull/2) | [#2](https://github.com/krigsvolddesign/vim/pull/2) |
+| Emacs | [#2](https://github.com/martletdesign/emacs/pull/2) | [#2](https://github.com/krigsvolddesign/emacs/pull/2) |
+| Chrome | [#2](https://github.com/martletdesign/chrome/pull/2) | [#2](https://github.com/krigsvolddesign/chrome/pull/2) |
+| Firefox | [#2](https://github.com/martletdesign/firefox/pull/2) | [#2](https://github.com/krigsvolddesign/firefox/pull/2) |
+
+These do not create releases, upload to stores or sign browser extensions. Native store publication, authentication, channel policy, review and rollback are not designed or verified. Standalone React and Jekyll repositories are empty; implement their release paths only after independently validated source transfer. A complete release design must integrate versioned documentation snapshots before activating framework release publication.
+
+## Proposed activation sequence, subject to separate approval
+
+1. Complete and review the unresolved implementation, hosted verification, package and documentation compatibility, protected-tag enforcement, publication recovery and platform-specific release mechanisms. Resolve historical PR branch names and configure independent required checks before enforcing GitFlow.
+2. An administrator verifies main and tag protections, environment rules, available reviewers and provider plan support. Inventory the existing npm publishers and credentials without removing any stage-only binding. Confirm every next version is absent from both the registry and staged queues and does not collide with a historical Git tag.
+3. With separate integration authorization, integrate the reviewed disabled workflow and conflict removal through the approved release process. Verify the resulting main tree and rerun all required CI. A false guard is intentional; the ASTRO and core drafts each have **two** false guards, on prerequisite verification and publication.
+4. Only after separate npm authorization and close to the intended first release, configure the matching direct-publishing trusted publisher from the table above. Check that its environment and workflow names match exactly. npm may expire a configuration that is not validated; a dry-run alone does not establish OIDC trust or provenance.
+5. With separate activation authorization, review a change to enable both guarded jobs. Reverify protections immediately before an independently authorized release tag. The first actual tag-triggered publish is an irreversible registry mutation, not a rehearsal: it needs its own approval. Verify the published bytes, registry integrity and provenance and only then create the corresponding GitHub Release. Follow the documented manual recovery process if publication succeeds but later steps fail.
+6. Keep stage-only publishers and legacy package identities until the new path has been independently verified and an authorized maintainer explicitly decides their future. Framework releases and any documentation archive or latest-pointer promotion require separate review and must not alter the private websites or their deployment controls.
