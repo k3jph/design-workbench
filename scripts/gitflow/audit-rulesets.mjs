@@ -17,8 +17,15 @@ export function classify(rulesets, target, ref) {
       && Array.isArray(r.conditions.ref_name.exclude)
       && r.conditions.ref_name.exclude.length === 0
       && Array.isArray(r.rules) && r.rules.some(rule => rule.type === type));
-    result[type] = matches.length ? matches.map(r => ({id:r.id, name:r.name, source:r.source,
-      bypass_actors:r.bypass_actors ?? 'unknown'})) : 'not demonstrated';
+    result[type] = matches.length ? matches.map(r => {
+      const parameters = r.rules.find(rule => rule.type === type).parameters ?? {};
+      const warnings = [];
+      if (!Array.isArray(r.bypass_actors)) warnings.push('Bypass actors unknown');
+      else if (r.bypass_actors.length) warnings.push('Bypass actors require review');
+      if (type === 'pull_request' && !(parameters.required_approving_review_count >= 1)) warnings.push('At least one approving review is not demonstrated');
+      if (type === 'required_status_checks' && (!Array.isArray(parameters.required_status_checks) || !parameters.required_status_checks.length)) warnings.push('Required CI checks are not demonstrated');
+      return {id:r.id, name:r.name, source:r.source, parameters, bypass_actors:r.bypass_actors ?? 'unknown', warnings};
+    }) : 'not demonstrated';
   }
   return result;
 }
