@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "observed_at_utc": "2026-11-01 20:30:04 UTC",
+  "observed_at_utc": "2026-11-01 20:33:57 UTC",
   "description": "Point-in-time observed refs and open PRs; CI and import status can change. Refreshed independently of production controls; historical runs do not verify later commits.",
   "repositories": [
     {
@@ -126,6 +126,7 @@
         "refs/heads/feature/docs-r2-archive-gateway": "727a8faebc90220e731ab32ff109613cc42b9fe7",
         "refs/heads/feature/gitflow-policy": "f1daf48dcc5653b9edecea98745b73285f2bf72d",
         "refs/heads/feature/nightjar-iv-checkpoint": "e06621b8487d0772fec107474461d590ef660117",
+        "refs/heads/feature/nightjar-iv-checkpoint-state": "b304e06efbc96228fed83fce4f41334e50e49ff1",
         "refs/heads/feature/nightjar-iv-docs-combined": "7a3d8c97071cdc88965d8a565946d968ddd7f350",
         "refs/heads/feature/nightjar-iv-reference": "391f5e3a088fb392d6c775e976c3706e0327148e",
         "refs/heads/feature/tag-release-automation": "726bb904457728db29561c1a71bdfffbc45695de",
@@ -144,6 +145,15 @@
         "refs/tags/v1.2.2": "ed1f121ae991fd868e757228664d1c3a737c3c10"
       },
       "open_pull_requests": [
+        {
+          "number": 15,
+          "title": "Verify signed checkpoints against archive and promotion histories",
+          "head": "feature/nightjar-iv-checkpoint-state",
+          "sha": "b304e06efbc96228fed83fce4f41334e50e49ff1",
+          "base": "feature/nightjar-iv-checkpoint",
+          "draft": true,
+          "url": "https://github.com/martletdesign/astro/pull/15"
+        },
         {
           "number": 14,
           "title": "Prepare signed immutable-release documentation checkpoints",
@@ -744,6 +754,7 @@
         "refs/heads/feature/docs-r2-archive-gateway": "e979a406dae145e7d8ed6f178695fea5c4896d41",
         "refs/heads/feature/gitflow-policy": "14f70454bb57cd3a51618fd5191fbaaead594bc2",
         "refs/heads/feature/nightjar-iv-checkpoint": "41a0c54461754e14e7e6d8dcfc45c8175f1e7877",
+        "refs/heads/feature/nightjar-iv-checkpoint-state": "f2d120c2b567fc816a80961c2472e8f6eb957be1",
         "refs/heads/feature/nightjar-iv-docs-combined": "4fee24717bb3c823b0ac3e9812de970cc24bc349",
         "refs/heads/feature/nightjar-iv-reference": "afe4fff7712f1a1f38a21d08220fc641c75a6f11",
         "refs/heads/feature/tag-release-automation": "0ed4fee4c0a6ba1a191f523927095f3e78936436",
@@ -761,6 +772,15 @@
         "refs/tags/v1.2.2": "af57afbc6413d7690cea8a839c7c0e1d48e2730c"
       },
       "open_pull_requests": [
+        {
+          "number": 15,
+          "title": "Verify signed checkpoints against archive and promotion histories",
+          "head": "feature/nightjar-iv-checkpoint-state",
+          "sha": "f2d120c2b567fc816a80961c2472e8f6eb957be1",
+          "base": "feature/nightjar-iv-checkpoint",
+          "draft": true,
+          "url": "https://github.com/krigsvolddesign/astro/pull/15"
+        },
         {
           "number": 14,
           "title": "Prepare signed immutable-release documentation checkpoints",
@@ -1250,7 +1270,7 @@
         "refs/heads/feature/gitflow-release-preparation": "a492e12618dd178fd5cee7fbe5487d512f1e3cc7",
         "refs/heads/feature/nightjar-iv-checked-inputs": "948acddfd153fadbd36e83de3efcbecf353216b0",
         "refs/heads/feature/nightjar-iv-interaction-contract": "16348c4d2ea5b873506d37855fc434f348f21d06",
-        "refs/heads/feature/nightjar-iv-ledger": "3fa454db226018af5aafa550f42ace3e273bca90",
+        "refs/heads/feature/nightjar-iv-ledger": "e1bbc699cc05e0ca96d02bfb0535a1d82671d87d",
         "refs/heads/feature/nightjar-iv-legacy-docs-contract": "08a30d6fe9379cca5154be35d5fd7bd206a71abe",
         "refs/heads/feature/nightjar-iv-ruleset-audit": "623a7797ced40791db6950718468d2d0e8de5daf",
         "refs/heads/feature/versioned-docs-contract": "366dd2114cf08115a58e58cfc4c1f1d4bb781e7e",
@@ -1366,7 +1386,7 @@
           "number": 74,
           "title": "Track Nightjar IV implementation and repository evidence",
           "head": "feature/nightjar-iv-ledger",
-          "sha": "3fa454db226018af5aafa550f42ace3e273bca90",
+          "sha": "e1bbc699cc05e0ca96d02bfb0535a1d82671d87d",
           "base": "develop",
           "draft": true,
           "url": "https://github.com/k3jph/design-workbench/pull/74"
@@ -2144,6 +2164,21 @@
       ],
       "limitations": [
         "Other latest Martlet and Krigsvold React #6 workflows were queued at observation."
+      ]
+    },
+    {
+      "scope": "Astro pinned checkpoint and archive integration",
+      "commits": {
+        "martlet": "b304e06efbc96228fed83fce4f41334e50e49ff1",
+        "krigsvold": "f2d120c2b567fc816a80961c2472e8f6eb957be1"
+      },
+      "checks": [
+        "Local tests connect simulated immutable-release attestations to R2 archive bytes, source identity, pinned catalog and promotion history; stale pins, changed bytes, missing data, fake signatures and promotion/catalog forks are rejected.",
+        "Both preceding full suites passed 29 tests; final fork-check modifications passed locally."
+      ],
+      "limitations": [
+        "Final-head hosted workflows queued or not listed at observation.",
+        "No live GitHub attestation, independent durable anti-rollback head, live R2 access controls or historical serving tested; release gate remains disabled."
       ]
     }
   ],
