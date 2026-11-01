@@ -50,17 +50,31 @@ def observe(curl, host):
     return {'classification': 'http_response', 'httpCode': int(code),
             'reason': 'response observed; origin identity and deployed revision were not verified'}
 
+def route_fragments(items):
+    """Proposed Wrangler route fragments; account and binding remain unselected."""
+    zones = {family: host for family, framework, host in items if framework == 'main'}
+    return [{'family': family, 'framework': framework, 'host': host,
+             'routes': [{'pattern': f'{host}/docs/*', 'zone_name': zones[family]},
+                        {'pattern': f'{host}/_archive/*', 'zone_name': zones[family]}]}
+            for family, framework, host in items if framework != 'main']
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--plan', type=Path, default=DEFAULT_PLAN)
     parser.add_argument('--online', action='store_true', help='make read-only HTTPS HEAD requests')
+    parser.add_argument('--routes', action='store_true', help='emit review-only Wrangler route fragments; do not deploy')
     parser.add_argument('--curl', default='curl', help='curl executable (for reproducible fixture tests)')
     args = parser.parse_args()
+    if args.online and args.routes:
+        parser.error('--online and --routes cannot be combined')
     try:
         items = hosts(json.loads(args.plan.read_text()))
     except (OSError, ValueError, TypeError, KeyError) as error:
         print(f'invalid plan: {error}', file=sys.stderr)
         return 2
+    if args.routes:
+        print(json.dumps({'schemaVersion': 1, 'reviewOnly': True, 'workers': route_fragments(items)}, indent=2))
+        return 0
     output = [{'family': family, 'framework': framework, 'host': host,
                **(observe(args.curl, host) if args.online else {'classification': 'not_checked'})}
               for family, framework, host in items]

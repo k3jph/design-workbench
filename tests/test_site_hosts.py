@@ -13,7 +13,15 @@ spec.loader.exec_module(site_hosts)
 class HostPlanTests(unittest.TestCase):
     def test_exact_eight_hosts_and_reject_wrong_scope(self):
         plan = json.loads(site_hosts.DEFAULT_PLAN.read_text())
-        self.assertEqual(len(site_hosts.hosts(plan)), 8)
+        items = site_hosts.hosts(plan)
+        self.assertEqual(len(items), 8)
+        fragments = site_hosts.route_fragments(items)
+        self.assertEqual(len(fragments), 6)
+        astro = next(item for item in fragments if item['host'] == 'astro.martletdesign.dev')
+        self.assertEqual(astro['routes'], [
+            {'pattern': 'astro.martletdesign.dev/docs/*', 'zone_name': 'martletdesign.dev'},
+            {'pattern': 'astro.martletdesign.dev/_archive/*', 'zone_name': 'martletdesign.dev'},
+        ])
         plan['reference']['martlet']['astro'] = 'evil.invalid'
         with self.assertRaises(ValueError):
             site_hosts.hosts(plan)
