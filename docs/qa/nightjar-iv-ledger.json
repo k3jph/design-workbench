@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "observed_at_utc": "2026-11-01 20:33:57 UTC",
+  "observed_at_utc": "2026-11-01 22:34:49 UTC",
   "description": "Point-in-time observed refs and open PRs; CI and import status can change. Refreshed independently of production controls; historical runs do not verify later commits.",
   "repositories": [
     {
@@ -11,7 +11,7 @@
       "refs": {
         "refs/heads/develop": "3a504ce2c2d34c7dc44cf5ec094d255eaf1aeac6",
         "refs/heads/feature/gitflow-policy": "7fc6d426aa0f65443199beea0026bb29ea745167",
-        "refs/heads/feature/tag-release-automation": "e99fd5b6f822c653b5a4356f593117c79fe6f1d6",
+        "refs/heads/feature/tag-release-automation": "b0de8de2b23745ad5b22905161fd84ccbc0e04b4",
         "refs/heads/fix/adoption-repair-03": "7e130a937b730292e940deb4c41a9b164ef0b0a2",
         "refs/heads/main": "3a504ce2c2d34c7dc44cf5ec094d255eaf1aeac6",
         "refs/heads/migration/core-contrast": "4bc45ff0bd1ee2e93ee61917b023f7b45686895f",
@@ -36,7 +36,7 @@
           "number": 16,
           "title": "Prepare disabled tag-driven core releases",
           "head": "feature/tag-release-automation",
-          "sha": "e99fd5b6f822c653b5a4356f593117c79fe6f1d6",
+          "sha": "b0de8de2b23745ad5b22905161fd84ccbc0e04b4",
           "base": "develop",
           "draft": true,
           "url": "https://github.com/martletdesign/core/pull/16"
@@ -123,10 +123,10 @@
       "refs": {
         "refs/heads/develop": "ed1f121ae991fd868e757228664d1c3a737c3c10",
         "refs/heads/feature/astro-release-integration": "31eee31020870a95a64fbaa8ac2d96d224880bab",
-        "refs/heads/feature/docs-r2-archive-gateway": "727a8faebc90220e731ab32ff109613cc42b9fe7",
+        "refs/heads/feature/docs-r2-archive-gateway": "6ac5e8686d971b424727145eb57874a6df56e677",
         "refs/heads/feature/gitflow-policy": "f1daf48dcc5653b9edecea98745b73285f2bf72d",
         "refs/heads/feature/nightjar-iv-checkpoint": "e06621b8487d0772fec107474461d590ef660117",
-        "refs/heads/feature/nightjar-iv-checkpoint-state": "b304e06efbc96228fed83fce4f41334e50e49ff1",
+        "refs/heads/feature/nightjar-iv-checkpoint-state": "43a858cffd144663b5316b2858272b370cf390ee",
         "refs/heads/feature/nightjar-iv-docs-combined": "7a3d8c97071cdc88965d8a565946d968ddd7f350",
         "refs/heads/feature/nightjar-iv-reference": "391f5e3a088fb392d6c775e976c3706e0327148e",
         "refs/heads/feature/tag-release-automation": "726bb904457728db29561c1a71bdfffbc45695de",
@@ -149,7 +149,7 @@
           "number": 15,
           "title": "Verify signed checkpoints against archive and promotion histories",
           "head": "feature/nightjar-iv-checkpoint-state",
-          "sha": "b304e06efbc96228fed83fce4f41334e50e49ff1",
+          "sha": "43a858cffd144663b5316b2858272b370cf390ee",
           "base": "feature/nightjar-iv-checkpoint",
           "draft": true,
           "url": "https://github.com/martletdesign/astro/pull/15"
@@ -185,7 +185,7 @@
           "number": 11,
           "title": "Prototype create-only R2 documentation archive gateway",
           "head": "feature/docs-r2-archive-gateway",
-          "sha": "727a8faebc90220e731ab32ff109613cc42b9fe7",
+          "sha": "6ac5e8686d971b424727145eb57874a6df56e677",
           "base": "feature/astro-release-integration",
           "draft": true,
           "url": "https://github.com/martletdesign/astro/pull/11"
@@ -252,7 +252,7 @@
         "refs/heads/feature/independent-react-source": "7acbcdc17a99b70734aace9028ef00a2cef9b7cf",
         "refs/heads/feature/independent-reference-gallery": "579470889695727b19505a2ef95350f1084024e6",
         "refs/heads/feature/local-docs-archives": "51eb10c15129407de393b46c7549bd21623165ae",
-        "refs/heads/feature/react-r2-archive": "377272e8797db7958231be7cfd75e57d1623321a",
+        "refs/heads/feature/react-r2-archive": "7ffe7b32ce2f250c8cae17bb4e85960d1a079f7c",
         "refs/heads/feature/react-tag-release": "f7e2cf172ede7721dd133e7a71f0cc83e9c0a497",
         "refs/heads/main": "3c77b664ea80d0a58599dc5d7391b3d013c9570e"
       },
@@ -261,7 +261,7 @@
           "number": 6,
           "title": "Rehearse React snapshots with R2 archive gateway",
           "head": "feature/react-r2-archive",
-          "sha": "377272e8797db7958231be7cfd75e57d1623321a",
+          "sha": "7ffe7b32ce2f250c8cae17bb4e85960d1a079f7c",
           "base": "feature/local-docs-archives",
           "draft": true,
           "url": "https://github.com/martletdesign/react/pull/6"
@@ -335,7 +335,7 @@
         "refs/heads/develop": "afcf62bc9bb676f1ae5fe27757d79db6dde94021",
         "refs/heads/feature/nightjar-iv-jekyll-browser": "3fabff42c6e01f745ef28aff90d4da993b6b890d",
         "refs/heads/feature/nightjar-iv-jekyll-docs-gate": "97ab6443bad6db68e013ca27d1ab6a8a729d00de",
-        "refs/heads/feature/nightjar-iv-jekyll-r2-experiment": "dec2acedb91b0d1ae71ae8f6b17cfd3c34a2fc56",
+        "refs/heads/feature/nightjar-iv-jekyll-r2-experiment": "a243900a57e71dc0acb2ff3b853da6181d7325f9",
         "refs/heads/feature/nightjar-iv-jekyll-release": "94170981a026a5b45f184561508f41250fe2f053",
         "refs/heads/feature/nightjar-iv-jekyll-versioned-source": "dc1606e7e6a0c786d8f456bec39b0ba04499c0c4",
         "refs/heads/feature/nightjar-iv-source-transfer": "657503a191db2509405a2e2ca3cc05f274b9161f",
@@ -346,7 +346,7 @@
           "number": 6,
           "title": "Rehearse actual Jekyll snapshots through archive gateway",
           "head": "feature/nightjar-iv-jekyll-r2-experiment",
-          "sha": "dec2acedb91b0d1ae71ae8f6b17cfd3c34a2fc56",
+          "sha": "a243900a57e71dc0acb2ff3b853da6181d7325f9",
           "base": "feature/nightjar-iv-jekyll-versioned-source",
           "draft": true,
           "url": "https://github.com/martletdesign/jekyll/pull/6"
@@ -637,7 +637,7 @@
       "refs": {
         "refs/heads/develop": "d7b6c2c9d09aa4b82f24dfc84a751c0946fa458a",
         "refs/heads/feature/gitflow-policy": "21bae6e8475964810ea8aad0b59e8e133b59b3c1",
-        "refs/heads/feature/tag-release-automation": "8e61399d8bf0c5ea95ef19fff9f8badc8e6ad813",
+        "refs/heads/feature/tag-release-automation": "7bd170cb4ae37a4125a73acc81b985e4cba4472f",
         "refs/heads/fix/adoption-repair-03": "cb1ed336f4fb0204735ca4751d2928d0bdeb2501",
         "refs/heads/fix/nested-source-actions": "86e610a6f5f79115d740d1c989fcbc71c1ef52f4",
         "refs/heads/main": "d7b6c2c9d09aa4b82f24dfc84a751c0946fa458a",
@@ -664,7 +664,7 @@
           "number": 17,
           "title": "Prepare disabled tag-driven core releases",
           "head": "feature/tag-release-automation",
-          "sha": "8e61399d8bf0c5ea95ef19fff9f8badc8e6ad813",
+          "sha": "7bd170cb4ae37a4125a73acc81b985e4cba4472f",
           "base": "develop",
           "draft": true,
           "url": "https://github.com/krigsvolddesign/core/pull/17"
@@ -751,10 +751,10 @@
       "refs": {
         "refs/heads/develop": "af57afbc6413d7690cea8a839c7c0e1d48e2730c",
         "refs/heads/feature/astro-release-integration": "2f0fa4c34a1c508bcff000b84fbd52dab0c271a5",
-        "refs/heads/feature/docs-r2-archive-gateway": "e979a406dae145e7d8ed6f178695fea5c4896d41",
+        "refs/heads/feature/docs-r2-archive-gateway": "a7721dbbca7a33bf7de2983a61c8c88fd903d938",
         "refs/heads/feature/gitflow-policy": "14f70454bb57cd3a51618fd5191fbaaead594bc2",
         "refs/heads/feature/nightjar-iv-checkpoint": "41a0c54461754e14e7e6d8dcfc45c8175f1e7877",
-        "refs/heads/feature/nightjar-iv-checkpoint-state": "f2d120c2b567fc816a80961c2472e8f6eb957be1",
+        "refs/heads/feature/nightjar-iv-checkpoint-state": "82ac5eddbc5e870985c3e74d9e7435dd2901e05d",
         "refs/heads/feature/nightjar-iv-docs-combined": "4fee24717bb3c823b0ac3e9812de970cc24bc349",
         "refs/heads/feature/nightjar-iv-reference": "afe4fff7712f1a1f38a21d08220fc641c75a6f11",
         "refs/heads/feature/tag-release-automation": "0ed4fee4c0a6ba1a191f523927095f3e78936436",
@@ -776,7 +776,7 @@
           "number": 15,
           "title": "Verify signed checkpoints against archive and promotion histories",
           "head": "feature/nightjar-iv-checkpoint-state",
-          "sha": "f2d120c2b567fc816a80961c2472e8f6eb957be1",
+          "sha": "82ac5eddbc5e870985c3e74d9e7435dd2901e05d",
           "base": "feature/nightjar-iv-checkpoint",
           "draft": true,
           "url": "https://github.com/krigsvolddesign/astro/pull/15"
@@ -812,7 +812,7 @@
           "number": 11,
           "title": "Prototype create-only R2 documentation archive gateway",
           "head": "feature/docs-r2-archive-gateway",
-          "sha": "e979a406dae145e7d8ed6f178695fea5c4896d41",
+          "sha": "a7721dbbca7a33bf7de2983a61c8c88fd903d938",
           "base": "feature/astro-release-integration",
           "draft": true,
           "url": "https://github.com/krigsvolddesign/astro/pull/11"
@@ -879,7 +879,7 @@
         "refs/heads/feature/independent-react-source": "8cf7b26a9209a4fd4e3d4f072e46da0eaf00119a",
         "refs/heads/feature/independent-reference-gallery": "b0e5591aeed09dd36adc08667d07668ab55afbc0",
         "refs/heads/feature/local-docs-archives": "7a9469019a824a202fdd430fb7c9d02bf5877b78",
-        "refs/heads/feature/react-r2-archive": "44d44eb79dc04757dfb04e11a0887357096d7eea",
+        "refs/heads/feature/react-r2-archive": "4fdc39d3056b5b7db0414ea09870d97b4126628f",
         "refs/heads/feature/react-tag-release": "25140ac4cbbdec46660f595f8b2eb6648e540b04",
         "refs/heads/main": "742b5cd33cfc080ca1d6d94987df9dafc45049b4"
       },
@@ -888,7 +888,7 @@
           "number": 6,
           "title": "Rehearse React snapshots with R2 archive gateway",
           "head": "feature/react-r2-archive",
-          "sha": "44d44eb79dc04757dfb04e11a0887357096d7eea",
+          "sha": "4fdc39d3056b5b7db0414ea09870d97b4126628f",
           "base": "feature/local-docs-archives",
           "draft": true,
           "url": "https://github.com/krigsvolddesign/react/pull/6"
@@ -962,7 +962,7 @@
         "refs/heads/develop": "8c5f4c3fe096c4bc107fe8f16e6c485709751c1f",
         "refs/heads/feature/nightjar-iv-jekyll-browser": "aab91b948bff2ffa9864201d24764c1020e3307b",
         "refs/heads/feature/nightjar-iv-jekyll-docs-gate": "8c369048000d1ef1df0975b4add693b8f699e321",
-        "refs/heads/feature/nightjar-iv-jekyll-r2-experiment": "c162db57d8a0480fcb6f633c9bda07e4c2705891",
+        "refs/heads/feature/nightjar-iv-jekyll-r2-experiment": "84a3884cd3f1c0c99ab315a207784ba59a27c7c7",
         "refs/heads/feature/nightjar-iv-jekyll-release": "e4513920d66c1355bfdd41d688badda0c6d44f0d",
         "refs/heads/feature/nightjar-iv-jekyll-versioned-source": "8151bd3cf1acbc5dbf111dd9d6a006e75d9d878d",
         "refs/heads/feature/nightjar-iv-source-transfer": "9c8aaec5a614645ce3d20dcf196bcbad2983764b",
@@ -973,7 +973,7 @@
           "number": 6,
           "title": "Rehearse actual Jekyll snapshots through archive gateway",
           "head": "feature/nightjar-iv-jekyll-r2-experiment",
-          "sha": "c162db57d8a0480fcb6f633c9bda07e4c2705891",
+          "sha": "84a3884cd3f1c0c99ab315a207784ba59a27c7c7",
           "base": "feature/nightjar-iv-jekyll-versioned-source",
           "draft": true,
           "url": "https://github.com/krigsvolddesign/jekyll/pull/6"
@@ -1269,11 +1269,12 @@
         "refs/heads/feat/reference-research-page": "0295a1d82a1b39a5811db09f8bb6780669d43d79",
         "refs/heads/feature/gitflow-release-preparation": "a492e12618dd178fd5cee7fbe5487d512f1e3cc7",
         "refs/heads/feature/nightjar-iv-checked-inputs": "948acddfd153fadbd36e83de3efcbecf353216b0",
-        "refs/heads/feature/nightjar-iv-interaction-contract": "16348c4d2ea5b873506d37855fc434f348f21d06",
-        "refs/heads/feature/nightjar-iv-ledger": "e1bbc699cc05e0ca96d02bfb0535a1d82671d87d",
+        "refs/heads/feature/nightjar-iv-interaction-contract": "e3cf607ca73ff20a21819c3d8eece8e6dbcb690e",
+        "refs/heads/feature/nightjar-iv-ledger": "1c6cc7bfe9bcd8a46d6730561de868bb9a56508a",
         "refs/heads/feature/nightjar-iv-legacy-docs-contract": "08a30d6fe9379cca5154be35d5fd7bd206a71abe",
         "refs/heads/feature/nightjar-iv-ruleset-audit": "623a7797ced40791db6950718468d2d0e8de5daf",
-        "refs/heads/feature/versioned-docs-contract": "366dd2114cf08115a58e58cfc4c1f1d4bb781e7e",
+        "refs/heads/feature/react-authority-cutover": "f8f8c03ac9fb68eaef5ed3b0da3044b2d74d9627",
+        "refs/heads/feature/versioned-docs-contract": "1ac7048165781b870adb59d4f21852c44eba71ac",
         "refs/heads/fix/adoption-completion": "8d1e9b3e0991ad5568fb3f950e4789d17848cc0b",
         "refs/heads/fix/documentation-nav-surfaces": "400aacb6c282a383d7915085125cd7724036b5c3",
         "refs/heads/fix/martlet-left-contents": "11785384d1439a9452eeabfcd0e27b10f11fa16f",
@@ -1356,6 +1357,15 @@
       },
       "open_pull_requests": [
         {
+          "number": 78,
+          "title": "Prepare retirement of competing React npm publisher",
+          "head": "feature/react-authority-cutover",
+          "sha": "f8f8c03ac9fb68eaef5ed3b0da3044b2d74d9627",
+          "base": "develop",
+          "draft": true,
+          "url": "https://github.com/k3jph/design-workbench/pull/78"
+        },
+        {
           "number": 77,
           "title": "Represent historical Jekyll theme provenance in documentation contracts",
           "head": "feature/nightjar-iv-legacy-docs-contract",
@@ -1368,7 +1378,7 @@
           "number": 76,
           "title": "Check standalone contact interactions with a shared browser contract",
           "head": "feature/nightjar-iv-interaction-contract",
-          "sha": "16348c4d2ea5b873506d37855fc434f348f21d06",
+          "sha": "e3cf607ca73ff20a21819c3d8eece8e6dbcb690e",
           "base": "feature/nightjar-iv-checked-inputs",
           "draft": true,
           "url": "https://github.com/k3jph/design-workbench/pull/76"
@@ -1386,7 +1396,7 @@
           "number": 74,
           "title": "Track Nightjar IV implementation and repository evidence",
           "head": "feature/nightjar-iv-ledger",
-          "sha": "e1bbc699cc05e0ca96d02bfb0535a1d82671d87d",
+          "sha": "1c6cc7bfe9bcd8a46d6730561de868bb9a56508a",
           "base": "develop",
           "draft": true,
           "url": "https://github.com/k3jph/design-workbench/pull/74"
@@ -1404,7 +1414,7 @@
           "number": 72,
           "title": "Prepare immutable framework documentation contract",
           "head": "feature/versioned-docs-contract",
-          "sha": "366dd2114cf08115a58e58cfc4c1f1d4bb781e7e",
+          "sha": "1ac7048165781b870adb59d4f21852c44eba71ac",
           "base": "develop",
           "draft": true,
           "url": "https://github.com/k3jph/design-workbench/pull/72"
@@ -2180,6 +2190,62 @@
         "Final-head hosted workflows queued or not listed at observation.",
         "No live GitHub attestation, independent durable anti-rollback head, live R2 access controls or historical serving tested; release gate remains disabled."
       ]
+    },
+    {
+      "scope": "Final integration continuation: core and framework archive candidates",
+      "commits": {
+        "martletdesign/core": "b0de8de2b23745ad5b22905161fd84ccbc0e04b4",
+        "krigsvolddesign/core": "7bd170cb4ae37a4125a73acc81b985e4cba4472f",
+        "martletdesign/astro": "43a858cffd144663b5316b2858272b370cf390ee",
+        "krigsvolddesign/astro": "82ac5eddbc5e870985c3e74d9e7435dd2901e05d",
+        "martletdesign/react": "7ffe7b32ce2f250c8cae17bb4e85960d1a079f7c",
+        "krigsvolddesign/react": "4fdc39d3056b5b7db0414ea09870d97b4126628f",
+        "martletdesign/jekyll": "a243900a57e71dc0acb2ff3b853da6181d7325f9",
+        "krigsvolddesign/jekyll": "84a3884cd3f1c0c99ab315a207784ba59a27c7c7"
+      },
+      "checks": [
+        "Core final trees passed all local tests, full nonpublishing tag rehearsal and reproduced reviewed package SHA-256.",
+        "Astro 42 tests each and Miniflare final smoke passed locally; React 33 tests and nonpublishing rehearsals per family passed; Jekyll gateway and guard tests, full two-version archive builds and Miniflare passed locally.",
+        "Each framework now tests bounded request streams, slashless directory redirects, download MIME and no-JS link to a separately served versions index.",
+        "Current core legacy direct-publish jobs are disabled; stage-only remains enabled. Current workbench main still permits React release-event publication; draft #78 proposes cutover removal."
+      ],
+      "artifacts_sha256": {
+        "martlet_core": "1395eb206514b54500e4a098b1aafe59492c516c301a7e8c81a18672f6f4ce42",
+        "krigsvold_core": "c2088b2585e913c11f74a045805bcef186e8e830f5c626e46c0c299e6a6eb7c4",
+        "martlet_jekyll_source_zip": "640444bac3e142e5924b081d5af9553d74bb520387207328b6d8434a04b9a740",
+        "krigsvold_jekyll_source_zip": "ab131b467ab28decc64cdb79a1be684e2c5246e8029f9dfda0007488f72cbce5"
+      },
+      "limitations": [
+        "Exact-head hosted core and six framework workflows are queued at observation; past heads' successful checks do not verify new code.",
+        "Miniflare returned 413 without objects on over-limit writes but transport consumed source chunks; no end-to-end cancellation claim.",
+        "Read-only checkpoint/recovery orchestration uses simulated GitHub signatures and head authority. No live immutable-release attestation, protected anti-rollback head, Cloudflare IAM or historical serving is verified.",
+        "Historical snapshots created before index-link change cannot be rewritten to include it."
+      ]
+    },
+    {
+      "scope": "Shared conformance #76 latest browser selection fix",
+      "commit": "e3cf607ca73ff20a21819c3d8eece8e6dbcb690e",
+      "checks": [
+        "12 tests passed locally Chromium; hosted rerun queued after fixing test to select installed matrix browser.",
+        "Conservative 320x900 Chromium gradient background sampling: Martlet 10.488–15.459:1; Krigsvold 18.005–18.624:1."
+      ],
+      "limitations": [
+        "Prior hosted 41357342583 Firefox/WebKit failed because extensibility test launched Chromium rather than selected installed browser.",
+        "Axe Jekyll contrast remains incomplete outside narrow sampled cases; no manual screen-reader or physical-device verification."
+      ]
+    },
+    {
+      "scope": "Eight public sites",
+      "checks": [
+        "Eight proxy-respecting HEAD probes yielded curl 56/HTTP 000 under enforced egress exclusions; classified inconclusive.",
+        "Workbench #72 hosted documentation and route-plan checks passed."
+      ],
+      "runs": [
+        "https://github.com/k3jph/design-workbench/actions/runs/41357041574"
+      ],
+      "limitations": [
+        "Neither DNS/TLS nor actual deployed service accessibility is established; read-only administrator inventory remains necessary."
+      ]
     }
   ],
   "blockers": [
@@ -2231,23 +2297,129 @@
     }
   ],
   "workflow_snapshot": {
-    "observed_at_utc": "2026-11-01 22:25:30 UTC",
-    "source": "GitHub connector pull-request-triggered workflow runs; first page only, snapshot applies to recorded SHA and may omit non-PR workflows or later commits.",
+    "observed_at_utc": "2026-11-01 22:34:49 UTC",
+    "source": "Connector recent-user open PRs, PR-triggered runs first page only; exact recorded heads. Does not establish every author's PR or non-PR run, workflow coverage, or later head.",
     "pull_requests": [
       {
         "repo": "martletdesign/core",
-        "pr": 15,
-        "sha": "7fc6d426aa0f65443199beea0026bb29ea745167",
+        "pr": 10,
+        "sha": "7200e334acc98d7fb14b61bef767d0e511e38df2",
         "runs": [
           {
-            "name": "GitFlow policy",
-            "id": 41333425021,
+            "name": "Verify Martlet npm",
+            "id": 41246593421,
+            "status": "completed",
+            "conclusion": "success"
+          }
+        ],
+        "error": false
+      },
+      {
+        "repo": "martletdesign/core",
+        "pr": 7,
+        "sha": "8a777801eb8385ea532e2b960084453f03a37ad0",
+        "runs": [
+          {
+            "name": "Verify Martlet npm",
+            "id": 40855766442,
+            "status": "completed",
+            "conclusion": "success"
+          }
+        ],
+        "error": false
+      },
+      {
+        "repo": "martletdesign/core",
+        "pr": 16,
+        "sha": "b0de8de2b23745ad5b22905161fd84ccbc0e04b4",
+        "runs": [
+          {
+            "name": "Published provenance rehearsal (read only)",
+            "id": 41357161808,
+            "status": "queued",
+            "conclusion": null
+          },
+          {
+            "name": "Existing npm version rejection (read only)",
+            "id": 41357161861,
+            "status": "queued",
+            "conclusion": null
+          },
+          {
+            "name": "Verify Martlet npm",
+            "id": 41357161811,
+            "status": "queued",
+            "conclusion": null
+          }
+        ],
+        "error": false
+      },
+      {
+        "repo": "martletdesign/core",
+        "pr": 12,
+        "sha": "8bbc9493c7b580577595f3f3192d49d378dcb620",
+        "runs": [
+          {
+            "name": "Verify Martlet npm",
+            "id": 41271964551,
             "status": "completed",
             "conclusion": "success"
           },
           {
             "name": "Verify Martlet npm",
-            "id": 41333424923,
+            "id": 41271930934,
+            "status": "completed",
+            "conclusion": "success"
+          }
+        ],
+        "error": false
+      },
+      {
+        "repo": "martletdesign/astro",
+        "pr": 15,
+        "sha": "43a858cffd144663b5316b2858272b370cf390ee",
+        "runs": [
+          {
+            "name": "Published provenance rehearsal (read only)",
+            "id": 41357641989,
+            "status": "queued",
+            "conclusion": null
+          },
+          {
+            "name": "Versioned Astro archive rehearsal",
+            "id": 41357642012,
+            "status": "queued",
+            "conclusion": null
+          },
+          {
+            "name": "Existing npm version rejection (read only)",
+            "id": 41357642045,
+            "status": "queued",
+            "conclusion": null
+          },
+          {
+            "name": "R2 archive gateway rehearsal",
+            "id": 41357642099,
+            "status": "queued",
+            "conclusion": null
+          },
+          {
+            "name": "Verify Martlet Astro",
+            "id": 41357642076,
+            "status": "queued",
+            "conclusion": null
+          }
+        ],
+        "error": false
+      },
+      {
+        "repo": "martletdesign/core",
+        "pr": 11,
+        "sha": "107257a176b960cdf94f87fda95a3fe563c48111",
+        "runs": [
+          {
+            "name": "Verify Martlet npm",
+            "id": 41261320909,
             "status": "completed",
             "conclusion": "success"
           }
@@ -2270,52 +2442,20 @@
       },
       {
         "repo": "martletdesign/core",
-        "pr": 11,
-        "sha": "107257a176b960cdf94f87fda95a3fe563c48111",
+        "pr": 15,
+        "sha": "7fc6d426aa0f65443199beea0026bb29ea745167",
         "runs": [
           {
-            "name": "Verify Martlet npm",
-            "id": 41261320909,
+            "name": "GitFlow policy",
+            "id": 41333425021,
             "status": "completed",
             "conclusion": "success"
-          }
-        ],
-        "error": false
-      },
-      {
-        "repo": "martletdesign/astro",
-        "pr": 15,
-        "sha": "b304e06efbc96228fed83fce4f41334e50e49ff1",
-        "runs": [
-          {
-            "name": "Versioned Astro archive rehearsal",
-            "id": 41347453926,
-            "status": "queued",
-            "conclusion": null
           },
           {
-            "name": "Published provenance rehearsal (read only)",
-            "id": 41347453882,
-            "status": "queued",
-            "conclusion": null
-          },
-          {
-            "name": "Existing npm version rejection (read only)",
-            "id": 41347454003,
-            "status": "queued",
-            "conclusion": null
-          },
-          {
-            "name": "R2 archive gateway rehearsal",
-            "id": 41347453898,
-            "status": "queued",
-            "conclusion": null
-          },
-          {
-            "name": "Verify Martlet Astro",
-            "id": 41347453940,
-            "status": "queued",
-            "conclusion": null
+            "name": "Verify Martlet npm",
+            "id": 41333424923,
+            "status": "completed",
+            "conclusion": "success"
           }
         ],
         "error": false
@@ -2359,80 +2499,6 @@
         "error": false
       },
       {
-        "repo": "martletdesign/core",
-        "pr": 12,
-        "sha": "8bbc9493c7b580577595f3f3192d49d378dcb620",
-        "runs": [
-          {
-            "name": "Verify Martlet npm",
-            "id": 41271964551,
-            "status": "completed",
-            "conclusion": "success"
-          },
-          {
-            "name": "Verify Martlet npm",
-            "id": 41271930934,
-            "status": "completed",
-            "conclusion": "success"
-          }
-        ],
-        "error": false
-      },
-      {
-        "repo": "martletdesign/core",
-        "pr": 7,
-        "sha": "8a777801eb8385ea532e2b960084453f03a37ad0",
-        "runs": [
-          {
-            "name": "Verify Martlet npm",
-            "id": 40855766442,
-            "status": "completed",
-            "conclusion": "success"
-          }
-        ],
-        "error": false
-      },
-      {
-        "repo": "martletdesign/core",
-        "pr": 16,
-        "sha": "e99fd5b6f822c653b5a4356f593117c79fe6f1d6",
-        "runs": [
-          {
-            "name": "Published provenance rehearsal (read only)",
-            "id": 41344454327,
-            "status": "completed",
-            "conclusion": "success"
-          },
-          {
-            "name": "Existing npm version rejection (read only)",
-            "id": 41344454613,
-            "status": "completed",
-            "conclusion": "success"
-          },
-          {
-            "name": "Verify Martlet npm",
-            "id": 41344454251,
-            "status": "completed",
-            "conclusion": "success"
-          }
-        ],
-        "error": false
-      },
-      {
-        "repo": "martletdesign/core",
-        "pr": 10,
-        "sha": "7200e334acc98d7fb14b61bef767d0e511e38df2",
-        "runs": [
-          {
-            "name": "Verify Martlet npm",
-            "id": 41246593421,
-            "status": "completed",
-            "conclusion": "success"
-          }
-        ],
-        "error": false
-      },
-      {
         "repo": "martletdesign/astro",
         "pr": 14,
         "sha": "e06621b8487d0772fec107474461d590ef660117",
@@ -2466,76 +2532,6 @@
             "id": 41347061427,
             "status": "queued",
             "conclusion": null
-          }
-        ],
-        "error": false
-      },
-      {
-        "repo": "martletdesign/astro",
-        "pr": 12,
-        "sha": "391f5e3a088fb392d6c775e976c3706e0327148e",
-        "runs": [
-          {
-            "name": "Verify Martlet Astro",
-            "id": 41346087341,
-            "status": "completed",
-            "conclusion": "success"
-          },
-          {
-            "name": "Existing npm version rejection (read only)",
-            "id": 41346087264,
-            "status": "completed",
-            "conclusion": "success"
-          },
-          {
-            "name": "Published provenance rehearsal (read only)",
-            "id": 41346087265,
-            "status": "completed",
-            "conclusion": "success"
-          },
-          {
-            "name": "Versioned Astro archive rehearsal",
-            "id": 41346087433,
-            "status": "completed",
-            "conclusion": "success"
-          }
-        ],
-        "error": false
-      },
-      {
-        "repo": "martletdesign/astro",
-        "pr": 11,
-        "sha": "727a8faebc90220e731ab32ff109613cc42b9fe7",
-        "runs": [
-          {
-            "name": "Existing npm version rejection (read only)",
-            "id": 41345092757,
-            "status": "completed",
-            "conclusion": "success"
-          },
-          {
-            "name": "R2 archive gateway rehearsal",
-            "id": 41345092710,
-            "status": "completed",
-            "conclusion": "success"
-          },
-          {
-            "name": "Published provenance rehearsal (read only)",
-            "id": 41345092736,
-            "status": "completed",
-            "conclusion": "success"
-          },
-          {
-            "name": "Versioned Astro archive rehearsal",
-            "id": 41345092708,
-            "status": "completed",
-            "conclusion": "success"
-          },
-          {
-            "name": "Verify Martlet Astro",
-            "id": 41345092733,
-            "status": "completed",
-            "conclusion": "success"
           }
         ],
         "error": false
@@ -2594,14 +2590,38 @@
       },
       {
         "repo": "martletdesign/astro",
-        "pr": 6,
-        "sha": "178a0f48aedefa1295f48f33098c0ad16b0d8d47",
+        "pr": 11,
+        "sha": "6ac5e8686d971b424727145eb57874a6df56e677",
         "runs": [
           {
+            "name": "Existing npm version rejection (read only)",
+            "id": 41357093109,
+            "status": "queued",
+            "conclusion": null
+          },
+          {
+            "name": "Versioned Astro archive rehearsal",
+            "id": 41357093098,
+            "status": "queued",
+            "conclusion": null
+          },
+          {
+            "name": "Published provenance rehearsal (read only)",
+            "id": 41357093097,
+            "status": "queued",
+            "conclusion": null
+          },
+          {
             "name": "Verify Martlet Astro",
-            "id": 41227606183,
-            "status": "completed",
-            "conclusion": "success"
+            "id": 41357093125,
+            "status": "queued",
+            "conclusion": null
+          },
+          {
+            "name": "R2 archive gateway rehearsal",
+            "id": 41357093145,
+            "status": "queued",
+            "conclusion": null
           }
         ],
         "error": false
@@ -2620,32 +2640,6 @@
           {
             "name": "GitFlow policy",
             "id": 41333402273,
-            "status": "completed",
-            "conclusion": "success"
-          }
-        ],
-        "error": false
-      },
-      {
-        "repo": "martletdesign/astro",
-        "pr": 8,
-        "sha": "726bb904457728db29561c1a71bdfffbc45695de",
-        "runs": [
-          {
-            "name": "Published provenance rehearsal (read only)",
-            "id": 41341705019,
-            "status": "completed",
-            "conclusion": "success"
-          },
-          {
-            "name": "Existing npm version rejection (read only)",
-            "id": 41341705134,
-            "status": "completed",
-            "conclusion": "success"
-          },
-          {
-            "name": "Verify Martlet Astro",
-            "id": 41341705076,
             "status": "completed",
             "conclusion": "success"
           }
@@ -2685,6 +2679,32 @@
         "error": false
       },
       {
+        "repo": "martletdesign/astro",
+        "pr": 8,
+        "sha": "726bb904457728db29561c1a71bdfffbc45695de",
+        "runs": [
+          {
+            "name": "Published provenance rehearsal (read only)",
+            "id": 41341705019,
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Existing npm version rejection (read only)",
+            "id": 41341705134,
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verify Martlet Astro",
+            "id": 41341705076,
+            "status": "completed",
+            "conclusion": "success"
+          }
+        ],
+        "error": false
+      },
+      {
         "repo": "martletdesign/react",
         "pr": 4,
         "sha": "16cf4285a915309eacd5139f04096d674d3c3f1a",
@@ -2704,6 +2724,72 @@
           {
             "name": "React release rehearsal (nonpublishing)",
             "id": 41345822087,
+            "status": "completed",
+            "conclusion": "success"
+          }
+        ],
+        "error": false
+      },
+      {
+        "repo": "martletdesign/react",
+        "pr": 6,
+        "sha": "7ffe7b32ce2f250c8cae17bb4e85960d1a079f7c",
+        "runs": [
+          {
+            "name": "R2 archive gateway rehearsal",
+            "id": 41357660223,
+            "status": "queued",
+            "conclusion": null
+          },
+          {
+            "name": "Independent React gallery",
+            "id": 41357660224,
+            "status": "queued",
+            "conclusion": null
+          },
+          {
+            "name": "React documentation archive rehearsal",
+            "id": 41357660174,
+            "status": "queued",
+            "conclusion": null
+          },
+          {
+            "name": "Verify standalone package",
+            "id": 41357660209,
+            "status": "queued",
+            "conclusion": null
+          },
+          {
+            "name": "React release rehearsal (nonpublishing)",
+            "id": 41357660226,
+            "status": "queued",
+            "conclusion": null
+          }
+        ],
+        "error": false
+      },
+      {
+        "repo": "martletdesign/react",
+        "pr": 1,
+        "sha": "7acbcdc17a99b70734aace9028ef00a2cef9b7cf",
+        "runs": [
+          {
+            "name": "Verify standalone package",
+            "id": 41344706740,
+            "status": "completed",
+            "conclusion": "success"
+          }
+        ],
+        "error": false
+      },
+      {
+        "repo": "martletdesign/astro",
+        "pr": 6,
+        "sha": "178a0f48aedefa1295f48f33098c0ad16b0d8d47",
+        "runs": [
+          {
+            "name": "Verify Martlet Astro",
+            "id": 41227606183,
             "status": "completed",
             "conclusion": "success"
           }
@@ -2732,12 +2818,90 @@
       },
       {
         "repo": "martletdesign/react",
-        "pr": 1,
-        "sha": "7acbcdc17a99b70734aace9028ef00a2cef9b7cf",
+        "pr": 2,
+        "sha": "f7e2cf172ede7721dd133e7a71f0cc83e9c0a497",
         "runs": [
           {
             "name": "Verify standalone package",
-            "id": 41344706740,
+            "id": 41344956684,
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "React release rehearsal (nonpublishing)",
+            "id": 41344956678,
+            "status": "completed",
+            "conclusion": "success"
+          }
+        ],
+        "error": false
+      },
+      {
+        "repo": "martletdesign/astro",
+        "pr": 12,
+        "sha": "391f5e3a088fb392d6c775e976c3706e0327148e",
+        "runs": [
+          {
+            "name": "Verify Martlet Astro",
+            "id": 41346087341,
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Existing npm version rejection (read only)",
+            "id": 41346087264,
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Published provenance rehearsal (read only)",
+            "id": 41346087265,
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Versioned Astro archive rehearsal",
+            "id": 41346087433,
+            "status": "completed",
+            "conclusion": "success"
+          }
+        ],
+        "error": false
+      },
+      {
+        "repo": "martletdesign/jekyll",
+        "pr": 6,
+        "sha": "a243900a57e71dc0acb2ff3b853da6181d7325f9",
+        "runs": [
+          {
+            "name": "Jekyll release guard tests",
+            "id": 41357664726,
+            "status": "queued",
+            "conclusion": null
+          },
+          {
+            "name": "Standalone browser conformance",
+            "id": 41357664330,
+            "status": "queued",
+            "conclusion": null
+          }
+        ],
+        "error": false
+      },
+      {
+        "repo": "martletdesign/jekyll",
+        "pr": 5,
+        "sha": "dc1606e7e6a0c786d8f456bec39b0ba04499c0c4",
+        "runs": [
+          {
+            "name": "Jekyll release guard tests",
+            "id": 41345886546,
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Standalone browser conformance",
+            "id": 41345886509,
             "status": "completed",
             "conclusion": "success"
           }
@@ -2758,98 +2922,6 @@
           {
             "name": "Standalone browser conformance",
             "id": 41345070802,
-            "status": "completed",
-            "conclusion": "success"
-          }
-        ],
-        "error": false
-      },
-      {
-        "repo": "martletdesign/react",
-        "pr": 2,
-        "sha": "f7e2cf172ede7721dd133e7a71f0cc83e9c0a497",
-        "runs": [
-          {
-            "name": "Verify standalone package",
-            "id": 41344956684,
-            "status": "completed",
-            "conclusion": "success"
-          },
-          {
-            "name": "React release rehearsal (nonpublishing)",
-            "id": 41344956678,
-            "status": "completed",
-            "conclusion": "success"
-          }
-        ],
-        "error": false
-      },
-      {
-        "repo": "martletdesign/react",
-        "pr": 6,
-        "sha": "377272e8797db7958231be7cfd75e57d1623321a",
-        "runs": [
-          {
-            "name": "R2 archive gateway rehearsal",
-            "id": 41346590585,
-            "status": "completed",
-            "conclusion": "success"
-          },
-          {
-            "name": "Verify standalone package",
-            "id": 41346590589,
-            "status": "queued",
-            "conclusion": null
-          },
-          {
-            "name": "Independent React gallery",
-            "id": 41346590592,
-            "status": "queued",
-            "conclusion": null
-          },
-          {
-            "name": "React documentation archive rehearsal",
-            "id": 41346590598,
-            "status": "queued",
-            "conclusion": null
-          },
-          {
-            "name": "React release rehearsal (nonpublishing)",
-            "id": 41346590597,
-            "status": "completed",
-            "conclusion": "success"
-          }
-        ],
-        "error": false
-      },
-      {
-        "repo": "martletdesign/jekyll",
-        "pr": 6,
-        "sha": "dec2acedb91b0d1ae71ae8f6b17cfd3c34a2fc56",
-        "runs": [
-          {
-            "name": "Standalone browser conformance",
-            "id": 41347116146,
-            "status": "queued",
-            "conclusion": null
-          },
-          {
-            "name": "Jekyll release guard tests",
-            "id": 41347116485,
-            "status": "queued",
-            "conclusion": null
-          }
-        ],
-        "error": false
-      },
-      {
-        "repo": "martletdesign/jekyll",
-        "pr": 2,
-        "sha": "3fabff42c6e01f745ef28aff90d4da993b6b890d",
-        "runs": [
-          {
-            "name": "Standalone browser conformance",
-            "id": 41344652611,
             "status": "completed",
             "conclusion": "success"
           }
@@ -2878,32 +2950,12 @@
       },
       {
         "repo": "martletdesign/jekyll",
-        "pr": 5,
-        "sha": "dc1606e7e6a0c786d8f456bec39b0ba04499c0c4",
+        "pr": 2,
+        "sha": "3fabff42c6e01f745ef28aff90d4da993b6b890d",
         "runs": [
-          {
-            "name": "Jekyll release guard tests",
-            "id": 41345886546,
-            "status": "completed",
-            "conclusion": "success"
-          },
           {
             "name": "Standalone browser conformance",
-            "id": 41345886509,
-            "status": "completed",
-            "conclusion": "success"
-          }
-        ],
-        "error": false
-      },
-      {
-        "repo": "martletdesign/jekyll",
-        "pr": 1,
-        "sha": "657503a191db2509405a2e2ca3cc05f274b9161f",
-        "runs": [
-          {
-            "name": "Verify standalone Jekyll",
-            "id": 41344648735,
+            "id": 41344652611,
             "status": "completed",
             "conclusion": "success"
           }
@@ -2931,39 +2983,19 @@
         "error": false
       },
       {
-        "repo": "martletdesign/vim",
+        "repo": "martletdesign/chrome",
         "pr": 2,
-        "sha": "516289687a5b4336363937a28f422c3214e3c931",
+        "sha": "ebfbc75ed2a97a6103c1a7d3b90aa3d0fe567fe9",
         "runs": [
           {
             "name": "Native release policy tests",
-            "id": 41344656645,
+            "id": 41344660795,
             "status": "completed",
             "conclusion": "success"
           },
           {
-            "name": "Verify Martlet vim",
-            "id": 41344656644,
-            "status": "completed",
-            "conclusion": "success"
-          }
-        ],
-        "error": false
-      },
-      {
-        "repo": "martletdesign/firefox",
-        "pr": 2,
-        "sha": "b57365b9e3eb249b9d9ee3bcd3916cad0fcf4c7d",
-        "runs": [
-          {
-            "name": "Native release policy tests",
-            "id": 41344661446,
-            "status": "completed",
-            "conclusion": "success"
-          },
-          {
-            "name": "Verify Martlet firefox",
-            "id": 41344661517,
+            "name": "Verify Martlet chrome",
+            "id": 41344660827,
             "status": "completed",
             "conclusion": "success"
           }
@@ -3011,39 +3043,19 @@
         "error": false
       },
       {
-        "repo": "martletdesign/chrome",
-        "pr": 1,
-        "sha": "94295876add096b86915cd022f23cab7301e17e5",
-        "runs": [
-          {
-            "name": "GitFlow policy",
-            "id": 41333408694,
-            "status": "completed",
-            "conclusion": "success"
-          },
-          {
-            "name": "Verify Martlet chrome",
-            "id": 41333408618,
-            "status": "completed",
-            "conclusion": "success"
-          }
-        ],
-        "error": false
-      },
-      {
-        "repo": "martletdesign/chrome",
+        "repo": "martletdesign/firefox",
         "pr": 2,
-        "sha": "ebfbc75ed2a97a6103c1a7d3b90aa3d0fe567fe9",
+        "sha": "b57365b9e3eb249b9d9ee3bcd3916cad0fcf4c7d",
         "runs": [
           {
             "name": "Native release policy tests",
-            "id": 41344660795,
+            "id": 41344661446,
             "status": "completed",
             "conclusion": "success"
           },
           {
-            "name": "Verify Martlet chrome",
-            "id": 41344660827,
+            "name": "Verify Martlet firefox",
+            "id": 41344661517,
             "status": "completed",
             "conclusion": "success"
           }
@@ -3072,20 +3084,6 @@
       },
       {
         "repo": "martletdesign/website",
-        "pr": 32,
-        "sha": "6dfce8703cb31f4ae84092806b3dd6ccff9534b5",
-        "runs": [
-          {
-            "name": "Theme verification",
-            "id": 40975801734,
-            "status": "completed",
-            "conclusion": "success"
-          }
-        ],
-        "error": false
-      },
-      {
-        "repo": "martletdesign/website",
         "pr": 34,
         "sha": "fae4502a5b1aa3d745c4f4d90171c717ccc76c8a",
         "runs": [
@@ -3105,25 +3103,81 @@
         "error": false
       },
       {
-        "repo": "krigsvolddesign/core",
-        "pr": 17,
-        "sha": "8e61399d8bf0c5ea95ef19fff9f8badc8e6ad813",
+        "repo": "martletdesign/vim",
+        "pr": 2,
+        "sha": "516289687a5b4336363937a28f422c3214e3c931",
         "runs": [
           {
-            "name": "Verify Krigsvold npm",
-            "id": 41344459363,
+            "name": "Native release policy tests",
+            "id": 41344656645,
             "status": "completed",
             "conclusion": "success"
           },
           {
-            "name": "Existing npm version rejection (read only)",
-            "id": 41344459364,
+            "name": "Verify Martlet vim",
+            "id": 41344656644,
+            "status": "completed",
+            "conclusion": "success"
+          }
+        ],
+        "error": false
+      },
+      {
+        "repo": "martletdesign/jekyll",
+        "pr": 1,
+        "sha": "657503a191db2509405a2e2ca3cc05f274b9161f",
+        "runs": [
+          {
+            "name": "Verify standalone Jekyll",
+            "id": 41344648735,
+            "status": "completed",
+            "conclusion": "success"
+          }
+        ],
+        "error": false
+      },
+      {
+        "repo": "martletdesign/website",
+        "pr": 32,
+        "sha": "6dfce8703cb31f4ae84092806b3dd6ccff9534b5",
+        "runs": [
+          {
+            "name": "Theme verification",
+            "id": 40975801734,
+            "status": "completed",
+            "conclusion": "success"
+          }
+        ],
+        "error": false
+      },
+      {
+        "repo": "martletdesign/chrome",
+        "pr": 1,
+        "sha": "94295876add096b86915cd022f23cab7301e17e5",
+        "runs": [
+          {
+            "name": "GitFlow policy",
+            "id": 41333408694,
             "status": "completed",
             "conclusion": "success"
           },
           {
-            "name": "Published provenance rehearsal (read only)",
-            "id": 41344459438,
+            "name": "Verify Martlet chrome",
+            "id": 41333408618,
+            "status": "completed",
+            "conclusion": "success"
+          }
+        ],
+        "error": false
+      },
+      {
+        "repo": "martletdesign/website",
+        "pr": 7,
+        "sha": "23fc0385ac339841a148886e49c5f37b99b1119f",
+        "runs": [
+          {
+            "name": "Theme verification",
+            "id": 39699129136,
             "status": "completed",
             "conclusion": "success"
           }
@@ -3152,28 +3206,26 @@
       },
       {
         "repo": "krigsvolddesign/core",
-        "pr": 12,
-        "sha": "39e000864082b93cce75df368a9bbeccbd5284ce",
+        "pr": 17,
+        "sha": "7bd170cb4ae37a4125a73acc81b985e4cba4472f",
         "runs": [
           {
             "name": "Verify Krigsvold npm",
-            "id": 41261322154,
-            "status": "completed",
-            "conclusion": "success"
-          }
-        ],
-        "error": false
-      },
-      {
-        "repo": "martletdesign/website",
-        "pr": 7,
-        "sha": "23fc0385ac339841a148886e49c5f37b99b1119f",
-        "runs": [
+            "id": 41357165542,
+            "status": "queued",
+            "conclusion": null
+          },
           {
-            "name": "Theme verification",
-            "id": 39699129136,
-            "status": "completed",
-            "conclusion": "success"
+            "name": "Published provenance rehearsal (read only)",
+            "id": 41357165525,
+            "status": "queued",
+            "conclusion": null
+          },
+          {
+            "name": "Existing npm version rejection (read only)",
+            "id": 41357165523,
+            "status": "queued",
+            "conclusion": null
           }
         ],
         "error": false
@@ -3200,12 +3252,12 @@
       },
       {
         "repo": "krigsvolddesign/core",
-        "pr": 10,
-        "sha": "2675078f5fb292920f927b088b87d267dab99701",
+        "pr": 12,
+        "sha": "39e000864082b93cce75df368a9bbeccbd5284ce",
         "runs": [
           {
             "name": "Verify Krigsvold npm",
-            "id": 41227468045,
+            "id": 41261322154,
             "status": "completed",
             "conclusion": "success"
           }
@@ -3214,12 +3266,12 @@
       },
       {
         "repo": "krigsvolddesign/core",
-        "pr": 8,
-        "sha": "191196d090bd3495dcf8274d379e42ef80d96f4d",
+        "pr": 10,
+        "sha": "2675078f5fb292920f927b088b87d267dab99701",
         "runs": [
           {
             "name": "Verify Krigsvold npm",
-            "id": 40855769388,
+            "id": 41227468045,
             "status": "completed",
             "conclusion": "success"
           }
@@ -3241,31 +3293,45 @@
         "error": false
       },
       {
-        "repo": "krigsvolddesign/astro",
-        "pr": 15,
-        "sha": "f2d120c2b567fc816a80961c2472e8f6eb957be1",
+        "repo": "krigsvolddesign/core",
+        "pr": 8,
+        "sha": "191196d090bd3495dcf8274d379e42ef80d96f4d",
         "runs": [
           {
-            "name": "Versioned Astro archive rehearsal",
-            "id": 41347458742,
+            "name": "Verify Krigsvold npm",
+            "id": 40855769388,
+            "status": "completed",
+            "conclusion": "success"
+          }
+        ],
+        "error": false
+      },
+      {
+        "repo": "krigsvolddesign/astro",
+        "pr": 15,
+        "sha": "82ac5eddbc5e870985c3e74d9e7435dd2901e05d",
+        "runs": [
+          {
+            "name": "Verify Krigsvold Astro",
+            "id": 41357646531,
             "status": "queued",
             "conclusion": null
           },
           {
-            "name": "Existing npm version rejection (read only)",
-            "id": 41347458739,
+            "name": "Versioned Astro archive rehearsal",
+            "id": 41357646293,
             "status": "queued",
             "conclusion": null
           },
           {
             "name": "R2 archive gateway rehearsal",
-            "id": 41347458747,
+            "id": 41357646283,
             "status": "queued",
             "conclusion": null
           },
           {
-            "name": "Verify Krigsvold Astro",
-            "id": 41347458740,
+            "name": "Existing npm version rejection (read only)",
+            "id": 41357646333,
             "status": "queued",
             "conclusion": null
           }
@@ -3298,6 +3364,70 @@
           {
             "name": "Existing npm version rejection (read only)",
             "id": 41347066076,
+            "status": "queued",
+            "conclusion": null
+          }
+        ],
+        "error": false
+      },
+      {
+        "repo": "krigsvolddesign/astro",
+        "pr": 13,
+        "sha": "4fee24717bb3c823b0ac3e9812de970cc24bc349",
+        "runs": [
+          {
+            "name": "R2 archive gateway rehearsal",
+            "id": 41345843849,
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Versioned Astro archive rehearsal",
+            "id": 41345843879,
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verify Krigsvold Astro",
+            "id": 41345843853,
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Existing npm version rejection (read only)",
+            "id": 41345843844,
+            "status": "completed",
+            "conclusion": "success"
+          }
+        ],
+        "error": false
+      },
+      {
+        "repo": "krigsvolddesign/astro",
+        "pr": 11,
+        "sha": "a7721dbbca7a33bf7de2983a61c8c88fd903d938",
+        "runs": [
+          {
+            "name": "Versioned Astro archive rehearsal",
+            "id": 41357095384,
+            "status": "queued",
+            "conclusion": null
+          },
+          {
+            "name": "Existing npm version rejection (read only)",
+            "id": 41357095358,
+            "status": "queued",
+            "conclusion": null
+          },
+          {
+            "name": "R2 archive gateway rehearsal",
+            "id": 41357095367,
+            "status": "queued",
+            "conclusion": null
+          },
+          {
+            "name": "Verify Krigsvold Astro",
+            "id": 41357095379,
             "status": "queued",
             "conclusion": null
           }
@@ -3378,32 +3508,20 @@
       },
       {
         "repo": "krigsvolddesign/astro",
-        "pr": 11,
-        "sha": "e979a406dae145e7d8ed6f178695fea5c4896d41",
+        "pr": 7,
+        "sha": "14f70454bb57cd3a51618fd5191fbaaead594bc2",
         "runs": [
           {
-            "name": "Existing npm version rejection (read only)",
-            "id": 41345098269,
-            "status": "completed",
-            "conclusion": "success"
-          },
-          {
-            "name": "R2 archive gateway rehearsal",
-            "id": 41345098441,
-            "status": "completed",
-            "conclusion": "success"
-          },
-          {
-            "name": "Versioned Astro archive rehearsal",
-            "id": 41345098321,
+            "name": "GitFlow policy",
+            "id": 41333422533,
             "status": "completed",
             "conclusion": "success"
           },
           {
             "name": "Verify Krigsvold Astro",
-            "id": 41345098306,
+            "id": 41333422480,
             "status": "completed",
-            "conclusion": "failure"
+            "conclusion": "success"
           }
         ],
         "error": false
@@ -3416,38 +3534,6 @@
           {
             "name": "Verify Krigsvold Astro",
             "id": 41227605248,
-            "status": "completed",
-            "conclusion": "success"
-          }
-        ],
-        "error": false
-      },
-      {
-        "repo": "krigsvolddesign/astro",
-        "pr": 13,
-        "sha": "4fee24717bb3c823b0ac3e9812de970cc24bc349",
-        "runs": [
-          {
-            "name": "R2 archive gateway rehearsal",
-            "id": 41345843849,
-            "status": "completed",
-            "conclusion": "success"
-          },
-          {
-            "name": "Versioned Astro archive rehearsal",
-            "id": 41345843879,
-            "status": "completed",
-            "conclusion": "success"
-          },
-          {
-            "name": "Verify Krigsvold Astro",
-            "id": 41345843853,
-            "status": "completed",
-            "conclusion": "success"
-          },
-          {
-            "name": "Existing npm version rejection (read only)",
-            "id": 41345843844,
             "status": "completed",
             "conclusion": "success"
           }
@@ -3475,89 +3561,37 @@
         "error": false
       },
       {
-        "repo": "krigsvolddesign/astro",
-        "pr": 7,
-        "sha": "14f70454bb57cd3a51618fd5191fbaaead594bc2",
-        "runs": [
-          {
-            "name": "GitFlow policy",
-            "id": 41333422533,
-            "status": "completed",
-            "conclusion": "success"
-          },
-          {
-            "name": "Verify Krigsvold Astro",
-            "id": 41333422480,
-            "status": "completed",
-            "conclusion": "success"
-          }
-        ],
-        "error": false
-      },
-      {
         "repo": "krigsvolddesign/react",
         "pr": 6,
-        "sha": "44d44eb79dc04757dfb04e11a0887357096d7eea",
+        "sha": "4fdc39d3056b5b7db0414ea09870d97b4126628f",
         "runs": [
           {
-            "name": "React release rehearsal (nonpublishing)",
-            "id": 41346593860,
-            "status": "completed",
-            "conclusion": "success"
-          },
-          {
             "name": "Verify standalone package",
-            "id": 41346593879,
-            "status": "queued",
-            "conclusion": null
-          },
-          {
-            "name": "Independent React gallery",
-            "id": 41346593855,
+            "id": 41357663917,
             "status": "queued",
             "conclusion": null
           },
           {
             "name": "React documentation archive rehearsal",
-            "id": 41346593853,
+            "id": 41357664055,
+            "status": "queued",
+            "conclusion": null
+          },
+          {
+            "name": "Independent React gallery",
+            "id": 41357663966,
+            "status": "queued",
+            "conclusion": null
+          },
+          {
+            "name": "React release rehearsal (nonpublishing)",
+            "id": 41357664014,
             "status": "queued",
             "conclusion": null
           },
           {
             "name": "R2 archive gateway rehearsal",
-            "id": 41346593858,
-            "status": "completed",
-            "conclusion": "success"
-          }
-        ],
-        "error": false
-      },
-      {
-        "repo": "krigsvolddesign/react",
-        "pr": 5,
-        "sha": "7a9469019a824a202fdd430fb7c9d02bf5877b78",
-        "runs": [
-          {
-            "name": "React release rehearsal (nonpublishing)",
-            "id": 41346576763,
-            "status": "completed",
-            "conclusion": "success"
-          },
-          {
-            "name": "Independent React gallery",
-            "id": 41346576766,
-            "status": "queued",
-            "conclusion": null
-          },
-          {
-            "name": "React documentation archive rehearsal",
-            "id": 41346576805,
-            "status": "queued",
-            "conclusion": null
-          },
-          {
-            "name": "Verify standalone package",
-            "id": 41346576840,
+            "id": 41357663901,
             "status": "queued",
             "conclusion": null
           }
@@ -3586,6 +3620,26 @@
             "id": 41345824664,
             "status": "in_progress",
             "conclusion": null
+          }
+        ],
+        "error": false
+      },
+      {
+        "repo": "krigsvolddesign/react",
+        "pr": 2,
+        "sha": "25140ac4cbbdec46660f595f8b2eb6648e540b04",
+        "runs": [
+          {
+            "name": "React release rehearsal (nonpublishing)",
+            "id": 41344957743,
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verify standalone package",
+            "id": 41344957769,
+            "status": "completed",
+            "conclusion": "success"
           }
         ],
         "error": false
@@ -3627,19 +3681,39 @@
       {
         "repo": "krigsvolddesign/jekyll",
         "pr": 6,
-        "sha": "c162db57d8a0480fcb6f633c9bda07e4c2705891",
+        "sha": "84a3884cd3f1c0c99ab315a207784ba59a27c7c7",
         "runs": [
           {
             "name": "Standalone browser conformance",
-            "id": 41347121093,
+            "id": 41357667037,
             "status": "queued",
             "conclusion": null
           },
           {
             "name": "Jekyll release guard tests",
-            "id": 41347121100,
+            "id": 41357667082,
             "status": "queued",
             "conclusion": null
+          }
+        ],
+        "error": false
+      },
+      {
+        "repo": "krigsvolddesign/jekyll",
+        "pr": 5,
+        "sha": "8151bd3cf1acbc5dbf111dd9d6a006e75d9d878d",
+        "runs": [
+          {
+            "name": "Jekyll release guard tests",
+            "id": 41345882735,
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Standalone browser conformance",
+            "id": 41345882847,
+            "status": "completed",
+            "conclusion": "success"
           }
         ],
         "error": false
@@ -3658,6 +3732,20 @@
           {
             "name": "Standalone browser conformance",
             "id": 41345068916,
+            "status": "completed",
+            "conclusion": "success"
+          }
+        ],
+        "error": false
+      },
+      {
+        "repo": "krigsvolddesign/jekyll",
+        "pr": 2,
+        "sha": "aab91b948bff2ffa9864201d24764c1020e3307b",
+        "runs": [
+          {
+            "name": "Standalone browser conformance",
+            "id": 41344659983,
             "status": "completed",
             "conclusion": "success"
           }
@@ -3685,55 +3773,33 @@
         "error": false
       },
       {
-        "repo": "krigsvolddesign/jekyll",
-        "pr": 5,
-        "sha": "8151bd3cf1acbc5dbf111dd9d6a006e75d9d878d",
-        "runs": [
-          {
-            "name": "Jekyll release guard tests",
-            "id": 41345882735,
-            "status": "completed",
-            "conclusion": "success"
-          },
-          {
-            "name": "Standalone browser conformance",
-            "id": 41345882847,
-            "status": "completed",
-            "conclusion": "success"
-          }
-        ],
-        "error": false
-      },
-      {
         "repo": "krigsvolddesign/react",
-        "pr": 2,
-        "sha": "25140ac4cbbdec46660f595f8b2eb6648e540b04",
+        "pr": 5,
+        "sha": "7a9469019a824a202fdd430fb7c9d02bf5877b78",
         "runs": [
           {
             "name": "React release rehearsal (nonpublishing)",
-            "id": 41344957743,
+            "id": 41346576763,
             "status": "completed",
             "conclusion": "success"
           },
           {
-            "name": "Verify standalone package",
-            "id": 41344957769,
-            "status": "completed",
-            "conclusion": "success"
-          }
-        ],
-        "error": false
-      },
-      {
-        "repo": "krigsvolddesign/jekyll",
-        "pr": 1,
-        "sha": "9c8aaec5a614645ce3d20dcf196bcbad2983764b",
-        "runs": [
+            "name": "Independent React gallery",
+            "id": 41346576766,
+            "status": "queued",
+            "conclusion": null
+          },
           {
-            "name": "Verify standalone Jekyll",
-            "id": 41344657475,
-            "status": "completed",
-            "conclusion": "success"
+            "name": "React documentation archive rehearsal",
+            "id": 41346576805,
+            "status": "queued",
+            "conclusion": null
+          },
+          {
+            "name": "Verify standalone package",
+            "id": 41346576840,
+            "status": "queued",
+            "conclusion": null
           }
         ],
         "error": false
@@ -3759,19 +3825,13 @@
         "error": false
       },
       {
-        "repo": "krigsvolddesign/chrome",
-        "pr": 2,
-        "sha": "c6163edd7a74048dda4c2433d593a76869c40efe",
+        "repo": "krigsvolddesign/jekyll",
+        "pr": 1,
+        "sha": "9c8aaec5a614645ce3d20dcf196bcbad2983764b",
         "runs": [
           {
-            "name": "Native release policy tests",
-            "id": 41344667180,
-            "status": "completed",
-            "conclusion": "success"
-          },
-          {
-            "name": "Verify Krigsvold chrome",
-            "id": 41344667326,
+            "name": "Verify standalone Jekyll",
+            "id": 41344657475,
             "status": "completed",
             "conclusion": "success"
           }
@@ -3799,19 +3859,19 @@
         "error": false
       },
       {
-        "repo": "krigsvolddesign/emacs",
-        "pr": 1,
-        "sha": "2dc68281e8b92af7d8b0ae1f01be3ef271611167",
+        "repo": "krigsvolddesign/chrome",
+        "pr": 2,
+        "sha": "c6163edd7a74048dda4c2433d593a76869c40efe",
         "runs": [
           {
-            "name": "GitFlow policy",
-            "id": 41333428582,
+            "name": "Native release policy tests",
+            "id": 41344667180,
             "status": "completed",
             "conclusion": "success"
           },
           {
-            "name": "Verify Krigsvold emacs",
-            "id": 41333428534,
+            "name": "Verify Krigsvold chrome",
+            "id": 41344667326,
             "status": "completed",
             "conclusion": "success"
           }
@@ -3839,6 +3899,26 @@
         "error": false
       },
       {
+        "repo": "krigsvolddesign/vim",
+        "pr": 1,
+        "sha": "27ad0fdcda8f2af14ffc23bcc4b97338c9a74fba",
+        "runs": [
+          {
+            "name": "GitFlow policy",
+            "id": 41333421677,
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verify Krigsvold vim",
+            "id": 41333421526,
+            "status": "completed",
+            "conclusion": "success"
+          }
+        ],
+        "error": false
+      },
+      {
         "repo": "krigsvolddesign/firefox",
         "pr": 2,
         "sha": "fed4ac76e2117184d05959637c53b3c8541d6135",
@@ -3859,13 +3939,33 @@
         "error": false
       },
       {
-        "repo": "krigsvolddesign/jekyll",
-        "pr": 2,
-        "sha": "aab91b948bff2ffa9864201d24764c1020e3307b",
+        "repo": "krigsvolddesign/website",
+        "pr": 32,
+        "sha": "dcdd8044891f4d9a824e1dbf71bdfb1bd139179c",
         "runs": [
           {
-            "name": "Standalone browser conformance",
-            "id": 41344659983,
+            "name": "Theme verification",
+            "id": 41258067094,
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verify website base paths",
+            "id": 41258067089,
+            "status": "completed",
+            "conclusion": "success"
+          }
+        ],
+        "error": false
+      },
+      {
+        "repo": "k3jph/design-workbench",
+        "pr": 78,
+        "sha": "f8f8c03ac9fb68eaef5ed3b0da3044b2d74d9627",
+        "runs": [
+          {
+            "name": "Verify workbench",
+            "id": 41357061976,
             "status": "completed",
             "conclusion": "success"
           }
@@ -3894,72 +3994,32 @@
       },
       {
         "repo": "krigsvolddesign/website",
-        "pr": 32,
-        "sha": "dcdd8044891f4d9a824e1dbf71bdfb1bd139179c",
-        "runs": [
-          {
-            "name": "Theme verification",
-            "id": 41258067094,
-            "status": "completed",
-            "conclusion": "success"
-          },
-          {
-            "name": "Verify website base paths",
-            "id": 41258067089,
-            "status": "completed",
-            "conclusion": "success"
-          }
-        ],
-        "error": false
-      },
-      {
-        "repo": "krigsvolddesign/vim",
-        "pr": 1,
-        "sha": "27ad0fdcda8f2af14ffc23bcc4b97338c9a74fba",
-        "runs": [
-          {
-            "name": "GitFlow policy",
-            "id": 41333421677,
-            "status": "completed",
-            "conclusion": "success"
-          },
-          {
-            "name": "Verify Krigsvold vim",
-            "id": 41333421526,
-            "status": "completed",
-            "conclusion": "success"
-          }
-        ],
-        "error": false
-      },
-      {
-        "repo": "k3jph/design-workbench",
-        "pr": 77,
-        "sha": "08a30d6fe9379cca5154be35d5fd7bd206a71abe",
-        "runs": [
-          {
-            "name": "Versioned documentation contract",
-            "id": 41346851939,
-            "status": "completed",
-            "conclusion": "success"
-          },
-          {
-            "name": "Verify workbench",
-            "id": 41346852150,
-            "status": "completed",
-            "conclusion": "success"
-          }
-        ],
-        "error": false
-      },
-      {
-        "repo": "krigsvolddesign/website",
         "pr": 6,
         "sha": "3af7e2a4fbee2a236b86ee816b062501d14781ef",
         "runs": [
           {
             "name": "Theme verification",
             "id": 39699134517,
+            "status": "completed",
+            "conclusion": "success"
+          }
+        ],
+        "error": false
+      },
+      {
+        "repo": "krigsvolddesign/emacs",
+        "pr": 1,
+        "sha": "2dc68281e8b92af7d8b0ae1f01be3ef271611167",
+        "runs": [
+          {
+            "name": "GitFlow policy",
+            "id": 41333428582,
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verify Krigsvold emacs",
+            "id": 41333428534,
             "status": "completed",
             "conclusion": "success"
           }
@@ -3988,32 +4048,32 @@
       },
       {
         "repo": "k3jph/design-workbench",
-        "pr": 74,
-        "sha": "e1bbc699cc05e0ca96d02bfb0535a1d82671d87d",
+        "pr": 76,
+        "sha": "e3cf607ca73ff20a21819c3d8eece8e6dbcb690e",
         "runs": [
           {
+            "name": "Verify framework adapter contract",
+            "id": 41357794279,
+            "status": "queued",
+            "conclusion": null
+          },
+          {
             "name": "Verify workbench",
-            "id": 41347205171,
-            "status": "completed",
-            "conclusion": "cancelled"
+            "id": 41357794268,
+            "status": "pending",
+            "conclusion": null
           }
         ],
         "error": false
       },
       {
         "repo": "k3jph/design-workbench",
-        "pr": 76,
-        "sha": "16348c4d2ea5b873506d37855fc434f348f21d06",
+        "pr": 74,
+        "sha": "1c6cc7bfe9bcd8a46d6730561de868bb9a56508a",
         "runs": [
           {
             "name": "Verify workbench",
-            "id": 41345892387,
-            "status": "completed",
-            "conclusion": "success"
-          },
-          {
-            "name": "Verify framework adapter contract",
-            "id": 41345892467,
+            "id": 41357067864,
             "status": "completed",
             "conclusion": "success"
           }
@@ -4028,26 +4088,6 @@
           {
             "name": "Verify workbench",
             "id": 41344622975,
-            "status": "completed",
-            "conclusion": "success"
-          }
-        ],
-        "error": false
-      },
-      {
-        "repo": "k3jph/design-workbench",
-        "pr": 72,
-        "sha": "366dd2114cf08115a58e58cfc4c1f1d4bb781e7e",
-        "runs": [
-          {
-            "name": "Verify workbench",
-            "id": 41342096356,
-            "status": "completed",
-            "conclusion": "success"
-          },
-          {
-            "name": "Versioned documentation contract",
-            "id": 41342096095,
             "status": "completed",
             "conclusion": "success"
           }
@@ -4070,18 +4110,38 @@
       },
       {
         "repo": "k3jph/design-workbench",
-        "pr": 69,
-        "sha": "30538b6e45d54c61a67978c537f1781242f920e3",
+        "pr": 77,
+        "sha": "08a30d6fe9379cca5154be35d5fd7bd206a71abe",
         "runs": [
           {
-            "name": "Verify publishable-form core artifacts without publishing",
-            "id": 41261381342,
+            "name": "Versioned documentation contract",
+            "id": 41346851939,
             "status": "completed",
             "conclusion": "success"
           },
           {
             "name": "Verify workbench",
-            "id": 41261381359,
+            "id": 41346852150,
+            "status": "completed",
+            "conclusion": "success"
+          }
+        ],
+        "error": false
+      },
+      {
+        "repo": "k3jph/design-workbench",
+        "pr": 72,
+        "sha": "1ac7048165781b870adb59d4f21852c44eba71ac",
+        "runs": [
+          {
+            "name": "Versioned documentation contract",
+            "id": 41357041574,
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verify workbench",
+            "id": 41357041537,
             "status": "completed",
             "conclusion": "success"
           }
@@ -4104,12 +4164,18 @@
       },
       {
         "repo": "k3jph/design-workbench",
-        "pr": 62,
-        "sha": "dd0be62f36029d32ce8862b102db64a18e1381f6",
+        "pr": 71,
+        "sha": "a492e12618dd178fd5cee7fbe5487d512f1e3cc7",
         "runs": [
           {
             "name": "Verify workbench",
-            "id": 41223311451,
+            "id": 41333848055,
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "GitFlow policy",
+            "id": 41333848038,
             "status": "completed",
             "conclusion": "success"
           }
@@ -4132,6 +4198,40 @@
       },
       {
         "repo": "k3jph/design-workbench",
+        "pr": 68,
+        "sha": "04d3e14b1b1943cbf2a90f1a727822d87327b2ae",
+        "runs": [
+          {
+            "name": "Verify workbench",
+            "id": 41247242354,
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verify portable examples",
+            "id": 41247242341,
+            "status": "completed",
+            "conclusion": "success"
+          }
+        ],
+        "error": false
+      },
+      {
+        "repo": "k3jph/design-workbench",
+        "pr": 62,
+        "sha": "dd0be62f36029d32ce8862b102db64a18e1381f6",
+        "runs": [
+          {
+            "name": "Verify workbench",
+            "id": 41223311451,
+            "status": "completed",
+            "conclusion": "success"
+          }
+        ],
+        "error": false
+      },
+      {
+        "repo": "k3jph/design-workbench",
         "pr": 66,
         "sha": "b66e18bb87d6894e1eeca590c54492b78b462bfc",
         "runs": [
@@ -4144,6 +4244,40 @@
           {
             "name": "Verify workbench",
             "id": 41230303749,
+            "status": "completed",
+            "conclusion": "success"
+          }
+        ],
+        "error": false
+      },
+      {
+        "repo": "k3jph/design-workbench",
+        "pr": 61,
+        "sha": "189e54fe7dac589032ccc680b0fa8553e3d6abb0",
+        "runs": [
+          {
+            "name": "Verify workbench",
+            "id": 41222708386,
+            "status": "completed",
+            "conclusion": "success"
+          }
+        ],
+        "error": false
+      },
+      {
+        "repo": "k3jph/design-workbench",
+        "pr": 59,
+        "sha": "f1f312a0a47e6414818117933ceec62b73afb2d6",
+        "runs": [
+          {
+            "name": "Verify workbench",
+            "id": 41222419438,
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verify framework adapter contract",
+            "id": 41222419507,
             "status": "completed",
             "conclusion": "success"
           }
@@ -4178,86 +4312,26 @@
       },
       {
         "repo": "k3jph/design-workbench",
-        "pr": 61,
-        "sha": "189e54fe7dac589032ccc680b0fa8553e3d6abb0",
-        "runs": [
-          {
-            "name": "Verify workbench",
-            "id": 41222708386,
-            "status": "completed",
-            "conclusion": "success"
-          }
-        ],
-        "error": false
-      },
-      {
-        "repo": "k3jph/design-workbench",
-        "pr": 71,
-        "sha": "a492e12618dd178fd5cee7fbe5487d512f1e3cc7",
-        "runs": [
-          {
-            "name": "Verify workbench",
-            "id": 41333848055,
-            "status": "completed",
-            "conclusion": "success"
-          },
-          {
-            "name": "GitFlow policy",
-            "id": 41333848038,
-            "status": "completed",
-            "conclusion": "success"
-          }
-        ],
-        "error": false
-      },
-      {
-        "repo": "k3jph/design-workbench",
-        "pr": 68,
-        "sha": "04d3e14b1b1943cbf2a90f1a727822d87327b2ae",
-        "runs": [
-          {
-            "name": "Verify workbench",
-            "id": 41247242354,
-            "status": "completed",
-            "conclusion": "success"
-          },
-          {
-            "name": "Verify portable examples",
-            "id": 41247242341,
-            "status": "completed",
-            "conclusion": "success"
-          }
-        ],
-        "error": false
-      },
-      {
-        "repo": "k3jph/design-workbench",
-        "pr": 59,
-        "sha": "f1f312a0a47e6414818117933ceec62b73afb2d6",
-        "runs": [
-          {
-            "name": "Verify workbench",
-            "id": 41222419438,
-            "status": "completed",
-            "conclusion": "success"
-          },
-          {
-            "name": "Verify framework adapter contract",
-            "id": 41222419507,
-            "status": "completed",
-            "conclusion": "success"
-          }
-        ],
-        "error": false
-      },
-      {
-        "repo": "k3jph/design-workbench",
         "pr": 58,
         "sha": "36b8a053455f15e239275d1f76759cdfb4578ef8",
         "runs": [
           {
             "name": "Verify workbench",
             "id": 41221954499,
+            "status": "completed",
+            "conclusion": "success"
+          }
+        ],
+        "error": false
+      },
+      {
+        "repo": "k3jph/design-workbench",
+        "pr": 56,
+        "sha": "b32e7b0d706590ebb2ed8dd9220b568534b16d15",
+        "runs": [
+          {
+            "name": "Verify workbench",
+            "id": 41218660287,
             "status": "completed",
             "conclusion": "success"
           }
@@ -4306,6 +4380,60 @@
       },
       {
         "repo": "k3jph/design-workbench",
+        "pr": 53,
+        "sha": "c2e112b11abd016ea2a2ddb3ae84853ad06dcfa6",
+        "runs": [
+          {
+            "name": "Verify workbench",
+            "id": 41215788310,
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verify portable examples",
+            "id": 41215788212,
+            "status": "completed",
+            "conclusion": "success"
+          }
+        ],
+        "error": false
+      },
+      {
+        "repo": "k3jph/design-workbench",
+        "pr": 69,
+        "sha": "30538b6e45d54c61a67978c537f1781242f920e3",
+        "runs": [
+          {
+            "name": "Verify publishable-form core artifacts without publishing",
+            "id": 41261381342,
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verify workbench",
+            "id": 41261381359,
+            "status": "completed",
+            "conclusion": "success"
+          }
+        ],
+        "error": false
+      },
+      {
+        "repo": "k3jph/design-workbench",
+        "pr": 51,
+        "sha": "bbebb677cd204e56e3cfc746bd254ef4fec65251",
+        "runs": [
+          {
+            "name": "Verify workbench",
+            "id": 41214878036,
+            "status": "completed",
+            "conclusion": "success"
+          }
+        ],
+        "error": false
+      },
+      {
+        "repo": "k3jph/design-workbench",
         "pr": 52,
         "sha": "77a87933b9813c2edc6802604ab686093d959c38",
         "runs": [
@@ -4340,12 +4468,18 @@
       },
       {
         "repo": "k3jph/design-workbench",
-        "pr": 51,
-        "sha": "bbebb677cd204e56e3cfc746bd254ef4fec65251",
+        "pr": 48,
+        "sha": "5141857be03d103732275fb18e05e042505381df",
         "runs": [
           {
+            "name": "Verify portable examples",
+            "id": 41214334505,
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
             "name": "Verify workbench",
-            "id": 41214878036,
+            "id": 41214334519,
             "status": "completed",
             "conclusion": "success"
           }
@@ -4392,52 +4526,12 @@
       },
       {
         "repo": "k3jph/design-workbench",
-        "pr": 56,
-        "sha": "b32e7b0d706590ebb2ed8dd9220b568534b16d15",
+        "pr": 47,
+        "sha": "36898eb7a18c69d4340a0a911045b2af3a410415",
         "runs": [
           {
             "name": "Verify workbench",
-            "id": 41218660287,
-            "status": "completed",
-            "conclusion": "success"
-          }
-        ],
-        "error": false
-      },
-      {
-        "repo": "k3jph/design-workbench",
-        "pr": 48,
-        "sha": "5141857be03d103732275fb18e05e042505381df",
-        "runs": [
-          {
-            "name": "Verify portable examples",
-            "id": 41214334505,
-            "status": "completed",
-            "conclusion": "success"
-          },
-          {
-            "name": "Verify workbench",
-            "id": 41214334519,
-            "status": "completed",
-            "conclusion": "success"
-          }
-        ],
-        "error": false
-      },
-      {
-        "repo": "k3jph/design-workbench",
-        "pr": 53,
-        "sha": "c2e112b11abd016ea2a2ddb3ae84853ad06dcfa6",
-        "runs": [
-          {
-            "name": "Verify workbench",
-            "id": 41215788310,
-            "status": "completed",
-            "conclusion": "success"
-          },
-          {
-            "name": "Verify portable examples",
-            "id": 41215788212,
+            "id": 41214658053,
             "status": "completed",
             "conclusion": "success"
           }
@@ -4460,40 +4554,6 @@
       },
       {
         "repo": "k3jph/design-workbench",
-        "pr": 45,
-        "sha": "a0c62c2db73e57360c53f6ba56bfd52766b6a1e9",
-        "runs": [
-          {
-            "name": "Verify workbench",
-            "id": 41214866925,
-            "status": "completed",
-            "conclusion": "success"
-          },
-          {
-            "name": "Verify local React extraction rehearsal",
-            "id": 41214866993,
-            "status": "completed",
-            "conclusion": "success"
-          }
-        ],
-        "error": false
-      },
-      {
-        "repo": "k3jph/design-workbench",
-        "pr": 44,
-        "sha": "2895f22c9b7d05ba50de06013b51cf5978217f2f",
-        "runs": [
-          {
-            "name": "Verify workbench",
-            "id": 41214326680,
-            "status": "completed",
-            "conclusion": "success"
-          }
-        ],
-        "error": false
-      },
-      {
-        "repo": "k3jph/design-workbench",
         "pr": 43,
         "sha": "9ae757693f85bb7395261e2ddb9eb846f4ad6615",
         "runs": [
@@ -4508,12 +4568,12 @@
       },
       {
         "repo": "k3jph/design-workbench",
-        "pr": 47,
-        "sha": "36898eb7a18c69d4340a0a911045b2af3a410415",
+        "pr": 44,
+        "sha": "2895f22c9b7d05ba50de06013b51cf5978217f2f",
         "runs": [
           {
             "name": "Verify workbench",
-            "id": 41214658053,
+            "id": 41214326680,
             "status": "completed",
             "conclusion": "success"
           }
@@ -4562,26 +4622,6 @@
       },
       {
         "repo": "k3jph/design-workbench",
-        "pr": 40,
-        "sha": "caf8753a09e23deda9255944270a16841eca4229",
-        "runs": [
-          {
-            "name": "Verify workbench",
-            "id": 41152854132,
-            "status": "completed",
-            "conclusion": "success"
-          },
-          {
-            "name": "Verify portable examples",
-            "id": 41152854215,
-            "status": "completed",
-            "conclusion": "success"
-          }
-        ],
-        "error": false
-      },
-      {
-        "repo": "k3jph/design-workbench",
         "pr": 38,
         "sha": "4c7140d12f3834595b4663da2ca346fda0383888",
         "runs": [
@@ -4602,6 +4642,26 @@
             "id": 41151897326,
             "status": "completed",
             "conclusion": "failure"
+          }
+        ],
+        "error": false
+      },
+      {
+        "repo": "k3jph/design-workbench",
+        "pr": 40,
+        "sha": "caf8753a09e23deda9255944270a16841eca4229",
+        "runs": [
+          {
+            "name": "Verify workbench",
+            "id": 41152854132,
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verify portable examples",
+            "id": 41152854215,
+            "status": "completed",
+            "conclusion": "success"
           }
         ],
         "error": false
@@ -4648,18 +4708,18 @@
       },
       {
         "repo": "k3jph/design-workbench",
-        "pr": 35,
-        "sha": "adb92727984b048ac3ded1fb1c40f8d4ccd79df3",
+        "pr": 45,
+        "sha": "a0c62c2db73e57360c53f6ba56bfd52766b6a1e9",
         "runs": [
           {
             "name": "Verify workbench",
-            "id": 41140849634,
+            "id": 41214866925,
             "status": "completed",
             "conclusion": "success"
           },
           {
-            "name": "Verify portable examples",
-            "id": 41140849603,
+            "name": "Verify local React extraction rehearsal",
+            "id": 41214866993,
             "status": "completed",
             "conclusion": "success"
           }
@@ -4688,6 +4748,46 @@
       },
       {
         "repo": "k3jph/design-workbench",
+        "pr": 29,
+        "sha": "c858a0585b053dbfdee5a9f937ab7412a0709178",
+        "runs": [
+          {
+            "name": "Verify workbench",
+            "id": 41139213837,
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verify portable examples",
+            "id": 41139213757,
+            "status": "completed",
+            "conclusion": "success"
+          }
+        ],
+        "error": false
+      },
+      {
+        "repo": "k3jph/design-workbench",
+        "pr": 32,
+        "sha": "ed186ab6d6dd45a2ffa436e76de2bdeb1185cc9d",
+        "runs": [
+          {
+            "name": "Verify workbench",
+            "id": 41139367340,
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verify portable examples",
+            "id": 41139367376,
+            "status": "completed",
+            "conclusion": "success"
+          }
+        ],
+        "error": false
+      },
+      {
+        "repo": "k3jph/design-workbench",
         "pr": 34,
         "sha": "05d28d4ad701efce91e8805331069fe680b6a099",
         "runs": [
@@ -4708,18 +4808,18 @@
       },
       {
         "repo": "k3jph/design-workbench",
-        "pr": 32,
-        "sha": "ed186ab6d6dd45a2ffa436e76de2bdeb1185cc9d",
+        "pr": 30,
+        "sha": "8f6a9760737ccea965f8df2434416842673cf798",
         "runs": [
           {
             "name": "Verify workbench",
-            "id": 41139367340,
+            "id": 41137956179,
             "status": "completed",
             "conclusion": "success"
           },
           {
             "name": "Verify portable examples",
-            "id": 41139367376,
+            "id": 41137956098,
             "status": "completed",
             "conclusion": "success"
           }
@@ -4748,46 +4848,6 @@
       },
       {
         "repo": "k3jph/design-workbench",
-        "pr": 30,
-        "sha": "8f6a9760737ccea965f8df2434416842673cf798",
-        "runs": [
-          {
-            "name": "Verify workbench",
-            "id": 41137956179,
-            "status": "completed",
-            "conclusion": "success"
-          },
-          {
-            "name": "Verify portable examples",
-            "id": 41137956098,
-            "status": "completed",
-            "conclusion": "success"
-          }
-        ],
-        "error": false
-      },
-      {
-        "repo": "k3jph/design-workbench",
-        "pr": 29,
-        "sha": "c858a0585b053dbfdee5a9f937ab7412a0709178",
-        "runs": [
-          {
-            "name": "Verify workbench",
-            "id": 41139213837,
-            "status": "completed",
-            "conclusion": "success"
-          },
-          {
-            "name": "Verify portable examples",
-            "id": 41139213757,
-            "status": "completed",
-            "conclusion": "success"
-          }
-        ],
-        "error": false
-      },
-      {
-        "repo": "k3jph/design-workbench",
         "pr": 27,
         "sha": "0485b75b8e5d5353655826e9511775610008495f",
         "runs": [
@@ -4800,6 +4860,26 @@
           {
             "name": "Verify workbench",
             "id": 41136714860,
+            "status": "completed",
+            "conclusion": "success"
+          }
+        ],
+        "error": false
+      },
+      {
+        "repo": "k3jph/design-workbench",
+        "pr": 35,
+        "sha": "adb92727984b048ac3ded1fb1c40f8d4ccd79df3",
+        "runs": [
+          {
+            "name": "Verify workbench",
+            "id": 41140849634,
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verify portable examples",
+            "id": 41140849603,
             "status": "completed",
             "conclusion": "success"
           }
@@ -4828,20 +4908,6 @@
       },
       {
         "repo": "k3jph/design-workbench",
-        "pr": 23,
-        "sha": "a3435695cfef96ca066abcfa14dd93969f27f693",
-        "runs": [
-          {
-            "name": "Verify workbench",
-            "id": 41136267771,
-            "status": "completed",
-            "conclusion": "success"
-          }
-        ],
-        "error": false
-      },
-      {
-        "repo": "k3jph/design-workbench",
         "pr": 25,
         "sha": "afa033bc73c8a982cb9cd33fc73d91ba74951d90",
         "runs": [
@@ -4862,12 +4928,12 @@
       },
       {
         "repo": "k3jph/design-workbench",
-        "pr": 28,
-        "sha": "7178fb0a56e6014b7fcfb230b2a19400977d4cfb",
+        "pr": 24,
+        "sha": "6d0ec979e27646fd347e2afcdfa1589832813c22",
         "runs": [
           {
             "name": "Verify workbench",
-            "id": 41137417375,
+            "id": 41136269006,
             "status": "completed",
             "conclusion": "success"
           }
@@ -4890,12 +4956,12 @@
       },
       {
         "repo": "k3jph/design-workbench",
-        "pr": 24,
-        "sha": "6d0ec979e27646fd347e2afcdfa1589832813c22",
+        "pr": 23,
+        "sha": "a3435695cfef96ca066abcfa14dd93969f27f693",
         "runs": [
           {
             "name": "Verify workbench",
-            "id": 41136269006,
+            "id": 41136267771,
             "status": "completed",
             "conclusion": "success"
           }
@@ -4956,6 +5022,20 @@
           {
             "name": "Verify workbench",
             "id": 40802056438,
+            "status": "completed",
+            "conclusion": "success"
+          }
+        ],
+        "error": false
+      },
+      {
+        "repo": "k3jph/design-workbench",
+        "pr": 28,
+        "sha": "7178fb0a56e6014b7fcfb230b2a19400977d4cfb",
+        "runs": [
+          {
+            "name": "Verify workbench",
+            "id": 41137417375,
             "status": "completed",
             "conclusion": "success"
           }
