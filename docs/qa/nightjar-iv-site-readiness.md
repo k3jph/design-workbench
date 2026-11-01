@@ -8,10 +8,10 @@ This is a preparation record, not a declaration that any hostname, DNS record, W
 | krigsvolddesign.dev | private krigsvolddesign/website | existing website proposals | Verify current origin, DNS, production branch and deployed commit |
 | astro.martletdesign.dev | martletdesign/astro | #13 combines 50-recipe source reference with R2 prototype | Integrate full reference with archive; verify interactions, protected storage and serving, hosting and DNS |
 | astro.krigsvolddesign.dev | krigsvolddesign/astro | #13 combines 50-recipe source reference with R2 prototype | Integrate full reference with archive; verify interactions, protected storage and serving, hosting and DNS |
-| react.martletdesign.dev | martletdesign/react | 50-route standalone React reference; #4 combined candidate | Immutable versioned archive, hosting and DNS |
-| react.krigsvolddesign.dev | krigsvolddesign/react | 50-route standalone React reference; #4 combined candidate | Immutable versioned archive, hosting and DNS |
-| jekyll.martletdesign.dev | martletdesign/jekyll | 50-route Jekyll source and #5 local versioned archive | Trusted remote archive, hosting and DNS |
-| jekyll.krigsvolddesign.dev | krigsvolddesign/jekyll | 50-route Jekyll source and #5 local versioned archive | Trusted remote archive, hosting and DNS |
+| react.martletdesign.dev | martletdesign/react | 50-route React reference and local #6 archive adapter | Trusted remote archive, hosting and DNS |
+| react.krigsvolddesign.dev | krigsvolddesign/react | 50-route React reference and local #6 archive adapter | Trusted remote archive, hosting and DNS |
+| jekyll.martletdesign.dev | martletdesign/jekyll | 50-route Jekyll reference and local #6 archive adapter | Trusted remote archive, hosting and DNS |
+| jekyll.krigsvolddesign.dev | krigsvolddesign/jekyll | 50-route Jekyll reference and local #6 archive adapter | Trusted remote archive, hosting and DNS |
 
 ## Routing contract
 
