@@ -2246,6 +2246,19 @@
       "limitations": [
         "Neither DNS/TLS nor actual deployed service accessibility is established; read-only administrator inventory remains necessary."
       ]
+    },
+    {
+      "scope": "Corrected three-browser framework adapter rerun",
+      "commit": "e3cf607ca73ff20a21819c3d8eece8e6dbcb690e",
+      "checks": [
+        "Hosted Chromium, Firefox and WebKit adapter jobs passed after selecting the installed matrix browser."
+      ],
+      "runs": [
+        "https://github.com/k3jph/design-workbench/actions/runs/41357794279"
+      ],
+      "limitations": [
+        "This verifies the adapter and negative controls, not full interactions across all six implementations."
+      ]
     }
   ],
   "blockers": [
