@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "observed_at_utc": "2026-11-01 20:09:09 UTC",
+  "observed_at_utc": "2026-11-01 20:09:31 UTC",
   "description": "Point-in-time observed refs and open PRs; CI and import status can change. Refreshed independently of production controls; historical runs do not verify later commits.",
   "repositories": [
     {
@@ -1806,6 +1806,44 @@
       "limitations": [
         "Live repository rulesets remain unverified by administrator-authenticated audit.",
         "Package input mode cannot prove an implementation declares every actual dependency."
+      ]
+    },
+    {
+      "scope": "Full Astro source reference #12",
+      "checks": [
+        "Hosted Chromium, Firefox, WebKit at root and /preview passed, including 50 canonical headings and summaries, local links and successive-version history."
+      ],
+      "commits": {
+        "martlet": "d84e09ba830cc694ecafcdd9c244c6e0c06e8c1c",
+        "krigsvold": "79a2e3731696922909cc2e9d1c48488e58528721"
+      },
+      "runs": [
+        "https://github.com/martletdesign/astro/actions/runs/41345102869",
+        "https://github.com/krigsvolddesign/astro/actions/runs/41345109432"
+      ],
+      "limitations": [
+        "These do not establish broad interactive, visual or manual assistive-technology conformance.",
+        "Combined #13 results are tracked separately."
+      ]
+    },
+    {
+      "scope": "Jekyll docs-gated release drafts #4",
+      "checks": [
+        "Hosted guard tests passed on both heads.",
+        "Martlet hosted browser matrix passed."
+      ],
+      "commits": {
+        "martlet": "97ab6443bad6db68e013ca27d1ab6a8a729d00de",
+        "krigsvold": "8c369048000d1ef1df0975b4add693b8f699e321"
+      },
+      "runs": [
+        "https://github.com/martletdesign/jekyll/actions/runs/41345070715",
+        "https://github.com/krigsvolddesign/jekyll/actions/runs/41345068839",
+        "https://github.com/martletdesign/jekyll/actions/runs/41345070802"
+      ],
+      "limitations": [
+        "Krigsvold latest browser run pending; underlying #2 matrix passed.",
+        "Synthetic core provenance does not validate the vendored shell. Storage, serving and version navigation are incomplete."
       ]
     }
   ],
