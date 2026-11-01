@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "observed_at_utc": "2026-11-01 19:59:22 UTC",
+  "observed_at_utc": "2026-11-01 20:06:18 UTC",
   "description": "Point-in-time observed refs and open PRs; CI and import status can change. Refreshed independently of production controls; historical runs do not verify later commits.",
   "repositories": [
     {
@@ -122,8 +122,10 @@
       "gitflow_exempt": false,
       "refs": {
         "refs/heads/develop": "ed1f121ae991fd868e757228664d1c3a737c3c10",
-        "refs/heads/feature/astro-release-integration": "f76667faaa2eb7ae08cfa2cbd36fa243a910faae",
+        "refs/heads/feature/astro-release-integration": "31eee31020870a95a64fbaa8ac2d96d224880bab",
+        "refs/heads/feature/docs-r2-archive-gateway": "727a8faebc90220e731ab32ff109613cc42b9fe7",
         "refs/heads/feature/gitflow-policy": "f1daf48dcc5653b9edecea98745b73285f2bf72d",
+        "refs/heads/feature/nightjar-iv-reference": "d84e09ba830cc694ecafcdd9c244c6e0c06e8c1c",
         "refs/heads/feature/tag-release-automation": "726bb904457728db29561c1a71bdfffbc45695de",
         "refs/heads/feature/versioned-docs-archive": "9efee0373ab5003742fe94aca2ace49910f85e54",
         "refs/heads/fix/adoption-repair-03": "b600ac6d91c6d25885e55b7597fb7754aa5f7988",
@@ -141,10 +143,28 @@
       },
       "open_pull_requests": [
         {
+          "number": 12,
+          "title": "Extract canonical standalone Astro reference examples",
+          "head": "feature/nightjar-iv-reference",
+          "sha": "d84e09ba830cc694ecafcdd9c244c6e0c06e8c1c",
+          "base": "feature/astro-release-integration",
+          "draft": true,
+          "url": "https://github.com/martletdesign/astro/pull/12"
+        },
+        {
+          "number": 11,
+          "title": "Prototype create-only R2 documentation archive gateway",
+          "head": "feature/docs-r2-archive-gateway",
+          "sha": "727a8faebc90220e731ab32ff109613cc42b9fe7",
+          "base": "feature/astro-release-integration",
+          "draft": true,
+          "url": "https://github.com/martletdesign/astro/pull/11"
+        },
+        {
           "number": 10,
           "title": "Integrate disabled Astro tag release and documentation gates",
           "head": "feature/astro-release-integration",
-          "sha": "f76667faaa2eb7ae08cfa2cbd36fa243a910faae",
+          "sha": "31eee31020870a95a64fbaa8ac2d96d224880bab",
           "base": "feature/versioned-docs-archive",
           "draft": true,
           "url": "https://github.com/martletdesign/astro/pull/10"
@@ -198,15 +218,25 @@
       "gitflow_exempt": false,
       "refs": {
         "refs/heads/develop": "3c77b664ea80d0a58599dc5d7391b3d013c9570e",
-        "refs/heads/feature/independent-react-source": "592a995a2b857da92d3cc1a3a5501ccb01769a8a",
+        "refs/heads/feature/independent-react-source": "7acbcdc17a99b70734aace9028ef00a2cef9b7cf",
+        "refs/heads/feature/react-tag-release": "f7e2cf172ede7721dd133e7a71f0cc83e9c0a497",
         "refs/heads/main": "3c77b664ea80d0a58599dc5d7391b3d013c9570e"
       },
       "open_pull_requests": [
         {
+          "number": 2,
+          "title": "Prepare disabled tag release and nonpublishing rehearsal",
+          "head": "feature/react-tag-release",
+          "sha": "f7e2cf172ede7721dd133e7a71f0cc83e9c0a497",
+          "base": "feature/independent-react-source",
+          "draft": true,
+          "url": "https://github.com/martletdesign/react/pull/2"
+        },
+        {
           "number": 1,
           "title": "Propose independent Martlet React source and package checks",
           "head": "feature/independent-react-source",
-          "sha": "592a995a2b857da92d3cc1a3a5501ccb01769a8a",
+          "sha": "7acbcdc17a99b70734aace9028ef00a2cef9b7cf",
           "base": "develop",
           "draft": true,
           "url": "https://github.com/martletdesign/react/pull/1"
@@ -233,15 +263,45 @@
       "gitflow_exempt": false,
       "refs": {
         "refs/heads/develop": "afcf62bc9bb676f1ae5fe27757d79db6dde94021",
-        "refs/heads/feature/nightjar-iv-source-transfer": "3d1eda45dbd432d7850fd2479f6cd2d5c0a895a6",
+        "refs/heads/feature/nightjar-iv-jekyll-browser": "3fabff42c6e01f745ef28aff90d4da993b6b890d",
+        "refs/heads/feature/nightjar-iv-jekyll-docs-gate": "97ab6443bad6db68e013ca27d1ab6a8a729d00de",
+        "refs/heads/feature/nightjar-iv-jekyll-release": "94170981a026a5b45f184561508f41250fe2f053",
+        "refs/heads/feature/nightjar-iv-source-transfer": "657503a191db2509405a2e2ca3cc05f274b9161f",
         "refs/heads/main": "afcf62bc9bb676f1ae5fe27757d79db6dde94021"
       },
       "open_pull_requests": [
         {
+          "number": 4,
+          "title": "Block Jekyll release until immutable documentation is verified",
+          "head": "feature/nightjar-iv-jekyll-docs-gate",
+          "sha": "97ab6443bad6db68e013ca27d1ab6a8a729d00de",
+          "base": "feature/nightjar-iv-jekyll-release",
+          "draft": true,
+          "url": "https://github.com/martletdesign/jekyll/pull/4"
+        },
+        {
+          "number": 3,
+          "title": "Prepare protected-tag Jekyll source releases",
+          "head": "feature/nightjar-iv-jekyll-release",
+          "sha": "94170981a026a5b45f184561508f41250fe2f053",
+          "base": "feature/nightjar-iv-jekyll-browser",
+          "draft": true,
+          "url": "https://github.com/martletdesign/jekyll/pull/3"
+        },
+        {
+          "number": 2,
+          "title": "Exercise all standalone Jekyll recipes in browsers",
+          "head": "feature/nightjar-iv-jekyll-browser",
+          "sha": "3fabff42c6e01f745ef28aff90d4da993b6b890d",
+          "base": "feature/nightjar-iv-source-transfer",
+          "draft": true,
+          "url": "https://github.com/martletdesign/jekyll/pull/2"
+        },
+        {
           "number": 1,
           "title": "Import attributed standalone Jekyll candidate",
           "head": "feature/nightjar-iv-source-transfer",
-          "sha": "3d1eda45dbd432d7850fd2479f6cd2d5c0a895a6",
+          "sha": "657503a191db2509405a2e2ca3cc05f274b9161f",
           "base": "develop",
           "draft": true,
           "url": "https://github.com/martletdesign/jekyll/pull/1"
@@ -269,15 +329,15 @@
       "refs": {
         "refs/heads/develop": "cc11258a7e98125cc8524d0bac8725b1983d3264",
         "refs/heads/feature/gitflow-policy": "8fe66697b4abc748bd382660798f316177d1bc59",
-        "refs/heads/feature/native-tag-artifacts": "ad756be95b847152af1ab87c842e7944089d2f02",
+        "refs/heads/feature/native-tag-artifacts": "516289687a5b4336363937a28f422c3214e3c931",
         "refs/heads/main": "cc11258a7e98125cc8524d0bac8725b1983d3264"
       },
       "open_pull_requests": [
         {
           "number": 2,
-          "title": "Prepare disabled native tag artifact rehearsal",
+          "title": "Prepare disabled native tag releases",
           "head": "feature/native-tag-artifacts",
-          "sha": "ad756be95b847152af1ab87c842e7944089d2f02",
+          "sha": "516289687a5b4336363937a28f422c3214e3c931",
           "base": "develop",
           "draft": true,
           "url": "https://github.com/martletdesign/vim/pull/2"
@@ -314,15 +374,15 @@
       "refs": {
         "refs/heads/develop": "a5bc82518e7c1269f961a031519f2939e2e99735",
         "refs/heads/feature/gitflow-policy": "6eb76589af3279d212dc53d44ba3b8e5c55e6b84",
-        "refs/heads/feature/native-tag-artifacts": "2b45fe7119d5e112aacb83f9ddbb63b50fafb178",
+        "refs/heads/feature/native-tag-artifacts": "4c9db001f93c738bf187d3e107c3a9d9af4e9ebe",
         "refs/heads/main": "a5bc82518e7c1269f961a031519f2939e2e99735"
       },
       "open_pull_requests": [
         {
           "number": 2,
-          "title": "Prepare disabled native tag artifact rehearsal",
+          "title": "Prepare disabled native tag releases",
           "head": "feature/native-tag-artifacts",
-          "sha": "2b45fe7119d5e112aacb83f9ddbb63b50fafb178",
+          "sha": "4c9db001f93c738bf187d3e107c3a9d9af4e9ebe",
           "base": "develop",
           "draft": true,
           "url": "https://github.com/martletdesign/emacs/pull/2"
@@ -359,15 +419,15 @@
       "refs": {
         "refs/heads/develop": "08dbd2c2ea04203e8059bc25cc48b58598c6bbc8",
         "refs/heads/feature/gitflow-policy": "94295876add096b86915cd022f23cab7301e17e5",
-        "refs/heads/feature/native-tag-artifacts": "b5c24ff1941d96656fc0d040dbb803514c875457",
+        "refs/heads/feature/native-tag-artifacts": "ebfbc75ed2a97a6103c1a7d3b90aa3d0fe567fe9",
         "refs/heads/main": "08dbd2c2ea04203e8059bc25cc48b58598c6bbc8"
       },
       "open_pull_requests": [
         {
           "number": 2,
-          "title": "Prepare disabled native tag artifact rehearsal",
+          "title": "Prepare disabled native tag releases",
           "head": "feature/native-tag-artifacts",
-          "sha": "b5c24ff1941d96656fc0d040dbb803514c875457",
+          "sha": "ebfbc75ed2a97a6103c1a7d3b90aa3d0fe567fe9",
           "base": "develop",
           "draft": true,
           "url": "https://github.com/martletdesign/chrome/pull/2"
@@ -404,15 +464,15 @@
       "refs": {
         "refs/heads/develop": "37331f26d67ec51e0c7e12e78d4ff1b16b4b1553",
         "refs/heads/feature/gitflow-policy": "1c4a7a447ebae727c6307d6bd471d43c54c629b5",
-        "refs/heads/feature/native-tag-artifacts": "ca719d716734085d26accdfe298facd8f3d9dbf1",
+        "refs/heads/feature/native-tag-artifacts": "b57365b9e3eb249b9d9ee3bcd3916cad0fcf4c7d",
         "refs/heads/main": "37331f26d67ec51e0c7e12e78d4ff1b16b4b1553"
       },
       "open_pull_requests": [
         {
           "number": 2,
-          "title": "Prepare disabled native tag artifact rehearsal",
+          "title": "Prepare disabled native tag releases",
           "head": "feature/native-tag-artifacts",
-          "sha": "ca719d716734085d26accdfe298facd8f3d9dbf1",
+          "sha": "b57365b9e3eb249b9d9ee3bcd3916cad0fcf4c7d",
           "base": "develop",
           "draft": true,
           "url": "https://github.com/martletdesign/firefox/pull/2"
@@ -600,8 +660,10 @@
       "gitflow_exempt": false,
       "refs": {
         "refs/heads/develop": "af57afbc6413d7690cea8a839c7c0e1d48e2730c",
-        "refs/heads/feature/astro-release-integration": "26147349a7fc227bc19f8351ee89fadd44214ef6",
+        "refs/heads/feature/astro-release-integration": "2f0fa4c34a1c508bcff000b84fbd52dab0c271a5",
+        "refs/heads/feature/docs-r2-archive-gateway": "e979a406dae145e7d8ed6f178695fea5c4896d41",
         "refs/heads/feature/gitflow-policy": "14f70454bb57cd3a51618fd5191fbaaead594bc2",
+        "refs/heads/feature/nightjar-iv-reference": "79a2e3731696922909cc2e9d1c48488e58528721",
         "refs/heads/feature/tag-release-automation": "0ed4fee4c0a6ba1a191f523927095f3e78936436",
         "refs/heads/feature/versioned-docs-archive": "ab866003ecc04d92c7ee4c6592f9c8c58acd3c89",
         "refs/heads/fix/adoption-repair-03": "878a61014852f83618c575a27154b7820ac5e017",
@@ -618,10 +680,28 @@
       },
       "open_pull_requests": [
         {
+          "number": 12,
+          "title": "Extract canonical standalone Astro reference examples",
+          "head": "feature/nightjar-iv-reference",
+          "sha": "9a4f423602557b9931c7e02e4b59933fcd8d0fa4",
+          "base": "feature/astro-release-integration",
+          "draft": true,
+          "url": "https://github.com/krigsvolddesign/astro/pull/12"
+        },
+        {
+          "number": 11,
+          "title": "Prototype create-only R2 documentation archive gateway",
+          "head": "feature/docs-r2-archive-gateway",
+          "sha": "e979a406dae145e7d8ed6f178695fea5c4896d41",
+          "base": "feature/astro-release-integration",
+          "draft": true,
+          "url": "https://github.com/krigsvolddesign/astro/pull/11"
+        },
+        {
           "number": 10,
           "title": "Integrate disabled Astro tag release and documentation gates",
           "head": "feature/astro-release-integration",
-          "sha": "26147349a7fc227bc19f8351ee89fadd44214ef6",
+          "sha": "2f0fa4c34a1c508bcff000b84fbd52dab0c271a5",
           "base": "feature/versioned-docs-archive",
           "draft": true,
           "url": "https://github.com/krigsvolddesign/astro/pull/10"
@@ -675,15 +755,25 @@
       "gitflow_exempt": false,
       "refs": {
         "refs/heads/develop": "742b5cd33cfc080ca1d6d94987df9dafc45049b4",
-        "refs/heads/feature/independent-react-source": "183fcf0f9319436dab8ab950ff79cb40b65c7d01",
+        "refs/heads/feature/independent-react-source": "8cf7b26a9209a4fd4e3d4f072e46da0eaf00119a",
+        "refs/heads/feature/react-tag-release": "25140ac4cbbdec46660f595f8b2eb6648e540b04",
         "refs/heads/main": "742b5cd33cfc080ca1d6d94987df9dafc45049b4"
       },
       "open_pull_requests": [
         {
+          "number": 2,
+          "title": "Prepare disabled tag release and nonpublishing rehearsal",
+          "head": "feature/react-tag-release",
+          "sha": "25140ac4cbbdec46660f595f8b2eb6648e540b04",
+          "base": "feature/independent-react-source",
+          "draft": true,
+          "url": "https://github.com/krigsvolddesign/react/pull/2"
+        },
+        {
           "number": 1,
           "title": "Propose independent Krigsvold React source and package checks",
           "head": "feature/independent-react-source",
-          "sha": "183fcf0f9319436dab8ab950ff79cb40b65c7d01",
+          "sha": "8cf7b26a9209a4fd4e3d4f072e46da0eaf00119a",
           "base": "develop",
           "draft": true,
           "url": "https://github.com/krigsvolddesign/react/pull/1"
@@ -710,15 +800,45 @@
       "gitflow_exempt": false,
       "refs": {
         "refs/heads/develop": "8c5f4c3fe096c4bc107fe8f16e6c485709751c1f",
-        "refs/heads/feature/nightjar-iv-source-transfer": "eb81a54dd1218228d36ad65f89aa04221e0114f0",
+        "refs/heads/feature/nightjar-iv-jekyll-browser": "aab91b948bff2ffa9864201d24764c1020e3307b",
+        "refs/heads/feature/nightjar-iv-jekyll-docs-gate": "8c369048000d1ef1df0975b4add693b8f699e321",
+        "refs/heads/feature/nightjar-iv-jekyll-release": "e4513920d66c1355bfdd41d688badda0c6d44f0d",
+        "refs/heads/feature/nightjar-iv-source-transfer": "9c8aaec5a614645ce3d20dcf196bcbad2983764b",
         "refs/heads/main": "8c5f4c3fe096c4bc107fe8f16e6c485709751c1f"
       },
       "open_pull_requests": [
         {
+          "number": 4,
+          "title": "Block Jekyll release until immutable documentation is verified",
+          "head": "feature/nightjar-iv-jekyll-docs-gate",
+          "sha": "8c369048000d1ef1df0975b4add693b8f699e321",
+          "base": "feature/nightjar-iv-jekyll-release",
+          "draft": true,
+          "url": "https://github.com/krigsvolddesign/jekyll/pull/4"
+        },
+        {
+          "number": 3,
+          "title": "Prepare protected-tag Jekyll source releases",
+          "head": "feature/nightjar-iv-jekyll-release",
+          "sha": "e4513920d66c1355bfdd41d688badda0c6d44f0d",
+          "base": "feature/nightjar-iv-jekyll-browser",
+          "draft": true,
+          "url": "https://github.com/krigsvolddesign/jekyll/pull/3"
+        },
+        {
+          "number": 2,
+          "title": "Exercise all standalone Jekyll recipes in browsers",
+          "head": "feature/nightjar-iv-jekyll-browser",
+          "sha": "aab91b948bff2ffa9864201d24764c1020e3307b",
+          "base": "feature/nightjar-iv-source-transfer",
+          "draft": true,
+          "url": "https://github.com/krigsvolddesign/jekyll/pull/2"
+        },
+        {
           "number": 1,
           "title": "Import attributed standalone Jekyll candidate",
           "head": "feature/nightjar-iv-source-transfer",
-          "sha": "eb81a54dd1218228d36ad65f89aa04221e0114f0",
+          "sha": "9c8aaec5a614645ce3d20dcf196bcbad2983764b",
           "base": "develop",
           "draft": true,
           "url": "https://github.com/krigsvolddesign/jekyll/pull/1"
@@ -746,15 +866,15 @@
       "refs": {
         "refs/heads/develop": "ae56216ff691e9fb2b2e6e49840e4d6c7ba2094a",
         "refs/heads/feature/gitflow-policy": "27ad0fdcda8f2af14ffc23bcc4b97338c9a74fba",
-        "refs/heads/feature/native-tag-artifacts": "e3e4151208881cf58d047c97112751d07b5cca15",
+        "refs/heads/feature/native-tag-artifacts": "057bf3eef6b3108a13a0e9e89f54263e5fb1b465",
         "refs/heads/main": "ae56216ff691e9fb2b2e6e49840e4d6c7ba2094a"
       },
       "open_pull_requests": [
         {
           "number": 2,
-          "title": "Prepare disabled native tag artifact rehearsal",
+          "title": "Prepare disabled native tag releases",
           "head": "feature/native-tag-artifacts",
-          "sha": "e3e4151208881cf58d047c97112751d07b5cca15",
+          "sha": "057bf3eef6b3108a13a0e9e89f54263e5fb1b465",
           "base": "develop",
           "draft": true,
           "url": "https://github.com/krigsvolddesign/vim/pull/2"
@@ -791,15 +911,15 @@
       "refs": {
         "refs/heads/develop": "78c57a6fbc6329e4c870764111368040cd073f5c",
         "refs/heads/feature/gitflow-policy": "2dc68281e8b92af7d8b0ae1f01be3ef271611167",
-        "refs/heads/feature/native-tag-artifacts": "16270ac3f15a6cd9513ddaa740f57ec9e298ab6d",
+        "refs/heads/feature/native-tag-artifacts": "f5e4d8e48ad82cd874f5be5a364ce44ef98e8a43",
         "refs/heads/main": "78c57a6fbc6329e4c870764111368040cd073f5c"
       },
       "open_pull_requests": [
         {
           "number": 2,
-          "title": "Prepare disabled native tag artifact rehearsal",
+          "title": "Prepare disabled native tag releases",
           "head": "feature/native-tag-artifacts",
-          "sha": "16270ac3f15a6cd9513ddaa740f57ec9e298ab6d",
+          "sha": "f5e4d8e48ad82cd874f5be5a364ce44ef98e8a43",
           "base": "develop",
           "draft": true,
           "url": "https://github.com/krigsvolddesign/emacs/pull/2"
@@ -836,15 +956,15 @@
       "refs": {
         "refs/heads/develop": "9c9a06799034ffb1a862ab5b859ec8e369f3a40c",
         "refs/heads/feature/gitflow-policy": "f753c6cf6ba29af0258e565c17fa4eaee3ce436e",
-        "refs/heads/feature/native-tag-artifacts": "6542c645b38e36b76cc3083612dbe68dfa51a5d5",
+        "refs/heads/feature/native-tag-artifacts": "c6163edd7a74048dda4c2433d593a76869c40efe",
         "refs/heads/main": "9c9a06799034ffb1a862ab5b859ec8e369f3a40c"
       },
       "open_pull_requests": [
         {
           "number": 2,
-          "title": "Prepare disabled native tag artifact rehearsal",
+          "title": "Prepare disabled native tag releases",
           "head": "feature/native-tag-artifacts",
-          "sha": "6542c645b38e36b76cc3083612dbe68dfa51a5d5",
+          "sha": "c6163edd7a74048dda4c2433d593a76869c40efe",
           "base": "develop",
           "draft": true,
           "url": "https://github.com/krigsvolddesign/chrome/pull/2"
@@ -881,15 +1001,15 @@
       "refs": {
         "refs/heads/develop": "3f247c18fb7ee58985fc6d12b75fdc5b9a5ea6bd",
         "refs/heads/feature/gitflow-policy": "8adea5455f320153aaed9aff4d068c85096c131e",
-        "refs/heads/feature/native-tag-artifacts": "f8a4bab8cbd6caef4859085e8fee1a05d9360da8",
+        "refs/heads/feature/native-tag-artifacts": "fed4ac76e2117184d05959637c53b3c8541d6135",
         "refs/heads/main": "3f247c18fb7ee58985fc6d12b75fdc5b9a5ea6bd"
       },
       "open_pull_requests": [
         {
           "number": 2,
-          "title": "Prepare disabled native tag artifact rehearsal",
+          "title": "Prepare disabled native tag releases",
           "head": "feature/native-tag-artifacts",
-          "sha": "f8a4bab8cbd6caef4859085e8fee1a05d9360da8",
+          "sha": "fed4ac76e2117184d05959637c53b3c8541d6135",
           "base": "develop",
           "draft": true,
           "url": "https://github.com/krigsvolddesign/firefox/pull/2"
@@ -968,9 +1088,9 @@
         "refs/heads/feat/portable-page-archetypes": "4935a11ab299483e0c16cfb16789ee653d71b7cb",
         "refs/heads/feat/reference-research-page": "0295a1d82a1b39a5811db09f8bb6780669d43d79",
         "refs/heads/feature/gitflow-release-preparation": "a492e12618dd178fd5cee7fbe5487d512f1e3cc7",
-        "refs/heads/feature/nightjar-iv-checked-inputs": "3ae94f8b3a02f9a005c39d7bcabdf1836cfa6b9a",
-        "refs/heads/feature/nightjar-iv-ledger": "90169fd40344543a74345f6020a04a991b65c223",
-        "refs/heads/feature/nightjar-iv-ruleset-audit": "73c45de7e55d127a8b516e73d83006cf3e6f149a",
+        "refs/heads/feature/nightjar-iv-checked-inputs": "948acddfd153fadbd36e83de3efcbecf353216b0",
+        "refs/heads/feature/nightjar-iv-ledger": "bfc18ee21052284b7e0e1739695d1079ed7dfec4",
+        "refs/heads/feature/nightjar-iv-ruleset-audit": "623a7797ced40791db6950718468d2d0e8de5daf",
         "refs/heads/feature/versioned-docs-contract": "366dd2114cf08115a58e58cfc4c1f1d4bb781e7e",
         "refs/heads/fix/adoption-completion": "8d1e9b3e0991ad5568fb3f950e4789d17848cc0b",
         "refs/heads/fix/documentation-nav-surfaces": "400aacb6c282a383d7915085125cd7724036b5c3",
@@ -1546,6 +1666,73 @@
       ],
       "limitations": [
         "Filesystem immutability is not proof of remote archive immutability."
+      ]
+    },
+    {
+      "scope": "standalone React source imports",
+      "checks": [
+        "Both hosted package suites and Chromium/Firefox/WebKit browser checks passed at the #1 heads.",
+        "Separate clean-room SSR consumers passed; release #2 simulation is nonpublishing."
+      ],
+      "runs": [
+        "https://github.com/martletdesign/react/actions/runs/41344706740",
+        "https://github.com/krigsvolddesign/react/actions/runs/41344709718"
+      ],
+      "artifacts": {
+        "martlet_private_test_sha256": "f3ea54f036963e86573c29b9f56e85f09c936239c99e5e66d36398b3b91e488f",
+        "krigsvold_private_test_sha256": "aed8f4007a835926c0a735ecb1d5bc39a298e6aa20a45c05b877352a707769b5"
+      },
+      "limitations": [
+        "These are local private test artifacts, not reviewed release artifacts. Full reference docs, archive infrastructure and authority handoff remain incomplete."
+      ]
+    },
+    {
+      "scope": "standalone Jekyll imports",
+      "checks": [
+        "Both hosted source builds passed.",
+        "Both hosted three-engine browser matrices checked 50 routes, root/preview, JavaScript on/off; axe was sampled on home pages."
+      ],
+      "runs": [
+        "https://github.com/martletdesign/jekyll/actions/runs/41344648735",
+        "https://github.com/krigsvolddesign/jekyll/actions/runs/41344657475",
+        "https://github.com/martletdesign/jekyll/actions/runs/41344652611",
+        "https://github.com/krigsvolddesign/jekyll/actions/runs/41344659983"
+      ],
+      "artifacts": {
+        "martlet_source_zip_sha256": "804473d71a3fe84b2edea8bcbaee3e57a2bac2b1ee8e210de007928a266b1ce6",
+        "krigsvold_source_zip_sha256": "b1387729d45c8106b7a144d225787a2bb71b2cb071392a0678ec5c5067521cf6"
+      },
+      "limitations": [
+        "Manual assistive-technology checks and comprehensive interaction conformance remain open."
+      ]
+    },
+    {
+      "scope": "native tag artifact drafts",
+      "checks": [
+        "Both hosted native package and policy checks passed for all eight current candidate heads, including Vim/Neovim/Emacs.",
+        "Reproducible ZIPs and mock release failures passed locally."
+      ],
+      "limitations": [
+        "No real release, OIDC publication, or store submission was performed.",
+        "Chrome prereleases require a separate numeric store-version strategy."
+      ]
+    },
+    {
+      "scope": "Astro archive and full reference candidates",
+      "checks": [
+        "Combined #10 archive matrices passed all seven jobs per language.",
+        "R2 prototype #11 ran hosted Miniflare and local adversarial tests.",
+        "Full #12 references built from source with 50 recipe checks and link validation locally."
+      ],
+      "runs": [
+        "https://github.com/martletdesign/astro/actions/runs/41344493910",
+        "https://github.com/krigsvolddesign/astro/actions/runs/41344499048",
+        "https://github.com/martletdesign/astro/actions/runs/41345014455",
+        "https://github.com/krigsvolddesign/astro/actions/runs/41345024179"
+      ],
+      "limitations": [
+        "Archive adapter and full references remain separate branches; integration, independent protected checkpoint, live IAM and production serving remain unverified.",
+        "No actual publication or deployment."
       ]
     }
   ],
