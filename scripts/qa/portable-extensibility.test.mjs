@@ -6,7 +6,11 @@ import {mkdtempSync,writeFileSync,rmSync} from 'node:fs';
 import {tmpdir} from 'node:os';
 import {join} from 'node:path';
 import {createHash} from 'node:crypto';
-import {execute,validateManifest} from './portable-runner.mjs';
+import {execute as executeRunner,validateManifest} from './portable-runner.mjs';
+
+// Run the whole synthetic matrix and its rejection controls on the selected
+// engine. CI installs that engine, so do not silently fall back to Chromium.
+const execute=(manifest,options={})=>executeRunner(manifest,{...options,browserName:process.env.NIGHTJAR_TEST_BROWSER??'chromium'});
 
 test('data-driven two-family by four-framework adapter smoke and rejection controls',async()=>{
  const repo=mkdtempSync(join(tmpdir(),'nightjar-four-frameworks-'));
