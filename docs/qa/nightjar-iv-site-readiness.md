@@ -6,8 +6,8 @@ This is a preparation record, not a declaration that any hostname, DNS record, W
 | --- | --- | --- | --- |
 | martletdesign.dev | private martletdesign/website | existing website proposals | Verify current origin, DNS, production branch and deployed commit |
 | krigsvolddesign.dev | private krigsvolddesign/website | existing website proposals | Verify current origin, DNS, production branch and deployed commit |
-| astro.martletdesign.dev | martletdesign/astro | #10 five-page archive starter | Full reference, protected archive and serving, hosting and DNS |
-| astro.krigsvolddesign.dev | krigsvolddesign/astro | #10 five-page archive starter | Full reference, protected archive and serving, hosting and DNS |
+| astro.martletdesign.dev | martletdesign/astro | #10 starter; #12 adds 50-recipe source reference candidate | Integrate full reference with archive; verify interactions, protected storage and serving, hosting and DNS |
+| astro.krigsvolddesign.dev | krigsvolddesign/astro | #10 starter; #12 adds 50-recipe source reference candidate | Integrate full reference with archive; verify interactions, protected storage and serving, hosting and DNS |
 | react.martletdesign.dev | martletdesign/react | standalone source import | Full reference and versioned archive, hosting and DNS |
 | react.krigsvolddesign.dev | krigsvolddesign/react | standalone source import | Full reference and versioned archive, hosting and DNS |
 | jekyll.martletdesign.dev | martletdesign/jekyll | standalone source import | Full reference and versioned archive, hosting and DNS |
