@@ -1,0 +1,32 @@
+# GitFlow and release migration: preparation record
+
+This branch is a proposal, not a production release system. No workflow in this branch publishes. The machine-readable [pre-change inventory](gitflow-inventory.json) records branch heads and open PR relationships. `develop` was created from the inventoried `main` head for each of the 13 nonempty repositories. The four empty React and Jekyll repositories cannot have branches until an authorized source transfer creates their first commit. The two private websites are outside this migration.
+
+| Repositories | Current distribution and remaining work |
+| --- | --- |
+| `martletdesign/core`, `krigsvolddesign/core` | Unpublished `@*/core` candidates. Preserve private source manifests, hash-pinned packaging, and current stage-only trust. Replace the disabled release-event direct-publish path only through a reviewed, tested tag-release design; do not reuse legacy `/theme` tags. |
+| `martletdesign/astro`, `krigsvolddesign/astro` | Existing npm packages; release-event workflows currently publish. Build and test a tag-triggered replacement and remove the old trigger in the same approved change. `krigsvolddesign/astro` is private; administrator must make it public as requested. |
+| Both organizations' `vim`, `emacs`, `chrome`, `firefox` | Private npm manifests are build helpers, not public npm packages. Establish branch policy and retain distribution-specific packaging; do not invent npm distribution. |
+| Both organizations' `react` | Empty; retain workbench candidate and publication authority pending separately authorized source transfer, validation and cutover. Do not issue a placeholder release workflow. |
+| Both organizations' `jekyll` | Empty; distribution format and source transfer must be resolved before initializing repository and release mechanics. Do not invent an npm package. |
+| `k3jph/design-workbench` | Preserve the frozen Nightjar integration branches and stacked PRs. Current release-triggered experimental React publication and reference adoption are independent paths; move React authority only after validated dedicated repositories exist. Its main push also invokes reference publication/adoption. |
+
+## GitFlow controls
+
+Use PR merge commits: `feature/*` from `develop` back to `develop`; `release/*` from `develop` to `main`, then merge the resulting main release back to `develop`; `hotfix/*` from `main` to `main`, then back to `develop`. `main` remains the default branch for integrations. Stable and prerelease production tags use `vX.Y.Z` and `vX.Y.Z-identifier` respectively; creation is restricted to authorized actors, and updates and deletions are prohibited. This branch's executable policy demonstrates permissible source names and tests an isolated feature, release and hotfix cycle. It does not itself guarantee branch provenance, required merge commits, protections or tag immutability.
+
+An authorized administrator must configure repository/organization rulesets for main, develop and `v*`: require pull requests and CI, prohibit bypass, force pushes and tag deletion/update, restrict tag creation, require merge commits and protect the policy workflow and ruleset changes. Require an independently controlled policy check: a PR can otherwise edit a workflow or its checker to make its own check pass. A branch-name check cannot prove a branch was created from the correct base or that a release was merged back; those are additional required checks and review conditions. Validate ruleset enforcement, bypass roles and plan support in each repository. Do not claim these controls are active merely because a workflow names them.
+
+Open PRs on main must be retargeted individually to develop only after comparing their diffs and dependencies. Preserve all Nightjar PR stacks, frozen commits and migration branches; historical source names require explicit transition handling instead of a bulk retarget that changes their meaning. The two existing Astro core-migration PRs and core type PRs need review against the new base. New ordinary work should target develop.
+
+## Release design and failure boundaries
+
+Tag workflows are not yet implemented or authorized to run. An implementation must bind a protected, immutable new tag to the triggering commit, require it on main's first-parent production history and protected by reviewed merge policy, check package and source version consistency, distinguish a verified registry 404 from network/authentication errors, and reject existing versions. Lock dependencies, build and test; package in a disposable directory, including core's `private:false` only there. Inspect the exact archive and publish that archive once with npm OIDC and provenance. Re-fetch the registry's tarball and verify integrity and package identity before creating the matching GitHub Release. Stable tags use `latest`, prereleases `next`.
+
+Publishing is irreversible. If registry publication succeeds but registry verification or GitHub Release creation fails, do not republish or create another tag: a separate recovery path must verify the already-published artifact and create the release only after human review. Tag protection and production approval are administrative controls, not properties established by tag syntax or a shell test. A main ancestor can be an unapproved side-branch commit, hence the first-parent requirement. Races and unexpected tag movement must fail closed.
+
+Each npm publisher needs exact repository, workflow and environment identity; configure a separate direct-publish trusted publisher only after the new workflow is present and verified, and within npm's validation deadline. Retain existing stage-only publishers until the replacement is verified. A dry-run cannot prove OIDC, npm trust, registry publication, provenance, GitHub Release creation or an environment gate. No direct publisher or token was changed in this preparation.
+
+## Evidence and outstanding gates
+
+`node --test scripts/gitflow/policy.test.mjs` exercises tag syntax/channel selection, version mismatches, missing or unknown registry status, unverified protection and isolated GitFlow merge history. These are policy unit tests and local Git rehearsals, not complete hosted release workflow tests or an npm publishing rehearsal. Failed-build rejection, real registry-query failure handling, package inspection and post-publish recovery remain to implement and test. No production tag, package, release, branch rule or npm trust configuration was changed by this proposal.
