@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "observed_at_utc": "2026-11-01 19:57:25 UTC",
-  "description": "Point-in-time inventory; a recorded draft or historic run is not an integration or production approval. Refresh refs and pull requests before decisions.",
+  "observed_at_utc": "2026-11-01 19:59:22 UTC",
+  "description": "Point-in-time observed refs and open PRs; CI and import status can change. Refreshed independently of production controls; historical runs do not verify later commits.",
   "repositories": [
     {
       "repository": "martletdesign/core",
@@ -11,7 +11,7 @@
       "refs": {
         "refs/heads/develop": "3a504ce2c2d34c7dc44cf5ec094d255eaf1aeac6",
         "refs/heads/feature/gitflow-policy": "7fc6d426aa0f65443199beea0026bb29ea745167",
-        "refs/heads/feature/tag-release-automation": "2e63a0c95b8e8a573c8edf355a1c651addb8f342",
+        "refs/heads/feature/tag-release-automation": "e99fd5b6f822c653b5a4356f593117c79fe6f1d6",
         "refs/heads/fix/adoption-repair-03": "7e130a937b730292e940deb4c41a9b164ef0b0a2",
         "refs/heads/main": "3a504ce2c2d34c7dc44cf5ec094d255eaf1aeac6",
         "refs/heads/migration/core-contrast": "4bc45ff0bd1ee2e93ee61917b023f7b45686895f",
@@ -36,7 +36,7 @@
           "number": 16,
           "title": "Prepare disabled tag-driven core releases",
           "head": "feature/tag-release-automation",
-          "sha": "fdd40ad1b23a703b32d79bf59dca9722b4c38905",
+          "sha": "e99fd5b6f822c653b5a4356f593117c79fe6f1d6",
           "base": "develop",
           "draft": true,
           "url": "https://github.com/martletdesign/core/pull/16"
@@ -96,8 +96,24 @@
           "url": "https://github.com/martletdesign/core/pull/7"
         }
       ],
-      "verification": [],
-      "blockers": []
+      "verification": [
+        {
+          "commit": "e99fd5b6f822c653b5a4356f593117c79fe6f1d6",
+          "checks": [
+            "local package tests and disposable tag nonpublishing rehearsal passed",
+            "two independent isolated packages produced identical reviewed SHA-256",
+            "hosted package build passed"
+          ],
+          "artifact_sha256": "1395eb206514b54500e4a098b1aafe59492c516c301a7e8c81a18672f6f4ce42",
+          "limitations": [
+            "Hosted provenance and existing-version checks may still be pending on this head.",
+            "No new trusted-publishing/OIDC operation was performed."
+          ]
+        }
+      ],
+      "blockers": [
+        "Activation requires separate authorization and independently verified production rulesets and npm trust."
+      ]
     },
     {
       "repository": "martletdesign/astro",
@@ -106,7 +122,7 @@
       "gitflow_exempt": false,
       "refs": {
         "refs/heads/develop": "ed1f121ae991fd868e757228664d1c3a737c3c10",
-        "refs/heads/feature/astro-release-integration": "155fb9b96dc98812269269f6704447a72e19fecb",
+        "refs/heads/feature/astro-release-integration": "f76667faaa2eb7ae08cfa2cbd36fa243a910faae",
         "refs/heads/feature/gitflow-policy": "f1daf48dcc5653b9edecea98745b73285f2bf72d",
         "refs/heads/feature/tag-release-automation": "726bb904457728db29561c1a71bdfffbc45695de",
         "refs/heads/feature/versioned-docs-archive": "9efee0373ab5003742fe94aca2ace49910f85e54",
@@ -128,7 +144,7 @@
           "number": 10,
           "title": "Integrate disabled Astro tag release and documentation gates",
           "head": "feature/astro-release-integration",
-          "sha": "155fb9b96dc98812269269f6704447a72e19fecb",
+          "sha": "f76667faaa2eb7ae08cfa2cbd36fa243a910faae",
           "base": "feature/versioned-docs-archive",
           "draft": true,
           "url": "https://github.com/martletdesign/astro/pull/10"
@@ -171,7 +187,9 @@
         }
       ],
       "verification": [],
-      "blockers": []
+      "blockers": [
+        "Remote authenticated archive storage, trusted catalog, historical serving and full reference content are not integrated; release remains disabled."
+      ]
     },
     {
       "repository": "martletdesign/react",
@@ -180,12 +198,33 @@
       "gitflow_exempt": false,
       "refs": {
         "refs/heads/develop": "3c77b664ea80d0a58599dc5d7391b3d013c9570e",
-        "refs/heads/feature/independent-react-source": "3c77b664ea80d0a58599dc5d7391b3d013c9570e",
+        "refs/heads/feature/independent-react-source": "592a995a2b857da92d3cc1a3a5501ccb01769a8a",
         "refs/heads/main": "3c77b664ea80d0a58599dc5d7391b3d013c9570e"
       },
-      "open_pull_requests": [],
-      "verification": [],
-      "blockers": []
+      "open_pull_requests": [
+        {
+          "number": 1,
+          "title": "Propose independent Martlet React source and package checks",
+          "head": "feature/independent-react-source",
+          "sha": "592a995a2b857da92d3cc1a3a5501ccb01769a8a",
+          "base": "develop",
+          "draft": true,
+          "url": "https://github.com/martletdesign/react/pull/1"
+        }
+      ],
+      "verification": [
+        {
+          "checks": [
+            "standalone npm ci, build, package tests, pack and clean-room SSR consumer passed"
+          ],
+          "limitations": [
+            "Browser matrix, versioned reference docs and authority transfer incomplete."
+          ]
+        }
+      ],
+      "blockers": [
+        "Independent browser coverage, complete reference documentation and release authority handoff remain."
+      ]
     },
     {
       "repository": "martletdesign/jekyll",
@@ -194,12 +233,33 @@
       "gitflow_exempt": false,
       "refs": {
         "refs/heads/develop": "afcf62bc9bb676f1ae5fe27757d79db6dde94021",
-        "refs/heads/feature/nightjar-iv-source-transfer": "afcf62bc9bb676f1ae5fe27757d79db6dde94021",
+        "refs/heads/feature/nightjar-iv-source-transfer": "3d1eda45dbd432d7850fd2479f6cd2d5c0a895a6",
         "refs/heads/main": "afcf62bc9bb676f1ae5fe27757d79db6dde94021"
       },
-      "open_pull_requests": [],
-      "verification": [],
-      "blockers": []
+      "open_pull_requests": [
+        {
+          "number": 1,
+          "title": "Import attributed standalone Jekyll candidate",
+          "head": "feature/nightjar-iv-source-transfer",
+          "sha": "3d1eda45dbd432d7850fd2479f6cd2d5c0a895a6",
+          "base": "develop",
+          "draft": true,
+          "url": "https://github.com/martletdesign/jekyll/pull/1"
+        }
+      ],
+      "verification": [
+        {
+          "checks": [
+            "local root/subpath source verifier, archive, safe-mode and unsafe-input checks passed"
+          ],
+          "limitations": [
+            "Hosted import checks pending; browser and historical documentation incomplete."
+          ]
+        }
+      ],
+      "blockers": [
+        "Full standalone browser coverage and versioned release documentation remain."
+      ]
     },
     {
       "repository": "martletdesign/vim",
@@ -209,7 +269,7 @@
       "refs": {
         "refs/heads/develop": "cc11258a7e98125cc8524d0bac8725b1983d3264",
         "refs/heads/feature/gitflow-policy": "8fe66697b4abc748bd382660798f316177d1bc59",
-        "refs/heads/feature/native-tag-artifacts": "b62b410730b2b2992578a65276b61a78bc58306a",
+        "refs/heads/feature/native-tag-artifacts": "ad756be95b847152af1ab87c842e7944089d2f02",
         "refs/heads/main": "cc11258a7e98125cc8524d0bac8725b1983d3264"
       },
       "open_pull_requests": [
@@ -217,7 +277,7 @@
           "number": 2,
           "title": "Prepare disabled native tag artifact rehearsal",
           "head": "feature/native-tag-artifacts",
-          "sha": "b62b410730b2b2992578a65276b61a78bc58306a",
+          "sha": "ad756be95b847152af1ab87c842e7944089d2f02",
           "base": "develop",
           "draft": true,
           "url": "https://github.com/martletdesign/vim/pull/2"
@@ -232,8 +292,19 @@
           "url": "https://github.com/martletdesign/vim/pull/1"
         }
       ],
-      "verification": [],
-      "blockers": []
+      "verification": [
+        {
+          "checks": [
+            "local native package archive reproducibility and integrity checks passed"
+          ],
+          "limitations": [
+            "Hosted CI pending; editor executable checks unavailable locally."
+          ]
+        }
+      ],
+      "blockers": [
+        "Disabled release automation requires review, hosted validation and separate activation authorization."
+      ]
     },
     {
       "repository": "martletdesign/emacs",
@@ -243,7 +314,7 @@
       "refs": {
         "refs/heads/develop": "a5bc82518e7c1269f961a031519f2939e2e99735",
         "refs/heads/feature/gitflow-policy": "6eb76589af3279d212dc53d44ba3b8e5c55e6b84",
-        "refs/heads/feature/native-tag-artifacts": "254fd21e7ed77c25af81141087d584cab9425b37",
+        "refs/heads/feature/native-tag-artifacts": "2b45fe7119d5e112aacb83f9ddbb63b50fafb178",
         "refs/heads/main": "a5bc82518e7c1269f961a031519f2939e2e99735"
       },
       "open_pull_requests": [
@@ -251,7 +322,7 @@
           "number": 2,
           "title": "Prepare disabled native tag artifact rehearsal",
           "head": "feature/native-tag-artifacts",
-          "sha": "254fd21e7ed77c25af81141087d584cab9425b37",
+          "sha": "2b45fe7119d5e112aacb83f9ddbb63b50fafb178",
           "base": "develop",
           "draft": true,
           "url": "https://github.com/martletdesign/emacs/pull/2"
@@ -266,8 +337,19 @@
           "url": "https://github.com/martletdesign/emacs/pull/1"
         }
       ],
-      "verification": [],
-      "blockers": []
+      "verification": [
+        {
+          "checks": [
+            "local native package archive reproducibility and integrity checks passed"
+          ],
+          "limitations": [
+            "Hosted CI pending; editor executable checks unavailable locally."
+          ]
+        }
+      ],
+      "blockers": [
+        "Disabled release automation requires review, hosted validation and separate activation authorization."
+      ]
     },
     {
       "repository": "martletdesign/chrome",
@@ -277,7 +359,7 @@
       "refs": {
         "refs/heads/develop": "08dbd2c2ea04203e8059bc25cc48b58598c6bbc8",
         "refs/heads/feature/gitflow-policy": "94295876add096b86915cd022f23cab7301e17e5",
-        "refs/heads/feature/native-tag-artifacts": "4025cae52220cb7e5aba20fcd3051c600a156987",
+        "refs/heads/feature/native-tag-artifacts": "b5c24ff1941d96656fc0d040dbb803514c875457",
         "refs/heads/main": "08dbd2c2ea04203e8059bc25cc48b58598c6bbc8"
       },
       "open_pull_requests": [
@@ -285,7 +367,7 @@
           "number": 2,
           "title": "Prepare disabled native tag artifact rehearsal",
           "head": "feature/native-tag-artifacts",
-          "sha": "4025cae52220cb7e5aba20fcd3051c600a156987",
+          "sha": "b5c24ff1941d96656fc0d040dbb803514c875457",
           "base": "develop",
           "draft": true,
           "url": "https://github.com/martletdesign/chrome/pull/2"
@@ -300,8 +382,19 @@
           "url": "https://github.com/martletdesign/chrome/pull/1"
         }
       ],
-      "verification": [],
-      "blockers": []
+      "verification": [
+        {
+          "checks": [
+            "local native package archive reproducibility and integrity checks passed"
+          ],
+          "limitations": [
+            "Hosted CI pending; editor executable checks unavailable locally."
+          ]
+        }
+      ],
+      "blockers": [
+        "Disabled release automation requires review, hosted validation and separate activation authorization."
+      ]
     },
     {
       "repository": "martletdesign/firefox",
@@ -311,7 +404,7 @@
       "refs": {
         "refs/heads/develop": "37331f26d67ec51e0c7e12e78d4ff1b16b4b1553",
         "refs/heads/feature/gitflow-policy": "1c4a7a447ebae727c6307d6bd471d43c54c629b5",
-        "refs/heads/feature/native-tag-artifacts": "a95ad9035d9c85c910865888b61506da50dd8aa2",
+        "refs/heads/feature/native-tag-artifacts": "ca719d716734085d26accdfe298facd8f3d9dbf1",
         "refs/heads/main": "37331f26d67ec51e0c7e12e78d4ff1b16b4b1553"
       },
       "open_pull_requests": [
@@ -319,7 +412,7 @@
           "number": 2,
           "title": "Prepare disabled native tag artifact rehearsal",
           "head": "feature/native-tag-artifacts",
-          "sha": "a95ad9035d9c85c910865888b61506da50dd8aa2",
+          "sha": "ca719d716734085d26accdfe298facd8f3d9dbf1",
           "base": "develop",
           "draft": true,
           "url": "https://github.com/martletdesign/firefox/pull/2"
@@ -334,8 +427,19 @@
           "url": "https://github.com/martletdesign/firefox/pull/1"
         }
       ],
-      "verification": [],
-      "blockers": []
+      "verification": [
+        {
+          "checks": [
+            "local native package archive reproducibility and integrity checks passed"
+          ],
+          "limitations": [
+            "Hosted CI pending; editor executable checks unavailable locally."
+          ]
+        }
+      ],
+      "blockers": [
+        "Disabled release automation requires review, hosted validation and separate activation authorization."
+      ]
     },
     {
       "repository": "martletdesign/website",
@@ -383,7 +487,7 @@
       "refs": {
         "refs/heads/develop": "d7b6c2c9d09aa4b82f24dfc84a751c0946fa458a",
         "refs/heads/feature/gitflow-policy": "21bae6e8475964810ea8aad0b59e8e133b59b3c1",
-        "refs/heads/feature/tag-release-automation": "1ec3336dcf91eb46f8810b52d470168c39f56638",
+        "refs/heads/feature/tag-release-automation": "8e61399d8bf0c5ea95ef19fff9f8badc8e6ad813",
         "refs/heads/fix/adoption-repair-03": "cb1ed336f4fb0204735ca4751d2928d0bdeb2501",
         "refs/heads/fix/nested-source-actions": "86e610a6f5f79115d740d1c989fcbc71c1ef52f4",
         "refs/heads/main": "d7b6c2c9d09aa4b82f24dfc84a751c0946fa458a",
@@ -410,7 +514,7 @@
           "number": 17,
           "title": "Prepare disabled tag-driven core releases",
           "head": "feature/tag-release-automation",
-          "sha": "7270c5735a8dea130a921a5abb440ff8dda2abe6",
+          "sha": "8e61399d8bf0c5ea95ef19fff9f8badc8e6ad813",
           "base": "develop",
           "draft": true,
           "url": "https://github.com/krigsvolddesign/core/pull/17"
@@ -470,8 +574,24 @@
           "url": "https://github.com/krigsvolddesign/core/pull/8"
         }
       ],
-      "verification": [],
-      "blockers": []
+      "verification": [
+        {
+          "commit": "8e61399d8bf0c5ea95ef19fff9f8badc8e6ad813",
+          "checks": [
+            "local package tests and disposable tag nonpublishing rehearsal passed",
+            "two independent isolated packages produced identical reviewed SHA-256",
+            "hosted package build passed"
+          ],
+          "artifact_sha256": "c2088b2585e913c11f74a045805bcef186e8e830f5c626e46c0c299e6a6eb7c4",
+          "limitations": [
+            "Hosted provenance and existing-version checks may still be pending on this head.",
+            "No new trusted-publishing/OIDC operation was performed."
+          ]
+        }
+      ],
+      "blockers": [
+        "Activation requires separate authorization and independently verified production rulesets and npm trust."
+      ]
     },
     {
       "repository": "krigsvolddesign/astro",
@@ -480,7 +600,7 @@
       "gitflow_exempt": false,
       "refs": {
         "refs/heads/develop": "af57afbc6413d7690cea8a839c7c0e1d48e2730c",
-        "refs/heads/feature/astro-release-integration": "032c9f92ec57847255ac4e22ec5c15ee1af0e1a9",
+        "refs/heads/feature/astro-release-integration": "26147349a7fc227bc19f8351ee89fadd44214ef6",
         "refs/heads/feature/gitflow-policy": "14f70454bb57cd3a51618fd5191fbaaead594bc2",
         "refs/heads/feature/tag-release-automation": "0ed4fee4c0a6ba1a191f523927095f3e78936436",
         "refs/heads/feature/versioned-docs-archive": "ab866003ecc04d92c7ee4c6592f9c8c58acd3c89",
@@ -501,7 +621,7 @@
           "number": 10,
           "title": "Integrate disabled Astro tag release and documentation gates",
           "head": "feature/astro-release-integration",
-          "sha": "032c9f92ec57847255ac4e22ec5c15ee1af0e1a9",
+          "sha": "26147349a7fc227bc19f8351ee89fadd44214ef6",
           "base": "feature/versioned-docs-archive",
           "draft": true,
           "url": "https://github.com/krigsvolddesign/astro/pull/10"
@@ -544,7 +664,9 @@
         }
       ],
       "verification": [],
-      "blockers": []
+      "blockers": [
+        "Remote authenticated archive storage, trusted catalog, historical serving and full reference content are not integrated; release remains disabled."
+      ]
     },
     {
       "repository": "krigsvolddesign/react",
@@ -553,12 +675,33 @@
       "gitflow_exempt": false,
       "refs": {
         "refs/heads/develop": "742b5cd33cfc080ca1d6d94987df9dafc45049b4",
-        "refs/heads/feature/independent-react-source": "742b5cd33cfc080ca1d6d94987df9dafc45049b4",
+        "refs/heads/feature/independent-react-source": "183fcf0f9319436dab8ab950ff79cb40b65c7d01",
         "refs/heads/main": "742b5cd33cfc080ca1d6d94987df9dafc45049b4"
       },
-      "open_pull_requests": [],
-      "verification": [],
-      "blockers": []
+      "open_pull_requests": [
+        {
+          "number": 1,
+          "title": "Propose independent Krigsvold React source and package checks",
+          "head": "feature/independent-react-source",
+          "sha": "183fcf0f9319436dab8ab950ff79cb40b65c7d01",
+          "base": "develop",
+          "draft": true,
+          "url": "https://github.com/krigsvolddesign/react/pull/1"
+        }
+      ],
+      "verification": [
+        {
+          "checks": [
+            "standalone npm ci, build, package tests, pack and clean-room SSR consumer passed"
+          ],
+          "limitations": [
+            "Browser matrix, versioned reference docs and authority transfer incomplete."
+          ]
+        }
+      ],
+      "blockers": [
+        "Independent browser coverage, complete reference documentation and release authority handoff remain."
+      ]
     },
     {
       "repository": "krigsvolddesign/jekyll",
@@ -567,12 +710,33 @@
       "gitflow_exempt": false,
       "refs": {
         "refs/heads/develop": "8c5f4c3fe096c4bc107fe8f16e6c485709751c1f",
-        "refs/heads/feature/nightjar-iv-source-transfer": "8c5f4c3fe096c4bc107fe8f16e6c485709751c1f",
+        "refs/heads/feature/nightjar-iv-source-transfer": "eb81a54dd1218228d36ad65f89aa04221e0114f0",
         "refs/heads/main": "8c5f4c3fe096c4bc107fe8f16e6c485709751c1f"
       },
-      "open_pull_requests": [],
-      "verification": [],
-      "blockers": []
+      "open_pull_requests": [
+        {
+          "number": 1,
+          "title": "Import attributed standalone Jekyll candidate",
+          "head": "feature/nightjar-iv-source-transfer",
+          "sha": "eb81a54dd1218228d36ad65f89aa04221e0114f0",
+          "base": "develop",
+          "draft": true,
+          "url": "https://github.com/krigsvolddesign/jekyll/pull/1"
+        }
+      ],
+      "verification": [
+        {
+          "checks": [
+            "local root/subpath source verifier, archive, safe-mode and unsafe-input checks passed"
+          ],
+          "limitations": [
+            "Hosted import checks pending; browser and historical documentation incomplete."
+          ]
+        }
+      ],
+      "blockers": [
+        "Full standalone browser coverage and versioned release documentation remain."
+      ]
     },
     {
       "repository": "krigsvolddesign/vim",
@@ -582,7 +746,7 @@
       "refs": {
         "refs/heads/develop": "ae56216ff691e9fb2b2e6e49840e4d6c7ba2094a",
         "refs/heads/feature/gitflow-policy": "27ad0fdcda8f2af14ffc23bcc4b97338c9a74fba",
-        "refs/heads/feature/native-tag-artifacts": "8a871a68667c2b3e4cfe6919fbf7eac23e2a7bd8",
+        "refs/heads/feature/native-tag-artifacts": "e3e4151208881cf58d047c97112751d07b5cca15",
         "refs/heads/main": "ae56216ff691e9fb2b2e6e49840e4d6c7ba2094a"
       },
       "open_pull_requests": [
@@ -590,7 +754,7 @@
           "number": 2,
           "title": "Prepare disabled native tag artifact rehearsal",
           "head": "feature/native-tag-artifacts",
-          "sha": "8a871a68667c2b3e4cfe6919fbf7eac23e2a7bd8",
+          "sha": "e3e4151208881cf58d047c97112751d07b5cca15",
           "base": "develop",
           "draft": true,
           "url": "https://github.com/krigsvolddesign/vim/pull/2"
@@ -605,8 +769,19 @@
           "url": "https://github.com/krigsvolddesign/vim/pull/1"
         }
       ],
-      "verification": [],
-      "blockers": []
+      "verification": [
+        {
+          "checks": [
+            "local native package archive reproducibility and integrity checks passed"
+          ],
+          "limitations": [
+            "Hosted CI pending; editor executable checks unavailable locally."
+          ]
+        }
+      ],
+      "blockers": [
+        "Disabled release automation requires review, hosted validation and separate activation authorization."
+      ]
     },
     {
       "repository": "krigsvolddesign/emacs",
@@ -616,7 +791,7 @@
       "refs": {
         "refs/heads/develop": "78c57a6fbc6329e4c870764111368040cd073f5c",
         "refs/heads/feature/gitflow-policy": "2dc68281e8b92af7d8b0ae1f01be3ef271611167",
-        "refs/heads/feature/native-tag-artifacts": "9538feb20cdae18c90f1cab478ed47dd9ec5d243",
+        "refs/heads/feature/native-tag-artifacts": "16270ac3f15a6cd9513ddaa740f57ec9e298ab6d",
         "refs/heads/main": "78c57a6fbc6329e4c870764111368040cd073f5c"
       },
       "open_pull_requests": [
@@ -624,7 +799,7 @@
           "number": 2,
           "title": "Prepare disabled native tag artifact rehearsal",
           "head": "feature/native-tag-artifacts",
-          "sha": "9538feb20cdae18c90f1cab478ed47dd9ec5d243",
+          "sha": "16270ac3f15a6cd9513ddaa740f57ec9e298ab6d",
           "base": "develop",
           "draft": true,
           "url": "https://github.com/krigsvolddesign/emacs/pull/2"
@@ -639,8 +814,19 @@
           "url": "https://github.com/krigsvolddesign/emacs/pull/1"
         }
       ],
-      "verification": [],
-      "blockers": []
+      "verification": [
+        {
+          "checks": [
+            "local native package archive reproducibility and integrity checks passed"
+          ],
+          "limitations": [
+            "Hosted CI pending; editor executable checks unavailable locally."
+          ]
+        }
+      ],
+      "blockers": [
+        "Disabled release automation requires review, hosted validation and separate activation authorization."
+      ]
     },
     {
       "repository": "krigsvolddesign/chrome",
@@ -650,7 +836,7 @@
       "refs": {
         "refs/heads/develop": "9c9a06799034ffb1a862ab5b859ec8e369f3a40c",
         "refs/heads/feature/gitflow-policy": "f753c6cf6ba29af0258e565c17fa4eaee3ce436e",
-        "refs/heads/feature/native-tag-artifacts": "80d1a9886d9db203565770cfc5e11f571b02d189",
+        "refs/heads/feature/native-tag-artifacts": "6542c645b38e36b76cc3083612dbe68dfa51a5d5",
         "refs/heads/main": "9c9a06799034ffb1a862ab5b859ec8e369f3a40c"
       },
       "open_pull_requests": [
@@ -658,7 +844,7 @@
           "number": 2,
           "title": "Prepare disabled native tag artifact rehearsal",
           "head": "feature/native-tag-artifacts",
-          "sha": "80d1a9886d9db203565770cfc5e11f571b02d189",
+          "sha": "6542c645b38e36b76cc3083612dbe68dfa51a5d5",
           "base": "develop",
           "draft": true,
           "url": "https://github.com/krigsvolddesign/chrome/pull/2"
@@ -673,8 +859,19 @@
           "url": "https://github.com/krigsvolddesign/chrome/pull/1"
         }
       ],
-      "verification": [],
-      "blockers": []
+      "verification": [
+        {
+          "checks": [
+            "local native package archive reproducibility and integrity checks passed"
+          ],
+          "limitations": [
+            "Hosted CI pending; editor executable checks unavailable locally."
+          ]
+        }
+      ],
+      "blockers": [
+        "Disabled release automation requires review, hosted validation and separate activation authorization."
+      ]
     },
     {
       "repository": "krigsvolddesign/firefox",
@@ -684,7 +881,7 @@
       "refs": {
         "refs/heads/develop": "3f247c18fb7ee58985fc6d12b75fdc5b9a5ea6bd",
         "refs/heads/feature/gitflow-policy": "8adea5455f320153aaed9aff4d068c85096c131e",
-        "refs/heads/feature/native-tag-artifacts": "6817cfe94fcdb94be2070d0d59064f9571cac003",
+        "refs/heads/feature/native-tag-artifacts": "f8a4bab8cbd6caef4859085e8fee1a05d9360da8",
         "refs/heads/main": "3f247c18fb7ee58985fc6d12b75fdc5b9a5ea6bd"
       },
       "open_pull_requests": [
@@ -692,7 +889,7 @@
           "number": 2,
           "title": "Prepare disabled native tag artifact rehearsal",
           "head": "feature/native-tag-artifacts",
-          "sha": "6817cfe94fcdb94be2070d0d59064f9571cac003",
+          "sha": "f8a4bab8cbd6caef4859085e8fee1a05d9360da8",
           "base": "develop",
           "draft": true,
           "url": "https://github.com/krigsvolddesign/firefox/pull/2"
@@ -707,8 +904,19 @@
           "url": "https://github.com/krigsvolddesign/firefox/pull/1"
         }
       ],
-      "verification": [],
-      "blockers": []
+      "verification": [
+        {
+          "checks": [
+            "local native package archive reproducibility and integrity checks passed"
+          ],
+          "limitations": [
+            "Hosted CI pending; editor executable checks unavailable locally."
+          ]
+        }
+      ],
+      "blockers": [
+        "Disabled release automation requires review, hosted validation and separate activation authorization."
+      ]
     },
     {
       "repository": "krigsvolddesign/website",
@@ -760,7 +968,8 @@
         "refs/heads/feat/portable-page-archetypes": "4935a11ab299483e0c16cfb16789ee653d71b7cb",
         "refs/heads/feat/reference-research-page": "0295a1d82a1b39a5811db09f8bb6780669d43d79",
         "refs/heads/feature/gitflow-release-preparation": "a492e12618dd178fd5cee7fbe5487d512f1e3cc7",
-        "refs/heads/feature/nightjar-iv-ledger": "aafd9a8443e0c6cdc4afd6f973a605faa74b8f2c",
+        "refs/heads/feature/nightjar-iv-checked-inputs": "3ae94f8b3a02f9a005c39d7bcabdf1836cfa6b9a",
+        "refs/heads/feature/nightjar-iv-ledger": "90169fd40344543a74345f6020a04a991b65c223",
         "refs/heads/feature/nightjar-iv-ruleset-audit": "73c45de7e55d127a8b516e73d83006cf3e6f149a",
         "refs/heads/feature/versioned-docs-contract": "366dd2114cf08115a58e58cfc4c1f1d4bb781e7e",
         "refs/heads/fix/adoption-completion": "8d1e9b3e0991ad5568fb3f950e4789d17848cc0b",
@@ -844,6 +1053,33 @@
         "refs/tags/react-v0.1.0": "48bfa2afcc27112b3e73ef160d16daa1005dd5b4"
       },
       "open_pull_requests": [
+        {
+          "number": 75,
+          "title": "Require verification for declared portable package inputs",
+          "head": "feature/nightjar-iv-checked-inputs",
+          "sha": "3ae94f8b3a02f9a005c39d7bcabdf1836cfa6b9a",
+          "base": "nightjar3/framework-extensibility",
+          "draft": true,
+          "url": "https://github.com/k3jph/design-workbench/pull/75"
+        },
+        {
+          "number": 74,
+          "title": "Track Nightjar IV implementation and repository evidence",
+          "head": "feature/nightjar-iv-ledger",
+          "sha": "90169fd40344543a74345f6020a04a991b65c223",
+          "base": "develop",
+          "draft": true,
+          "url": "https://github.com/k3jph/design-workbench/pull/74"
+        },
+        {
+          "number": 73,
+          "title": "Audit GitFlow rulesets without changing production settings",
+          "head": "feature/nightjar-iv-ruleset-audit",
+          "sha": "73c45de7e55d127a8b516e73d83006cf3e6f149a",
+          "base": "feature/gitflow-release-preparation",
+          "draft": true,
+          "url": "https://github.com/k3jph/design-workbench/pull/73"
+        },
         {
           "number": 72,
           "title": "Prepare immutable framework documentation contract",
