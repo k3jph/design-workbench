@@ -1,0 +1,1788 @@
+{
+  "version": 1,
+  "runner_scope": "Capability-scoped static content and local link/fragment inventory; catalog additionally checks experimental static-result presence. Not full conformance or an accessibility audit.",
+  "network_policy": "Runner performs no fetch; build commands are trusted code and network isolation is not enforced.",
+  "runner": {
+    "commit": "64e89b668368dead1290a290e2a65eeb2236779f",
+    "script_sha256": "48d92a60c6d44a3b8e559abde51b8c86522ece01c8efbd743f4d28cd1e3b52e8",
+    "html_verifier_sha256": "fb63da917584af080e34b039714fabcf34bdef1b6713ff294c489ed41e237d34",
+    "default_matrix_sha256": "acfaff2f4546ba57bc18b0fad90a0ed8f1f4c53b52fef8c87a3fc6bb097351de",
+    "worktree_dirty": true
+  },
+  "require_checked_declared_inputs": true,
+  "matrix": {
+    "families": [
+      "martlet",
+      "krigsvold"
+    ],
+    "frameworks": [
+      "jekyll",
+      "astro",
+      "react"
+    ]
+  },
+  "fixture": {
+    "repository": "fixtures",
+    "commit": "80a5635abe4de7a07a1983de0b3ef796b101e047",
+    "catalog_path": "examples/page-archetypes/content/catalog.json",
+    "dashboards_path": "examples/page-archetypes/content/dashboards.json",
+    "catalog_sha256": "4795e34b2eaea8fa506cca6d7679e93f38c6019cea704834ae736ef2064afd37",
+    "dashboards_sha256": "9a0341f3789a9bf1c9a20cb6c31ace624a1400c3390de8131a305df372d87b35"
+  },
+  "repositories": {
+    "fixtures": {
+      "commit": "80a5635abe4de7a07a1983de0b3ef796b101e047"
+    },
+    "martlet": {
+      "commit": "3974265910d12d5c0d3d4398a7df4cfbeaeed26b"
+    },
+    "krigsvold": {
+      "commit": "504b5823b11268cd424525eef0894451cd627dcb"
+    }
+  },
+  "browser": {
+    "engine": "chromium",
+    "version": "151.0.7922.173"
+  },
+  "node": "v24.19.0",
+  "javascript": "disabled",
+  "results": [
+    {
+      "family": "martlet",
+      "framework": "jekyll",
+      "capability": "catalog",
+      "base": "/",
+      "source": "martlet",
+      "source_commit": "3974265910d12d5c0d3d4398a7df4cfbeaeed26b",
+      "declared_inputs": {},
+      "input_checks": {},
+      "declared_input_consumption": "not_verified",
+      "build_commands": [
+        [
+          "python3",
+          "nightjar/build.py",
+          "--baseurl",
+          "{base}",
+          "--destination",
+          "{output}"
+        ]
+      ],
+      "output_tree_sha256": "130e92a8dc84c2ce79ce7d842e986284bb060b7c15a2f7371e963be7d46f8167",
+      "html_check": "Checked 58 rendered pages and 1448 local destinations/fragments under /.",
+      "cells": [
+        {
+          "example": "home",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "about",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "article",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "archive",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "category",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "categories",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "person",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "projects",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "case-study",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "documentation",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "guide",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "reference",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "contact",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "faq",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "privacy",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "terms",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "service",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "place",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "pricing",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "careers",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "opportunity",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "software",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "product",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "collection",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "collection-item",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "events",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "event",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "report",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "gallery",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "changelog",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "search",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "sign-in",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "sign-up",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "password-reset",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "two-factor",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "coming-soon",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "not-found",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "server-error",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "workspace",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "chat",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "sensors",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "fleet",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "scene",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "integrations",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "stress-test",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "patterns",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "dashboard-analytics",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "dashboard-components",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "dashboard-administration",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "dashboard-operations",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        }
+      ],
+      "science": {
+        "status": "experimental",
+        "static_results": "checked",
+        "interactive_behavior": "not_assessed"
+      }
+    },
+    {
+      "family": "martlet",
+      "framework": "jekyll",
+      "capability": "catalog",
+      "base": "/preview",
+      "source": "martlet",
+      "source_commit": "3974265910d12d5c0d3d4398a7df4cfbeaeed26b",
+      "declared_inputs": {},
+      "input_checks": {},
+      "declared_input_consumption": "not_verified",
+      "build_commands": [
+        [
+          "python3",
+          "nightjar/build.py",
+          "--baseurl",
+          "{base}",
+          "--destination",
+          "{output}"
+        ]
+      ],
+      "output_tree_sha256": "6b2a2681784da99141d8dce817a1a6f2ee7ed80b0fd77d90be58f64266f870c7",
+      "html_check": "Checked 58 rendered pages and 1448 local destinations/fragments under /preview.",
+      "cells": [
+        {
+          "example": "home",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "about",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "article",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "archive",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "category",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "categories",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "person",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "projects",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "case-study",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "documentation",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "guide",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "reference",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "contact",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "faq",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "privacy",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "terms",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "service",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "place",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "pricing",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "careers",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "opportunity",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "software",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "product",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "collection",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "collection-item",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "events",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "event",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "report",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "gallery",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "changelog",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "search",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "sign-in",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "sign-up",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "password-reset",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "two-factor",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "coming-soon",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "not-found",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "server-error",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "workspace",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "chat",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "sensors",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "fleet",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "scene",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "integrations",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "stress-test",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "patterns",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "dashboard-analytics",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "dashboard-components",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "dashboard-administration",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "dashboard-operations",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        }
+      ],
+      "science": {
+        "status": "experimental",
+        "static_results": "checked",
+        "interactive_behavior": "not_assessed"
+      }
+    },
+    {
+      "family": "krigsvold",
+      "framework": "jekyll",
+      "capability": "catalog",
+      "base": "/",
+      "source": "krigsvold",
+      "source_commit": "504b5823b11268cd424525eef0894451cd627dcb",
+      "declared_inputs": {},
+      "input_checks": {},
+      "declared_input_consumption": "not_verified",
+      "build_commands": [
+        [
+          "python3",
+          "nightjar/build.py",
+          "--baseurl",
+          "{base}",
+          "--destination",
+          "{output}"
+        ]
+      ],
+      "output_tree_sha256": "a7f314ceb5d5dcd1c848fb0a0ec87264cbb7914f247270b14a800a2f87f53905",
+      "html_check": "Checked 58 rendered pages and 1448 local destinations/fragments under /.",
+      "cells": [
+        {
+          "example": "home",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "about",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "article",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "archive",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "category",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "categories",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "person",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "projects",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "case-study",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "documentation",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "guide",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "reference",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "contact",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "faq",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "privacy",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "terms",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "service",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "place",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "pricing",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "careers",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "opportunity",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "software",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "product",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "collection",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "collection-item",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "events",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "event",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "report",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "gallery",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "changelog",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "search",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "sign-in",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "sign-up",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "password-reset",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "two-factor",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "coming-soon",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "not-found",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "server-error",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "workspace",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "chat",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "sensors",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "fleet",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "scene",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "integrations",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "stress-test",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "patterns",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "dashboard-analytics",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "dashboard-components",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "dashboard-administration",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "dashboard-operations",
+          "base": "/",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        }
+      ],
+      "science": {
+        "status": "experimental",
+        "static_results": "checked",
+        "interactive_behavior": "not_assessed"
+      }
+    },
+    {
+      "family": "krigsvold",
+      "framework": "jekyll",
+      "capability": "catalog",
+      "base": "/preview",
+      "source": "krigsvold",
+      "source_commit": "504b5823b11268cd424525eef0894451cd627dcb",
+      "declared_inputs": {},
+      "input_checks": {},
+      "declared_input_consumption": "not_verified",
+      "build_commands": [
+        [
+          "python3",
+          "nightjar/build.py",
+          "--baseurl",
+          "{base}",
+          "--destination",
+          "{output}"
+        ]
+      ],
+      "output_tree_sha256": "d5f2ad1fe20418268029284bfcff31ec988f31b478a74053f922e98e82861ee9",
+      "html_check": "Checked 58 rendered pages and 1448 local destinations/fragments under /preview.",
+      "cells": [
+        {
+          "example": "home",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "about",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "article",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "archive",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "category",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "categories",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "person",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "projects",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "case-study",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "documentation",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "guide",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "reference",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "contact",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "faq",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "privacy",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "terms",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "service",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "place",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "pricing",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "careers",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "opportunity",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "software",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "product",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "collection",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "collection-item",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "events",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "event",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "report",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "gallery",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "changelog",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "search",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "sign-in",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "sign-up",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "password-reset",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "two-factor",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "coming-soon",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "not-found",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "server-error",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "workspace",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "chat",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "sensors",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "fleet",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "scene",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "integrations",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "stress-test",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "patterns",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "dashboard-analytics",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "dashboard-components",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "dashboard-administration",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        },
+        {
+          "example": "dashboard-operations",
+          "base": "/preview",
+          "static_content": "checked",
+          "interactive_behavior": "not_assessed",
+          "automated_accessibility": "not_assessed",
+          "visual_conformance": "not_assessed"
+        }
+      ],
+      "science": {
+        "status": "experimental",
+        "static_results": "checked",
+        "interactive_behavior": "not_assessed"
+      }
+    }
+  ],
+  "missing": [
+    "martlet/astro",
+    "martlet/react",
+    "krigsvold/astro",
+    "krigsvold/react"
+  ],
+  "not_assessed": [
+    "declared package input consumption",
+    "interactive behavior",
+    "JavaScript failure recovery",
+    "automated accessibility",
+    "contrast incomplete findings",
+    "visual identity",
+    "manual assistive technology",
+    "physical print",
+    "performance"
+  ]
+}
