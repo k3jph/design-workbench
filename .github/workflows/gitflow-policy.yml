@@ -13,7 +13,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '24'
-      - run: node --test scripts/gitflow/policy.test.mjs
+      - run: node --test scripts/gitflow/*.test.mjs
       - name: Check source and target branch
         env:
           BASE_REF: ${{ github.base_ref }}
