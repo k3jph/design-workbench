@@ -39,3 +39,9 @@ python3 scripts/qa/gradient-contrast-measure.py /absolute/new/evidence-directory
 
 Use `krigsvold` in the second argument for the other family. The capture creates a new output directory and refuses to overwrite an existing observation. Compare built-tree hashes and source provenance independently before drawing conclusions about a newer candidate.
 For another deployment base, append the absolute, slash-terminated base as the fourth argument.
+
+## Follow-up six-output interaction run
+
+The adjacent `nightjar-iv-contact-interactions-followup.json` records another Chromium `/preview` run of the same contact contract against newer local outputs. It passed for all six family/framework combinations with zero axe violations; the two Jekyll gradient-based color-contrast results remain incomplete. It tested keyboard validation, focus, correction, immediate pointer retry, reset, no-JavaScript fallback and 320px reflow.
+
+The Jekyll output providers identified their source as the #6 candidate heads recorded in the contrast investigation above. The Astro archive manifests claimed local source commits `3bb2aa741f6826b817dc258ef5d3e73ac5d3284e` and `2dba9deaf7fed61354f48be44b4a6e107021cc12`, which are earlier than the final checkpoint candidates; the served catalogs were local fixtures. The React output providers identified local commits `053460b82f575891ad94fa01b719517857dcb858` and `ea4690694baf63bafaa9c5960564f56203cfbfe2`. These are recorded input claims, not independent proof of provenance or exact remote heads. No Firefox, WebKit, root-base, other interaction, screen-reader or physical-device result is implied by this run.
