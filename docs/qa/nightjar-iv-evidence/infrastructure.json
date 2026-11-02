@@ -1,0 +1,328 @@
+{
+  "observed_at": "2026-11-02T01:35:54.910868+00:00",
+  "cloudflare": [
+    {
+      "url": "https://api.cloudflare.com/client/v4/user/tokens/verify",
+      "status": 401,
+      "body": "{\"success\":false,\"errors\":[{\"code\":1000,\"message\":\"Invalid API Token\"}],\"messages\":[],\"result\":null}",
+      "headers": {}
+    },
+    {
+      "url": "https://api.cloudflare.com/client/v4/accounts",
+      "status": 200,
+      "final_url": "https://api.cloudflare.com/client/v4/accounts",
+      "headers": {
+        "content-type": "application/json",
+        "date": "Mon, 02 Nov 2026 01:35:55 GMT",
+        "server": "envoy"
+      },
+      "body": {
+        "result": [
+          {
+            "id": "f6142510bef6212dfa78bc6932acc80f",
+            "name": "James Howard",
+            "type": "standard",
+            "settings": {
+              "enforce_twofactor": true,
+              "api_access_enabled": null,
+              "access_approval_expiry": null,
+              "abuse_contact_email": null,
+              "oauth_app_access_enabled": true
+            },
+            "legacy_flags": {
+              "enterprise_zone_quota": {
+                "maximum": 0,
+                "current": 0,
+                "available": 0
+              }
+            },
+            "created_on": "2014-06-15T04:30:30.486613Z"
+          }
+        ],
+        "result_info": {
+          "page": 1,
+          "per_page": 20,
+          "total_pages": 1,
+          "count": 1,
+          "total_count": 1
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    },
+    {
+      "url": "https://api.cloudflare.com/client/v4/zones",
+      "status": 200,
+      "final_url": "https://api.cloudflare.com/client/v4/zones",
+      "headers": {
+        "content-type": "application/json",
+        "date": "Mon, 02 Nov 2026 01:35:55 GMT",
+        "server": "envoy"
+      },
+      "body": {
+        "result": [
+          {
+            "id": "c59d0469424ebea0c460d455b30af1c6",
+            "name": "krigsvolddesign.dev",
+            "status": "active",
+            "paused": false,
+            "type": "full",
+            "development_mode": 0,
+            "name_servers": [
+              "amy.ns.cloudflare.com",
+              "ray.ns.cloudflare.com"
+            ],
+            "original_name_servers": null,
+            "original_registrar": null,
+            "original_dnshost": null,
+            "modified_on": "2026-10-25T18:29:17.148865Z",
+            "created_on": "2026-10-25T18:29:16.507231Z",
+            "activated_on": "2026-10-25T18:29:17.014315Z",
+            "vanity_name_servers": [],
+            "vanity_name_servers_ips": null,
+            "meta": {
+              "step": 4,
+              "custom_certificate_quota": 0,
+              "page_rule_quota": 3,
+              "phishing_detected": false
+            },
+            "owner": {
+              "id": null,
+              "type": "user",
+              "email": null
+            },
+            "account": {
+              "id": "f6142510bef6212dfa78bc6932acc80f",
+              "name": "James Howard"
+            },
+            "tenant": {
+              "id": null,
+              "name": null
+            },
+            "tenant_unit": {
+              "id": null
+            },
+            "permissions": [
+              "#zone:read",
+              "#zone_settings:edit",
+              "#zone_settings:read",
+              "#dns_records:edit",
+              "#dns_records:read",
+              "#waf:read",
+              "#waf:edit",
+              "#page_shield:read",
+              "#page_shield:edit",
+              "#zone_versioning:read",
+              "#zone_versioning:edit",
+              "#api_gateway:read",
+              "#api_gateway:edit",
+              "#zaraz:publish",
+              "#zaraz:edit",
+              "#zaraz:read",
+              "#web3:read",
+              "#web3:edit",
+              "#healthchecks:edit",
+              "#healthchecks:read",
+              "#waitingroom:read",
+              "#waitingroom:edit",
+              "#access:edit",
+              "#access:read",
+              "#ssl:read",
+              "#zone:edit",
+              "#worker:edit",
+              "#worker:read",
+              "#ssl:edit",
+              "#logs:edit",
+              "#logs:read",
+              "#cache_purge:edit",
+              "#lb:edit",
+              "#lb:read",
+              "#app:edit"
+            ],
+            "plan": {
+              "id": "0feeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+              "name": "Free Website",
+              "price": 0,
+              "currency": "USD",
+              "frequency": "",
+              "is_subscribed": false,
+              "can_subscribe": false,
+              "legacy_id": "free",
+              "legacy_discount": false,
+              "externally_managed": false
+            }
+          },
+          {
+            "id": "69dea64caef3fdd16cbd2e46daa534b2",
+            "name": "martletdesign.dev",
+            "status": "active",
+            "paused": false,
+            "type": "full",
+            "development_mode": 0,
+            "name_servers": [
+              "amy.ns.cloudflare.com",
+              "ray.ns.cloudflare.com"
+            ],
+            "original_name_servers": null,
+            "original_registrar": null,
+            "original_dnshost": null,
+            "modified_on": "2026-10-25T18:30:17.015706Z",
+            "created_on": "2026-10-25T18:30:16.435108Z",
+            "activated_on": "2026-10-25T18:30:16.912844Z",
+            "vanity_name_servers": [],
+            "vanity_name_servers_ips": null,
+            "meta": {
+              "step": 4,
+              "custom_certificate_quota": 0,
+              "page_rule_quota": 3,
+              "phishing_detected": false
+            },
+            "owner": {
+              "id": null,
+              "type": "user",
+              "email": null
+            },
+            "account": {
+              "id": "f6142510bef6212dfa78bc6932acc80f",
+              "name": "James Howard"
+            },
+            "tenant": {
+              "id": null,
+              "name": null
+            },
+            "tenant_unit": {
+              "id": null
+            },
+            "permissions": [
+              "#zone:read",
+              "#zone_settings:edit",
+              "#zone_settings:read",
+              "#dns_records:edit",
+              "#dns_records:read",
+              "#waf:read",
+              "#waf:edit",
+              "#page_shield:read",
+              "#page_shield:edit",
+              "#zone_versioning:read",
+              "#zone_versioning:edit",
+              "#api_gateway:read",
+              "#api_gateway:edit",
+              "#zaraz:publish",
+              "#zaraz:edit",
+              "#zaraz:read",
+              "#web3:read",
+              "#web3:edit",
+              "#healthchecks:edit",
+              "#healthchecks:read",
+              "#waitingroom:read",
+              "#waitingroom:edit",
+              "#access:edit",
+              "#access:read",
+              "#ssl:read",
+              "#zone:edit",
+              "#worker:edit",
+              "#worker:read",
+              "#ssl:edit",
+              "#logs:edit",
+              "#logs:read",
+              "#cache_purge:edit",
+              "#lb:edit",
+              "#lb:read",
+              "#app:edit"
+            ],
+            "plan": {
+              "id": "0feeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+              "name": "Free Website",
+              "price": 0,
+              "currency": "USD",
+              "frequency": "",
+              "is_subscribed": false,
+              "can_subscribe": false,
+              "legacy_id": "free",
+              "legacy_discount": false,
+              "externally_managed": false
+            }
+          }
+        ],
+        "result_info": {
+          "page": 1,
+          "per_page": 20,
+          "total_pages": 2,
+          "count": 20,
+          "total_count": 28
+        },
+        "success": true,
+        "errors": [],
+        "messages": [],
+        "inventory_note": "Scope-filtered first page: both intended zones present; account-wide inventory not asserted."
+      }
+    }
+  ],
+  "public_http": [
+    {
+      "url": "https://martletdesign.dev/",
+      "status": 200,
+      "final_url": "https://martletdesign.dev/",
+      "headers": {
+        "date": "Mon, 02 Nov 2026 01:35:55 GMT",
+        "content-type": "text/html",
+        "server": "envoy"
+      },
+      "body": "<!DOCTYPE html><html lang=\"en\" data-martlet=\"light\"> <head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\"><title>Martlet \u00b7 Design language 0.3 preview</title><meta name=\"description\" content=\"Martlet Light and Dark, an independent design language for publishing, services, and applications, with components, patterns and agent tools.\"> <script>try { document.documentElement.dataset.appearance = localStorage.getItem(\"design-appearance\""
+    },
+    {
+      "url": "https://astro.martletdesign.dev/",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+      "headers": {}
+    },
+    {
+      "url": "https://react.martletdesign.dev/",
+      "status": 200,
+      "final_url": "https://react.martletdesign.dev/",
+      "headers": {
+        "date": "Mon, 02 Nov 2026 01:35:56 GMT",
+        "content-type": "text/html",
+        "server": "envoy"
+      },
+      "body": "<!doctype html>\n<html lang=\"en\"><head><meta charset=\"UTF-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/><meta name=\"description\" content=\"React components, live examples, and practical interface contracts.\"/><title>Martlet React \u00b7 Component reference</title>  <script type=\"module\" crossorigin src=\"/assets/index-BXzblfFh.js\"></script>\n  <link rel=\"stylesheet\" crossorigin href=\"/assets/index-DLDsFAYc.css\">\n</head><body><div id=\"root\"></div><script type=\"module\" src=\"https"
+    },
+    {
+      "url": "https://jekyll.martletdesign.dev/",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+      "headers": {}
+    },
+    {
+      "url": "https://krigsvolddesign.dev/",
+      "status": 200,
+      "final_url": "https://krigsvolddesign.dev/",
+      "headers": {
+        "date": "Mon, 02 Nov 2026 01:35:56 GMT",
+        "content-type": "text/html",
+        "server": "envoy"
+      },
+      "body": "<!DOCTYPE html><html lang=\"en\" data-krigsvold=\"light\"> <head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\"><title>Krigsvold \u00b7 Design language 0.3 preview</title><meta name=\"description\" content=\"Krigsvold Light and Dark, an independent design language for publishing, services, and applications, with components, patterns and agent tools, in paper, navy, ice, and bronze.\"> <meta name=\"theme-color\" content=\"#061325\"> <script>try { doc"
+    },
+    {
+      "url": "https://astro.krigsvolddesign.dev/",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+      "headers": {}
+    },
+    {
+      "url": "https://react.krigsvolddesign.dev/",
+      "status": 200,
+      "final_url": "https://react.krigsvolddesign.dev/",
+      "headers": {
+        "date": "Mon, 02 Nov 2026 01:35:56 GMT",
+        "content-type": "text/html",
+        "server": "envoy"
+      },
+      "body": "<!doctype html>\n<html lang=\"en\"><head><meta charset=\"UTF-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/><meta name=\"description\" content=\"React components, live examples, and practical interface contracts.\"/><title>Krigsvold React \u00b7 Component reference</title>  <script type=\"module\" crossorigin src=\"/assets/index-DNuupCZG.js\"></script>\n  <link rel=\"stylesheet\" crossorigin href=\"/assets/index-BAIYZBXM.css\">\n</head><body><div id=\"root\"></div><script type=\"module\" src=\"htt"
+    },
+    {
+      "url": "https://jekyll.krigsvolddesign.dev/",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+      "headers": {}
+    }
+  ]
+}

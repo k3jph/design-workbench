@@ -1,0 +1,308 @@
+{
+  "version": 1,
+  "runner_sha256": "f9a7b002ba0f794e4eabfb421df78d3427614e48e1dc842efbf4ec3e25b5094a",
+  "node": "v24.19.0",
+  "scope": "Local built-output contact form keyboard, validation, pointer retry, reset, no-JS fallback, reflow and axe; not full conformance.",
+  "browser": {
+    "engine": "chromium",
+    "version": "151.0.7922.173"
+  },
+  "source_commits": "Caller claims; source provenance and builds independently unverified.",
+  "results": [
+    {
+      "family": "martlet",
+      "framework": "astro",
+      "base": "/preview/docs/v/2.0.0/",
+      "claimed_source_commit": "43a858cffd144663b5316b2858272b370cf390ee",
+      "output_tree_sha256": "25ddfd8a29284884b33481288a3ac2d45e6acd836d0e2062f38264de4341a2ab",
+      "catalog": {
+        "url": "/preview/docs/catalog.json",
+        "sha256": "16d37ac202c075f3d6ba76b3bf4aedf6a6d62055961be6941dbab0e28c560ceb"
+      },
+      "contact_form": "checked",
+      "axe_violations": [],
+      "axe_incomplete": [],
+      "unassessed": [
+        "all other examples",
+        "declared package consumption",
+        "visual equivalence",
+        "manual assistive technology",
+        "physical devices"
+      ]
+    },
+    {
+      "family": "martlet",
+      "framework": "react",
+      "base": "/preview/",
+      "claimed_source_commit": "7ffe7b32ce2f250c8cae17bb4e85960d1a079f7c",
+      "output_tree_sha256": "0360333cfe58ed0e0d804ea98195e8c3d5a8df41d22ba391d3b0bea2c2dc3843",
+      "catalog": null,
+      "contact_form": "checked",
+      "axe_violations": [],
+      "axe_incomplete": [],
+      "unassessed": [
+        "all other examples",
+        "declared package consumption",
+        "visual equivalence",
+        "manual assistive technology",
+        "physical devices"
+      ]
+    },
+    {
+      "family": "krigsvold",
+      "framework": "astro",
+      "base": "/preview/docs/v/2.0.0/",
+      "claimed_source_commit": "82ac5eddbc5e870985c3e74d9e7435dd2901e05d",
+      "output_tree_sha256": "2a205fc4d374de3201f4c00ef30d671950dacd76a3d4dcf614b9e49ec23accc7",
+      "catalog": {
+        "url": "/preview/docs/catalog.json",
+        "sha256": "fc93e239cbfbcc6e626c2645d5e0e1495f2c5d9278d4d4ca1c5eb7d51916c891"
+      },
+      "contact_form": "checked",
+      "axe_violations": [],
+      "axe_incomplete": [],
+      "unassessed": [
+        "all other examples",
+        "declared package consumption",
+        "visual equivalence",
+        "manual assistive technology",
+        "physical devices"
+      ]
+    },
+    {
+      "family": "krigsvold",
+      "framework": "react",
+      "base": "/preview/",
+      "claimed_source_commit": "4fdc39d3056b5b7db0414ea09870d97b4126628f",
+      "output_tree_sha256": "b558090e338638ba22babba14dda22d2c61e5582adfabf16e6b194caef41944d",
+      "catalog": null,
+      "contact_form": "checked",
+      "axe_violations": [],
+      "axe_incomplete": [],
+      "unassessed": [
+        "all other examples",
+        "declared package consumption",
+        "visual equivalence",
+        "manual assistive technology",
+        "physical devices"
+      ]
+    },
+    {
+      "family": "martlet",
+      "framework": "react",
+      "base": "/",
+      "claimed_source_commit": "7ffe7b32ce2f250c8cae17bb4e85960d1a079f7c",
+      "output_tree_sha256": "0b0b01952d02934100051f836fd4a4cac1e839a2ca8d6dee239e82493c2732bc",
+      "catalog": null,
+      "contact_form": "checked",
+      "axe_violations": [],
+      "axe_incomplete": [],
+      "unassessed": [
+        "all other examples",
+        "declared package consumption",
+        "visual equivalence",
+        "manual assistive technology",
+        "physical devices"
+      ]
+    },
+    {
+      "family": "krigsvold",
+      "framework": "react",
+      "base": "/",
+      "claimed_source_commit": "4fdc39d3056b5b7db0414ea09870d97b4126628f",
+      "output_tree_sha256": "be5d4e1060a60bac618ee54a8ffa89e6aec1f0923ad3301d75e6227bf7f7a623",
+      "catalog": null,
+      "contact_form": "checked",
+      "axe_violations": [],
+      "axe_incomplete": [],
+      "unassessed": [
+        "all other examples",
+        "declared package consumption",
+        "visual equivalence",
+        "manual assistive technology",
+        "physical devices"
+      ]
+    },
+    {
+      "family": "martlet",
+      "framework": "astro",
+      "base": "/docs/v/2.0.0/",
+      "claimed_source_commit": "43a858cffd144663b5316b2858272b370cf390ee",
+      "output_tree_sha256": "165ed7e2932f5bca2e5b899709066b32c2e43924d0e5af405e1e28992efd1f5d",
+      "catalog": {
+        "url": "/docs/catalog.json",
+        "sha256": "16d37ac202c075f3d6ba76b3bf4aedf6a6d62055961be6941dbab0e28c560ceb"
+      },
+      "contact_form": "checked",
+      "axe_violations": [],
+      "axe_incomplete": [],
+      "unassessed": [
+        "all other examples",
+        "declared package consumption",
+        "visual equivalence",
+        "manual assistive technology",
+        "physical devices"
+      ]
+    },
+    {
+      "family": "krigsvold",
+      "framework": "astro",
+      "base": "/docs/v/2.0.0/",
+      "claimed_source_commit": "82ac5eddbc5e870985c3e74d9e7435dd2901e05d",
+      "output_tree_sha256": "d8d475bd63c1734cfcb9eb601517fa05637564c17851916c7c700761eaafd0e6",
+      "catalog": {
+        "url": "/docs/catalog.json",
+        "sha256": "fc93e239cbfbcc6e626c2645d5e0e1495f2c5d9278d4d4ca1c5eb7d51916c891"
+      },
+      "contact_form": "checked",
+      "axe_violations": [],
+      "axe_incomplete": [],
+      "unassessed": [
+        "all other examples",
+        "declared package consumption",
+        "visual equivalence",
+        "manual assistive technology",
+        "physical devices"
+      ]
+    },
+    {
+      "family": "martlet",
+      "framework": "jekyll",
+      "base": "/",
+      "claimed_source_commit": "a243900a57e71dc0acb2ff3b853da6181d7325f9",
+      "output_tree_sha256": "2ac91437a9ecb588f343bdd9514341f472a6e7b10d3d844b22eb15de6332b7bc",
+      "catalog": null,
+      "contact_form": "checked",
+      "axe_violations": [],
+      "axe_incomplete": [
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              ".eyebrow"
+            ],
+            [
+              "#page-title"
+            ],
+            [
+              ".page-intro__content > p:nth-child(3)"
+            ]
+          ]
+        }
+      ],
+      "unassessed": [
+        "all other examples",
+        "declared package consumption",
+        "visual equivalence",
+        "manual assistive technology",
+        "physical devices"
+      ]
+    },
+    {
+      "family": "martlet",
+      "framework": "jekyll",
+      "base": "/preview/",
+      "claimed_source_commit": "a243900a57e71dc0acb2ff3b853da6181d7325f9",
+      "output_tree_sha256": "a55464f9ff1f4efa531fda6e7049456d721818b10a88e73789f5cdc87c6a62b2",
+      "catalog": null,
+      "contact_form": "checked",
+      "axe_violations": [],
+      "axe_incomplete": [
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              ".eyebrow"
+            ],
+            [
+              "#page-title"
+            ],
+            [
+              ".page-intro__content > p:nth-child(3)"
+            ]
+          ]
+        }
+      ],
+      "unassessed": [
+        "all other examples",
+        "declared package consumption",
+        "visual equivalence",
+        "manual assistive technology",
+        "physical devices"
+      ]
+    },
+    {
+      "family": "krigsvold",
+      "framework": "jekyll",
+      "base": "/",
+      "claimed_source_commit": "84a3884cd3f1c0c99ab315a207784ba59a27c7c7",
+      "output_tree_sha256": "76b5fcb538002a928226a4c9e708b8f4323ebc0369971a7a1b5613bdd698e315",
+      "catalog": null,
+      "contact_form": "checked",
+      "axe_violations": [],
+      "axe_incomplete": [
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              ".navbar-brand > span"
+            ],
+            [
+              ".eyebrow"
+            ],
+            [
+              "#page-title"
+            ],
+            [
+              ".col-lg-9 > p:nth-child(3)"
+            ]
+          ]
+        }
+      ],
+      "unassessed": [
+        "all other examples",
+        "declared package consumption",
+        "visual equivalence",
+        "manual assistive technology",
+        "physical devices"
+      ]
+    },
+    {
+      "family": "krigsvold",
+      "framework": "jekyll",
+      "base": "/preview/",
+      "claimed_source_commit": "84a3884cd3f1c0c99ab315a207784ba59a27c7c7",
+      "output_tree_sha256": "9a9de3680e50d20d9419289525d8fcb7e9d8a5cd111ae51571394db1868c72f9",
+      "catalog": null,
+      "contact_form": "checked",
+      "axe_violations": [],
+      "axe_incomplete": [
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              ".navbar-brand > span"
+            ],
+            [
+              ".eyebrow"
+            ],
+            [
+              "#page-title"
+            ],
+            [
+              ".col-lg-9 > p:nth-child(3)"
+            ]
+          ]
+        }
+      ],
+      "unassessed": [
+        "all other examples",
+        "declared package consumption",
+        "visual equivalence",
+        "manual assistive technology",
+        "physical devices"
+      ]
+    }
+  ],
+  "missing": []
+}

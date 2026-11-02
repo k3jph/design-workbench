@@ -1,0 +1,781 @@
+{
+  "observed_at": "2026-11-02T01:36:09.176008+00:00",
+  "resources": [
+    {
+      "url": "https://api.cloudflare.com/client/v4/accounts/f6142510bef6212dfa78bc6932acc80f/workers/scripts",
+      "status": 400,
+      "body": "{\"success\":false,\"errors\":[{\"code\":9106,\"message\":\"Authentication failed (status: 400)\"}],\"messages\":[],\"result\":null}\n"
+    },
+    {
+      "url": "https://api.cloudflare.com/client/v4/accounts/f6142510bef6212dfa78bc6932acc80f/workers/domains",
+      "status": 200,
+      "final_url": "https://api.cloudflare.com/client/v4/accounts/f6142510bef6212dfa78bc6932acc80f/workers/domains",
+      "body": {
+        "result": [
+          {
+            "id": "6386aa05dc705fa1ef09238b5c9d14928f3a7df4",
+            "zone_id": "69dea64caef3fdd16cbd2e46daa534b2",
+            "zone_name": "martletdesign.dev",
+            "hostname": "martletdesign.dev",
+            "service": "martlettheme",
+            "environment": "production",
+            "cert_id": "c823948d-d7dd-4a19-9ed4-9beeb44bec73",
+            "previews_enabled": false,
+            "enabled": true
+          },
+          {
+            "id": "d6c9124f9c2374d51769dd32f63c20b6f58560f8",
+            "zone_id": "69dea64caef3fdd16cbd2e46daa534b2",
+            "zone_name": "martletdesign.dev",
+            "hostname": "www.martletdesign.dev",
+            "service": "martlettheme",
+            "environment": "production",
+            "cert_id": "2e791455-3f75-44ff-b459-66ea5faf8a6b",
+            "previews_enabled": false,
+            "enabled": true
+          },
+          {
+            "id": "d28758f62c00235c5188b2e6258aed213dbadc3d",
+            "zone_id": "c59d0469424ebea0c460d455b30af1c6",
+            "zone_name": "krigsvolddesign.dev",
+            "hostname": "krigsvolddesign.dev",
+            "service": "krigsvoldtheme",
+            "environment": "production",
+            "cert_id": "fd349209-71ef-4a60-b32c-3eb56d7107cc",
+            "previews_enabled": false,
+            "enabled": true
+          },
+          {
+            "id": "156cdc65ff1593c7e49844dc5c10d2d3fce464ad",
+            "zone_id": "c59d0469424ebea0c460d455b30af1c6",
+            "zone_name": "krigsvolddesign.dev",
+            "hostname": "www.krigsvolddesign.dev",
+            "service": "krigsvoldtheme",
+            "environment": "production",
+            "cert_id": "3d184e6c-c9a3-450e-993e-f64e545ccb7f",
+            "previews_enabled": false,
+            "enabled": true
+          },
+          {
+            "id": "77f37780841b07473bea3b5de063870ba7e78f83",
+            "zone_id": "69dea64caef3fdd16cbd2e46daa534b2",
+            "zone_name": "martletdesign.dev",
+            "hostname": "react.martletdesign.dev",
+            "service": "martlettheme",
+            "environment": "production",
+            "cert_id": "9bf2c459-bb58-426a-ad72-8b4e00f415a4",
+            "previews_enabled": false,
+            "enabled": true
+          },
+          {
+            "id": "34999e6668790ec1fc8cd20a40109ed3737e7409",
+            "zone_id": "c59d0469424ebea0c460d455b30af1c6",
+            "zone_name": "krigsvolddesign.dev",
+            "hostname": "react.krigsvolddesign.dev",
+            "service": "krigsvoldtheme",
+            "environment": "production",
+            "cert_id": "a402caa0-a83c-4ad5-9e51-66ff993c31c9",
+            "previews_enabled": false,
+            "enabled": true
+          }
+        ],
+        "success": true,
+        "errors": null,
+        "messages": null,
+        "result_info": {
+          "page": 1,
+          "per_page": 23,
+          "count": 23,
+          "total_count": 23
+        }
+      },
+      "scope_note": "Result records filtered to intended design-language hostnames; result_info describes original response."
+    },
+    {
+      "url": "https://api.cloudflare.com/client/v4/accounts/f6142510bef6212dfa78bc6932acc80f/pages/projects",
+      "status": 200,
+      "final_url": "https://api.cloudflare.com/client/v4/accounts/f6142510bef6212dfa78bc6932acc80f/pages/projects",
+      "body": {
+        "result": [],
+        "success": true,
+        "errors": [],
+        "messages": [],
+        "result_info": {
+          "page": 1,
+          "per_page": 10,
+          "count": 5,
+          "total_count": 5,
+          "total_pages": 1
+        }
+      },
+      "scope_note": "Result records filtered to intended design-language hostnames; result_info describes original response."
+    },
+    {
+      "url": "https://api.cloudflare.com/client/v4/accounts/f6142510bef6212dfa78bc6932acc80f/r2/buckets",
+      "status": 200,
+      "final_url": "https://api.cloudflare.com/client/v4/accounts/f6142510bef6212dfa78bc6932acc80f/r2/buckets",
+      "body": {
+        "success": true,
+        "errors": [],
+        "messages": [],
+        "result": {
+          "buckets": [],
+          "scope_note": "Unrelated bucket names omitted; no Nightjar/Martlet/Krigsvold bucket in returned account listing.",
+          "observed_bucket_count": 1
+        },
+        "result_info": {
+          "total_count": 1
+        }
+      }
+    },
+    {
+      "url": "https://api.cloudflare.com/client/v4/zones/c59d0469424ebea0c460d455b30af1c6/dns_records",
+      "status": 200,
+      "final_url": "https://api.cloudflare.com/client/v4/zones/c59d0469424ebea0c460d455b30af1c6/dns_records",
+      "body": {
+        "result": [
+          {
+            "id": "cc750152853085fcb84131fb5437d253",
+            "name": "_gh-krigsvolddesign-o.krigsvolddesign.dev",
+            "type": "TXT",
+            "content": "\"daa7f31f5d\"",
+            "proxiable": false,
+            "proxied": false,
+            "ttl": 1,
+            "settings": {},
+            "meta": {},
+            "comment": null,
+            "tags": [],
+            "created_on": "2026-10-31T17:33:35.248416Z",
+            "modified_on": "2026-10-31T17:33:35.248416Z"
+          },
+          {
+            "id": "9cd7ee114532a92535964f85edee8247",
+            "name": "krigsvolddesign.dev",
+            "type": "AAAA",
+            "content": "100::",
+            "proxiable": true,
+            "proxied": true,
+            "ttl": 1,
+            "settings": {},
+            "meta": {
+              "origin_worker_id": "d28758f62c00235c5188b2e6258aed213dbadc3d",
+              "read_only": true
+            },
+            "comment": null,
+            "tags": [],
+            "created_on": "2026-10-25T18:30:48.099409Z",
+            "modified_on": "2026-10-25T18:30:48.099409Z"
+          },
+          {
+            "id": "d3f7d32292c88d6353216b87e256bb98",
+            "name": "react.krigsvolddesign.dev",
+            "type": "AAAA",
+            "content": "100::",
+            "proxiable": true,
+            "proxied": true,
+            "ttl": 1,
+            "settings": {},
+            "meta": {
+              "origin_worker_id": "34999e6668790ec1fc8cd20a40109ed3737e7409",
+              "read_only": true
+            },
+            "comment": null,
+            "tags": [],
+            "created_on": "2026-10-27T02:50:21.231096Z",
+            "modified_on": "2026-10-27T02:50:21.231096Z"
+          },
+          {
+            "id": "f3a19f987d4af618133b717fa0f97227",
+            "name": "www.krigsvolddesign.dev",
+            "type": "AAAA",
+            "content": "100::",
+            "proxiable": true,
+            "proxied": true,
+            "ttl": 1,
+            "settings": {},
+            "meta": {
+              "origin_worker_id": "156cdc65ff1593c7e49844dc5c10d2d3fce464ad",
+              "read_only": true
+            },
+            "comment": null,
+            "tags": [],
+            "created_on": "2026-10-25T18:32:58.968015Z",
+            "modified_on": "2026-10-25T18:32:58.968015Z"
+          }
+        ],
+        "success": true,
+        "errors": [],
+        "messages": [],
+        "result_info": {
+          "page": 1,
+          "per_page": 100,
+          "count": 4,
+          "total_count": 4,
+          "total_pages": 1
+        }
+      }
+    },
+    {
+      "url": "https://api.cloudflare.com/client/v4/zones/c59d0469424ebea0c460d455b30af1c6/settings/ssl",
+      "status": 200,
+      "final_url": "https://api.cloudflare.com/client/v4/zones/c59d0469424ebea0c460d455b30af1c6/settings/ssl",
+      "body": {
+        "result": {
+          "id": "ssl",
+          "value": "full",
+          "modified_on": null,
+          "certificate_status": "active",
+          "validation_errors": [],
+          "editable": true
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    },
+    {
+      "url": "https://api.cloudflare.com/client/v4/zones/c59d0469424ebea0c460d455b30af1c6/settings/min_tls_version",
+      "status": 200,
+      "final_url": "https://api.cloudflare.com/client/v4/zones/c59d0469424ebea0c460d455b30af1c6/settings/min_tls_version",
+      "body": {
+        "result": {
+          "id": "min_tls_version",
+          "value": "1.0",
+          "modified_on": null,
+          "editable": true
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    },
+    {
+      "url": "https://api.cloudflare.com/client/v4/zones/c59d0469424ebea0c460d455b30af1c6/ssl/certificate_packs",
+      "status": 200,
+      "final_url": "https://api.cloudflare.com/client/v4/zones/c59d0469424ebea0c460d455b30af1c6/ssl/certificate_packs",
+      "body": {
+        "result": [
+          {
+            "id": "a402caa0-a83c-4ad5-9e51-66ff993c31c9",
+            "type": "advanced",
+            "hosts": [
+              "krigsvolddesign.dev",
+              "react.krigsvolddesign.dev",
+              "*.react.krigsvolddesign.dev"
+            ],
+            "primary_certificate": "6082683e-8187-4102-a74b-7d656badadae",
+            "status": "active",
+            "certificates": [
+              {
+                "id": "6082683e-8187-4102-a74b-7d656badadae",
+                "hosts": [
+                  "krigsvolddesign.dev",
+                  "react.krigsvolddesign.dev",
+                  "*.react.krigsvolddesign.dev"
+                ],
+                "issuer": "GoogleTrustServices",
+                "signature": "SHA256WithRSA",
+                "status": "active",
+                "bundle_method": "ubiquitous",
+                "zone_id": "c59d0469424ebea0c460d455b30af1c6",
+                "uploaded_on": "2026-11-02T01:36:08.346860Z",
+                "modified_on": "2026-10-27T02:53:58.383483Z",
+                "expires_on": "2027-01-25T02:50:21.000000Z",
+                "priority": null
+              },
+              {
+                "id": "593e80f8-18f8-48f6-81f2-89f430f9ccb5",
+                "hosts": [
+                  "krigsvolddesign.dev",
+                  "react.krigsvolddesign.dev",
+                  "*.react.krigsvolddesign.dev"
+                ],
+                "issuer": "GoogleTrustServices",
+                "signature": "ECDSAWithSHA256",
+                "status": "active",
+                "bundle_method": "ubiquitous",
+                "zone_id": "c59d0469424ebea0c460d455b30af1c6",
+                "uploaded_on": "2026-11-02T01:36:08.346945Z",
+                "modified_on": "2026-10-27T02:53:58.383483Z",
+                "expires_on": "2027-01-25T02:53:47.000000Z",
+                "priority": null
+              }
+            ],
+            "created_on": "2026-10-27T02:50:21.245894Z",
+            "validity_days": 90,
+            "validation_method": "txt",
+            "certificate_authority": "google"
+          },
+          {
+            "id": "3d184e6c-c9a3-450e-993e-f64e545ccb7f",
+            "type": "advanced",
+            "hosts": [
+              "krigsvolddesign.dev",
+              "www.krigsvolddesign.dev",
+              "*.www.krigsvolddesign.dev"
+            ],
+            "primary_certificate": "adea20bd-4dbb-49e1-9c4a-49774a606d05",
+            "status": "active",
+            "certificates": [
+              {
+                "id": "adea20bd-4dbb-49e1-9c4a-49774a606d05",
+                "hosts": [
+                  "krigsvolddesign.dev",
+                  "www.krigsvolddesign.dev",
+                  "*.www.krigsvolddesign.dev"
+                ],
+                "issuer": "GoogleTrustServices",
+                "signature": "ECDSAWithSHA256",
+                "status": "active",
+                "bundle_method": "ubiquitous",
+                "zone_id": "c59d0469424ebea0c460d455b30af1c6",
+                "uploaded_on": "2026-11-02T01:36:08.352552Z",
+                "modified_on": "2026-10-25T18:35:28.823416Z",
+                "expires_on": "2027-01-23T18:35:18.000000Z",
+                "priority": null
+              },
+              {
+                "id": "83754769-8d9b-4cbe-956c-aa2277f06e55",
+                "hosts": [
+                  "krigsvolddesign.dev",
+                  "www.krigsvolddesign.dev",
+                  "*.www.krigsvolddesign.dev"
+                ],
+                "issuer": "GoogleTrustServices",
+                "signature": "SHA256WithRSA",
+                "status": "active",
+                "bundle_method": "ubiquitous",
+                "zone_id": "c59d0469424ebea0c460d455b30af1c6",
+                "uploaded_on": "2026-11-02T01:36:08.352586Z",
+                "modified_on": "2026-10-25T18:35:28.823416Z",
+                "expires_on": "2027-01-23T18:32:59.000000Z",
+                "priority": null
+              }
+            ],
+            "created_on": "2026-10-25T18:32:58.982156Z",
+            "validity_days": 90,
+            "validation_method": "txt",
+            "certificate_authority": "google"
+          },
+          {
+            "id": "fd349209-71ef-4a60-b32c-3eb56d7107cc",
+            "type": "advanced",
+            "hosts": [
+              "krigsvolddesign.dev",
+              "*.krigsvolddesign.dev"
+            ],
+            "primary_certificate": "3b0d7d44-d991-469f-9e69-2ec343fb54d7",
+            "status": "active",
+            "certificates": [
+              {
+                "id": "3b0d7d44-d991-469f-9e69-2ec343fb54d7",
+                "hosts": [
+                  "krigsvolddesign.dev",
+                  "*.krigsvolddesign.dev"
+                ],
+                "issuer": "GoogleTrustServices",
+                "signature": "SHA256WithRSA",
+                "status": "active",
+                "bundle_method": "ubiquitous",
+                "zone_id": "c59d0469424ebea0c460d455b30af1c6",
+                "uploaded_on": "2026-11-02T01:36:08.361511Z",
+                "modified_on": "2026-10-25T18:32:39.649692Z",
+                "expires_on": "2027-01-23T18:30:49.000000Z",
+                "priority": null
+              },
+              {
+                "id": "021691f3-efaf-4570-ab49-d0ab1fca70a0",
+                "hosts": [
+                  "krigsvolddesign.dev",
+                  "*.krigsvolddesign.dev"
+                ],
+                "issuer": "GoogleTrustServices",
+                "signature": "ECDSAWithSHA256",
+                "status": "active",
+                "bundle_method": "ubiquitous",
+                "zone_id": "c59d0469424ebea0c460d455b30af1c6",
+                "uploaded_on": "2026-11-02T01:36:08.361545Z",
+                "modified_on": "2026-10-25T18:32:39.649692Z",
+                "expires_on": "2027-01-23T18:32:30.000000Z",
+                "priority": null
+              }
+            ],
+            "created_on": "2026-10-25T18:30:48.113462Z",
+            "validity_days": 90,
+            "validation_method": "txt",
+            "certificate_authority": "google"
+          },
+          {
+            "id": "317f022f-f2bd-4457-99c7-817a0a9053b5",
+            "type": "universal",
+            "hosts": [
+              "krigsvolddesign.dev",
+              "*.krigsvolddesign.dev"
+            ],
+            "primary_certificate": "6db12d9a-10b6-42c5-b470-e3d22a08743f",
+            "status": "active",
+            "certificates": [
+              {
+                "id": "6db12d9a-10b6-42c5-b470-e3d22a08743f",
+                "hosts": [
+                  "krigsvolddesign.dev",
+                  "*.krigsvolddesign.dev"
+                ],
+                "issuer": "LetsEncrypt",
+                "signature": "ECDSAWithSHA384",
+                "status": "active",
+                "bundle_method": "ubiquitous",
+                "zone_id": "c59d0469424ebea0c460d455b30af1c6",
+                "uploaded_on": "2026-11-02T01:36:08.385385Z",
+                "modified_on": "2026-10-25T18:31:45.683323Z",
+                "expires_on": "2027-01-23T17:33:12.000000Z",
+                "priority": null
+              }
+            ],
+            "created_on": "2026-10-25T18:29:17.170736Z",
+            "validity_days": 90,
+            "validation_method": "txt",
+            "certificate_authority": "lets_encrypt"
+          }
+        ],
+        "result_info": {
+          "page": 1,
+          "per_page": 20,
+          "total_pages": 1,
+          "count": 4,
+          "total_count": 4
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    },
+    {
+      "url": "https://api.cloudflare.com/client/v4/zones/c59d0469424ebea0c460d455b30af1c6/workers/routes",
+      "status": 400,
+      "body": "{\"success\":false,\"errors\":[{\"code\":9106,\"message\":\"Authentication failed (status: 400)\"}],\"messages\":[],\"result\":null}\n"
+    },
+    {
+      "url": "https://api.cloudflare.com/client/v4/zones/69dea64caef3fdd16cbd2e46daa534b2/dns_records",
+      "status": 200,
+      "final_url": "https://api.cloudflare.com/client/v4/zones/69dea64caef3fdd16cbd2e46daa534b2/dns_records",
+      "body": {
+        "result": [
+          {
+            "id": "b6e6dc4c4594279f0079c97eafc8c2d7",
+            "name": "_gh-martletdesign-o.martletdesign.dev",
+            "type": "TXT",
+            "content": "\"011256fef1\"",
+            "proxiable": false,
+            "proxied": false,
+            "ttl": 1,
+            "settings": {},
+            "meta": {},
+            "comment": null,
+            "tags": [],
+            "created_on": "2026-10-31T17:35:02.264596Z",
+            "modified_on": "2026-10-31T17:35:02.264596Z"
+          },
+          {
+            "id": "1119e4c7a548f493c7370c6ddc8f7f4a",
+            "name": "martletdesign.dev",
+            "type": "AAAA",
+            "content": "100::",
+            "proxiable": true,
+            "proxied": true,
+            "ttl": 1,
+            "settings": {},
+            "meta": {
+              "origin_worker_id": "6386aa05dc705fa1ef09238b5c9d14928f3a7df4",
+              "read_only": true
+            },
+            "comment": null,
+            "tags": [],
+            "created_on": "2026-10-25T18:31:08.422844Z",
+            "modified_on": "2026-10-25T18:31:08.422844Z"
+          },
+          {
+            "id": "940f02823fbdd6f1555f846ca7a2d9de",
+            "name": "react.martletdesign.dev",
+            "type": "AAAA",
+            "content": "100::",
+            "proxiable": true,
+            "proxied": true,
+            "ttl": 1,
+            "settings": {},
+            "meta": {
+              "origin_worker_id": "77f37780841b07473bea3b5de063870ba7e78f83",
+              "read_only": true
+            },
+            "comment": null,
+            "tags": [],
+            "created_on": "2026-10-27T02:50:49.335261Z",
+            "modified_on": "2026-10-27T02:50:49.335261Z"
+          },
+          {
+            "id": "7a1c7d37965284b727402583289f04b2",
+            "name": "www.martletdesign.dev",
+            "type": "AAAA",
+            "content": "100::",
+            "proxiable": true,
+            "proxied": true,
+            "ttl": 1,
+            "settings": {},
+            "meta": {
+              "origin_worker_id": "d6c9124f9c2374d51769dd32f63c20b6f58560f8",
+              "read_only": true
+            },
+            "comment": null,
+            "tags": [],
+            "created_on": "2026-10-25T18:31:47.170839Z",
+            "modified_on": "2026-10-25T18:31:47.170839Z"
+          }
+        ],
+        "success": true,
+        "errors": [],
+        "messages": [],
+        "result_info": {
+          "page": 1,
+          "per_page": 100,
+          "count": 4,
+          "total_count": 4,
+          "total_pages": 1
+        }
+      }
+    },
+    {
+      "url": "https://api.cloudflare.com/client/v4/zones/69dea64caef3fdd16cbd2e46daa534b2/settings/ssl",
+      "status": 400,
+      "body": "{\"success\":false,\"errors\":[{\"code\":6003,\"message\":\"Invalid request headers\",\"error_chain\":[{\"code\":6111,\"message\":\"Invalid format for Authorization header\"}]}],\"messages\":[],\"result\":null}"
+    },
+    {
+      "url": "https://api.cloudflare.com/client/v4/zones/69dea64caef3fdd16cbd2e46daa534b2/settings/min_tls_version",
+      "status": 200,
+      "final_url": "https://api.cloudflare.com/client/v4/zones/69dea64caef3fdd16cbd2e46daa534b2/settings/min_tls_version",
+      "body": {
+        "result": {
+          "id": "min_tls_version",
+          "value": "1.0",
+          "modified_on": null,
+          "editable": true
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    },
+    {
+      "url": "https://api.cloudflare.com/client/v4/zones/69dea64caef3fdd16cbd2e46daa534b2/ssl/certificate_packs",
+      "status": 200,
+      "final_url": "https://api.cloudflare.com/client/v4/zones/69dea64caef3fdd16cbd2e46daa534b2/ssl/certificate_packs",
+      "body": {
+        "result": [
+          {
+            "id": "9bf2c459-bb58-426a-ad72-8b4e00f415a4",
+            "type": "advanced",
+            "hosts": [
+              "martletdesign.dev",
+              "react.martletdesign.dev",
+              "*.react.martletdesign.dev"
+            ],
+            "primary_certificate": "602b888c-5d1a-4ce0-824f-f633d8dd1678",
+            "status": "active",
+            "certificates": [
+              {
+                "id": "602b888c-5d1a-4ce0-824f-f633d8dd1678",
+                "hosts": [
+                  "martletdesign.dev",
+                  "react.martletdesign.dev",
+                  "*.react.martletdesign.dev"
+                ],
+                "issuer": "GoogleTrustServices",
+                "signature": "ECDSAWithSHA256",
+                "status": "active",
+                "bundle_method": "ubiquitous",
+                "zone_id": "69dea64caef3fdd16cbd2e46daa534b2",
+                "uploaded_on": "2026-11-02T01:36:09.066010Z",
+                "modified_on": "2026-10-27T02:53:17.648268Z",
+                "expires_on": "2027-01-25T02:53:06.000000Z",
+                "priority": null
+              },
+              {
+                "id": "335b778c-3744-4545-b8f6-4e943de36eb0",
+                "hosts": [
+                  "martletdesign.dev",
+                  "react.martletdesign.dev",
+                  "*.react.martletdesign.dev"
+                ],
+                "issuer": "GoogleTrustServices",
+                "signature": "SHA256WithRSA",
+                "status": "active",
+                "bundle_method": "ubiquitous",
+                "zone_id": "69dea64caef3fdd16cbd2e46daa534b2",
+                "uploaded_on": "2026-11-02T01:36:09.066034Z",
+                "modified_on": "2026-10-27T02:53:17.648268Z",
+                "expires_on": "2027-01-25T02:50:49.000000Z",
+                "priority": null
+              }
+            ],
+            "created_on": "2026-10-27T02:50:49.356165Z",
+            "validity_days": 90,
+            "validation_method": "txt",
+            "certificate_authority": "google"
+          },
+          {
+            "id": "2e791455-3f75-44ff-b459-66ea5faf8a6b",
+            "type": "advanced",
+            "hosts": [
+              "martletdesign.dev",
+              "www.martletdesign.dev",
+              "*.www.martletdesign.dev"
+            ],
+            "primary_certificate": "ff363f0a-cfaf-4343-9b57-e45292ff018a",
+            "status": "active",
+            "certificates": [
+              {
+                "id": "ff363f0a-cfaf-4343-9b57-e45292ff018a",
+                "hosts": [
+                  "martletdesign.dev",
+                  "www.martletdesign.dev",
+                  "*.www.martletdesign.dev"
+                ],
+                "issuer": "GoogleTrustServices",
+                "signature": "SHA256WithRSA",
+                "status": "active",
+                "bundle_method": "ubiquitous",
+                "zone_id": "69dea64caef3fdd16cbd2e46daa534b2",
+                "uploaded_on": "2026-11-02T01:36:09.077426Z",
+                "modified_on": "2026-10-25T18:34:24.541377Z",
+                "expires_on": "2027-01-23T18:31:48.000000Z",
+                "priority": null
+              },
+              {
+                "id": "9d81fb48-82f8-4388-8d6d-9c1656a8e49c",
+                "hosts": [
+                  "martletdesign.dev",
+                  "www.martletdesign.dev",
+                  "*.www.martletdesign.dev"
+                ],
+                "issuer": "GoogleTrustServices",
+                "signature": "ECDSAWithSHA256",
+                "status": "active",
+                "bundle_method": "ubiquitous",
+                "zone_id": "69dea64caef3fdd16cbd2e46daa534b2",
+                "uploaded_on": "2026-11-02T01:36:09.077448Z",
+                "modified_on": "2026-10-25T18:34:24.541377Z",
+                "expires_on": "2027-01-23T18:34:04.000000Z",
+                "priority": null
+              }
+            ],
+            "created_on": "2026-10-25T18:31:47.185132Z",
+            "validity_days": 90,
+            "validation_method": "txt",
+            "certificate_authority": "google"
+          },
+          {
+            "id": "c823948d-d7dd-4a19-9ed4-9beeb44bec73",
+            "type": "advanced",
+            "hosts": [
+              "martletdesign.dev",
+              "*.martletdesign.dev"
+            ],
+            "primary_certificate": "cfc97aaf-9c46-4fa1-a8bd-245b3dbc9b0a",
+            "status": "active",
+            "certificates": [
+              {
+                "id": "cfc97aaf-9c46-4fa1-a8bd-245b3dbc9b0a",
+                "hosts": [
+                  "martletdesign.dev",
+                  "*.martletdesign.dev"
+                ],
+                "issuer": "GoogleTrustServices",
+                "signature": "SHA256WithRSA",
+                "status": "active",
+                "bundle_method": "ubiquitous",
+                "zone_id": "69dea64caef3fdd16cbd2e46daa534b2",
+                "uploaded_on": "2026-11-02T01:36:09.083983Z",
+                "modified_on": "2026-10-25T18:33:32.089251Z",
+                "expires_on": "2027-01-23T18:31:08.000000Z",
+                "priority": null
+              },
+              {
+                "id": "eac4bc6f-caa9-4137-8795-e85651f5fdaf",
+                "hosts": [
+                  "martletdesign.dev",
+                  "*.martletdesign.dev"
+                ],
+                "issuer": "GoogleTrustServices",
+                "signature": "ECDSAWithSHA256",
+                "status": "active",
+                "bundle_method": "ubiquitous",
+                "zone_id": "69dea64caef3fdd16cbd2e46daa534b2",
+                "uploaded_on": "2026-11-02T01:36:09.084004Z",
+                "modified_on": "2026-10-25T18:33:32.089251Z",
+                "expires_on": "2027-01-23T18:33:22.000000Z",
+                "priority": null
+              }
+            ],
+            "created_on": "2026-10-25T18:31:08.446572Z",
+            "validity_days": 90,
+            "validation_method": "txt",
+            "certificate_authority": "google"
+          },
+          {
+            "id": "3e01187a-7ea7-409e-84c1-b6a69278572b",
+            "type": "universal",
+            "hosts": [
+              "martletdesign.dev",
+              "*.martletdesign.dev"
+            ],
+            "primary_certificate": "98c10d56-1bd9-4987-a452-5aa26778991f",
+            "status": "active",
+            "certificates": [
+              {
+                "id": "98c10d56-1bd9-4987-a452-5aa26778991f",
+                "hosts": [
+                  "martletdesign.dev",
+                  "*.martletdesign.dev"
+                ],
+                "issuer": "LetsEncrypt",
+                "signature": "ECDSAWithSHA384",
+                "status": "active",
+                "bundle_method": "ubiquitous",
+                "zone_id": "69dea64caef3fdd16cbd2e46daa534b2",
+                "uploaded_on": "2026-11-02T01:36:09.107065Z",
+                "modified_on": "2026-10-25T18:33:30.178870Z",
+                "expires_on": "2027-01-23T17:34:57.000000Z",
+                "priority": null
+              }
+            ],
+            "created_on": "2026-10-25T18:30:17.621480Z",
+            "validity_days": 90,
+            "validation_method": "txt",
+            "certificate_authority": "lets_encrypt"
+          }
+        ],
+        "result_info": {
+          "page": 1,
+          "per_page": 20,
+          "total_pages": 1,
+          "count": 4,
+          "total_count": 4
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    },
+    {
+      "url": "https://api.cloudflare.com/client/v4/zones/69dea64caef3fdd16cbd2e46daa534b2/workers/routes",
+      "status": 200,
+      "final_url": "https://api.cloudflare.com/client/v4/zones/69dea64caef3fdd16cbd2e46daa534b2/workers/routes",
+      "body": {
+        "result": [],
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    }
+  ]
+}
