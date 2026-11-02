@@ -1,0 +1,85 @@
+[
+  {
+    "path": "accounts/f6142510bef6212dfa78bc6932acc80f/r2/buckets/nightjar-archive-sandbox",
+    "status": 200,
+    "result": {
+      "name": "nightjar-archive-sandbox",
+      "creation_date": "2026-11-02T22:49:53.819Z",
+      "location": "ENAM",
+      "storage_class": "Standard",
+      "jurisdiction": "default"
+    },
+    "errors": []
+  },
+  {
+    "path": "accounts/f6142510bef6212dfa78bc6932acc80f/r2/buckets/nightjar-archive-sandbox/domains/managed",
+    "status": 200,
+    "result": {
+      "enabled": false,
+      "bucketId": "7777497ea52f4117be449baed8201c5f",
+      "domain": "pub-7777497ea52f4117be449baed8201c5f.r2.dev"
+    },
+    "errors": []
+  },
+  {
+    "path": "accounts/f6142510bef6212dfa78bc6932acc80f/r2/buckets/nightjar-archive-sandbox/domains/custom",
+    "status": 200,
+    "result": {
+      "domains": []
+    },
+    "errors": []
+  },
+  {
+    "path": "accounts/f6142510bef6212dfa78bc6932acc80f/r2/buckets/nightjar-archive-sandbox/lock",
+    "status": 200,
+    "result": {
+      "rules": []
+    },
+    "errors": []
+  },
+  {
+    "path": "accounts/f6142510bef6212dfa78bc6932acc80f/workers/scripts/martlettheme/deployments",
+    "status": 200,
+    "result": {
+      "latestDeployment": {
+        "id": "34090854-95ee-49fa-8c5f-e00141b7d0c6",
+        "versions": [
+          {
+            "version_id": "e86442c3-905b-4c24-af1f-2073ee23786b",
+            "percentage": 100
+          }
+        ],
+        "created_on": "2026-10-28T12:43:38.988201Z"
+      }
+    },
+    "errors": []
+  },
+  {
+    "path": "accounts/f6142510bef6212dfa78bc6932acc80f/workers/scripts/krigsvoldtheme/deployments",
+    "status": 200,
+    "result": {
+      "latestDeployment": {
+        "id": "704f8d02-041f-4306-9617-e92285eb3693",
+        "versions": [
+          {
+            "version_id": "aeead116-1705-489a-b5e4-0fc71a8c86a1",
+            "percentage": 100
+          }
+        ],
+        "created_on": "2026-10-28T12:43:36.07313Z"
+      }
+    },
+    "errors": []
+  },
+  {
+    "path": "accounts/f6142510bef6212dfa78bc6932acc80f/workers/scripts/nightjar-archive-sandbox-validation/deployments",
+    "status": 404,
+    "result": null,
+    "errors": [
+      {
+        "code": 10007,
+        "message": "This Worker does not exist on your account."
+      }
+    ]
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "productionWorkers": [
+    {
+      "worker": "martlettheme",
+      "beforeDeploymentId": "34090854-95ee-49fa-8c5f-e00141b7d0c6",
+      "afterDeploymentId": "34090854-95ee-49fa-8c5f-e00141b7d0c6",
+      "versionsUnchanged": true
+    },
+    {
+      "worker": "krigsvoldtheme",
+      "beforeDeploymentId": "704f8d02-041f-4306-9617-e92285eb3693",
+      "afterDeploymentId": "704f8d02-041f-4306-9617-e92285eb3693",
+      "versionsUnchanged": true
+    }
+  ],
+  "productionWorkerWritesPerformed": false,
+  "existingBucketWritesPerformed": false,
+  "validatorWorkerDeploymentCreated": false
+}

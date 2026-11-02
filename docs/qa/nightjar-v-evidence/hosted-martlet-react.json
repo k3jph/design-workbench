@@ -1,0 +1,215 @@
+{
+  "headRefOid": "dfc75923c281cfffb623500594babdb6baf8a012",
+  "statusCheckRollup": [
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-02T23:23:39Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/martletdesign/react/actions/runs/41544982186/job/125618258595",
+      "name": "firefox-smoke",
+      "startedAt": "2026-11-02T23:22:56Z",
+      "status": "COMPLETED",
+      "workflowName": "Independent React gallery"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-02T23:23:17Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/martletdesign/react/actions/runs/41544981997/job/125618259012",
+      "name": "local-runtime",
+      "startedAt": "2026-11-02T23:23:03Z",
+      "status": "COMPLETED",
+      "workflowName": "R2 archive gateway rehearsal"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-02T23:23:52Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/martletdesign/react/actions/runs/41544982054/job/125618259079",
+      "name": "archive (chromium)",
+      "startedAt": "2026-11-02T23:22:56Z",
+      "status": "COMPLETED",
+      "workflowName": "React documentation archive rehearsal"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-02T23:23:13Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/martletdesign/react/actions/runs/41544982166/job/125618258611",
+      "name": "rehearsal",
+      "startedAt": "2026-11-02T23:22:56Z",
+      "status": "COMPLETED",
+      "workflowName": "React release rehearsal (nonpublishing)"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-02T23:23:07Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/martletdesign/react/actions/runs/41544982009/job/125618258560",
+      "name": "test",
+      "startedAt": "2026-11-02T23:22:56Z",
+      "status": "COMPLETED",
+      "workflowName": "Verify standalone package"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-02T23:23:37Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/martletdesign/react/actions/runs/41544982054/job/125618259003",
+      "name": "archive (chromium, /preview)",
+      "startedAt": "2026-11-02T23:22:59Z",
+      "status": "COMPLETED",
+      "workflowName": "React documentation archive rehearsal"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-02T23:24:18Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/martletdesign/react/actions/runs/41544982054/job/125618258960",
+      "name": "archive (firefox)",
+      "startedAt": "2026-11-02T23:23:39Z",
+      "status": "COMPLETED",
+      "workflowName": "React documentation archive rehearsal"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-02T23:24:34Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/martletdesign/react/actions/runs/41544982054/job/125618258921",
+      "name": "archive (firefox, /preview)",
+      "startedAt": "2026-11-02T23:23:55Z",
+      "status": "COMPLETED",
+      "workflowName": "React documentation archive rehearsal"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-02T23:25:25Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/martletdesign/react/actions/runs/41544982054/job/125618258860",
+      "name": "archive (webkit)",
+      "startedAt": "2026-11-02T23:24:21Z",
+      "status": "COMPLETED",
+      "workflowName": "React documentation archive rehearsal"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-02T23:25:34Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/martletdesign/react/actions/runs/41544982054/job/125618258980",
+      "name": "archive (webkit, /preview)",
+      "startedAt": "2026-11-02T23:24:43Z",
+      "status": "COMPLETED",
+      "workflowName": "React documentation archive rehearsal"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-02T23:24:40Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/martletdesign/react/actions/runs/41544982186/job/125618581542",
+      "name": "gallery (chromium, /)",
+      "startedAt": "2026-11-02T23:23:41Z",
+      "status": "COMPLETED",
+      "workflowName": "Independent React gallery"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-02T23:23:15Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/martletdesign/react/actions/runs/41544982054/job/125618258964",
+      "name": "history",
+      "startedAt": "2026-11-02T23:22:56Z",
+      "status": "COMPLETED",
+      "workflowName": "React documentation archive rehearsal"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-02T23:23:34Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/martletdesign/react/actions/runs/41544982009/job/125618258226",
+      "name": "browser (chromium)",
+      "startedAt": "2026-11-02T23:22:56Z",
+      "status": "COMPLETED",
+      "workflowName": "Verify standalone package"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-02T23:24:21Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/martletdesign/react/actions/runs/41544982186/job/125618581584",
+      "name": "gallery (chromium, /preview/)",
+      "startedAt": "2026-11-02T23:23:41Z",
+      "status": "COMPLETED",
+      "workflowName": "Independent React gallery"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-02T23:23:36Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/martletdesign/react/actions/runs/41544982054/job/125618258762",
+      "name": "history (/preview)",
+      "startedAt": "2026-11-02T23:23:17Z",
+      "status": "COMPLETED",
+      "workflowName": "React documentation archive rehearsal"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-02T23:23:32Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/martletdesign/react/actions/runs/41544982009/job/125618258571",
+      "name": "browser (firefox)",
+      "startedAt": "2026-11-02T23:23:01Z",
+      "status": "COMPLETED",
+      "workflowName": "Verify standalone package"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-02T23:25:54Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/martletdesign/react/actions/runs/41544982186/job/125618581562",
+      "name": "gallery (firefox, /)",
+      "startedAt": "2026-11-02T23:24:33Z",
+      "status": "COMPLETED",
+      "workflowName": "Independent React gallery"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-02T23:24:22Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/martletdesign/react/actions/runs/41544982009/job/125618258555",
+      "name": "browser (webkit)",
+      "startedAt": "2026-11-02T23:23:35Z",
+      "status": "COMPLETED",
+      "workflowName": "Verify standalone package"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-02T23:25:17Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/martletdesign/react/actions/runs/41544982186/job/125618581530",
+      "name": "gallery (firefox, /preview/)",
+      "startedAt": "2026-11-02T23:24:42Z",
+      "status": "COMPLETED",
+      "workflowName": "Independent React gallery"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-02T23:27:05Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/martletdesign/react/actions/runs/41544982186/job/125618581553",
+      "name": "gallery (webkit, /)",
+      "startedAt": "2026-11-02T23:25:19Z",
+      "status": "COMPLETED",
+      "workflowName": "Independent React gallery"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-02T23:26:50Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/martletdesign/react/actions/runs/41544982186/job/125618581552",
+      "name": "gallery (webkit, /preview/)",
+      "startedAt": "2026-11-02T23:25:56Z",
+      "status": "COMPLETED",
+      "workflowName": "Independent React gallery"
+    }
+  ]
+}

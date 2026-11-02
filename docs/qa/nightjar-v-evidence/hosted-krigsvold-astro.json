@@ -1,0 +1,155 @@
+{
+  "headRefOid": "4c3361a6df683b408a33fd02dae8d017123c8608",
+  "statusCheckRollup": [
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-02T23:27:42Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/krigsvolddesign/astro/actions/runs/41545577389/job/125620228418",
+      "name": "registry-check",
+      "startedAt": "2026-11-02T23:27:33Z",
+      "status": "COMPLETED",
+      "workflowName": "Existing npm version rejection (read only)"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-02T23:27:47Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/krigsvolddesign/astro/actions/runs/41545577391/job/125620228405",
+      "name": "local-runtime",
+      "startedAt": "2026-11-02T23:27:33Z",
+      "status": "COMPLETED",
+      "workflowName": "R2 archive gateway rehearsal"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-02T23:28:49Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/krigsvolddesign/astro/actions/runs/41545577388/job/125620228837",
+      "name": "verify (5.18.2, chromium)",
+      "startedAt": "2026-11-02T23:27:33Z",
+      "status": "COMPLETED",
+      "workflowName": "Verify Krigsvold Astro"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-02T23:28:31Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/krigsvolddesign/astro/actions/runs/41545577403/job/125620228736",
+      "name": "archive (chromium)",
+      "startedAt": "2026-11-02T23:27:33Z",
+      "status": "COMPLETED",
+      "workflowName": "Versioned Astro archive rehearsal"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-02T23:28:49Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/krigsvolddesign/astro/actions/runs/41545577388/job/125620229315",
+      "name": "verify (5.18.2, firefox)",
+      "startedAt": "2026-11-02T23:27:38Z",
+      "status": "COMPLETED",
+      "workflowName": "Verify Krigsvold Astro"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-02T23:28:43Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/krigsvolddesign/astro/actions/runs/41545577403/job/125620228714",
+      "name": "archive (chromium, /preview)",
+      "startedAt": "2026-11-02T23:27:53Z",
+      "status": "COMPLETED",
+      "workflowName": "Versioned Astro archive rehearsal"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-02T23:28:59Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/krigsvolddesign/astro/actions/runs/41545577388/job/125620229164",
+      "name": "verify (5.18.2, webkit)",
+      "startedAt": "2026-11-02T23:27:33Z",
+      "status": "COMPLETED",
+      "workflowName": "Verify Krigsvold Astro"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-02T23:28:37Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/krigsvolddesign/astro/actions/runs/41545577403/job/125620228692",
+      "name": "archive (firefox)",
+      "startedAt": "2026-11-02T23:27:33Z",
+      "status": "COMPLETED",
+      "workflowName": "Versioned Astro archive rehearsal"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-02T23:28:46Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/krigsvolddesign/astro/actions/runs/41545577388/job/125620229019",
+      "name": "verify (7.3.2, chromium)",
+      "startedAt": "2026-11-02T23:27:33Z",
+      "status": "COMPLETED",
+      "workflowName": "Verify Krigsvold Astro"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-02T23:28:29Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/krigsvolddesign/astro/actions/runs/41545577403/job/125620228770",
+      "name": "archive (firefox, /preview)",
+      "startedAt": "2026-11-02T23:27:33Z",
+      "status": "COMPLETED",
+      "workflowName": "Versioned Astro archive rehearsal"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-02T23:28:51Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/krigsvolddesign/astro/actions/runs/41545577388/job/125620229060",
+      "name": "verify (7.3.2, firefox)",
+      "startedAt": "2026-11-02T23:27:36Z",
+      "status": "COMPLETED",
+      "workflowName": "Verify Krigsvold Astro"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-02T23:29:10Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/krigsvolddesign/astro/actions/runs/41545577403/job/125620228551",
+      "name": "archive (webkit)",
+      "startedAt": "2026-11-02T23:27:34Z",
+      "status": "COMPLETED",
+      "workflowName": "Versioned Astro archive rehearsal"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-02T23:29:02Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/krigsvolddesign/astro/actions/runs/41545577388/job/125620228962",
+      "name": "verify (7.3.2, webkit)",
+      "startedAt": "2026-11-02T23:27:33Z",
+      "status": "COMPLETED",
+      "workflowName": "Verify Krigsvold Astro"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-02T23:28:35Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/krigsvolddesign/astro/actions/runs/41545577403/job/125620228728",
+      "name": "archive (webkit, /preview)",
+      "startedAt": "2026-11-02T23:27:33Z",
+      "status": "COMPLETED",
+      "workflowName": "Versioned Astro archive rehearsal"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-02T23:28:16Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/krigsvolddesign/astro/actions/runs/41545577403/job/125620228420",
+      "name": "history",
+      "startedAt": "2026-11-02T23:27:40Z",
+      "status": "COMPLETED",
+      "workflowName": "Versioned Astro archive rehearsal"
+    }
+  ]
+}

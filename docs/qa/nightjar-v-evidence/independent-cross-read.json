@@ -1,0 +1,170 @@
+[
+  {
+    "key": "nv-b261923f3da7/s3/full-martlet-astro/gateway/martlet/astro/martlet/astro/0.0.1/manifest.json",
+    "managementGetStatus": 200,
+    "sha256": "c25f57d164ce0a3b791de964f34b65c93cc293d7abb090cd7b80aff788341f8b",
+    "bytes": 1204,
+    "matchesFixture": true
+  },
+  {
+    "key": "nv-b261923f3da7/s3/full-martlet-astro/gateway/martlet/astro/martlet/astro/0.0.1/app.js",
+    "managementGetStatus": 200,
+    "sha256": "428fb9e3e30c77dba482e1b4c290ec9efd1e23de1395a10a2cb97a21b5d97fc2",
+    "bytes": 42,
+    "matchesFixture": true
+  },
+  {
+    "key": "nv-b261923f3da7/s3/full-martlet-astro/gateway/martlet/astro/martlet/astro/0.0.1/assets/css/shell.css",
+    "managementGetStatus": 200,
+    "sha256": "e8c25160afb5b067b3061df8398344cd4901ef9ef1106fbaa31a6425372d15b6",
+    "bytes": 33,
+    "matchesFixture": true
+  },
+  {
+    "key": "nv-b261923f3da7/s3/full-martlet-astro/gateway/martlet/astro/martlet/astro/0.0.1/index.html",
+    "managementGetStatus": 200,
+    "sha256": "cca9011fb1a67584c8db19a6a697c191abdf8cc1c47870de92b9e90000720beb",
+    "bytes": 107,
+    "matchesFixture": true
+  },
+  {
+    "key": "nv-b261923f3da7/s3/full-martlet-react/gateway/martlet/react/martlet/react/0.0.1/manifest.json",
+    "managementGetStatus": 200,
+    "sha256": "2c9afa1afd23432b7b9cd6748a8ddcac48f34cfe776a65ebcee1ba76bb192c90",
+    "bytes": 1204,
+    "matchesFixture": true
+  },
+  {
+    "key": "nv-b261923f3da7/s3/full-martlet-react/gateway/martlet/react/martlet/react/0.0.1/app.js",
+    "managementGetStatus": 200,
+    "sha256": "428fb9e3e30c77dba482e1b4c290ec9efd1e23de1395a10a2cb97a21b5d97fc2",
+    "bytes": 42,
+    "matchesFixture": true
+  },
+  {
+    "key": "nv-b261923f3da7/s3/full-martlet-react/gateway/martlet/react/martlet/react/0.0.1/assets/css/shell.css",
+    "managementGetStatus": 200,
+    "sha256": "e8c25160afb5b067b3061df8398344cd4901ef9ef1106fbaa31a6425372d15b6",
+    "bytes": 33,
+    "matchesFixture": true
+  },
+  {
+    "key": "nv-b261923f3da7/s3/full-martlet-react/gateway/martlet/react/martlet/react/0.0.1/index.html",
+    "managementGetStatus": 200,
+    "sha256": "cca9011fb1a67584c8db19a6a697c191abdf8cc1c47870de92b9e90000720beb",
+    "bytes": 107,
+    "matchesFixture": true
+  },
+  {
+    "key": "nv-b261923f3da7/s3/full-krigsvold-astro/gateway/krigsvold/astro/krigsvold/astro/0.0.1/manifest.json",
+    "managementGetStatus": 200,
+    "sha256": "8ff3d05d0e4d24af639a4644746e6645c657c5ab8ce9ab29138ef231a430dff4",
+    "bytes": 1212,
+    "matchesFixture": true
+  },
+  {
+    "key": "nv-b261923f3da7/s3/full-krigsvold-astro/gateway/krigsvold/astro/krigsvold/astro/0.0.1/app.js",
+    "managementGetStatus": 200,
+    "sha256": "428fb9e3e30c77dba482e1b4c290ec9efd1e23de1395a10a2cb97a21b5d97fc2",
+    "bytes": 42,
+    "matchesFixture": true
+  },
+  {
+    "key": "nv-b261923f3da7/s3/full-krigsvold-astro/gateway/krigsvold/astro/krigsvold/astro/0.0.1/assets/css/shell.css",
+    "managementGetStatus": 200,
+    "sha256": "e8c25160afb5b067b3061df8398344cd4901ef9ef1106fbaa31a6425372d15b6",
+    "bytes": 33,
+    "matchesFixture": true
+  },
+  {
+    "key": "nv-b261923f3da7/s3/full-krigsvold-astro/gateway/krigsvold/astro/krigsvold/astro/0.0.1/index.html",
+    "managementGetStatus": 200,
+    "sha256": "cca9011fb1a67584c8db19a6a697c191abdf8cc1c47870de92b9e90000720beb",
+    "bytes": 107,
+    "matchesFixture": true
+  },
+  {
+    "key": "nv-b261923f3da7/s3/full-krigsvold-react/gateway/krigsvold/react/krigsvold/react/0.0.1/manifest.json",
+    "managementGetStatus": 200,
+    "sha256": "acc6642a49f7bba1af349d4aa16e8a80ae970b7a10d29c9c8ee02c03193519dd",
+    "bytes": 1212,
+    "matchesFixture": true
+  },
+  {
+    "key": "nv-b261923f3da7/s3/full-krigsvold-react/gateway/krigsvold/react/krigsvold/react/0.0.1/app.js",
+    "managementGetStatus": 200,
+    "sha256": "428fb9e3e30c77dba482e1b4c290ec9efd1e23de1395a10a2cb97a21b5d97fc2",
+    "bytes": 42,
+    "matchesFixture": true
+  },
+  {
+    "key": "nv-b261923f3da7/s3/full-krigsvold-react/gateway/krigsvold/react/krigsvold/react/0.0.1/assets/css/shell.css",
+    "managementGetStatus": 200,
+    "sha256": "e8c25160afb5b067b3061df8398344cd4901ef9ef1106fbaa31a6425372d15b6",
+    "bytes": 33,
+    "matchesFixture": true
+  },
+  {
+    "key": "nv-b261923f3da7/s3/full-krigsvold-react/gateway/krigsvold/react/krigsvold/react/0.0.1/index.html",
+    "managementGetStatus": 200,
+    "sha256": "cca9011fb1a67584c8db19a6a697c191abdf8cc1c47870de92b9e90000720beb",
+    "bytes": 107,
+    "matchesFixture": true
+  },
+  {
+    "key": "nv-b261923f3da7/s3/retry-jekyll/gateway/martlet/jekyll/martlet/jekyll/0.0.1/manifest.json",
+    "managementGetStatus": 200,
+    "sha256": "367c0a62a135829e8a58e28e6d4ea5a2810f6900a44a626f58c4bdbbce7e4155",
+    "bytes": 1357,
+    "matchesFixture": true
+  },
+  {
+    "key": "nv-b261923f3da7/s3/retry-jekyll/gateway/martlet/jekyll/martlet/jekyll/0.0.1/app.js",
+    "managementGetStatus": 200,
+    "sha256": "428fb9e3e30c77dba482e1b4c290ec9efd1e23de1395a10a2cb97a21b5d97fc2",
+    "bytes": 42,
+    "matchesFixture": true
+  },
+  {
+    "key": "nv-b261923f3da7/s3/retry-jekyll/gateway/martlet/jekyll/martlet/jekyll/0.0.1/assets/css/shell.css",
+    "managementGetStatus": 200,
+    "sha256": "d5cf12b35bac7b01cfb2c0298102454309fe979e19584c00490a21c93d500f45",
+    "bytes": 89103,
+    "matchesFixture": true
+  },
+  {
+    "key": "nv-b261923f3da7/s3/retry-jekyll/gateway/martlet/jekyll/martlet/jekyll/0.0.1/index.html",
+    "managementGetStatus": 200,
+    "sha256": "cca9011fb1a67584c8db19a6a697c191abdf8cc1c47870de92b9e90000720beb",
+    "bytes": 107,
+    "matchesFixture": true
+  },
+  {
+    "key": "nv-b261923f3da7/s3/retry-jekyll/gateway/krigsvold/jekyll/krigsvold/jekyll/0.0.1/manifest.json",
+    "managementGetStatus": 200,
+    "sha256": "aa2ddf2249dbcaad96315642b73edcd65899b484df56bceb8dbf21e9c4acb6f2",
+    "bytes": 1366,
+    "matchesFixture": true
+  },
+  {
+    "key": "nv-b261923f3da7/s3/retry-jekyll/gateway/krigsvold/jekyll/krigsvold/jekyll/0.0.1/app.js",
+    "managementGetStatus": 200,
+    "sha256": "428fb9e3e30c77dba482e1b4c290ec9efd1e23de1395a10a2cb97a21b5d97fc2",
+    "bytes": 42,
+    "matchesFixture": true
+  },
+  {
+    "key": "nv-b261923f3da7/s3/retry-jekyll/gateway/krigsvold/jekyll/krigsvold/jekyll/0.0.1/assets/css/shell.css",
+    "managementGetStatus": 200,
+    "sha256": "a65b1cbbe032d46be7373b1f3a90ca46ba1b3971fa85c98975cd9ec76394c05d",
+    "bytes": 593642,
+    "matchesFixture": true
+  },
+  {
+    "key": "nv-b261923f3da7/s3/retry-jekyll/gateway/krigsvold/jekyll/krigsvold/jekyll/0.0.1/index.html",
+    "managementGetStatus": 200,
+    "sha256": "cca9011fb1a67584c8db19a6a697c191abdf8cc1c47870de92b9e90000720beb",
+    "bytes": 107,
+    "matchesFixture": true
+  }
+]

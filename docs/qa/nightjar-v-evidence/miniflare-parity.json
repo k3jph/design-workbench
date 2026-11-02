@@ -1,0 +1,9 @@
+{
+  "miniflareVersion": "4.20260730.0",
+  "createWinners": 1,
+  "casWinners": 1,
+  "failedConditionsReturnNull": true,
+  "etag": "d9babd0dbc88000f15892f2a3e01bcac",
+  "etagEqualsMD5": true,
+  "note": "Native Miniflare R2 binding. Live native S3 returns HTTP 412, mapped to binding null by test transport."
+}

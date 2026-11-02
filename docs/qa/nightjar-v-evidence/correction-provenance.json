@@ -1,0 +1,38 @@
+[
+  {
+    "family": "martlet",
+    "framework": "astro",
+    "repository": "martletdesign/astro",
+    "head": "bbc009169976115ff3c8e102eca8a74950bad3ed",
+    "parent": "408907b0057ee236fdfb4817c48bfd8cbf92f3fd",
+    "base": "feature/nightjar-iv-head-authority-rehearsal",
+    "pr_url": "https://github.com/martletdesign/astro/pull/19"
+  },
+  {
+    "family": "martlet",
+    "framework": "react",
+    "repository": "martletdesign/react",
+    "head": "dfc75923c281cfffb623500594babdb6baf8a012",
+    "parent": "8d99ea4f1e02efee4b4241ad74d18ac1b7eb93e9",
+    "base": "feature/nightjar-iv-react-integration",
+    "pr_url": "https://github.com/martletdesign/react/pull/10"
+  },
+  {
+    "family": "krigsvold",
+    "framework": "astro",
+    "repository": "krigsvolddesign/astro",
+    "head": "4c3361a6df683b408a33fd02dae8d017123c8608",
+    "parent": "2d3adcdba60c3966c48d6b2642b3ccf4afc627a9",
+    "base": "feature/nightjar-iv-head-authority-rehearsal",
+    "pr_url": "https://github.com/krigsvolddesign/astro/pull/19"
+  },
+  {
+    "family": "krigsvold",
+    "framework": "react",
+    "repository": "krigsvolddesign/react",
+    "head": "a3b657bfddf019ffffeba8248b5636c3a690fe92",
+    "parent": "8b00cfbdcaee24d86a7d0414dabe2e1734024de0",
+    "base": "feature/nightjar-iv-react-integration",
+    "pr_url": "https://github.com/krigsvolddesign/react/pull/10"
+  }
+]

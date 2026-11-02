@@ -1,0 +1,56 @@
+[
+  {
+    "repository": "martletdesign/astro",
+    "sha256": {
+      "infra/docs-archive/worker.mjs": "f67f15f83d42ddf186cf29d5929cbcd8d0eea35526d1f28564629bf8a6fd89d6",
+      "infra/docs-archive/catalog.mjs": "8d58a64ed5571de4732fb8060eff37c5ea81829f75354ce0f2186fc2f22ecd43",
+      "infra/docs-archive/promotion.mjs": "579d302f8bce6a4ab1d904c82b12778630b792978c194c759f7a0bf2fb25e34d",
+      "scripts/docs-versions/contract.mjs": "a3bef6047c2db3acb2536040d9c801054ae34ed4798d30a4ac963a3624168ef6"
+    }
+  },
+  {
+    "repository": "martletdesign/react",
+    "sha256": {
+      "infra/docs-archive/worker.mjs": "eae60034a285be7dcad63a4e989bcc91fc1e88168304646ec50114a5b6f82ff8",
+      "infra/docs-archive/catalog.mjs": "d5596a43e651c8eefeb0259bff126e265b4a1e8c604f377b3dc4e1124a0b8554",
+      "infra/docs-archive/promotion.mjs": "c4e7a56eebc4ee6ef191140454dbad5767f3d2ef5b4a9b7aac6a0f84630b3103",
+      "scripts/docs-versions/contract.mjs": "152244b04b2b96a5d43c04413508e3bc7281eb5dba900f6110232e8ed78f972b"
+    }
+  },
+  {
+    "repository": "martletdesign/jekyll",
+    "sha256": {
+      "infra/docs-archive/worker.mjs": "4fba36b89ee5e41ae9960734d4fc2a15391fdcf49a28c2915b618710fb2020f1",
+      "infra/docs-archive/catalog.mjs": "a61f1e0fbfea9484b5e9a5c5b9884363113535008b4ffed9f1fb6d59957f28e9",
+      "infra/docs-archive/promotion.mjs": "18d164aae34f07947c9c4b822d9671f43ef23064284f51ef7abd8e54d3bc62bd",
+      "scripts/docs-versions/contract.mjs": "c753c4aa3eb5976bbf86c6b861d8845245a9bcaafc116f038e90b43f0642eb8b"
+    }
+  },
+  {
+    "repository": "krigsvolddesign/astro",
+    "sha256": {
+      "infra/docs-archive/worker.mjs": "f67f15f83d42ddf186cf29d5929cbcd8d0eea35526d1f28564629bf8a6fd89d6",
+      "infra/docs-archive/catalog.mjs": "8d58a64ed5571de4732fb8060eff37c5ea81829f75354ce0f2186fc2f22ecd43",
+      "infra/docs-archive/promotion.mjs": "579d302f8bce6a4ab1d904c82b12778630b792978c194c759f7a0bf2fb25e34d",
+      "scripts/docs-versions/contract.mjs": "a3bef6047c2db3acb2536040d9c801054ae34ed4798d30a4ac963a3624168ef6"
+    }
+  },
+  {
+    "repository": "krigsvolddesign/react",
+    "sha256": {
+      "infra/docs-archive/worker.mjs": "eae60034a285be7dcad63a4e989bcc91fc1e88168304646ec50114a5b6f82ff8",
+      "infra/docs-archive/catalog.mjs": "d5596a43e651c8eefeb0259bff126e265b4a1e8c604f377b3dc4e1124a0b8554",
+      "infra/docs-archive/promotion.mjs": "c4e7a56eebc4ee6ef191140454dbad5767f3d2ef5b4a9b7aac6a0f84630b3103",
+      "scripts/docs-versions/contract.mjs": "152244b04b2b96a5d43c04413508e3bc7281eb5dba900f6110232e8ed78f972b"
+    }
+  },
+  {
+    "repository": "krigsvolddesign/jekyll",
+    "sha256": {
+      "infra/docs-archive/worker.mjs": "4fba36b89ee5e41ae9960734d4fc2a15391fdcf49a28c2915b618710fb2020f1",
+      "infra/docs-archive/catalog.mjs": "a61f1e0fbfea9484b5e9a5c5b9884363113535008b4ffed9f1fb6d59957f28e9",
+      "infra/docs-archive/promotion.mjs": "18d164aae34f07947c9c4b822d9671f43ef23064284f51ef7abd8e54d3bc62bd",
+      "scripts/docs-versions/contract.mjs": "c753c4aa3eb5976bbf86c6b861d8845245a9bcaafc116f038e90b43f0642eb8b"
+    }
+  }
+]
