@@ -23,13 +23,13 @@ export function validateManifest(m){
  }
  return m;
 }
-async function digestTree(root){
+export async function digestTree(root){
  const files=[];async function walk(dir,prefix=''){
   for(const name of (await readdir(dir)).sort()){const rel=prefix?`${prefix}/${name}`:name,p=join(dir,name),s=await lstat(p);
    if(s.isDirectory())await walk(p,rel);else{assert.ok(s.isFile(),`Symlink or special file: ${rel}`);files.push([rel,createHash('sha256').update(await readFile(p)).digest('hex')]);}}
  }await walk(root);assert.ok(files.length,'Empty site');return createHash('sha256').update(JSON.stringify(files)).digest('hex');
 }
-async function serve(root,base,catalog){
+export async function serve(root,base,catalog){
  const mime={'.html':'text/html; charset=utf-8','.js':'application/javascript','.mjs':'application/javascript','.css':'text/css','.svg':'image/svg+xml','.woff2':'font/woff2','.woff':'font/woff','.ttf':'font/ttf','.csv':'text/csv'};
  const resolved=await realpath(root);const server=createServer(async(req,res)=>{
   try{const path=decodeURIComponent(new URL(req.url,'http://localhost').pathname);if(catalog&&path===catalog.url){res.writeHead(200,{'content-type':'application/json'}).end(catalog.bytes);return;}if(!path.startsWith(base))throw Error('base');

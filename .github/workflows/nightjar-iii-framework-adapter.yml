@@ -25,6 +25,6 @@ jobs:
           cache: npm
       - run: npm ci --ignore-scripts
       - run: npx playwright install --with-deps ${{ matrix.browser }}
-      - run: node --test tests/portable-runner.test.mjs scripts/qa/portable-extensibility.test.mjs scripts/qa/portable-interactions.test.mjs
+      - run: node --test tests/portable-runner.test.mjs scripts/qa/portable-extensibility.test.mjs scripts/qa/portable-interactions.test.mjs scripts/qa/portable-recipes.test.mjs
         env:
           NIGHTJAR_TEST_BROWSER: ${{ matrix.browser }}

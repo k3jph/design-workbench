@@ -47,3 +47,24 @@ For another deployment base, append the absolute, slash-terminated base as the f
 The adjacent `nightjar-iv-contact-interactions-followup.json` records another Chromium `/preview` run of the same contact contract against newer local outputs. It passed for all six family/framework combinations with zero axe violations; the two Jekyll gradient-based color-contrast results remain incomplete. It tested keyboard validation, focus, correction, immediate pointer retry, reset, no-JavaScript fallback and 320px reflow.
 
 The Jekyll output providers identified their source as the #6 candidate heads recorded in the contrast investigation above. The Astro archive manifests claimed local source commits `3bb2aa741f6826b817dc258ef5d3e73ac5d3284e` and `2dba9deaf7fed61354f48be44b4a6e107021cc12`, which are earlier than the final checkpoint candidates; the served catalogs were local fixtures. The React output providers identified local commits `053460b82f575891ad94fa01b719517857dcb858` and `ea4690694baf63bafaa9c5960564f56203cfbfe2`. These are recorded input claims, not independent proof of provenance or exact remote heads. No Firefox, WebKit, root-base, other interaction, screen-reader or physical-device result is implied by this run.
+
+
+## Final candidate route and contact observations
+
+The [canonical-route result](nightjar-iv-final-head-recipes.json) records 800 Chromium page-states: 50 canonical recipes × both families × Astro/React × root/subpath deployments × JavaScript enabled/disabled. Each route returned HTTP 200, contained one nonempty h1 and one main landmark, kept the document within a 320px viewport with reduced motion, and produced no unexpected local asset failures or page errors. These checks establish bounded route and shell coverage; they do not establish equivalent content, all interactions, accessibility conformance, or visual conformance.
+
+The [contact result](nightjar-iv-final-head-contact.json) separately records the shared contact interaction contract on the same eight outputs. All eight passed with zero axe violations. The final source heads were Martlet Astro `43a858cffd144663b5316b2858272b370cf390ee`, Krigsvold Astro `82ac5eddbc5e870985c3e74d9e7435dd2901e05d`, Martlet React `7ffe7b32ce2f250c8cae17bb4e85960d1a079f7c`, and Krigsvold React `4fdc39d3056b5b7db0414ea09870d97b4126628f`. The operator cloned these commits and built the outputs locally. The runner records source assertions and tree digests; it does not cryptographically attest the relationship between the two.
+
+React galleries used the repository's locked dependencies and `NIGHTJAR_BASE=/` or `/preview/ npm run build:gallery`. Astro used the existing `scripts/docs-versions/build-release.mjs` with an explicitly hashed empty baseline, release identity `v2.0.0`, and deployment prefix empty or `/preview`. The Astro build verified the reviewed Core pin and produced 57-page snapshots. The catalogs served to the archive navigation were synthetic local fixtures. No production catalog, storage, release, deployment, or tag was created.
+
+Run the broader local-output contract with the same manifest schema as the contact runner:
+
+```sh
+CHROMIUM_PATH=/usr/bin/chromium node scripts/qa/portable-recipes.mjs \
+  --manifest /absolute/manifest.json --output /absolute/new-result.json \
+  --browser chromium
+```
+
+`--require-matrix` additionally requires all six family/framework pairs; the four-implementation observation deliberately did not use it. A target is required for each base to be tested. The inventory is read from the existing canonical catalog, whose hash is recorded in the result; this runner does not create a new catalog. The negative-control tests reject missing canonical routes, broken local assets, and missing main landmarks. They are included in the existing Chromium/Firefox/WebKit adapter workflow; that workflow tests the harness and does not build the six dedicated implementations.
+
+Local Firefox/WebKit installation was blocked by explicit proxy denials on the Playwright download hosts. These observations establish Chromium coverage only. Jekyll, manual assistive technology, physical devices, other interactions and visual conformance require separate evidence.
