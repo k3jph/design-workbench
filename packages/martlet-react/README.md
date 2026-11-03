@@ -5,7 +5,7 @@ Experimental 0.1.0. MIT licensed. Source package in the [design workbench](https
 ```tsx
 import { Button, Field, TextInput } from '@martlet/react';
 import '@martlet/react/styles.css';
-import '@martlet/theme/fonts.css'; // optional local fonts
+import '@martlet/core/fonts.css'; // optional local fonts
 
 <div className="martlet" data-martlet="light">
   <Field label="Component name" hint="Use the exported API name.">

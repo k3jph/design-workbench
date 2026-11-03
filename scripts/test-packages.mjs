@@ -1,9 +1,18 @@
-import { mkdtempSync, writeFileSync, existsSync, rmSync } from "node:fs";
+import { mkdtempSync, writeFileSync, existsSync, rmSync, readFileSync } from "node:fs";
 import { tmpdir } from "node:os";
+import { createHash } from "node:crypto";
 import { resolve, join } from "node:path";
 import { execFileSync } from "node:child_process";
 const directory = mkdtempSync(join(tmpdir(), "design-packages-"));
 try {
+  const inputs = [
+    ["martlet", "2.2.3", "e8a209a29db580d88a2d1c5e0a3a6158d5200c0dcbfeac6e063ce93d88cacbc5"],
+    ["krigsvold", "2.2.4", "057539e5ff9afa518cc249ca8bf7966d13781028f77c279616dfa9293e9a29e1"],
+  ].map(([family, version, expected]) => {
+    const file = resolve(`fixtures/core-candidates/${family}-core-${version}.tgz`);
+    if (createHash("sha256").update(readFileSync(file)).digest("hex") !== expected) throw new Error(`Unexpected ${family} core bytes`);
+    return file;
+  });
   writeFileSync(
     join(directory, "package.json"),
     JSON.stringify({
@@ -22,8 +31,9 @@ try {
       "--package-lock=false",
       "react@19.3.1",
       "react-dom@19.3.1",
-      resolve("martlet-react-0.1.0.tgz"),
-      resolve("krigsvold-react-0.1.0.tgz"),
+      ...inputs,
+      resolve("martlet-react-0.2.0.tgz"),
+      resolve("krigsvold-react-0.2.0.tgz"),
     ],
     { cwd: directory, stdio: "pipe" },
   );

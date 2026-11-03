@@ -1,5 +1,5 @@
-@import "@krigsvold/theme/css";
-@import "@krigsvold/theme/foundation.css";
+@import "@krigsvold/core/css";
+@import "@krigsvold/core/foundation.css";
 /* Source roles: see docs/languages/krigsvold/decisions.md. Theme 2.1.0 is unchanged. */
 .krigsvold {
   --ui-bg: var(--krigsvold-surface-canvas);
