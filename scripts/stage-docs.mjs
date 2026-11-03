@@ -25,6 +25,7 @@ const dependencies = [
   "react",
   "react-dom",
   `@${family}/theme`,
+  `@${family}/core`,
   ...(family === "martlet"
     ? [
         "@fontsource/cambo",

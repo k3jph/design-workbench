@@ -1,0 +1,34 @@
+# Nightjar stacked integration review
+
+This is a review and integration plan, not authorization to merge, publish or deploy. Snapshot observed 2026-10-29; check the exact heads, review state, branch protections and workflow results again immediately before any future integration.
+
+## Stack and evidence
+
+| Pull request | Base at review | Head at review | State | Scope |
+| --- | --- | --- | --- | --- |
+| [#18 — paired Jekyll examples](https://github.com/k3jph/design-workbench/pull/18) | `main` at `aafd9a8443e0c6cdc4afd6f973a605faa74b8f2c` | `feat/portable-page-archetypes` at `4935a11ab299483e0c16cfb16789ee653d71b7cb` | Open, non-draft; GitHub reported mergeable | 9 commits, 425 files, +55,440/−1 |
+| [#19 — portable implementations](https://github.com/k3jph/design-workbench/pull/19) | `feat/portable-page-archetypes` at exactly `4935a11ab299483e0c16cfb16789ee653d71b7cb` | `nightjar/audit` at `ea5a18067c97603ae5256075dd626f75d4008ced` | Open, draft; GitHub reported mergeable | 303 commits, 376 files, +18,649/−589 |
+
+Local ancestry checks confirmed that `main` was an ancestor of #18 and #18's head was an ancestor of #19. These figures describe the snapshot, not later pushes. GitHub's mergeable flag is a technical merge calculation, not a security, accessibility or release-readiness approval.
+
+At #18's `4935a11` head, [Verify workbench run 40802056438](https://github.com/k3jph/design-workbench/actions/runs/40802056438) passed Chromium, Firefox and WebKit, and [portable Jekyll run 40802056588](https://github.com/k3jph/design-workbench/actions/runs/40802056588) passed. The only #18 inline review thread, concerning a missing standalone source archive link, is marked resolved and outdated; its automated summary still displays the older finding. At #19's `ea5a180` head, [Verify workbench run 40952808972](https://github.com/k3jph/design-workbench/actions/runs/40952808972) passed all three engines, and [Verify portable examples run 40952808982](https://github.com/k3jph/design-workbench/actions/runs/40952808982) passed its examples, Firefox and WebKit smoke, and three fixture-regression jobs. The reference publication job was skipped on both pull-request runs. These checks do not establish complete visual parity or accessibility; Firefox and WebKit smoke retained documented automated color-contrast incomplete results.
+
+## The intermediate #18 state is not the final tested stack
+
+#18 independently passes its historical checks, but it predates corrective changes on #19. For example, the Jekyll demo scripts in `4935a11` enable form fieldsets globally before individual handlers are installed. A later synthetic interruption reproduced a native GET with fictional sign-in values; `619f460` in #19 gates each fieldset on its handlers. Separately, #18 assigns the new analytics view before `history.replaceState`; when that write was made to fail, the displayed table and exported records could diverge. `87e7d06` in #19 fixes the failure path. These are bounded reproductions with synthetic data, not claims about an observed production incident. More dashboard state and accessibility fixes follow on #19. A green #18 check does not validate those later fixes, and the period between merging #18 and #19 would expose the earlier state to main's workflows.
+
+## Automatic publication is a blocking integration risk
+
+The existing `ci.yml` on main invokes the reusable `reference-release.yml` after successful verification on **every push to main**. That workflow packages and publishes tested, commit-qualified React reference archives and runs adoption jobs; the pull-request runs skip this job. A merge of either PR to main is therefore capable of triggering publication and downstream adoption without a separate release event. npm package publication in `publish.yml` is separately triggered by a published GitHub release, and `prepare-release.yml` is manually dispatched with an optional reference-publication input. Neither the separate npm trigger nor the green PR checks make a main merge non-publishing.
+
+Do not merge either PR under the present directive. Before any future integration, review the current workflow and each adoption side effect, choose and verify a way to prevent any unauthorized publication, and obtain the user's separate authorization for the concrete integration and any resulting publication. Review workflow changes as changes in their own right; do not assume disabling a guard or creating a release is authorized.
+
+## Review and proposed sequence
+
+1. Complete the active scientific route, record exact conformance and accessibility limits, and push verified commits to the draft review branch. Refresh #19's description, which currently cites older checks and pending work, and link the latest exact-head checks and ledger. Keep #19 a draft until its outstanding review gates are met.
+2. Review #18's paired Jekyll architecture and original source exports as the first layer. Independently review #19's reusable React component changes, framework adapter and shared-model boundaries, scientific example, state/focus recovery, source archive and dependency/security changes, followed by the routine fixtures and documentation. This is one large stacked diff; avoid assuming 303 individually named commits substitute for a coherent architectural review.
+3. Verify latest-head hosted CI, manual review of the accessibility incompletes and unresolved discussions, dependency triage, generated-source synchronization, and no unintended artifacts. A filename scan of the #19 snapshot found no tracked paths under `dist`, `node_modules` or `test-results`, and no `.zip` or `.tgz` files; it is not a complete generated-artifact audit. The individual npm type-fix PRs also require their own review and release-boundary checks.
+4. If a future user authorizes main integration and the publication risk is resolved, choose the method deliberately. Merging #18 with a merge commit preserves `4935a11` as an ancestor; then retarget #19 to main and verify that its comparison contains only the intended second-layer changes, with fresh checks on the actual integration result. Squashing or rebasing #18 rewrites its commits and does not preserve that ancestry: #19 may need a carefully reviewed rebase or other reconstruction, with a fresh tree/diff comparison and tests before retargeting. Never force-push another contributor's branch or assume automatic retargeting preserves the expected diff.
+5. Account for #18's known intermediate defects and the main push publication trigger in the approved sequence. A green pull-request check is not an approval to publish; do not claim that merging #18 alone provides the behavior verified on #19. Record the selected sequence and exact tested commits before any authorized action.
+
+No main merge, release, publication, deployment, branch retargeting or review-thread mutation was performed for this assessment.

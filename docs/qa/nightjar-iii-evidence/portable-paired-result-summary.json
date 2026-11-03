@@ -1,0 +1,272 @@
+{
+  "version": 1,
+  "runner_scope": "Static content, local link/fragment inventory and experimental static-result presence only. Not full conformance or an accessibility audit.",
+  "network_policy": "Runner performs no fetch; build commands are trusted code and network isolation is not enforced.",
+  "runner": {
+    "commit": "60ea253788c79d331a5aabcd66fda246276c3203",
+    "script_sha256": "b7296d22a77648668a79d3142868b2c0036cb1d232fc0e07bb4501dbd726f2ff",
+    "html_verifier_sha256": "7ffbaa1bdb86b2965d6666d1960e6013f1808c60081b8bcd5af763720c953184",
+    "worktree_dirty": false
+  },
+  "fixture": {
+    "repository": "fixtures",
+    "commit": "80a5635abe4de7a07a1983de0b3ef796b101e047",
+    "catalog_path": "examples/page-archetypes/content/catalog.json",
+    "dashboards_path": "examples/page-archetypes/content/dashboards.json",
+    "catalog_sha256": "4795e34b2eaea8fa506cca6d7679e93f38c6019cea704834ae736ef2064afd37",
+    "dashboards_sha256": "9a0341f3789a9bf1c9a20cb6c31ace624a1400c3390de8131a305df372d87b35"
+  },
+  "repositories": {
+    "fixtures": {
+      "commit": "80a5635abe4de7a07a1983de0b3ef796b101e047"
+    },
+    "martlet": {
+      "commit": "3a2edc64aa46c38069f5479d0816cb12d54269a6"
+    },
+    "krigsvold": {
+      "commit": "bb5c940495320db59769180bbd76341b4dbddb0f"
+    },
+    "react-martlet": {
+      "commit": "af9b22320cca37b8d39951a071b2a2813655a926"
+    },
+    "react-krigsvold": {
+      "commit": "8e639da4b4ad2ef6f5fe5ea87c9a2809b656cc6f"
+    },
+    "astro-martlet": {
+      "commit": "ed1f121ae991fd868e757228664d1c3a737c3c10"
+    },
+    "astro-krigsvold": {
+      "commit": "af57afbc6413d7690cea8a839c7c0e1d48e2730c"
+    }
+  },
+  "browser": {
+    "engine": "chromium",
+    "version": "151.0.7922.173"
+  },
+  "node": "v24.19.0",
+  "javascript": "disabled",
+  "results": [
+    {
+      "family": "martlet",
+      "framework": "jekyll",
+      "base": "/",
+      "source": "martlet",
+      "source_commit": "3a2edc64aa46c38069f5479d0816cb12d54269a6",
+      "declared_inputs": {},
+      "output_tree_sha256": "1b0b602365c7e10cf16c01c4395be0699afd860041b139b7dc6ed811cc6c4001",
+      "html_check": "Checked 58 rendered pages and 1448 local destinations/fragments under /.",
+      "science": {
+        "status": "experimental",
+        "static_results": "checked",
+        "interactive_behavior": "not_assessed"
+      },
+      "static_route_count": 50
+    },
+    {
+      "family": "martlet",
+      "framework": "jekyll",
+      "base": "/preview",
+      "source": "martlet",
+      "source_commit": "3a2edc64aa46c38069f5479d0816cb12d54269a6",
+      "declared_inputs": {},
+      "output_tree_sha256": "72528c6488dc698d61f912c8c9c5eb782cd52938dd4b26ab252c3410ad07c077",
+      "html_check": "Checked 58 rendered pages and 1448 local destinations/fragments under /preview.",
+      "science": {
+        "status": "experimental",
+        "static_results": "checked",
+        "interactive_behavior": "not_assessed"
+      },
+      "static_route_count": 50
+    },
+    {
+      "family": "krigsvold",
+      "framework": "jekyll",
+      "base": "/",
+      "source": "krigsvold",
+      "source_commit": "bb5c940495320db59769180bbd76341b4dbddb0f",
+      "declared_inputs": {},
+      "output_tree_sha256": "84014f2e5ca74610904f32534eb5b43446498e4a484d339b4be9c3b270981e87",
+      "html_check": "Checked 58 rendered pages and 1448 local destinations/fragments under /.",
+      "science": {
+        "status": "experimental",
+        "static_results": "checked",
+        "interactive_behavior": "not_assessed"
+      },
+      "static_route_count": 50
+    },
+    {
+      "family": "krigsvold",
+      "framework": "jekyll",
+      "base": "/preview",
+      "source": "krigsvold",
+      "source_commit": "bb5c940495320db59769180bbd76341b4dbddb0f",
+      "declared_inputs": {},
+      "output_tree_sha256": "a0dc340af1e91bde1f942446827ca47488ca784f86660a4343efb4a1e9ee70e7",
+      "html_check": "Checked 58 rendered pages and 1448 local destinations/fragments under /preview.",
+      "science": {
+        "status": "experimental",
+        "static_results": "checked",
+        "interactive_behavior": "not_assessed"
+      },
+      "static_route_count": 50
+    },
+    {
+      "family": "martlet",
+      "framework": "react",
+      "base": "/",
+      "source": "fixtures",
+      "source_commit": "80a5635abe4de7a07a1983de0b3ef796b101e047",
+      "declared_inputs": {
+        "react-martlet": "af9b22320cca37b8d39951a071b2a2813655a926"
+      },
+      "output_tree_sha256": "12f20e2f0ef1903c624bdb4c195020e7e3b58444048ad7805e8f7e3d033d2ed4",
+      "html_check": "Checked 52 rendered pages and 1470 local destinations/fragments under /.",
+      "science": {
+        "status": "experimental",
+        "static_results": "checked",
+        "interactive_behavior": "not_assessed"
+      },
+      "static_route_count": 50
+    },
+    {
+      "family": "martlet",
+      "framework": "react",
+      "base": "/preview",
+      "source": "fixtures",
+      "source_commit": "80a5635abe4de7a07a1983de0b3ef796b101e047",
+      "declared_inputs": {
+        "react-martlet": "af9b22320cca37b8d39951a071b2a2813655a926"
+      },
+      "output_tree_sha256": "7f169b700df3c0b52ac0699683dc01938ee48ed57f5171fd9ae8d7230b1c7511",
+      "html_check": "Checked 52 rendered pages and 1470 local destinations/fragments under /preview.",
+      "science": {
+        "status": "experimental",
+        "static_results": "checked",
+        "interactive_behavior": "not_assessed"
+      },
+      "static_route_count": 50
+    },
+    {
+      "family": "krigsvold",
+      "framework": "react",
+      "base": "/",
+      "source": "fixtures",
+      "source_commit": "80a5635abe4de7a07a1983de0b3ef796b101e047",
+      "declared_inputs": {
+        "react-krigsvold": "8e639da4b4ad2ef6f5fe5ea87c9a2809b656cc6f"
+      },
+      "output_tree_sha256": "21ad54dac7034628adbd09dadac3c198dd7aad2ef77c72c893958d635db44496",
+      "html_check": "Checked 52 rendered pages and 1470 local destinations/fragments under /.",
+      "science": {
+        "status": "experimental",
+        "static_results": "checked",
+        "interactive_behavior": "not_assessed"
+      },
+      "static_route_count": 50
+    },
+    {
+      "family": "krigsvold",
+      "framework": "react",
+      "base": "/preview",
+      "source": "fixtures",
+      "source_commit": "80a5635abe4de7a07a1983de0b3ef796b101e047",
+      "declared_inputs": {
+        "react-krigsvold": "8e639da4b4ad2ef6f5fe5ea87c9a2809b656cc6f"
+      },
+      "output_tree_sha256": "875a8f00094951d431b719f9134caaea560e989c62b09d3bf933371819a25755",
+      "html_check": "Checked 52 rendered pages and 1470 local destinations/fragments under /preview.",
+      "science": {
+        "status": "experimental",
+        "static_results": "checked",
+        "interactive_behavior": "not_assessed"
+      },
+      "static_route_count": 50
+    },
+    {
+      "family": "martlet",
+      "framework": "astro",
+      "base": "/",
+      "source": "fixtures",
+      "source_commit": "80a5635abe4de7a07a1983de0b3ef796b101e047",
+      "declared_inputs": {
+        "astro-martlet": "ed1f121ae991fd868e757228664d1c3a737c3c10"
+      },
+      "output_tree_sha256": "93231f8855f54ec672941daf9850355c8b2ddbc8131dfbad26e87ff84cd558df",
+      "html_check": "Checked 52 rendered pages and 1242 local destinations/fragments under /.",
+      "science": {
+        "status": "experimental",
+        "static_results": "checked",
+        "interactive_behavior": "not_assessed"
+      },
+      "static_route_count": 50
+    },
+    {
+      "family": "martlet",
+      "framework": "astro",
+      "base": "/preview",
+      "source": "fixtures",
+      "source_commit": "80a5635abe4de7a07a1983de0b3ef796b101e047",
+      "declared_inputs": {
+        "astro-martlet": "ed1f121ae991fd868e757228664d1c3a737c3c10"
+      },
+      "output_tree_sha256": "c829df423b390833fccafd8daba7d2cbe05f210515f3a088884b726cd69c7ab3",
+      "html_check": "Checked 52 rendered pages and 1242 local destinations/fragments under /preview.",
+      "science": {
+        "status": "experimental",
+        "static_results": "checked",
+        "interactive_behavior": "not_assessed"
+      },
+      "static_route_count": 50
+    },
+    {
+      "family": "krigsvold",
+      "framework": "astro",
+      "base": "/",
+      "source": "fixtures",
+      "source_commit": "80a5635abe4de7a07a1983de0b3ef796b101e047",
+      "declared_inputs": {
+        "astro-krigsvold": "af57afbc6413d7690cea8a839c7c0e1d48e2730c"
+      },
+      "output_tree_sha256": "373eca1cb587e49fda672db40a0da5b5e86b08c20e86ebcbb08f4949e74ce94d",
+      "html_check": "Checked 52 rendered pages and 1242 local destinations/fragments under /.",
+      "science": {
+        "status": "experimental",
+        "static_results": "checked",
+        "interactive_behavior": "not_assessed"
+      },
+      "static_route_count": 50
+    },
+    {
+      "family": "krigsvold",
+      "framework": "astro",
+      "base": "/preview",
+      "source": "fixtures",
+      "source_commit": "80a5635abe4de7a07a1983de0b3ef796b101e047",
+      "declared_inputs": {
+        "astro-krigsvold": "af57afbc6413d7690cea8a839c7c0e1d48e2730c"
+      },
+      "output_tree_sha256": "ca103f224c5f1a6934b747925f6cd23d15b31088e9c984813194758ec79c8b4b",
+      "html_check": "Checked 52 rendered pages and 1242 local destinations/fragments under /preview.",
+      "science": {
+        "status": "experimental",
+        "static_results": "checked",
+        "interactive_behavior": "not_assessed"
+      },
+      "static_route_count": 50
+    }
+  ],
+  "missing": [],
+  "not_assessed": [
+    "interactive behavior",
+    "JavaScript failure recovery",
+    "automated accessibility",
+    "contrast incomplete findings",
+    "visual identity",
+    "manual assistive technology",
+    "physical print",
+    "performance"
+  ],
+  "evidence_note": "Summary of an exact clean-commit local run. The complete result and original local manifest were hashed before sanitizing; the example manifest preserves their commands and pins but replaces machine-specific repository paths. This snapshot does not certify parity or accessibility.",
+  "complete_result_sha256": "7e0bc221fc73b477f5752cb623dedeaab8205e776b3d17e81dbf190bcfdfdb34",
+  "original_local_manifest_sha256": "642ea091e1b37525beb121131472c916a150d73ce2ab39bb32e7d81a163d65c2"
+}

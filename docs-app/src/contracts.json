@@ -31,8 +31,8 @@
   },
   {
     "name": "Field",
-    "api": "optional explicit id; label string; optional hint/error; render function receives id, aria-describedby, aria-invalid.",
-    "behavior": "Default/hint/error. Visible label points to the rendered control; hint and error are both described. Error text remains visible until resolved or explicitly cleared. The caller spreads supplied attributes onto the actual control and adds required/readOnly/etc."
+    "api": "optional explicit id, hintId and errorId; label string; optional hint/error; render function receives id, aria-describedby, aria-invalid.",
+    "behavior": "Default/hint/error. Visible label points to the rendered control; hint and error are both described. Independent generated description IDs avoid collisions with caller input IDs. Caller-provided IDs must be unique, and independently mounted roots need distinct React identifier prefixes. Error text remains visible until resolved or explicitly cleared. The caller spreads supplied attributes onto the actual control and adds required/readOnly/etc. See the package READMEs for migration from the former undocumented derived IDs."
   },
   {
     "name": "Checkbox",
@@ -72,12 +72,12 @@
   {
     "name": "Dialog",
     "api": "Controlled open boolean, title string, onDismiss callback, children. Uses native dialog.showModal and the browser top layer. Keep mounted.",
-    "behavior": "Closed/open; Escape calls onDismiss. Caller supplies a visible dismissal action and appropriate initial autofocus. Focus stays in the modal, then returns to the trigger if it remains available. Modal opening/closing runs before paint so an application can move focus to the next editor after dismissal without attempting to focus inert content. A destructive draft choice defaults to Keep editing. Clicking the backdrop does not silently discard work."
+    "behavior": "Closed/open; Escape and native dialog-form closure call onDismiss. The consumer updates open in that callback. Prop-driven closure does not call onDismiss; queued close events must not dismiss a reopened dialog. Caller supplies a visible dismissal action and appropriate initial autofocus. Focus stays in the modal, then returns to the trigger if it remains available. Modal opening/closing runs before paint so an application can move focus to the next editor after dismissal without attempting to focus inert content. A destructive draft choice defaults to Keep editing. Clicking the backdrop does not silently discard work."
   },
   {
     "name": "ErrorSummary",
     "api": "Native div props/ref except title; title node; errors containing message and optional targetId; optional recovery children. Named alert, programmatically focusable.",
-    "behavior": "The caller focuses the summary after an attempted operation fails. Field links focus explicit control IDs or focusable fieldsets; unlinked errors explain transport/operation failures. Long messages wrap. The component never clears drafts or focuses itself on mount. Both use a leading severity rule as an explicit validation extension; their source typography and color roles remain independent."
+    "behavior": "The caller focuses the summary after an attempted operation fails. Field links focus explicit control IDs or focusable fieldsets; if direct focus is unavailable, retain native fragment navigation, including modified clicks. Fragment navigation does not guarantee focus on an unfocusable target. Unlinked errors explain transport/operation failures. Long messages wrap. The component never clears drafts or focuses itself on mount. Both use a leading severity rule as an explicit validation extension; their source typography and color roles remain independent."
   },
   {
     "name": "Article",
@@ -92,7 +92,7 @@
   {
     "name": "Pagination",
     "api": "Controlled one-based page, pageCount, onPageChange; optional disabled and label (default Pagination); native nav props/ref except children.",
-    "behavior": "Named navigation with native Previous page/Next page secondary buttons and a polite atomic page position. First/last boundaries and disabled prevent movement; Tab/Enter/Space remain native. Finite values truncate and clamp; nonfinite values become one. Wraps at narrow widths. Consumer owns fetching, route/query persistence, count, page size, recovery, and focus. English labels currently fixed; no numbered page links, RTL/localization, jump-to-page, or custom arrow model."
+    "behavior": "Named navigation with native Previous page/Next page secondary buttons and a polite atomic page position. First/last boundaries and disabled prevent movement; Tab/Enter/Space remain native. If the focused direction becomes unavailable at a boundary, focus moves to the available direction; external or delayed changes must not steal focus from elsewhere. Finite values truncate and clamp; nonfinite values become one. Wraps at narrow widths. Consumer owns fetching, route/query persistence, count, page size and recovery. English labels currently fixed; no numbered page links, RTL/localization, jump-to-page, or custom arrow model."
   },
   {
     "name": "DefinitionList",
@@ -107,6 +107,6 @@
   {
     "name": "Tabs",
     "api": "Native root div props/ref, unique keyed items with id/label/content/optional disabled, controlled value/onValueChange, required label, optional horizontal/vertical orientation.",
-    "behavior": "Manual activation: arrows wrap among enabled tabs, Home/End focus boundaries, Enter/Space activate. One selected tab has tabindex=0; panels remain mounted, linked and hidden when inactive. Invalid/disabled selection falls back to first enabled tab; callers provide at least one enabled item. Empty lists render no selected panel. No routing, persistence, animation, automatic activation, close buttons, nested tabs or RTL arrow adaptation."
+    "behavior": "Manual activation: arrows wrap among enabled tabs, Home/End focus boundaries, Enter/Space activate. The focused tab is the tab stop while navigating, even before selection; on leaving the tablist, the selected tab becomes its entry point again. When an update disables or removes the focused tab, focus moves to the selected enabled fallback if focus would otherwise be lost; updates do not take focus from elsewhere. If no tabs are enabled, the caller supplies recovery focus. Panels remain mounted, linked and hidden when inactive. Invalid/disabled selection falls back to first enabled tab; callers provide at least one enabled item. Empty lists render no selected panel. No routing, persistence, animation, automatic activation, close buttons, nested tabs or RTL arrow adaptation."
   }
 ]

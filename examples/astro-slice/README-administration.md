@@ -1,0 +1,7 @@
+# Astro administration dashboard preview
+
+`/examples/dashboard-administration/` renders the shared Northlight synthetic people fixture for each family. Astro renders the full directory as a no-JavaScript fallback, with mutating controls disabled. On the client the existing framework-neutral Jekyll dashboard controller provides searching, sorting, paging, selection, bulk confirmation, local editing, error/empty/loading previews, and reset. Changes live only in page memory and disappear on reload. User-entered values are rendered as text. This preview sends no directory data to a server.
+
+Run `CHROMIUM_PATH=/usr/bin/chromium node test-administration.mjs` from this directory after `npm ci --ignore-scripts`. The test builds both families at `/` and `/preview/` and checks selection, bulk confirmation/cancellation, filtering, validation and draft retention, safe text, simulated loading/error recovery, malformed pagination, the no-JavaScript fallback, narrow reflow, and light/dark automated axe checks. These checks do not replace manual assistive-technology or cross-browser review.
+
+The dashboard is in the shared catalog and navigation. A cross-family comparison link appears when `NIGHTJAR_PEER_URL` specifies the other family's HTTP(S) base URL. Layout, spacing, and shell remain contextual translations; complete visual parity is unverified. The Krigsvold dark button correction remains scoped here and has not been reconciled upstream.

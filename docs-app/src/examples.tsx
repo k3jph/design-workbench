@@ -345,7 +345,7 @@ export function Example({
             {
               id: "status",
               term: "Status",
-              description: "Experimental · 0.1.0",
+              description: "Experimental API",
             },
           ]}
         />
@@ -468,5 +468,5 @@ export function exampleCode(name: string, o: Options, family: string) {
     : state
       ? "useState"
       : "";
-  return `${hooks ? `import { ${hooks} } from 'react';\n` : ""}import { ${imports.join(", ")} } from '@${family}/react';\nimport '@${family}/react/styles.css';\nimport '@${family}/theme/fonts.css';\n\nexport default function Example() {\n${state ? `  ${state}\n` : ""}  return (\n    <div className="${family}" data-${family}="light">\n      ${body}\n    </div>\n  );\n}\n`;
+  return `${hooks ? `import { ${hooks} } from 'react';\n` : ""}import { ${imports.join(", ")} } from '@${family}/react';\nimport '@${family}/react/styles.css';\nimport '@${family}/core/fonts.css';\n\nexport default function Example() {\n${state ? `  ${state}\n` : ""}  return (\n    <div className="${family}" data-${family}="light">\n      ${body}\n    </div>\n  );\n}\n`;
 }

@@ -1,0 +1,86 @@
+[
+  {
+    "file": "live-results-full-krigsvold-astro.json",
+    "cases": 14,
+    "sources": [
+      {
+        "family": "krigsvold",
+        "framework": "astro",
+        "sourceCommit": "2d3adcdba60c3966c48d6b2642b3ccf4afc627a9",
+        "workerSha256": "f67f15f83d42ddf186cf29d5929cbcd8d0eea35526d1f28564629bf8a6fd89d6",
+        "catalogSha256": "8d58a64ed5571de4732fb8060eff37c5ea81829f75354ce0f2186fc2f22ecd43",
+        "promotionSha256": "579d302f8bce6a4ab1d904c82b12778630b792978c194c759f7a0bf2fb25e34d",
+        "namespace": "nv-b261923f3da7/s3/full-krigsvold-astro/gateway/krigsvold/astro/"
+      }
+    ]
+  },
+  {
+    "file": "live-results-full-krigsvold-react.json",
+    "cases": 14,
+    "sources": [
+      {
+        "family": "krigsvold",
+        "framework": "react",
+        "sourceCommit": "8b00cfbdcaee24d86a7d0414dabe2e1734024de0",
+        "workerSha256": "eae60034a285be7dcad63a4e989bcc91fc1e88168304646ec50114a5b6f82ff8",
+        "catalogSha256": "d5596a43e651c8eefeb0259bff126e265b4a1e8c604f377b3dc4e1124a0b8554",
+        "promotionSha256": "c4e7a56eebc4ee6ef191140454dbad5767f3d2ef5b4a9b7aac6a0f84630b3103",
+        "namespace": "nv-b261923f3da7/s3/full-krigsvold-react/gateway/krigsvold/react/"
+      }
+    ]
+  },
+  {
+    "file": "live-results-full-martlet-astro.json",
+    "cases": 14,
+    "sources": [
+      {
+        "family": "martlet",
+        "framework": "astro",
+        "sourceCommit": "408907b0057ee236fdfb4817c48bfd8cbf92f3fd",
+        "workerSha256": "f67f15f83d42ddf186cf29d5929cbcd8d0eea35526d1f28564629bf8a6fd89d6",
+        "catalogSha256": "8d58a64ed5571de4732fb8060eff37c5ea81829f75354ce0f2186fc2f22ecd43",
+        "promotionSha256": "579d302f8bce6a4ab1d904c82b12778630b792978c194c759f7a0bf2fb25e34d",
+        "namespace": "nv-b261923f3da7/s3/full-martlet-astro/gateway/martlet/astro/"
+      }
+    ]
+  },
+  {
+    "file": "live-results-full-martlet-react.json",
+    "cases": 14,
+    "sources": [
+      {
+        "family": "martlet",
+        "framework": "react",
+        "sourceCommit": "8d99ea4f1e02efee4b4241ad74d18ac1b7eb93e9",
+        "workerSha256": "eae60034a285be7dcad63a4e989bcc91fc1e88168304646ec50114a5b6f82ff8",
+        "catalogSha256": "d5596a43e651c8eefeb0259bff126e265b4a1e8c604f377b3dc4e1124a0b8554",
+        "promotionSha256": "c4e7a56eebc4ee6ef191140454dbad5767f3d2ef5b4a9b7aac6a0f84630b3103",
+        "namespace": "nv-b261923f3da7/s3/full-martlet-react/gateway/martlet/react/"
+      }
+    ]
+  },
+  {
+    "file": "live-results-retry-jekyll.json",
+    "cases": 23,
+    "sources": [
+      {
+        "family": "martlet",
+        "framework": "jekyll",
+        "sourceCommit": "cb0abc2ba62736f12346893648f4cb92211b0f7b",
+        "workerSha256": "4fba36b89ee5e41ae9960734d4fc2a15391fdcf49a28c2915b618710fb2020f1",
+        "catalogSha256": "a61f1e0fbfea9484b5e9a5c5b9884363113535008b4ffed9f1fb6d59957f28e9",
+        "promotionSha256": "18d164aae34f07947c9c4b822d9671f43ef23064284f51ef7abd8e54d3bc62bd",
+        "namespace": "nv-b261923f3da7/s3/retry-jekyll/gateway/martlet/jekyll/"
+      },
+      {
+        "family": "krigsvold",
+        "framework": "jekyll",
+        "sourceCommit": "859a12bffb3a02ce07a3b03b41a4853a98d9ee18",
+        "workerSha256": "4fba36b89ee5e41ae9960734d4fc2a15391fdcf49a28c2915b618710fb2020f1",
+        "catalogSha256": "a61f1e0fbfea9484b5e9a5c5b9884363113535008b4ffed9f1fb6d59957f28e9",
+        "promotionSha256": "18d164aae34f07947c9c4b822d9671f43ef23064284f51ef7abd8e54d3bc62bd",
+        "namespace": "nv-b261923f3da7/s3/retry-jekyll/gateway/krigsvold/jekyll/"
+      }
+    ]
+  }
+]

@@ -1,0 +1,973 @@
+{
+  "captured_utc": "2026-11-01",
+  "scope": "Non-website initialized repositories; branch and open-PR snapshot before develop creation",
+  "repositories": [
+    {
+      "repo": "martletdesign/core",
+      "branches": [
+        {
+          "name": "fix/adoption-repair-03",
+          "sha": "7e130a937b730292e940deb4c41a9b164ef0b0a2"
+        },
+        {
+          "name": "main",
+          "sha": "3a504ce2c2d34c7dc44cf5ec094d255eaf1aeac6"
+        },
+        {
+          "name": "migration/core-contrast",
+          "sha": "4bc45ff0bd1ee2e93ee61917b023f7b45686895f"
+        },
+        {
+          "name": "migration/core-package",
+          "sha": "f4c18540e643388c71da2308607cc8f944b32391"
+        },
+        {
+          "name": "migration/core-release-proposal",
+          "sha": "7200e334acc98d7fb14b61bef767d0e511e38df2"
+        },
+        {
+          "name": "migration/staged-publication-proposal",
+          "sha": "107257a176b960cdf94f87fda95a3fe563c48111"
+        },
+        {
+          "name": "nightjar/design-types",
+          "sha": "8a777801eb8385ea532e2b960084453f03a37ad0"
+        },
+        {
+          "name": "preparation/activate-core-stage",
+          "sha": "390206eda2495f5950717e1621a584a7c7274182"
+        },
+        {
+          "name": "preparation/stage-gate-hardening",
+          "sha": "8bbc9493c7b580577595f3f3192d49d378dcb620"
+        },
+        {
+          "name": "work/design-charter",
+          "sha": "1825b49e497d72dff0d463cee9baac7ad35041e8"
+        },
+        {
+          "name": "work/experimental-release-fixes",
+          "sha": "8190e1ad71788c15bec19eac4875af7e15f4f8cf"
+        },
+        {
+          "name": "work/foundations-spec",
+          "sha": "7e083536e0a4943029f3b3c801d65b776cc21552"
+        },
+        {
+          "name": "work/layout-system",
+          "sha": "36f6d52e5e3e25f5843243a9d644341c4d54f958"
+        },
+        {
+          "name": "work/martlet-design-system",
+          "sha": "ade0d4a16bea7e43f15e8ec029cca8def378f7f0"
+        }
+      ],
+      "prs": [
+        {
+          "n": 12,
+          "base": "migration/staged-publication-proposal",
+          "head": "preparation/stage-gate-hardening",
+          "title": "Harden the disabled core staging proposal"
+        },
+        {
+          "n": 11,
+          "base": "migration/core-release-proposal",
+          "head": "migration/staged-publication-proposal",
+          "title": "Propose disabled human-reviewed npm staging workflow"
+        },
+        {
+          "n": 10,
+          "base": "migration/core-contrast",
+          "head": "migration/core-release-proposal",
+          "title": "Propose 2.2.3 for the first core release"
+        },
+        {
+          "n": 9,
+          "base": "migration/core-package",
+          "head": "migration/core-contrast",
+          "title": "Preserve button contrast during enable transitions"
+        },
+        {
+          "n": 7,
+          "base": "main",
+          "head": "nightjar/design-types",
+          "title": "Expose all design tokens and provenance in TypeScript"
+        }
+      ],
+      "workflows": [
+        "core-stage.yml",
+        "publish.yml",
+        "verify.yml"
+      ]
+    },
+    {
+      "repo": "martletdesign/astro",
+      "branches": [
+        {
+          "name": "fix/adoption-repair-03",
+          "sha": "b600ac6d91c6d25885e55b7597fb7754aa5f7988"
+        },
+        {
+          "name": "main",
+          "sha": "ed1f121ae991fd868e757228664d1c3a737c3c10"
+        },
+        {
+          "name": "migration/core-package",
+          "sha": "178a0f48aedefa1295f48f33098c0ad16b0d8d47"
+        },
+        {
+          "name": "work/experimental-release-fixes",
+          "sha": "114c43c09c868ae41f57e33acb340594a31940b9"
+        },
+        {
+          "name": "work/layout-system",
+          "sha": "bd6b836fd4c50abd34675ca1a1606f5ec1de0e53"
+        },
+        {
+          "name": "work/martlet-astro-package",
+          "sha": "fb44283147f639f59f370b72d846961b1c291071"
+        },
+        {
+          "name": "work/source-consolidation",
+          "sha": "968ed365184aa1112b897f81342cdc3e98c0a736"
+        },
+        {
+          "name": "work/stop-layout-run",
+          "sha": "f6114454a3d7eb3ef89ecf2935c7971f154bd7ca"
+        }
+      ],
+      "prs": [
+        {
+          "n": 6,
+          "base": "main",
+          "head": "migration/core-package",
+          "title": "Rehearse Astro migration to @martlet/core"
+        }
+      ],
+      "workflows": [
+        "publish.yml",
+        "verify.yml"
+      ]
+    },
+    {
+      "repo": "martletdesign/vim",
+      "branches": [
+        {
+          "name": "main",
+          "sha": "cc11258a7e98125cc8524d0bac8725b1983d3264"
+        }
+      ],
+      "prs": [],
+      "workflows": [
+        "verify.yml"
+      ]
+    },
+    {
+      "repo": "martletdesign/emacs",
+      "branches": [
+        {
+          "name": "main",
+          "sha": "a5bc82518e7c1269f961a031519f2939e2e99735"
+        }
+      ],
+      "prs": [],
+      "workflows": [
+        "verify.yml"
+      ]
+    },
+    {
+      "repo": "martletdesign/chrome",
+      "branches": [
+        {
+          "name": "main",
+          "sha": "08dbd2c2ea04203e8059bc25cc48b58598c6bbc8"
+        }
+      ],
+      "prs": [],
+      "workflows": [
+        "verify.yml"
+      ]
+    },
+    {
+      "repo": "martletdesign/firefox",
+      "branches": [
+        {
+          "name": "main",
+          "sha": "37331f26d67ec51e0c7e12e78d4ff1b16b4b1553"
+        }
+      ],
+      "prs": [],
+      "workflows": [
+        "verify.yml"
+      ]
+    },
+    {
+      "repo": "krigsvolddesign/core",
+      "branches": [
+        {
+          "name": "fix/adoption-repair-03",
+          "sha": "cb1ed336f4fb0204735ca4751d2928d0bdeb2501"
+        },
+        {
+          "name": "fix/nested-source-actions",
+          "sha": "86e610a6f5f79115d740d1c989fcbc71c1ef52f4"
+        },
+        {
+          "name": "main",
+          "sha": "d7b6c2c9d09aa4b82f24dfc84a751c0946fa458a"
+        },
+        {
+          "name": "migration/core-contrast",
+          "sha": "2675078f5fb292920f927b088b87d267dab99701"
+        },
+        {
+          "name": "migration/core-package",
+          "sha": "4e6b49131ebc9035796906e7c075e4cf50256e29"
+        },
+        {
+          "name": "migration/core-release-proposal",
+          "sha": "24d5a7eb9a25f4464f29c4d30e3c675e10ad4888"
+        },
+        {
+          "name": "migration/staged-publication-proposal",
+          "sha": "39e000864082b93cce75df368a9bbeccbd5284ce"
+        },
+        {
+          "name": "nightjar/design-types",
+          "sha": "191196d090bd3495dcf8274d379e42ef80d96f4d"
+        },
+        {
+          "name": "preparation/activate-core-stage",
+          "sha": "7c5e72ef8566c41de354c63ef003ddba7be42a2b"
+        },
+        {
+          "name": "preparation/stage-gate-hardening",
+          "sha": "d03154614f8308b7485daa4a8126b2fccc29a3c4"
+        },
+        {
+          "name": "work/design-charter",
+          "sha": "fad1972eabf7d7afe21fbd9ce0554600ad930517"
+        },
+        {
+          "name": "work/experimental-release-fixes",
+          "sha": "f567b51abbe199f89cbb09b5a8cb9e77bed1e117"
+        },
+        {
+          "name": "work/foundations-spec",
+          "sha": "e1d77048df1c5b3ecfe5b214e3fda4f9fa4de259"
+        },
+        {
+          "name": "work/krigsvold-design-system",
+          "sha": "a8f79e1aa34ce0e179627c0e810702e47fc95671"
+        },
+        {
+          "name": "work/layout-system",
+          "sha": "9d4c8bab6d5ab1afe6c593e56eb81bcdee2b3494"
+        }
+      ],
+      "prs": [
+        {
+          "n": 13,
+          "base": "migration/staged-publication-proposal",
+          "head": "preparation/stage-gate-hardening",
+          "title": "Harden the disabled core staging proposal"
+        },
+        {
+          "n": 12,
+          "base": "migration/core-release-proposal",
+          "head": "migration/staged-publication-proposal",
+          "title": "Propose disabled human-reviewed npm staging workflow"
+        },
+        {
+          "n": 11,
+          "base": "migration/core-contrast",
+          "head": "migration/core-release-proposal",
+          "title": "Propose 2.2.4 for the first core release"
+        },
+        {
+          "n": 10,
+          "base": "migration/core-package",
+          "head": "migration/core-contrast",
+          "title": "Preserve button contrast during enable transitions"
+        },
+        {
+          "n": 8,
+          "base": "main",
+          "head": "nightjar/design-types",
+          "title": "Expose all design tokens and provenance in TypeScript"
+        }
+      ],
+      "workflows": [
+        "core-stage.yml",
+        "publish.yml",
+        "verify.yml"
+      ]
+    },
+    {
+      "repo": "krigsvolddesign/astro",
+      "branches": [
+        {
+          "name": "fix/adoption-repair-03",
+          "sha": "878a61014852f83618c575a27154b7820ac5e017"
+        },
+        {
+          "name": "main",
+          "sha": "af57afbc6413d7690cea8a839c7c0e1d48e2730c"
+        },
+        {
+          "name": "migration/core-package",
+          "sha": "6599b3c28def5e24aa3971cf129427e3e6e1f082"
+        },
+        {
+          "name": "work/experimental-release-fixes",
+          "sha": "ec77611e390220163d5fd38aa36835100f11f57a"
+        },
+        {
+          "name": "work/krigsvold-astro-package",
+          "sha": "5ffff1e2f48bebb3c7d3460e24c4e0f2d32b25b7"
+        },
+        {
+          "name": "work/layout-system",
+          "sha": "1bd349afa299cbdd4ad21cdbefc46ff04b142985"
+        },
+        {
+          "name": "work/source-consolidation",
+          "sha": "2a2e51305b198dfbc79c7b1a47123646038cd242"
+        }
+      ],
+      "prs": [
+        {
+          "n": 6,
+          "base": "main",
+          "head": "migration/core-package",
+          "title": "Rehearse Astro migration to @krigsvold/core"
+        }
+      ],
+      "workflows": [
+        "publish.yml",
+        "verify.yml"
+      ]
+    },
+    {
+      "repo": "krigsvolddesign/vim",
+      "branches": [
+        {
+          "name": "main",
+          "sha": "ae56216ff691e9fb2b2e6e49840e4d6c7ba2094a"
+        }
+      ],
+      "prs": [],
+      "workflows": [
+        "verify.yml"
+      ]
+    },
+    {
+      "repo": "krigsvolddesign/emacs",
+      "branches": [
+        {
+          "name": "main",
+          "sha": "78c57a6fbc6329e4c870764111368040cd073f5c"
+        }
+      ],
+      "prs": [],
+      "workflows": [
+        "verify.yml"
+      ]
+    },
+    {
+      "repo": "krigsvolddesign/chrome",
+      "branches": [
+        {
+          "name": "main",
+          "sha": "9c9a06799034ffb1a862ab5b859ec8e369f3a40c"
+        }
+      ],
+      "prs": [],
+      "workflows": [
+        "verify.yml"
+      ]
+    },
+    {
+      "repo": "krigsvolddesign/firefox",
+      "branches": [
+        {
+          "name": "main",
+          "sha": "3f247c18fb7ee58985fc6d12b75fdc5b9a5ea6bd"
+        }
+      ],
+      "prs": [],
+      "workflows": [
+        "verify.yml"
+      ]
+    },
+    {
+      "repo": "k3jph/design-workbench",
+      "branches": [
+        {
+          "name": "automation/react-reference-releases",
+          "sha": "41c3d8f0b1135bfb09826d118f8dd55a5a6a2eba"
+        },
+        {
+          "name": "docs/reference-demo-data",
+          "sha": "d2faf5a585806728a46c657f1c087fadeabd3b3e"
+        },
+        {
+          "name": "feat/portable-page-archetypes",
+          "sha": "4935a11ab299483e0c16cfb16789ee653d71b7cb"
+        },
+        {
+          "name": "feat/reference-research-page",
+          "sha": "0295a1d82a1b39a5811db09f8bb6780669d43d79"
+        },
+        {
+          "name": "fix/adoption-completion",
+          "sha": "8d1e9b3e0991ad5568fb3f950e4789d17848cc0b"
+        },
+        {
+          "name": "fix/documentation-nav-surfaces",
+          "sha": "400aacb6c282a383d7915085125cd7724036b5c3"
+        },
+        {
+          "name": "fix/martlet-left-contents",
+          "sha": "11785384d1439a9452eeabfcd0e27b10f11fa16f"
+        },
+        {
+          "name": "fix/npm-react-subdomains",
+          "sha": "39d664082bb0dbdb09bc182a6abffebef75518ff"
+        },
+        {
+          "name": "fix/origin-frames-20261027",
+          "sha": "b4fd27bb5dc996f3a5f88f968dea8f049af8198c"
+        },
+        {
+          "name": "fix/origin-link-hover",
+          "sha": "671ff340f6c156430d8fd3a7b9eb8c50b5f7cf4f"
+        },
+        {
+          "name": "fix/react-footer-domain",
+          "sha": "f702aa0de2c4e50960778bf44acc9a7cd0875150"
+        },
+        {
+          "name": "fix/reference-polish",
+          "sha": "afab79ccd5e4044591e8e45fdc8d22f528745670"
+        },
+        {
+          "name": "fix/shared-astro-shell",
+          "sha": "d6338f1c8afee7ae6e3058e2c7cf675ce726aad3"
+        },
+        {
+          "name": "fix/source-font-rendering-20261027",
+          "sha": "cd1af7d920b2cbe5ed2dea66271012fcc859b9cc"
+        },
+        {
+          "name": "fix/transferred-release-identity",
+          "sha": "b4e722e5e21ecb2adefcc9187a7f3ba0b9f770e6"
+        },
+        {
+          "name": "main",
+          "sha": "aafd9a8443e0c6cdc4afd6f973a605faa74b8f2c"
+        },
+        {
+          "name": "migration/core-downstream",
+          "sha": "d592a8a826e6174922f419e9d6bed2323d6bd669"
+        },
+        {
+          "name": "migration/core-first-release-checklist",
+          "sha": "7b905a7462682e11aa228b585586e6249df5ec57"
+        },
+        {
+          "name": "migration/core-stage-preparation",
+          "sha": "30538b6e45d54c61a67978c537f1781242f920e3"
+        },
+        {
+          "name": "migration/react-core",
+          "sha": "b66e18bb87d6894e1eeca590c54492b78b462bfc"
+        },
+        {
+          "name": "migration/react-core-release-proposals",
+          "sha": "04d3e14b1b1943cbf2a90f1a727822d87327b2ae"
+        },
+        {
+          "name": "nightjar/audit",
+          "sha": "6d160287312c8e03fadd3c6ed2ac5f9a70939677"
+        },
+        {
+          "name": "nightjar/ii",
+          "sha": "f5d9b03e630bccaf5a04ffcd7238da46455ed915"
+        },
+        {
+          "name": "nightjar/ii-integration-candidate",
+          "sha": "80a5635abe4de7a07a1983de0b3ef796b101e047"
+        },
+        {
+          "name": "nightjar/integration-review",
+          "sha": "5138a89fc2956d9019d5bd720c987b8b9e24533b"
+        },
+        {
+          "name": "nightjar/release-readiness",
+          "sha": "d6230680b08aa1176e74657e3849958916028172"
+        },
+        {
+          "name": "nightjar/worker-zod-generator",
+          "sha": "730124144ef23fb5d9c06b7d9ec189d0e32d5ba6"
+        },
+        {
+          "name": "nightjar2/admin-bulk-state",
+          "sha": "e9cd8f19109cb0b432452659e7fe7cdffd891ad0"
+        },
+        {
+          "name": "nightjar2/admin-draft",
+          "sha": "adb92727984b048ac3ded1fb1c40f8d4ccd79df3"
+        },
+        {
+          "name": "nightjar2/adversarial",
+          "sha": "31a572a9eed61fae334a2950c8db1cb47a996ee9"
+        },
+        {
+          "name": "nightjar2/agent-security",
+          "sha": "a3435695cfef96ca066abcfa14dd93969f27f693"
+        },
+        {
+          "name": "nightjar2/api-followup",
+          "sha": "e37df1d2bbba6c96ff0e2b1d22932fc65871222e"
+        },
+        {
+          "name": "nightjar2/component-audit",
+          "sha": "0485b75b8e5d5353655826e9511775610008495f"
+        },
+        {
+          "name": "nightjar2/extended-edge",
+          "sha": "e765079c29a11ae1718037d19acdb94b8e9a5bd7"
+        },
+        {
+          "name": "nightjar2/firefox-investigation",
+          "sha": "4c7140d12f3834595b4663da2ca346fda0383888"
+        },
+        {
+          "name": "nightjar2/form-popup-fix",
+          "sha": "caf8753a09e23deda9255944270a16841eca4229"
+        },
+        {
+          "name": "nightjar2/forms-stress",
+          "sha": "05d28d4ad701efce91e8805331069fe680b6a099"
+        },
+        {
+          "name": "nightjar2/host-state",
+          "sha": "afa033bc73c8a982cb9cd33fc73d91ba74951d90"
+        },
+        {
+          "name": "nightjar2/science-robustness",
+          "sha": "8f6a9760737ccea965f8df2434416842673cf798"
+        },
+        {
+          "name": "nightjar2/worker-validation",
+          "sha": "7178fb0a56e6014b7fcfb230b2a19400977d4cfb"
+        },
+        {
+          "name": "nightjar3/adoption",
+          "sha": "5141857be03d103732275fb18e05e042505381df"
+        },
+        {
+          "name": "nightjar3/authority-map",
+          "sha": "2895f22c9b7d05ba50de06013b51cf5978217f2f"
+        },
+        {
+          "name": "nightjar3/clean-room",
+          "sha": "77a87933b9813c2edc6802604ab686093d959c38"
+        },
+        {
+          "name": "nightjar3/finish-consumption",
+          "sha": "36b8a053455f15e239275d1f76759cdfb4578ef8"
+        },
+        {
+          "name": "nightjar3/fixture-bundle",
+          "sha": "189e54fe7dac589032ccc680b0fa8553e3d6abb0"
+        },
+        {
+          "name": "nightjar3/framework-extensibility",
+          "sha": "f1f312a0a47e6414818117933ceec62b73afb2d6"
+        },
+        {
+          "name": "nightjar3/integration",
+          "sha": "4a1b0991c970f4c182234273c01f9e97d35992cc"
+        },
+        {
+          "name": "nightjar3/jekyll-dashboard-adoption",
+          "sha": "c2e112b11abd016ea2a2ddb3ae84853ad06dcfa6"
+        },
+        {
+          "name": "nightjar3/jekyll-dashboard-crossbrowser",
+          "sha": "cc751c030182dea20b277871502291fa3e5fa6b0"
+        },
+        {
+          "name": "nightjar3/jekyll-fixture-check",
+          "sha": "dd0be62f36029d32ce8862b102db64a18e1381f6"
+        },
+        {
+          "name": "nightjar3/jekyll-rehearsal",
+          "sha": "1d61f47b0bfb262d86e7a18b777d564c2bb54f3e"
+        },
+        {
+          "name": "nightjar3/portable-runner",
+          "sha": "f131981186f04531d976ea1f478552865fb87928"
+        },
+        {
+          "name": "nightjar3/progress",
+          "sha": "9ae757693f85bb7395261e2ddb9eb846f4ad6615"
+        },
+        {
+          "name": "nightjar3/publication-control-review",
+          "sha": "bbebb677cd204e56e3cfc746bd254ef4fec65251"
+        },
+        {
+          "name": "nightjar3/react-extraction",
+          "sha": "a0c62c2db73e57360c53f6ba56bfd52766b6a1e9"
+        },
+        {
+          "name": "nightjar-ii/astro-source-icon",
+          "sha": "4617766f50ce9f4c9b8c1b11f284f68956b55448"
+        },
+        {
+          "name": "nightjar-ii/contrast",
+          "sha": "c858a0585b053dbfdee5a9f937ab7412a0709178"
+        },
+        {
+          "name": "nightjar-ii/jekyll-readiness",
+          "sha": "568270977679312da2af7ab087eb41b2c5e1b2a5"
+        },
+        {
+          "name": "nightjar-ii/publication-design",
+          "sha": "6d0ec979e27646fd347e2afcdfa1589832813c22"
+        },
+        {
+          "name": "nightjar-ii/react-static-slice",
+          "sha": "ed186ab6d6dd45a2ffa436e76de2bdeb1185cc9d"
+        },
+        {
+          "name": "nightjar-iii/astro-adoption",
+          "sha": "36898eb7a18c69d4340a0a911045b2af3a410415"
+        },
+        {
+          "name": "nightjar-iii/astro-hosted-checks",
+          "sha": "df59e43787e234bb75c57321e7843aa76b4431ef"
+        },
+        {
+          "name": "nightjar-iii/theme-transition",
+          "sha": "b32e7b0d706590ebb2ed8dd9220b568534b16d15"
+        },
+        {
+          "name": "preparation/core-release-safety",
+          "sha": "ece4e1921febb0e1936db9107301bf71e5fd854d"
+        },
+        {
+          "name": "test/grammar-conformance",
+          "sha": "d073f30f937e71df3fa86a4e69e44ec188593773"
+        },
+        {
+          "name": "work/design-preview-0.3",
+          "sha": "4e8509c60eef5e8b36984e6164984152bb4f33c2"
+        },
+        {
+          "name": "work/registry-foundations",
+          "sha": "4a757ae073afaa57441b6b3240ab9ba29cfe239b"
+        }
+      ],
+      "prs": [
+        {
+          "n": 70,
+          "base": "migration/core-stage-preparation",
+          "head": "preparation/core-release-safety",
+          "title": "Record core staging integration safeguards"
+        },
+        {
+          "n": 69,
+          "base": "migration/core-first-release-checklist",
+          "head": "migration/core-stage-preparation",
+          "title": "Prepare reproducible staged first core releases"
+        },
+        {
+          "n": 68,
+          "base": "migration/react-core",
+          "head": "migration/react-core-release-proposals",
+          "title": "Rehearse React against collision-free core proposals"
+        },
+        {
+          "n": 67,
+          "base": "migration/core-downstream",
+          "head": "migration/core-first-release-checklist",
+          "title": "Record core release tag collision and publisher gates"
+        },
+        {
+          "n": 66,
+          "base": "nightjar3/react-extraction",
+          "head": "migration/react-core",
+          "title": "Migrate React package candidates to corrected core inputs"
+        },
+        {
+          "n": 65,
+          "base": "nightjar3/jekyll-fixture-check",
+          "head": "migration/core-downstream",
+          "title": "Rehearse separate React core and legacy theme lanes"
+        },
+        {
+          "n": 62,
+          "base": "nightjar3/fixture-bundle",
+          "head": "nightjar3/jekyll-fixture-check",
+          "title": "Detect stale standalone Jekyll fixture routes"
+        },
+        {
+          "n": 61,
+          "base": "nightjar3/framework-extensibility",
+          "head": "nightjar3/fixture-bundle",
+          "title": "Rehearse pinned offline fixture handoff"
+        },
+        {
+          "n": 59,
+          "base": "nightjar3/finish-consumption",
+          "head": "nightjar3/framework-extensibility",
+          "title": "Make the conformance matrix framework configurable"
+        },
+        {
+          "n": 58,
+          "base": "nightjar3/integration",
+          "head": "nightjar3/finish-consumption",
+          "title": "Bind package inputs and test broken consumers"
+        },
+        {
+          "n": 56,
+          "base": "nightjar-iii/astro-adoption",
+          "head": "nightjar-iii/theme-transition",
+          "title": "Rehearse paired action transition contrast corrections"
+        },
+        {
+          "n": 55,
+          "base": "nightjar-iii/astro-adoption",
+          "head": "nightjar-iii/astro-hosted-checks",
+          "title": "Test pinned Astro starter patches across browser engines"
+        },
+        {
+          "n": 54,
+          "base": "nightjar3/jekyll-dashboard-adoption",
+          "head": "nightjar3/jekyll-dashboard-crossbrowser",
+          "title": "Verify standalone Jekyll adoption in three browsers"
+        },
+        {
+          "n": 53,
+          "base": "nightjar3/adoption",
+          "head": "nightjar3/jekyll-dashboard-adoption",
+          "title": "Document standalone Jekyll directory composition"
+        },
+        {
+          "n": 52,
+          "base": "nightjar3/adoption",
+          "head": "nightjar3/clean-room",
+          "title": "Exercise clean-room adoption across the paired frameworks"
+        },
+        {
+          "n": 51,
+          "base": "nightjar/ii-integration-candidate",
+          "head": "nightjar3/publication-control-review",
+          "title": "Plan independent publication and migration approval boundaries"
+        },
+        {
+          "n": 50,
+          "base": "nightjar/ii-integration-candidate",
+          "head": "nightjar3/portable-runner",
+          "title": "Prototype pinned portable conformance runner"
+        },
+        {
+          "n": 49,
+          "base": "nightjar/ii-integration-candidate",
+          "head": "nightjar3/integration",
+          "title": "Nightjar III independent implementation integration"
+        },
+        {
+          "n": 48,
+          "base": "nightjar/ii-integration-candidate",
+          "head": "nightjar3/adoption",
+          "title": "Distinguish the directory table landmark"
+        },
+        {
+          "n": 47,
+          "base": "nightjar/ii-integration-candidate",
+          "head": "nightjar-iii/astro-adoption",
+          "title": "Prepare paired Astro starter safety and subpath patches"
+        },
+        {
+          "n": 46,
+          "base": "nightjar/ii-integration-candidate",
+          "head": "nightjar3/jekyll-rehearsal",
+          "title": "Rehearse standalone Jekyll candidates without a cutover"
+        },
+        {
+          "n": 45,
+          "base": "nightjar/ii-integration-candidate",
+          "head": "nightjar3/react-extraction",
+          "title": "Rehearse independent family React packages"
+        },
+        {
+          "n": 44,
+          "base": "nightjar/ii-integration-candidate",
+          "head": "nightjar3/authority-map",
+          "title": "Map Nightjar III source authority and package identities"
+        },
+        {
+          "n": 43,
+          "base": "nightjar/ii-integration-candidate",
+          "head": "nightjar3/progress",
+          "title": "Track Nightjar III independent implementation work"
+        },
+        {
+          "n": 41,
+          "base": "nightjar/ii-integration-candidate",
+          "head": "nightjar2/api-followup",
+          "title": "Keep embedded error summary focus in its document"
+        },
+        {
+          "n": 40,
+          "base": "nightjar2/forms-stress",
+          "head": "nightjar2/form-popup-fix",
+          "title": "Keep custom form errors from blocking pointer recovery"
+        },
+        {
+          "n": 39,
+          "base": "nightjar/ii-integration-candidate",
+          "head": "nightjar2/admin-bulk-state",
+          "title": "Preserve administration drafts across bulk status changes"
+        },
+        {
+          "n": 38,
+          "base": "nightjar2/forms-stress",
+          "head": "nightjar2/firefox-investigation",
+          "title": "Investigate Firefox form pointer delivery"
+        },
+        {
+          "n": 37,
+          "base": "nightjar/integration-review",
+          "head": "nightjar/ii-integration-candidate",
+          "title": "Nightjar II integration candidate"
+        },
+        {
+          "n": 36,
+          "base": "nightjar/integration-review",
+          "head": "nightjar2/extended-edge",
+          "title": "Preserve React pagination focus in embedded documents"
+        },
+        {
+          "n": 35,
+          "base": "nightjar/integration-review",
+          "head": "nightjar2/admin-draft",
+          "title": "Protect unsaved administration drafts and stable field names"
+        },
+        {
+          "n": 34,
+          "base": "nightjar/integration-review",
+          "head": "nightjar2/forms-stress",
+          "title": "Revalidate current form values before local submission"
+        },
+        {
+          "n": 33,
+          "base": "nightjar/integration-review",
+          "head": "nightjar-ii/astro-source-icon",
+          "title": "Use existing family marks as Astro favicons"
+        },
+        {
+          "n": 32,
+          "base": "nightjar/integration-review",
+          "head": "nightjar-ii/react-static-slice",
+          "title": "Measure paired article transfer before changing hydration"
+        },
+        {
+          "n": 31,
+          "base": "nightjar/integration-review",
+          "head": "nightjar2/adversarial",
+          "title": "Preserve a reopened bulk confirmation"
+        },
+        {
+          "n": 30,
+          "base": "nightjar/integration-review",
+          "head": "nightjar2/science-robustness",
+          "title": "Keep scientific workspace readable with long valid values"
+        },
+        {
+          "n": 29,
+          "base": "nightjar/integration-review",
+          "head": "nightjar-ii/contrast",
+          "title": "Document incomplete contrast cases and exercise real zoom"
+        },
+        {
+          "n": 28,
+          "base": "nightjar2/agent-security",
+          "head": "nightjar2/worker-validation",
+          "title": "Bound MCP initialization icon validation"
+        },
+        {
+          "n": 27,
+          "base": "nightjar/integration-review",
+          "head": "nightjar2/component-audit",
+          "title": "Retain keyboard focus when a tab becomes unavailable"
+        },
+        {
+          "n": 26,
+          "base": "nightjar/integration-review",
+          "head": "nightjar-ii/jekyll-readiness",
+          "title": "Preserve Jekyll shell provenance and refine extraction gates"
+        },
+        {
+          "n": 25,
+          "base": "nightjar/integration-review",
+          "head": "nightjar2/host-state",
+          "title": "Preserve embedding host history state in dashboards"
+        },
+        {
+          "n": 24,
+          "base": "nightjar/integration-review",
+          "head": "nightjar-ii/publication-design",
+          "title": "Propose a fail-closed reference publication gate"
+        },
+        {
+          "n": 23,
+          "base": "nightjar/integration-review",
+          "head": "nightjar2/agent-security",
+          "title": "Patch generated agent dependency and check archive reproducibility"
+        },
+        {
+          "n": 22,
+          "base": "nightjar/integration-review",
+          "head": "nightjar/ii",
+          "title": "Track Operation Nightjar II evidence and gates"
+        },
+        {
+          "n": 20,
+          "base": "main",
+          "head": "nightjar/integration-review",
+          "title": "Review complete Nightjar integration candidate"
+        },
+        {
+          "n": 19,
+          "base": "feat/portable-page-archetypes",
+          "head": "nightjar/audit",
+          "title": "Complete portable examples and consolidate design-language contracts"
+        },
+        {
+          "n": 18,
+          "base": "main",
+          "head": "feat/portable-page-archetypes",
+          "title": "Add paired Jekyll example library and canonical dashboards"
+        }
+      ],
+      "workflows": [
+        "ci.yml",
+        "prepare-release.yml",
+        "publish.yml",
+        "reference-release.yml"
+      ]
+    }
+  ],
+  "empty": [
+    "martletdesign/react",
+    "martletdesign/jekyll",
+    "krigsvolddesign/react",
+    "krigsvolddesign/jekyll"
+  ]
+}

@@ -30,6 +30,7 @@ for (const family of ["martlet", "krigsvold"]) {
   const implementations = JSON.parse(await readFile(`docs/languages/${family}/implementation.json`, 'utf8'));
   const canonicalUrl = path => `https://github.com/${canonical.repository}/blob/${canonical.commit}/${path}`;
   const delivery=distribution.families[family];
+  const reactFoundation=delivery.packages.React.core??{name:`@${family}/theme`,version:delivery.packages.React.theme??"2.1.0"};
   await writeFile(`mcp/catalogs/${family}-distribution.json`, JSON.stringify(delivery,null,2)+"\n");
   const entries = [];
   function add(
@@ -57,6 +58,9 @@ for (const family of ["martlet", "krigsvold"]) {
   add("platform:Astro","platform",`${family} Astro API and composition`,await readFile(`skills/${family}-builder/references/astro.md`,"utf8"),`skills/${family}-builder/references/astro.md`,["Astro","API","slots","imports","contents","footer","print"]);
   add("platform:React","platform",`${family} React installation and actual component route`,await readFile(`skills/${family}-builder/references/react-setup.md`,"utf8"),`skills/${family}-builder/references/react-setup.md`,["React","install","npm","tarball","setup","available","package","checksum"]);
   for (const [id,name,title] of [["platform:HTML","native-html.md","Direct HTML class anatomy"],["styling:forms","form-styling.md","Native HTML form styling and states"]]) add(id,"platform",`${family} ${title}`,await readFile(`docs/languages/${family}/${name}`,"utf8"),canonicalUrl(canonical.files[name].sourcePath),["HTML","Astro","forms","CSS","classes","field","error","dialog","styling"]);
+  add("platform:Jekyll","platform",`${family} standalone Jekyll source and verified release`,
+    (await readFile('docs/jekyll-source-contract.md','utf8'))+`\n\nCurrent ${family} source/release authority:\n${JSON.stringify(delivery.packages.Jekyll,null,2)}`,
+    'docs/jekyll-source-contract.md',['Jekyll','source','Git','release','Ruby','build','baseurl','legacyTheme','provenance']);
   const grammar = await readFile(`docs/languages/${family}/grammar.md`, "utf8");
   add(
     "grammar",
@@ -177,7 +181,7 @@ for (const family of ["martlet", "krigsvold"]) {
     "compatibility",
     "compatibility",
     `${family} support and compatibility`,
-    `React 0.1.0 is experimental; React 19 and @${family}/theme 2.1.0. Retrieve platform:React for the pinned npm install command and alternative immutable archive checksum; publication does not imply API stability. Retrieve platform:HTML and styling:forms for core native markup. Publication status is recorded separately from the immutable canonical guidance snapshot: ${JSON.stringify(delivery.packages)}. Component examples are React-specific; platform:Astro supplies a complete reading composition and the neutral starter route. Do not treat shared styling as an Astro controller. Do not translate React event or focus props into Astro APIs. Canonical migration guide: ${canonicalUrl('docs/consolidation.md')}. Vue, Svelte and native APIs are not implemented. Manual assistive technology, localization, RTL and sustained use remain open.\n\n${JSON.stringify(implementations,null,2)}`,
+    `React ${delivery.packages.React.version} is experimental; React 19 and ${reactFoundation.name} ${reactFoundation.version}. Retrieve platform:React for the pinned npm install command and alternative immutable archive checksum; publication does not imply API stability. Retrieve platform:HTML and styling:forms for core native markup. Publication status is recorded separately from the immutable canonical guidance snapshot: ${JSON.stringify(delivery.packages)}. Component examples are React-specific; platform:Astro supplies a complete reading composition and the neutral starter route. Do not treat shared styling as an Astro controller. Do not translate React event or focus props into Astro or Jekyll APIs. Retrieve platform:Jekyll for standalone source, legacy-theme authority and independently verified source-release availability. Canonical migration guide: ${canonicalUrl('docs/consolidation.md')}. Vue, Svelte and native APIs are not implemented. Manual assistive technology, localization, RTL and sustained use remain open.\n\n${JSON.stringify(implementations,null,2)}`,
     "docs/maturity.md",
     ["platform", "version", "support", "migration"],
   );
@@ -188,14 +192,16 @@ for (const family of ["martlet", "krigsvold"]) {
     schemaVersion: 1,
     family,
     version: distribution.preview.version,
-    themeVersion: "2.1.0",
+    themeVersion: delivery.packages.React.theme??null,
+    referenceLegacyThemeVersion: "2.1.0",
     themeVersionRole: "React reference dependency; current core release is distribution.packages.core",
     grammarVersion: implementations.grammarVersion,
     sourceCommit: commit,
     sourceDigest,
     platforms: {
-      React: { version: "0.1.0", maturity: "experimental", published: delivery.packages.React.published },
+      React: { version: delivery.packages.React.version, maturity: "experimental", published: delivery.packages.React.published, foundation: reactFoundation },
       Astro: { version: delivery.packages.Astro.version, maturity: "experimental", published: delivery.packages.Astro.published, examples: true, formController: "host-owned starter specimen", core: "^"+delivery.packages.core.version },
+      Jekyll: { version: delivery.packages.Jekyll.version, maturity: "experimental", kind: "git", published: delivery.packages.Jekyll.published, sourceAvailable: true, examples: true, core: null, legacyTheme: delivery.packages.Jekyll.legacyTheme },
     },
     distribution: {...delivery, reviewedAt:distribution.reviewedAt},
     canonicalGuidance: canonical,
@@ -225,6 +231,12 @@ for (const family of ["martlet", "krigsvold"]) {
     recursive: true,
   });
   await cp("LICENSE", `${dir}/LICENSE`);
+  // Use the locked dependency set for the generated manifest as well, so the
+  // install contract cannot silently drift from the audited archive lockfile.
+  const lock = JSON.parse(await readFile("mcp/agent-lock.json", "utf8"));
+  const dependencies = lock.packages?.[""]?.dependencies;
+  if (!dependencies || typeof dependencies !== "object")
+    throw new Error("Agent lockfile is missing root dependencies");
   await writeFile(
     `${dir}/package.json`,
     JSON.stringify(
@@ -235,13 +247,12 @@ for (const family of ["martlet", "krigsvold"]) {
         type: "module",
         license: "MIT",
         engines: { node: ">=24.19.0 <25" },
-        dependencies: { "@modelcontextprotocol/server": "2.3.1", zod: "4.3.6" },
+        dependencies,
       },
       null,
       2,
     ) + "\n",
   );
-  const lock = JSON.parse(await readFile("mcp/agent-lock.json", "utf8"));
   lock.name = `${family}-design-language-mcp`;
   lock.packages[""].name = lock.name;
   await writeFile(

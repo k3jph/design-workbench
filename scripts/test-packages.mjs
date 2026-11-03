@@ -1,9 +1,12 @@
-import { mkdtempSync, writeFileSync, existsSync, rmSync } from "node:fs";
+import {reviewedRegistryCoreArchive} from './reviewed-registry-core.mjs';
+import { mkdtempSync, writeFileSync, existsSync, rmSync, readFileSync } from "node:fs";
 import { tmpdir } from "node:os";
+import { createHash } from "node:crypto";
 import { resolve, join } from "node:path";
 import { execFileSync } from "node:child_process";
 const directory = mkdtempSync(join(tmpdir(), "design-packages-"));
 try {
+  const inputs = ['martlet','krigsvold'].map(family=>reviewedRegistryCoreArchive(family,directory));
   writeFileSync(
     join(directory, "package.json"),
     JSON.stringify({
@@ -22,8 +25,9 @@ try {
       "--package-lock=false",
       "react@19.3.1",
       "react-dom@19.3.1",
-      resolve("martlet-react-0.1.0.tgz"),
-      resolve("krigsvold-react-0.1.0.tgz"),
+      ...inputs,
+      resolve("martlet-react-0.2.0.tgz"),
+      resolve("krigsvold-react-0.2.0.tgz"),
     ],
     { cwd: directory, stdio: "pipe" },
   );

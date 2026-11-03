@@ -1,0 +1,4 @@
+{
+  "families": ["martlet", "krigsvold"],
+  "frameworks": ["jekyll", "astro", "react"]
+}

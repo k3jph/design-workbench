@@ -15,3 +15,9 @@ hosted-dist/
 mcp-dist/
 
 preview-dist/
+
+dashboard-test-dist/
+
+# Isolated public-source conformance checkouts and Python bytecode.
+.react-source-*/
+__pycache__/
