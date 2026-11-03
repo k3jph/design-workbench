@@ -43,6 +43,14 @@ Each head passed six genuine CI checks. Independent native verification compared
 
 Global accessibility is **not yet complete**. Actual early all-route audits found the same six duplicate region-name failures in both families: reference, event, report, integrations, stress-test and dashboard-operations. Generic table-region labels are scheduled for wave2; operations is tracked in wave4. Behavior checks otherwise have the same 448 tested keys: 436 passes and 12 known failures per family. Their state outcomes are tested against expected behavior, not merely equality. These failures remain failures until corrected and rechecked.
 
+## Accepted reading wave
+
+[Martlet PR22](https://github.com/martletdesign/jekyll/pull/22), checked head `0e507e424a787c6631d631f4264c9bd08da01321`, normally merged as `d983fcc22218de9e96dd932d5d0cb149740b1dbd`. [Krigsvold PR20](https://github.com/krigsvolddesign/jekyll/pull/20), checked head `45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303`, normally merged as `bdbf62c0d37b705b6dbd35900bcaf40cd7dfb787`. The [reading-wave acceptance receipt](wave2-acceptance.json) pins their source trees, CI/native/public artifact and actual-review evidence.
+
+Both passed six genuine CI checks and independent verification of 567/561 files. Actual HTTPS acceptance covered 198 states, 44 clean axe scans, 60 native table/data cases and 4,316 measured contrast samples. Initial offscreen samples were explicitly unmeasured, never treated as passes; real native-scroll supplemental captures resolved their coverage. The five generic duplicate-region names are fixed. Operations remains a separate unresolved global accessibility item.
+
+Fourteen unique routes have accepted recipe-local composition/CSS/accessibility changes so far. Retained semantic anatomy can still have a measured CSS or accessible-name correction. A separate preexisting Krigsvold host-header collision at true 200% text/1440px is now a final blocker; zero document overflow was insufficient to detect it. Its eventual shared-host correction must be recorded separately from recipe restyling and from genuinely unchanged views.
+
 ## Paired implementation waves
 
 | Wave | Work | Concrete decision |

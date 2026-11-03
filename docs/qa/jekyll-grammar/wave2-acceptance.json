@@ -1,0 +1,169 @@
+{
+  "wave": 2,
+  "status": "accepted into develop",
+  "primaryReadingRoutes": [
+    "guide",
+    "reference",
+    "privacy",
+    "terms",
+    "opportunity",
+    "integrations",
+    "stress-test",
+    "article",
+    "documentation"
+  ],
+  "genericTableLabelRepairs": [
+    "reference",
+    "event",
+    "report",
+    "integrations",
+    "stress-test"
+  ],
+  "compatibilityReview": "Accepted wave1 exemplar wrappers remain verified; no reversal of their content or native behavior.",
+  "githubMergeStateIndependentlyRead": true,
+  "families": {
+    "martlet": {
+      "pullRequest": 22,
+      "url": "https://github.com/martletdesign/jekyll/pull/22",
+      "sourceHead": "0e507e424a787c6631d631f4264c9bd08da01321",
+      "sourceTree": "c5e9027f2b1a772d9669191bc093e15c478416b1",
+      "developMergeCommit": "d983fcc22218de9e96dd932d5d0cb149740b1dbd",
+      "previewUrl": "https://pr-feature-gram-d1cf2194f8-martletdesign-jekyll-reference.k3jph.workers.dev",
+      "sourceZipSha256": "c498f677f740f0966b6803990dcd22b68ea7285f825ffdaa809fde496ed763cb",
+      "artifactSha256": "9d301fbe7fcaa3b4aa1dfb09eca5062db1da757da22c1d302e840b51e94bca8b",
+      "nativeFilesIndependentlyVerified": 567,
+      "allSixGenuineChecksPassed": true,
+      "checks": {
+        "verify": {
+          "id": 126199075983,
+          "url": "https://github.com/martletdesign/jekyll/actions/runs/41716877396/job/126199075983",
+          "conclusion": "success"
+        },
+        "guard": {
+          "id": 126199076436,
+          "url": "https://github.com/martletdesign/jekyll/actions/runs/41716877467/job/126199076436",
+          "conclusion": "success"
+        },
+        "archive-build": {
+          "id": 126199076321,
+          "url": "https://github.com/martletdesign/jekyll/actions/runs/41716877467/job/126199076321",
+          "conclusion": "success"
+        },
+        "browser (chromium)": {
+          "id": 126199077258,
+          "url": "https://github.com/martletdesign/jekyll/actions/runs/41716877614/job/126199077258",
+          "conclusion": "success"
+        },
+        "browser (firefox)": {
+          "id": 126199076548,
+          "url": "https://github.com/martletdesign/jekyll/actions/runs/41716877614/job/126199076548",
+          "conclusion": "success"
+        },
+        "browser (webkit)": {
+          "id": 126199077010,
+          "url": "https://github.com/martletdesign/jekyll/actions/runs/41716877614/job/126199077010",
+          "conclusion": "success"
+        }
+      },
+      "nativeSourceReceipt": {
+        "artifact": "/workspace/work/jekyll-grammar/evidence/wave2/martlet-source.json",
+        "sha256": "b59e73d7eaad8574014e8752ff685d700c79aa0bcc8d40085bbabf2ecc5e352e"
+      },
+      "visualReceipt": {
+        "artifact": "/workspace/work/jekyll-grammar/visual/wave2-hosted/martlet-0e507e424a78/review.json",
+        "sha256": "d33311d04893fd26e99b6d33d2849f7b0d514ce732a707b59dbdb051e206de64"
+      },
+      "actualVisualCases": 88,
+      "actualRouteStateCases": 99,
+      "actualAxeScans": 22,
+      "nativeTableKeyboardCases": 30,
+      "tableDataCaptionsScopesIdsPreserved": true,
+      "initialMeasuredContrastSamples": 1934,
+      "initialUnmeasuredSamplesNotTreatedAsPassOrFail": 26,
+      "supplementalNativeScrollCaptures": 22,
+      "supplementalContrastSamples": 240,
+      "minimumObservedContrast": 4.679236606649408,
+      "offscreenCoverageResolved": true,
+      "previewIdentityScope": "Historical source-bound PR preview; named URLs are mutable, exact receipts pin this observation."
+    },
+    "krigsvold": {
+      "pullRequest": 20,
+      "url": "https://github.com/krigsvolddesign/jekyll/pull/20",
+      "sourceHead": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303",
+      "sourceTree": "46b195412f90375b212493f6d2f070106032dec1",
+      "developMergeCommit": "bdbf62c0d37b705b6dbd35900bcaf40cd7dfb787",
+      "previewUrl": "https://pr-feature-gram-d1cf2194f8-krigsvolddesign-jekyll-reference.k3jph.workers.dev",
+      "sourceZipSha256": "6fbc9de08190779d3be6383f20375a82830609eb3dc8cc2fd4ea7c3c299b179e",
+      "artifactSha256": "7268673c5e8df4244fe945606c4d1b665c3bd35d1ef717a1a29635b73f94d329",
+      "nativeFilesIndependentlyVerified": 561,
+      "allSixGenuineChecksPassed": true,
+      "checks": {
+        "verify": {
+          "id": 126196737372,
+          "url": "https://github.com/krigsvolddesign/jekyll/actions/runs/41716205919/job/126196737372",
+          "conclusion": "success"
+        },
+        "guard": {
+          "id": 126196738688,
+          "url": "https://github.com/krigsvolddesign/jekyll/actions/runs/41716205906/job/126196738688",
+          "conclusion": "success"
+        },
+        "archive-build": {
+          "id": 126196738080,
+          "url": "https://github.com/krigsvolddesign/jekyll/actions/runs/41716205906/job/126196738080",
+          "conclusion": "success"
+        },
+        "browser (chromium)": {
+          "id": 126196738707,
+          "url": "https://github.com/krigsvolddesign/jekyll/actions/runs/41716205848/job/126196738707",
+          "conclusion": "success"
+        },
+        "browser (firefox)": {
+          "id": 126196738095,
+          "url": "https://github.com/krigsvolddesign/jekyll/actions/runs/41716205848/job/126196738095",
+          "conclusion": "success"
+        },
+        "browser (webkit)": {
+          "id": 126196738623,
+          "url": "https://github.com/krigsvolddesign/jekyll/actions/runs/41716205848/job/126196738623",
+          "conclusion": "success"
+        }
+      },
+      "nativeSourceReceipt": {
+        "artifact": "/workspace/work/jekyll-grammar/evidence/wave2/krigsvold-source.json",
+        "sha256": "f2d19b5bb66fe1959834bdcf23ea24468a8e23d8064237c4f66491142bd9d55d"
+      },
+      "visualReceipt": {
+        "artifact": "/workspace/work/jekyll-grammar/visual/wave2-hosted/krigsvold-45a4166d5bbb/review.json",
+        "sha256": "730fdee831caf1ecb6f38101b2b19f330115b54cdd86c3815edac25b5efa3146"
+      },
+      "actualVisualCases": 88,
+      "actualRouteStateCases": 99,
+      "actualAxeScans": 22,
+      "nativeTableKeyboardCases": 30,
+      "tableDataCaptionsScopesIdsPreserved": true,
+      "initialMeasuredContrastSamples": 1920,
+      "initialUnmeasuredSamplesNotTreatedAsPassOrFail": 26,
+      "supplementalNativeScrollCaptures": 18,
+      "supplementalContrastSamples": 222,
+      "minimumObservedContrast": 5.52921717932692,
+      "offscreenCoverageResolved": true,
+      "previewIdentityScope": "Historical source-bound PR preview; named URLs are mutable, exact receipts pin this observation."
+    }
+  },
+  "actualHttpsReceipt": {
+    "artifact": "/workspace/work/jekyll-grammar/acceptance/wave2-actual-https-summary.json",
+    "sha256": "f0c134047766ffb3fbf5c4f87f6014ab6d4dd118eb364312b6c54fa037b694e5"
+  },
+  "premergeGates": {
+    "artifact": "/workspace/work/jekyll-grammar/evidence/wave2/premerge-gates.json",
+    "sha256": "c342e7a774f1357256a3fe7111628a8ac3f1361d4e121bcb54c031753529d6b2"
+  },
+  "protectedSourceReview": "wave2-protected-security-review.json",
+  "globalAll50AccessibilityPassed": false,
+  "remainingGlobalAccessibilityRoute": "dashboard-operations",
+  "manualAssistiveTechnologyClaimed": false,
+  "independentBuildIdentityAttestationClaimed": false,
+  "productionPromotionPerformed": false,
+  "pixelMethod": "Measurements use original actual captures, not resized/compressed portable contact-sheet pixels. Initial offscreen samples were not passes; native-scroll supplemental capture resolves coverage."
+}

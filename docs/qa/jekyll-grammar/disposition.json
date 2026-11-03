@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "issue": "https://github.com/k3jph/design-workbench/issues/91",
-  "updatedAt": "2026-11-03T20:36:53.995068+00:00",
+  "updatedAt": "2026-11-03T21:23:55.193391+00:00",
   "scope": "50 paired Jekyll routes; semantic-anatomy dispositions plus separately tracked source-justified CSS/composition changes, not completed conformance",
   "baselines": {
     "workbenchDevelop": "8dfb0ffe374cdc07dca370f80122ccd7c49edb50",
@@ -150,6 +150,12 @@
       "sha256": "f6078aaaeb483f48271e4ecbdcaa736d6d2d862c8c3320ef8a27b2a8a608cd0e",
       "result": "Frozen v2 baseline captures692 meaning chunks per family and6genericdashboardplaceholdervalues not literally rendered, plus native forms/controls/links/IDs/machine-readable times.",
       "acceptanceScope": "Baseline semantics, not final visual or accessibility acceptance."
+    },
+    {
+      "kind": "accepted-wave2",
+      "summary": "wave2-acceptance.json",
+      "result": "Both reading PRs normally merged with source-bound proof; initial offscreen pixels resolved via real native scrolling, not silently passed.",
+      "acceptanceScope": "Scoped acceptance. Final all50 visual/behavior/accessibility consolidation remains."
     }
   ],
   "rows": [
@@ -282,7 +288,10 @@
       },
       "semanticAnatomyDecision": "retain",
       "observedChangeCategories": [],
-      "wave3ReviewDisposition": "retain-existing-native-composition-with-actual-review"
+      "wave3ReviewDisposition": "retain-existing-native-composition-with-actual-review",
+      "hostRefinementRefs": [
+        "krigsvold-large-text-navigation"
+      ]
     },
     {
       "order": 2,
@@ -415,7 +424,10 @@
       },
       "semanticAnatomyDecision": "retain",
       "observedChangeCategories": [],
-      "wave3ReviewDisposition": "retain-existing-native-composition-with-actual-review"
+      "wave3ReviewDisposition": "retain-existing-native-composition-with-actual-review",
+      "hostRefinementRefs": [
+        "krigsvold-large-text-navigation"
+      ]
     },
     {
       "order": 3,
@@ -465,8 +477,8 @@
       },
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 2,
-      "implementationStatus": "wave2-candidate-implemented-unaccepted",
-      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "implementationStatus": "accepted-into-develop",
+      "visualReviewStatus": "Reading/generic-table scope accepted with source-bound actual HTTPS, CI, native payload and accessibility/contrast evidence.",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -535,15 +547,40 @@
           },
           "result": "Fixture/images/fonts/shell/hero/runtimeJS/infra/deployment/releasepolicy/locks are unchanged Gitobjects. Sourceallowlists add only intended adapter+QA doc, all regular safe paths. Engines/cancellation/job/operation bounds preserved.",
           "acceptanceScope": "Read-only source security verdict, not full hosted acceptance."
+        },
+        {
+          "kind": "accepted-wave2",
+          "summary": "wave2-acceptance.json",
+          "result": "Exact paired normal merges accepted after all six genuine checks, automatic native source/payload verification, actual visual/state/axe/table/contrast checks.",
+          "acceptanceScope": "Reading and generic-table scope. Operations debt and remaining route reviews are not passed by implication."
         }
       ],
-      "pullRequests": [],
+      "pullRequests": [
+        {
+          "family": "martlet",
+          "number": 22,
+          "url": "https://github.com/martletdesign/jekyll/pull/22",
+          "head": "0e507e424a787c6631d631f4264c9bd08da01321",
+          "mergeCommit": "d983fcc22218de9e96dd932d5d0cb149740b1dbd",
+          "status": "merged",
+          "previewUrl": "https://pr-feature-gram-d1cf2194f8-martletdesign-jekyll-reference.k3jph.workers.dev"
+        },
+        {
+          "family": "krigsvold",
+          "number": 20,
+          "url": "https://github.com/krigsvolddesign/jekyll/pull/20",
+          "head": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303",
+          "mergeCommit": "bdbf62c0d37b705b6dbd35900bcaf40cd7dfb787",
+          "status": "merged",
+          "previewUrl": "https://pr-feature-gram-d1cf2194f8-krigsvolddesign-jekyll-reference.k3jph.workers.dev"
+        }
+      ],
       "exceptions": [],
       "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
       "compositionRefinements": [],
       "familyImplementationStatus": {
-        "martlet": "Published wave2 exact source 0e507e424a787c6631d631f4264c9bd08da01321; six genuine CI/native checks passed, final paired actual acceptance and normal integration still pending.",
-        "krigsvold": "Published wave2 exact source 45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303; six genuine CI/native checks passed, final paired actual acceptance and normal integration still pending."
+        "martlet": "Accepted through PR22 at 0e507e424a787c6631d631f4264c9bd08da01321; normal develop merge d983fcc22218de9e96dd932d5d0cb149740b1dbd",
+        "krigsvold": "Accepted through PR20 at 45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303; normal develop merge bdbf62c0d37b705b6dbd35900bcaf40cd7dfb787"
       },
       "localReview": {
         "status": "pending-systemwide-visual-review",
@@ -574,17 +611,12 @@
         }
       },
       "semanticAnatomyDecision": "retain",
-      "observedChangeCategories": [],
+      "observedChangeCategories": [
+        "source-observed-inline-article-navigation"
+      ],
       "pendingChangeCategories": [
         "source-observed inline article navigation and reading composition review"
       ],
-      "candidateChangeCategories": [
-        "source-observed-inline-article-navigation"
-      ],
-      "candidateSourceHeads": {
-        "martlet": "0e507e424a787c6631d631f4264c9bd08da01321",
-        "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
-      },
       "candidateAfterGeometry": {
         "artifact": "/workspace/work/jekyll-grammar/visual/reading/route-measures.json",
         "sha256": "5c2092d1ce1fb7edcac01fd16173d1d198f04729794e21116a08a56a7d9d4a3d",
@@ -613,7 +645,10 @@
           }
         ],
         "scope": "Local wave2 candidates only; normal1440px computed dimensions, not hosted source proof."
-      }
+      },
+      "hostRefinementRefs": [
+        "krigsvold-large-text-navigation"
+      ]
     },
     {
       "order": 4,
@@ -742,7 +777,10 @@
       },
       "semanticAnatomyDecision": "retain",
       "observedChangeCategories": [],
-      "wave3ReviewDisposition": "retain-existing-native-composition-with-actual-review"
+      "wave3ReviewDisposition": "retain-existing-native-composition-with-actual-review",
+      "hostRefinementRefs": [
+        "krigsvold-large-text-navigation"
+      ]
     },
     {
       "order": 5,
@@ -871,7 +909,10 @@
       },
       "semanticAnatomyDecision": "retain",
       "observedChangeCategories": [],
-      "wave3ReviewDisposition": "retain-existing-native-composition-with-actual-review"
+      "wave3ReviewDisposition": "retain-existing-native-composition-with-actual-review",
+      "hostRefinementRefs": [
+        "krigsvold-large-text-navigation"
+      ]
     },
     {
       "order": 6,
@@ -1000,7 +1041,10 @@
       },
       "semanticAnatomyDecision": "retain",
       "observedChangeCategories": [],
-      "wave3ReviewDisposition": "retain-existing-native-composition-with-actual-review"
+      "wave3ReviewDisposition": "retain-existing-native-composition-with-actual-review",
+      "hostRefinementRefs": [
+        "krigsvold-large-text-navigation"
+      ]
     },
     {
       "order": 7,
@@ -1133,7 +1177,10 @@
       },
       "semanticAnatomyDecision": "retain",
       "observedChangeCategories": [],
-      "wave3ReviewDisposition": "retain-existing-native-composition-with-actual-review"
+      "wave3ReviewDisposition": "retain-existing-native-composition-with-actual-review",
+      "hostRefinementRefs": [
+        "krigsvold-large-text-navigation"
+      ]
     },
     {
       "order": 8,
@@ -1262,7 +1309,10 @@
       },
       "semanticAnatomyDecision": "retain",
       "observedChangeCategories": [],
-      "wave3ReviewDisposition": "retain-existing-native-composition-with-actual-review"
+      "wave3ReviewDisposition": "retain-existing-native-composition-with-actual-review",
+      "hostRefinementRefs": [
+        "krigsvold-large-text-navigation"
+      ]
     },
     {
       "order": 9,
@@ -1397,7 +1447,10 @@
       },
       "semanticAnatomyDecision": "retain",
       "observedChangeCategories": [],
-      "wave3ReviewDisposition": "retain-existing-native-composition-with-actual-review"
+      "wave3ReviewDisposition": "retain-existing-native-composition-with-actual-review",
+      "hostRefinementRefs": [
+        "krigsvold-large-text-navigation"
+      ]
     },
     {
       "order": 10,
@@ -1443,8 +1496,8 @@
       },
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 2,
-      "implementationStatus": "wave2-candidate-implemented-unaccepted",
-      "visualReviewStatus": "matching pinned baseline captured at320/768/1440 light/dark plus masked diagnostic; independent after acceptance pending",
+      "implementationStatus": "accepted-into-develop",
+      "visualReviewStatus": "Reading/generic-table scope accepted with source-bound actual HTTPS, CI, native payload and accessibility/contrast evidence.",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -1513,15 +1566,40 @@
           },
           "result": "Fixture/images/fonts/shell/hero/runtimeJS/infra/deployment/releasepolicy/locks are unchanged Gitobjects. Sourceallowlists add only intended adapter+QA doc, all regular safe paths. Engines/cancellation/job/operation bounds preserved.",
           "acceptanceScope": "Read-only source security verdict, not full hosted acceptance."
+        },
+        {
+          "kind": "accepted-wave2",
+          "summary": "wave2-acceptance.json",
+          "result": "Exact paired normal merges accepted after all six genuine checks, automatic native source/payload verification, actual visual/state/axe/table/contrast checks.",
+          "acceptanceScope": "Reading and generic-table scope. Operations debt and remaining route reviews are not passed by implication."
         }
       ],
-      "pullRequests": [],
+      "pullRequests": [
+        {
+          "family": "martlet",
+          "number": 22,
+          "url": "https://github.com/martletdesign/jekyll/pull/22",
+          "head": "0e507e424a787c6631d631f4264c9bd08da01321",
+          "mergeCommit": "d983fcc22218de9e96dd932d5d0cb149740b1dbd",
+          "status": "merged",
+          "previewUrl": "https://pr-feature-gram-d1cf2194f8-martletdesign-jekyll-reference.k3jph.workers.dev"
+        },
+        {
+          "family": "krigsvold",
+          "number": 20,
+          "url": "https://github.com/krigsvolddesign/jekyll/pull/20",
+          "head": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303",
+          "mergeCommit": "bdbf62c0d37b705b6dbd35900bcaf40cd7dfb787",
+          "status": "merged",
+          "previewUrl": "https://pr-feature-gram-d1cf2194f8-krigsvolddesign-jekyll-reference.k3jph.workers.dev"
+        }
+      ],
       "exceptions": [],
       "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
       "compositionRefinements": [],
       "familyImplementationStatus": {
-        "martlet": "Published wave2 exact source 0e507e424a787c6631d631f4264c9bd08da01321; six genuine CI/native checks passed, final paired actual acceptance and normal integration still pending.",
-        "krigsvold": "Published wave2 exact source 45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303; six genuine CI/native checks passed, final paired actual acceptance and normal integration still pending."
+        "martlet": "Accepted through PR22 at 0e507e424a787c6631d631f4264c9bd08da01321; normal develop merge d983fcc22218de9e96dd932d5d0cb149740b1dbd",
+        "krigsvold": "Accepted through PR20 at 45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303; normal develop merge bdbf62c0d37b705b6dbd35900bcaf40cd7dfb787"
       },
       "localReview": {
         "status": "pending-systemwide-visual-review",
@@ -1552,17 +1630,12 @@
         }
       },
       "semanticAnatomyDecision": "change",
-      "observedChangeCategories": [],
+      "observedChangeCategories": [
+        "documentation-start-link-composition"
+      ],
       "pendingChangeCategories": [
         "annotated documentation-start navigation composition"
       ],
-      "candidateChangeCategories": [
-        "documentation-start-link-composition"
-      ],
-      "candidateSourceHeads": {
-        "martlet": "0e507e424a787c6631d631f4264c9bd08da01321",
-        "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
-      },
       "candidateAfterGeometry": {
         "artifact": "/workspace/work/jekyll-grammar/visual/reading/route-measures.json",
         "sha256": "5c2092d1ce1fb7edcac01fd16173d1d198f04729794e21116a08a56a7d9d4a3d",
@@ -1591,7 +1664,10 @@
           }
         ],
         "scope": "Local wave2 candidates only; normal1440px computed dimensions, not hosted source proof."
-      }
+      },
+      "hostRefinementRefs": [
+        "krigsvold-large-text-navigation"
+      ]
     },
     {
       "order": 11,
@@ -1641,8 +1717,8 @@
       },
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 2,
-      "implementationStatus": "wave2-candidate-implemented-unaccepted",
-      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "implementationStatus": "accepted-into-develop",
+      "visualReviewStatus": "Reading/generic-table scope accepted with source-bound actual HTTPS, CI, native payload and accessibility/contrast evidence.",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -1711,15 +1787,40 @@
           },
           "result": "Fixture/images/fonts/shell/hero/runtimeJS/infra/deployment/releasepolicy/locks are unchanged Gitobjects. Sourceallowlists add only intended adapter+QA doc, all regular safe paths. Engines/cancellation/job/operation bounds preserved.",
           "acceptanceScope": "Read-only source security verdict, not full hosted acceptance."
+        },
+        {
+          "kind": "accepted-wave2",
+          "summary": "wave2-acceptance.json",
+          "result": "Exact paired normal merges accepted after all six genuine checks, automatic native source/payload verification, actual visual/state/axe/table/contrast checks.",
+          "acceptanceScope": "Reading and generic-table scope. Operations debt and remaining route reviews are not passed by implication."
         }
       ],
-      "pullRequests": [],
+      "pullRequests": [
+        {
+          "family": "martlet",
+          "number": 22,
+          "url": "https://github.com/martletdesign/jekyll/pull/22",
+          "head": "0e507e424a787c6631d631f4264c9bd08da01321",
+          "mergeCommit": "d983fcc22218de9e96dd932d5d0cb149740b1dbd",
+          "status": "merged",
+          "previewUrl": "https://pr-feature-gram-d1cf2194f8-martletdesign-jekyll-reference.k3jph.workers.dev"
+        },
+        {
+          "family": "krigsvold",
+          "number": 20,
+          "url": "https://github.com/krigsvolddesign/jekyll/pull/20",
+          "head": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303",
+          "mergeCommit": "bdbf62c0d37b705b6dbd35900bcaf40cd7dfb787",
+          "status": "merged",
+          "previewUrl": "https://pr-feature-gram-d1cf2194f8-krigsvolddesign-jekyll-reference.k3jph.workers.dev"
+        }
+      ],
       "exceptions": [],
       "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
       "compositionRefinements": [
         {
           "id": "document-index-body-measure",
-          "status": "Source candidates implement correction; independent after-geometry and full gates pending.",
+          "status": "Wave2 correction accepted into develop after actual review.",
           "baselineSourceObservation": "Both pinned baseline wrappers measure736px at 1440px. Martlet index224px/gap72px/article440px; Krigsvold index208px/gap57.6px/article470.4px. Source reading/context roles warrant reviewing the index-plus-body envelope separately from bounded prose.",
           "requiredJudgment": "Retain semantic sections/anchors where justified while correcting proven cramped total-wrapper/body geometry. Record CSS refinement as an actual change even when semantic anatomy is retained.",
           "familySourceRules": [
@@ -1731,8 +1832,8 @@
         }
       ],
       "familyImplementationStatus": {
-        "martlet": "Published wave2 exact source 0e507e424a787c6631d631f4264c9bd08da01321; six genuine CI/native checks passed, final paired actual acceptance and normal integration still pending.",
-        "krigsvold": "Published wave2 exact source 45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303; six genuine CI/native checks passed, final paired actual acceptance and normal integration still pending."
+        "martlet": "Accepted through PR22 at 0e507e424a787c6631d631f4264c9bd08da01321; normal develop merge d983fcc22218de9e96dd932d5d0cb149740b1dbd",
+        "krigsvold": "Accepted through PR20 at 45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303; normal develop merge bdbf62c0d37b705b6dbd35900bcaf40cd7dfb787"
       },
       "localReview": {
         "status": "pending-systemwide-visual-review",
@@ -1795,17 +1896,12 @@
         }
       },
       "semanticAnatomyDecision": "change",
-      "observedChangeCategories": [],
+      "observedChangeCategories": [
+        "reading-envelope-css"
+      ],
       "pendingChangeCategories": [
         "source-sized document-envelope CSS refinement"
       ],
-      "candidateChangeCategories": [
-        "reading-envelope-css"
-      ],
-      "candidateSourceHeads": {
-        "martlet": "0e507e424a787c6631d631f4264c9bd08da01321",
-        "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
-      },
       "candidateAfterGeometry": {
         "artifact": "/workspace/work/jekyll-grammar/visual/reading/route-measures.json",
         "sha256": "5c2092d1ce1fb7edcac01fd16173d1d198f04729794e21116a08a56a7d9d4a3d",
@@ -1841,6 +1937,9 @@
           "judgment": "Native policy/procedural/list/definition-list/code/table anatomy remains justified while independent document-envelope geometry is corrected. Local horizontal table scrolling is intentional, keyboard accessible and distinct from page overflow.",
           "scope": "Local paired visual review; final hosted/global acceptance pending."
         }
+      ],
+      "hostRefinementRefs": [
+        "krigsvold-large-text-navigation"
       ]
     },
     {
@@ -1893,8 +1992,8 @@
       },
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 2,
-      "implementationStatus": "wave2-candidate-implemented-unaccepted",
-      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "implementationStatus": "accepted-into-develop",
+      "visualReviewStatus": "Reading/generic-table scope accepted with source-bound actual HTTPS, CI, native payload and accessibility/contrast evidence.",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -1964,15 +2063,40 @@
           },
           "result": "Fixture/images/fonts/shell/hero/runtimeJS/infra/deployment/releasepolicy/locks are unchanged Gitobjects. Sourceallowlists add only intended adapter+QA doc, all regular safe paths. Engines/cancellation/job/operation bounds preserved.",
           "acceptanceScope": "Read-only source security verdict, not full hosted acceptance."
+        },
+        {
+          "kind": "accepted-wave2",
+          "summary": "wave2-acceptance.json",
+          "result": "Exact paired normal merges accepted after all six genuine checks, automatic native source/payload verification, actual visual/state/axe/table/contrast checks.",
+          "acceptanceScope": "Reading and generic-table scope. Operations debt and remaining route reviews are not passed by implication."
         }
       ],
-      "pullRequests": [],
+      "pullRequests": [
+        {
+          "family": "martlet",
+          "number": 22,
+          "url": "https://github.com/martletdesign/jekyll/pull/22",
+          "head": "0e507e424a787c6631d631f4264c9bd08da01321",
+          "mergeCommit": "d983fcc22218de9e96dd932d5d0cb149740b1dbd",
+          "status": "merged",
+          "previewUrl": "https://pr-feature-gram-d1cf2194f8-martletdesign-jekyll-reference.k3jph.workers.dev"
+        },
+        {
+          "family": "krigsvold",
+          "number": 20,
+          "url": "https://github.com/krigsvolddesign/jekyll/pull/20",
+          "head": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303",
+          "mergeCommit": "bdbf62c0d37b705b6dbd35900bcaf40cd7dfb787",
+          "status": "merged",
+          "previewUrl": "https://pr-feature-gram-d1cf2194f8-krigsvolddesign-jekyll-reference.k3jph.workers.dev"
+        }
+      ],
       "exceptions": [],
       "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
       "compositionRefinements": [
         {
           "id": "document-index-body-measure",
-          "status": "Source candidates implement correction; independent after-geometry and full gates pending.",
+          "status": "Wave2 correction accepted into develop after actual review.",
           "baselineSourceObservation": "Both pinned baseline wrappers measure736px at 1440px. Martlet index224px/gap72px/article440px; Krigsvold index208px/gap57.6px/article470.4px. Source reading/context roles warrant reviewing the index-plus-body envelope separately from bounded prose.",
           "requiredJudgment": "Retain semantic sections/anchors where justified while correcting proven cramped total-wrapper/body geometry. Record CSS refinement as an actual change even when semantic anatomy is retained.",
           "familySourceRules": [
@@ -1984,8 +2108,8 @@
         }
       ],
       "familyImplementationStatus": {
-        "martlet": "Published wave2 exact source 0e507e424a787c6631d631f4264c9bd08da01321; six genuine CI/native checks passed, final paired actual acceptance and normal integration still pending.",
-        "krigsvold": "Published wave2 exact source 45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303; six genuine CI/native checks passed, final paired actual acceptance and normal integration still pending."
+        "martlet": "Accepted through PR22 at 0e507e424a787c6631d631f4264c9bd08da01321; normal develop merge d983fcc22218de9e96dd932d5d0cb149740b1dbd",
+        "krigsvold": "Accepted through PR20 at 45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303; normal develop merge bdbf62c0d37b705b6dbd35900bcaf40cd7dfb787"
       },
       "localReview": {
         "status": "pending-systemwide-visual-review",
@@ -2019,7 +2143,7 @@
         {
           "id": "distinct-table-region-name",
           "family": "both",
-          "status": "Verified corrected in both immutable wave2 local candidates; hosted acceptance pending",
+          "status": "Corrected and independently verified in accepted wave2 in both families.",
           "sourceCommit": "d025637e1fe4c11d84c691276d6b3652719b9a30",
           "artifact": "/workspace/work/jekyll-grammar/acceptance/martlet-candidate-wave1-all50-chromium/report.json",
           "artifactSha256": "2f803bdac9662de2cc99275e5f2e7704b34944ab9348d0df28f6961f1c0e7bc0",
@@ -2035,7 +2159,8 @@
             "krigsvold": "8dfcca47b5c312e125ac320643c442b1a00f8490"
           },
           "pairedDiagnostic": "/workspace/work/jekyll-grammar/acceptance/early-all50-audit.json",
-          "localConfirmation": "wave2-local-review.json"
+          "localConfirmation": "wave2-local-review.json",
+          "acceptedEvidence": "wave2-acceptance.json"
         }
       ],
       "baselineComputedGeometry": {
@@ -2071,18 +2196,13 @@
         }
       },
       "semanticAnatomyDecision": "change",
-      "observedChangeCategories": [],
-      "pendingChangeCategories": [
-        "source-sized document-envelope CSS refinement"
-      ],
-      "candidateChangeCategories": [
+      "observedChangeCategories": [
         "reading-envelope-css",
         "unique-table-scroll-region-name"
       ],
-      "candidateSourceHeads": {
-        "martlet": "0e507e424a787c6631d631f4264c9bd08da01321",
-        "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
-      },
+      "pendingChangeCategories": [
+        "source-sized document-envelope CSS refinement"
+      ],
       "candidateAfterGeometry": {
         "artifact": "/workspace/work/jekyll-grammar/visual/reading/route-measures.json",
         "sha256": "5c2092d1ce1fb7edcac01fd16173d1d198f04729794e21116a08a56a7d9d4a3d",
@@ -2111,7 +2231,10 @@
           }
         ],
         "scope": "Local wave2 candidates only; normal1440px computed dimensions, not hosted source proof."
-      }
+      },
+      "hostRefinementRefs": [
+        "krigsvold-large-text-navigation"
+      ]
     },
     {
       "order": 13,
@@ -2243,7 +2366,10 @@
       },
       "semanticAnatomyDecision": "retain",
       "observedChangeCategories": [],
-      "wave3ReviewDisposition": "retain-existing-native-composition-with-actual-review"
+      "wave3ReviewDisposition": "retain-existing-native-composition-with-actual-review",
+      "hostRefinementRefs": [
+        "krigsvold-large-text-navigation"
+      ]
     },
     {
       "order": 14,
@@ -2402,6 +2528,12 @@
           "artifactSha256": "b75337720476cfdfb9be5f6dcc13827f6cc332c24e8c0ee7c397f7137db63b67",
           "result": "Specialist reviewed12 paired routes at320/1440 light/dark;96 normal states plus8actual200%Krigsvold targets. No captured page overflow/errors; native local table/code scrolling retained.",
           "acceptanceScope": "Local104case scope; hosted/CI/independent after semantic and accessibility gates remain pending."
+        },
+        {
+          "kind": "wave2-compatibility",
+          "summary": "wave2-acceptance.json",
+          "result": "Existing accepted exemplar content/behavior retained while reading styles integrate; source-bound CI and independent contracts pass.",
+          "acceptanceScope": "Compatibility, not a new claim that all remaining routes are visually complete."
         }
       ],
       "pullRequests": [
@@ -2540,7 +2672,10 @@
           }
         ],
         "scope": "Local wave2 candidates only; normal1440px computed dimensions, not hosted source proof."
-      }
+      },
+      "hostRefinementRefs": [
+        "krigsvold-large-text-navigation"
+      ]
     },
     {
       "order": 15,
@@ -2590,8 +2725,8 @@
       },
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 2,
-      "implementationStatus": "wave2-candidate-implemented-unaccepted",
-      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "implementationStatus": "accepted-into-develop",
+      "visualReviewStatus": "Reading/generic-table scope accepted with source-bound actual HTTPS, CI, native payload and accessibility/contrast evidence.",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -2660,15 +2795,40 @@
           },
           "result": "Fixture/images/fonts/shell/hero/runtimeJS/infra/deployment/releasepolicy/locks are unchanged Gitobjects. Sourceallowlists add only intended adapter+QA doc, all regular safe paths. Engines/cancellation/job/operation bounds preserved.",
           "acceptanceScope": "Read-only source security verdict, not full hosted acceptance."
+        },
+        {
+          "kind": "accepted-wave2",
+          "summary": "wave2-acceptance.json",
+          "result": "Exact paired normal merges accepted after all six genuine checks, automatic native source/payload verification, actual visual/state/axe/table/contrast checks.",
+          "acceptanceScope": "Reading and generic-table scope. Operations debt and remaining route reviews are not passed by implication."
         }
       ],
-      "pullRequests": [],
+      "pullRequests": [
+        {
+          "family": "martlet",
+          "number": 22,
+          "url": "https://github.com/martletdesign/jekyll/pull/22",
+          "head": "0e507e424a787c6631d631f4264c9bd08da01321",
+          "mergeCommit": "d983fcc22218de9e96dd932d5d0cb149740b1dbd",
+          "status": "merged",
+          "previewUrl": "https://pr-feature-gram-d1cf2194f8-martletdesign-jekyll-reference.k3jph.workers.dev"
+        },
+        {
+          "family": "krigsvold",
+          "number": 20,
+          "url": "https://github.com/krigsvolddesign/jekyll/pull/20",
+          "head": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303",
+          "mergeCommit": "bdbf62c0d37b705b6dbd35900bcaf40cd7dfb787",
+          "status": "merged",
+          "previewUrl": "https://pr-feature-gram-d1cf2194f8-krigsvolddesign-jekyll-reference.k3jph.workers.dev"
+        }
+      ],
       "exceptions": [],
       "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
       "compositionRefinements": [
         {
           "id": "document-index-body-measure",
-          "status": "Source candidates implement correction; independent after-geometry and full gates pending.",
+          "status": "Wave2 correction accepted into develop after actual review.",
           "baselineSourceObservation": "Both pinned baseline wrappers measure736px at 1440px. Martlet index224px/gap72px/article440px; Krigsvold index208px/gap57.6px/article470.4px. Source reading/context roles warrant reviewing the index-plus-body envelope separately from bounded prose.",
           "requiredJudgment": "Retain semantic sections/anchors where justified while correcting proven cramped total-wrapper/body geometry. Record CSS refinement as an actual change even when semantic anatomy is retained.",
           "familySourceRules": [
@@ -2680,8 +2840,8 @@
         }
       ],
       "familyImplementationStatus": {
-        "martlet": "Published wave2 exact source 0e507e424a787c6631d631f4264c9bd08da01321; six genuine CI/native checks passed, final paired actual acceptance and normal integration still pending.",
-        "krigsvold": "Published wave2 exact source 45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303; six genuine CI/native checks passed, final paired actual acceptance and normal integration still pending."
+        "martlet": "Accepted through PR22 at 0e507e424a787c6631d631f4264c9bd08da01321; normal develop merge d983fcc22218de9e96dd932d5d0cb149740b1dbd",
+        "krigsvold": "Accepted through PR20 at 45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303; normal develop merge bdbf62c0d37b705b6dbd35900bcaf40cd7dfb787"
       },
       "localReview": {
         "status": "pending-systemwide-visual-review",
@@ -2744,17 +2904,12 @@
         }
       },
       "semanticAnatomyDecision": "retain",
-      "observedChangeCategories": [],
+      "observedChangeCategories": [
+        "reading-envelope-css"
+      ],
       "pendingChangeCategories": [
         "source-sized document-envelope CSS refinement"
       ],
-      "candidateChangeCategories": [
-        "reading-envelope-css"
-      ],
-      "candidateSourceHeads": {
-        "martlet": "0e507e424a787c6631d631f4264c9bd08da01321",
-        "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
-      },
       "candidateAfterGeometry": {
         "artifact": "/workspace/work/jekyll-grammar/visual/reading/route-measures.json",
         "sha256": "5c2092d1ce1fb7edcac01fd16173d1d198f04729794e21116a08a56a7d9d4a3d",
@@ -2790,6 +2945,9 @@
           "judgment": "Native policy/procedural/list/definition-list/code/table anatomy remains justified while independent document-envelope geometry is corrected. Local horizontal table scrolling is intentional, keyboard accessible and distinct from page overflow.",
           "scope": "Local paired visual review; final hosted/global acceptance pending."
         }
+      ],
+      "hostRefinementRefs": [
+        "krigsvold-large-text-navigation"
       ]
     },
     {
@@ -2840,8 +2998,8 @@
       },
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 2,
-      "implementationStatus": "wave2-candidate-implemented-unaccepted",
-      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "implementationStatus": "accepted-into-develop",
+      "visualReviewStatus": "Reading/generic-table scope accepted with source-bound actual HTTPS, CI, native payload and accessibility/contrast evidence.",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -2910,15 +3068,40 @@
           },
           "result": "Fixture/images/fonts/shell/hero/runtimeJS/infra/deployment/releasepolicy/locks are unchanged Gitobjects. Sourceallowlists add only intended adapter+QA doc, all regular safe paths. Engines/cancellation/job/operation bounds preserved.",
           "acceptanceScope": "Read-only source security verdict, not full hosted acceptance."
+        },
+        {
+          "kind": "accepted-wave2",
+          "summary": "wave2-acceptance.json",
+          "result": "Exact paired normal merges accepted after all six genuine checks, automatic native source/payload verification, actual visual/state/axe/table/contrast checks.",
+          "acceptanceScope": "Reading and generic-table scope. Operations debt and remaining route reviews are not passed by implication."
         }
       ],
-      "pullRequests": [],
+      "pullRequests": [
+        {
+          "family": "martlet",
+          "number": 22,
+          "url": "https://github.com/martletdesign/jekyll/pull/22",
+          "head": "0e507e424a787c6631d631f4264c9bd08da01321",
+          "mergeCommit": "d983fcc22218de9e96dd932d5d0cb149740b1dbd",
+          "status": "merged",
+          "previewUrl": "https://pr-feature-gram-d1cf2194f8-martletdesign-jekyll-reference.k3jph.workers.dev"
+        },
+        {
+          "family": "krigsvold",
+          "number": 20,
+          "url": "https://github.com/krigsvolddesign/jekyll/pull/20",
+          "head": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303",
+          "mergeCommit": "bdbf62c0d37b705b6dbd35900bcaf40cd7dfb787",
+          "status": "merged",
+          "previewUrl": "https://pr-feature-gram-d1cf2194f8-krigsvolddesign-jekyll-reference.k3jph.workers.dev"
+        }
+      ],
       "exceptions": [],
       "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
       "compositionRefinements": [
         {
           "id": "document-index-body-measure",
-          "status": "Source candidates implement correction; independent after-geometry and full gates pending.",
+          "status": "Wave2 correction accepted into develop after actual review.",
           "baselineSourceObservation": "Both pinned baseline wrappers measure736px at 1440px. Martlet index224px/gap72px/article440px; Krigsvold index208px/gap57.6px/article470.4px. Source reading/context roles warrant reviewing the index-plus-body envelope separately from bounded prose.",
           "requiredJudgment": "Retain semantic sections/anchors where justified while correcting proven cramped total-wrapper/body geometry. Record CSS refinement as an actual change even when semantic anatomy is retained.",
           "familySourceRules": [
@@ -2930,8 +3113,8 @@
         }
       ],
       "familyImplementationStatus": {
-        "martlet": "Published wave2 exact source 0e507e424a787c6631d631f4264c9bd08da01321; six genuine CI/native checks passed, final paired actual acceptance and normal integration still pending.",
-        "krigsvold": "Published wave2 exact source 45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303; six genuine CI/native checks passed, final paired actual acceptance and normal integration still pending."
+        "martlet": "Accepted through PR22 at 0e507e424a787c6631d631f4264c9bd08da01321; normal develop merge d983fcc22218de9e96dd932d5d0cb149740b1dbd",
+        "krigsvold": "Accepted through PR20 at 45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303; normal develop merge bdbf62c0d37b705b6dbd35900bcaf40cd7dfb787"
       },
       "localReview": {
         "status": "pending-systemwide-visual-review",
@@ -2994,17 +3177,12 @@
         }
       },
       "semanticAnatomyDecision": "retain",
-      "observedChangeCategories": [],
+      "observedChangeCategories": [
+        "reading-envelope-css"
+      ],
       "pendingChangeCategories": [
         "source-sized document-envelope CSS refinement"
       ],
-      "candidateChangeCategories": [
-        "reading-envelope-css"
-      ],
-      "candidateSourceHeads": {
-        "martlet": "0e507e424a787c6631d631f4264c9bd08da01321",
-        "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
-      },
       "candidateAfterGeometry": {
         "artifact": "/workspace/work/jekyll-grammar/visual/reading/route-measures.json",
         "sha256": "5c2092d1ce1fb7edcac01fd16173d1d198f04729794e21116a08a56a7d9d4a3d",
@@ -3040,6 +3218,9 @@
           "judgment": "Native policy/procedural/list/definition-list/code/table anatomy remains justified while independent document-envelope geometry is corrected. Local horizontal table scrolling is intentional, keyboard accessible and distinct from page overflow.",
           "scope": "Local paired visual review; final hosted/global acceptance pending."
         }
+      ],
+      "hostRefinementRefs": [
+        "krigsvold-large-text-navigation"
       ]
     },
     {
@@ -3173,7 +3354,10 @@
       },
       "semanticAnatomyDecision": "retain",
       "observedChangeCategories": [],
-      "wave3ReviewDisposition": "retain-existing-native-composition-with-actual-review"
+      "wave3ReviewDisposition": "retain-existing-native-composition-with-actual-review",
+      "hostRefinementRefs": [
+        "krigsvold-large-text-navigation"
+      ]
     },
     {
       "order": 18,
@@ -3306,7 +3490,10 @@
       },
       "semanticAnatomyDecision": "retain",
       "observedChangeCategories": [],
-      "wave3ReviewDisposition": "retain-existing-native-composition-with-actual-review"
+      "wave3ReviewDisposition": "retain-existing-native-composition-with-actual-review",
+      "hostRefinementRefs": [
+        "krigsvold-large-text-navigation"
+      ]
     },
     {
       "order": 19,
@@ -3438,7 +3625,10 @@
       },
       "semanticAnatomyDecision": "retain",
       "observedChangeCategories": [],
-      "wave3ReviewDisposition": "retain-existing-native-composition-with-actual-review"
+      "wave3ReviewDisposition": "retain-existing-native-composition-with-actual-review",
+      "hostRefinementRefs": [
+        "krigsvold-large-text-navigation"
+      ]
     },
     {
       "order": 20,
@@ -3567,7 +3757,10 @@
       },
       "semanticAnatomyDecision": "retain",
       "observedChangeCategories": [],
-      "wave3ReviewDisposition": "retain-existing-native-composition-with-actual-review"
+      "wave3ReviewDisposition": "retain-existing-native-composition-with-actual-review",
+      "hostRefinementRefs": [
+        "krigsvold-large-text-navigation"
+      ]
     },
     {
       "order": 21,
@@ -3619,8 +3812,8 @@
       },
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 2,
-      "implementationStatus": "wave2-candidate-implemented-unaccepted",
-      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "implementationStatus": "accepted-into-develop",
+      "visualReviewStatus": "Reading/generic-table scope accepted with source-bound actual HTTPS, CI, native payload and accessibility/contrast evidence.",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -3689,15 +3882,40 @@
           },
           "result": "Fixture/images/fonts/shell/hero/runtimeJS/infra/deployment/releasepolicy/locks are unchanged Gitobjects. Sourceallowlists add only intended adapter+QA doc, all regular safe paths. Engines/cancellation/job/operation bounds preserved.",
           "acceptanceScope": "Read-only source security verdict, not full hosted acceptance."
+        },
+        {
+          "kind": "accepted-wave2",
+          "summary": "wave2-acceptance.json",
+          "result": "Exact paired normal merges accepted after all six genuine checks, automatic native source/payload verification, actual visual/state/axe/table/contrast checks.",
+          "acceptanceScope": "Reading and generic-table scope. Operations debt and remaining route reviews are not passed by implication."
         }
       ],
-      "pullRequests": [],
+      "pullRequests": [
+        {
+          "family": "martlet",
+          "number": 22,
+          "url": "https://github.com/martletdesign/jekyll/pull/22",
+          "head": "0e507e424a787c6631d631f4264c9bd08da01321",
+          "mergeCommit": "d983fcc22218de9e96dd932d5d0cb149740b1dbd",
+          "status": "merged",
+          "previewUrl": "https://pr-feature-gram-d1cf2194f8-martletdesign-jekyll-reference.k3jph.workers.dev"
+        },
+        {
+          "family": "krigsvold",
+          "number": 20,
+          "url": "https://github.com/krigsvolddesign/jekyll/pull/20",
+          "head": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303",
+          "mergeCommit": "bdbf62c0d37b705b6dbd35900bcaf40cd7dfb787",
+          "status": "merged",
+          "previewUrl": "https://pr-feature-gram-d1cf2194f8-krigsvolddesign-jekyll-reference.k3jph.workers.dev"
+        }
+      ],
       "exceptions": [],
       "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
       "compositionRefinements": [
         {
           "id": "document-index-body-measure",
-          "status": "Source candidates implement correction; independent after-geometry and full gates pending.",
+          "status": "Wave2 correction accepted into develop after actual review.",
           "baselineSourceObservation": "Both pinned baseline wrappers measure736px at 1440px. Martlet index224px/gap72px/article440px; Krigsvold index208px/gap57.6px/article470.4px. Source reading/context roles warrant reviewing the index-plus-body envelope separately from bounded prose.",
           "requiredJudgment": "Retain semantic sections/anchors where justified while correcting proven cramped total-wrapper/body geometry. Record CSS refinement as an actual change even when semantic anatomy is retained.",
           "familySourceRules": [
@@ -3709,8 +3927,8 @@
         }
       ],
       "familyImplementationStatus": {
-        "martlet": "Published wave2 exact source 0e507e424a787c6631d631f4264c9bd08da01321; six genuine CI/native checks passed, final paired actual acceptance and normal integration still pending.",
-        "krigsvold": "Published wave2 exact source 45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303; six genuine CI/native checks passed, final paired actual acceptance and normal integration still pending."
+        "martlet": "Accepted through PR22 at 0e507e424a787c6631d631f4264c9bd08da01321; normal develop merge d983fcc22218de9e96dd932d5d0cb149740b1dbd",
+        "krigsvold": "Accepted through PR20 at 45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303; normal develop merge bdbf62c0d37b705b6dbd35900bcaf40cd7dfb787"
       },
       "localReview": {
         "status": "pending-systemwide-visual-review",
@@ -3773,17 +3991,12 @@
         }
       },
       "semanticAnatomyDecision": "change",
-      "observedChangeCategories": [],
+      "observedChangeCategories": [
+        "reading-envelope-css"
+      ],
       "pendingChangeCategories": [
         "source-sized document-envelope CSS refinement"
       ],
-      "candidateChangeCategories": [
-        "reading-envelope-css"
-      ],
-      "candidateSourceHeads": {
-        "martlet": "0e507e424a787c6631d631f4264c9bd08da01321",
-        "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
-      },
       "candidateAfterGeometry": {
         "artifact": "/workspace/work/jekyll-grammar/visual/reading/route-measures.json",
         "sha256": "5c2092d1ce1fb7edcac01fd16173d1d198f04729794e21116a08a56a7d9d4a3d",
@@ -3819,6 +4032,9 @@
           "judgment": "Native policy/procedural/list/definition-list/code/table anatomy remains justified while independent document-envelope geometry is corrected. Local horizontal table scrolling is intentional, keyboard accessible and distinct from page overflow.",
           "scope": "Local paired visual review; final hosted/global acceptance pending."
         }
+      ],
+      "hostRefinementRefs": [
+        "krigsvold-large-text-navigation"
       ]
     },
     {
@@ -3952,7 +4168,10 @@
       },
       "semanticAnatomyDecision": "retain",
       "observedChangeCategories": [],
-      "wave3ReviewDisposition": "retain-existing-native-composition-with-actual-review"
+      "wave3ReviewDisposition": "retain-existing-native-composition-with-actual-review",
+      "hostRefinementRefs": [
+        "krigsvold-large-text-navigation"
+      ]
     },
     {
       "order": 23,
@@ -4085,7 +4304,10 @@
       },
       "semanticAnatomyDecision": "retain",
       "observedChangeCategories": [],
-      "wave3ReviewDisposition": "retain-existing-native-composition-with-actual-review"
+      "wave3ReviewDisposition": "retain-existing-native-composition-with-actual-review",
+      "hostRefinementRefs": [
+        "krigsvold-large-text-navigation"
+      ]
     },
     {
       "order": 24,
@@ -4214,7 +4436,10 @@
       },
       "semanticAnatomyDecision": "retain",
       "observedChangeCategories": [],
-      "wave3ReviewDisposition": "retain-existing-native-composition-with-actual-review"
+      "wave3ReviewDisposition": "retain-existing-native-composition-with-actual-review",
+      "hostRefinementRefs": [
+        "krigsvold-large-text-navigation"
+      ]
     },
     {
       "order": 25,
@@ -4347,7 +4572,10 @@
       },
       "semanticAnatomyDecision": "retain",
       "observedChangeCategories": [],
-      "wave3ReviewDisposition": "retain-existing-native-composition-with-actual-review"
+      "wave3ReviewDisposition": "retain-existing-native-composition-with-actual-review",
+      "hostRefinementRefs": [
+        "krigsvold-large-text-navigation"
+      ]
     },
     {
       "order": 26,
@@ -4478,7 +4706,10 @@
       },
       "semanticAnatomyDecision": "retain",
       "observedChangeCategories": [],
-      "wave3ReviewDisposition": "retain-existing-native-composition-with-actual-review"
+      "wave3ReviewDisposition": "retain-existing-native-composition-with-actual-review",
+      "hostRefinementRefs": [
+        "krigsvold-large-text-navigation"
+      ]
     },
     {
       "order": 27,
@@ -4528,8 +4759,8 @@
       },
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 3,
-      "implementationStatus": "wave2-candidate-implemented-unaccepted",
-      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "implementationStatus": "accepted-into-develop",
+      "visualReviewStatus": "Reading/generic-table scope accepted with source-bound actual HTTPS, CI, native payload and accessibility/contrast evidence.",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -4588,15 +4819,40 @@
           },
           "result": "Fixture/images/fonts/shell/hero/runtimeJS/infra/deployment/releasepolicy/locks are unchanged Gitobjects. Sourceallowlists add only intended adapter+QA doc, all regular safe paths. Engines/cancellation/job/operation bounds preserved.",
           "acceptanceScope": "Read-only source security verdict, not full hosted acceptance."
+        },
+        {
+          "kind": "accepted-wave2",
+          "summary": "wave2-acceptance.json",
+          "result": "Exact paired normal merges accepted after all six genuine checks, automatic native source/payload verification, actual visual/state/axe/table/contrast checks.",
+          "acceptanceScope": "Reading and generic-table scope. Operations debt and remaining route reviews are not passed by implication."
         }
       ],
-      "pullRequests": [],
+      "pullRequests": [
+        {
+          "family": "martlet",
+          "number": 22,
+          "url": "https://github.com/martletdesign/jekyll/pull/22",
+          "head": "0e507e424a787c6631d631f4264c9bd08da01321",
+          "mergeCommit": "d983fcc22218de9e96dd932d5d0cb149740b1dbd",
+          "status": "merged",
+          "previewUrl": "https://pr-feature-gram-d1cf2194f8-martletdesign-jekyll-reference.k3jph.workers.dev"
+        },
+        {
+          "family": "krigsvold",
+          "number": 20,
+          "url": "https://github.com/krigsvolddesign/jekyll/pull/20",
+          "head": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303",
+          "mergeCommit": "bdbf62c0d37b705b6dbd35900bcaf40cd7dfb787",
+          "status": "merged",
+          "previewUrl": "https://pr-feature-gram-d1cf2194f8-krigsvolddesign-jekyll-reference.k3jph.workers.dev"
+        }
+      ],
       "exceptions": [],
       "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
       "compositionRefinements": [],
       "familyImplementationStatus": {
-        "martlet": "Published wave2 exact source 0e507e424a787c6631d631f4264c9bd08da01321; six genuine CI/native checks passed, final paired actual acceptance and normal integration still pending.",
-        "krigsvold": "Published wave2 exact source 45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303; six genuine CI/native checks passed, final paired actual acceptance and normal integration still pending."
+        "martlet": "Accepted through PR22 at 0e507e424a787c6631d631f4264c9bd08da01321; normal develop merge d983fcc22218de9e96dd932d5d0cb149740b1dbd",
+        "krigsvold": "Accepted through PR20 at 45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303; normal develop merge bdbf62c0d37b705b6dbd35900bcaf40cd7dfb787"
       },
       "localReview": {
         "status": "pending-systemwide-visual-review",
@@ -4630,7 +4886,7 @@
         {
           "id": "distinct-table-region-name",
           "family": "both",
-          "status": "Verified corrected in both immutable wave2 local candidates; hosted acceptance pending",
+          "status": "Corrected and independently verified in accepted wave2 in both families.",
           "sourceCommit": "d025637e1fe4c11d84c691276d6b3652719b9a30",
           "artifact": "/workspace/work/jekyll-grammar/acceptance/martlet-candidate-wave1-all50-chromium/report.json",
           "artifactSha256": "2f803bdac9662de2cc99275e5f2e7704b34944ab9348d0df28f6961f1c0e7bc0",
@@ -4646,19 +4902,18 @@
             "krigsvold": "8dfcca47b5c312e125ac320643c442b1a00f8490"
           },
           "pairedDiagnostic": "/workspace/work/jekyll-grammar/acceptance/early-all50-audit.json",
-          "localConfirmation": "wave2-local-review.json"
+          "localConfirmation": "wave2-local-review.json",
+          "acceptedEvidence": "wave2-acceptance.json"
         }
       ],
       "semanticAnatomyDecision": "retain",
-      "observedChangeCategories": [],
-      "candidateChangeCategories": [
+      "observedChangeCategories": [
         "unique-table-scroll-region-name"
       ],
-      "candidateSourceHeads": {
-        "martlet": "0e507e424a787c6631d631f4264c9bd08da01321",
-        "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
-      },
-      "wave3ReviewDisposition": "retain-existing-native-composition-with-actual-review"
+      "wave3ReviewDisposition": "retain-existing-native-composition-with-actual-review",
+      "hostRefinementRefs": [
+        "krigsvold-large-text-navigation"
+      ]
     },
     {
       "order": 28,
@@ -4710,8 +4965,8 @@
       },
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 3,
-      "implementationStatus": "wave2-candidate-implemented-unaccepted",
-      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "implementationStatus": "accepted-into-develop",
+      "visualReviewStatus": "Reading/generic-table scope accepted with source-bound actual HTTPS, CI, native payload and accessibility/contrast evidence.",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -4770,15 +5025,40 @@
           },
           "result": "Fixture/images/fonts/shell/hero/runtimeJS/infra/deployment/releasepolicy/locks are unchanged Gitobjects. Sourceallowlists add only intended adapter+QA doc, all regular safe paths. Engines/cancellation/job/operation bounds preserved.",
           "acceptanceScope": "Read-only source security verdict, not full hosted acceptance."
+        },
+        {
+          "kind": "accepted-wave2",
+          "summary": "wave2-acceptance.json",
+          "result": "Exact paired normal merges accepted after all six genuine checks, automatic native source/payload verification, actual visual/state/axe/table/contrast checks.",
+          "acceptanceScope": "Reading and generic-table scope. Operations debt and remaining route reviews are not passed by implication."
         }
       ],
-      "pullRequests": [],
+      "pullRequests": [
+        {
+          "family": "martlet",
+          "number": 22,
+          "url": "https://github.com/martletdesign/jekyll/pull/22",
+          "head": "0e507e424a787c6631d631f4264c9bd08da01321",
+          "mergeCommit": "d983fcc22218de9e96dd932d5d0cb149740b1dbd",
+          "status": "merged",
+          "previewUrl": "https://pr-feature-gram-d1cf2194f8-martletdesign-jekyll-reference.k3jph.workers.dev"
+        },
+        {
+          "family": "krigsvold",
+          "number": 20,
+          "url": "https://github.com/krigsvolddesign/jekyll/pull/20",
+          "head": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303",
+          "mergeCommit": "bdbf62c0d37b705b6dbd35900bcaf40cd7dfb787",
+          "status": "merged",
+          "previewUrl": "https://pr-feature-gram-d1cf2194f8-krigsvolddesign-jekyll-reference.k3jph.workers.dev"
+        }
+      ],
       "exceptions": [],
       "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
       "compositionRefinements": [],
       "familyImplementationStatus": {
-        "martlet": "Published wave2 exact source 0e507e424a787c6631d631f4264c9bd08da01321; six genuine CI/native checks passed, final paired actual acceptance and normal integration still pending.",
-        "krigsvold": "Published wave2 exact source 45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303; six genuine CI/native checks passed, final paired actual acceptance and normal integration still pending."
+        "martlet": "Accepted through PR22 at 0e507e424a787c6631d631f4264c9bd08da01321; normal develop merge d983fcc22218de9e96dd932d5d0cb149740b1dbd",
+        "krigsvold": "Accepted through PR20 at 45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303; normal develop merge bdbf62c0d37b705b6dbd35900bcaf40cd7dfb787"
       },
       "localReview": {
         "status": "pending-systemwide-visual-review",
@@ -4812,7 +5092,7 @@
         {
           "id": "distinct-table-region-name",
           "family": "both",
-          "status": "Verified corrected in both immutable wave2 local candidates; hosted acceptance pending",
+          "status": "Corrected and independently verified in accepted wave2 in both families.",
           "sourceCommit": "d025637e1fe4c11d84c691276d6b3652719b9a30",
           "artifact": "/workspace/work/jekyll-grammar/acceptance/martlet-candidate-wave1-all50-chromium/report.json",
           "artifactSha256": "2f803bdac9662de2cc99275e5f2e7704b34944ab9348d0df28f6961f1c0e7bc0",
@@ -4828,19 +5108,18 @@
             "krigsvold": "8dfcca47b5c312e125ac320643c442b1a00f8490"
           },
           "pairedDiagnostic": "/workspace/work/jekyll-grammar/acceptance/early-all50-audit.json",
-          "localConfirmation": "wave2-local-review.json"
+          "localConfirmation": "wave2-local-review.json",
+          "acceptedEvidence": "wave2-acceptance.json"
         }
       ],
       "semanticAnatomyDecision": "change",
-      "observedChangeCategories": [],
-      "candidateChangeCategories": [
+      "observedChangeCategories": [
         "unique-table-scroll-region-name"
       ],
-      "candidateSourceHeads": {
-        "martlet": "0e507e424a787c6631d631f4264c9bd08da01321",
-        "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
-      },
-      "wave3ReviewDisposition": "focused-change-proposal"
+      "wave3ReviewDisposition": "focused-change-proposal",
+      "hostRefinementRefs": [
+        "krigsvold-large-text-navigation"
+      ]
     },
     {
       "order": 29,
@@ -4971,7 +5250,10 @@
       },
       "semanticAnatomyDecision": "retain",
       "observedChangeCategories": [],
-      "wave3ReviewDisposition": "retain-existing-native-composition-with-actual-review"
+      "wave3ReviewDisposition": "retain-existing-native-composition-with-actual-review",
+      "hostRefinementRefs": [
+        "krigsvold-large-text-navigation"
+      ]
     },
     {
       "order": 30,
@@ -5125,6 +5407,12 @@
           "artifactSha256": "b75337720476cfdfb9be5f6dcc13827f6cc332c24e8c0ee7c397f7137db63b67",
           "result": "Specialist reviewed12 paired routes at320/1440 light/dark;96 normal states plus8actual200%Krigsvold targets. No captured page overflow/errors; native local table/code scrolling retained.",
           "acceptanceScope": "Local104case scope; hosted/CI/independent after semantic and accessibility gates remain pending."
+        },
+        {
+          "kind": "wave2-compatibility",
+          "summary": "wave2-acceptance.json",
+          "result": "Existing accepted exemplar content/behavior retained while reading styles integrate; source-bound CI and independent contracts pass.",
+          "acceptanceScope": "Compatibility, not a new claim that all remaining routes are visually complete."
         }
       ],
       "pullRequests": [
@@ -5267,7 +5555,10 @@
           }
         ],
         "scope": "Local wave2 candidates only; normal1440px computed dimensions, not hosted source proof."
-      }
+      },
+      "hostRefinementRefs": [
+        "krigsvold-large-text-navigation"
+      ]
     },
     {
       "order": 31,
@@ -5399,7 +5690,10 @@
       },
       "semanticAnatomyDecision": "change",
       "observedChangeCategories": [],
-      "wave3ReviewDisposition": "focused-change-proposal"
+      "wave3ReviewDisposition": "focused-change-proposal",
+      "hostRefinementRefs": [
+        "krigsvold-large-text-navigation"
+      ]
     },
     {
       "order": 32,
@@ -5532,7 +5826,10 @@
         }
       },
       "semanticAnatomyDecision": "retain",
-      "observedChangeCategories": []
+      "observedChangeCategories": [],
+      "hostRefinementRefs": [
+        "krigsvold-large-text-navigation"
+      ]
     },
     {
       "order": 33,
@@ -5665,7 +5962,10 @@
         }
       },
       "semanticAnatomyDecision": "retain",
-      "observedChangeCategories": []
+      "observedChangeCategories": [],
+      "hostRefinementRefs": [
+        "krigsvold-large-text-navigation"
+      ]
     },
     {
       "order": 34,
@@ -5798,7 +6098,10 @@
         }
       },
       "semanticAnatomyDecision": "retain",
-      "observedChangeCategories": []
+      "observedChangeCategories": [],
+      "hostRefinementRefs": [
+        "krigsvold-large-text-navigation"
+      ]
     },
     {
       "order": 35,
@@ -5931,7 +6234,10 @@
         }
       },
       "semanticAnatomyDecision": "retain",
-      "observedChangeCategories": []
+      "observedChangeCategories": [],
+      "hostRefinementRefs": [
+        "krigsvold-large-text-navigation"
+      ]
     },
     {
       "order": 36,
@@ -6064,7 +6370,10 @@
         }
       },
       "semanticAnatomyDecision": "retain",
-      "observedChangeCategories": []
+      "observedChangeCategories": [],
+      "hostRefinementRefs": [
+        "krigsvold-large-text-navigation"
+      ]
     },
     {
       "order": 37,
@@ -6194,7 +6503,10 @@
         }
       },
       "semanticAnatomyDecision": "retain",
-      "observedChangeCategories": []
+      "observedChangeCategories": [],
+      "hostRefinementRefs": [
+        "krigsvold-large-text-navigation"
+      ]
     },
     {
       "order": 38,
@@ -6324,7 +6636,10 @@
         }
       },
       "semanticAnatomyDecision": "retain",
-      "observedChangeCategories": []
+      "observedChangeCategories": [],
+      "hostRefinementRefs": [
+        "krigsvold-large-text-navigation"
+      ]
     },
     {
       "order": 39,
@@ -6455,7 +6770,10 @@
         }
       },
       "semanticAnatomyDecision": "retain",
-      "observedChangeCategories": []
+      "observedChangeCategories": [],
+      "hostRefinementRefs": [
+        "krigsvold-large-text-navigation"
+      ]
     },
     {
       "order": 40,
@@ -6586,7 +6904,10 @@
         }
       },
       "semanticAnatomyDecision": "retain",
-      "observedChangeCategories": []
+      "observedChangeCategories": [],
+      "hostRefinementRefs": [
+        "krigsvold-large-text-navigation"
+      ]
     },
     {
       "order": 41,
@@ -6717,7 +7038,10 @@
         }
       },
       "semanticAnatomyDecision": "retain",
-      "observedChangeCategories": []
+      "observedChangeCategories": [],
+      "hostRefinementRefs": [
+        "krigsvold-large-text-navigation"
+      ]
     },
     {
       "order": 42,
@@ -6848,7 +7172,10 @@
         }
       },
       "semanticAnatomyDecision": "retain",
-      "observedChangeCategories": []
+      "observedChangeCategories": [],
+      "hostRefinementRefs": [
+        "krigsvold-large-text-navigation"
+      ]
     },
     {
       "order": 43,
@@ -6980,7 +7307,10 @@
         }
       },
       "semanticAnatomyDecision": "retain",
-      "observedChangeCategories": []
+      "observedChangeCategories": [],
+      "hostRefinementRefs": [
+        "krigsvold-large-text-navigation"
+      ]
     },
     {
       "order": 44,
@@ -7030,8 +7360,8 @@
       },
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 2,
-      "implementationStatus": "wave2-candidate-implemented-unaccepted",
-      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "implementationStatus": "accepted-into-develop",
+      "visualReviewStatus": "Reading/generic-table scope accepted with source-bound actual HTTPS, CI, native payload and accessibility/contrast evidence.",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -7101,15 +7431,40 @@
           },
           "result": "Fixture/images/fonts/shell/hero/runtimeJS/infra/deployment/releasepolicy/locks are unchanged Gitobjects. Sourceallowlists add only intended adapter+QA doc, all regular safe paths. Engines/cancellation/job/operation bounds preserved.",
           "acceptanceScope": "Read-only source security verdict, not full hosted acceptance."
+        },
+        {
+          "kind": "accepted-wave2",
+          "summary": "wave2-acceptance.json",
+          "result": "Exact paired normal merges accepted after all six genuine checks, automatic native source/payload verification, actual visual/state/axe/table/contrast checks.",
+          "acceptanceScope": "Reading and generic-table scope. Operations debt and remaining route reviews are not passed by implication."
         }
       ],
-      "pullRequests": [],
+      "pullRequests": [
+        {
+          "family": "martlet",
+          "number": 22,
+          "url": "https://github.com/martletdesign/jekyll/pull/22",
+          "head": "0e507e424a787c6631d631f4264c9bd08da01321",
+          "mergeCommit": "d983fcc22218de9e96dd932d5d0cb149740b1dbd",
+          "status": "merged",
+          "previewUrl": "https://pr-feature-gram-d1cf2194f8-martletdesign-jekyll-reference.k3jph.workers.dev"
+        },
+        {
+          "family": "krigsvold",
+          "number": 20,
+          "url": "https://github.com/krigsvolddesign/jekyll/pull/20",
+          "head": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303",
+          "mergeCommit": "bdbf62c0d37b705b6dbd35900bcaf40cd7dfb787",
+          "status": "merged",
+          "previewUrl": "https://pr-feature-gram-d1cf2194f8-krigsvolddesign-jekyll-reference.k3jph.workers.dev"
+        }
+      ],
       "exceptions": [],
       "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
       "compositionRefinements": [
         {
           "id": "document-index-body-measure",
-          "status": "Source candidates implement correction; independent after-geometry and full gates pending.",
+          "status": "Wave2 correction accepted into develop after actual review.",
           "baselineSourceObservation": "Both pinned baseline wrappers measure736px at 1440px. Martlet index224px/gap72px/article440px; Krigsvold index208px/gap57.6px/article470.4px. Source reading/context roles warrant reviewing the index-plus-body envelope separately from bounded prose.",
           "requiredJudgment": "Retain semantic sections/anchors where justified while correcting proven cramped total-wrapper/body geometry. Record CSS refinement as an actual change even when semantic anatomy is retained.",
           "familySourceRules": [
@@ -7121,8 +7476,8 @@
         }
       ],
       "familyImplementationStatus": {
-        "martlet": "Published wave2 exact source 0e507e424a787c6631d631f4264c9bd08da01321; six genuine CI/native checks passed, final paired actual acceptance and normal integration still pending.",
-        "krigsvold": "Published wave2 exact source 45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303; six genuine CI/native checks passed, final paired actual acceptance and normal integration still pending."
+        "martlet": "Accepted through PR22 at 0e507e424a787c6631d631f4264c9bd08da01321; normal develop merge d983fcc22218de9e96dd932d5d0cb149740b1dbd",
+        "krigsvold": "Accepted through PR20 at 45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303; normal develop merge bdbf62c0d37b705b6dbd35900bcaf40cd7dfb787"
       },
       "localReview": {
         "status": "pending-systemwide-visual-review",
@@ -7156,7 +7511,7 @@
         {
           "id": "distinct-table-region-name",
           "family": "both",
-          "status": "Verified corrected in both immutable wave2 local candidates; hosted acceptance pending",
+          "status": "Corrected and independently verified in accepted wave2 in both families.",
           "sourceCommit": "d025637e1fe4c11d84c691276d6b3652719b9a30",
           "artifact": "/workspace/work/jekyll-grammar/acceptance/martlet-candidate-wave1-all50-chromium/report.json",
           "artifactSha256": "2f803bdac9662de2cc99275e5f2e7704b34944ab9348d0df28f6961f1c0e7bc0",
@@ -7172,7 +7527,8 @@
             "krigsvold": "8dfcca47b5c312e125ac320643c442b1a00f8490"
           },
           "pairedDiagnostic": "/workspace/work/jekyll-grammar/acceptance/early-all50-audit.json",
-          "localConfirmation": "wave2-local-review.json"
+          "localConfirmation": "wave2-local-review.json",
+          "acceptedEvidence": "wave2-acceptance.json"
         }
       ],
       "baselineComputedGeometry": {
@@ -7208,18 +7564,13 @@
         }
       },
       "semanticAnatomyDecision": "change",
-      "observedChangeCategories": [],
-      "pendingChangeCategories": [
-        "source-sized document-envelope CSS refinement"
-      ],
-      "candidateChangeCategories": [
+      "observedChangeCategories": [
         "reading-envelope-css",
         "unique-table-scroll-region-name"
       ],
-      "candidateSourceHeads": {
-        "martlet": "0e507e424a787c6631d631f4264c9bd08da01321",
-        "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
-      },
+      "pendingChangeCategories": [
+        "source-sized document-envelope CSS refinement"
+      ],
       "candidateAfterGeometry": {
         "artifact": "/workspace/work/jekyll-grammar/visual/reading/route-measures.json",
         "sha256": "5c2092d1ce1fb7edcac01fd16173d1d198f04729794e21116a08a56a7d9d4a3d",
@@ -7248,7 +7599,10 @@
           }
         ],
         "scope": "Local wave2 candidates only; normal1440px computed dimensions, not hosted source proof."
-      }
+      },
+      "hostRefinementRefs": [
+        "krigsvold-large-text-navigation"
+      ]
     },
     {
       "order": 45,
@@ -7302,8 +7656,8 @@
       },
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 2,
-      "implementationStatus": "wave2-candidate-implemented-unaccepted",
-      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "implementationStatus": "accepted-into-develop",
+      "visualReviewStatus": "Reading/generic-table scope accepted with source-bound actual HTTPS, CI, native payload and accessibility/contrast evidence.",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -7373,15 +7727,40 @@
           },
           "result": "Fixture/images/fonts/shell/hero/runtimeJS/infra/deployment/releasepolicy/locks are unchanged Gitobjects. Sourceallowlists add only intended adapter+QA doc, all regular safe paths. Engines/cancellation/job/operation bounds preserved.",
           "acceptanceScope": "Read-only source security verdict, not full hosted acceptance."
+        },
+        {
+          "kind": "accepted-wave2",
+          "summary": "wave2-acceptance.json",
+          "result": "Exact paired normal merges accepted after all six genuine checks, automatic native source/payload verification, actual visual/state/axe/table/contrast checks.",
+          "acceptanceScope": "Reading and generic-table scope. Operations debt and remaining route reviews are not passed by implication."
         }
       ],
-      "pullRequests": [],
+      "pullRequests": [
+        {
+          "family": "martlet",
+          "number": 22,
+          "url": "https://github.com/martletdesign/jekyll/pull/22",
+          "head": "0e507e424a787c6631d631f4264c9bd08da01321",
+          "mergeCommit": "d983fcc22218de9e96dd932d5d0cb149740b1dbd",
+          "status": "merged",
+          "previewUrl": "https://pr-feature-gram-d1cf2194f8-martletdesign-jekyll-reference.k3jph.workers.dev"
+        },
+        {
+          "family": "krigsvold",
+          "number": 20,
+          "url": "https://github.com/krigsvolddesign/jekyll/pull/20",
+          "head": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303",
+          "mergeCommit": "bdbf62c0d37b705b6dbd35900bcaf40cd7dfb787",
+          "status": "merged",
+          "previewUrl": "https://pr-feature-gram-d1cf2194f8-krigsvolddesign-jekyll-reference.k3jph.workers.dev"
+        }
+      ],
       "exceptions": [],
       "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
       "compositionRefinements": [
         {
           "id": "document-index-body-measure",
-          "status": "Source candidates implement correction; independent after-geometry and full gates pending.",
+          "status": "Wave2 correction accepted into develop after actual review.",
           "baselineSourceObservation": "Both pinned baseline wrappers measure736px at 1440px. Martlet index224px/gap72px/article440px; Krigsvold index208px/gap57.6px/article470.4px. Source reading/context roles warrant reviewing the index-plus-body envelope separately from bounded prose.",
           "requiredJudgment": "Retain semantic sections/anchors where justified while correcting proven cramped total-wrapper/body geometry. Record CSS refinement as an actual change even when semantic anatomy is retained.",
           "familySourceRules": [
@@ -7393,8 +7772,8 @@
         }
       ],
       "familyImplementationStatus": {
-        "martlet": "Published wave2 exact source 0e507e424a787c6631d631f4264c9bd08da01321; six genuine CI/native checks passed, final paired actual acceptance and normal integration still pending.",
-        "krigsvold": "Published wave2 exact source 45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303; six genuine CI/native checks passed, final paired actual acceptance and normal integration still pending."
+        "martlet": "Accepted through PR22 at 0e507e424a787c6631d631f4264c9bd08da01321; normal develop merge d983fcc22218de9e96dd932d5d0cb149740b1dbd",
+        "krigsvold": "Accepted through PR20 at 45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303; normal develop merge bdbf62c0d37b705b6dbd35900bcaf40cd7dfb787"
       },
       "localReview": {
         "status": "pending-systemwide-visual-review",
@@ -7428,7 +7807,7 @@
         {
           "id": "distinct-table-region-name",
           "family": "both",
-          "status": "Verified corrected in both immutable wave2 local candidates; hosted acceptance pending",
+          "status": "Corrected and independently verified in accepted wave2 in both families.",
           "sourceCommit": "d025637e1fe4c11d84c691276d6b3652719b9a30",
           "artifact": "/workspace/work/jekyll-grammar/acceptance/martlet-candidate-wave1-all50-chromium/report.json",
           "artifactSha256": "2f803bdac9662de2cc99275e5f2e7704b34944ab9348d0df28f6961f1c0e7bc0",
@@ -7444,7 +7823,8 @@
             "krigsvold": "8dfcca47b5c312e125ac320643c442b1a00f8490"
           },
           "pairedDiagnostic": "/workspace/work/jekyll-grammar/acceptance/early-all50-audit.json",
-          "localConfirmation": "wave2-local-review.json"
+          "localConfirmation": "wave2-local-review.json",
+          "acceptedEvidence": "wave2-acceptance.json"
         }
       ],
       "baselineComputedGeometry": {
@@ -7480,18 +7860,13 @@
         }
       },
       "semanticAnatomyDecision": "retain",
-      "observedChangeCategories": [],
-      "pendingChangeCategories": [
-        "source-sized document-envelope CSS refinement"
-      ],
-      "candidateChangeCategories": [
+      "observedChangeCategories": [
         "reading-envelope-css",
         "unique-table-scroll-region-name"
       ],
-      "candidateSourceHeads": {
-        "martlet": "0e507e424a787c6631d631f4264c9bd08da01321",
-        "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
-      },
+      "pendingChangeCategories": [
+        "source-sized document-envelope CSS refinement"
+      ],
       "candidateAfterGeometry": {
         "artifact": "/workspace/work/jekyll-grammar/visual/reading/route-measures.json",
         "sha256": "5c2092d1ce1fb7edcac01fd16173d1d198f04729794e21116a08a56a7d9d4a3d",
@@ -7527,6 +7902,9 @@
           "judgment": "Native policy/procedural/list/definition-list/code/table anatomy remains justified while independent document-envelope geometry is corrected. Local horizontal table scrolling is intentional, keyboard accessible and distinct from page overflow.",
           "scope": "Local paired visual review; final hosted/global acceptance pending."
         }
+      ],
+      "hostRefinementRefs": [
+        "krigsvold-large-text-navigation"
       ]
     },
     {
@@ -7663,7 +8041,10 @@
       },
       "semanticAnatomyDecision": "retain",
       "observedChangeCategories": [],
-      "wave3ReviewDisposition": "retain-existing-native-composition-with-actual-review"
+      "wave3ReviewDisposition": "retain-existing-native-composition-with-actual-review",
+      "hostRefinementRefs": [
+        "krigsvold-large-text-navigation"
+      ]
     },
     {
       "order": 47,
@@ -7846,7 +8227,10 @@
         }
       },
       "semanticAnatomyDecision": "change",
-      "observedChangeCategories": []
+      "observedChangeCategories": [],
+      "hostRefinementRefs": [
+        "krigsvold-large-text-navigation"
+      ]
     },
     {
       "order": 48,
@@ -8001,6 +8385,12 @@
           "artifactSha256": "b75337720476cfdfb9be5f6dcc13827f6cc332c24e8c0ee7c397f7137db63b67",
           "result": "Specialist reviewed12 paired routes at320/1440 light/dark;96 normal states plus8actual200%Krigsvold targets. No captured page overflow/errors; native local table/code scrolling retained.",
           "acceptanceScope": "Local104case scope; hosted/CI/independent after semantic and accessibility gates remain pending."
+        },
+        {
+          "kind": "wave2-compatibility",
+          "summary": "wave2-acceptance.json",
+          "result": "Existing accepted exemplar content/behavior retained while reading styles integrate; source-bound CI and independent contracts pass.",
+          "acceptanceScope": "Compatibility, not a new claim that all remaining routes are visually complete."
         }
       ],
       "pullRequests": [
@@ -8149,7 +8539,10 @@
           }
         ],
         "scope": "Local wave2 candidates only; normal1440px computed dimensions, not hosted source proof."
-      }
+      },
+      "hostRefinementRefs": [
+        "krigsvold-large-text-navigation"
+      ]
     },
     {
       "order": 49,
@@ -8332,7 +8725,10 @@
         }
       },
       "semanticAnatomyDecision": "change",
-      "observedChangeCategories": []
+      "observedChangeCategories": [],
+      "hostRefinementRefs": [
+        "krigsvold-large-text-navigation"
+      ]
     },
     {
       "order": 50,
@@ -8518,7 +8914,7 @@
         {
           "id": "distinct-table-region-name",
           "family": "both",
-          "status": "Still fails in both wave2 local candidates; correction scheduled for operations wave.",
+          "status": "Still failing outside accepted reading scope; operations correction remains scheduled.",
           "sourceCommit": "d025637e1fe4c11d84c691276d6b3652719b9a30",
           "artifact": "/workspace/work/jekyll-grammar/acceptance/martlet-candidate-wave1-all50-chromium/report.json",
           "artifactSha256": "2f803bdac9662de2cc99275e5f2e7704b34944ab9348d0df28f6961f1c0e7bc0",
@@ -8537,7 +8933,10 @@
         }
       ],
       "semanticAnatomyDecision": "change",
-      "observedChangeCategories": []
+      "observedChangeCategories": [],
+      "hostRefinementRefs": [
+        "krigsvold-large-text-navigation"
+      ]
     }
   ],
   "systemWideVisualEvidence": {
@@ -8563,32 +8962,45 @@
       },
       "status": "accepted-into-develop",
       "scope": "Three exemplar routes; global all 50 accessibility is still incomplete."
+    },
+    {
+      "wave": 2,
+      "summary": "wave2-acceptance.json",
+      "sourceHeads": {
+        "martlet": "0e507e424a787c6631d631f4264c9bd08da01321",
+        "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
+      },
+      "developMergeCommits": {
+        "martlet": "d983fcc22218de9e96dd932d5d0cb149740b1dbd",
+        "krigsvold": "bdbf62c0d37b705b6dbd35900bcaf40cd7dfb787"
+      },
+      "status": "accepted-into-develop",
+      "scope": "Nine primary reading routes plus five generic label repairs across eleven unique affected routes; operations debt remains separate."
     }
   ],
   "countsAreProvisional": true,
   "countingRule": "Initial13 change/37 retain classify semantic anatomy only. Count actual CSS/accessibility changes separately; do not freeze those initial totals or require all 50 to change.",
   "changeAccounting": {
-    "acceptedRouteChangeCount": 3,
+    "acceptedRouteChangeCount": 14,
     "acceptedRoutes": [
-      "faq",
-      "changelog",
-      "dashboard-components"
-    ],
-    "acceptedUnchangedRoutesToDate": 47,
-    "implementedUnacceptedWave2RouteCount": 11,
-    "implementedUnacceptedWave2Routes": [
       "article",
       "documentation",
       "guide",
       "reference",
+      "faq",
       "privacy",
       "terms",
       "opportunity",
       "event",
       "report",
+      "changelog",
       "integrations",
-      "stress-test"
+      "stress-test",
+      "dashboard-components"
     ],
+    "acceptedUnchangedRoutesToDate": 36,
+    "implementedUnacceptedWave2RouteCount": 0,
+    "implementedUnacceptedWave2Routes": [],
     "countingScope": "Actual accepted UI/composition/accessibility changes, not generated HTML whitespace or merely a shared file being edited. Initial semantic-anatomy intentions remain provisional; retained anatomy can receive measured CSS/ARIA changes.",
     "globalVisualReviewComplete": false,
     "all50AccessibilityPassed": false,
@@ -8596,13 +9008,10 @@
       "dashboard-operations"
     ],
     "acceptedDevelopRemainingAccessibilityRoutes": [
-      "reference",
-      "event",
-      "report",
-      "integrations",
-      "stress-test",
       "dashboard-operations"
-    ]
+    ],
+    "hostWideRefinementsAreSeparateFromRecipeComposition": true,
+    "genuinelyUnchangedAcrossAllTestedStatesByFamily": "Final assessment pending; an all-route Krigsvold header repair must be acknowledged even where recipe anatomy is retained."
   },
   "primaryReviewScopes": {
     "1": [
@@ -8672,6 +9081,21 @@
       "issue": "Intermediate ordinary develop native build reported an unknown failure. Preserve its failure evidence; no cause or fix is claimed from successful PR previews.",
       "nextProofRequired": "A new ordinary develop build after current source integration must prove the accepted source. No manual upload may substitute.",
       "status": "unresolved-source-of-failure; newer ordinary develop proof pending"
+    }
+  ],
+  "globalHostRefinements": [
+    {
+      "id": "krigsvold-large-text-navigation",
+      "family": "krigsvold",
+      "status": "observed final blocker; fix under independent navigation branch, integration planned with wave4",
+      "observedState": {
+        "viewportWidth": 1440,
+        "htmlTextScale": 2
+      },
+      "defect": "Brand and navigation overlap even though document overflow checks pass.",
+      "scope": "Shared host navigation across recipe routes, not a mandate to restyle all recipe anatomy.",
+      "allowedCorrection": "Minimal appended host jekyll.css rules; canonical shell.css, header controller, hero declarations/art remain protected.",
+      "acceptanceRequired": "Actual enlarged-text visual/keyboard proof and no brand/navigation overlap; no global200% or all50 fidelity pass until verified."
     }
   ]
 }
