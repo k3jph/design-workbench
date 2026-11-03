@@ -73,8 +73,8 @@ async function noJsContact(t){const c=await browser.newContext({javaScriptEnable
 try{
  const proxy=process.env.HTTPS_PROXY||process.env.HTTP_PROXY;const options=proxy?{proxy:{server:proxy}}:{};
  browser=await {chromium,firefox,webkit}[engine].launch({...options,...engine==='chromium'&&process.env.CHROMIUM_PATH?{executablePath:process.env.CHROMIUM_PATH}:{}});http=await request.newContext({...options,timeout:20000});
- const newContext=browser.newContext.bind(browser);browser.newContext=async(...args)=>{const c=await newContext(...args);c.setDefaultTimeout(12000);c.setDefaultNavigationTimeout(20000);return c};
- report.browserVersion=browser.version();configureBehavior({browser,catalog,bounded,operation,fontsReady});
+ const newContext=browser.newContext.bind(browser);browser.newContext=async(...args)=>{const c=await newContext(...args);await c.route('**/*',route=>route.continue());c.setDefaultTimeout(12000);c.setDefaultNavigationTimeout(20000);return c};
+ report.httpCacheCoverage={mode:'disabled',method:'Playwright context.route pass-through route.continue()',requestsModified:false,responsesMocked:false,storageContextsPreserved:true,limitation:'Fresh-network assertions only; HTTP cache behavior is not covered.'};report.browserVersion=browser.version();configureBehavior({browser,catalog,bounded,operation,fontsReady});
  for(const host of (verifyMode==='full'?hosts:hosts.slice(0,1))){
   const h={family:host.family,origin:host.origin,sourceCommit:host.sourceCommit,bases:[],status:'running'};report.hosts.push(h);h.before=await sourceProof(host);await save();
   try{for(const base of (verifyMode==='full'?host.bases:host.bases.slice(0,1))){
