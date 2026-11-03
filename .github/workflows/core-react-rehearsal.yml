@@ -29,8 +29,6 @@ jobs:
     env:
       WORKBENCH_BROWSER: ${{ matrix.browser }}
       NIGHTJAR_REACT_ARCHIVE_VERSION: '0.2.0'
-      NIGHTJAR_REACT_ARCHIVE_DIR: ${{ runner.temp }}/reviewed-consumers
-      NIGHTJAR_CORE_ARCHIVE_DIR: ${{ runner.temp }}/reviewed-consumers
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
         with:
@@ -54,6 +52,10 @@ jobs:
           node-version: '24.19.0'
       - run: npm install --global npm@11.15.0
       - run: npm ci --ignore-scripts
+      - name: Set isolated consumer input paths
+        run: |
+          echo "NIGHTJAR_REACT_ARCHIVE_DIR=$RUNNER_TEMP/reviewed-consumers" >> "$GITHUB_ENV"
+          echo "NIGHTJAR_CORE_ARCHIVE_DIR=$RUNNER_TEMP/reviewed-consumers" >> "$GITHUB_ENV"
       - name: Prepare exact independent or fixture React inputs and reviewed registry Core
         run: node scripts/qa/prepare-react-conformance-inputs.mjs '${{ matrix.source }}' "$NIGHTJAR_REACT_ARCHIVE_DIR"
       - run: npx playwright install --with-deps '${{ matrix.browser }}'
