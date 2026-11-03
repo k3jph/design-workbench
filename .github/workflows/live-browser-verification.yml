@@ -30,7 +30,7 @@ jobs:
         browser: [chromium, firefox, webkit]
     env:
       SITE_BROWSER: ${{ matrix.browser }}
-      SITE_TARGET_MAP: ${{ inputs.target_map || vars.LIVE_SITE_TARGET_MAP || 'jekyll-stage-root-preview' }}
+      SITE_TARGET_MAP: ${{ inputs.target_map || vars.LIVE_SITE_TARGET_MAP || 'jekyll-canonical' }}
       SITE_RESULTS_DIR: results
     defaults:
       run:
@@ -81,17 +81,35 @@ jobs:
   http:
     runs-on: ubuntu-latest
     timeout-minutes: 25
+    env:
+      SITE_TARGET_MAP: ${{ inputs.target_map || vars.LIVE_SITE_TARGET_MAP || 'jekyll-canonical' }}
+    defaults:
+      run:
+        working-directory: tools/live-site-http
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
         with:
           persist-credentials: false
-      - name: Verify staged Jekyll HTTPS files, assets and actual published source ZIPs
-        working-directory: tools/live-site-http
-        run: python3 verify-live-sites.py --state-root . --stage-ready --manifest targets.json --origin-map staged-origins.json --expectations expectations.json --output stage-http-results.json
+      - name: Verify the selected fixed Jekyll HTTPS target map
+        shell: bash
+        run: |
+          set -euo pipefail
+          case "$SITE_TARGET_MAP" in
+            jekyll-stage|jekyll-stage-root-preview)
+              python3 verify-live-sites.py --state-root . --stage-ready --manifest targets.json --origin-map staged-origins.json --expectations expectations.json --output http-results.json
+              ;;
+            jekyll-canonical)
+              python3 verify-live-sites.py --state-root . --live-ready --manifest canonical-targets.json --expectations canonical-expectations.json --output http-results.json
+              ;;
+            *)
+              echo "Unsupported fixed verification target map" >&2
+              exit 1
+              ;;
+          esac
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: live-jekyll-stage-http-${{ github.run_id }}
-          path: tools/live-site-http/stage-http-results.json
+          name: live-jekyll-http-${{ env.SITE_TARGET_MAP }}-${{ github.run_id }}
+          path: tools/live-site-http/http-results.json
           if-no-files-found: warn
           retention-days: 14

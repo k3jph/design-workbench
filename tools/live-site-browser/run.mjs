@@ -16,7 +16,7 @@ const verifyMode=process.env.SITE_VERIFY_MODE||'full';assert.ok(['full','route-l
 const outDir=process.env.SITE_RESULTS_DIR||'results';await mkdir(outDir,{recursive:true});
 const sha=b=>createHash('sha256').update(b).digest('hex');
 const report={schemaVersion:1,map:mapName,verificationMode:verifyMode,fullAcceptance:false,engine,observedAt:new Date().toISOString(),node:process.version,runnerSha256:sha(await readFile(new URL('./run.mjs',import.meta.url))),behaviorSha256:sha(await readFile(new URL('./behavior.mjs',import.meta.url))),catalogSha256:sha(catalogBytes),hosts:[],progress:[],limitations:['Only automated, bounded browser observations are claimed.','No manual assistive technology, RTL/localization, sustained use, native browser UI zoom or physical print/pagination certification.','Axe incomplete findings remain incomplete.','HTTP source proof is checked; administrator immutability and Worker binding isolation are not established by a browser test.','Firefox no-JavaScript routes are tested without awaiting the known nonsettling document.fonts.ready operation.']};
-let browser,http;const overall=setTimeout(()=>{console.error('FAIL overall live-browser deadline exceeded (13 minutes)');Promise.allSettled([browser?.close(),http?.dispose()]).finally(()=>process.exit(1))},13*60*1000);
+let browser,http;const overall=setTimeout(()=>{report.status='failed';report.error='Overall live-browser deadline exceeded (13 minutes)';void save().catch(()=>{});console.error('FAIL overall live-browser deadline exceeded (13 minutes)');setTimeout(()=>process.exit(1),2000);Promise.allSettled([browser?.close(),http?.dispose()]).finally(()=>process.exit(1))},13*60*1000);
 async function save(){await writeFile(`${outDir}/live-${mapName}-${engine}.json`,JSON.stringify(report,null,2)+'\n')}
 function progress(t,operation,state,extra={}){const p={family:t.family,framework:t.framework,base:t.base,operation,state,at:new Date().toISOString(),...extra};report.progress.push(p);console.log(JSON.stringify(p))}
 async function bounded(name,fn,timeout=30000){let timer;try{return await Promise.race([Promise.resolve().then(fn),new Promise((_,reject)=>{timer=setTimeout(()=>reject(Error(name+' exceeded '+timeout+'ms deadline')),timeout)})])}finally{clearTimeout(timer)}}
@@ -90,4 +90,4 @@ try{
  }
  report.status='passed';report.fullAcceptance=verifyMode==='full';
 }catch(e){report.status='failed';report.error=String(e.stack||e);process.exitCode=1;console.error(e)}
-finally{clearTimeout(overall);await browser?.close();await http?.dispose();await save()}
+finally{clearTimeout(overall);const cleanupDeadline=setTimeout(()=>{report.status='failed';report.error='Browser cleanup exceeded 10 seconds';console.error('FAIL '+report.error);setTimeout(()=>process.exit(1),1000);save().finally(()=>process.exit(1))},10000);try{await browser?.close();await http?.dispose();await save()}finally{clearTimeout(cleanupDeadline)}}

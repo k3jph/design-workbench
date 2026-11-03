@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "targets": [
+    {
+      "family": "martlet",
+      "role": "reference",
+      "framework": "jekyll",
+      "url": "https://jekyll.martletdesign.dev/",
+      "base": "/",
+      "routes": []
+    },
+    {
+      "family": "krigsvold",
+      "role": "reference",
+      "framework": "jekyll",
+      "url": "https://jekyll.krigsvolddesign.dev/",
+      "base": "/",
+      "routes": []
+    }
+  ]
+}

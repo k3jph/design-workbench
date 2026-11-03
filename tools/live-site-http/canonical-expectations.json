@@ -1,0 +1,4120 @@
+{
+  "hosts": {
+    "jekyll.martletdesign.dev": {
+      "family": "martlet",
+      "framework": "jekyll",
+      "role": "reference",
+      "artifactRoot": null,
+      "sourceCommit": "92b8fc22fc5d42ccba4cffba6d5de8fb53103e9c",
+      "version": "1.0.0",
+      "proofPath": "/.well-known/nightjar-deployment.json",
+      "expectedFileHashes": {
+        ".well-known/nightjar-deployment.json": {
+          "sha256": "40bf30e5486f94bc2b55f32353f7ebe17c864159dec94950e71fed6780eeffe0",
+          "size": 571
+        },
+        "404.html": {
+          "sha256": "af456904dd613073dc66971a4d6f2a5be9eeb83f5d50f90ab18a8dc021dfc0bf",
+          "size": 5135
+        },
+        "LICENSE": {
+          "sha256": "1067907e4c1a431923d3e1b37c42e3fbb8dbeb79aab20ccc0e8c8e7c1323eed6",
+          "size": 1076
+        },
+        "NOTICE.md": {
+          "sha256": "8e5b59cf0cc4e427296763f718407ba4760821f95c1208ee51620050bcbbf398",
+          "size": 736
+        },
+        "VERSION": {
+          "sha256": "59854984853104df5c353e2f681a15fc7924742f9a2e468c29af248dce45ce03",
+          "size": 6
+        },
+        "artifact-inventory.json": {
+          "sha256": "9573f1878e02262c52104c1d2fd04c3bc4bbce328647deb68242a95220f7eeab",
+          "size": 92822
+        },
+        "assets/css/dashboard-family.css": {
+          "sha256": "0e9e979525831029745a80858bdc8e17ec5b40e6171bf1fd8f593153c2e18396",
+          "size": 903
+        },
+        "assets/css/dashboard.css": {
+          "sha256": "edb906bb6801d654fbeb9767e8672f1873c7738505951e099665e2de150a937d",
+          "size": 8047
+        },
+        "assets/css/examples-family.css": {
+          "sha256": "00a00e79a0cfa9253b3a0ceb3f0d2438b692f53c70332e08a08aef077878843a",
+          "size": 2774
+        },
+        "assets/css/examples.css": {
+          "sha256": "06ce4da75d5cfad84360b14b0c121007f1af95673483f434a2d036b202dd7d95",
+          "size": 11086
+        },
+        "assets/css/fonts.css": {
+          "sha256": "80f766b73961542249d0cd82917d72ad65a9d869cfbb1566daeba5caba56560f",
+          "size": 13542
+        },
+        "assets/css/jekyll.css": {
+          "sha256": "ac30e6fa6819d169e01fb8e1a270f9087084648a21f17b8b588dbfb92551eb2a",
+          "size": 2308
+        },
+        "assets/css/scientific.css": {
+          "sha256": "08614aa3c62d2217aaf709c6f94e9704dec8145f3b63427c76f1e36554c6c5ab",
+          "size": 2074
+        },
+        "assets/css/shell.css": {
+          "sha256": "d5cf12b35bac7b01cfb2c0298102454309fe979e19584c00490a21c93d500f45",
+          "size": 89103
+        },
+        "assets/examples/coast.svg": {
+          "sha256": "8854d27cabdcb1c8a471b7fdb56ae640a957f3c5977cdd9ffa71ca44dd7f8b4b",
+          "size": 616
+        },
+        "assets/examples/notebook.svg": {
+          "sha256": "7ea9240d26c7cb2d60912dbad34c4eff87aaa8f48f65735987e1843292b18353",
+          "size": 506
+        },
+        "assets/examples/observations.csv": {
+          "sha256": "8818a5383144e4e4ff8525631ddd3186f04836763564cba37abae9ed9dd3c955",
+          "size": 136
+        },
+        "assets/examples/station.svg": {
+          "sha256": "a8c6618b46b679c509d4ff3ca6fb289d9f39b9feebba51e69f383d2d0571cb85",
+          "size": 541
+        },
+        "assets/fonts/cambo-LICENSE.txt": {
+          "sha256": "faa8e62c49fffe3e86168db72430c490279d1341b724da47c535f04ebf2c02f2",
+          "size": 4473
+        },
+        "assets/fonts/cambo-latin-400-normal.8g9ZlP0h.woff2": {
+          "sha256": "eead0ca3048c44e7ecd8302e903c282bc4041155198703ab7c0078cca94b76ab",
+          "size": 9628
+        },
+        "assets/fonts/cambo-latin-400-normal.PIAh7sIB.woff": {
+          "sha256": "aceecf8fd5f9fe7abf56f1d4644d6897cca8be8f5ec5d368fefc39010756447a",
+          "size": 13068
+        },
+        "assets/fonts/cinzel-LICENSE.txt": {
+          "sha256": "f5a242cf68ad6ebd0603b3359a74c593ca080318a681035be5296ba2c6b04ae6",
+          "size": 4382
+        },
+        "assets/fonts/cinzel-latin-400-normal.C8jUSQqm.woff": {
+          "sha256": "99c6477f06f0c717d31f2bb41013582c347be65366179d5726d107ad908ff3b0",
+          "size": 16616
+        },
+        "assets/fonts/cinzel-latin-400-normal.DnUIPmzd.woff2": {
+          "sha256": "b873cdd90d6bd9ca4793c805b4175abfae00b3611ee8afccf63067133dcf1217",
+          "size": 14128
+        },
+        "assets/fonts/cinzel-latin-600-normal.CH_LB4su.woff": {
+          "sha256": "7cffb40d1c02861fd0f2fedf9446f36b9d38ce312c723927667ebcffc8690894",
+          "size": 17504
+        },
+        "assets/fonts/cinzel-latin-600-normal.Dd5YO2UX.woff2": {
+          "sha256": "61efc27ceb7d08bb841652fa8979c0b6833b92548b7f9544c07968a6c02f28e4",
+          "size": 15204
+        },
+        "assets/fonts/cinzel-latin-700-normal.C-gK7hA8.woff": {
+          "sha256": "83ea41e439a253b4d436cc895d07a0d47f714c4816a23e86df35c442eddffafb",
+          "size": 17524
+        },
+        "assets/fonts/cinzel-latin-700-normal.Dkw14w9r.woff2": {
+          "sha256": "8efa224fe70fef188a39c095e218b81fd31061809f2752537e33a9ec7b9c2263",
+          "size": 15184
+        },
+        "assets/fonts/cinzel-latin-800-normal.69OYDlL6.woff": {
+          "sha256": "f4e0646d7daff85da7c61990ca928b80b857d110ca5495e274dccb2105de407c",
+          "size": 17536
+        },
+        "assets/fonts/cinzel-latin-800-normal.CwkMVn6z.woff2": {
+          "sha256": "47fd3e35a90ae2198df04cdc9f036011f1b58f6e97878de7aa9258c35f6ac665",
+          "size": 15260
+        },
+        "assets/fonts/ibm-plex-mono-LICENSE.txt": {
+          "sha256": "23b0a9d0c6d3f140a0b77e483c5cfa6bba574325ef5cb189ed9f2fec4884533f",
+          "size": 5299
+        },
+        "assets/fonts/ibm-plex-mono-latin-400-italic.66oory27.woff": {
+          "sha256": "45f28e1017f6b45430614ec8a892d5b3e046870f3ecb3a26b1c99c1e5a183877",
+          "size": 14992
+        },
+        "assets/fonts/ibm-plex-mono-latin-400-italic.BqAiT5Ww.woff2": {
+          "sha256": "0840095faae86403735a8c04014b72cb29e7923646b222b360b7e8252932e4e3",
+          "size": 16448
+        },
+        "assets/fonts/ibm-plex-mono-latin-400-normal.CvHOgSBP.woff": {
+          "sha256": "328d50b6ece9ca25c46eea3e885ba497f6237f2fb84ef7b92f88e14a1a25e381",
+          "size": 13144
+        },
+        "assets/fonts/ibm-plex-mono-latin-400-normal.DMJ8VG8y.woff2": {
+          "sha256": "08949f728dc52d528e69b1667d15c89a5686a4ee9a296ff90983985f99c380f7",
+          "size": 14708
+        },
+        "assets/fonts/ibm-plex-mono-latin-500-italic.As4cCeDr.woff2": {
+          "sha256": "528cc360f6e6f5210526a33b6ed8f2c37084bd0c73b918f25a55f48b40c4ac52",
+          "size": 16484
+        },
+        "assets/fonts/ibm-plex-mono-latin-500-italic.C4MYrNFW.woff": {
+          "sha256": "a0de2addd5dcd80502962b65ecfedadd7d35e7df72d4e5b30a34325188f0d0a2",
+          "size": 15072
+        },
+        "assets/fonts/ibm-plex-mono-latin-500-normal.CB9ihrfo.woff": {
+          "sha256": "09f018c58556e5801ecc49d5b5275dcff4c73311c2af6b88e31c51d76d076a9d",
+          "size": 13156
+        },
+        "assets/fonts/ibm-plex-mono-latin-500-normal.DSY6xOcd.woff2": {
+          "sha256": "01d285447409c8a588692162439a038b8cbd7871309ee20267b0d2d91c6e8e22",
+          "size": 14888
+        },
+        "assets/fonts/ibm-plex-mono-latin-600-italic.DYu2LnOQ.woff": {
+          "sha256": "9ab7e2e790ae597f220deebd56d09c6ed891e0447d37582913abd13bbbcea1c4",
+          "size": 15060
+        },
+        "assets/fonts/ibm-plex-mono-latin-600-italic.DrfJ59vG.woff2": {
+          "sha256": "42a8ca72a19c5ee1612ac3e35f52d08f34a09856c9466dc87a21101ad230ed6b",
+          "size": 17356
+        },
+        "assets/fonts/ibm-plex-mono-latin-600-normal.BgSNZQsw.woff2": {
+          "sha256": "0d1f0b8d0722224e32e9f28261bdc86c79115be73444ae5eceb73976a1bcdf83",
+          "size": 15620
+        },
+        "assets/fonts/ibm-plex-mono-latin-600-normal.DWFSQ4vo.woff": {
+          "sha256": "cb96282f22c6f19112856fd6e0b34e2baefaf4ca6551e851d58c5ab0aabcd2be",
+          "size": 13208
+        },
+        "assets/fonts/ibm-plex-mono-latin-700-italic.DHuxH1Z4.woff": {
+          "sha256": "fc59060a8ece992f30b46130e08cbdd3f6ee25f6d30f7f9213a07a1188a53887",
+          "size": 14964
+        },
+        "assets/fonts/ibm-plex-mono-latin-700-italic.J6kahdQd.woff2": {
+          "sha256": "2bb0d4c82652472446ed1a5a89a0553f2db1e4ea17cbda66a45e690899d83e91",
+          "size": 16540
+        },
+        "assets/fonts/ibm-plex-mono-latin-700-normal.7sUh57Bg.woff2": {
+          "sha256": "4f84d86cfd060f4ded334358ff8a4c81d4db2ed5addd568359d693f44a87765a",
+          "size": 14908
+        },
+        "assets/fonts/ibm-plex-mono-latin-700-normal.CNHXzs6v.woff": {
+          "sha256": "595e0cbaa671f5276f5fdcac6113c30b2386f247f61cb42fc81f5096631a51e4",
+          "size": 13212
+        },
+        "assets/fonts/lato-LICENSE.txt": {
+          "sha256": "9648253641ec1d1f8ba2fbe8997909f7bfc48cc38537946f6272321788465b84",
+          "size": 6074
+        },
+        "assets/fonts/lato-latin-400-italic.DL5fBv-7.woff": {
+          "sha256": "387834b6bd2d74b8598383709521ddd04f4ef1ec8c6f80ac2cba8ddae82f996b",
+          "size": 18588
+        },
+        "assets/fonts/lato-latin-400-italic.Dc0B1559.woff2": {
+          "sha256": "bca1d88ada544d9c80872d4da27133fab6d347361fa26e932b47ec9559088fd0",
+          "size": 24408
+        },
+        "assets/fonts/lato-latin-400-normal.B11PyLys.woff": {
+          "sha256": "f55abc76e10cc86d799a7189e64e3c6e4cc6ced19b2474b1852a808be46232a8",
+          "size": 17452
+        },
+        "assets/fonts/lato-latin-400-normal.BEhtfm5r.woff2": {
+          "sha256": "918b7dc3e2e2d015c16ce08b57bcb64d2253bafc1707658f361e72865498e537",
+          "size": 23580
+        },
+        "assets/fonts/lato-latin-700-italic.Db_2buKa.woff": {
+          "sha256": "81e17cb70bfa6bf1d3021167fd0a5040f6cfde267bd4ec4a46f32228c66c5fbe",
+          "size": 18564
+        },
+        "assets/fonts/lato-latin-700-italic.Jzc1y7Yy.woff2": {
+          "sha256": "6c84348296ebe2e2a0830c3962eb02156419d9bc76371c2eadaf7329d827d550",
+          "size": 24448
+        },
+        "assets/fonts/lato-latin-700-normal.BUGMgin4.woff2": {
+          "sha256": "c447dd7677b419db7b21dbdfc6277c7816a913ffda76fd2e52702df538de0e49",
+          "size": 23040
+        },
+        "assets/fonts/lato-latin-700-normal.DAdL7O4w.woff": {
+          "sha256": "98149dd994189af57b3867d308874c7acb05edd3351663ccca860b87044479db",
+          "size": 17624
+        },
+        "assets/js/dashboard-model.mjs": {
+          "sha256": "882e7dce010d7120727fccc3599b2b3e90473db93066de70d93a61d05a8179c5",
+          "size": 14441
+        },
+        "assets/js/dashboard-ui.mjs": {
+          "sha256": "3f551d6ab16d74cefdec7d8246bfce448b85f8412694b106826ea312c31dfb4f",
+          "size": 6035
+        },
+        "assets/js/dashboards.mjs": {
+          "sha256": "94ebca4a88c7e820dfb801e28d9251c7f781d016d43f1ee9f34c2876f9de7b01",
+          "size": 27070
+        },
+        "assets/js/examples.js": {
+          "sha256": "e2dd5bd36a17050db6aff9512c1bbad22feba8f686de548a9e7849dee1b64735",
+          "size": 16730
+        },
+        "assets/js/scientific.mjs": {
+          "sha256": "ccff3cf6fda8b5952b1b03b3a5aaa0eb0bf09339b979c0b87c211a2f93bc51fe",
+          "size": 3263
+        },
+        "assets/js/shell.js": {
+          "sha256": "5a07d5f98f27bea8abdcaa358700ffba159e62b02cdeb6b3d142d9ecd5199de9",
+          "size": 1497
+        },
+        "assets/js/thermal-model.mjs": {
+          "sha256": "f33396b42f6711fe54435caa9e7577144eea779786b4838e68ee43ce3e2a13f9",
+          "size": 1696
+        },
+        "assets/mark.svg": {
+          "sha256": "eaec6dce2e743b145f99dc4331c3c7fa9431280b53b84e688d89e24117354927",
+          "size": 20746
+        },
+        "assets/owner.svg": {
+          "sha256": "05c66bb02e8ec8a2277a452a5f3728362c7ea7f087ee19126230d9d1d114423a",
+          "size": 36757
+        },
+        "deployment-proof.json": {
+          "sha256": "8e864c63f90272b85f591dc20685fb00da84113736fba3be624c49db1ec9df37",
+          "size": 605
+        },
+        "docs/v/1.0.0/404.html": {
+          "sha256": "d761a918c2cf72eddbaad33af8e211f87d59c11f63065c1aa577b452e1500f62",
+          "size": 5805
+        },
+        "docs/v/1.0.0/LICENSE": {
+          "sha256": "1067907e4c1a431923d3e1b37c42e3fbb8dbeb79aab20ccc0e8c8e7c1323eed6",
+          "size": 1076
+        },
+        "docs/v/1.0.0/NOTICE.md": {
+          "sha256": "8e5b59cf0cc4e427296763f718407ba4760821f95c1208ee51620050bcbbf398",
+          "size": 736
+        },
+        "docs/v/1.0.0/VERSION": {
+          "sha256": "59854984853104df5c353e2f681a15fc7924742f9a2e468c29af248dce45ce03",
+          "size": 6
+        },
+        "docs/v/1.0.0/assets/css/dashboard-family.css": {
+          "sha256": "0e9e979525831029745a80858bdc8e17ec5b40e6171bf1fd8f593153c2e18396",
+          "size": 903
+        },
+        "docs/v/1.0.0/assets/css/dashboard.css": {
+          "sha256": "edb906bb6801d654fbeb9767e8672f1873c7738505951e099665e2de150a937d",
+          "size": 8047
+        },
+        "docs/v/1.0.0/assets/css/examples-family.css": {
+          "sha256": "00a00e79a0cfa9253b3a0ceb3f0d2438b692f53c70332e08a08aef077878843a",
+          "size": 2774
+        },
+        "docs/v/1.0.0/assets/css/examples.css": {
+          "sha256": "06ce4da75d5cfad84360b14b0c121007f1af95673483f434a2d036b202dd7d95",
+          "size": 11086
+        },
+        "docs/v/1.0.0/assets/css/fonts.css": {
+          "sha256": "80f766b73961542249d0cd82917d72ad65a9d869cfbb1566daeba5caba56560f",
+          "size": 13542
+        },
+        "docs/v/1.0.0/assets/css/jekyll.css": {
+          "sha256": "ac30e6fa6819d169e01fb8e1a270f9087084648a21f17b8b588dbfb92551eb2a",
+          "size": 2308
+        },
+        "docs/v/1.0.0/assets/css/scientific.css": {
+          "sha256": "08614aa3c62d2217aaf709c6f94e9704dec8145f3b63427c76f1e36554c6c5ab",
+          "size": 2074
+        },
+        "docs/v/1.0.0/assets/css/shell.css": {
+          "sha256": "d5cf12b35bac7b01cfb2c0298102454309fe979e19584c00490a21c93d500f45",
+          "size": 89103
+        },
+        "docs/v/1.0.0/assets/examples/coast.svg": {
+          "sha256": "8854d27cabdcb1c8a471b7fdb56ae640a957f3c5977cdd9ffa71ca44dd7f8b4b",
+          "size": 616
+        },
+        "docs/v/1.0.0/assets/examples/notebook.svg": {
+          "sha256": "7ea9240d26c7cb2d60912dbad34c4eff87aaa8f48f65735987e1843292b18353",
+          "size": 506
+        },
+        "docs/v/1.0.0/assets/examples/observations.csv": {
+          "sha256": "8818a5383144e4e4ff8525631ddd3186f04836763564cba37abae9ed9dd3c955",
+          "size": 136
+        },
+        "docs/v/1.0.0/assets/examples/station.svg": {
+          "sha256": "a8c6618b46b679c509d4ff3ca6fb289d9f39b9feebba51e69f383d2d0571cb85",
+          "size": 541
+        },
+        "docs/v/1.0.0/assets/fonts/cambo-LICENSE.txt": {
+          "sha256": "faa8e62c49fffe3e86168db72430c490279d1341b724da47c535f04ebf2c02f2",
+          "size": 4473
+        },
+        "docs/v/1.0.0/assets/fonts/cambo-latin-400-normal.8g9ZlP0h.woff2": {
+          "sha256": "eead0ca3048c44e7ecd8302e903c282bc4041155198703ab7c0078cca94b76ab",
+          "size": 9628
+        },
+        "docs/v/1.0.0/assets/fonts/cambo-latin-400-normal.PIAh7sIB.woff": {
+          "sha256": "aceecf8fd5f9fe7abf56f1d4644d6897cca8be8f5ec5d368fefc39010756447a",
+          "size": 13068
+        },
+        "docs/v/1.0.0/assets/fonts/cinzel-LICENSE.txt": {
+          "sha256": "f5a242cf68ad6ebd0603b3359a74c593ca080318a681035be5296ba2c6b04ae6",
+          "size": 4382
+        },
+        "docs/v/1.0.0/assets/fonts/cinzel-latin-400-normal.C8jUSQqm.woff": {
+          "sha256": "99c6477f06f0c717d31f2bb41013582c347be65366179d5726d107ad908ff3b0",
+          "size": 16616
+        },
+        "docs/v/1.0.0/assets/fonts/cinzel-latin-400-normal.DnUIPmzd.woff2": {
+          "sha256": "b873cdd90d6bd9ca4793c805b4175abfae00b3611ee8afccf63067133dcf1217",
+          "size": 14128
+        },
+        "docs/v/1.0.0/assets/fonts/cinzel-latin-600-normal.CH_LB4su.woff": {
+          "sha256": "7cffb40d1c02861fd0f2fedf9446f36b9d38ce312c723927667ebcffc8690894",
+          "size": 17504
+        },
+        "docs/v/1.0.0/assets/fonts/cinzel-latin-600-normal.Dd5YO2UX.woff2": {
+          "sha256": "61efc27ceb7d08bb841652fa8979c0b6833b92548b7f9544c07968a6c02f28e4",
+          "size": 15204
+        },
+        "docs/v/1.0.0/assets/fonts/cinzel-latin-700-normal.C-gK7hA8.woff": {
+          "sha256": "83ea41e439a253b4d436cc895d07a0d47f714c4816a23e86df35c442eddffafb",
+          "size": 17524
+        },
+        "docs/v/1.0.0/assets/fonts/cinzel-latin-700-normal.Dkw14w9r.woff2": {
+          "sha256": "8efa224fe70fef188a39c095e218b81fd31061809f2752537e33a9ec7b9c2263",
+          "size": 15184
+        },
+        "docs/v/1.0.0/assets/fonts/cinzel-latin-800-normal.69OYDlL6.woff": {
+          "sha256": "f4e0646d7daff85da7c61990ca928b80b857d110ca5495e274dccb2105de407c",
+          "size": 17536
+        },
+        "docs/v/1.0.0/assets/fonts/cinzel-latin-800-normal.CwkMVn6z.woff2": {
+          "sha256": "47fd3e35a90ae2198df04cdc9f036011f1b58f6e97878de7aa9258c35f6ac665",
+          "size": 15260
+        },
+        "docs/v/1.0.0/assets/fonts/ibm-plex-mono-LICENSE.txt": {
+          "sha256": "23b0a9d0c6d3f140a0b77e483c5cfa6bba574325ef5cb189ed9f2fec4884533f",
+          "size": 5299
+        },
+        "docs/v/1.0.0/assets/fonts/ibm-plex-mono-latin-400-italic.66oory27.woff": {
+          "sha256": "45f28e1017f6b45430614ec8a892d5b3e046870f3ecb3a26b1c99c1e5a183877",
+          "size": 14992
+        },
+        "docs/v/1.0.0/assets/fonts/ibm-plex-mono-latin-400-italic.BqAiT5Ww.woff2": {
+          "sha256": "0840095faae86403735a8c04014b72cb29e7923646b222b360b7e8252932e4e3",
+          "size": 16448
+        },
+        "docs/v/1.0.0/assets/fonts/ibm-plex-mono-latin-400-normal.CvHOgSBP.woff": {
+          "sha256": "328d50b6ece9ca25c46eea3e885ba497f6237f2fb84ef7b92f88e14a1a25e381",
+          "size": 13144
+        },
+        "docs/v/1.0.0/assets/fonts/ibm-plex-mono-latin-400-normal.DMJ8VG8y.woff2": {
+          "sha256": "08949f728dc52d528e69b1667d15c89a5686a4ee9a296ff90983985f99c380f7",
+          "size": 14708
+        },
+        "docs/v/1.0.0/assets/fonts/ibm-plex-mono-latin-500-italic.As4cCeDr.woff2": {
+          "sha256": "528cc360f6e6f5210526a33b6ed8f2c37084bd0c73b918f25a55f48b40c4ac52",
+          "size": 16484
+        },
+        "docs/v/1.0.0/assets/fonts/ibm-plex-mono-latin-500-italic.C4MYrNFW.woff": {
+          "sha256": "a0de2addd5dcd80502962b65ecfedadd7d35e7df72d4e5b30a34325188f0d0a2",
+          "size": 15072
+        },
+        "docs/v/1.0.0/assets/fonts/ibm-plex-mono-latin-500-normal.CB9ihrfo.woff": {
+          "sha256": "09f018c58556e5801ecc49d5b5275dcff4c73311c2af6b88e31c51d76d076a9d",
+          "size": 13156
+        },
+        "docs/v/1.0.0/assets/fonts/ibm-plex-mono-latin-500-normal.DSY6xOcd.woff2": {
+          "sha256": "01d285447409c8a588692162439a038b8cbd7871309ee20267b0d2d91c6e8e22",
+          "size": 14888
+        },
+        "docs/v/1.0.0/assets/fonts/ibm-plex-mono-latin-600-italic.DYu2LnOQ.woff": {
+          "sha256": "9ab7e2e790ae597f220deebd56d09c6ed891e0447d37582913abd13bbbcea1c4",
+          "size": 15060
+        },
+        "docs/v/1.0.0/assets/fonts/ibm-plex-mono-latin-600-italic.DrfJ59vG.woff2": {
+          "sha256": "42a8ca72a19c5ee1612ac3e35f52d08f34a09856c9466dc87a21101ad230ed6b",
+          "size": 17356
+        },
+        "docs/v/1.0.0/assets/fonts/ibm-plex-mono-latin-600-normal.BgSNZQsw.woff2": {
+          "sha256": "0d1f0b8d0722224e32e9f28261bdc86c79115be73444ae5eceb73976a1bcdf83",
+          "size": 15620
+        },
+        "docs/v/1.0.0/assets/fonts/ibm-plex-mono-latin-600-normal.DWFSQ4vo.woff": {
+          "sha256": "cb96282f22c6f19112856fd6e0b34e2baefaf4ca6551e851d58c5ab0aabcd2be",
+          "size": 13208
+        },
+        "docs/v/1.0.0/assets/fonts/ibm-plex-mono-latin-700-italic.DHuxH1Z4.woff": {
+          "sha256": "fc59060a8ece992f30b46130e08cbdd3f6ee25f6d30f7f9213a07a1188a53887",
+          "size": 14964
+        },
+        "docs/v/1.0.0/assets/fonts/ibm-plex-mono-latin-700-italic.J6kahdQd.woff2": {
+          "sha256": "2bb0d4c82652472446ed1a5a89a0553f2db1e4ea17cbda66a45e690899d83e91",
+          "size": 16540
+        },
+        "docs/v/1.0.0/assets/fonts/ibm-plex-mono-latin-700-normal.7sUh57Bg.woff2": {
+          "sha256": "4f84d86cfd060f4ded334358ff8a4c81d4db2ed5addd568359d693f44a87765a",
+          "size": 14908
+        },
+        "docs/v/1.0.0/assets/fonts/ibm-plex-mono-latin-700-normal.CNHXzs6v.woff": {
+          "sha256": "595e0cbaa671f5276f5fdcac6113c30b2386f247f61cb42fc81f5096631a51e4",
+          "size": 13212
+        },
+        "docs/v/1.0.0/assets/fonts/lato-LICENSE.txt": {
+          "sha256": "9648253641ec1d1f8ba2fbe8997909f7bfc48cc38537946f6272321788465b84",
+          "size": 6074
+        },
+        "docs/v/1.0.0/assets/fonts/lato-latin-400-italic.DL5fBv-7.woff": {
+          "sha256": "387834b6bd2d74b8598383709521ddd04f4ef1ec8c6f80ac2cba8ddae82f996b",
+          "size": 18588
+        },
+        "docs/v/1.0.0/assets/fonts/lato-latin-400-italic.Dc0B1559.woff2": {
+          "sha256": "bca1d88ada544d9c80872d4da27133fab6d347361fa26e932b47ec9559088fd0",
+          "size": 24408
+        },
+        "docs/v/1.0.0/assets/fonts/lato-latin-400-normal.B11PyLys.woff": {
+          "sha256": "f55abc76e10cc86d799a7189e64e3c6e4cc6ced19b2474b1852a808be46232a8",
+          "size": 17452
+        },
+        "docs/v/1.0.0/assets/fonts/lato-latin-400-normal.BEhtfm5r.woff2": {
+          "sha256": "918b7dc3e2e2d015c16ce08b57bcb64d2253bafc1707658f361e72865498e537",
+          "size": 23580
+        },
+        "docs/v/1.0.0/assets/fonts/lato-latin-700-italic.Db_2buKa.woff": {
+          "sha256": "81e17cb70bfa6bf1d3021167fd0a5040f6cfde267bd4ec4a46f32228c66c5fbe",
+          "size": 18564
+        },
+        "docs/v/1.0.0/assets/fonts/lato-latin-700-italic.Jzc1y7Yy.woff2": {
+          "sha256": "6c84348296ebe2e2a0830c3962eb02156419d9bc76371c2eadaf7329d827d550",
+          "size": 24448
+        },
+        "docs/v/1.0.0/assets/fonts/lato-latin-700-normal.BUGMgin4.woff2": {
+          "sha256": "c447dd7677b419db7b21dbdfc6277c7816a913ffda76fd2e52702df538de0e49",
+          "size": 23040
+        },
+        "docs/v/1.0.0/assets/fonts/lato-latin-700-normal.DAdL7O4w.woff": {
+          "sha256": "98149dd994189af57b3867d308874c7acb05edd3351663ccca860b87044479db",
+          "size": 17624
+        },
+        "docs/v/1.0.0/assets/js/dashboard-model.mjs": {
+          "sha256": "882e7dce010d7120727fccc3599b2b3e90473db93066de70d93a61d05a8179c5",
+          "size": 14441
+        },
+        "docs/v/1.0.0/assets/js/dashboard-ui.mjs": {
+          "sha256": "3f551d6ab16d74cefdec7d8246bfce448b85f8412694b106826ea312c31dfb4f",
+          "size": 6035
+        },
+        "docs/v/1.0.0/assets/js/dashboards.mjs": {
+          "sha256": "94ebca4a88c7e820dfb801e28d9251c7f781d016d43f1ee9f34c2876f9de7b01",
+          "size": 27070
+        },
+        "docs/v/1.0.0/assets/js/examples.js": {
+          "sha256": "e2dd5bd36a17050db6aff9512c1bbad22feba8f686de548a9e7849dee1b64735",
+          "size": 16730
+        },
+        "docs/v/1.0.0/assets/js/scientific.mjs": {
+          "sha256": "ccff3cf6fda8b5952b1b03b3a5aaa0eb0bf09339b979c0b87c211a2f93bc51fe",
+          "size": 3263
+        },
+        "docs/v/1.0.0/assets/js/shell.js": {
+          "sha256": "5a07d5f98f27bea8abdcaa358700ffba159e62b02cdeb6b3d142d9ecd5199de9",
+          "size": 1497
+        },
+        "docs/v/1.0.0/assets/js/thermal-model.mjs": {
+          "sha256": "f33396b42f6711fe54435caa9e7577144eea779786b4838e68ee43ce3e2a13f9",
+          "size": 1696
+        },
+        "docs/v/1.0.0/assets/mark.svg": {
+          "sha256": "eaec6dce2e743b145f99dc4331c3c7fa9431280b53b84e688d89e24117354927",
+          "size": 20746
+        },
+        "docs/v/1.0.0/assets/owner.svg": {
+          "sha256": "05c66bb02e8ec8a2277a452a5f3728362c7ea7f087ee19126230d9d1d114423a",
+          "size": 36757
+        },
+        "docs/v/1.0.0/examples/about/index.html": {
+          "sha256": "bde2ecf68305ec113e3206385363f92338fdd36c5c1b6649d4adca8256be9350",
+          "size": 7073
+        },
+        "docs/v/1.0.0/examples/archive/index.html": {
+          "sha256": "05ae45cf0033e94a58cc9d45fff05810183d698c9b890e24ec85f91bfe95f667",
+          "size": 7620
+        },
+        "docs/v/1.0.0/examples/article/index.html": {
+          "sha256": "2576c757becaab70db5ad577da905ca82382e63fcca2de75720d48a1db17158a",
+          "size": 7848
+        },
+        "docs/v/1.0.0/examples/careers/index.html": {
+          "sha256": "5d6ca4328153f23475846c14db740519e2f13fdca2a39cd491ae92bf109cc2ea",
+          "size": 6304
+        },
+        "docs/v/1.0.0/examples/case-study/index.html": {
+          "sha256": "0381b13cf28a8d3b50fa3a0945216aa98366f50582d297210cb2537502fc6293",
+          "size": 7300
+        },
+        "docs/v/1.0.0/examples/categories/index.html": {
+          "sha256": "cf685a93c59c57130cb24d4b451afd6307b6ea5db7b82cfef741909d2db41c8b",
+          "size": 5857
+        },
+        "docs/v/1.0.0/examples/category/index.html": {
+          "sha256": "5e09e643207b32c6651975e00bcc8bef99e96b9602e85b8768d1343debfff7a7",
+          "size": 6359
+        },
+        "docs/v/1.0.0/examples/changelog/index.html": {
+          "sha256": "6270e04fb6006bd7cd248fa7a2493e46bd892939e4f068b108b98b22c8b91f79",
+          "size": 6745
+        },
+        "docs/v/1.0.0/examples/chat/index.html": {
+          "sha256": "91a47c8beb944a3226b669ab06b1542a0668aeb73dd31407057d05e044174e11",
+          "size": 6341
+        },
+        "docs/v/1.0.0/examples/collection/index.html": {
+          "sha256": "d194b80e61888c0ca7024210aee70655f89c4f8e55cad4c008282fef321ddf7b",
+          "size": 6837
+        },
+        "docs/v/1.0.0/examples/collection-item/index.html": {
+          "sha256": "f93f4510b6f142568cb36af16b528b7cd84f675c677f7075cf18fee85f7bff51",
+          "size": 6822
+        },
+        "docs/v/1.0.0/examples/coming-soon/index.html": {
+          "sha256": "00a2ac8a4fe37f4917b72d2e286dad26436c44d47abe80230984517311bf33e9",
+          "size": 7149
+        },
+        "docs/v/1.0.0/examples/contact/index.html": {
+          "sha256": "e7824d1fe129115e673b77587d43fee3891156f648f469df2542cb05095a10d9",
+          "size": 7237
+        },
+        "docs/v/1.0.0/examples/dashboard-administration/index.html": {
+          "sha256": "166164b08db607ebce3b1cdf1a8b18f7aca1b3a313d937024cc3994c03623997",
+          "size": 48838
+        },
+        "docs/v/1.0.0/examples/dashboard-analytics/index.html": {
+          "sha256": "4abf73df83a3527b95079583e018ad8bb6fad55a81fad7d186ab4e734bf98291",
+          "size": 48588
+        },
+        "docs/v/1.0.0/examples/dashboard-components/index.html": {
+          "sha256": "78d3493b926da929637c42119bbc5c4683009bc86f7ab3d4820d3d65337ad685",
+          "size": 7767
+        },
+        "docs/v/1.0.0/examples/dashboard-operations/index.html": {
+          "sha256": "b0123bc15d1f0d60e866ebb9c19ea3cdcd7e038eea8bb97fb95e91a2c465b759",
+          "size": 47382
+        },
+        "docs/v/1.0.0/examples/documentation/index.html": {
+          "sha256": "7ff6a6ebc4db5d37bd35a2d10b845a05380ef56f74ed4c04805b4f60a05359f5",
+          "size": 5999
+        },
+        "docs/v/1.0.0/examples/event/index.html": {
+          "sha256": "35ccbb2719bbb999e6879c37a32c931bb1818402655d39a525a4db58884a994a",
+          "size": 7384
+        },
+        "docs/v/1.0.0/examples/events/index.html": {
+          "sha256": "a07e8b3eb2b3d14da7c6b9194f000eef3f42abceaa0ff75fe504b346bb58b343",
+          "size": 6953
+        },
+        "docs/v/1.0.0/examples/faq/index.html": {
+          "sha256": "6614e7cbd0aea1bb6fa6f4ce6d8503a4565c421e65788dd4d2e9da459b48d82e",
+          "size": 6412
+        },
+        "docs/v/1.0.0/examples/fleet/index.html": {
+          "sha256": "74216961184cee2a060a56388355f2f616959dadd57c99af192939fdc26aa930",
+          "size": 7046
+        },
+        "docs/v/1.0.0/examples/gallery/index.html": {
+          "sha256": "8d6745e80506f037e03a754fb6fc887335d755cf6603137b67b75e5d69f53055",
+          "size": 7434
+        },
+        "docs/v/1.0.0/examples/guide/index.html": {
+          "sha256": "4cc9cf9ccd22fc8dcb8669b60a58d263d8d503fba0685e87c70243f4e806d75a",
+          "size": 7038
+        },
+        "docs/v/1.0.0/examples/home/index.html": {
+          "sha256": "ace517bfaa2e5cdc11039f37bfd8acb445530a36ea93c5647b311e204c85e674",
+          "size": 6672
+        },
+        "docs/v/1.0.0/examples/index.html": {
+          "sha256": "732cbf27ab63b4d530675714135a76e76c11aa641536efd1cfa69f19148c3f3b",
+          "size": 21023
+        },
+        "docs/v/1.0.0/examples/integrations/index.html": {
+          "sha256": "c655007020e32d2f18a122bb8f8c67dffca332aa488eddba7463e43f21ee3f10",
+          "size": 8156
+        },
+        "docs/v/1.0.0/examples/not-found/index.html": {
+          "sha256": "71fc04bd9c1f60fa13bfcecff43bf04503deea7f1a0ec48f588e0c67de5d59dd",
+          "size": 5903
+        },
+        "docs/v/1.0.0/examples/opportunity/index.html": {
+          "sha256": "adc84f036c66789a0ed90e2ad7fe9fb047dcc80aaa8118383dfbc42d4c2f18a2",
+          "size": 7479
+        },
+        "docs/v/1.0.0/examples/password-reset/index.html": {
+          "sha256": "e1d65d073fc4fad69b23fd1567d3b22e17713515eeacb66dede28d23f61a1c2b",
+          "size": 7510
+        },
+        "docs/v/1.0.0/examples/patterns/index.html": {
+          "sha256": "1684db654845e512ca4cb082b8329a68ae4756bcc331e384db116dde8125ac42",
+          "size": 7102
+        },
+        "docs/v/1.0.0/examples/person/index.html": {
+          "sha256": "8f133e89ef75d0af5c3ff30a592202fae43a647b0bb4024c233606a1a4f904a7",
+          "size": 7658
+        },
+        "docs/v/1.0.0/examples/place/index.html": {
+          "sha256": "a1ee6db4bd7726f3f470e0ccffa7c02787bb6820ae4e3e7df5c603300a24e2d3",
+          "size": 6852
+        },
+        "docs/v/1.0.0/examples/pricing/index.html": {
+          "sha256": "c3d7387206e46d4fc47f58bfe2b2d1b3a1dc7f1544a917d550a695c8d3ffb826",
+          "size": 6906
+        },
+        "docs/v/1.0.0/examples/privacy/index.html": {
+          "sha256": "3c8edf24c4c02021636d50f8aae24f1cb354f60e53b95ba6390095bb6ab70038",
+          "size": 7019
+        },
+        "docs/v/1.0.0/examples/product/index.html": {
+          "sha256": "2febe5b091d7c66167905013af7d92c7b382500d44dfd21a2d8e3895c17bf88e",
+          "size": 6697
+        },
+        "docs/v/1.0.0/examples/projects/index.html": {
+          "sha256": "3d49200bb55377fdaf85f740b43269a5eb1b77c335aaed8403f8c76a6999c615",
+          "size": 6590
+        },
+        "docs/v/1.0.0/examples/reference/index.html": {
+          "sha256": "f2002760b469fa2b8bd8cb27b9f0e9cda04423648d1e08f2a3e2e63e79c115e1",
+          "size": 8845
+        },
+        "docs/v/1.0.0/examples/report/index.html": {
+          "sha256": "ada99889477980d04d3d4c09e883da3d7a07b203a6fba1d1efbf1f4d70f06693",
+          "size": 7684
+        },
+        "docs/v/1.0.0/examples/scene/index.html": {
+          "sha256": "19449713aeb3601f1e8ec0bdf1f95c4770fd12f579fd767fa6c234499741133a",
+          "size": 6570
+        },
+        "docs/v/1.0.0/examples/scientific-workspace/index.html": {
+          "sha256": "1a020224f4823b87b9f6f4c0ca896cb7fd5d04c7ba55af223082ec1e895630e3",
+          "size": 8670
+        },
+        "docs/v/1.0.0/examples/search/index.html": {
+          "sha256": "6a7596b8ca18e5bd0186a0a139e4fc08c9064dda58d461e7a14f5955d77fe501",
+          "size": 15965
+        },
+        "docs/v/1.0.0/examples/sensors/index.html": {
+          "sha256": "e450958edac41422364636e382ce225d52f22c9bd6fb11557c31076d0c87c98b",
+          "size": 6229
+        },
+        "docs/v/1.0.0/examples/server-error/index.html": {
+          "sha256": "66df0bbc39b067ffdc5f5a97204aa92b34a3df013f25da86891e42393c2bc5c6",
+          "size": 6080
+        },
+        "docs/v/1.0.0/examples/service/index.html": {
+          "sha256": "472659cccc580df74badb6e2c9e695d0d90bec100d3b061a2fc71c2fd242ec0b",
+          "size": 6989
+        },
+        "docs/v/1.0.0/examples/sign-in/index.html": {
+          "sha256": "c3bd764499127878cc46cac63d1ed539f55c10a2849a40e2f2a9340e263d1c29",
+          "size": 7828
+        },
+        "docs/v/1.0.0/examples/sign-up/index.html": {
+          "sha256": "412c0f7296dbde955d822ff956af677902dfa604f35be21c7409ac2625fc4cc8",
+          "size": 8086
+        },
+        "docs/v/1.0.0/examples/software/index.html": {
+          "sha256": "defc643bd75272abf03f11d9ab0885f6372fecb6720251742dfb9af360bd0c94",
+          "size": 7062
+        },
+        "docs/v/1.0.0/examples/stress-test/index.html": {
+          "sha256": "19d0c10e262b484bb69675958654fec666e4113d2fb29620719391dc42277baf",
+          "size": 10833
+        },
+        "docs/v/1.0.0/examples/terms/index.html": {
+          "sha256": "fd0869223c57a902a0953539c705195c3c6366b29aee2e804f65ff3fba72038c",
+          "size": 7013
+        },
+        "docs/v/1.0.0/examples/two-factor/index.html": {
+          "sha256": "18e3e4207510f57078bfbc92b30068553fe8d5b9429709a4f742602576bcc3ab",
+          "size": 7685
+        },
+        "docs/v/1.0.0/examples/workspace/index.html": {
+          "sha256": "e4bc8c7ad92e309638cc7ac3fe39c6cade095bebae9d8584df2b9e1aa308e80b",
+          "size": 7409
+        },
+        "docs/v/1.0.0/index.html": {
+          "sha256": "1a86fe29dc7d89d5043902d5d4285dc912d91a650e69c68db5d44b0e3fbe9178",
+          "size": 6333
+        },
+        "docs/v/1.0.0/journal/index.html": {
+          "sha256": "d55787c00b602b288c73118299cd15b8b48ca15e57f489d097bf87c0ecb3f1fa",
+          "size": 5159
+        },
+        "docs/v/1.0.0/journal/what-a-shell-should-own/index.html": {
+          "sha256": "1ac23674d4f10f7589f978c45147a2c3daf288137e0cb0eeec8d456edabfa723",
+          "size": 7158
+        },
+        "docs/v/1.0.0/language/index.html": {
+          "sha256": "24c89395c230f0c55dcad94d9d229d86d96a45a3d8a63b3136d761d6cce08241",
+          "size": 6634
+        },
+        "docs/v/1.0.0/nightjar/PROVENANCE.json": {
+          "sha256": "5bf971673e69fbf64e9d961ad5184d917d41617a7bd14b38cf877cf097d1e01f",
+          "size": 102395
+        },
+        "docs/v/1.0.0/nightjar/README.md": {
+          "sha256": "89ba678d43f3438cefb2d115ac745045a8785339151fd48d9426e83912a38b53",
+          "size": 1051
+        },
+        "docs/v/1.0.0/nightjar/build.py": {
+          "sha256": "2ea2fdd30b8566168dc25bcf567e6e3bf07d0d8a53a6ca46586c29c54db2c0ee",
+          "size": 2795
+        },
+        "docs/v/1.0.0/nightjar/ci-proposal.yml": {
+          "sha256": "1dd457b2f1935e83914e2c92a977dd7d4422231eb126f2e87822df3e23adb562",
+          "size": 421
+        },
+        "docs/v/1.0.0/nightjar/source-files.json": {
+          "sha256": "c897d02fa4ac94d931b6e2a9a8ae9b1ccfc9812f284a007d1561c2dab53b503a",
+          "size": 7202
+        },
+        "docs/v/1.0.0/nightjar/verify-html.py": {
+          "sha256": "7ffbaa1bdb86b2965d6666d1960e6013f1808c60081b8bcd5af763720c953184",
+          "size": 2306
+        },
+        "docs/v/1.0.0/nightjar/verify.py": {
+          "sha256": "9099ad8fbdfd36e68cd9ba1c3e9df79916af896e2ab1363bdb696b81550dab35",
+          "size": 4446
+        },
+        "docs/v/1.0.0/nightjar-local-evidence.json": {
+          "sha256": "63c6634122a50b46a929b39ff04de6cab932bffaf0db6e7f28d704f7f86a7dc0",
+          "size": 22834
+        },
+        "docs/v/1.0.0/release-policy.json": {
+          "sha256": "5f9469307cbf414512d4aef74976554bc7dfb279bf3b4e92f72168156c46aec8",
+          "size": 367
+        },
+        "docs/v/1.0.0/setup/index.html": {
+          "sha256": "a082e09066db9c03e688f5ddad9731a09b8d192038156cbbbf603fb0e5aeb446",
+          "size": 7402
+        },
+        "docs/v/1.0.0/template.zip": {
+          "sha256": "de97e71a49f1a270c9b548b8fae10db2d8741ae77fecc9f01263e92097c33710",
+          "size": 775234
+        },
+        "docs/versions/index.html": {
+          "sha256": "5c86be3b3dc18c2ac844272bb3d89d1c1022a8c635b09d9e27f5b76ba023caba",
+          "size": 458
+        },
+        "examples/about/index.html": {
+          "sha256": "b1f75187f980dbd059079954a85d0737ce92f34aa80793b09754c142945c2785",
+          "size": 6364
+        },
+        "examples/archive/index.html": {
+          "sha256": "13b6108ddec7c78620e08522b0b084a06dcf2953bc1dc73a9439a2ca6f6c3472",
+          "size": 6898
+        },
+        "examples/article/index.html": {
+          "sha256": "62c139e036c2c48c98d989f5261074a7e313d345495048b1a90d2ecef7f20031",
+          "size": 7126
+        },
+        "examples/careers/index.html": {
+          "sha256": "c88eee635e997fed2cd14a7ddcc10ebf75076811f629db8922b80738a42e4906",
+          "size": 5634
+        },
+        "examples/case-study/index.html": {
+          "sha256": "316baab745c5f4d0532ad7ca9d6a8bd9f6da9cbfea55cca6185ac4d4fc5767e6",
+          "size": 6630
+        },
+        "examples/categories/index.html": {
+          "sha256": "9e75bd283f44cf2cf1a74ca6fbc4d7c66bb6287116372752aad2192639d43c43",
+          "size": 5174
+        },
+        "examples/category/index.html": {
+          "sha256": "dbfeafa5d2ce71fdc4f614baff9e92b4925a0c2d93797c27d5e49ea19fb3f2a0",
+          "size": 5689
+        },
+        "examples/changelog/index.html": {
+          "sha256": "a853ea005f2366c72d7c2277dea2ab5101b5c7bea8f9f7ab3f2abc57fe538fad",
+          "size": 6101
+        },
+        "examples/chat/index.html": {
+          "sha256": "f186fc9c13c955bbb87e5de94f695cce8986e7b86b234bd1e36d7ac823a5b1ae",
+          "size": 5697
+        },
+        "examples/collection/index.html": {
+          "sha256": "a230b2f30bd1e88281bbde8b19b8c0c615bf6776676fa57e7fe59ced7327c6c5",
+          "size": 6141
+        },
+        "examples/collection-item/index.html": {
+          "sha256": "36f0797a62ecf737a3d5d60fa27875a58be276b8dd2f6e29d4c448ac68d7a6ba",
+          "size": 6152
+        },
+        "examples/coming-soon/index.html": {
+          "sha256": "969dd1c63fd1465bb136611f62466711faa308763326f44f9e4b21e0ae82338f",
+          "size": 6505
+        },
+        "examples/contact/index.html": {
+          "sha256": "6e13b5063b4d47e62c13d78a1e8838219e7522cd164c4c3db9931c3366e4789a",
+          "size": 6593
+        },
+        "examples/dashboard-administration/index.html": {
+          "sha256": "43aaed2974843e8d4120b0899d05cc8fc15d819758a19c2713633fab57e5178b",
+          "size": 48114
+        },
+        "examples/dashboard-analytics/index.html": {
+          "sha256": "537256fa72c932b2f8655c10fc0bacecae1a324926e19198c0c90a437e1b78e8",
+          "size": 47864
+        },
+        "examples/dashboard-components/index.html": {
+          "sha256": "dd7abc78a19ec47cfef42379a2f447def04ea8524881fb8d3dcb302f9c259b40",
+          "size": 7123
+        },
+        "examples/dashboard-operations/index.html": {
+          "sha256": "2a89ed76638f5b4f9f910385df636ef5f4c5d1a30e53d396e66154e9e72c9c06",
+          "size": 46658
+        },
+        "examples/documentation/index.html": {
+          "sha256": "f7ccec4831e7bd89ce1cd801d26e867c452d268c307da1dcdddc4ebeb5c1190a",
+          "size": 5316
+        },
+        "examples/event/index.html": {
+          "sha256": "1c82597ee53b9193a8308cfc43a7137633837f3ff0982212d55fbe8b0045c31e",
+          "size": 6727
+        },
+        "examples/events/index.html": {
+          "sha256": "343201b178e4a88fd61f8bc9850d8c954a945dd09af518511cd522587149a8b1",
+          "size": 6283
+        },
+        "examples/faq/index.html": {
+          "sha256": "d17f90fa9199acf0f2c400af7637aeedd26d7a6aca7c0c60ca619901bedcdf31",
+          "size": 5768
+        },
+        "examples/fleet/index.html": {
+          "sha256": "1c97d2b63d81b329217b15082c5b41dd7af56793caac05dadb0692fe377ec30b",
+          "size": 6402
+        },
+        "examples/gallery/index.html": {
+          "sha256": "f055976e39d5e4112dfc88d7c1c336e3d7dd63f35c789c8e7d5e86a4b4b0f8c1",
+          "size": 6712
+        },
+        "examples/guide/index.html": {
+          "sha256": "27bcdb690379d4387f3afc7378a5fae2a86515567c3fa1082534b7f27c7a539a",
+          "size": 6368
+        },
+        "examples/home/index.html": {
+          "sha256": "7018f558d82862d8ed89a73ab4fe1c57280d4421af3bc0ed80f18e16501ab47a",
+          "size": 5963
+        },
+        "examples/index.html": {
+          "sha256": "3de84097344cb89d02f45a5910c936a35ab2712a4cb3b1fef5ae83a2e5eca4a8",
+          "size": 19768
+        },
+        "examples/integrations/index.html": {
+          "sha256": "8acea06b1d030e08f8c9aa5b745a3674d696b39c664fa2e593dba5afeb5d837a",
+          "size": 7512
+        },
+        "examples/not-found/index.html": {
+          "sha256": "4a0c503f138eb29c171dd336d1fbcdcf776c3da0612d5eb99ba54e45f0a2a5c9",
+          "size": 5233
+        },
+        "examples/opportunity/index.html": {
+          "sha256": "8e77dfe47c5bd9e060d554eec4ffc3f3244536525eed4ba05ce51a76b481aab1",
+          "size": 6822
+        },
+        "examples/password-reset/index.html": {
+          "sha256": "bbce6e49d2d1f20b2b3da7cecf3d8b9524a772a5abf7e41e0155b05fa55b2914",
+          "size": 6814
+        },
+        "examples/patterns/index.html": {
+          "sha256": "aa68212d127d128e8d5adbba9eb40fe22bfb35a75f256465b3729c45afb74596",
+          "size": 6445
+        },
+        "examples/person/index.html": {
+          "sha256": "c3c3b6e81510e551ea73f08c226fb22108f4ad188bf485a095d1aa6a6ba1481a",
+          "size": 6975
+        },
+        "examples/place/index.html": {
+          "sha256": "55d370707231ee06540019eb79f97530286f04fd805d97e46f9037eb5d34b050",
+          "size": 6169
+        },
+        "examples/pricing/index.html": {
+          "sha256": "2a1525bae5d937671b76d18d0a3b25107f93c0a742fe88af46165ec4e2f9d501",
+          "size": 6223
+        },
+        "examples/privacy/index.html": {
+          "sha256": "08da6444cf083e9e4f53404912b681c80cc4d0b6088d995221f8b689d9c78af0",
+          "size": 6349
+        },
+        "examples/product/index.html": {
+          "sha256": "0fc05e2051d3aacbf8c1472b515724eabcfe3493aef2645ba3ee457789a032db",
+          "size": 6027
+        },
+        "examples/projects/index.html": {
+          "sha256": "ab382edc4671df76be518e2bb58e72d73900b7572ead51e5bebd7abd40737ad9",
+          "size": 5907
+        },
+        "examples/reference/index.html": {
+          "sha256": "8b686d5945260ac014efa2ce46e10c39e7d3e89e4c00548f502d54ca320d0b0c",
+          "size": 8201
+        },
+        "examples/report/index.html": {
+          "sha256": "0823154099d8a5997c72bc1e776fe31ec7a61f0dfba1d651df5c7f89d6ebec7f",
+          "size": 7014
+        },
+        "examples/scene/index.html": {
+          "sha256": "439ca25828925e48bcc41a8438a3849094e46d2bee0454ca11cea96f92fff03b",
+          "size": 5913
+        },
+        "examples/scientific-workspace/index.html": {
+          "sha256": "2e79a7b522fc2cf6ff936263a5563e318620b0cf5518338e08f656ac1c1f8d78",
+          "size": 8052
+        },
+        "examples/search/index.html": {
+          "sha256": "31a2f95d9ca08a14e8fc4cd8e3e822d4287e7d90cc9c4473a41a3c8e5efc6c44",
+          "size": 14632
+        },
+        "examples/sensors/index.html": {
+          "sha256": "19b9167ff26680dc2f23703c2066b708742083fe90c31d60c444c003a96d1845",
+          "size": 5585
+        },
+        "examples/server-error/index.html": {
+          "sha256": "bd7fa757d02047e1b4433269037996d6767c342fa8912e8a6e0383c0d11b4dd5",
+          "size": 5410
+        },
+        "examples/service/index.html": {
+          "sha256": "7429fdf533e6f79f76a27ff30359fda10df80cbdf189a5dab36b6cc7689351bf",
+          "size": 6280
+        },
+        "examples/sign-in/index.html": {
+          "sha256": "ff76468741dbb0ddeac9c4cbc6ba429e7145865d75d392652669c2aa37d667b9",
+          "size": 7132
+        },
+        "examples/sign-up/index.html": {
+          "sha256": "471a94eb5604f9dfcaee5b498ad1e41969e9ec08cffd5610e9a7143dd6ad50f6",
+          "size": 7390
+        },
+        "examples/software/index.html": {
+          "sha256": "8490d5145a225abcc2e99ac284763d3a32ec31b6b510b305210e25b459472c1a",
+          "size": 6353
+        },
+        "examples/stress-test/index.html": {
+          "sha256": "3a50563e44cd162d24b6070126c1ef17b39b7179bfa58f6cd63d3fea07b71fa7",
+          "size": 10163
+        },
+        "examples/terms/index.html": {
+          "sha256": "9c9df1d1b0cb79e628413d86c4686d172f28f1ef694fbe76703794cd9b154759",
+          "size": 6343
+        },
+        "examples/two-factor/index.html": {
+          "sha256": "6a3b508ce89c25d835e5d5d10580e812a5bdd7a767835f4519422b5dc7d83afb",
+          "size": 6989
+        },
+        "examples/workspace/index.html": {
+          "sha256": "0be0a0eddeec7de9f196ba233030285acbdbc8d7e60f45f924227de69f5083bc",
+          "size": 6765
+        },
+        "index.html": {
+          "sha256": "5fcda937554c644d83b7400939b2011d48f1e9c38ea0a3eb1c7466825ef068ea",
+          "size": 5676
+        },
+        "journal/index.html": {
+          "sha256": "f3b4e4ae465665b3334c8559428fff7f27228555d401f52370c4dfe851f09e15",
+          "size": 4528
+        },
+        "journal/what-a-shell-should-own/index.html": {
+          "sha256": "30fb88fc7329efbe5bb070a6928bb3eb2b59fb0524884973cb85e189ce080176",
+          "size": 6527
+        },
+        "language/index.html": {
+          "sha256": "5f80041a025aa6dda196b3905ae99dc71b514ebedb8f7173af650793ccde1b15",
+          "size": 6042
+        },
+        "nightjar/PROVENANCE.json": {
+          "sha256": "5bf971673e69fbf64e9d961ad5184d917d41617a7bd14b38cf877cf097d1e01f",
+          "size": 102395
+        },
+        "nightjar/README.md": {
+          "sha256": "89ba678d43f3438cefb2d115ac745045a8785339151fd48d9426e83912a38b53",
+          "size": 1051
+        },
+        "nightjar/build.py": {
+          "sha256": "2ea2fdd30b8566168dc25bcf567e6e3bf07d0d8a53a6ca46586c29c54db2c0ee",
+          "size": 2795
+        },
+        "nightjar/ci-proposal.yml": {
+          "sha256": "1dd457b2f1935e83914e2c92a977dd7d4422231eb126f2e87822df3e23adb562",
+          "size": 421
+        },
+        "nightjar/source-files.json": {
+          "sha256": "c897d02fa4ac94d931b6e2a9a8ae9b1ccfc9812f284a007d1561c2dab53b503a",
+          "size": 7202
+        },
+        "nightjar/verify-html.py": {
+          "sha256": "7ffbaa1bdb86b2965d6666d1960e6013f1808c60081b8bcd5af763720c953184",
+          "size": 2306
+        },
+        "nightjar/verify.py": {
+          "sha256": "9099ad8fbdfd36e68cd9ba1c3e9df79916af896e2ab1363bdb696b81550dab35",
+          "size": 4446
+        },
+        "preview/404.html": {
+          "sha256": "3175eee6f9dc4063a87fa026106584d58fea4bf18a58e8408006530874e3cd19",
+          "size": 5311
+        },
+        "preview/LICENSE": {
+          "sha256": "1067907e4c1a431923d3e1b37c42e3fbb8dbeb79aab20ccc0e8c8e7c1323eed6",
+          "size": 1076
+        },
+        "preview/NOTICE.md": {
+          "sha256": "8e5b59cf0cc4e427296763f718407ba4760821f95c1208ee51620050bcbbf398",
+          "size": 736
+        },
+        "preview/VERSION": {
+          "sha256": "59854984853104df5c353e2f681a15fc7924742f9a2e468c29af248dce45ce03",
+          "size": 6
+        },
+        "preview/assets/css/dashboard-family.css": {
+          "sha256": "0e9e979525831029745a80858bdc8e17ec5b40e6171bf1fd8f593153c2e18396",
+          "size": 903
+        },
+        "preview/assets/css/dashboard.css": {
+          "sha256": "edb906bb6801d654fbeb9767e8672f1873c7738505951e099665e2de150a937d",
+          "size": 8047
+        },
+        "preview/assets/css/examples-family.css": {
+          "sha256": "00a00e79a0cfa9253b3a0ceb3f0d2438b692f53c70332e08a08aef077878843a",
+          "size": 2774
+        },
+        "preview/assets/css/examples.css": {
+          "sha256": "06ce4da75d5cfad84360b14b0c121007f1af95673483f434a2d036b202dd7d95",
+          "size": 11086
+        },
+        "preview/assets/css/fonts.css": {
+          "sha256": "80f766b73961542249d0cd82917d72ad65a9d869cfbb1566daeba5caba56560f",
+          "size": 13542
+        },
+        "preview/assets/css/jekyll.css": {
+          "sha256": "ac30e6fa6819d169e01fb8e1a270f9087084648a21f17b8b588dbfb92551eb2a",
+          "size": 2308
+        },
+        "preview/assets/css/scientific.css": {
+          "sha256": "08614aa3c62d2217aaf709c6f94e9704dec8145f3b63427c76f1e36554c6c5ab",
+          "size": 2074
+        },
+        "preview/assets/css/shell.css": {
+          "sha256": "d5cf12b35bac7b01cfb2c0298102454309fe979e19584c00490a21c93d500f45",
+          "size": 89103
+        },
+        "preview/assets/examples/coast.svg": {
+          "sha256": "8854d27cabdcb1c8a471b7fdb56ae640a957f3c5977cdd9ffa71ca44dd7f8b4b",
+          "size": 616
+        },
+        "preview/assets/examples/notebook.svg": {
+          "sha256": "7ea9240d26c7cb2d60912dbad34c4eff87aaa8f48f65735987e1843292b18353",
+          "size": 506
+        },
+        "preview/assets/examples/observations.csv": {
+          "sha256": "8818a5383144e4e4ff8525631ddd3186f04836763564cba37abae9ed9dd3c955",
+          "size": 136
+        },
+        "preview/assets/examples/station.svg": {
+          "sha256": "a8c6618b46b679c509d4ff3ca6fb289d9f39b9feebba51e69f383d2d0571cb85",
+          "size": 541
+        },
+        "preview/assets/fonts/cambo-LICENSE.txt": {
+          "sha256": "faa8e62c49fffe3e86168db72430c490279d1341b724da47c535f04ebf2c02f2",
+          "size": 4473
+        },
+        "preview/assets/fonts/cambo-latin-400-normal.8g9ZlP0h.woff2": {
+          "sha256": "eead0ca3048c44e7ecd8302e903c282bc4041155198703ab7c0078cca94b76ab",
+          "size": 9628
+        },
+        "preview/assets/fonts/cambo-latin-400-normal.PIAh7sIB.woff": {
+          "sha256": "aceecf8fd5f9fe7abf56f1d4644d6897cca8be8f5ec5d368fefc39010756447a",
+          "size": 13068
+        },
+        "preview/assets/fonts/cinzel-LICENSE.txt": {
+          "sha256": "f5a242cf68ad6ebd0603b3359a74c593ca080318a681035be5296ba2c6b04ae6",
+          "size": 4382
+        },
+        "preview/assets/fonts/cinzel-latin-400-normal.C8jUSQqm.woff": {
+          "sha256": "99c6477f06f0c717d31f2bb41013582c347be65366179d5726d107ad908ff3b0",
+          "size": 16616
+        },
+        "preview/assets/fonts/cinzel-latin-400-normal.DnUIPmzd.woff2": {
+          "sha256": "b873cdd90d6bd9ca4793c805b4175abfae00b3611ee8afccf63067133dcf1217",
+          "size": 14128
+        },
+        "preview/assets/fonts/cinzel-latin-600-normal.CH_LB4su.woff": {
+          "sha256": "7cffb40d1c02861fd0f2fedf9446f36b9d38ce312c723927667ebcffc8690894",
+          "size": 17504
+        },
+        "preview/assets/fonts/cinzel-latin-600-normal.Dd5YO2UX.woff2": {
+          "sha256": "61efc27ceb7d08bb841652fa8979c0b6833b92548b7f9544c07968a6c02f28e4",
+          "size": 15204
+        },
+        "preview/assets/fonts/cinzel-latin-700-normal.C-gK7hA8.woff": {
+          "sha256": "83ea41e439a253b4d436cc895d07a0d47f714c4816a23e86df35c442eddffafb",
+          "size": 17524
+        },
+        "preview/assets/fonts/cinzel-latin-700-normal.Dkw14w9r.woff2": {
+          "sha256": "8efa224fe70fef188a39c095e218b81fd31061809f2752537e33a9ec7b9c2263",
+          "size": 15184
+        },
+        "preview/assets/fonts/cinzel-latin-800-normal.69OYDlL6.woff": {
+          "sha256": "f4e0646d7daff85da7c61990ca928b80b857d110ca5495e274dccb2105de407c",
+          "size": 17536
+        },
+        "preview/assets/fonts/cinzel-latin-800-normal.CwkMVn6z.woff2": {
+          "sha256": "47fd3e35a90ae2198df04cdc9f036011f1b58f6e97878de7aa9258c35f6ac665",
+          "size": 15260
+        },
+        "preview/assets/fonts/ibm-plex-mono-LICENSE.txt": {
+          "sha256": "23b0a9d0c6d3f140a0b77e483c5cfa6bba574325ef5cb189ed9f2fec4884533f",
+          "size": 5299
+        },
+        "preview/assets/fonts/ibm-plex-mono-latin-400-italic.66oory27.woff": {
+          "sha256": "45f28e1017f6b45430614ec8a892d5b3e046870f3ecb3a26b1c99c1e5a183877",
+          "size": 14992
+        },
+        "preview/assets/fonts/ibm-plex-mono-latin-400-italic.BqAiT5Ww.woff2": {
+          "sha256": "0840095faae86403735a8c04014b72cb29e7923646b222b360b7e8252932e4e3",
+          "size": 16448
+        },
+        "preview/assets/fonts/ibm-plex-mono-latin-400-normal.CvHOgSBP.woff": {
+          "sha256": "328d50b6ece9ca25c46eea3e885ba497f6237f2fb84ef7b92f88e14a1a25e381",
+          "size": 13144
+        },
+        "preview/assets/fonts/ibm-plex-mono-latin-400-normal.DMJ8VG8y.woff2": {
+          "sha256": "08949f728dc52d528e69b1667d15c89a5686a4ee9a296ff90983985f99c380f7",
+          "size": 14708
+        },
+        "preview/assets/fonts/ibm-plex-mono-latin-500-italic.As4cCeDr.woff2": {
+          "sha256": "528cc360f6e6f5210526a33b6ed8f2c37084bd0c73b918f25a55f48b40c4ac52",
+          "size": 16484
+        },
+        "preview/assets/fonts/ibm-plex-mono-latin-500-italic.C4MYrNFW.woff": {
+          "sha256": "a0de2addd5dcd80502962b65ecfedadd7d35e7df72d4e5b30a34325188f0d0a2",
+          "size": 15072
+        },
+        "preview/assets/fonts/ibm-plex-mono-latin-500-normal.CB9ihrfo.woff": {
+          "sha256": "09f018c58556e5801ecc49d5b5275dcff4c73311c2af6b88e31c51d76d076a9d",
+          "size": 13156
+        },
+        "preview/assets/fonts/ibm-plex-mono-latin-500-normal.DSY6xOcd.woff2": {
+          "sha256": "01d285447409c8a588692162439a038b8cbd7871309ee20267b0d2d91c6e8e22",
+          "size": 14888
+        },
+        "preview/assets/fonts/ibm-plex-mono-latin-600-italic.DYu2LnOQ.woff": {
+          "sha256": "9ab7e2e790ae597f220deebd56d09c6ed891e0447d37582913abd13bbbcea1c4",
+          "size": 15060
+        },
+        "preview/assets/fonts/ibm-plex-mono-latin-600-italic.DrfJ59vG.woff2": {
+          "sha256": "42a8ca72a19c5ee1612ac3e35f52d08f34a09856c9466dc87a21101ad230ed6b",
+          "size": 17356
+        },
+        "preview/assets/fonts/ibm-plex-mono-latin-600-normal.BgSNZQsw.woff2": {
+          "sha256": "0d1f0b8d0722224e32e9f28261bdc86c79115be73444ae5eceb73976a1bcdf83",
+          "size": 15620
+        },
+        "preview/assets/fonts/ibm-plex-mono-latin-600-normal.DWFSQ4vo.woff": {
+          "sha256": "cb96282f22c6f19112856fd6e0b34e2baefaf4ca6551e851d58c5ab0aabcd2be",
+          "size": 13208
+        },
+        "preview/assets/fonts/ibm-plex-mono-latin-700-italic.DHuxH1Z4.woff": {
+          "sha256": "fc59060a8ece992f30b46130e08cbdd3f6ee25f6d30f7f9213a07a1188a53887",
+          "size": 14964
+        },
+        "preview/assets/fonts/ibm-plex-mono-latin-700-italic.J6kahdQd.woff2": {
+          "sha256": "2bb0d4c82652472446ed1a5a89a0553f2db1e4ea17cbda66a45e690899d83e91",
+          "size": 16540
+        },
+        "preview/assets/fonts/ibm-plex-mono-latin-700-normal.7sUh57Bg.woff2": {
+          "sha256": "4f84d86cfd060f4ded334358ff8a4c81d4db2ed5addd568359d693f44a87765a",
+          "size": 14908
+        },
+        "preview/assets/fonts/ibm-plex-mono-latin-700-normal.CNHXzs6v.woff": {
+          "sha256": "595e0cbaa671f5276f5fdcac6113c30b2386f247f61cb42fc81f5096631a51e4",
+          "size": 13212
+        },
+        "preview/assets/fonts/lato-LICENSE.txt": {
+          "sha256": "9648253641ec1d1f8ba2fbe8997909f7bfc48cc38537946f6272321788465b84",
+          "size": 6074
+        },
+        "preview/assets/fonts/lato-latin-400-italic.DL5fBv-7.woff": {
+          "sha256": "387834b6bd2d74b8598383709521ddd04f4ef1ec8c6f80ac2cba8ddae82f996b",
+          "size": 18588
+        },
+        "preview/assets/fonts/lato-latin-400-italic.Dc0B1559.woff2": {
+          "sha256": "bca1d88ada544d9c80872d4da27133fab6d347361fa26e932b47ec9559088fd0",
+          "size": 24408
+        },
+        "preview/assets/fonts/lato-latin-400-normal.B11PyLys.woff": {
+          "sha256": "f55abc76e10cc86d799a7189e64e3c6e4cc6ced19b2474b1852a808be46232a8",
+          "size": 17452
+        },
+        "preview/assets/fonts/lato-latin-400-normal.BEhtfm5r.woff2": {
+          "sha256": "918b7dc3e2e2d015c16ce08b57bcb64d2253bafc1707658f361e72865498e537",
+          "size": 23580
+        },
+        "preview/assets/fonts/lato-latin-700-italic.Db_2buKa.woff": {
+          "sha256": "81e17cb70bfa6bf1d3021167fd0a5040f6cfde267bd4ec4a46f32228c66c5fbe",
+          "size": 18564
+        },
+        "preview/assets/fonts/lato-latin-700-italic.Jzc1y7Yy.woff2": {
+          "sha256": "6c84348296ebe2e2a0830c3962eb02156419d9bc76371c2eadaf7329d827d550",
+          "size": 24448
+        },
+        "preview/assets/fonts/lato-latin-700-normal.BUGMgin4.woff2": {
+          "sha256": "c447dd7677b419db7b21dbdfc6277c7816a913ffda76fd2e52702df538de0e49",
+          "size": 23040
+        },
+        "preview/assets/fonts/lato-latin-700-normal.DAdL7O4w.woff": {
+          "sha256": "98149dd994189af57b3867d308874c7acb05edd3351663ccca860b87044479db",
+          "size": 17624
+        },
+        "preview/assets/js/dashboard-model.mjs": {
+          "sha256": "882e7dce010d7120727fccc3599b2b3e90473db93066de70d93a61d05a8179c5",
+          "size": 14441
+        },
+        "preview/assets/js/dashboard-ui.mjs": {
+          "sha256": "3f551d6ab16d74cefdec7d8246bfce448b85f8412694b106826ea312c31dfb4f",
+          "size": 6035
+        },
+        "preview/assets/js/dashboards.mjs": {
+          "sha256": "94ebca4a88c7e820dfb801e28d9251c7f781d016d43f1ee9f34c2876f9de7b01",
+          "size": 27070
+        },
+        "preview/assets/js/examples.js": {
+          "sha256": "e2dd5bd36a17050db6aff9512c1bbad22feba8f686de548a9e7849dee1b64735",
+          "size": 16730
+        },
+        "preview/assets/js/scientific.mjs": {
+          "sha256": "ccff3cf6fda8b5952b1b03b3a5aaa0eb0bf09339b979c0b87c211a2f93bc51fe",
+          "size": 3263
+        },
+        "preview/assets/js/shell.js": {
+          "sha256": "5a07d5f98f27bea8abdcaa358700ffba159e62b02cdeb6b3d142d9ecd5199de9",
+          "size": 1497
+        },
+        "preview/assets/js/thermal-model.mjs": {
+          "sha256": "f33396b42f6711fe54435caa9e7577144eea779786b4838e68ee43ce3e2a13f9",
+          "size": 1696
+        },
+        "preview/assets/mark.svg": {
+          "sha256": "eaec6dce2e743b145f99dc4331c3c7fa9431280b53b84e688d89e24117354927",
+          "size": 20746
+        },
+        "preview/assets/owner.svg": {
+          "sha256": "05c66bb02e8ec8a2277a452a5f3728362c7ea7f087ee19126230d9d1d114423a",
+          "size": 36757
+        },
+        "preview/deployment-proof.json": {
+          "sha256": "8e864c63f90272b85f591dc20685fb00da84113736fba3be624c49db1ec9df37",
+          "size": 605
+        },
+        "preview/docs/v/1.0.0/404.html": {
+          "sha256": "bd36e4eb0110686edece4d4beae97d9a7e6e7fa31ac400c110a9aef396e8544a",
+          "size": 5997
+        },
+        "preview/docs/v/1.0.0/LICENSE": {
+          "sha256": "1067907e4c1a431923d3e1b37c42e3fbb8dbeb79aab20ccc0e8c8e7c1323eed6",
+          "size": 1076
+        },
+        "preview/docs/v/1.0.0/NOTICE.md": {
+          "sha256": "8e5b59cf0cc4e427296763f718407ba4760821f95c1208ee51620050bcbbf398",
+          "size": 736
+        },
+        "preview/docs/v/1.0.0/VERSION": {
+          "sha256": "59854984853104df5c353e2f681a15fc7924742f9a2e468c29af248dce45ce03",
+          "size": 6
+        },
+        "preview/docs/v/1.0.0/assets/css/dashboard-family.css": {
+          "sha256": "0e9e979525831029745a80858bdc8e17ec5b40e6171bf1fd8f593153c2e18396",
+          "size": 903
+        },
+        "preview/docs/v/1.0.0/assets/css/dashboard.css": {
+          "sha256": "edb906bb6801d654fbeb9767e8672f1873c7738505951e099665e2de150a937d",
+          "size": 8047
+        },
+        "preview/docs/v/1.0.0/assets/css/examples-family.css": {
+          "sha256": "00a00e79a0cfa9253b3a0ceb3f0d2438b692f53c70332e08a08aef077878843a",
+          "size": 2774
+        },
+        "preview/docs/v/1.0.0/assets/css/examples.css": {
+          "sha256": "06ce4da75d5cfad84360b14b0c121007f1af95673483f434a2d036b202dd7d95",
+          "size": 11086
+        },
+        "preview/docs/v/1.0.0/assets/css/fonts.css": {
+          "sha256": "80f766b73961542249d0cd82917d72ad65a9d869cfbb1566daeba5caba56560f",
+          "size": 13542
+        },
+        "preview/docs/v/1.0.0/assets/css/jekyll.css": {
+          "sha256": "ac30e6fa6819d169e01fb8e1a270f9087084648a21f17b8b588dbfb92551eb2a",
+          "size": 2308
+        },
+        "preview/docs/v/1.0.0/assets/css/scientific.css": {
+          "sha256": "08614aa3c62d2217aaf709c6f94e9704dec8145f3b63427c76f1e36554c6c5ab",
+          "size": 2074
+        },
+        "preview/docs/v/1.0.0/assets/css/shell.css": {
+          "sha256": "d5cf12b35bac7b01cfb2c0298102454309fe979e19584c00490a21c93d500f45",
+          "size": 89103
+        },
+        "preview/docs/v/1.0.0/assets/examples/coast.svg": {
+          "sha256": "8854d27cabdcb1c8a471b7fdb56ae640a957f3c5977cdd9ffa71ca44dd7f8b4b",
+          "size": 616
+        },
+        "preview/docs/v/1.0.0/assets/examples/notebook.svg": {
+          "sha256": "7ea9240d26c7cb2d60912dbad34c4eff87aaa8f48f65735987e1843292b18353",
+          "size": 506
+        },
+        "preview/docs/v/1.0.0/assets/examples/observations.csv": {
+          "sha256": "8818a5383144e4e4ff8525631ddd3186f04836763564cba37abae9ed9dd3c955",
+          "size": 136
+        },
+        "preview/docs/v/1.0.0/assets/examples/station.svg": {
+          "sha256": "a8c6618b46b679c509d4ff3ca6fb289d9f39b9feebba51e69f383d2d0571cb85",
+          "size": 541
+        },
+        "preview/docs/v/1.0.0/assets/fonts/cambo-LICENSE.txt": {
+          "sha256": "faa8e62c49fffe3e86168db72430c490279d1341b724da47c535f04ebf2c02f2",
+          "size": 4473
+        },
+        "preview/docs/v/1.0.0/assets/fonts/cambo-latin-400-normal.8g9ZlP0h.woff2": {
+          "sha256": "eead0ca3048c44e7ecd8302e903c282bc4041155198703ab7c0078cca94b76ab",
+          "size": 9628
+        },
+        "preview/docs/v/1.0.0/assets/fonts/cambo-latin-400-normal.PIAh7sIB.woff": {
+          "sha256": "aceecf8fd5f9fe7abf56f1d4644d6897cca8be8f5ec5d368fefc39010756447a",
+          "size": 13068
+        },
+        "preview/docs/v/1.0.0/assets/fonts/cinzel-LICENSE.txt": {
+          "sha256": "f5a242cf68ad6ebd0603b3359a74c593ca080318a681035be5296ba2c6b04ae6",
+          "size": 4382
+        },
+        "preview/docs/v/1.0.0/assets/fonts/cinzel-latin-400-normal.C8jUSQqm.woff": {
+          "sha256": "99c6477f06f0c717d31f2bb41013582c347be65366179d5726d107ad908ff3b0",
+          "size": 16616
+        },
+        "preview/docs/v/1.0.0/assets/fonts/cinzel-latin-400-normal.DnUIPmzd.woff2": {
+          "sha256": "b873cdd90d6bd9ca4793c805b4175abfae00b3611ee8afccf63067133dcf1217",
+          "size": 14128
+        },
+        "preview/docs/v/1.0.0/assets/fonts/cinzel-latin-600-normal.CH_LB4su.woff": {
+          "sha256": "7cffb40d1c02861fd0f2fedf9446f36b9d38ce312c723927667ebcffc8690894",
+          "size": 17504
+        },
+        "preview/docs/v/1.0.0/assets/fonts/cinzel-latin-600-normal.Dd5YO2UX.woff2": {
+          "sha256": "61efc27ceb7d08bb841652fa8979c0b6833b92548b7f9544c07968a6c02f28e4",
+          "size": 15204
+        },
+        "preview/docs/v/1.0.0/assets/fonts/cinzel-latin-700-normal.C-gK7hA8.woff": {
+          "sha256": "83ea41e439a253b4d436cc895d07a0d47f714c4816a23e86df35c442eddffafb",
+          "size": 17524
+        },
+        "preview/docs/v/1.0.0/assets/fonts/cinzel-latin-700-normal.Dkw14w9r.woff2": {
+          "sha256": "8efa224fe70fef188a39c095e218b81fd31061809f2752537e33a9ec7b9c2263",
+          "size": 15184
+        },
+        "preview/docs/v/1.0.0/assets/fonts/cinzel-latin-800-normal.69OYDlL6.woff": {
+          "sha256": "f4e0646d7daff85da7c61990ca928b80b857d110ca5495e274dccb2105de407c",
+          "size": 17536
+        },
+        "preview/docs/v/1.0.0/assets/fonts/cinzel-latin-800-normal.CwkMVn6z.woff2": {
+          "sha256": "47fd3e35a90ae2198df04cdc9f036011f1b58f6e97878de7aa9258c35f6ac665",
+          "size": 15260
+        },
+        "preview/docs/v/1.0.0/assets/fonts/ibm-plex-mono-LICENSE.txt": {
+          "sha256": "23b0a9d0c6d3f140a0b77e483c5cfa6bba574325ef5cb189ed9f2fec4884533f",
+          "size": 5299
+        },
+        "preview/docs/v/1.0.0/assets/fonts/ibm-plex-mono-latin-400-italic.66oory27.woff": {
+          "sha256": "45f28e1017f6b45430614ec8a892d5b3e046870f3ecb3a26b1c99c1e5a183877",
+          "size": 14992
+        },
+        "preview/docs/v/1.0.0/assets/fonts/ibm-plex-mono-latin-400-italic.BqAiT5Ww.woff2": {
+          "sha256": "0840095faae86403735a8c04014b72cb29e7923646b222b360b7e8252932e4e3",
+          "size": 16448
+        },
+        "preview/docs/v/1.0.0/assets/fonts/ibm-plex-mono-latin-400-normal.CvHOgSBP.woff": {
+          "sha256": "328d50b6ece9ca25c46eea3e885ba497f6237f2fb84ef7b92f88e14a1a25e381",
+          "size": 13144
+        },
+        "preview/docs/v/1.0.0/assets/fonts/ibm-plex-mono-latin-400-normal.DMJ8VG8y.woff2": {
+          "sha256": "08949f728dc52d528e69b1667d15c89a5686a4ee9a296ff90983985f99c380f7",
+          "size": 14708
+        },
+        "preview/docs/v/1.0.0/assets/fonts/ibm-plex-mono-latin-500-italic.As4cCeDr.woff2": {
+          "sha256": "528cc360f6e6f5210526a33b6ed8f2c37084bd0c73b918f25a55f48b40c4ac52",
+          "size": 16484
+        },
+        "preview/docs/v/1.0.0/assets/fonts/ibm-plex-mono-latin-500-italic.C4MYrNFW.woff": {
+          "sha256": "a0de2addd5dcd80502962b65ecfedadd7d35e7df72d4e5b30a34325188f0d0a2",
+          "size": 15072
+        },
+        "preview/docs/v/1.0.0/assets/fonts/ibm-plex-mono-latin-500-normal.CB9ihrfo.woff": {
+          "sha256": "09f018c58556e5801ecc49d5b5275dcff4c73311c2af6b88e31c51d76d076a9d",
+          "size": 13156
+        },
+        "preview/docs/v/1.0.0/assets/fonts/ibm-plex-mono-latin-500-normal.DSY6xOcd.woff2": {
+          "sha256": "01d285447409c8a588692162439a038b8cbd7871309ee20267b0d2d91c6e8e22",
+          "size": 14888
+        },
+        "preview/docs/v/1.0.0/assets/fonts/ibm-plex-mono-latin-600-italic.DYu2LnOQ.woff": {
+          "sha256": "9ab7e2e790ae597f220deebd56d09c6ed891e0447d37582913abd13bbbcea1c4",
+          "size": 15060
+        },
+        "preview/docs/v/1.0.0/assets/fonts/ibm-plex-mono-latin-600-italic.DrfJ59vG.woff2": {
+          "sha256": "42a8ca72a19c5ee1612ac3e35f52d08f34a09856c9466dc87a21101ad230ed6b",
+          "size": 17356
+        },
+        "preview/docs/v/1.0.0/assets/fonts/ibm-plex-mono-latin-600-normal.BgSNZQsw.woff2": {
+          "sha256": "0d1f0b8d0722224e32e9f28261bdc86c79115be73444ae5eceb73976a1bcdf83",
+          "size": 15620
+        },
+        "preview/docs/v/1.0.0/assets/fonts/ibm-plex-mono-latin-600-normal.DWFSQ4vo.woff": {
+          "sha256": "cb96282f22c6f19112856fd6e0b34e2baefaf4ca6551e851d58c5ab0aabcd2be",
+          "size": 13208
+        },
+        "preview/docs/v/1.0.0/assets/fonts/ibm-plex-mono-latin-700-italic.DHuxH1Z4.woff": {
+          "sha256": "fc59060a8ece992f30b46130e08cbdd3f6ee25f6d30f7f9213a07a1188a53887",
+          "size": 14964
+        },
+        "preview/docs/v/1.0.0/assets/fonts/ibm-plex-mono-latin-700-italic.J6kahdQd.woff2": {
+          "sha256": "2bb0d4c82652472446ed1a5a89a0553f2db1e4ea17cbda66a45e690899d83e91",
+          "size": 16540
+        },
+        "preview/docs/v/1.0.0/assets/fonts/ibm-plex-mono-latin-700-normal.7sUh57Bg.woff2": {
+          "sha256": "4f84d86cfd060f4ded334358ff8a4c81d4db2ed5addd568359d693f44a87765a",
+          "size": 14908
+        },
+        "preview/docs/v/1.0.0/assets/fonts/ibm-plex-mono-latin-700-normal.CNHXzs6v.woff": {
+          "sha256": "595e0cbaa671f5276f5fdcac6113c30b2386f247f61cb42fc81f5096631a51e4",
+          "size": 13212
+        },
+        "preview/docs/v/1.0.0/assets/fonts/lato-LICENSE.txt": {
+          "sha256": "9648253641ec1d1f8ba2fbe8997909f7bfc48cc38537946f6272321788465b84",
+          "size": 6074
+        },
+        "preview/docs/v/1.0.0/assets/fonts/lato-latin-400-italic.DL5fBv-7.woff": {
+          "sha256": "387834b6bd2d74b8598383709521ddd04f4ef1ec8c6f80ac2cba8ddae82f996b",
+          "size": 18588
+        },
+        "preview/docs/v/1.0.0/assets/fonts/lato-latin-400-italic.Dc0B1559.woff2": {
+          "sha256": "bca1d88ada544d9c80872d4da27133fab6d347361fa26e932b47ec9559088fd0",
+          "size": 24408
+        },
+        "preview/docs/v/1.0.0/assets/fonts/lato-latin-400-normal.B11PyLys.woff": {
+          "sha256": "f55abc76e10cc86d799a7189e64e3c6e4cc6ced19b2474b1852a808be46232a8",
+          "size": 17452
+        },
+        "preview/docs/v/1.0.0/assets/fonts/lato-latin-400-normal.BEhtfm5r.woff2": {
+          "sha256": "918b7dc3e2e2d015c16ce08b57bcb64d2253bafc1707658f361e72865498e537",
+          "size": 23580
+        },
+        "preview/docs/v/1.0.0/assets/fonts/lato-latin-700-italic.Db_2buKa.woff": {
+          "sha256": "81e17cb70bfa6bf1d3021167fd0a5040f6cfde267bd4ec4a46f32228c66c5fbe",
+          "size": 18564
+        },
+        "preview/docs/v/1.0.0/assets/fonts/lato-latin-700-italic.Jzc1y7Yy.woff2": {
+          "sha256": "6c84348296ebe2e2a0830c3962eb02156419d9bc76371c2eadaf7329d827d550",
+          "size": 24448
+        },
+        "preview/docs/v/1.0.0/assets/fonts/lato-latin-700-normal.BUGMgin4.woff2": {
+          "sha256": "c447dd7677b419db7b21dbdfc6277c7816a913ffda76fd2e52702df538de0e49",
+          "size": 23040
+        },
+        "preview/docs/v/1.0.0/assets/fonts/lato-latin-700-normal.DAdL7O4w.woff": {
+          "sha256": "98149dd994189af57b3867d308874c7acb05edd3351663ccca860b87044479db",
+          "size": 17624
+        },
+        "preview/docs/v/1.0.0/assets/js/dashboard-model.mjs": {
+          "sha256": "882e7dce010d7120727fccc3599b2b3e90473db93066de70d93a61d05a8179c5",
+          "size": 14441
+        },
+        "preview/docs/v/1.0.0/assets/js/dashboard-ui.mjs": {
+          "sha256": "3f551d6ab16d74cefdec7d8246bfce448b85f8412694b106826ea312c31dfb4f",
+          "size": 6035
+        },
+        "preview/docs/v/1.0.0/assets/js/dashboards.mjs": {
+          "sha256": "94ebca4a88c7e820dfb801e28d9251c7f781d016d43f1ee9f34c2876f9de7b01",
+          "size": 27070
+        },
+        "preview/docs/v/1.0.0/assets/js/examples.js": {
+          "sha256": "e2dd5bd36a17050db6aff9512c1bbad22feba8f686de548a9e7849dee1b64735",
+          "size": 16730
+        },
+        "preview/docs/v/1.0.0/assets/js/scientific.mjs": {
+          "sha256": "ccff3cf6fda8b5952b1b03b3a5aaa0eb0bf09339b979c0b87c211a2f93bc51fe",
+          "size": 3263
+        },
+        "preview/docs/v/1.0.0/assets/js/shell.js": {
+          "sha256": "5a07d5f98f27bea8abdcaa358700ffba159e62b02cdeb6b3d142d9ecd5199de9",
+          "size": 1497
+        },
+        "preview/docs/v/1.0.0/assets/js/thermal-model.mjs": {
+          "sha256": "f33396b42f6711fe54435caa9e7577144eea779786b4838e68ee43ce3e2a13f9",
+          "size": 1696
+        },
+        "preview/docs/v/1.0.0/assets/mark.svg": {
+          "sha256": "eaec6dce2e743b145f99dc4331c3c7fa9431280b53b84e688d89e24117354927",
+          "size": 20746
+        },
+        "preview/docs/v/1.0.0/assets/owner.svg": {
+          "sha256": "05c66bb02e8ec8a2277a452a5f3728362c7ea7f087ee19126230d9d1d114423a",
+          "size": 36757
+        },
+        "preview/docs/v/1.0.0/examples/about/index.html": {
+          "sha256": "2274a96bbc8c18b5c46747515b3a8abe94d794f6d3e8b7fdf72aee7ade33ae6d",
+          "size": 7289
+        },
+        "preview/docs/v/1.0.0/examples/archive/index.html": {
+          "sha256": "cb5c4464bf685a9a0ba95f5c9edac6f94c01aa4fb897e1a0f0f6260acc5c60a2",
+          "size": 7844
+        },
+        "preview/docs/v/1.0.0/examples/article/index.html": {
+          "sha256": "c44cb90f55bb063f42ef2869966ece18ac517ff26a00349df04b3ae91de23cb6",
+          "size": 8072
+        },
+        "preview/docs/v/1.0.0/examples/careers/index.html": {
+          "sha256": "01f0fe0c5b63ea8153430294bd6b8807a6864295517c2a51d2529295dbc247bb",
+          "size": 6496
+        },
+        "preview/docs/v/1.0.0/examples/case-study/index.html": {
+          "sha256": "dc8ca23bb755bfdc605cb2c25e251cdb38b2ec2276316fbdf3e552281c01331b",
+          "size": 7492
+        },
+        "preview/docs/v/1.0.0/examples/categories/index.html": {
+          "sha256": "39a262ead0ded3502014feb88aa8dd263c3842f3c3b7735b3cc14892c8c0df4c",
+          "size": 6057
+        },
+        "preview/docs/v/1.0.0/examples/category/index.html": {
+          "sha256": "f6bbd5baeb8c9f1ef7c2dad65317a337f632c8e3270d2c5e2d00d76893e5c252",
+          "size": 6551
+        },
+        "preview/docs/v/1.0.0/examples/changelog/index.html": {
+          "sha256": "007cb09a6f013c8860717916f766c7d1bc5ff54d2d81102257c0dc0380586702",
+          "size": 6921
+        },
+        "preview/docs/v/1.0.0/examples/chat/index.html": {
+          "sha256": "93af94e95d2e518e180ba34a20395b5067cb3f588773b61cf6fb78bc865a5c3e",
+          "size": 6517
+        },
+        "preview/docs/v/1.0.0/examples/collection/index.html": {
+          "sha256": "de802e839d0c59555ffa2325d93dae7a9f7c51524fe976a34792b0b956e7365b",
+          "size": 7045
+        },
+        "preview/docs/v/1.0.0/examples/collection-item/index.html": {
+          "sha256": "53054b358ebdab2876b6429573840e65cf54e11c13fbf69bdb1c8df7c7c2d936",
+          "size": 7014
+        },
+        "preview/docs/v/1.0.0/examples/coming-soon/index.html": {
+          "sha256": "667d60bfb2a56a055e9e7a2f172f6c2e1e4a2db578afe0a8e6fda589734b708a",
+          "size": 7325
+        },
+        "preview/docs/v/1.0.0/examples/contact/index.html": {
+          "sha256": "2c9265aba8bafe1e6e974c80e8f2894b8d73161ace2a8aee75a0f9e0f08d2d9b",
+          "size": 7413
+        },
+        "preview/docs/v/1.0.0/examples/dashboard-administration/index.html": {
+          "sha256": "40bbc3e8907f861ff7cde0a47ab81fb29c5e8a0225d775f0ef9c3eec606632bc",
+          "size": 49046
+        },
+        "preview/docs/v/1.0.0/examples/dashboard-analytics/index.html": {
+          "sha256": "0202f05af1a47448ee25edd95750d64a189d7e4999b57662e1026bc1adf39643",
+          "size": 48796
+        },
+        "preview/docs/v/1.0.0/examples/dashboard-components/index.html": {
+          "sha256": "e33107cf3d017bb93f37c1077f6e8570e00bcd437a96b5b946d6f4f1c0096bee",
+          "size": 7943
+        },
+        "preview/docs/v/1.0.0/examples/dashboard-operations/index.html": {
+          "sha256": "b9f6b52de0e846099c1296a9ccdbfe8c0a25c50cb19b34e945277f1be5974d0d",
+          "size": 47590
+        },
+        "preview/docs/v/1.0.0/examples/documentation/index.html": {
+          "sha256": "58a1745494f9198b8f520dd012b9c100c5e9f1bc42c408312232e39ed778040c",
+          "size": 6199
+        },
+        "preview/docs/v/1.0.0/examples/event/index.html": {
+          "sha256": "62aef1b437a36a7550adea8ee0995a6274ed866660af48cc42cb1136547724fb",
+          "size": 7568
+        },
+        "preview/docs/v/1.0.0/examples/events/index.html": {
+          "sha256": "b4f7e9036f0de7dda6a28181ae0af334da4330ba97dfaccd9c859a5d82b7bba0",
+          "size": 7145
+        },
+        "preview/docs/v/1.0.0/examples/faq/index.html": {
+          "sha256": "3086a74a13ea66ebd4329e342374a9810855afd5beb6b0df61d3bf39e78622b2",
+          "size": 6588
+        },
+        "preview/docs/v/1.0.0/examples/fleet/index.html": {
+          "sha256": "4b9cb2ec5318104e791f36e996bf6c0e95c438b17c8691cc0d2338539e39cdfe",
+          "size": 7222
+        },
+        "preview/docs/v/1.0.0/examples/gallery/index.html": {
+          "sha256": "b3f4f5daf050560a871d35c6f0bd38a4443e3f7af8cc2b0e74b9ab8b46671edd",
+          "size": 7658
+        },
+        "preview/docs/v/1.0.0/examples/guide/index.html": {
+          "sha256": "51717a13ed7613c50c3e65539ebd1b22ad00eeaa92e3434b35c6926ecf22b973",
+          "size": 7230
+        },
+        "preview/docs/v/1.0.0/examples/home/index.html": {
+          "sha256": "190c4c8e707ffc587486676e0986c291f8d28e0fe1d692d6b7b46e9eb8172f7f",
+          "size": 6888
+        },
+        "preview/docs/v/1.0.0/examples/index.html": {
+          "sha256": "b1344a2223b74f5b60b4d3c20c3ecdebf9d2f107200d86da6a0cb3f134ddac6d",
+          "size": 21575
+        },
+        "preview/docs/v/1.0.0/examples/integrations/index.html": {
+          "sha256": "e71f4b5b14f71babc08d1b8d7575d91f8ff9e68e814c016b80d3fffc745903b6",
+          "size": 8332
+        },
+        "preview/docs/v/1.0.0/examples/not-found/index.html": {
+          "sha256": "6adef0b12564deadd6459435ea2e1629857a3663c5e096a04ff2a9f6f5a5944b",
+          "size": 6095
+        },
+        "preview/docs/v/1.0.0/examples/opportunity/index.html": {
+          "sha256": "1d1bcbd10a9a8e6796d2d3d6eaba9e42cebe9f9594459fca27c70cea0751dd23",
+          "size": 7663
+        },
+        "preview/docs/v/1.0.0/examples/password-reset/index.html": {
+          "sha256": "47f4e7ffca79664a0c472e6fa941df085394afcc8751f30cff496a7ef8b3da52",
+          "size": 7718
+        },
+        "preview/docs/v/1.0.0/examples/patterns/index.html": {
+          "sha256": "a39690fa792b6ca0c16e6493b17100a92b9f7f6fa5984ffb849b9620f485bb15",
+          "size": 7286
+        },
+        "preview/docs/v/1.0.0/examples/person/index.html": {
+          "sha256": "0c753e7de9016015688d8c7f236b051cdb58a2676b15e44daed8f5c601b4f4b2",
+          "size": 7858
+        },
+        "preview/docs/v/1.0.0/examples/place/index.html": {
+          "sha256": "cf8282a296d0adc5178d870b00050ab102ca46264c2166bddc5b25a924597e56",
+          "size": 7052
+        },
+        "preview/docs/v/1.0.0/examples/pricing/index.html": {
+          "sha256": "d6413f7c6194a1946b17efae28f098ec9996a3bfdd1263dd612ad0f5b4189656",
+          "size": 7106
+        },
+        "preview/docs/v/1.0.0/examples/privacy/index.html": {
+          "sha256": "89fb6f96db50e3a3602f50aa754d16ef5bf0c5219547e455002bcd2c69ef61eb",
+          "size": 7211
+        },
+        "preview/docs/v/1.0.0/examples/product/index.html": {
+          "sha256": "a9652cdd650f1607eff42f124666460c0b474b5e12482af8262b419d36222343",
+          "size": 6889
+        },
+        "preview/docs/v/1.0.0/examples/projects/index.html": {
+          "sha256": "be1d5c4d099ed56074e50ad7809cd733c59c27f6fe10bfd9c6c5efa2e058853d",
+          "size": 6790
+        },
+        "preview/docs/v/1.0.0/examples/reference/index.html": {
+          "sha256": "99c020dc9625e37a8659e6753c30f04f1f8f818e02b81fe9bad4ca9b7428b6ab",
+          "size": 9021
+        },
+        "preview/docs/v/1.0.0/examples/report/index.html": {
+          "sha256": "adccb42517606ab988a17805f7f04310ddf97cd9b2313d1921abaff3f1b2b9e0",
+          "size": 7876
+        },
+        "preview/docs/v/1.0.0/examples/scene/index.html": {
+          "sha256": "804531055429e09bc6d84bb3a711fb7603c059e55bfad65f27c5817a9a5831ac",
+          "size": 6754
+        },
+        "preview/docs/v/1.0.0/examples/scientific-workspace/index.html": {
+          "sha256": "c7fa68e15d6f11e909abaa297d1492e7e7328474cbe819e85082b96a1d181bc1",
+          "size": 8830
+        },
+        "preview/docs/v/1.0.0/examples/search/index.html": {
+          "sha256": "fbe4495d94527d3473493592d4c37acc42c8d4e53d4b3c166c991b988354d16f",
+          "size": 16565
+        },
+        "preview/docs/v/1.0.0/examples/sensors/index.html": {
+          "sha256": "8d6589e76918eb16c00042f6e2e670a7500ea59c38eeb25ae8680a838cf06713",
+          "size": 6405
+        },
+        "preview/docs/v/1.0.0/examples/server-error/index.html": {
+          "sha256": "0a99cdf2e66d893d585bb5bc313e7bb67101bf0416f4fbed5f1b4f31c8d2297a",
+          "size": 6272
+        },
+        "preview/docs/v/1.0.0/examples/service/index.html": {
+          "sha256": "ca38848ac9c36bfddc42ec8dd8c80857a81542373b40b90025dddeaba0e22087",
+          "size": 7205
+        },
+        "preview/docs/v/1.0.0/examples/sign-in/index.html": {
+          "sha256": "02a450dbf1365ac54e8b897da0707df4eeb10c41a440997ad14b595bffbbe288",
+          "size": 8036
+        },
+        "preview/docs/v/1.0.0/examples/sign-up/index.html": {
+          "sha256": "3525cbdb17ccfacd9926b1b54df21135a2f4d1d33bafd9fd0d6922389a9e7235",
+          "size": 8294
+        },
+        "preview/docs/v/1.0.0/examples/software/index.html": {
+          "sha256": "2fa02b461370b50bef4f036fd6b55e3de748d8bbee8aab0cde9a22ce9bb29792",
+          "size": 7278
+        },
+        "preview/docs/v/1.0.0/examples/stress-test/index.html": {
+          "sha256": "fd545372d6dc3928e8b7c0ab4be089c7c6a7501db4f17ef75495577829b5a345",
+          "size": 11025
+        },
+        "preview/docs/v/1.0.0/examples/terms/index.html": {
+          "sha256": "0e33d67d3a9f7f2e652bc85af8d10976fddb440372053aa525a0ffda46e13499",
+          "size": 7205
+        },
+        "preview/docs/v/1.0.0/examples/two-factor/index.html": {
+          "sha256": "bb95b79389445a2d62bbd39e57cb37e4e6e39036fbb64072a24ca707fa6f4527",
+          "size": 7893
+        },
+        "preview/docs/v/1.0.0/examples/workspace/index.html": {
+          "sha256": "c823bd0247dc67fdf36a4865f04982e4410b5e5176bcdd8a93864e93b0e02e23",
+          "size": 7585
+        },
+        "preview/docs/v/1.0.0/index.html": {
+          "sha256": "af2749a4f695510798f7d68e930ca88bef25456981bf007782f618868b560bca",
+          "size": 6517
+        },
+        "preview/docs/v/1.0.0/journal/index.html": {
+          "sha256": "d1dfed277572a6ac345e8b7a9900bef58a39564b37fb1e6018d23dc7e72b85d9",
+          "size": 5327
+        },
+        "preview/docs/v/1.0.0/journal/what-a-shell-should-own/index.html": {
+          "sha256": "86585c1c37a8aae6cc1e5afffeb129c3d10f827753e34f41d7ce6e53f7330afc",
+          "size": 7326
+        },
+        "preview/docs/v/1.0.0/language/index.html": {
+          "sha256": "ca92bf8a52497474faecd66dba87d81f5222c767e935a2283dfd88a316e7d148",
+          "size": 6778
+        },
+        "preview/docs/v/1.0.0/nightjar/PROVENANCE.json": {
+          "sha256": "5bf971673e69fbf64e9d961ad5184d917d41617a7bd14b38cf877cf097d1e01f",
+          "size": 102395
+        },
+        "preview/docs/v/1.0.0/nightjar/README.md": {
+          "sha256": "89ba678d43f3438cefb2d115ac745045a8785339151fd48d9426e83912a38b53",
+          "size": 1051
+        },
+        "preview/docs/v/1.0.0/nightjar/build.py": {
+          "sha256": "2ea2fdd30b8566168dc25bcf567e6e3bf07d0d8a53a6ca46586c29c54db2c0ee",
+          "size": 2795
+        },
+        "preview/docs/v/1.0.0/nightjar/ci-proposal.yml": {
+          "sha256": "1dd457b2f1935e83914e2c92a977dd7d4422231eb126f2e87822df3e23adb562",
+          "size": 421
+        },
+        "preview/docs/v/1.0.0/nightjar/source-files.json": {
+          "sha256": "c897d02fa4ac94d931b6e2a9a8ae9b1ccfc9812f284a007d1561c2dab53b503a",
+          "size": 7202
+        },
+        "preview/docs/v/1.0.0/nightjar/verify-html.py": {
+          "sha256": "7ffbaa1bdb86b2965d6666d1960e6013f1808c60081b8bcd5af763720c953184",
+          "size": 2306
+        },
+        "preview/docs/v/1.0.0/nightjar/verify.py": {
+          "sha256": "9099ad8fbdfd36e68cd9ba1c3e9df79916af896e2ab1363bdb696b81550dab35",
+          "size": 4446
+        },
+        "preview/docs/v/1.0.0/nightjar-local-evidence.json": {
+          "sha256": "a5f4f6523ee3861c240236f6fe047888cf8739fbe8f8e58794a7f5c941109525",
+          "size": 22842
+        },
+        "preview/docs/v/1.0.0/release-policy.json": {
+          "sha256": "5f9469307cbf414512d4aef74976554bc7dfb279bf3b4e92f72168156c46aec8",
+          "size": 367
+        },
+        "preview/docs/v/1.0.0/setup/index.html": {
+          "sha256": "5e4be5ba474713182b1e39555abc3cd9e0fd035b2b2ec5a733f5cace4a8054f6",
+          "size": 7562
+        },
+        "preview/docs/v/1.0.0/template.zip": {
+          "sha256": "de97e71a49f1a270c9b548b8fae10db2d8741ae77fecc9f01263e92097c33710",
+          "size": 775234
+        },
+        "preview/docs/versions/index.html": {
+          "sha256": "69f9288d30e285d4351140cca5fb7de9b9a8499e23f2338c6134a5f78cdc1fae",
+          "size": 474
+        },
+        "preview/examples/about/index.html": {
+          "sha256": "1453f632accdeab370fd91967085723ee097f4cc2ceeff53701ef538108f0ae0",
+          "size": 6564
+        },
+        "preview/examples/archive/index.html": {
+          "sha256": "ad7bceea74e929101529b95cf42fc1e8fdbe10a9201c51c8effcb4e84088c95d",
+          "size": 7106
+        },
+        "preview/examples/article/index.html": {
+          "sha256": "5badc32e2c6fb1665cbc22269f88cda826b274c660196b4577d14478ffd04870",
+          "size": 7334
+        },
+        "preview/examples/careers/index.html": {
+          "sha256": "a1bfb8b654ddd93de280127d054387d8b5459a7e433906a6f593943ace78ebbe",
+          "size": 5810
+        },
+        "preview/examples/case-study/index.html": {
+          "sha256": "0d5ff8a9a3051c94172b83bd9f509bbc426b0e686694625c0fa33fb34c31dcff",
+          "size": 6806
+        },
+        "preview/examples/categories/index.html": {
+          "sha256": "65616b957294727b10ea766e70c4ed4d20f35cae28d6697f217f1cdfc170b55c",
+          "size": 5358
+        },
+        "preview/examples/category/index.html": {
+          "sha256": "e3fb13b6d3ad2de09b6dfae8b0a9206ca21be49a9cbc41732c5f1974592eed09",
+          "size": 5865
+        },
+        "preview/examples/changelog/index.html": {
+          "sha256": "fb9a04d7a35f0336e2a5f0e4883c9a2776740ff2bbec3ca9a596dc1ab25d5652",
+          "size": 6261
+        },
+        "preview/examples/chat/index.html": {
+          "sha256": "42eee00f87153c899250803106d18ad5b8f609c2fc1180e7d4778125e1ffdd70",
+          "size": 5857
+        },
+        "preview/examples/collection/index.html": {
+          "sha256": "45636cf1353641e6cfb7c89b0498a901ccdb3613b02a4c12f18266930b554eea",
+          "size": 6333
+        },
+        "preview/examples/collection-item/index.html": {
+          "sha256": "c996a0a4b2dbd00469f7701a88d2b26d957468651aa3390536f6a2c25858ad84",
+          "size": 6328
+        },
+        "preview/examples/coming-soon/index.html": {
+          "sha256": "62a2128997d5be891ac026cfbd1e86b81fa6d1d37711a9ec2724b51923dfe1c8",
+          "size": 6665
+        },
+        "preview/examples/contact/index.html": {
+          "sha256": "0f0a3ae65d9a8e81ed893e2fd194c1f8de360484383e3d9ef1c0d0f2e7834789",
+          "size": 6753
+        },
+        "preview/examples/dashboard-administration/index.html": {
+          "sha256": "93523af9d548d40d98420e45ed71667a020d5962554fe832b531e7ebe562a9d3",
+          "size": 48306
+        },
+        "preview/examples/dashboard-analytics/index.html": {
+          "sha256": "2da210a598278dec5bebe439e700f6e96884735b275831d6a94bb255173dc5ce",
+          "size": 48056
+        },
+        "preview/examples/dashboard-components/index.html": {
+          "sha256": "59c73d680c90c12badf87dfe85da0fc1901158ddf75050a42a15d848621c649b",
+          "size": 7283
+        },
+        "preview/examples/dashboard-operations/index.html": {
+          "sha256": "bc200c87a7928f5147f5fe24fd88d9fb48c00b638970ee239cea559bb75b5302",
+          "size": 46850
+        },
+        "preview/examples/documentation/index.html": {
+          "sha256": "155b0d8a180e79e3c882200604a0bab2b37179b0834f6d04045c8a50b9d16a94",
+          "size": 5500
+        },
+        "preview/examples/event/index.html": {
+          "sha256": "cc7898e17de345d8a6bad3db220dff28d2f9346b594056f471ae88df875f59f8",
+          "size": 6895
+        },
+        "preview/examples/events/index.html": {
+          "sha256": "ece2c6090f37ed5bc5dac02074800c85721d30867bd162c2998a6cdc27b4782b",
+          "size": 6459
+        },
+        "preview/examples/faq/index.html": {
+          "sha256": "3bdf6dca944496b9f2b8af3a49bac247da097b5e2e8ae6ea8c46621d6eaaab45",
+          "size": 5928
+        },
+        "preview/examples/fleet/index.html": {
+          "sha256": "38ba6f363600162f70a9565affac4effc6b875b70ae7d33d123dfb0e7a0647a2",
+          "size": 6562
+        },
+        "preview/examples/gallery/index.html": {
+          "sha256": "3de074495145d0980a163c49f14c357883c1c8194bb06109eee4b46c9d2217db",
+          "size": 6920
+        },
+        "preview/examples/guide/index.html": {
+          "sha256": "5b786e21aaa98da64090170e28a9945f699f02b4af2036bb42b767241a9fad29",
+          "size": 6544
+        },
+        "preview/examples/home/index.html": {
+          "sha256": "b3855319b9a17294d60820d4f49804fad16e32f07beb482bbdb1c19401143788",
+          "size": 6163
+        },
+        "preview/examples/index.html": {
+          "sha256": "7977f6975f309d07595614577edfdfd280d9d2c43b0d5bb4b88af3e5a1656700",
+          "size": 20304
+        },
+        "preview/examples/integrations/index.html": {
+          "sha256": "4f83c48f74b0083b7c2b8348df9e9202924631494a07ec175de712e3723bcd3a",
+          "size": 7672
+        },
+        "preview/examples/not-found/index.html": {
+          "sha256": "00d7801f656a5a3cae35515458a1037aff08fa719de0ada4b7e1b8a2dabc1d38",
+          "size": 5409
+        },
+        "preview/examples/opportunity/index.html": {
+          "sha256": "48e83087e453b33e48be12525033647cb40d4de0aa2a6bafaf65d67fa7f1870d",
+          "size": 6990
+        },
+        "preview/examples/password-reset/index.html": {
+          "sha256": "f3dd0c2c1d33350220e045fe5d042e85c2321cb289114de5543c97e35196cbde",
+          "size": 7006
+        },
+        "preview/examples/patterns/index.html": {
+          "sha256": "e623beda1f5921132ebc0e9f5ac9b6ac2ca85a6946813663915a30bfc1ed893b",
+          "size": 6613
+        },
+        "preview/examples/person/index.html": {
+          "sha256": "ae2d9a25591677d7ab882e86377fd3553d24a32b1a6dacdd6eef7b9f00e2fbfb",
+          "size": 7159
+        },
+        "preview/examples/place/index.html": {
+          "sha256": "e5e84aee003f9f15c813704167d4ac96f6503d868f49713eabcb558fe13678fa",
+          "size": 6353
+        },
+        "preview/examples/pricing/index.html": {
+          "sha256": "842d42c3ee643b0b56a4782c797cb53e97329c953f5a493f82881e548ba6f845",
+          "size": 6407
+        },
+        "preview/examples/privacy/index.html": {
+          "sha256": "0e293ecbc2bbb48dc571576d751aacc899f852a8ca9047a9a9efdd99c152ffb1",
+          "size": 6525
+        },
+        "preview/examples/product/index.html": {
+          "sha256": "129b1708ac56a56ee05c622587bc46a56b5355eb589a3dff6a03da89c57a05d3",
+          "size": 6203
+        },
+        "preview/examples/projects/index.html": {
+          "sha256": "59a9084109d90edd40eb6268a0cebe4da15e46f1dd6fc0e8ff7f72ba55f9dc21",
+          "size": 6091
+        },
+        "preview/examples/reference/index.html": {
+          "sha256": "7a139f774ee16ef8e3aba910c43574bec4b2ce93e72fa9c7ab87de4af559b5d7",
+          "size": 8361
+        },
+        "preview/examples/report/index.html": {
+          "sha256": "8d9b3e803a4dd365d0f6920a98915ba7975ea92c35275d007afc2f578086fc94",
+          "size": 7190
+        },
+        "preview/examples/scene/index.html": {
+          "sha256": "32b98c721d0bfcd07c214bdab97203cbed251dea6cdb0435e135b40d6599cdb6",
+          "size": 6081
+        },
+        "preview/examples/scientific-workspace/index.html": {
+          "sha256": "a6f941380fdb1b77407728ce8d3f1624b7ee16ca03cf8dadcddbeb0b2de78edd",
+          "size": 8196
+        },
+        "preview/examples/search/index.html": {
+          "sha256": "aa0597e284a413e4ee29b089b96fb39afedf674ed79ca9f5ab8b94b0173d4ea4",
+          "size": 15216
+        },
+        "preview/examples/sensors/index.html": {
+          "sha256": "479ec722a5350abb908218ec364a3ea839c793367e38ba5064b193a7f1349d8d",
+          "size": 5745
+        },
+        "preview/examples/server-error/index.html": {
+          "sha256": "dcf503efb1e1d9d59b942436319e2725bfdc89f06f4b3b40d6ab8bdf26a7703a",
+          "size": 5586
+        },
+        "preview/examples/service/index.html": {
+          "sha256": "62bb1f4225f0fc2609d8284dda2a06c3db5f27f37af5c50d73820418c180f367",
+          "size": 6480
+        },
+        "preview/examples/sign-in/index.html": {
+          "sha256": "e52062d584fe151711d1a69b6d0271943a2b9243eec0c7dbd75deefc7fd1ccf5",
+          "size": 7324
+        },
+        "preview/examples/sign-up/index.html": {
+          "sha256": "87a733886c77b307a1f562b5fe3c81919e8030bcda779acf7693ab5c3e0b1f80",
+          "size": 7582
+        },
+        "preview/examples/software/index.html": {
+          "sha256": "0328270dac2c1a6020f34cd38906ff7fcbdd0bfb50378f1d7599aed872e78729",
+          "size": 6553
+        },
+        "preview/examples/stress-test/index.html": {
+          "sha256": "b674e30d3277c292280dcc8c0b9248e310bcffaa2c4b9e11669d6b6058df43e3",
+          "size": 10339
+        },
+        "preview/examples/terms/index.html": {
+          "sha256": "708f9c43bd2f90b73c12f2b5b76dbcfc216c07851787d57417752f14e93073c5",
+          "size": 6519
+        },
+        "preview/examples/two-factor/index.html": {
+          "sha256": "c23278de51827b3ea32e4e6c197f4f8f2f1d56307ef7ed195460bc67aa034faf",
+          "size": 7181
+        },
+        "preview/examples/workspace/index.html": {
+          "sha256": "59efcd97c273d1c3e2e51f12633d9bc77a6069faaeb519b32206a8c68a411dbe",
+          "size": 6925
+        },
+        "preview/index.html": {
+          "sha256": "6812fc1d2ba6d4f389d4c47e0f89654a29661431df6390a8d74d03af60a8fe41",
+          "size": 5844
+        },
+        "preview/journal/index.html": {
+          "sha256": "cd38d22edd0bf63d9d86b6a0eb58cea18dd9cd3b84747caf737471dd566232b3",
+          "size": 4680
+        },
+        "preview/journal/what-a-shell-should-own/index.html": {
+          "sha256": "40fe2aca6c91a9e4871ff768c34006c448a439ce4b7ac3745530f956aa42c44d",
+          "size": 6679
+        },
+        "preview/language/index.html": {
+          "sha256": "4c06aa17764f723ef2d2f798b93b095c403665bfb09d8f53c032af3f4082ae11",
+          "size": 6170
+        },
+        "preview/nightjar/PROVENANCE.json": {
+          "sha256": "5bf971673e69fbf64e9d961ad5184d917d41617a7bd14b38cf877cf097d1e01f",
+          "size": 102395
+        },
+        "preview/nightjar/README.md": {
+          "sha256": "89ba678d43f3438cefb2d115ac745045a8785339151fd48d9426e83912a38b53",
+          "size": 1051
+        },
+        "preview/nightjar/build.py": {
+          "sha256": "2ea2fdd30b8566168dc25bcf567e6e3bf07d0d8a53a6ca46586c29c54db2c0ee",
+          "size": 2795
+        },
+        "preview/nightjar/ci-proposal.yml": {
+          "sha256": "1dd457b2f1935e83914e2c92a977dd7d4422231eb126f2e87822df3e23adb562",
+          "size": 421
+        },
+        "preview/nightjar/source-files.json": {
+          "sha256": "c897d02fa4ac94d931b6e2a9a8ae9b1ccfc9812f284a007d1561c2dab53b503a",
+          "size": 7202
+        },
+        "preview/nightjar/verify-html.py": {
+          "sha256": "7ffbaa1bdb86b2965d6666d1960e6013f1808c60081b8bcd5af763720c953184",
+          "size": 2306
+        },
+        "preview/nightjar/verify.py": {
+          "sha256": "9099ad8fbdfd36e68cd9ba1c3e9df79916af896e2ab1363bdb696b81550dab35",
+          "size": 4446
+        },
+        "preview/release-policy.json": {
+          "sha256": "5f9469307cbf414512d4aef74976554bc7dfb279bf3b4e92f72168156c46aec8",
+          "size": 367
+        },
+        "preview/setup/index.html": {
+          "sha256": "2c4b6da06a9abe7a6bebdfdafa7af634bc3829752cea5b5c083f8eccb29b501d",
+          "size": 6928
+        },
+        "preview/template.zip": {
+          "sha256": "de97e71a49f1a270c9b548b8fae10db2d8741ae77fecc9f01263e92097c33710",
+          "size": 775234
+        },
+        "release-policy.json": {
+          "sha256": "5f9469307cbf414512d4aef74976554bc7dfb279bf3b4e92f72168156c46aec8",
+          "size": 367
+        },
+        "setup/index.html": {
+          "sha256": "f99b07ddfcecf1a58e8e628015c0780df2a553bea9bf545bbf7250ca3349820f",
+          "size": 6784
+        },
+        "template.zip": {
+          "sha256": "de97e71a49f1a270c9b548b8fae10db2d8741ae77fecc9f01263e92097c33710",
+          "size": 775234
+        }
+      },
+      "downloads": [
+        {
+          "path": "/template.zip",
+          "sha256": "de97e71a49f1a270c9b548b8fae10db2d8741ae77fecc9f01263e92097c33710",
+          "releaseEvidence": "martlet-jekyll-published-verification.json"
+        }
+      ]
+    },
+    "jekyll.krigsvolddesign.dev": {
+      "family": "krigsvold",
+      "framework": "jekyll",
+      "role": "reference",
+      "artifactRoot": null,
+      "sourceCommit": "52df2775f9cd487b2b527032b99d4d7806fe52ea",
+      "version": "1.0.0",
+      "proofPath": "/.well-known/nightjar-deployment.json",
+      "expectedFileHashes": {
+        ".well-known/nightjar-deployment.json": {
+          "sha256": "b628d433151413cdd5b0116dc6b7a3c68afe6694d2bae41dec36b555c8459cb1",
+          "size": 577
+        },
+        "404.html": {
+          "sha256": "bf61baa1eee7a3ff34afc4902310f848a56f9a10af17833038aaa62786738730",
+          "size": 6045
+        },
+        "LICENSE": {
+          "sha256": "1067907e4c1a431923d3e1b37c42e3fbb8dbeb79aab20ccc0e8c8e7c1323eed6",
+          "size": 1076
+        },
+        "NOTICE.md": {
+          "sha256": "8e5b59cf0cc4e427296763f718407ba4760821f95c1208ee51620050bcbbf398",
+          "size": 736
+        },
+        "VERSION": {
+          "sha256": "59854984853104df5c353e2f681a15fc7924742f9a2e468c29af248dce45ce03",
+          "size": 6
+        },
+        "artifact-inventory.json": {
+          "sha256": "cbf0c232fe2f234513e6dde4b24967260b55b2b2badf50ee48dcf3c3f41d6c3d",
+          "size": 87384
+        },
+        "assets/css/dashboard-family.css": {
+          "sha256": "c6881d516291fff6ec1c5383b43cfeb5a1f4682559685f250ecfb51a4e4ae609",
+          "size": 1030
+        },
+        "assets/css/dashboard.css": {
+          "sha256": "edb906bb6801d654fbeb9767e8672f1873c7738505951e099665e2de150a937d",
+          "size": 8047
+        },
+        "assets/css/examples-family.css": {
+          "sha256": "189a7318406b5762fb8fa085e50db1133eb663c758cca8dbd48a6ba185f20dec",
+          "size": 4250
+        },
+        "assets/css/examples.css": {
+          "sha256": "06ce4da75d5cfad84360b14b0c121007f1af95673483f434a2d036b202dd7d95",
+          "size": 11086
+        },
+        "assets/css/fonts.css": {
+          "sha256": "acc1aca21d6a25594b82e6c63da7e8e0f3fcb6459e2bb60521ac0db7556bf162",
+          "size": 5580
+        },
+        "assets/css/jekyll.css": {
+          "sha256": "91d428f5c4002c6a8effcf2fba36fea55c006e924d12ee701a5fbb31c78941ba",
+          "size": 2227
+        },
+        "assets/css/scientific.css": {
+          "sha256": "08614aa3c62d2217aaf709c6f94e9704dec8145f3b63427c76f1e36554c6c5ab",
+          "size": 2074
+        },
+        "assets/css/shell.css": {
+          "sha256": "a65b1cbbe032d46be7373b1f3a90ca46ba1b3971fa85c98975cd9ec76394c05d",
+          "size": 593642
+        },
+        "assets/examples/coast.svg": {
+          "sha256": "8854d27cabdcb1c8a471b7fdb56ae640a957f3c5977cdd9ffa71ca44dd7f8b4b",
+          "size": 616
+        },
+        "assets/examples/notebook.svg": {
+          "sha256": "7ea9240d26c7cb2d60912dbad34c4eff87aaa8f48f65735987e1843292b18353",
+          "size": 506
+        },
+        "assets/examples/observations.csv": {
+          "sha256": "8818a5383144e4e4ff8525631ddd3186f04836763564cba37abae9ed9dd3c955",
+          "size": 136
+        },
+        "assets/examples/station.svg": {
+          "sha256": "a8c6618b46b679c509d4ff3ca6fb289d9f39b9feebba51e69f383d2d0571cb85",
+          "size": 541
+        },
+        "assets/fonts/roboto-LICENSE.txt": {
+          "sha256": "84044c09058803d87a241bd28abb4ce30a433d7db9c27a04da3efad6a0ca539c",
+          "size": 4512
+        },
+        "assets/fonts/roboto-latin-400-italic.BpsFK_tr.woff": {
+          "sha256": "b926f7b97d2f6bf1a12cbfc65a0394120ae401d5ff5cc3a484fafddf0618fd6b",
+          "size": 22856
+        },
+        "assets/fonts/roboto-latin-400-italic.CSuqwwKr.woff2": {
+          "sha256": "5d0e978b6560631da2504e1612e91ee1ff959c04adae245eb320ac90cad2ba2f",
+          "size": 23672
+        },
+        "assets/fonts/roboto-latin-400-normal.BqEyEoaF.woff2": {
+          "sha256": "425c0713a8176f92273d378599c7eac57de7fafabd4bd0ed457b70eb8f80d371",
+          "size": 21884
+        },
+        "assets/fonts/roboto-latin-400-normal.D27F5sTu.woff": {
+          "sha256": "6cff12116b83321230347db75d0721e70c27c6ec69eccca93ca4b1556eaaf67f",
+          "size": 21060
+        },
+        "assets/fonts/roboto-latin-500-italic.DOe3GFcv.woff2": {
+          "sha256": "b5843bdfcb8683f34fb44444cf15d2a03ad93d6b11934a55d059aae2b650bbfe",
+          "size": 23896
+        },
+        "assets/fonts/roboto-latin-500-italic.DYW_i9qW.woff": {
+          "sha256": "1742eadcf53022296ab6d2b536a782fb97e0a842bbf4a46b75ff3708ab24d047",
+          "size": 22968
+        },
+        "assets/fonts/roboto-latin-500-normal.7RbcRiD8.woff2": {
+          "sha256": "5bcc3aa180e7f26f643cd5b2621cd7c2de193d0661d913a94afd3d4881a7a34b",
+          "size": 22200
+        },
+        "assets/fonts/roboto-latin-500-normal.fsTFPL3E.woff": {
+          "sha256": "8fa8e562e1a2997b442cd71ce0aa5c1814b119a80331d9cfdd0f4eb032e8a0bd",
+          "size": 21168
+        },
+        "assets/fonts/roboto-latin-700-italic.Cb9agdGy.woff2": {
+          "sha256": "cc04783263e416f8ee2a218fde6ffd532d6b81636d3187d30e39e4ad05736d5e",
+          "size": 23988
+        },
+        "assets/fonts/roboto-latin-700-italic.DyccbiE3.woff": {
+          "sha256": "bae8102694ddf05ad437268b85de6df81aeb7412e4d39fd834687dd3272dd1de",
+          "size": 22964
+        },
+        "assets/fonts/roboto-latin-700-normal.BZpUvMxY.woff2": {
+          "sha256": "b9d66d1708156f765ada51939bc24ed259dafa69eb631b36e443680fe9e15879",
+          "size": 22240
+        },
+        "assets/fonts/roboto-latin-700-normal.YuyVweIx.woff": {
+          "sha256": "19e78b1c5f2c683c28800f84dd6d453ddb67987b0079060a4cbe50c7bdded148",
+          "size": 21216
+        },
+        "assets/fonts/roboto-mono-LICENSE.txt": {
+          "sha256": "b489132782690f2cc1ed23ab56d7057bbb08c42573603e8e704ae2e2ea9c8216",
+          "size": 4513
+        },
+        "assets/fonts/roboto-mono-latin-400-italic.B_vYWRnS.woff2": {
+          "sha256": "e4a744be99f104ecbd224af9a91da2a7cadd76e1b9cde550b26e341d2e465349",
+          "size": 13928
+        },
+        "assets/fonts/roboto-mono-latin-400-italic.Br0OE6wL.woff": {
+          "sha256": "fcb3ae2d69514d180dad5531cbca053a7875dfc162c4a71fc5c483efca8ca7c7",
+          "size": 17396
+        },
+        "assets/fonts/roboto-mono-latin-400-normal.DBZPkcnn.woff": {
+          "sha256": "9690f3c6eb06d0a4e7b3de424daa616612e31718cf5440b3fc5977db72673d24",
+          "size": 15720
+        },
+        "assets/fonts/roboto-mono-latin-400-normal.GekRknry.woff2": {
+          "sha256": "e03013e0baa5690a803c188da2214d920c3245b25ad78421ecc8ae86cd842ae9",
+          "size": 12680
+        },
+        "assets/fonts/roboto-mono-latin-500-italic.D-wAjtQg.woff2": {
+          "sha256": "6ae318fb48664db81936182f961e5c326dc10228cec8d50f72be0f1da2fd5126",
+          "size": 14144
+        },
+        "assets/fonts/roboto-mono-latin-500-italic.D6SF9iFo.woff": {
+          "sha256": "f28af2e29c9d44c030f2d06547c9b6f5845f65622780959bf8dd7ca06dd28658",
+          "size": 17584
+        },
+        "assets/fonts/roboto-mono-latin-500-normal.D6j6AMzd.woff": {
+          "sha256": "ae8da93ddfad37b344aa6f615bd26771c58e3b3be3a371a623e90a7cd28f432d",
+          "size": 15932
+        },
+        "assets/fonts/roboto-mono-latin-500-normal.pxIOXZmA.woff2": {
+          "sha256": "ce7027efa5c894e8b244b0ca05ec121b6a85655957afd9c76c59b56910de7d4e",
+          "size": 12936
+        },
+        "assets/fonts/roboto-mono-latin-700-italic.APUcH-iK.woff2": {
+          "sha256": "21eb25612d5c76e78c41bacf87adf6dbb44f20e4ee7f75be6c260e512310c087",
+          "size": 13960
+        },
+        "assets/fonts/roboto-mono-latin-700-italic.BibL9KEE.woff": {
+          "sha256": "5699ca875213d64bb6167f70f7e536e1bd1cc87dabe8226375981b6364f2e4b9",
+          "size": 17504
+        },
+        "assets/fonts/roboto-mono-latin-700-normal.CHYrj1DZ.woff": {
+          "sha256": "7ac13ad17113e63e24d7c0be1bb447faa26c23f75c12a0a87e8c68ae4e8ed0cc",
+          "size": 15848
+        },
+        "assets/fonts/roboto-mono-latin-700-normal.foxDnrFi.woff2": {
+          "sha256": "283fbef73f42c21722c5a3efc7a44b0c38aac1ada665602b2144c13ed58c0e99",
+          "size": 12696
+        },
+        "assets/fonts/roboto-slab-LICENSE.txt": {
+          "sha256": "58fde637cb64b89166884b28067832233d8440e409b1666d6455c578bf135cf8",
+          "size": 11404
+        },
+        "assets/fonts/roboto-slab-latin-400-normal.DwurWVj7.woff2": {
+          "sha256": "484e9925bb3045e88a8eec1103ab125e6dbe486172fb56b06fe6751c8b570839",
+          "size": 13968
+        },
+        "assets/fonts/roboto-slab-latin-400-normal.wzK1bUc4.woff": {
+          "sha256": "0955e34245e7b69776d433aa6bce99a1a9286e33710472e46cf3a6777517d5b3",
+          "size": 17664
+        },
+        "assets/fonts/roboto-slab-latin-700-normal.ThI0IOtl.woff": {
+          "sha256": "f9af152b7ce8f7291f9ea7f1806009b207bc3a4af8ca3e0ec9b24cf6c90e1b01",
+          "size": 17900
+        },
+        "assets/fonts/roboto-slab-latin-700-normal.WCCj9XVQ.woff2": {
+          "sha256": "66fa77aafb51fb5058e1fd7e34977f55e84494600bccb2d4cc9d0cbc998eb5cb",
+          "size": 14184
+        },
+        "assets/js/dashboard-model.mjs": {
+          "sha256": "882e7dce010d7120727fccc3599b2b3e90473db93066de70d93a61d05a8179c5",
+          "size": 14441
+        },
+        "assets/js/dashboard-ui.mjs": {
+          "sha256": "3f551d6ab16d74cefdec7d8246bfce448b85f8412694b106826ea312c31dfb4f",
+          "size": 6035
+        },
+        "assets/js/dashboards.mjs": {
+          "sha256": "94ebca4a88c7e820dfb801e28d9251c7f781d016d43f1ee9f34c2876f9de7b01",
+          "size": 27070
+        },
+        "assets/js/examples.js": {
+          "sha256": "e2dd5bd36a17050db6aff9512c1bbad22feba8f686de548a9e7849dee1b64735",
+          "size": 16730
+        },
+        "assets/js/scientific.mjs": {
+          "sha256": "ccff3cf6fda8b5952b1b03b3a5aaa0eb0bf09339b979c0b87c211a2f93bc51fe",
+          "size": 3263
+        },
+        "assets/js/shell.js": {
+          "sha256": "814a3ed82f1e9664e8fe4047959b05db4e2d1930cea127d21bf4274c5f06da41",
+          "size": 1499
+        },
+        "assets/js/thermal-model.mjs": {
+          "sha256": "f33396b42f6711fe54435caa9e7577144eea779786b4838e68ee43ce3e2a13f9",
+          "size": 1696
+        },
+        "assets/mark.svg": {
+          "sha256": "741f03e83df63c3b492ac209e0b8d0a73738e7c5cfb3f859c52a606fc54a80e4",
+          "size": 930
+        },
+        "assets/owner.svg": {
+          "sha256": "05c66bb02e8ec8a2277a452a5f3728362c7ea7f087ee19126230d9d1d114423a",
+          "size": 36757
+        },
+        "deployment-proof.json": {
+          "sha256": "683535ae9b3d17764b672509a87de1a26b76c3421c1875dd735afe618865b2aa",
+          "size": 609
+        },
+        "docs/v/1.0.0/404.html": {
+          "sha256": "19d4477d81d6097b9f2006e0e80221822866db0d8d720ec6761baa432c65abcd",
+          "size": 6715
+        },
+        "docs/v/1.0.0/LICENSE": {
+          "sha256": "1067907e4c1a431923d3e1b37c42e3fbb8dbeb79aab20ccc0e8c8e7c1323eed6",
+          "size": 1076
+        },
+        "docs/v/1.0.0/NOTICE.md": {
+          "sha256": "8e5b59cf0cc4e427296763f718407ba4760821f95c1208ee51620050bcbbf398",
+          "size": 736
+        },
+        "docs/v/1.0.0/VERSION": {
+          "sha256": "59854984853104df5c353e2f681a15fc7924742f9a2e468c29af248dce45ce03",
+          "size": 6
+        },
+        "docs/v/1.0.0/assets/css/dashboard-family.css": {
+          "sha256": "c6881d516291fff6ec1c5383b43cfeb5a1f4682559685f250ecfb51a4e4ae609",
+          "size": 1030
+        },
+        "docs/v/1.0.0/assets/css/dashboard.css": {
+          "sha256": "edb906bb6801d654fbeb9767e8672f1873c7738505951e099665e2de150a937d",
+          "size": 8047
+        },
+        "docs/v/1.0.0/assets/css/examples-family.css": {
+          "sha256": "189a7318406b5762fb8fa085e50db1133eb663c758cca8dbd48a6ba185f20dec",
+          "size": 4250
+        },
+        "docs/v/1.0.0/assets/css/examples.css": {
+          "sha256": "06ce4da75d5cfad84360b14b0c121007f1af95673483f434a2d036b202dd7d95",
+          "size": 11086
+        },
+        "docs/v/1.0.0/assets/css/fonts.css": {
+          "sha256": "acc1aca21d6a25594b82e6c63da7e8e0f3fcb6459e2bb60521ac0db7556bf162",
+          "size": 5580
+        },
+        "docs/v/1.0.0/assets/css/jekyll.css": {
+          "sha256": "91d428f5c4002c6a8effcf2fba36fea55c006e924d12ee701a5fbb31c78941ba",
+          "size": 2227
+        },
+        "docs/v/1.0.0/assets/css/scientific.css": {
+          "sha256": "08614aa3c62d2217aaf709c6f94e9704dec8145f3b63427c76f1e36554c6c5ab",
+          "size": 2074
+        },
+        "docs/v/1.0.0/assets/css/shell.css": {
+          "sha256": "a65b1cbbe032d46be7373b1f3a90ca46ba1b3971fa85c98975cd9ec76394c05d",
+          "size": 593642
+        },
+        "docs/v/1.0.0/assets/examples/coast.svg": {
+          "sha256": "8854d27cabdcb1c8a471b7fdb56ae640a957f3c5977cdd9ffa71ca44dd7f8b4b",
+          "size": 616
+        },
+        "docs/v/1.0.0/assets/examples/notebook.svg": {
+          "sha256": "7ea9240d26c7cb2d60912dbad34c4eff87aaa8f48f65735987e1843292b18353",
+          "size": 506
+        },
+        "docs/v/1.0.0/assets/examples/observations.csv": {
+          "sha256": "8818a5383144e4e4ff8525631ddd3186f04836763564cba37abae9ed9dd3c955",
+          "size": 136
+        },
+        "docs/v/1.0.0/assets/examples/station.svg": {
+          "sha256": "a8c6618b46b679c509d4ff3ca6fb289d9f39b9feebba51e69f383d2d0571cb85",
+          "size": 541
+        },
+        "docs/v/1.0.0/assets/fonts/roboto-LICENSE.txt": {
+          "sha256": "84044c09058803d87a241bd28abb4ce30a433d7db9c27a04da3efad6a0ca539c",
+          "size": 4512
+        },
+        "docs/v/1.0.0/assets/fonts/roboto-latin-400-italic.BpsFK_tr.woff": {
+          "sha256": "b926f7b97d2f6bf1a12cbfc65a0394120ae401d5ff5cc3a484fafddf0618fd6b",
+          "size": 22856
+        },
+        "docs/v/1.0.0/assets/fonts/roboto-latin-400-italic.CSuqwwKr.woff2": {
+          "sha256": "5d0e978b6560631da2504e1612e91ee1ff959c04adae245eb320ac90cad2ba2f",
+          "size": 23672
+        },
+        "docs/v/1.0.0/assets/fonts/roboto-latin-400-normal.BqEyEoaF.woff2": {
+          "sha256": "425c0713a8176f92273d378599c7eac57de7fafabd4bd0ed457b70eb8f80d371",
+          "size": 21884
+        },
+        "docs/v/1.0.0/assets/fonts/roboto-latin-400-normal.D27F5sTu.woff": {
+          "sha256": "6cff12116b83321230347db75d0721e70c27c6ec69eccca93ca4b1556eaaf67f",
+          "size": 21060
+        },
+        "docs/v/1.0.0/assets/fonts/roboto-latin-500-italic.DOe3GFcv.woff2": {
+          "sha256": "b5843bdfcb8683f34fb44444cf15d2a03ad93d6b11934a55d059aae2b650bbfe",
+          "size": 23896
+        },
+        "docs/v/1.0.0/assets/fonts/roboto-latin-500-italic.DYW_i9qW.woff": {
+          "sha256": "1742eadcf53022296ab6d2b536a782fb97e0a842bbf4a46b75ff3708ab24d047",
+          "size": 22968
+        },
+        "docs/v/1.0.0/assets/fonts/roboto-latin-500-normal.7RbcRiD8.woff2": {
+          "sha256": "5bcc3aa180e7f26f643cd5b2621cd7c2de193d0661d913a94afd3d4881a7a34b",
+          "size": 22200
+        },
+        "docs/v/1.0.0/assets/fonts/roboto-latin-500-normal.fsTFPL3E.woff": {
+          "sha256": "8fa8e562e1a2997b442cd71ce0aa5c1814b119a80331d9cfdd0f4eb032e8a0bd",
+          "size": 21168
+        },
+        "docs/v/1.0.0/assets/fonts/roboto-latin-700-italic.Cb9agdGy.woff2": {
+          "sha256": "cc04783263e416f8ee2a218fde6ffd532d6b81636d3187d30e39e4ad05736d5e",
+          "size": 23988
+        },
+        "docs/v/1.0.0/assets/fonts/roboto-latin-700-italic.DyccbiE3.woff": {
+          "sha256": "bae8102694ddf05ad437268b85de6df81aeb7412e4d39fd834687dd3272dd1de",
+          "size": 22964
+        },
+        "docs/v/1.0.0/assets/fonts/roboto-latin-700-normal.BZpUvMxY.woff2": {
+          "sha256": "b9d66d1708156f765ada51939bc24ed259dafa69eb631b36e443680fe9e15879",
+          "size": 22240
+        },
+        "docs/v/1.0.0/assets/fonts/roboto-latin-700-normal.YuyVweIx.woff": {
+          "sha256": "19e78b1c5f2c683c28800f84dd6d453ddb67987b0079060a4cbe50c7bdded148",
+          "size": 21216
+        },
+        "docs/v/1.0.0/assets/fonts/roboto-mono-LICENSE.txt": {
+          "sha256": "b489132782690f2cc1ed23ab56d7057bbb08c42573603e8e704ae2e2ea9c8216",
+          "size": 4513
+        },
+        "docs/v/1.0.0/assets/fonts/roboto-mono-latin-400-italic.B_vYWRnS.woff2": {
+          "sha256": "e4a744be99f104ecbd224af9a91da2a7cadd76e1b9cde550b26e341d2e465349",
+          "size": 13928
+        },
+        "docs/v/1.0.0/assets/fonts/roboto-mono-latin-400-italic.Br0OE6wL.woff": {
+          "sha256": "fcb3ae2d69514d180dad5531cbca053a7875dfc162c4a71fc5c483efca8ca7c7",
+          "size": 17396
+        },
+        "docs/v/1.0.0/assets/fonts/roboto-mono-latin-400-normal.DBZPkcnn.woff": {
+          "sha256": "9690f3c6eb06d0a4e7b3de424daa616612e31718cf5440b3fc5977db72673d24",
+          "size": 15720
+        },
+        "docs/v/1.0.0/assets/fonts/roboto-mono-latin-400-normal.GekRknry.woff2": {
+          "sha256": "e03013e0baa5690a803c188da2214d920c3245b25ad78421ecc8ae86cd842ae9",
+          "size": 12680
+        },
+        "docs/v/1.0.0/assets/fonts/roboto-mono-latin-500-italic.D-wAjtQg.woff2": {
+          "sha256": "6ae318fb48664db81936182f961e5c326dc10228cec8d50f72be0f1da2fd5126",
+          "size": 14144
+        },
+        "docs/v/1.0.0/assets/fonts/roboto-mono-latin-500-italic.D6SF9iFo.woff": {
+          "sha256": "f28af2e29c9d44c030f2d06547c9b6f5845f65622780959bf8dd7ca06dd28658",
+          "size": 17584
+        },
+        "docs/v/1.0.0/assets/fonts/roboto-mono-latin-500-normal.D6j6AMzd.woff": {
+          "sha256": "ae8da93ddfad37b344aa6f615bd26771c58e3b3be3a371a623e90a7cd28f432d",
+          "size": 15932
+        },
+        "docs/v/1.0.0/assets/fonts/roboto-mono-latin-500-normal.pxIOXZmA.woff2": {
+          "sha256": "ce7027efa5c894e8b244b0ca05ec121b6a85655957afd9c76c59b56910de7d4e",
+          "size": 12936
+        },
+        "docs/v/1.0.0/assets/fonts/roboto-mono-latin-700-italic.APUcH-iK.woff2": {
+          "sha256": "21eb25612d5c76e78c41bacf87adf6dbb44f20e4ee7f75be6c260e512310c087",
+          "size": 13960
+        },
+        "docs/v/1.0.0/assets/fonts/roboto-mono-latin-700-italic.BibL9KEE.woff": {
+          "sha256": "5699ca875213d64bb6167f70f7e536e1bd1cc87dabe8226375981b6364f2e4b9",
+          "size": 17504
+        },
+        "docs/v/1.0.0/assets/fonts/roboto-mono-latin-700-normal.CHYrj1DZ.woff": {
+          "sha256": "7ac13ad17113e63e24d7c0be1bb447faa26c23f75c12a0a87e8c68ae4e8ed0cc",
+          "size": 15848
+        },
+        "docs/v/1.0.0/assets/fonts/roboto-mono-latin-700-normal.foxDnrFi.woff2": {
+          "sha256": "283fbef73f42c21722c5a3efc7a44b0c38aac1ada665602b2144c13ed58c0e99",
+          "size": 12696
+        },
+        "docs/v/1.0.0/assets/fonts/roboto-slab-LICENSE.txt": {
+          "sha256": "58fde637cb64b89166884b28067832233d8440e409b1666d6455c578bf135cf8",
+          "size": 11404
+        },
+        "docs/v/1.0.0/assets/fonts/roboto-slab-latin-400-normal.DwurWVj7.woff2": {
+          "sha256": "484e9925bb3045e88a8eec1103ab125e6dbe486172fb56b06fe6751c8b570839",
+          "size": 13968
+        },
+        "docs/v/1.0.0/assets/fonts/roboto-slab-latin-400-normal.wzK1bUc4.woff": {
+          "sha256": "0955e34245e7b69776d433aa6bce99a1a9286e33710472e46cf3a6777517d5b3",
+          "size": 17664
+        },
+        "docs/v/1.0.0/assets/fonts/roboto-slab-latin-700-normal.ThI0IOtl.woff": {
+          "sha256": "f9af152b7ce8f7291f9ea7f1806009b207bc3a4af8ca3e0ec9b24cf6c90e1b01",
+          "size": 17900
+        },
+        "docs/v/1.0.0/assets/fonts/roboto-slab-latin-700-normal.WCCj9XVQ.woff2": {
+          "sha256": "66fa77aafb51fb5058e1fd7e34977f55e84494600bccb2d4cc9d0cbc998eb5cb",
+          "size": 14184
+        },
+        "docs/v/1.0.0/assets/js/dashboard-model.mjs": {
+          "sha256": "882e7dce010d7120727fccc3599b2b3e90473db93066de70d93a61d05a8179c5",
+          "size": 14441
+        },
+        "docs/v/1.0.0/assets/js/dashboard-ui.mjs": {
+          "sha256": "3f551d6ab16d74cefdec7d8246bfce448b85f8412694b106826ea312c31dfb4f",
+          "size": 6035
+        },
+        "docs/v/1.0.0/assets/js/dashboards.mjs": {
+          "sha256": "94ebca4a88c7e820dfb801e28d9251c7f781d016d43f1ee9f34c2876f9de7b01",
+          "size": 27070
+        },
+        "docs/v/1.0.0/assets/js/examples.js": {
+          "sha256": "e2dd5bd36a17050db6aff9512c1bbad22feba8f686de548a9e7849dee1b64735",
+          "size": 16730
+        },
+        "docs/v/1.0.0/assets/js/scientific.mjs": {
+          "sha256": "ccff3cf6fda8b5952b1b03b3a5aaa0eb0bf09339b979c0b87c211a2f93bc51fe",
+          "size": 3263
+        },
+        "docs/v/1.0.0/assets/js/shell.js": {
+          "sha256": "814a3ed82f1e9664e8fe4047959b05db4e2d1930cea127d21bf4274c5f06da41",
+          "size": 1499
+        },
+        "docs/v/1.0.0/assets/js/thermal-model.mjs": {
+          "sha256": "f33396b42f6711fe54435caa9e7577144eea779786b4838e68ee43ce3e2a13f9",
+          "size": 1696
+        },
+        "docs/v/1.0.0/assets/mark.svg": {
+          "sha256": "741f03e83df63c3b492ac209e0b8d0a73738e7c5cfb3f859c52a606fc54a80e4",
+          "size": 930
+        },
+        "docs/v/1.0.0/assets/owner.svg": {
+          "sha256": "05c66bb02e8ec8a2277a452a5f3728362c7ea7f087ee19126230d9d1d114423a",
+          "size": 36757
+        },
+        "docs/v/1.0.0/examples/about/index.html": {
+          "sha256": "5ec04078d6d83c1f38a8567858661039d2e5d4926acb4341106235a38b462443",
+          "size": 7953
+        },
+        "docs/v/1.0.0/examples/archive/index.html": {
+          "sha256": "4f52e7b1fa9a7136bc8ed8a29c687ebcf88d7f6a02fa332207af33bd3446ec85",
+          "size": 8522
+        },
+        "docs/v/1.0.0/examples/article/index.html": {
+          "sha256": "d0361f9600f082e39355b3adf3f3d96936fbac4d69249a7b4cf807711e9c1f24",
+          "size": 8674
+        },
+        "docs/v/1.0.0/examples/careers/index.html": {
+          "sha256": "c5eda52a428062251d0ac2fddcb46c124ab176f2d457f65ec848371d4894c5af",
+          "size": 7206
+        },
+        "docs/v/1.0.0/examples/case-study/index.html": {
+          "sha256": "fc2941f2023e46edf40c8b488feb6403c5e4668f6ddf1cfb658b5103363590d9",
+          "size": 8210
+        },
+        "docs/v/1.0.0/examples/categories/index.html": {
+          "sha256": "7b9aa7bf219b94214b720af80719c9ab3ed944d9d37ed3f2a1f294afa4fcbf7c",
+          "size": 6737
+        },
+        "docs/v/1.0.0/examples/category/index.html": {
+          "sha256": "8e54f8cc231168ad4d3de541faec4bec77dc6cb9fae9a527297da70a9ffe239c",
+          "size": 7261
+        },
+        "docs/v/1.0.0/examples/changelog/index.html": {
+          "sha256": "ee68820359156ee609e78b68d78398e2d0405944c92a3aa78c8f2930bde927c2",
+          "size": 7625
+        },
+        "docs/v/1.0.0/examples/chat/index.html": {
+          "sha256": "31aed140f4fbace33c5773ffc91bf75675566e1f4cf472f1f13cb38efba1c513",
+          "size": 7243
+        },
+        "docs/v/1.0.0/examples/collection/index.html": {
+          "sha256": "b7373eb58ccd3ebfd459619e7a5cfe7bfc59af651095d5f1d77d25517f8f2f77",
+          "size": 7739
+        },
+        "docs/v/1.0.0/examples/collection-item/index.html": {
+          "sha256": "17ef65ca35437dc5a6535c51d3d801673a6c36532f23471421ac8b5c17262a92",
+          "size": 7713
+        },
+        "docs/v/1.0.0/examples/coming-soon/index.html": {
+          "sha256": "eef67f47e13330121a49f9e37e9b7335e8d046a6d9e9b3a981fe2cb557be115d",
+          "size": 8059
+        },
+        "docs/v/1.0.0/examples/contact/index.html": {
+          "sha256": "887c22be5c0340b6c8a81b39c2962bc70d1a314291089dd8974a467d302efb6e",
+          "size": 8147
+        },
+        "docs/v/1.0.0/examples/dashboard-administration/index.html": {
+          "sha256": "c213bc34c366e0916d1c102e378b0856e4b713417c2e220acc06d2a6e00c5d40",
+          "size": 49846
+        },
+        "docs/v/1.0.0/examples/dashboard-analytics/index.html": {
+          "sha256": "67af74230e65aee24c1c962da14fb3dea1c464b0cb3a094466b1581c94faa1dd",
+          "size": 49449
+        },
+        "docs/v/1.0.0/examples/dashboard-components/index.html": {
+          "sha256": "1cedc5048cb5c205cfdeb1f796dfd2a9c0ebd1da7fb886d27089db26202a37c3",
+          "size": 8647
+        },
+        "docs/v/1.0.0/examples/dashboard-operations/index.html": {
+          "sha256": "0107cdc09433237cc28f937c7ebb87c3c5afa5fcf1000d0ef58e6abad1ceb02b",
+          "size": 48243
+        },
+        "docs/v/1.0.0/examples/documentation/index.html": {
+          "sha256": "d379c971e7983cc2f672eaf1eae04d64e0e0a165da9e1723d5330cc661dde571",
+          "size": 6879
+        },
+        "docs/v/1.0.0/examples/event/index.html": {
+          "sha256": "88045fb413a13cf01830b8bf42fc88e8136eb4a0559be509b1b6ed829f91e58d",
+          "size": 8275
+        },
+        "docs/v/1.0.0/examples/events/index.html": {
+          "sha256": "267e47ecc89069ba7a62384339de0747142bb9dfb27d773c2cdda47421b86fbd",
+          "size": 7877
+        },
+        "docs/v/1.0.0/examples/faq/index.html": {
+          "sha256": "0af1cbe6279d51c4a42e5151c293ab225237eeaafe6062a73d0c4291b840b515",
+          "size": 7292
+        },
+        "docs/v/1.0.0/examples/fleet/index.html": {
+          "sha256": "64b7ae3f8a074ede96afe8fab15a4dc69701b5bc38a9fd8b6f69264c09a3373b",
+          "size": 7970
+        },
+        "docs/v/1.0.0/examples/gallery/index.html": {
+          "sha256": "0e2a476e76acce3602f222ab6910cf251b0ef8904ec33cee6aad93de5105f271",
+          "size": 8325
+        },
+        "docs/v/1.0.0/examples/guide/index.html": {
+          "sha256": "ea655da6778533a2a93b5bc925a024918e0ccb6daa4786aec3c061939018bf66",
+          "size": 7948
+        },
+        "docs/v/1.0.0/examples/home/index.html": {
+          "sha256": "f88f81f6dda7a58628fc67b168426d144d2c560158570d6522874191a78e5990",
+          "size": 7582
+        },
+        "docs/v/1.0.0/examples/index.html": {
+          "sha256": "e63af8c2fff83c388a034ee897bf9c862baa578076a5e2f59a47d136c59df978",
+          "size": 21901
+        },
+        "docs/v/1.0.0/examples/integrations/index.html": {
+          "sha256": "8176b444feb200a730befc069e375836c372ada03969978d993ddc2aab1da0b4",
+          "size": 9036
+        },
+        "docs/v/1.0.0/examples/not-found/index.html": {
+          "sha256": "451e221b09d7112fb5936851ff4293727901766e51ddd9551420077413948e0b",
+          "size": 6813
+        },
+        "docs/v/1.0.0/examples/opportunity/index.html": {
+          "sha256": "1f6f46a234a1f80659977fbe5c921577e90dd929aae44cb5d14d2205d5174fd5",
+          "size": 8370
+        },
+        "docs/v/1.0.0/examples/password-reset/index.html": {
+          "sha256": "c08dea88f16770ebb477a1d29242fd3f7c8c04320f77863e2139318fc15a974d",
+          "size": 8420
+        },
+        "docs/v/1.0.0/examples/patterns/index.html": {
+          "sha256": "3e4cec88b57536025ed55a84eccec6eef3a94c4cc6fcfd8ead9f28e9480a8bc2",
+          "size": 7993
+        },
+        "docs/v/1.0.0/examples/person/index.html": {
+          "sha256": "560fe7ea3e1c0a813fed4a5a6540b3ee0b74e329a2086c14f298d59b84704d9f",
+          "size": 8560
+        },
+        "docs/v/1.0.0/examples/place/index.html": {
+          "sha256": "cab8b14f07feb04d18fb92ed8fa5763358065553a639c34d27ab27c9aa1d786d",
+          "size": 7762
+        },
+        "docs/v/1.0.0/examples/pricing/index.html": {
+          "sha256": "0eac0b17bb7dc1dc7888d8224ef6f2a43a082bca197a056b734058f254d5a684",
+          "size": 7819
+        },
+        "docs/v/1.0.0/examples/privacy/index.html": {
+          "sha256": "8648fd22da3d5c30133f156d0c214db70fd2d71c1d739c1fa65debbd3f8b9d5a",
+          "size": 7929
+        },
+        "docs/v/1.0.0/examples/product/index.html": {
+          "sha256": "140699bab7d729895891d7325011538d6598f0142881eb479f36b584189ceb55",
+          "size": 7588
+        },
+        "docs/v/1.0.0/examples/projects/index.html": {
+          "sha256": "014cfb9d9b7bfb2712322678e20301a940cfb078aeed50a7b8a88007ec38c6ba",
+          "size": 7492
+        },
+        "docs/v/1.0.0/examples/reference/index.html": {
+          "sha256": "e94a2034ad53fd1f2fb67f9ea7b217a34b74fa07d2e1a9577abc4a1337cd6cf6",
+          "size": 9725
+        },
+        "docs/v/1.0.0/examples/report/index.html": {
+          "sha256": "cf630ac4f444a78061ff9b6c81fa7be2ab2f710d01aa40ed9b43cd42e01b7ef0",
+          "size": 8594
+        },
+        "docs/v/1.0.0/examples/scene/index.html": {
+          "sha256": "10f3b34a41e3bcf52ff3253b020789d4dd2a8c868bb38eec552e9588bfa7696e",
+          "size": 7450
+        },
+        "docs/v/1.0.0/examples/scientific-workspace/index.html": {
+          "sha256": "1f0af4b19058ed449ace03d7e89d40c09f6abdb184ec3a9d5495c801f8dfe115",
+          "size": 9548
+        },
+        "docs/v/1.0.0/examples/search/index.html": {
+          "sha256": "7435e2809bf2754ed701a10edd3d8349b9904f20227e852dbf31712429eb8d35",
+          "size": 16856
+        },
+        "docs/v/1.0.0/examples/sensors/index.html": {
+          "sha256": "5f4e7d3549914f8273a3bab676a16c93c3d3e5dbf8637d0962f6e900dd30cd3c",
+          "size": 7109
+        },
+        "docs/v/1.0.0/examples/server-error/index.html": {
+          "sha256": "8d227694b6dfd2aeb4c6a9aa8eb7deb736dfb3937bce30362251a19e4b6e2b6b",
+          "size": 6990
+        },
+        "docs/v/1.0.0/examples/service/index.html": {
+          "sha256": "5b17f1e6ab39b7d7e976a24c33be25ba4cc7b0a2ed684463090b8a54e1f5706b",
+          "size": 7899
+        },
+        "docs/v/1.0.0/examples/sign-in/index.html": {
+          "sha256": "c1538c7902a2dc626595fec89bddc2ece34cc4b9112dece0f4ebc94bd9ab6779",
+          "size": 8738
+        },
+        "docs/v/1.0.0/examples/sign-up/index.html": {
+          "sha256": "f8f50ec7187641e50817610c71dabfc79f03d5c9d313b10a613eb5fc7fde23ee",
+          "size": 8996
+        },
+        "docs/v/1.0.0/examples/software/index.html": {
+          "sha256": "f3d642b1f2a8f2f0002086487adac7e17a71ab22a1ae1b56b75bdc0d5a7ff257",
+          "size": 7972
+        },
+        "docs/v/1.0.0/examples/stress-test/index.html": {
+          "sha256": "a3bedacdc968bea050c6f9079becbdb26e2671eec641ef6f4cd5ad104eaeae6f",
+          "size": 11713
+        },
+        "docs/v/1.0.0/examples/terms/index.html": {
+          "sha256": "de8af9ce645b1660ba7e004d90badeaa48c5ab57e6b362f98d2cea7b63ef7e2e",
+          "size": 7923
+        },
+        "docs/v/1.0.0/examples/two-factor/index.html": {
+          "sha256": "4a030193793a321c0a0e55b57ec2e5c967b8a2325c154d94aa411dad94e940cb",
+          "size": 8595
+        },
+        "docs/v/1.0.0/examples/workspace/index.html": {
+          "sha256": "c2e20c8cf818231aa17f4820130b8c1fed6040011dc6e174abfff7f1f47f8870",
+          "size": 8344
+        },
+        "docs/v/1.0.0/index.html": {
+          "sha256": "6f55876b4af10a3722f54a1be90146f1dbcb4b67fe8af5f3514ece059e91a681",
+          "size": 7244
+        },
+        "docs/v/1.0.0/journal/index.html": {
+          "sha256": "4434fa6c76b3ae60a7e827a7cf80d9fcab21689a0f0cb7f47be44bb3dec6b6e5",
+          "size": 6037
+        },
+        "docs/v/1.0.0/journal/what-a-shell-should-own/index.html": {
+          "sha256": "e84c27a1f403e857c4e04cc40e1fbe042c514323e403e118cbd7a65d1879216f",
+          "size": 7952
+        },
+        "docs/v/1.0.0/language/index.html": {
+          "sha256": "8935d9e3794e1bd1c7b464c7f98a00f5c1bca7b852a3dfee52fac4d5acb18665",
+          "size": 7485
+        },
+        "docs/v/1.0.0/nightjar/PROVENANCE.json": {
+          "sha256": "57823c897e29f05e063ca745e7079d65dfddaf194e2dd30e76c7213615b08ea3",
+          "size": 97956
+        },
+        "docs/v/1.0.0/nightjar/README.md": {
+          "sha256": "cb453c70218f2fb673ebb4ad8913089e3061d9fc78cc860d35447ffe06fbbedf",
+          "size": 1053
+        },
+        "docs/v/1.0.0/nightjar/build.py": {
+          "sha256": "2ea2fdd30b8566168dc25bcf567e6e3bf07d0d8a53a6ca46586c29c54db2c0ee",
+          "size": 2795
+        },
+        "docs/v/1.0.0/nightjar/ci-proposal.yml": {
+          "sha256": "1dd457b2f1935e83914e2c92a977dd7d4422231eb126f2e87822df3e23adb562",
+          "size": 421
+        },
+        "docs/v/1.0.0/nightjar/source-files.json": {
+          "sha256": "addc48e6aa6ad4994d6f5a8daf37b51aded5d3541ff499ad8a08140c3f3483cc",
+          "size": 6793
+        },
+        "docs/v/1.0.0/nightjar/verify-html.py": {
+          "sha256": "7ffbaa1bdb86b2965d6666d1960e6013f1808c60081b8bcd5af763720c953184",
+          "size": 2306
+        },
+        "docs/v/1.0.0/nightjar/verify.py": {
+          "sha256": "9099ad8fbdfd36e68cd9ba1c3e9df79916af896e2ab1363bdb696b81550dab35",
+          "size": 4446
+        },
+        "docs/v/1.0.0/nightjar-local-evidence.json": {
+          "sha256": "a9abac5545cbb6efe19d390826738633ebd0e4d1bd7ec9db19b83b72250d62b9",
+          "size": 21562
+        },
+        "docs/v/1.0.0/release-policy.json": {
+          "sha256": "acc29f70b53a83bea8f3563a5127f001966833278836d5058fcc62a2af48dbbf",
+          "size": 371
+        },
+        "docs/v/1.0.0/setup/index.html": {
+          "sha256": "ea6560f0827ecdafbd7e2bbc28f48210cbc47a8f16cdda72f86d7cb9e49bc2c5",
+          "size": 8280
+        },
+        "docs/v/1.0.0/template.zip": {
+          "sha256": "aac2f16d643a331f40d2a15ea3d4bfaf8ee64c96742fb28b7bb8620c64d58a17",
+          "size": 781359
+        },
+        "docs/versions/index.html": {
+          "sha256": "5c86be3b3dc18c2ac844272bb3d89d1c1022a8c635b09d9e27f5b76ba023caba",
+          "size": 458
+        },
+        "examples/about/index.html": {
+          "sha256": "6a90428b7cda822aed2cd9cc8d23bf0c5c9e136ed23dec1f094304290a4befc4",
+          "size": 7244
+        },
+        "examples/archive/index.html": {
+          "sha256": "0fd59b8cb2b435a8442617117f5e350115fa7b55af53e80e79cdc2895077f558",
+          "size": 7800
+        },
+        "examples/article/index.html": {
+          "sha256": "9f1353ba8b3e5f4207be9815d18922e1eefd1a2fc537ff83275c274c954c4b3c",
+          "size": 7952
+        },
+        "examples/careers/index.html": {
+          "sha256": "3c861fc1d7ccf893be54a7955daf6a9b702ed6c319aea1755eb4950ed04b1776",
+          "size": 6536
+        },
+        "examples/case-study/index.html": {
+          "sha256": "c16a65ba40b644907cb7cb6b6235fa6a0ecd2eb2a0847f723df14e0cc6db9d2f",
+          "size": 7540
+        },
+        "examples/categories/index.html": {
+          "sha256": "f76a61cc6f6ad159844db0938699de30732cd4ad3830d5f6fa813100f3ec8741",
+          "size": 6054
+        },
+        "examples/category/index.html": {
+          "sha256": "e3e296e14e7b8686fa38b299d1311bd08dc4864cbe36d5c2ca569bb6e04a7a5a",
+          "size": 6591
+        },
+        "examples/changelog/index.html": {
+          "sha256": "a9def65d07bb34df6ecf58e5064f9477f434c2db584af47a346986b1eae0289c",
+          "size": 6981
+        },
+        "examples/chat/index.html": {
+          "sha256": "637d082fac675c9e0f54879960db21b9c852d6a108cb7e52ed9244e4117512aa",
+          "size": 6599
+        },
+        "examples/collection/index.html": {
+          "sha256": "cb7bbc95c69e3028d3fd2eaa41c9813d411a06054f9312412f1b26ed1b57c641",
+          "size": 7043
+        },
+        "examples/collection-item/index.html": {
+          "sha256": "43f23304c9723b4757dc3f21787ee5e99cfff2fd9866710e28f7da51aebbd3fa",
+          "size": 7043
+        },
+        "examples/coming-soon/index.html": {
+          "sha256": "5a2ac1d34ef4aef59394cf82a67715927544e8ac59ada1d281c891178a79d2d8",
+          "size": 7415
+        },
+        "examples/contact/index.html": {
+          "sha256": "cb99d84a6eeaa57e9da688dea3d6200d7d325a5b4c4c3b2cdd90ae2bc1d5a9f4",
+          "size": 7503
+        },
+        "examples/dashboard-administration/index.html": {
+          "sha256": "7a1ff5960c6b9807bad88046a52e772a45800f29e6b69ab8aaf9ba6e55c000f6",
+          "size": 49122
+        },
+        "examples/dashboard-analytics/index.html": {
+          "sha256": "0be0c0f959fcd6bb332515d64ce167d39ec931f828ebc054e9bf02d7d7fb22d1",
+          "size": 48725
+        },
+        "examples/dashboard-components/index.html": {
+          "sha256": "87b15123af9a34d514eb906d023d2fdbd43fdf34e96d550f7b24b1c3e294aa8d",
+          "size": 8003
+        },
+        "examples/dashboard-operations/index.html": {
+          "sha256": "f3b258a7ddb6c4c9eda1530ad93e40d83a2b03134ded9735810d6351a029a4a2",
+          "size": 47519
+        },
+        "examples/documentation/index.html": {
+          "sha256": "f323de2bd723db6c37784b2ef0b68a897be7993308dfcd9b019282ceae5196d2",
+          "size": 6196
+        },
+        "examples/event/index.html": {
+          "sha256": "0909832cdfdced139ddb07aab60eb75bf1770b26d50178a980c114108d4cfa35",
+          "size": 7618
+        },
+        "examples/events/index.html": {
+          "sha256": "9e21ac249567f4251da197447dc3230f870dabf459a2952e226d863369afdddd",
+          "size": 7207
+        },
+        "examples/faq/index.html": {
+          "sha256": "010f4dd579370eda564d446795749ab751a0a88e3638ffcaffea76a0dd6db535",
+          "size": 6648
+        },
+        "examples/fleet/index.html": {
+          "sha256": "bf5536afb97f610c0361c128f4cae9a64f218d9a7b6d74caa69915fe425706cd",
+          "size": 7326
+        },
+        "examples/gallery/index.html": {
+          "sha256": "42856d95bd018fc0ca5cf2f8284119ff17a52c08fabc20805e9c2ed3dd7c5bf8",
+          "size": 7603
+        },
+        "examples/guide/index.html": {
+          "sha256": "b808b9f66cbdc88cee1eabcdf71121b44fa05524f1f2e8d1f12911a1a9310282",
+          "size": 7278
+        },
+        "examples/home/index.html": {
+          "sha256": "40955ea05e61a1862b6a3d6273e7d3d2e897478717cf188c8e89d7169dab6b73",
+          "size": 6873
+        },
+        "examples/index.html": {
+          "sha256": "741a108f183fb0dce4ead400c21b151725df79618583524c31781036b1a48b55",
+          "size": 20646
+        },
+        "examples/integrations/index.html": {
+          "sha256": "9799467033a00dea0dea9359de42fa22b3838d5e2bc3fa5c56e9997c89893439",
+          "size": 8392
+        },
+        "examples/not-found/index.html": {
+          "sha256": "ce7141f8fef95f40a86944513b599c916e86f5c109d804725e2fee5ac7f09aa4",
+          "size": 6143
+        },
+        "examples/opportunity/index.html": {
+          "sha256": "e57d7a8d9c4be169437e7fbf69d513f05640e05e748f34c14be4a8c2d29769d5",
+          "size": 7713
+        },
+        "examples/password-reset/index.html": {
+          "sha256": "66ed263fd98927b739f965bb7b055cfb83833b8517b24080bb2446dbdbe68714",
+          "size": 7724
+        },
+        "examples/patterns/index.html": {
+          "sha256": "c76044ca1a938143992ce1ecd99fd40760dfde94ca51bc7f3306e4d870c3ef0e",
+          "size": 7336
+        },
+        "examples/person/index.html": {
+          "sha256": "b8b48134ca73fbd03a28b3b62d56b63cf6f5c2d7481deea2c9c466a2c9732895",
+          "size": 7877
+        },
+        "examples/place/index.html": {
+          "sha256": "184aeb37a71085f68ac6853471e71cdcc5855788904e8b464f4aaab1e3aaf8e7",
+          "size": 7079
+        },
+        "examples/pricing/index.html": {
+          "sha256": "59a8362ed5633baee26df7742dcda56457e7d5c7d35ad553b5293050f22423a4",
+          "size": 7136
+        },
+        "examples/privacy/index.html": {
+          "sha256": "6b73450df959e4657da3f0517f21d37a1d0d189ea5f795a2ba8700b1364e4b9f",
+          "size": 7259
+        },
+        "examples/product/index.html": {
+          "sha256": "016a7104f543cd1be64fb626d2d3e848a959dccc900745356ef368bb5a953839",
+          "size": 6918
+        },
+        "examples/projects/index.html": {
+          "sha256": "014322b8cb7480901953e37cca2c973e908aa253935835761d2769d2c7ef4686",
+          "size": 6809
+        },
+        "examples/reference/index.html": {
+          "sha256": "9f62bd9f14addef16efee8873e6c668019f6bd706a3809a325598c14194a0dfb",
+          "size": 9081
+        },
+        "examples/report/index.html": {
+          "sha256": "cb98633e1ef7f26e7d567fbf289456477003916645697fe82f2c3a40ff52ed5d",
+          "size": 7924
+        },
+        "examples/scene/index.html": {
+          "sha256": "78aa284f3c6ff38fc331e6f4985a956f968c5e391e2dc05a6d024641d1410de0",
+          "size": 6793
+        },
+        "examples/scientific-workspace/index.html": {
+          "sha256": "87962b1eed7c6e2d6254162dd147112e1ab905bad2580bd14a36e8bf27ccd1b7",
+          "size": 8930
+        },
+        "examples/search/index.html": {
+          "sha256": "adb9e1856b8a5a626d34c5ab261a87e1b9e8b9734eda62bef5b21fd11bd8e9c6",
+          "size": 15523
+        },
+        "examples/sensors/index.html": {
+          "sha256": "ce08007e171c93817d754d6842971a5f076b4f4ab6159768724d49f66470afcd",
+          "size": 6465
+        },
+        "examples/server-error/index.html": {
+          "sha256": "32e61b22efdaebfb8ad9373df7befcf59bd5ec8eed0f2d9ec49def22c6393296",
+          "size": 6320
+        },
+        "examples/service/index.html": {
+          "sha256": "a104d947977ba0e48042457a7c8d19c7922daa966a8944d28de36fdf15c8d682",
+          "size": 7190
+        },
+        "examples/sign-in/index.html": {
+          "sha256": "c376e492a58422b454472399b615cf6fa8e5d0fd4470fb5a12d480797c32b41e",
+          "size": 8042
+        },
+        "examples/sign-up/index.html": {
+          "sha256": "de538602fd807d575be3b2aaf411a16e6203acf692da8fd4fd68ebee4fb0eb53",
+          "size": 8300
+        },
+        "examples/software/index.html": {
+          "sha256": "68152ff29d95e47ea313bd66662085f6b5246fafb2b5c1f10a23c6d3cc65a250",
+          "size": 7263
+        },
+        "examples/stress-test/index.html": {
+          "sha256": "3f762e225dc94efbf8e819c15705ead3f92a9d8cfb11b24f3c89770aa3ef8500",
+          "size": 11043
+        },
+        "examples/terms/index.html": {
+          "sha256": "ae9ad77e2c7b7012196a76703d47c2720e3666c0c2b9d3d36c865c83e7679909",
+          "size": 7253
+        },
+        "examples/two-factor/index.html": {
+          "sha256": "de55ca9c851354ebacdb35c16ea60a8b543a41eccf11b57057c250f93c5904c4",
+          "size": 7899
+        },
+        "examples/workspace/index.html": {
+          "sha256": "7998bf98bbfeaac0092c5e5ed9faa7ad4d5582d1360ff73f30d27120b9920af6",
+          "size": 7700
+        },
+        "index.html": {
+          "sha256": "7a4cb492db807a3cf5256b1a3701ddaeceeaa6e4ae229276ab1adc25dbd0069b",
+          "size": 6587
+        },
+        "journal/index.html": {
+          "sha256": "9d16ac76fe5f2441b2e9a022ed273d18c3c0bed35e38c9cf6f3a44665350e452",
+          "size": 5406
+        },
+        "journal/what-a-shell-should-own/index.html": {
+          "sha256": "4c126cc89d9b895dca810514d347c3b0af4435655d6cc9a968480a0a7eae0b7e",
+          "size": 7321
+        },
+        "language/index.html": {
+          "sha256": "9677959ad8e7eb599441a5095b5a92e6e5bb6d86cb4e3143447f9b2a04f259f4",
+          "size": 6893
+        },
+        "nightjar/PROVENANCE.json": {
+          "sha256": "57823c897e29f05e063ca745e7079d65dfddaf194e2dd30e76c7213615b08ea3",
+          "size": 97956
+        },
+        "nightjar/README.md": {
+          "sha256": "cb453c70218f2fb673ebb4ad8913089e3061d9fc78cc860d35447ffe06fbbedf",
+          "size": 1053
+        },
+        "nightjar/build.py": {
+          "sha256": "2ea2fdd30b8566168dc25bcf567e6e3bf07d0d8a53a6ca46586c29c54db2c0ee",
+          "size": 2795
+        },
+        "nightjar/ci-proposal.yml": {
+          "sha256": "1dd457b2f1935e83914e2c92a977dd7d4422231eb126f2e87822df3e23adb562",
+          "size": 421
+        },
+        "nightjar/source-files.json": {
+          "sha256": "addc48e6aa6ad4994d6f5a8daf37b51aded5d3541ff499ad8a08140c3f3483cc",
+          "size": 6793
+        },
+        "nightjar/verify-html.py": {
+          "sha256": "7ffbaa1bdb86b2965d6666d1960e6013f1808c60081b8bcd5af763720c953184",
+          "size": 2306
+        },
+        "nightjar/verify.py": {
+          "sha256": "9099ad8fbdfd36e68cd9ba1c3e9df79916af896e2ab1363bdb696b81550dab35",
+          "size": 4446
+        },
+        "preview/404.html": {
+          "sha256": "694b51bf798577e9851a2bade3ef0202fbca5f63a195f67bc50a7392439d1183",
+          "size": 6221
+        },
+        "preview/LICENSE": {
+          "sha256": "1067907e4c1a431923d3e1b37c42e3fbb8dbeb79aab20ccc0e8c8e7c1323eed6",
+          "size": 1076
+        },
+        "preview/NOTICE.md": {
+          "sha256": "8e5b59cf0cc4e427296763f718407ba4760821f95c1208ee51620050bcbbf398",
+          "size": 736
+        },
+        "preview/VERSION": {
+          "sha256": "59854984853104df5c353e2f681a15fc7924742f9a2e468c29af248dce45ce03",
+          "size": 6
+        },
+        "preview/assets/css/dashboard-family.css": {
+          "sha256": "c6881d516291fff6ec1c5383b43cfeb5a1f4682559685f250ecfb51a4e4ae609",
+          "size": 1030
+        },
+        "preview/assets/css/dashboard.css": {
+          "sha256": "edb906bb6801d654fbeb9767e8672f1873c7738505951e099665e2de150a937d",
+          "size": 8047
+        },
+        "preview/assets/css/examples-family.css": {
+          "sha256": "189a7318406b5762fb8fa085e50db1133eb663c758cca8dbd48a6ba185f20dec",
+          "size": 4250
+        },
+        "preview/assets/css/examples.css": {
+          "sha256": "06ce4da75d5cfad84360b14b0c121007f1af95673483f434a2d036b202dd7d95",
+          "size": 11086
+        },
+        "preview/assets/css/fonts.css": {
+          "sha256": "acc1aca21d6a25594b82e6c63da7e8e0f3fcb6459e2bb60521ac0db7556bf162",
+          "size": 5580
+        },
+        "preview/assets/css/jekyll.css": {
+          "sha256": "91d428f5c4002c6a8effcf2fba36fea55c006e924d12ee701a5fbb31c78941ba",
+          "size": 2227
+        },
+        "preview/assets/css/scientific.css": {
+          "sha256": "08614aa3c62d2217aaf709c6f94e9704dec8145f3b63427c76f1e36554c6c5ab",
+          "size": 2074
+        },
+        "preview/assets/css/shell.css": {
+          "sha256": "a65b1cbbe032d46be7373b1f3a90ca46ba1b3971fa85c98975cd9ec76394c05d",
+          "size": 593642
+        },
+        "preview/assets/examples/coast.svg": {
+          "sha256": "8854d27cabdcb1c8a471b7fdb56ae640a957f3c5977cdd9ffa71ca44dd7f8b4b",
+          "size": 616
+        },
+        "preview/assets/examples/notebook.svg": {
+          "sha256": "7ea9240d26c7cb2d60912dbad34c4eff87aaa8f48f65735987e1843292b18353",
+          "size": 506
+        },
+        "preview/assets/examples/observations.csv": {
+          "sha256": "8818a5383144e4e4ff8525631ddd3186f04836763564cba37abae9ed9dd3c955",
+          "size": 136
+        },
+        "preview/assets/examples/station.svg": {
+          "sha256": "a8c6618b46b679c509d4ff3ca6fb289d9f39b9feebba51e69f383d2d0571cb85",
+          "size": 541
+        },
+        "preview/assets/fonts/roboto-LICENSE.txt": {
+          "sha256": "84044c09058803d87a241bd28abb4ce30a433d7db9c27a04da3efad6a0ca539c",
+          "size": 4512
+        },
+        "preview/assets/fonts/roboto-latin-400-italic.BpsFK_tr.woff": {
+          "sha256": "b926f7b97d2f6bf1a12cbfc65a0394120ae401d5ff5cc3a484fafddf0618fd6b",
+          "size": 22856
+        },
+        "preview/assets/fonts/roboto-latin-400-italic.CSuqwwKr.woff2": {
+          "sha256": "5d0e978b6560631da2504e1612e91ee1ff959c04adae245eb320ac90cad2ba2f",
+          "size": 23672
+        },
+        "preview/assets/fonts/roboto-latin-400-normal.BqEyEoaF.woff2": {
+          "sha256": "425c0713a8176f92273d378599c7eac57de7fafabd4bd0ed457b70eb8f80d371",
+          "size": 21884
+        },
+        "preview/assets/fonts/roboto-latin-400-normal.D27F5sTu.woff": {
+          "sha256": "6cff12116b83321230347db75d0721e70c27c6ec69eccca93ca4b1556eaaf67f",
+          "size": 21060
+        },
+        "preview/assets/fonts/roboto-latin-500-italic.DOe3GFcv.woff2": {
+          "sha256": "b5843bdfcb8683f34fb44444cf15d2a03ad93d6b11934a55d059aae2b650bbfe",
+          "size": 23896
+        },
+        "preview/assets/fonts/roboto-latin-500-italic.DYW_i9qW.woff": {
+          "sha256": "1742eadcf53022296ab6d2b536a782fb97e0a842bbf4a46b75ff3708ab24d047",
+          "size": 22968
+        },
+        "preview/assets/fonts/roboto-latin-500-normal.7RbcRiD8.woff2": {
+          "sha256": "5bcc3aa180e7f26f643cd5b2621cd7c2de193d0661d913a94afd3d4881a7a34b",
+          "size": 22200
+        },
+        "preview/assets/fonts/roboto-latin-500-normal.fsTFPL3E.woff": {
+          "sha256": "8fa8e562e1a2997b442cd71ce0aa5c1814b119a80331d9cfdd0f4eb032e8a0bd",
+          "size": 21168
+        },
+        "preview/assets/fonts/roboto-latin-700-italic.Cb9agdGy.woff2": {
+          "sha256": "cc04783263e416f8ee2a218fde6ffd532d6b81636d3187d30e39e4ad05736d5e",
+          "size": 23988
+        },
+        "preview/assets/fonts/roboto-latin-700-italic.DyccbiE3.woff": {
+          "sha256": "bae8102694ddf05ad437268b85de6df81aeb7412e4d39fd834687dd3272dd1de",
+          "size": 22964
+        },
+        "preview/assets/fonts/roboto-latin-700-normal.BZpUvMxY.woff2": {
+          "sha256": "b9d66d1708156f765ada51939bc24ed259dafa69eb631b36e443680fe9e15879",
+          "size": 22240
+        },
+        "preview/assets/fonts/roboto-latin-700-normal.YuyVweIx.woff": {
+          "sha256": "19e78b1c5f2c683c28800f84dd6d453ddb67987b0079060a4cbe50c7bdded148",
+          "size": 21216
+        },
+        "preview/assets/fonts/roboto-mono-LICENSE.txt": {
+          "sha256": "b489132782690f2cc1ed23ab56d7057bbb08c42573603e8e704ae2e2ea9c8216",
+          "size": 4513
+        },
+        "preview/assets/fonts/roboto-mono-latin-400-italic.B_vYWRnS.woff2": {
+          "sha256": "e4a744be99f104ecbd224af9a91da2a7cadd76e1b9cde550b26e341d2e465349",
+          "size": 13928
+        },
+        "preview/assets/fonts/roboto-mono-latin-400-italic.Br0OE6wL.woff": {
+          "sha256": "fcb3ae2d69514d180dad5531cbca053a7875dfc162c4a71fc5c483efca8ca7c7",
+          "size": 17396
+        },
+        "preview/assets/fonts/roboto-mono-latin-400-normal.DBZPkcnn.woff": {
+          "sha256": "9690f3c6eb06d0a4e7b3de424daa616612e31718cf5440b3fc5977db72673d24",
+          "size": 15720
+        },
+        "preview/assets/fonts/roboto-mono-latin-400-normal.GekRknry.woff2": {
+          "sha256": "e03013e0baa5690a803c188da2214d920c3245b25ad78421ecc8ae86cd842ae9",
+          "size": 12680
+        },
+        "preview/assets/fonts/roboto-mono-latin-500-italic.D-wAjtQg.woff2": {
+          "sha256": "6ae318fb48664db81936182f961e5c326dc10228cec8d50f72be0f1da2fd5126",
+          "size": 14144
+        },
+        "preview/assets/fonts/roboto-mono-latin-500-italic.D6SF9iFo.woff": {
+          "sha256": "f28af2e29c9d44c030f2d06547c9b6f5845f65622780959bf8dd7ca06dd28658",
+          "size": 17584
+        },
+        "preview/assets/fonts/roboto-mono-latin-500-normal.D6j6AMzd.woff": {
+          "sha256": "ae8da93ddfad37b344aa6f615bd26771c58e3b3be3a371a623e90a7cd28f432d",
+          "size": 15932
+        },
+        "preview/assets/fonts/roboto-mono-latin-500-normal.pxIOXZmA.woff2": {
+          "sha256": "ce7027efa5c894e8b244b0ca05ec121b6a85655957afd9c76c59b56910de7d4e",
+          "size": 12936
+        },
+        "preview/assets/fonts/roboto-mono-latin-700-italic.APUcH-iK.woff2": {
+          "sha256": "21eb25612d5c76e78c41bacf87adf6dbb44f20e4ee7f75be6c260e512310c087",
+          "size": 13960
+        },
+        "preview/assets/fonts/roboto-mono-latin-700-italic.BibL9KEE.woff": {
+          "sha256": "5699ca875213d64bb6167f70f7e536e1bd1cc87dabe8226375981b6364f2e4b9",
+          "size": 17504
+        },
+        "preview/assets/fonts/roboto-mono-latin-700-normal.CHYrj1DZ.woff": {
+          "sha256": "7ac13ad17113e63e24d7c0be1bb447faa26c23f75c12a0a87e8c68ae4e8ed0cc",
+          "size": 15848
+        },
+        "preview/assets/fonts/roboto-mono-latin-700-normal.foxDnrFi.woff2": {
+          "sha256": "283fbef73f42c21722c5a3efc7a44b0c38aac1ada665602b2144c13ed58c0e99",
+          "size": 12696
+        },
+        "preview/assets/fonts/roboto-slab-LICENSE.txt": {
+          "sha256": "58fde637cb64b89166884b28067832233d8440e409b1666d6455c578bf135cf8",
+          "size": 11404
+        },
+        "preview/assets/fonts/roboto-slab-latin-400-normal.DwurWVj7.woff2": {
+          "sha256": "484e9925bb3045e88a8eec1103ab125e6dbe486172fb56b06fe6751c8b570839",
+          "size": 13968
+        },
+        "preview/assets/fonts/roboto-slab-latin-400-normal.wzK1bUc4.woff": {
+          "sha256": "0955e34245e7b69776d433aa6bce99a1a9286e33710472e46cf3a6777517d5b3",
+          "size": 17664
+        },
+        "preview/assets/fonts/roboto-slab-latin-700-normal.ThI0IOtl.woff": {
+          "sha256": "f9af152b7ce8f7291f9ea7f1806009b207bc3a4af8ca3e0ec9b24cf6c90e1b01",
+          "size": 17900
+        },
+        "preview/assets/fonts/roboto-slab-latin-700-normal.WCCj9XVQ.woff2": {
+          "sha256": "66fa77aafb51fb5058e1fd7e34977f55e84494600bccb2d4cc9d0cbc998eb5cb",
+          "size": 14184
+        },
+        "preview/assets/js/dashboard-model.mjs": {
+          "sha256": "882e7dce010d7120727fccc3599b2b3e90473db93066de70d93a61d05a8179c5",
+          "size": 14441
+        },
+        "preview/assets/js/dashboard-ui.mjs": {
+          "sha256": "3f551d6ab16d74cefdec7d8246bfce448b85f8412694b106826ea312c31dfb4f",
+          "size": 6035
+        },
+        "preview/assets/js/dashboards.mjs": {
+          "sha256": "94ebca4a88c7e820dfb801e28d9251c7f781d016d43f1ee9f34c2876f9de7b01",
+          "size": 27070
+        },
+        "preview/assets/js/examples.js": {
+          "sha256": "e2dd5bd36a17050db6aff9512c1bbad22feba8f686de548a9e7849dee1b64735",
+          "size": 16730
+        },
+        "preview/assets/js/scientific.mjs": {
+          "sha256": "ccff3cf6fda8b5952b1b03b3a5aaa0eb0bf09339b979c0b87c211a2f93bc51fe",
+          "size": 3263
+        },
+        "preview/assets/js/shell.js": {
+          "sha256": "814a3ed82f1e9664e8fe4047959b05db4e2d1930cea127d21bf4274c5f06da41",
+          "size": 1499
+        },
+        "preview/assets/js/thermal-model.mjs": {
+          "sha256": "f33396b42f6711fe54435caa9e7577144eea779786b4838e68ee43ce3e2a13f9",
+          "size": 1696
+        },
+        "preview/assets/mark.svg": {
+          "sha256": "741f03e83df63c3b492ac209e0b8d0a73738e7c5cfb3f859c52a606fc54a80e4",
+          "size": 930
+        },
+        "preview/assets/owner.svg": {
+          "sha256": "05c66bb02e8ec8a2277a452a5f3728362c7ea7f087ee19126230d9d1d114423a",
+          "size": 36757
+        },
+        "preview/deployment-proof.json": {
+          "sha256": "683535ae9b3d17764b672509a87de1a26b76c3421c1875dd735afe618865b2aa",
+          "size": 609
+        },
+        "preview/docs/v/1.0.0/404.html": {
+          "sha256": "c32bd3ed4f895f26d7e131e40ce9cf5f86b825c069eed0ea066fd1dc52910c54",
+          "size": 6907
+        },
+        "preview/docs/v/1.0.0/LICENSE": {
+          "sha256": "1067907e4c1a431923d3e1b37c42e3fbb8dbeb79aab20ccc0e8c8e7c1323eed6",
+          "size": 1076
+        },
+        "preview/docs/v/1.0.0/NOTICE.md": {
+          "sha256": "8e5b59cf0cc4e427296763f718407ba4760821f95c1208ee51620050bcbbf398",
+          "size": 736
+        },
+        "preview/docs/v/1.0.0/VERSION": {
+          "sha256": "59854984853104df5c353e2f681a15fc7924742f9a2e468c29af248dce45ce03",
+          "size": 6
+        },
+        "preview/docs/v/1.0.0/assets/css/dashboard-family.css": {
+          "sha256": "c6881d516291fff6ec1c5383b43cfeb5a1f4682559685f250ecfb51a4e4ae609",
+          "size": 1030
+        },
+        "preview/docs/v/1.0.0/assets/css/dashboard.css": {
+          "sha256": "edb906bb6801d654fbeb9767e8672f1873c7738505951e099665e2de150a937d",
+          "size": 8047
+        },
+        "preview/docs/v/1.0.0/assets/css/examples-family.css": {
+          "sha256": "189a7318406b5762fb8fa085e50db1133eb663c758cca8dbd48a6ba185f20dec",
+          "size": 4250
+        },
+        "preview/docs/v/1.0.0/assets/css/examples.css": {
+          "sha256": "06ce4da75d5cfad84360b14b0c121007f1af95673483f434a2d036b202dd7d95",
+          "size": 11086
+        },
+        "preview/docs/v/1.0.0/assets/css/fonts.css": {
+          "sha256": "acc1aca21d6a25594b82e6c63da7e8e0f3fcb6459e2bb60521ac0db7556bf162",
+          "size": 5580
+        },
+        "preview/docs/v/1.0.0/assets/css/jekyll.css": {
+          "sha256": "91d428f5c4002c6a8effcf2fba36fea55c006e924d12ee701a5fbb31c78941ba",
+          "size": 2227
+        },
+        "preview/docs/v/1.0.0/assets/css/scientific.css": {
+          "sha256": "08614aa3c62d2217aaf709c6f94e9704dec8145f3b63427c76f1e36554c6c5ab",
+          "size": 2074
+        },
+        "preview/docs/v/1.0.0/assets/css/shell.css": {
+          "sha256": "a65b1cbbe032d46be7373b1f3a90ca46ba1b3971fa85c98975cd9ec76394c05d",
+          "size": 593642
+        },
+        "preview/docs/v/1.0.0/assets/examples/coast.svg": {
+          "sha256": "8854d27cabdcb1c8a471b7fdb56ae640a957f3c5977cdd9ffa71ca44dd7f8b4b",
+          "size": 616
+        },
+        "preview/docs/v/1.0.0/assets/examples/notebook.svg": {
+          "sha256": "7ea9240d26c7cb2d60912dbad34c4eff87aaa8f48f65735987e1843292b18353",
+          "size": 506
+        },
+        "preview/docs/v/1.0.0/assets/examples/observations.csv": {
+          "sha256": "8818a5383144e4e4ff8525631ddd3186f04836763564cba37abae9ed9dd3c955",
+          "size": 136
+        },
+        "preview/docs/v/1.0.0/assets/examples/station.svg": {
+          "sha256": "a8c6618b46b679c509d4ff3ca6fb289d9f39b9feebba51e69f383d2d0571cb85",
+          "size": 541
+        },
+        "preview/docs/v/1.0.0/assets/fonts/roboto-LICENSE.txt": {
+          "sha256": "84044c09058803d87a241bd28abb4ce30a433d7db9c27a04da3efad6a0ca539c",
+          "size": 4512
+        },
+        "preview/docs/v/1.0.0/assets/fonts/roboto-latin-400-italic.BpsFK_tr.woff": {
+          "sha256": "b926f7b97d2f6bf1a12cbfc65a0394120ae401d5ff5cc3a484fafddf0618fd6b",
+          "size": 22856
+        },
+        "preview/docs/v/1.0.0/assets/fonts/roboto-latin-400-italic.CSuqwwKr.woff2": {
+          "sha256": "5d0e978b6560631da2504e1612e91ee1ff959c04adae245eb320ac90cad2ba2f",
+          "size": 23672
+        },
+        "preview/docs/v/1.0.0/assets/fonts/roboto-latin-400-normal.BqEyEoaF.woff2": {
+          "sha256": "425c0713a8176f92273d378599c7eac57de7fafabd4bd0ed457b70eb8f80d371",
+          "size": 21884
+        },
+        "preview/docs/v/1.0.0/assets/fonts/roboto-latin-400-normal.D27F5sTu.woff": {
+          "sha256": "6cff12116b83321230347db75d0721e70c27c6ec69eccca93ca4b1556eaaf67f",
+          "size": 21060
+        },
+        "preview/docs/v/1.0.0/assets/fonts/roboto-latin-500-italic.DOe3GFcv.woff2": {
+          "sha256": "b5843bdfcb8683f34fb44444cf15d2a03ad93d6b11934a55d059aae2b650bbfe",
+          "size": 23896
+        },
+        "preview/docs/v/1.0.0/assets/fonts/roboto-latin-500-italic.DYW_i9qW.woff": {
+          "sha256": "1742eadcf53022296ab6d2b536a782fb97e0a842bbf4a46b75ff3708ab24d047",
+          "size": 22968
+        },
+        "preview/docs/v/1.0.0/assets/fonts/roboto-latin-500-normal.7RbcRiD8.woff2": {
+          "sha256": "5bcc3aa180e7f26f643cd5b2621cd7c2de193d0661d913a94afd3d4881a7a34b",
+          "size": 22200
+        },
+        "preview/docs/v/1.0.0/assets/fonts/roboto-latin-500-normal.fsTFPL3E.woff": {
+          "sha256": "8fa8e562e1a2997b442cd71ce0aa5c1814b119a80331d9cfdd0f4eb032e8a0bd",
+          "size": 21168
+        },
+        "preview/docs/v/1.0.0/assets/fonts/roboto-latin-700-italic.Cb9agdGy.woff2": {
+          "sha256": "cc04783263e416f8ee2a218fde6ffd532d6b81636d3187d30e39e4ad05736d5e",
+          "size": 23988
+        },
+        "preview/docs/v/1.0.0/assets/fonts/roboto-latin-700-italic.DyccbiE3.woff": {
+          "sha256": "bae8102694ddf05ad437268b85de6df81aeb7412e4d39fd834687dd3272dd1de",
+          "size": 22964
+        },
+        "preview/docs/v/1.0.0/assets/fonts/roboto-latin-700-normal.BZpUvMxY.woff2": {
+          "sha256": "b9d66d1708156f765ada51939bc24ed259dafa69eb631b36e443680fe9e15879",
+          "size": 22240
+        },
+        "preview/docs/v/1.0.0/assets/fonts/roboto-latin-700-normal.YuyVweIx.woff": {
+          "sha256": "19e78b1c5f2c683c28800f84dd6d453ddb67987b0079060a4cbe50c7bdded148",
+          "size": 21216
+        },
+        "preview/docs/v/1.0.0/assets/fonts/roboto-mono-LICENSE.txt": {
+          "sha256": "b489132782690f2cc1ed23ab56d7057bbb08c42573603e8e704ae2e2ea9c8216",
+          "size": 4513
+        },
+        "preview/docs/v/1.0.0/assets/fonts/roboto-mono-latin-400-italic.B_vYWRnS.woff2": {
+          "sha256": "e4a744be99f104ecbd224af9a91da2a7cadd76e1b9cde550b26e341d2e465349",
+          "size": 13928
+        },
+        "preview/docs/v/1.0.0/assets/fonts/roboto-mono-latin-400-italic.Br0OE6wL.woff": {
+          "sha256": "fcb3ae2d69514d180dad5531cbca053a7875dfc162c4a71fc5c483efca8ca7c7",
+          "size": 17396
+        },
+        "preview/docs/v/1.0.0/assets/fonts/roboto-mono-latin-400-normal.DBZPkcnn.woff": {
+          "sha256": "9690f3c6eb06d0a4e7b3de424daa616612e31718cf5440b3fc5977db72673d24",
+          "size": 15720
+        },
+        "preview/docs/v/1.0.0/assets/fonts/roboto-mono-latin-400-normal.GekRknry.woff2": {
+          "sha256": "e03013e0baa5690a803c188da2214d920c3245b25ad78421ecc8ae86cd842ae9",
+          "size": 12680
+        },
+        "preview/docs/v/1.0.0/assets/fonts/roboto-mono-latin-500-italic.D-wAjtQg.woff2": {
+          "sha256": "6ae318fb48664db81936182f961e5c326dc10228cec8d50f72be0f1da2fd5126",
+          "size": 14144
+        },
+        "preview/docs/v/1.0.0/assets/fonts/roboto-mono-latin-500-italic.D6SF9iFo.woff": {
+          "sha256": "f28af2e29c9d44c030f2d06547c9b6f5845f65622780959bf8dd7ca06dd28658",
+          "size": 17584
+        },
+        "preview/docs/v/1.0.0/assets/fonts/roboto-mono-latin-500-normal.D6j6AMzd.woff": {
+          "sha256": "ae8da93ddfad37b344aa6f615bd26771c58e3b3be3a371a623e90a7cd28f432d",
+          "size": 15932
+        },
+        "preview/docs/v/1.0.0/assets/fonts/roboto-mono-latin-500-normal.pxIOXZmA.woff2": {
+          "sha256": "ce7027efa5c894e8b244b0ca05ec121b6a85655957afd9c76c59b56910de7d4e",
+          "size": 12936
+        },
+        "preview/docs/v/1.0.0/assets/fonts/roboto-mono-latin-700-italic.APUcH-iK.woff2": {
+          "sha256": "21eb25612d5c76e78c41bacf87adf6dbb44f20e4ee7f75be6c260e512310c087",
+          "size": 13960
+        },
+        "preview/docs/v/1.0.0/assets/fonts/roboto-mono-latin-700-italic.BibL9KEE.woff": {
+          "sha256": "5699ca875213d64bb6167f70f7e536e1bd1cc87dabe8226375981b6364f2e4b9",
+          "size": 17504
+        },
+        "preview/docs/v/1.0.0/assets/fonts/roboto-mono-latin-700-normal.CHYrj1DZ.woff": {
+          "sha256": "7ac13ad17113e63e24d7c0be1bb447faa26c23f75c12a0a87e8c68ae4e8ed0cc",
+          "size": 15848
+        },
+        "preview/docs/v/1.0.0/assets/fonts/roboto-mono-latin-700-normal.foxDnrFi.woff2": {
+          "sha256": "283fbef73f42c21722c5a3efc7a44b0c38aac1ada665602b2144c13ed58c0e99",
+          "size": 12696
+        },
+        "preview/docs/v/1.0.0/assets/fonts/roboto-slab-LICENSE.txt": {
+          "sha256": "58fde637cb64b89166884b28067832233d8440e409b1666d6455c578bf135cf8",
+          "size": 11404
+        },
+        "preview/docs/v/1.0.0/assets/fonts/roboto-slab-latin-400-normal.DwurWVj7.woff2": {
+          "sha256": "484e9925bb3045e88a8eec1103ab125e6dbe486172fb56b06fe6751c8b570839",
+          "size": 13968
+        },
+        "preview/docs/v/1.0.0/assets/fonts/roboto-slab-latin-400-normal.wzK1bUc4.woff": {
+          "sha256": "0955e34245e7b69776d433aa6bce99a1a9286e33710472e46cf3a6777517d5b3",
+          "size": 17664
+        },
+        "preview/docs/v/1.0.0/assets/fonts/roboto-slab-latin-700-normal.ThI0IOtl.woff": {
+          "sha256": "f9af152b7ce8f7291f9ea7f1806009b207bc3a4af8ca3e0ec9b24cf6c90e1b01",
+          "size": 17900
+        },
+        "preview/docs/v/1.0.0/assets/fonts/roboto-slab-latin-700-normal.WCCj9XVQ.woff2": {
+          "sha256": "66fa77aafb51fb5058e1fd7e34977f55e84494600bccb2d4cc9d0cbc998eb5cb",
+          "size": 14184
+        },
+        "preview/docs/v/1.0.0/assets/js/dashboard-model.mjs": {
+          "sha256": "882e7dce010d7120727fccc3599b2b3e90473db93066de70d93a61d05a8179c5",
+          "size": 14441
+        },
+        "preview/docs/v/1.0.0/assets/js/dashboard-ui.mjs": {
+          "sha256": "3f551d6ab16d74cefdec7d8246bfce448b85f8412694b106826ea312c31dfb4f",
+          "size": 6035
+        },
+        "preview/docs/v/1.0.0/assets/js/dashboards.mjs": {
+          "sha256": "94ebca4a88c7e820dfb801e28d9251c7f781d016d43f1ee9f34c2876f9de7b01",
+          "size": 27070
+        },
+        "preview/docs/v/1.0.0/assets/js/examples.js": {
+          "sha256": "e2dd5bd36a17050db6aff9512c1bbad22feba8f686de548a9e7849dee1b64735",
+          "size": 16730
+        },
+        "preview/docs/v/1.0.0/assets/js/scientific.mjs": {
+          "sha256": "ccff3cf6fda8b5952b1b03b3a5aaa0eb0bf09339b979c0b87c211a2f93bc51fe",
+          "size": 3263
+        },
+        "preview/docs/v/1.0.0/assets/js/shell.js": {
+          "sha256": "814a3ed82f1e9664e8fe4047959b05db4e2d1930cea127d21bf4274c5f06da41",
+          "size": 1499
+        },
+        "preview/docs/v/1.0.0/assets/js/thermal-model.mjs": {
+          "sha256": "f33396b42f6711fe54435caa9e7577144eea779786b4838e68ee43ce3e2a13f9",
+          "size": 1696
+        },
+        "preview/docs/v/1.0.0/assets/mark.svg": {
+          "sha256": "741f03e83df63c3b492ac209e0b8d0a73738e7c5cfb3f859c52a606fc54a80e4",
+          "size": 930
+        },
+        "preview/docs/v/1.0.0/assets/owner.svg": {
+          "sha256": "05c66bb02e8ec8a2277a452a5f3728362c7ea7f087ee19126230d9d1d114423a",
+          "size": 36757
+        },
+        "preview/docs/v/1.0.0/examples/about/index.html": {
+          "sha256": "36523bab5b78627460cc199466f937cc95599f580b888dbd342bc25584258dd9",
+          "size": 8169
+        },
+        "preview/docs/v/1.0.0/examples/archive/index.html": {
+          "sha256": "da4877260770d3d48156d4ddb94998f25473d02e09c3592572670d0494b7d8ed",
+          "size": 8746
+        },
+        "preview/docs/v/1.0.0/examples/article/index.html": {
+          "sha256": "32ddeb0d20ff525d38acf73f5d19d50796bc996c99191837eb80ad4f2e842c81",
+          "size": 8898
+        },
+        "preview/docs/v/1.0.0/examples/careers/index.html": {
+          "sha256": "f99e991d4534892ab7ab22d71c2bf38cf55b84397f1b8e7125a5d40688547676",
+          "size": 7398
+        },
+        "preview/docs/v/1.0.0/examples/case-study/index.html": {
+          "sha256": "9b4e62a21889c03dc9b937966685c45c4ae2a6f6ed97e851a0ee578d9dac5698",
+          "size": 8402
+        },
+        "preview/docs/v/1.0.0/examples/categories/index.html": {
+          "sha256": "0125a7ebda7e4ebefa71dcc751382574040ea1740e61474455390cd256d995d7",
+          "size": 6937
+        },
+        "preview/docs/v/1.0.0/examples/category/index.html": {
+          "sha256": "fc33131f9a2042219be5d9b2023d64a323ba14ff12d38ea238e33c3cafe2f8d5",
+          "size": 7453
+        },
+        "preview/docs/v/1.0.0/examples/changelog/index.html": {
+          "sha256": "0f69b29283682460ede50739fce457c9dff034e269d9017bccbc375b0ea53443",
+          "size": 7801
+        },
+        "preview/docs/v/1.0.0/examples/chat/index.html": {
+          "sha256": "aa5b891edde8903468e783934317359a38782c7bf599dd2449ac9de794c62e4a",
+          "size": 7419
+        },
+        "preview/docs/v/1.0.0/examples/collection/index.html": {
+          "sha256": "5a302061f72f133dfd9abd748e686b8b0ce120b5b21eee5be46892826918335f",
+          "size": 7947
+        },
+        "preview/docs/v/1.0.0/examples/collection-item/index.html": {
+          "sha256": "2db9bb87bec14be6b1220f2c524ee74e25cbed806812551cb03f249bc25d1c13",
+          "size": 7905
+        },
+        "preview/docs/v/1.0.0/examples/coming-soon/index.html": {
+          "sha256": "fb36233f29e7336e49c2a2d90aecbafca58e94ab52ee2b25adc72c1be054b8e9",
+          "size": 8235
+        },
+        "preview/docs/v/1.0.0/examples/contact/index.html": {
+          "sha256": "042fe2018036b9a238813ccca2cde6d5bf51900a294703e4bdfe4da163ad7a3d",
+          "size": 8323
+        },
+        "preview/docs/v/1.0.0/examples/dashboard-administration/index.html": {
+          "sha256": "503d4584054609ce3319819508c403267928207255631868671493b3f6d8f49b",
+          "size": 50054
+        },
+        "preview/docs/v/1.0.0/examples/dashboard-analytics/index.html": {
+          "sha256": "97b50b6d444f1a7501929a8a8c14774cc8ab1c031e429199a89af52b87695598",
+          "size": 49657
+        },
+        "preview/docs/v/1.0.0/examples/dashboard-components/index.html": {
+          "sha256": "e6332202c43e9f5084e679449be8279b47f7d907778500fdf47522f929a19032",
+          "size": 8823
+        },
+        "preview/docs/v/1.0.0/examples/dashboard-operations/index.html": {
+          "sha256": "a64d37864a7f8ee6a536f373e4243b4894ccc3c58645c3edee1fb839cf9e100c",
+          "size": 48451
+        },
+        "preview/docs/v/1.0.0/examples/documentation/index.html": {
+          "sha256": "242de28063d80d619c04db02da97e5c6c3df6094c91fadbf2fa6c7ac2acf41fb",
+          "size": 7079
+        },
+        "preview/docs/v/1.0.0/examples/event/index.html": {
+          "sha256": "f5d7930f1a708fc7822a51ac006dbba58b3bbba6150be3c723446fb4e8405244",
+          "size": 8459
+        },
+        "preview/docs/v/1.0.0/examples/events/index.html": {
+          "sha256": "804ebeba641a07eeb762fa573b1ccd0093f3cff213ab3cedc0b12d0c7d1666d8",
+          "size": 8069
+        },
+        "preview/docs/v/1.0.0/examples/faq/index.html": {
+          "sha256": "e303cd3e93db6574eebbb746b09df9e95a1c592c7079a2199b5ba8be1c84d1fd",
+          "size": 7468
+        },
+        "preview/docs/v/1.0.0/examples/fleet/index.html": {
+          "sha256": "525bab79b3643c1ac88e21c745a5a8a56e2062d1a46505136cecfee2eeb2f7c0",
+          "size": 8146
+        },
+        "preview/docs/v/1.0.0/examples/gallery/index.html": {
+          "sha256": "cf44bd1288a3743a37e80ecd31964b66976d63cd59e3d0105d8f4d35a0381807",
+          "size": 8549
+        },
+        "preview/docs/v/1.0.0/examples/guide/index.html": {
+          "sha256": "a08b2edf8c68d1edfe3e60c184a6abbbeb082f764385d6a0dfe83f052335dae2",
+          "size": 8140
+        },
+        "preview/docs/v/1.0.0/examples/home/index.html": {
+          "sha256": "992a51e7c94044e9a8fc0bdf044d358220c77fce5b66bfa9331d68c8e3464a16",
+          "size": 7798
+        },
+        "preview/docs/v/1.0.0/examples/index.html": {
+          "sha256": "909cdeb9e4db2618ffe69ef3e0cca0f062e0dfbf7c74e99dab6d06d706f5237c",
+          "size": 22453
+        },
+        "preview/docs/v/1.0.0/examples/integrations/index.html": {
+          "sha256": "e94275708f66e90ad042f6feab5492828170fe282b9caeb2bebbda2e97412eca",
+          "size": 9212
+        },
+        "preview/docs/v/1.0.0/examples/not-found/index.html": {
+          "sha256": "90fc8a0461fadfce45ee822e0126c2a417d6463f03dab17bf70c2ecb5e6ef905",
+          "size": 7005
+        },
+        "preview/docs/v/1.0.0/examples/opportunity/index.html": {
+          "sha256": "776c0d21cdb84c273937f13d3c7ed6ffe9fb10dd43d25ccd28c008305dd54c7a",
+          "size": 8554
+        },
+        "preview/docs/v/1.0.0/examples/password-reset/index.html": {
+          "sha256": "7ef459e95b267efe35919b1a6776510241e4a82b173eaa80c8a8daffc3dbd36c",
+          "size": 8628
+        },
+        "preview/docs/v/1.0.0/examples/patterns/index.html": {
+          "sha256": "45c938343770ce792c0ad9f0f4a87826225bb3e1dfbb11d154553a6c534a01fe",
+          "size": 8177
+        },
+        "preview/docs/v/1.0.0/examples/person/index.html": {
+          "sha256": "a202bd9add4d10295830f8202833123a779476917f153a6a562a47230fe93523",
+          "size": 8760
+        },
+        "preview/docs/v/1.0.0/examples/place/index.html": {
+          "sha256": "972863044d0870acaceec561674a62392737fad923405144a761a04a355a4a58",
+          "size": 7962
+        },
+        "preview/docs/v/1.0.0/examples/pricing/index.html": {
+          "sha256": "61989630e117990055843210ccb5b7b66e73c9cc5bdb7f72d2a7519162b70140",
+          "size": 8019
+        },
+        "preview/docs/v/1.0.0/examples/privacy/index.html": {
+          "sha256": "b3c29cb0a005ac2334404e221474cc4e76aa0a03fdc542664173ec4f8289e558",
+          "size": 8121
+        },
+        "preview/docs/v/1.0.0/examples/product/index.html": {
+          "sha256": "ce23294329289cf93634472e7ddefce41853e3224046d50cf0583d841df3381d",
+          "size": 7780
+        },
+        "preview/docs/v/1.0.0/examples/projects/index.html": {
+          "sha256": "a35537e216f7c3d866d7df2cc842b42e7931266e97b9e2184522c5273b9c6d2a",
+          "size": 7692
+        },
+        "preview/docs/v/1.0.0/examples/reference/index.html": {
+          "sha256": "2b74bfde50166bc1a2cd7de78bbdcaa522559a6630b152090c2d28b0c4ece084",
+          "size": 9901
+        },
+        "preview/docs/v/1.0.0/examples/report/index.html": {
+          "sha256": "bdddd128cf3ae06366fe89afaafa8db28f73c3154293ed6874b09fb4b82f0d79",
+          "size": 8786
+        },
+        "preview/docs/v/1.0.0/examples/scene/index.html": {
+          "sha256": "90f8a4bab614f9480f59c5c0c070280b1935598232179f70f4f24213b4084788",
+          "size": 7634
+        },
+        "preview/docs/v/1.0.0/examples/scientific-workspace/index.html": {
+          "sha256": "481f097b983f41338c03dee1031c39e5fe824247d204e0e1028cea2e3023359f",
+          "size": 9708
+        },
+        "preview/docs/v/1.0.0/examples/search/index.html": {
+          "sha256": "7aedc7b94719667f333d0415207d9fb859cf8b331797d750080b67bcb0663096",
+          "size": 17456
+        },
+        "preview/docs/v/1.0.0/examples/sensors/index.html": {
+          "sha256": "c83fac99e019dd03f84b13a4a360fd27049a6387b6e3fd33ffd172fb86cf8203",
+          "size": 7285
+        },
+        "preview/docs/v/1.0.0/examples/server-error/index.html": {
+          "sha256": "743d527fdd74ed7086eb8f6c586d38720f4d8fd10f64f5940641797788ecba13",
+          "size": 7182
+        },
+        "preview/docs/v/1.0.0/examples/service/index.html": {
+          "sha256": "9f04a45ec0db67ca82e496807af74a53e922f28c026f64b8bf257cae9bfe11aa",
+          "size": 8115
+        },
+        "preview/docs/v/1.0.0/examples/sign-in/index.html": {
+          "sha256": "1cefa2e044f6aa7baee43b21182c61cfff2bc8d0ab3c96c91297d41d28c9b3fe",
+          "size": 8946
+        },
+        "preview/docs/v/1.0.0/examples/sign-up/index.html": {
+          "sha256": "ae3b999c84b13630bb542a6d9f406c0ad4e03caa11ebb8188ccd8ff5ebd7f0cb",
+          "size": 9204
+        },
+        "preview/docs/v/1.0.0/examples/software/index.html": {
+          "sha256": "87712a11e988b057312db65489c6af0bcbf6691bb14bb5885a5fae82b5418acb",
+          "size": 8188
+        },
+        "preview/docs/v/1.0.0/examples/stress-test/index.html": {
+          "sha256": "fc3124251946c0e51b9b3096ec3c1d8000b55cb9909549d6726ba4604ae62d58",
+          "size": 11905
+        },
+        "preview/docs/v/1.0.0/examples/terms/index.html": {
+          "sha256": "97b965c575b45f7376e2c35f9761aeddd6383e0e004888821e3b841e3ee1e732",
+          "size": 8115
+        },
+        "preview/docs/v/1.0.0/examples/two-factor/index.html": {
+          "sha256": "e2297a3fe5761352541737ada63f82663b6e6af2d884c0ecbef484fe4215f4b0",
+          "size": 8803
+        },
+        "preview/docs/v/1.0.0/examples/workspace/index.html": {
+          "sha256": "139accf4474a84db16c04dccdf0a57d9318bd7bc1fa4129d2eec85ee1bcd77c9",
+          "size": 8520
+        },
+        "preview/docs/v/1.0.0/index.html": {
+          "sha256": "f982f88a641f8300b26aa9796e8db456d8a532235baf395f9b66d4fbc909685e",
+          "size": 7428
+        },
+        "preview/docs/v/1.0.0/journal/index.html": {
+          "sha256": "97875cfede1497566667fe13a7ab17972ebb3c90433c361b72691e6dee3ac79f",
+          "size": 6205
+        },
+        "preview/docs/v/1.0.0/journal/what-a-shell-should-own/index.html": {
+          "sha256": "07993288d06458b3e5c4bcd490179792e8f285d686cc6c3f4fbdd58402004815",
+          "size": 8120
+        },
+        "preview/docs/v/1.0.0/language/index.html": {
+          "sha256": "1ea69871310532fff348f8cf6cb8d51d35007d92c9675ca840d54c02fa59fcc4",
+          "size": 7629
+        },
+        "preview/docs/v/1.0.0/nightjar/PROVENANCE.json": {
+          "sha256": "57823c897e29f05e063ca745e7079d65dfddaf194e2dd30e76c7213615b08ea3",
+          "size": 97956
+        },
+        "preview/docs/v/1.0.0/nightjar/README.md": {
+          "sha256": "cb453c70218f2fb673ebb4ad8913089e3061d9fc78cc860d35447ffe06fbbedf",
+          "size": 1053
+        },
+        "preview/docs/v/1.0.0/nightjar/build.py": {
+          "sha256": "2ea2fdd30b8566168dc25bcf567e6e3bf07d0d8a53a6ca46586c29c54db2c0ee",
+          "size": 2795
+        },
+        "preview/docs/v/1.0.0/nightjar/ci-proposal.yml": {
+          "sha256": "1dd457b2f1935e83914e2c92a977dd7d4422231eb126f2e87822df3e23adb562",
+          "size": 421
+        },
+        "preview/docs/v/1.0.0/nightjar/source-files.json": {
+          "sha256": "addc48e6aa6ad4994d6f5a8daf37b51aded5d3541ff499ad8a08140c3f3483cc",
+          "size": 6793
+        },
+        "preview/docs/v/1.0.0/nightjar/verify-html.py": {
+          "sha256": "7ffbaa1bdb86b2965d6666d1960e6013f1808c60081b8bcd5af763720c953184",
+          "size": 2306
+        },
+        "preview/docs/v/1.0.0/nightjar/verify.py": {
+          "sha256": "9099ad8fbdfd36e68cd9ba1c3e9df79916af896e2ab1363bdb696b81550dab35",
+          "size": 4446
+        },
+        "preview/docs/v/1.0.0/nightjar-local-evidence.json": {
+          "sha256": "266982f2b7a404b40371e68e4fbbddc50608719278bdfcee6a9a82e2c9abb1ed",
+          "size": 21570
+        },
+        "preview/docs/v/1.0.0/release-policy.json": {
+          "sha256": "acc29f70b53a83bea8f3563a5127f001966833278836d5058fcc62a2af48dbbf",
+          "size": 371
+        },
+        "preview/docs/v/1.0.0/setup/index.html": {
+          "sha256": "7199e20b959b57c577f96fd3eef1963fc5833b8187adf9ad2a73313540d574af",
+          "size": 8440
+        },
+        "preview/docs/v/1.0.0/template.zip": {
+          "sha256": "aac2f16d643a331f40d2a15ea3d4bfaf8ee64c96742fb28b7bb8620c64d58a17",
+          "size": 781359
+        },
+        "preview/docs/versions/index.html": {
+          "sha256": "69f9288d30e285d4351140cca5fb7de9b9a8499e23f2338c6134a5f78cdc1fae",
+          "size": 474
+        },
+        "preview/examples/about/index.html": {
+          "sha256": "48c6c776d718a6e38caa082edd114a8ea1dcb11c2034b1f1bfaf7c041dbcdcee",
+          "size": 7444
+        },
+        "preview/examples/archive/index.html": {
+          "sha256": "32ff2aa7b71ed1ca630418acf69a3df1818d9bc34363ecbfbcfcaad22883be0d",
+          "size": 8008
+        },
+        "preview/examples/article/index.html": {
+          "sha256": "12db71f89e217a14e773b1b4b6a83f87ba18d1e43313dad69bba60b24483de89",
+          "size": 8160
+        },
+        "preview/examples/careers/index.html": {
+          "sha256": "a600a6e6a4e65db5e309525495c8c1f384d07999cd4bdd719e86a21b23f73e63",
+          "size": 6712
+        },
+        "preview/examples/case-study/index.html": {
+          "sha256": "eb83b21b523cfaa422526f3d7eefd5e320de8a6f23cf5040555628ffc0061108",
+          "size": 7716
+        },
+        "preview/examples/categories/index.html": {
+          "sha256": "2d4808b21e5b74ebc6b40aeb2397694b63abef5471802bab01e0450ee03045f5",
+          "size": 6238
+        },
+        "preview/examples/category/index.html": {
+          "sha256": "2e95b22d4c5d87095bfd6907b501b24019afe2b099cd03340d78e5310bb60930",
+          "size": 6767
+        },
+        "preview/examples/changelog/index.html": {
+          "sha256": "1e7af1f7578cbf45a32d05daf1f20e16b95539390baef9c3c2e0e496f6795418",
+          "size": 7141
+        },
+        "preview/examples/chat/index.html": {
+          "sha256": "214ed1cc68e9f7cdc9f989ecc30dc0eee92122c33b48df6bbda107d73e487ff5",
+          "size": 6759
+        },
+        "preview/examples/collection/index.html": {
+          "sha256": "e68bc60caeb414c15db5afc377e006fefb99c39da2dd4d6b49c21b6a45d31297",
+          "size": 7235
+        },
+        "preview/examples/collection-item/index.html": {
+          "sha256": "c8c319f2540f2397fe95560899b0221d11db75cdf1f821f3be8ed5c791b15271",
+          "size": 7219
+        },
+        "preview/examples/coming-soon/index.html": {
+          "sha256": "35e9d15dab6130d8b808964e4aedc27842c59c9f37ef5849881354d1b51e101b",
+          "size": 7575
+        },
+        "preview/examples/contact/index.html": {
+          "sha256": "60c31c826584ad94bea8f4d84b128dd4786887ac7d92021754636b91f7b939ac",
+          "size": 7663
+        },
+        "preview/examples/dashboard-administration/index.html": {
+          "sha256": "1541e9a2a204da5c205109c7894ea730c845690709054ca87ec5976074abdb37",
+          "size": 49314
+        },
+        "preview/examples/dashboard-analytics/index.html": {
+          "sha256": "e97a467574283c5fa6f212ce0434bff113cbb22ad9d3974e5df9453e9a534c83",
+          "size": 48917
+        },
+        "preview/examples/dashboard-components/index.html": {
+          "sha256": "8038e7e7e41d2a9adfe45832383b6955d3f1c5eb61756b20893bafa0fc69aafc",
+          "size": 8163
+        },
+        "preview/examples/dashboard-operations/index.html": {
+          "sha256": "44ce5b6b13afc59796adace9028718f4cab03c487243de5722e3afa9f1a8204d",
+          "size": 47711
+        },
+        "preview/examples/documentation/index.html": {
+          "sha256": "5e7e6fe6b1814e8a3e1e995de9b4639f425c8ed850e5f4e51a7635e075e3b574",
+          "size": 6380
+        },
+        "preview/examples/event/index.html": {
+          "sha256": "9370d796dbcc52e4dff7a3e44a44d76d31e5e13e7d1848ce2245c08c10ec82da",
+          "size": 7786
+        },
+        "preview/examples/events/index.html": {
+          "sha256": "04323c8ef0cb51acf5b9e5627abec469e338f15a237e6c64a910e5a7aefe204d",
+          "size": 7383
+        },
+        "preview/examples/faq/index.html": {
+          "sha256": "687338b784440bdf20feaf708394e61cb64f2487ff40a7970f4dbdec6ee71b47",
+          "size": 6808
+        },
+        "preview/examples/fleet/index.html": {
+          "sha256": "7647d725f0f9454875708ed3ce231eea1ea69dd3813a66c277121db9f7691b54",
+          "size": 7486
+        },
+        "preview/examples/gallery/index.html": {
+          "sha256": "d6e0234d6688749cffd6c3e82c2b0e1c5f18361d91a413c4e1f00eb63a6e17e5",
+          "size": 7811
+        },
+        "preview/examples/guide/index.html": {
+          "sha256": "27d8f089f2112eca41a6388b452dd7a8afa3c577f6ef04cf3d5cb920970c53bc",
+          "size": 7454
+        },
+        "preview/examples/home/index.html": {
+          "sha256": "0d2921bdfd77f23b9d85edd373960f171e87ae3fa36e0d2447225bf96c0cc2e4",
+          "size": 7073
+        },
+        "preview/examples/index.html": {
+          "sha256": "8ec4d90db888888d03da5742f6adc8420d9316704b3929f021de513f947a4295",
+          "size": 21182
+        },
+        "preview/examples/integrations/index.html": {
+          "sha256": "71628be17c21b99c50fe88421c11bb8875a2771bb78a6faa8e4f59c5e6ccc176",
+          "size": 8552
+        },
+        "preview/examples/not-found/index.html": {
+          "sha256": "71ff06797b7cd17df68285c84dc669cb347deacf964293ab07f7fe3aac051395",
+          "size": 6319
+        },
+        "preview/examples/opportunity/index.html": {
+          "sha256": "7623e4db4d8f14f9c388dbc3d9e6ad11a9360b3137ec1a5942b0bbc21c650f47",
+          "size": 7881
+        },
+        "preview/examples/password-reset/index.html": {
+          "sha256": "645fb004fd6ffb9a0ed783dec9a241159b49a241a21b91831c59d065765f5cd1",
+          "size": 7916
+        },
+        "preview/examples/patterns/index.html": {
+          "sha256": "6e0b9df290d44175397eacfbc9a46a7d6d2934c5dfd8389a19e527b158188138",
+          "size": 7504
+        },
+        "preview/examples/person/index.html": {
+          "sha256": "a90b1613507f3cb9f0a21273e926a0782c58dbe3dcd62c7b59cb1b8c1753acbe",
+          "size": 8061
+        },
+        "preview/examples/place/index.html": {
+          "sha256": "41bdc8be0d377d2798cd40f1ddce88eb6b1dbd1eeb26a4f44c2dcda4424aa839",
+          "size": 7263
+        },
+        "preview/examples/pricing/index.html": {
+          "sha256": "098ca77e13e7a6968423f690b6ba3ea814623843114f0c751caa52a10e086db5",
+          "size": 7320
+        },
+        "preview/examples/privacy/index.html": {
+          "sha256": "6ed59bb95a332dbc9829904771e49f0881deb74df18f77f37037072ae6c2d399",
+          "size": 7435
+        },
+        "preview/examples/product/index.html": {
+          "sha256": "ef72aefab99f6ce768186c9e9e385fe74b4f663345f75ea2a28d7c4fad72e049",
+          "size": 7094
+        },
+        "preview/examples/projects/index.html": {
+          "sha256": "a961dc23a78e59579470e314e213ae348006b708955578d4e33a8ee2f870e6c8",
+          "size": 6993
+        },
+        "preview/examples/reference/index.html": {
+          "sha256": "1804bc8b31120d3b72530eb11b5f81c60c621bdf0f48d077735701d471a826ca",
+          "size": 9241
+        },
+        "preview/examples/report/index.html": {
+          "sha256": "a1538928c7009df83143441630cc8e2192f7a1377773cfddcebd7912a0bb4a24",
+          "size": 8100
+        },
+        "preview/examples/scene/index.html": {
+          "sha256": "68c9bdef2a361899d58ef8729333f620eb10d19e81e43906d3f982b75ac53622",
+          "size": 6961
+        },
+        "preview/examples/scientific-workspace/index.html": {
+          "sha256": "9199a6439007eb3ddf9dec2314e8511b67aae2e5d5d03b591798178b3cc62c5d",
+          "size": 9074
+        },
+        "preview/examples/search/index.html": {
+          "sha256": "f4eec01e157c384f97c2a2b9288138f4138e74a1762e7cc249b6f4a02d698478",
+          "size": 16107
+        },
+        "preview/examples/sensors/index.html": {
+          "sha256": "f1fdbea7375c8b6578453bba4fca432edf7bfddfef2fea010a886019c8cd0c50",
+          "size": 6625
+        },
+        "preview/examples/server-error/index.html": {
+          "sha256": "8eb5f03613b837c24434b8a5e4bb904f4c1fd5bb23e0c0b026657e7b9d217355",
+          "size": 6496
+        },
+        "preview/examples/service/index.html": {
+          "sha256": "7b9336e15c684e55c674d8bc69a5a5276946ada19a6b7c8ec20dbbb01d20ccc7",
+          "size": 7390
+        },
+        "preview/examples/sign-in/index.html": {
+          "sha256": "3919a3376cb115d2a18a21ddd0fe26417c574a7823de253eb5857614b975e503",
+          "size": 8234
+        },
+        "preview/examples/sign-up/index.html": {
+          "sha256": "7046bdd2d7ea4870a11b9321e5d3ce9d91db9404a5d19eddfb96ab78e2884a8d",
+          "size": 8492
+        },
+        "preview/examples/software/index.html": {
+          "sha256": "e072996e67fe03cbdb42a86de44998fb6cff67e51faf459ff133e12332b7f976",
+          "size": 7463
+        },
+        "preview/examples/stress-test/index.html": {
+          "sha256": "b66d0bf9b1f097ed58609b92d3271e5b778154b8104f37a2fa3b3562d88b4e83",
+          "size": 11219
+        },
+        "preview/examples/terms/index.html": {
+          "sha256": "551d3aa5d7efeef871f917766b8602c5bc384626ff6a76e4a991909f5e0a9928",
+          "size": 7429
+        },
+        "preview/examples/two-factor/index.html": {
+          "sha256": "c7dbb5f8ea0feab26dcd0f817d89d99c0a0f4a7d1a0be82a39a198d292ab236d",
+          "size": 8091
+        },
+        "preview/examples/workspace/index.html": {
+          "sha256": "f98777712a8fc61a36e49470277c203e9b9dec786c2d2f14e5a6787e4ee22a0d",
+          "size": 7860
+        },
+        "preview/index.html": {
+          "sha256": "c7652b5ee7149bcc18ed12ec795bbec47fafff9ce76e3c38d86f214dc72bf37b",
+          "size": 6755
+        },
+        "preview/journal/index.html": {
+          "sha256": "46a9503376e0492795171792fb4a4b977e048fafd816c9de9202cc1b6617f380",
+          "size": 5558
+        },
+        "preview/journal/what-a-shell-should-own/index.html": {
+          "sha256": "d019bcc45524f1848474e5913e507289f391d4ccb7fccf8f48e22c625f3553ef",
+          "size": 7473
+        },
+        "preview/language/index.html": {
+          "sha256": "0569dc88e5e339d7431e5373037901ff49b099a0a148737795931f94e9047fe7",
+          "size": 7021
+        },
+        "preview/nightjar/PROVENANCE.json": {
+          "sha256": "57823c897e29f05e063ca745e7079d65dfddaf194e2dd30e76c7213615b08ea3",
+          "size": 97956
+        },
+        "preview/nightjar/README.md": {
+          "sha256": "cb453c70218f2fb673ebb4ad8913089e3061d9fc78cc860d35447ffe06fbbedf",
+          "size": 1053
+        },
+        "preview/nightjar/build.py": {
+          "sha256": "2ea2fdd30b8566168dc25bcf567e6e3bf07d0d8a53a6ca46586c29c54db2c0ee",
+          "size": 2795
+        },
+        "preview/nightjar/ci-proposal.yml": {
+          "sha256": "1dd457b2f1935e83914e2c92a977dd7d4422231eb126f2e87822df3e23adb562",
+          "size": 421
+        },
+        "preview/nightjar/source-files.json": {
+          "sha256": "addc48e6aa6ad4994d6f5a8daf37b51aded5d3541ff499ad8a08140c3f3483cc",
+          "size": 6793
+        },
+        "preview/nightjar/verify-html.py": {
+          "sha256": "7ffbaa1bdb86b2965d6666d1960e6013f1808c60081b8bcd5af763720c953184",
+          "size": 2306
+        },
+        "preview/nightjar/verify.py": {
+          "sha256": "9099ad8fbdfd36e68cd9ba1c3e9df79916af896e2ab1363bdb696b81550dab35",
+          "size": 4446
+        },
+        "preview/release-policy.json": {
+          "sha256": "acc29f70b53a83bea8f3563a5127f001966833278836d5058fcc62a2af48dbbf",
+          "size": 371
+        },
+        "preview/setup/index.html": {
+          "sha256": "e750805c19e790ae8975acd279b9cc633ccbee49c55374c570ca60ef4de44c5b",
+          "size": 7806
+        },
+        "preview/template.zip": {
+          "sha256": "aac2f16d643a331f40d2a15ea3d4bfaf8ee64c96742fb28b7bb8620c64d58a17",
+          "size": 781359
+        },
+        "release-policy.json": {
+          "sha256": "acc29f70b53a83bea8f3563a5127f001966833278836d5058fcc62a2af48dbbf",
+          "size": 371
+        },
+        "setup/index.html": {
+          "sha256": "a5516f9da7c4129e0a475ddbc210053c3febf9cf6f3b8e420a618f66e7f5a7b4",
+          "size": 7662
+        },
+        "template.zip": {
+          "sha256": "aac2f16d643a331f40d2a15ea3d4bfaf8ee64c96742fb28b7bb8620c64d58a17",
+          "size": 781359
+        }
+      },
+      "downloads": [
+        {
+          "path": "/template.zip",
+          "sha256": "aac2f16d643a331f40d2a15ea3d4bfaf8ee64c96742fb28b7bb8620c64d58a17",
+          "releaseEvidence": "krigsvold-jekyll-published-verification.json"
+        }
+      ]
+    }
+  }
+}
