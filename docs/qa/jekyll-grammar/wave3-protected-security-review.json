@@ -135,5 +135,6 @@
     "martlet": "378fe1701aa996678c4d33acbbbe33e36a2abc54",
     "krigsvold": "3e5d49dcf47cc3b9e6646e66274fb246d5848df2"
   },
-  "separateFinalBlocker": "Krigsvold shared navigation overlap at true200%/1440 remains unresolved outside the report/search recipe scope."
+  "separateFinalBlocker": "Krigsvold shared navigation overlap at true200%/1440 remains unresolved outside the report/search recipe scope.",
+  "documentStatus": "Historical scoped planning/review preserved. Current exact final source, resolved global blockers and acceptance are in final-acceptance.json and README.md."
 }

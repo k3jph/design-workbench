@@ -1,0 +1,62 @@
+{
+  "failedPullRequest": 21,
+  "failedSourceCommit": "3e5d49dcf47cc3b9e6646e66274fb246d5848df2",
+  "failedNativeBuildUuid": "13764ffb-9fc9-447f-bf21-e8189337008d",
+  "evidenceSource": "Maintainer supplied authenticated Cloudflare build logs in this conversation",
+  "observedFacts": {
+    "dependencyInstallSucceeded": true,
+    "rootJekyllBuildSucceeded": true,
+    "previewJekyllBuildSucceeded": true,
+    "standaloneSourceFilesVerified": 235,
+    "buildCommandCompletedSuccessfully": true,
+    "failedPhase": "Native PR preview deploy, current_pr provenance verification before Worker upload",
+    "failedOperation": "GitHub REST current branch ref verification",
+    "httpStatus": 403,
+    "guardFailedClosed": true
+  },
+  "relevantLogExcerpt": [
+    "2026-11-03T21:42:23.272Z Verified 235 exact standalone source files; advanced R2 archive remains disabled.",
+    "2026-11-03T21:42:23.623Z Success: Build command completed",
+    "2026-11-03T21:42:23.869Z Executing user deploy command: bash scripts/deployment/preview-cloudflare.sh",
+    "2026-11-03T21:42:26.200Z number=current_pr(c,branch,sha)",
+    "2026-11-03T21:42:26.200Z live=artifact.github(.../git/ref/heads/...feature/grammar-collections...)",
+    "2026-11-03T21:42:26.200Z AssertionError: Public GitHub verification denied or failed (403); never deploy without evidence"
+  ],
+  "underlying403Reason": "Not established: the supplied log has neither GitHub error body nor rate-limit/authentication response headers. Do not label it rate limiting or credential denial conclusively.",
+  "nativeLogAccessFromCodex": {
+    "httpStatus": 401,
+    "errorCode": 12006
+  },
+  "documentedNativeRerequestFromCodex": {
+    "httpStatus": 403,
+    "accepted": false,
+    "sourcePushOrActionsRerunPerformed": false
+  },
+  "recovery": {
+    "newConsolidatedPullRequest": 22,
+    "exactSourceCommit": "983dee5d27ad02458baef6edc5a39279e24028ea",
+    "nativeBuildUuid": "0bacc335-e319-4ca2-834c-15510b71c31b",
+    "nativeConclusion": "success",
+    "oldFailureReclassifiedAsSuccess": false,
+    "reviewedAncestorPreserved": true,
+    "provenanceGuardFilesUnchanged": {
+      "scripts/deployment/artifact.py": "415ce82c2c188da81840413212b71580f6fa70fc",
+      "scripts/deployment/pr-preview-verify.py": "1da1ef608b82b3148afbbb10beb97e7c5105bd14",
+      "scripts/deployment/preview-cloudflare.sh": "5d635f1e2dc78c91a5d0b22133d0c5ce3c0996d6"
+    },
+    "allSixFreshGitHubChecksPassed": true,
+    "genuineNativePayloadIndependentlyVerified": true
+  },
+  "unrelatedHistoricalMartlet0701Failure": "Still unexplained; this Krigsvold log does not establish its cause.",
+  "rawDiagnosis": {
+    "artifact": "/workspace/work/jekyll-grammar/ci/krigsvold-original-native-failure-diagnosis.json",
+    "sha256": "fee7aa35bf837d5c159332b46ce53e5342324bc3d6ca04ebf81b361a405ce430"
+  },
+  "historicalMartlet": {
+    "family": "martlet",
+    "sourceCommit": "0701a83e948964fd5bf2e05ee31e7385af7752d6",
+    "historicalOutcome": "failed native develop build; underlying cause still unknown",
+    "currentAvailability": "Later ordinary develop d983 native success and final exact0c native success; no inference from unrelated K403 logs.",
+    "status": "historical failure preserved; not a current verified-preview blocker"
+  }
+}

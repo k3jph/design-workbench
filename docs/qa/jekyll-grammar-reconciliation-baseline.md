@@ -1,5 +1,7 @@
 # Jekyll grammar reconciliation: baseline audit and inventory
 
+> Historical starting audit preserved from PR92. Current source-bound dispositions, implementation, acceptance and dated qualifications are in [the final reconciliation report](jekyll-grammar/README.md). Pending-hero and catalog observations below describe the original audit, not the final implementation.
+
 *Started 2026-11-03; tracks [issue #91](https://github.com/k3jph/design-workbench/issues/91). This is an evidence-backed starting inventory, **not** a claim of audited visual fidelity or completed implementation.*
 
 ## Facts independently checked

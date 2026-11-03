@@ -293,5 +293,26 @@
     "searchStatesIndependentlyMatchedToRawReports": 12,
     "sourceIndexIsImmutableCopiedBytes": true,
     "reviewScope": "All50 initial baselines and12 observed populated-search states are hashed; final-after captures, visual decisions and global accessibility remain separate."
-  }
+  },
+  "finalActualSourceBindings": {
+    "martlet": {
+      "sourceCommit": "0c0e0a7452444c41a3876c2f8732c6439c6097b9",
+      "sourceTree": "6d1810333cbdc157f2b9de56a9906fbe97536736",
+      "artifactSha256": "50764c3bfa049ff9a9886e04c9f7c38afc739d79137240cd51ad47b2104ad770",
+      "sourceZipSha256": "86f3eb4937a42d418823056b3071a72cf084fdf2c396fe0b1321e17e5360cf4d",
+      "origin": "https://pr-feature-gram-558d733a5d-martletdesign-jekyll-reference.k3jph.workers.dev"
+    },
+    "krigsvold": {
+      "sourceCommit": "983dee5d27ad02458baef6edc5a39279e24028ea",
+      "sourceTree": "a019a52c5ba2edddcbc6a8f4582527da0dfe4ab2",
+      "artifactSha256": "a8fb65593f80613e28e8cdc6e87476ae1f229c19e144f33089a47fd630c41963",
+      "sourceZipSha256": "21aafa55d853ecfea950835f9e0291b98b05c22edb01d6f8ae51816f343d5a90",
+      "origin": "https://pr-feature-gram-558d733a5d-krigsvolddesign-jekyll-reference.k3jph.workers.dev"
+    }
+  },
+  "finalActualCapture": {
+    "artifact": "/workspace/work/jekyll-grammar/visual/final-after-index.json",
+    "sha256": "f2623024491a62aa3a5742198d951dd63f48e993efdfa2538b559a3b0206fb47"
+  },
+  "finalAuthorityRule": "Canonical origins primary; React differentiated catalogs are supporting evidence only. All contextual translations and retained anatomy are independently reasoned in disposition.json."
 }
