@@ -40,7 +40,8 @@
     "test:search-safety": "node --test examples/page-archetypes/tests/search-index-safety.test.mjs",
     "build:examples": "python3 examples/page-archetypes/scripts/build.py",
     "test:analytics-empty": "node examples/page-archetypes/tests/analytics-empty.mjs",
-    "test:core-bases": "npm run pack:react && node scripts/nightjar3/test-core-react-bases.mjs"
+    "test:core-bases": "npm run pack:react && node scripts/nightjar3/test-core-react-bases.mjs",
+    "test:contracts": "node --test scripts/docs-versions/*.test.mjs scripts/gitflow/*.test.mjs"
   },
   "dependencies": {
     "@krigsvold/react": "0.2.0",

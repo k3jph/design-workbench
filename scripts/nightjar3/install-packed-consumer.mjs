@@ -1,3 +1,4 @@
+import {reviewedRegistryCoreArchive} from '../reviewed-registry-core.mjs';
 // Optional extraction-rehearsal mode for the existing consumer suites.
 // With no directory configured, retain their original workspace resolution.
 import {execFileSync} from 'node:child_process';
@@ -8,5 +9,5 @@ export function installPackedConsumer(directory,family){
  if(!source)return;
  if(!['martlet','krigsvold'].includes(family))throw Error('Unknown family');
  writeFileSync(resolve(directory,'package.json'),JSON.stringify({name:'nightjar-packed-consumer',private:true,type:'module'}));
- execFileSync('npm',['install','--ignore-scripts','--no-audit','--no-fund','--package-lock=false','react@19.3.1','react-dom@19.3.1',resolve(process.env.NIGHTJAR_CORE_ARCHIVE_DIR || 'fixtures/core-candidates',`${family}-core-${family==='martlet'?'2.2.3':'2.2.4'}.tgz`),resolve(source,`${family}-react-${process.env.NIGHTJAR_REACT_ARCHIVE_VERSION || "0.2.0"}.tgz`)],{cwd:directory,stdio:'pipe'});
+ execFileSync('npm',['install','--ignore-scripts','--no-audit','--no-fund','--package-lock=false','react@19.3.1','react-dom@19.3.1',reviewedRegistryCoreArchive(family,directory),resolve(source,`${family}-react-${process.env.NIGHTJAR_REACT_ARCHIVE_VERSION || "0.2.0"}.tgz`)],{cwd:directory,stdio:'pipe'});
 }

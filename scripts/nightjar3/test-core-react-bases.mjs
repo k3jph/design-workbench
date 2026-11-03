@@ -1,3 +1,4 @@
+import {reviewedRegistryCoreArchive} from '../reviewed-registry-core.mjs';
 // Build and interact with local React/core archives in a disposable consumer.
 import assert from 'node:assert/strict';
 import {execFileSync} from 'node:child_process';
@@ -8,8 +9,8 @@ import {tmpdir} from 'node:os';
 import {extname,join,resolve,sep} from 'node:path';
 import {build} from 'vite';
 import {chromium,firefox,webkit} from 'playwright';
-const dir=process.env.NIGHTJAR_CORE_ARCHIVE_DIR||resolve('fixtures/core-candidates'),reactDir=process.env.NIGHTJAR_REACT_ARCHIVE_DIR||process.cwd();
-assert.ok(dir&&reactDir,'Supply local core and React archive directories');
+const dir=process.env.NIGHTJAR_CORE_ARCHIVE_DIR,reactDir=process.env.NIGHTJAR_REACT_ARCHIVE_DIR||process.cwd();
+assert.ok(reactDir,'Supply React archive directory');
 const lane=process.env.NIGHTJAR_REACT_LANE||'core';assert.ok(['theme','core'].includes(lane));
 const engine=process.env.WORKBENCH_BROWSER||'chromium';assert.ok(['chromium','firefox','webkit'].includes(engine));
 const browser=await ({chromium,firefox,webkit})[engine].launch(engine==='chromium'&&process.env.PLAYWRIGHT_EXECUTABLE_PATH?{executablePath:process.env.PLAYWRIGHT_EXECUTABLE_PATH}:{headless:true});
@@ -18,7 +19,7 @@ try{for(const family of ['martlet','krigsvold']){
  try{
   await writeFile(join(temp,'package.json'),JSON.stringify({name:`consumer-${family}`,private:true,type:'module'}));
   const version=lane==='theme'?'2.1.0':family==='martlet'?'2.2.3':'2.2.4',reactVersion=lane==='theme'?'0.1.0':'0.2.0';
-  execFileSync('npm',['install','--ignore-scripts','--no-audit','--no-fund','--package-lock=false','react@19.3.1','react-dom@19.3.1',resolve(dir,`${family}-${lane}-${version}.tgz`),resolve(reactDir,`${family}-react-${reactVersion}.tgz`)],{cwd:temp,stdio:'pipe'});
+  execFileSync('npm',['install','--ignore-scripts','--no-audit','--no-fund','--package-lock=false','react@19.3.1','react-dom@19.3.1',(dir?resolve(dir,`${family}-${lane}-${version}.tgz`):lane==='core'?reviewedRegistryCoreArchive(family,temp):`@${family}/theme@${version}`),resolve(reactDir,`${family}-react-${reactVersion}.tgz`)],{cwd:temp,stdio:'pipe'});
   const other=lane==='theme'?'core':'theme';assert.equal(existsSync(join(temp,'node_modules',`@${family}`,other)),false,`${family}: ${lane} lane unexpectedly installed ${other}`);
   await writeFile(join(temp,'index.html'),'<html lang="en"><head><meta charset="utf-8"><title>Core consumer</title></head><body><div id="root"></div><script type="module" src="/main.jsx"></script></body></html>');
   await writeFile(join(temp,'main.jsx'),`import React,{useState} from 'react';import {createRoot} from 'react-dom/client';import {Button} from '@${family}/react';import '@${family}/react/styles.css';import '@${family}/${lane}/fonts.css';function App(){const[n,setN]=useState(0);return <main className="${family}" data-${family}="light"><h1>Core consumer</h1><Button onClick={()=>setN(n+1)}>Count {n}</Button></main>}createRoot(document.getElementById('root')).render(<App/>);`);
