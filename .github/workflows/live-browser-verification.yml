@@ -1,0 +1,86 @@
+name: Read-only live reference browser verification
+on:
+  push:
+    branches: [ops/live-site-verification]
+    paths:
+      - tools/live-site-browser/**
+      - .github/workflows/live-browser-verification.yml
+      - tools/live-site-http/**
+  workflow_dispatch:
+    inputs:
+      target_map:
+        description: Fixed checked-in target map
+        type: choice
+        required: true
+        default: jekyll-stage
+        options: [jekyll-stage, jekyll-stage-root-preview, jekyll-canonical]
+permissions:
+  contents: read
+concurrency:
+  group: live-browser-verification-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      max-parallel: 2
+      matrix:
+        browser: [chromium, firefox, webkit]
+    env:
+      SITE_BROWSER: ${{ matrix.browser }}
+      SITE_TARGET_MAP: ${{ inputs.target_map || vars.LIVE_SITE_TARGET_MAP || 'jekyll-stage-root-preview' }}
+      SITE_RESULTS_DIR: results
+    defaults:
+      run:
+        working-directory: tools/live-site-browser
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '24.19.0'
+      - name: Install isolated integrity-locked browser tools
+        run: npm ci --ignore-scripts --no-audit --no-fund
+        timeout-minutes: 3
+      - name: Validate fixed targets and source pins
+        run: node run.mjs --validate-only
+        timeout-minutes: 1
+      - name: Use the supported Ubuntu package mirror
+        run: |
+          if [ -f /etc/apt/apt-mirrors.txt ]; then
+            sudo sed -i 's|http://azure.archive.ubuntu.com/ubuntu|https://archive.ubuntu.com/ubuntu|g' /etc/apt/apt-mirrors.txt
+          fi
+      - name: Install actual browser and operating-system dependencies
+        run: npx playwright install --with-deps ${{ matrix.browser }}
+        timeout-minutes: 5
+      - name: Verify real HTTPS routes, behavior, accessibility and source identity
+        run: node run.mjs
+        timeout-minutes: 14
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: live-browser-${{ env.SITE_TARGET_MAP }}-${{ matrix.browser }}-${{ github.run_id }}
+          path: tools/live-site-browser/results/
+          if-no-files-found: warn
+          retention-days: 14
+
+  http:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - name: Verify staged Jekyll HTTPS files, assets and actual published source ZIPs
+        working-directory: tools/live-site-http
+        run: python3 verify-live-sites.py --state-root . --stage-ready --manifest targets.json --origin-map staged-origins.json --expectations expectations.json --output stage-http-results.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: live-jekyll-stage-http-${{ github.run_id }}
+          path: tools/live-site-http/stage-http-results.json
+          if-no-files-found: warn
+          retention-days: 14

@@ -1,0 +1,97 @@
+{
+  "version": 1,
+  "maps": {
+    "jekyll-stage": [
+      {
+        "family": "martlet",
+        "framework": "jekyll",
+        "origin": "https://martletdesign-jekyll-reference.k3jph.workers.dev",
+        "sourceCommit": "92b8fc22fc5d42ccba4cffba6d5de8fb53103e9c",
+        "version": "1.0.0",
+        "proofPath": "/deployment-proof.json",
+        "sourceZipSha256": "de97e71a49f1a270c9b548b8fae10db2d8741ae77fecc9f01263e92097c33710",
+        "bases": [
+          "/",
+          "/preview/",
+          "/docs/v/1.0.0/",
+          "/preview/docs/v/1.0.0/"
+        ]
+      },
+      {
+        "family": "krigsvold",
+        "framework": "jekyll",
+        "origin": "https://krigsvolddesign-jekyll-reference.k3jph.workers.dev",
+        "sourceCommit": "52df2775f9cd487b2b527032b99d4d7806fe52ea",
+        "version": "1.0.0",
+        "proofPath": "/deployment-proof.json",
+        "sourceZipSha256": "aac2f16d643a331f40d2a15ea3d4bfaf8ee64c96742fb28b7bb8620c64d58a17",
+        "bases": [
+          "/",
+          "/preview/",
+          "/docs/v/1.0.0/",
+          "/preview/docs/v/1.0.0/"
+        ]
+      }
+    ],
+    "jekyll-stage-root-preview": [
+      {
+        "family": "martlet",
+        "framework": "jekyll",
+        "origin": "https://martletdesign-jekyll-reference.k3jph.workers.dev",
+        "sourceCommit": "92b8fc22fc5d42ccba4cffba6d5de8fb53103e9c",
+        "version": "1.0.0",
+        "proofPath": "/deployment-proof.json",
+        "sourceZipSha256": "de97e71a49f1a270c9b548b8fae10db2d8741ae77fecc9f01263e92097c33710",
+        "bases": [
+          "/",
+          "/preview/"
+        ]
+      },
+      {
+        "family": "krigsvold",
+        "framework": "jekyll",
+        "origin": "https://krigsvolddesign-jekyll-reference.k3jph.workers.dev",
+        "sourceCommit": "52df2775f9cd487b2b527032b99d4d7806fe52ea",
+        "version": "1.0.0",
+        "proofPath": "/deployment-proof.json",
+        "sourceZipSha256": "aac2f16d643a331f40d2a15ea3d4bfaf8ee64c96742fb28b7bb8620c64d58a17",
+        "bases": [
+          "/",
+          "/preview/"
+        ]
+      }
+    ],
+    "jekyll-canonical": [
+      {
+        "family": "martlet",
+        "framework": "jekyll",
+        "origin": "https://jekyll.martletdesign.dev",
+        "sourceCommit": "92b8fc22fc5d42ccba4cffba6d5de8fb53103e9c",
+        "version": "1.0.0",
+        "proofPath": "/deployment-proof.json",
+        "sourceZipSha256": "de97e71a49f1a270c9b548b8fae10db2d8741ae77fecc9f01263e92097c33710",
+        "bases": [
+          "/",
+          "/preview/",
+          "/docs/v/1.0.0/",
+          "/preview/docs/v/1.0.0/"
+        ]
+      },
+      {
+        "family": "krigsvold",
+        "framework": "jekyll",
+        "origin": "https://jekyll.krigsvolddesign.dev",
+        "sourceCommit": "52df2775f9cd487b2b527032b99d4d7806fe52ea",
+        "version": "1.0.0",
+        "proofPath": "/deployment-proof.json",
+        "sourceZipSha256": "aac2f16d643a331f40d2a15ea3d4bfaf8ee64c96742fb28b7bb8620c64d58a17",
+        "bases": [
+          "/",
+          "/preview/",
+          "/docs/v/1.0.0/",
+          "/preview/docs/v/1.0.0/"
+        ]
+      }
+    ]
+  }
+}

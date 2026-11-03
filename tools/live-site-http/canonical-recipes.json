@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 1,
+  "pages": [
+    {
+      "id": "home"
+    },
+    {
+      "id": "about"
+    },
+    {
+      "id": "article"
+    },
+    {
+      "id": "archive"
+    },
+    {
+      "id": "category"
+    },
+    {
+      "id": "categories"
+    },
+    {
+      "id": "person"
+    },
+    {
+      "id": "projects"
+    },
+    {
+      "id": "case-study"
+    },
+    {
+      "id": "documentation"
+    },
+    {
+      "id": "guide"
+    },
+    {
+      "id": "reference"
+    },
+    {
+      "id": "contact"
+    },
+    {
+      "id": "faq"
+    },
+    {
+      "id": "privacy"
+    },
+    {
+      "id": "terms"
+    },
+    {
+      "id": "service"
+    },
+    {
+      "id": "place"
+    },
+    {
+      "id": "pricing"
+    },
+    {
+      "id": "careers"
+    },
+    {
+      "id": "opportunity"
+    },
+    {
+      "id": "software"
+    },
+    {
+      "id": "product"
+    },
+    {
+      "id": "collection"
+    },
+    {
+      "id": "collection-item"
+    },
+    {
+      "id": "events"
+    },
+    {
+      "id": "event"
+    },
+    {
+      "id": "report"
+    },
+    {
+      "id": "gallery"
+    },
+    {
+      "id": "changelog"
+    },
+    {
+      "id": "search"
+    },
+    {
+      "id": "sign-in"
+    },
+    {
+      "id": "sign-up"
+    },
+    {
+      "id": "password-reset"
+    },
+    {
+      "id": "two-factor"
+    },
+    {
+      "id": "coming-soon"
+    },
+    {
+      "id": "not-found"
+    },
+    {
+      "id": "server-error"
+    },
+    {
+      "id": "workspace"
+    },
+    {
+      "id": "chat"
+    },
+    {
+      "id": "sensors"
+    },
+    {
+      "id": "fleet"
+    },
+    {
+      "id": "scene"
+    },
+    {
+      "id": "integrations"
+    },
+    {
+      "id": "stress-test"
+    },
+    {
+      "id": "patterns"
+    },
+    {
+      "id": "dashboard-analytics"
+    },
+    {
+      "id": "dashboard-components"
+    },
+    {
+      "id": "dashboard-administration"
+    },
+    {
+      "id": "dashboard-operations"
+    }
+  ]
+}

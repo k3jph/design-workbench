@@ -1,0 +1,27 @@
+{
+  "repository": "martletdesign/jekyll",
+  "version": "1.0.0",
+  "tag": "v1.0.0",
+  "sourceCommit": "92b8fc22fc5d42ccba4cffba6d5de8fb53103e9c",
+  "releaseUrl": "https://github.com/martletdesign/jekyll/releases/tag/v1.0.0",
+  "releaseId": 432190561,
+  "immutable": false,
+  "sourceZipSha256": "de97e71a49f1a270c9b548b8fae10db2d8741ae77fecc9f01263e92097c33710",
+  "reviewedBytesMatched": true,
+  "sourceVerification": "Verified 201 exact standalone source files; advanced R2 archive remains disabled.",
+  "workflowRun": "https://github.com/martletdesign/jekyll/actions/runs/41563130314",
+  "assets": [
+    {
+      "name": "SHA256SUMS",
+      "bytes": 77,
+      "digest": "sha256:f2f0463162fc8009364961baca38c92a63b884dbc95c1d26f68c2ac2e1c83e30",
+      "url": "https://github.com/martletdesign/jekyll/releases/download/v1.0.0/SHA256SUMS"
+    },
+    {
+      "name": "source.zip",
+      "bytes": 775234,
+      "digest": "sha256:de97e71a49f1a270c9b548b8fae10db2d8741ae77fecc9f01263e92097c33710",
+      "url": "https://github.com/martletdesign/jekyll/releases/download/v1.0.0/source.zip"
+    }
+  ]
+}

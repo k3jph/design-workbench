@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "canonicalDomainsVerified": false,
+  "mode": "staging-verifier-package",
+  "files": [
+    {
+      "name": "README.md",
+      "sha256": "2f6a9bd8925c566efd9668b4ff3303778899ca0de4497f35a9254657ee55f6af",
+      "bytes": 1704
+    },
+    {
+      "name": "canonical-recipes.json",
+      "sha256": "b4229af42652c01601dbcb37d85b61418cd5961dedb6a327f43911ed58fca158",
+      "bytes": 1886
+    },
+    {
+      "name": "expectations.json",
+      "sha256": "9bec686b52a7d32882b9846b301cb2d83f117a163131a0a39c862db21acd06f5",
+      "bytes": 184018
+    },
+    {
+      "name": "krigsvold-jekyll-published-verification.json",
+      "sha256": "f2fecd2cdab063f12152fe51e5b4889a9545b988585ba043453849bb550cb604",
+      "bytes": 1104
+    },
+    {
+      "name": "martlet-jekyll-published-verification.json",
+      "sha256": "f87cb7343aad3040b752f457e6f99deb00a08dcb7230a7c7beec8561fbfdded0",
+      "bytes": 1094
+    },
+    {
+      "name": "staged-origins.json",
+      "sha256": "698e472de5e41f56e4d0d836473628be425def6d6d3f059089582aed69929068",
+      "bytes": 203
+    },
+    {
+      "name": "targets.json",
+      "sha256": "f4f8dedaa7b408116e445da8e2007d2f24dffe1c49fd79e96dc00c2f8fa464bf",
+      "bytes": 410
+    },
+    {
+      "name": "verify-live-sites.py",
+      "sha256": "6519e33f89b6698c0ee705414e21e9a835dd4573df0d30eb5b259d50f742c361",
+      "bytes": 43594
+    }
+  ]
+}

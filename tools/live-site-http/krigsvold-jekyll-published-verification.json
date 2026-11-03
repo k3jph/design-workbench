@@ -1,0 +1,27 @@
+{
+  "repository": "krigsvolddesign/jekyll",
+  "version": "1.0.0",
+  "tag": "v1.0.0",
+  "sourceCommit": "52df2775f9cd487b2b527032b99d4d7806fe52ea",
+  "releaseUrl": "https://github.com/krigsvolddesign/jekyll/releases/tag/v1.0.0",
+  "releaseId": 432194518,
+  "immutable": false,
+  "sourceZipSha256": "aac2f16d643a331f40d2a15ea3d4bfaf8ee64c96742fb28b7bb8620c64d58a17",
+  "reviewedBytesMatched": true,
+  "sourceVerification": "Verified 193 exact standalone source files; advanced R2 archive remains disabled.",
+  "workflowRun": "https://github.com/krigsvolddesign/jekyll/actions/runs/41563598378",
+  "assets": [
+    {
+      "name": "SHA256SUMS",
+      "bytes": 77,
+      "digest": "sha256:9fa4c900495b54b551a6677c81555e439803fbb42e9577e4f673c3fa15d85606",
+      "url": "https://github.com/krigsvolddesign/jekyll/releases/download/v1.0.0/SHA256SUMS"
+    },
+    {
+      "name": "source.zip",
+      "bytes": 781359,
+      "digest": "sha256:aac2f16d643a331f40d2a15ea3d4bfaf8ee64c96742fb28b7bb8620c64d58a17",
+      "url": "https://github.com/krigsvolddesign/jekyll/releases/download/v1.0.0/source.zip"
+    }
+  ]
+}
