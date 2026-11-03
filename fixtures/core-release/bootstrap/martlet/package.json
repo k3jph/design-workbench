@@ -1,0 +1,13 @@
+{
+  "name": "@martlet/core",
+  "version": "0.0.0-bootstrap.0",
+  "private": true,
+  "description": "Inert bootstrap sentinel; never approve as a release",
+  "license": "MIT",
+  "files": [
+    "README.md"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
