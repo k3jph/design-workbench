@@ -1,0 +1,5 @@
+--- a/dist/components.css
++++ b/dist/components.css
+@@ -23 +23 @@
+-.martlet-button { display: inline-flex; align-items: center; justify-content: center; gap: var(--martlet-space-2); min-block-size: var(--martlet-control-height); padding: var(--martlet-button-padding); border: var(--martlet-border-width) solid var(--martlet-accent); border-radius: var(--martlet-radius-control); background: var(--martlet-accent); color: var(--martlet-on-accent); font: 700 1rem var(--martlet-font-sans); text-decoration: none; transition: background-color var(--martlet-transition-ui), border-color var(--martlet-transition-ui); }
++.martlet-button { display: inline-flex; align-items: center; justify-content: center; gap: var(--martlet-space-2); min-block-size: var(--martlet-control-height); padding: var(--martlet-button-padding); border: var(--martlet-border-width) solid var(--martlet-accent); border-radius: var(--martlet-radius-control); background: var(--martlet-accent); color: var(--martlet-on-accent); font: 700 1rem var(--martlet-font-sans); text-decoration: none; transition: border-color var(--martlet-transition-ui); }

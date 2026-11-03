@@ -1,0 +1,295 @@
+name: Verify portable examples
+on:
+  pull_request:
+    paths: ['examples/**', 'packages/**', 'package.json', 'package-lock.json', 'playwright.dashboard.config.ts', '.github/workflows/jekyll-examples.yml']
+  push:
+    branches: [main]
+    paths: ['examples/**', 'packages/**', 'package.json', 'package-lock.json', 'playwright.dashboard.config.ts', '.github/workflows/jekyll-examples.yml']
+permissions:
+  contents: read
+jobs:
+  examples:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+      - run: npm ci --ignore-scripts
+      - name: Check canonical exports and portable contracts
+        run: |
+          python3 examples/page-archetypes/scripts/sync.py
+          git diff --exit-code -- examples/jekyll
+          python3 examples/page-archetypes/scripts/update-source-manifest.py --check
+          node examples/page-archetypes/scripts/verify.mjs
+          node --test examples/page-archetypes/tests/dashboard-model.test.mjs examples/page-archetypes/tests/catalog-date.test.mjs
+      - name: Install locked Jekyll dependencies
+        run: |
+          cd examples/jekyll/martlet && bundle install
+          cd ../krigsvold && bundle install
+      - name: Verify isolated source archive and site inputs
+        run: |
+          python3 examples/page-archetypes/tests/source-archive.test.py
+          node examples/page-archetypes/tests/event-time-parity.mjs
+          node examples/page-archetypes/tests/event-order-parity.mjs
+      - name: Build and verify root-hosted references
+        run: |
+          python3 examples/page-archetypes/scripts/build.py
+          python3 examples/page-archetypes/scripts/verify-html.py examples/jekyll/martlet/dist
+          python3 examples/page-archetypes/scripts/verify-html.py examples/jekyll/krigsvold/dist
+      - name: Build and verify subpath-hosted references
+        run: |
+          python3 examples/page-archetypes/scripts/build.py --family martlet --baseurl /preview --destination "$RUNNER_TEMP/martlet-subpath"
+          python3 examples/page-archetypes/scripts/verify-html.py "$RUNNER_TEMP/martlet-subpath" --baseurl /preview
+          python3 examples/page-archetypes/scripts/build.py --family krigsvold --baseurl /preview --destination "$RUNNER_TEMP/krigsvold-subpath"
+          python3 examples/page-archetypes/scripts/verify-html.py "$RUNNER_TEMP/krigsvold-subpath" --baseurl /preview
+      - name: Build paired application test fixtures
+        run: |
+          python3 examples/page-archetypes/scripts/build.py --family martlet --baseurl /martlet --destination "$GITHUB_WORKSPACE/dashboard-test-dist/martlet"
+          python3 examples/page-archetypes/scripts/build.py --family krigsvold --baseurl /krigsvold --destination "$GITHUB_WORKSPACE/dashboard-test-dist/krigsvold"
+      - name: Install browser for dashboard acceptance checks
+        run: npx playwright install --with-deps chromium
+      - name: Verify Jekyll search index serialization
+        run: npm run test:search-safety
+      - name: Verify paired dashboard behaviour, reflow, keyboard and accessibility
+        run: npx playwright test --config playwright.dashboard.config.ts
+      - name: Build React packages for portable examples
+        run: npm run build --workspaces
+      - name: Verify independent station and scene compositions
+        run: |
+          npm ci --prefix examples/astro-slice --ignore-scripts
+          npm --prefix examples/astro-slice run test:fixtures
+          node examples/page-archetypes/tests/simulation-composition.mjs
+          node examples/page-archetypes/tests/content-security.mjs
+          node examples/page-archetypes/tests/gallery-composition.mjs
+          node examples/page-archetypes/tests/chat-composition.mjs
+      - name: Verify multilingual long-content reflow across frameworks
+        env:
+          ASTRO_TELEMETRY_DISABLED: '1'
+        run: |
+          export NIGHTJAR_JEKYLL_ROOT="$RUNNER_TEMP/nightjar-i18n"
+          python3 examples/page-archetypes/scripts/build.py --family martlet --destination "$NIGHTJAR_JEKYLL_ROOT/martlet"
+          python3 examples/page-archetypes/scripts/build.py --family krigsvold --destination "$NIGHTJAR_JEKYLL_ROOT/krigsvold"
+          NIGHTJAR_FAMILY=martlet NIGHTJAR_BASE=/ npm --prefix examples/astro-slice run build
+          NIGHTJAR_FAMILY=krigsvold NIGHTJAR_BASE=/ npm --prefix examples/astro-slice run build
+          NIGHTJAR_FAMILY=martlet NIGHTJAR_BASE=/ node examples/react-catalog/build.mjs
+          NIGHTJAR_FAMILY=krigsvold NIGHTJAR_BASE=/ node examples/react-catalog/build.mjs
+          node examples/page-archetypes/tests/dashboard-framework-parity.mjs
+          node examples/page-archetypes/tests/content-semantic-inventory.mjs
+          node examples/page-archetypes/tests/axe-route-inventory.mjs
+          NIGHTJAR_AXE_APPEARANCE=dark node examples/page-archetypes/tests/axe-route-inventory.mjs
+          node examples/page-archetypes/tests/contrast-bounded.mjs
+          node examples/page-archetypes/tests/contrast-enable-transition.mjs
+          node examples/page-archetypes/tests/contrast-incomplete-evidence.test.mjs
+          node examples/page-archetypes/tests/dashboard-static-chart-data.mjs
+          node examples/page-archetypes/tests/zoom-reflow-equivalence.mjs
+          node examples/page-archetypes/tests/print-media-inventory.mjs
+          node examples/page-archetypes/tests/print-directory.mjs
+          node examples/page-archetypes/tests/print-disclosures.mjs
+          node examples/page-archetypes/tests/form-keyboard-parity.mjs
+          node examples/page-archetypes/tests/reading-framework-typography.mjs
+          node examples/page-archetypes/tests/card-action-parity.mjs
+          node examples/page-archetypes/tests/internationalization-stress.mjs
+          node examples/page-archetypes/tests/enlarged-text-motion.mjs
+          node examples/page-archetypes/tests/gallery-link-contract.mjs
+          node examples/page-archetypes/tests/dense-table-reflow.mjs
+          node examples/page-archetypes/tests/search-history-state.mjs
+          node examples/page-archetypes/tests/form-composition.mjs
+          node examples/page-archetypes/tests/workspace-composition.mjs
+          node examples/page-archetypes/tests/search-composition.mjs
+      - name: Verify real browser zoom with keyboard interactions
+        timeout-minutes: 6
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y xdotool xvfb xauth
+          NIGHTJAR_JEKYLL_ROOT="$RUNNER_TEMP/nightjar-i18n" xvfb-run -a --server-args="-screen 0 1280x900x24 -nolisten tcp" node examples/page-archetypes/tests/real-browser-zoom.mjs
+      - name: Verify large directory and duplicate-name controls
+        timeout-minutes: 10
+        env:
+          ASTRO_TELEMETRY_DISABLED: '1'
+        run: |
+          node examples/page-archetypes/tests/administration-duplicate-names.mjs
+          node examples/react-catalog/test-administration-large.mjs
+      # These suites rebuild their own root/subpath output, so run them after
+      # checks that consume the root-path builds above.
+      - name: Verify Astro and React source shells and React compositions
+        timeout-minutes: 10
+        env:
+          ASTRO_TELEMETRY_DISABLED: '1'
+        run: |
+          (cd examples/astro-slice && node test-source-shell.mjs)
+          node examples/react-catalog/test-source-shell.mjs
+          node examples/react-catalog/test-gallery.mjs
+          node examples/react-catalog/test-simulation.mjs
+          node examples/react-catalog/test-workspace-chat.mjs
+          node --test examples/page-archetypes/tests/thermal-model.test.mjs
+          node examples/react-catalog/test-scientific.mjs
+          node examples/page-archetypes/tests/scientific-ports.mjs
+      - name: Verify portable section navigation
+        timeout-minutes: 10
+        run: |
+          node examples/page-archetypes/tests/section-index-parity.mjs
+          node examples/page-archetypes/tests/breadcrumb-parity.mjs
+      - name: Verify portable download actions
+        timeout-minutes: 10
+        run: node examples/page-archetypes/tests/report-download.mjs
+      - name: Verify dashboard initialization failures
+        timeout-minutes: 10
+        run: node examples/page-archetypes/tests/dashboard-initialization.mjs
+      - name: Verify local form validity and recovery
+        timeout-minutes: 10
+        run: node examples/page-archetypes/tests/form-stale-validity.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: dashboard-browser-evidence
+          path: test-results/dashboards
+          if-no-files-found: ignore
+      - uses: actions/upload-artifact@v4
+        with:
+          name: jekyll-example-sites
+          path: |
+            examples/jekyll/martlet/dist
+            examples/jekyll/krigsvold/dist
+
+  # Exercise representative portable routes in the two engines not covered by
+  # the full Chromium example suite; do not repeat the large fixture matrix.
+  portable-browser-smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [firefox, webkit]
+    env:
+      NIGHTJAR_BROWSER: ${{ matrix.browser }}
+      ASTRO_TELEMETRY_DISABLED: '1'
+      BUNDLE_FROZEN: 'true'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+      - name: Install dependencies and build portable sites
+        run: |
+          export NIGHTJAR_JEKYLL_ROOT="$RUNNER_TEMP/portable-browser-jekyll"
+          npm ci --ignore-scripts
+          npm ci --prefix examples/astro-slice --ignore-scripts
+          (cd examples/jekyll/martlet && bundle install)
+          (cd examples/jekyll/krigsvold && bundle install)
+          python3 examples/page-archetypes/scripts/build.py --family martlet --destination "$NIGHTJAR_JEKYLL_ROOT/martlet"
+          python3 examples/page-archetypes/scripts/build.py --family krigsvold --destination "$NIGHTJAR_JEKYLL_ROOT/krigsvold"
+          NIGHTJAR_FAMILY=martlet NIGHTJAR_BASE=/ npm --prefix examples/astro-slice run build
+          NIGHTJAR_FAMILY=krigsvold NIGHTJAR_BASE=/ npm --prefix examples/astro-slice run build
+          npm run build --workspaces
+          NIGHTJAR_FAMILY=martlet NIGHTJAR_BASE=/ node examples/react-catalog/build.mjs
+          NIGHTJAR_FAMILY=krigsvold NIGHTJAR_BASE=/ node examples/react-catalog/build.mjs
+      - name: Use the Ubuntu archive for browser dependencies
+        run: |
+          if [ -f /etc/apt/apt-mirrors.txt ]; then
+            sudo sed -i 's|http://azure.archive.ubuntu.com/ubuntu|https://archive.ubuntu.com/ubuntu|g' /etc/apt/apt-mirrors.txt
+          fi
+      - name: Install the browser
+        timeout-minutes: 10
+        run: npx playwright install --with-deps "$NIGHTJAR_BROWSER"
+      - name: Check reading, forms, analytics and scientific workspace across portable frameworks
+        run: NIGHTJAR_JEKYLL_ROOT="$RUNNER_TEMP/portable-browser-jekyll" NIGHTJAR_CONTRAST_EVIDENCE="$RUNNER_TEMP/nightjar-ii-contrast-$NIGHTJAR_BROWSER" node examples/page-archetypes/tests/portable-browser-smoke.mjs
+      - name: Measure bounded contrast contexts and capture review evidence
+        run: NIGHTJAR_JEKYLL_ROOT="$RUNNER_TEMP/portable-browser-jekyll" NIGHTJAR_CONTRAST_SCREENSHOTS="$RUNNER_TEMP/nightjar-ii-contrast-$NIGHTJAR_BROWSER" node examples/page-archetypes/tests/contrast-bounded.mjs
+      - name: Upload contrast review evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: nightjar-ii-contrast-${{ matrix.browser }}
+          path: ${{ runner.temp }}/nightjar-ii-contrast-${{ matrix.browser }}/
+          if-no-files-found: ignore
+      - name: Check form validity recovery in the selected browser
+        timeout-minutes: 5
+        run: NIGHTJAR_TEST_PREBUILT=1 NIGHTJAR_JEKYLL_ROOT="$RUNNER_TEMP/portable-browser-jekyll" node examples/page-archetypes/tests/form-stale-validity.mjs
+
+  # Group the expensive isolated builds to bound parallelism and setup cost.
+  fixture-regressions:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        suite: [analytics-coverage, analytics-precision, operations-directory]
+    env:
+      ASTRO_TELEMETRY_DISABLED: '1'
+      BUNDLE_FROZEN: 'true'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+      - name: Install locked dependencies and build React workspaces
+        run: |
+          npm ci --ignore-scripts
+          npm ci --prefix examples/astro-slice --ignore-scripts
+          npm run build --workspaces
+          (cd examples/jekyll/martlet && bundle install)
+          (cd examples/jekyll/krigsvold && bundle install)
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Exercise isolated schema-valid fixtures
+        env:
+          NIGHTJAR_FIXTURE_SUITE: ${{ matrix.suite }}
+        run: |
+          case "$NIGHTJAR_FIXTURE_SUITE" in
+            analytics-coverage)
+              node examples/page-archetypes/tests/analytics-empty.mjs
+              node examples/page-archetypes/tests/catalog-structured-safety.mjs url
+              node examples/page-archetypes/tests/catalog-structured-safety.mjs date
+              node examples/page-archetypes/tests/catalog-structured-safety.mjs order
+              node examples/page-archetypes/tests/analytics-duplicates.mjs
+              node examples/page-archetypes/tests/analytics-calendar.mjs
+              node examples/page-archetypes/tests/analytics-calendar.mjs --month
+              node examples/page-archetypes/tests/dashboard-snapshot.mjs
+              node examples/page-archetypes/tests/dashboard-snapshot.mjs --invalid
+              node examples/page-archetypes/tests/analytics-sentinel.mjs
+              node examples/page-archetypes/tests/dashboard-text.mjs
+              node examples/page-archetypes/tests/analytics-order-static.mjs
+              node examples/page-archetypes/tests/analytics-sparse.mjs
+              node examples/page-archetypes/tests/analytics-sparse.mjs --gap
+              ;;
+            analytics-precision)
+              node examples/page-archetypes/tests/analytics-precision.mjs
+              node examples/page-archetypes/tests/analytics-precision.mjs --previous
+              node examples/page-archetypes/tests/analytics-precision.mjs --selection
+              ;;
+            operations-directory)
+              node examples/page-archetypes/tests/operations-order.mjs
+              node examples/page-archetypes/tests/operations-partial.mjs
+              node examples/page-archetypes/tests/operations-partial.mjs --disjoint
+              node examples/page-archetypes/tests/operations-invalid.mjs
+              node examples/page-archetypes/tests/operations-invalid.mjs --future
+              node examples/page-archetypes/tests/operations-calendar.mjs sample
+              node examples/page-archetypes/tests/operations-calendar.mjs snapshot
+              node examples/page-archetypes/tests/operations-calendar.mjs alert
+              node examples/page-archetypes/tests/operations-calendar.mjs activity
+              node examples/page-archetypes/tests/operations-calendar.mjs valid-snapshot
+              node examples/page-archetypes/tests/operations-text.mjs
+              node examples/page-archetypes/tests/operations-sentinel.mjs
+              node examples/page-archetypes/tests/operations-precision.mjs observation
+              node examples/page-archetypes/tests/operations-precision.mjs queue
+              node examples/page-archetypes/tests/operations-precision.mjs latency
+              node examples/page-archetypes/tests/operations-precision.mjs rounding
+              node examples/page-archetypes/tests/administration-identifiers.mjs
+              node examples/page-archetypes/tests/administration-email.mjs
+              node examples/page-archetypes/tests/administration-rapid.mjs
+              ;;
+            *) exit 1 ;;
+          esac

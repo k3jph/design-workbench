@@ -71,7 +71,7 @@
 .krigsvold-table-scroll { overflow:auto; max-inline-size:100%; }
 .krigsvold-table { border-collapse:collapse; inline-size:100%; text-align:start; font:.95rem/1.65 var(--krigsvold-font-sans); }
 .krigsvold-table caption { text-align:start; padding-block:0 1rem; color:var(--ui-muted); font-weight:700; }
-.krigsvold-table :where(th,td) { padding:.85rem .7rem; border-block-end:1px solid var(--ui-line); vertical-align:top; text-align:start; }
+.krigsvold-table :where(th,td) { min-inline-size:8rem; padding:.85rem .7rem; border-block-end:1px solid var(--ui-line); vertical-align:top; text-align:start; }
 .krigsvold-table thead th { color:var(--ui-heading);  }
 .krigsvold-table tr[data-selected="true"] { background:var(--krigsvold-active-bg); }
 .krigsvold-skip { position:fixed; inset-block-start:-5rem; inset-inline-start:1rem; z-index:2000; background:var(--ui-bg); color:var(--ui-text); padding:.75rem 1rem; font:700 1rem/1.5 var(--krigsvold-font-sans); }

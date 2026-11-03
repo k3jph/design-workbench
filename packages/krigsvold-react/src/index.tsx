@@ -2,6 +2,7 @@ import {
   useLayoutEffect,
   useId,
   useRef,
+  useState,
   type ReactNode,
   type ComponentPropsWithRef,
 } from "react";
@@ -50,19 +51,24 @@ export function Field({
   label,
   hint,
   error,
+  hintId: providedHintId,
+  errorId: providedErrorId,
   children,
 }: {
   id?: string;
   label: string;
   hint?: string;
   error?: string;
+  hintId?: string;
+  errorId?: string;
   children: (props: FieldControl) => ReactNode;
 }) {
   const generatedId = useId();
   const id = providedId ?? generatedId;
-  const descriptions =
-    [hint && `${id}-hint`, error && `${id}-error`].filter(Boolean).join(" ") ||
-    undefined;
+  // Description IDs belong to this Field, independent of a caller-supplied control ID.
+  const hintId = providedHintId ?? `${generatedId}-hint`;
+  const errorId = providedErrorId ?? `${generatedId}-error`;
+  const descriptions = [hint && hintId, error && errorId].filter(Boolean).join(" ") || undefined;
   return (
     <div className="krigsvold-field">
       <label htmlFor={id}>{label}</label>
@@ -72,12 +78,12 @@ export function Field({
         "aria-invalid": error ? true : undefined,
       })}
       {hint && (
-        <p id={`${id}-hint`} className="krigsvold-hint">
+        <p id={hintId} className="krigsvold-hint">
           {hint}
         </p>
       )}
       {error && (
-        <p id={`${id}-error`} className="krigsvold-error">
+        <p id={errorId} className="krigsvold-error">
           {error}
         </p>
       )}
@@ -170,18 +176,30 @@ export function Dialog({
   children: ReactNode;
 }) {
   const ref = useRef<HTMLDialogElement>(null);
+  const suppressedCloseEvents = useRef(0);
   const id = useId();
   useLayoutEffect(() => {
     const dialog = ref.current;
     if (!dialog) return;
     if (open && !dialog.open) dialog.showModal();
-    if (!open && dialog.open) dialog.close();
+    if (!open && dialog.open) {
+      // The close event is queued; distinguish prop-driven closes from native ones.
+      suppressedCloseEvents.current += 1;
+      dialog.close();
+    }
   }, [open]);
   return (
     <dialog
       className="krigsvold-dialog"
       ref={ref}
       aria-labelledby={id}
+      onClose={() => {
+        if (suppressedCloseEvents.current > 0) {
+          suppressedCloseEvents.current -= 1;
+        } else if (open && !ref.current?.open) {
+          onDismiss();
+        }
+      }}
       onCancel={(event) => {
         event.preventDefault();
         onDismiss();
@@ -293,10 +311,13 @@ export function ErrorSummary({
                 <a
                   href={`#${error.targetId}`}
                   onClick={(event) => {
-                    const target = document.getElementById(error.targetId!);
+                    if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+                    const owner = event.currentTarget.ownerDocument;
+                    const target = owner.getElementById(error.targetId!);
                     if (target) {
-                      event.preventDefault();
                       target.focus();
+                      // If focus cannot move, retain the link's native fragment navigation.
+                      if (owner.activeElement === target) event.preventDefault();
                     }
                   }}
                 >
@@ -446,6 +467,24 @@ export function Pagination({
   const current = Number.isFinite(page)
     ? Math.min(count, Math.max(1, Math.trunc(page)))
     : 1;
+  const previousRef = useRef<HTMLButtonElement>(null);
+  const nextRef = useRef<HTMLButtonElement>(null);
+  const focusedControl = useRef<"previous" | "next" | null>(null);
+  useLayoutEffect(() => {
+    if (disabled || count === 1) {
+      focusedControl.current = null;
+      return;
+    }
+    const owner = previousRef.current?.ownerDocument;
+    if (!owner) return;
+    const active = owner.activeElement;
+    if (active !== owner.body && active !== previousRef.current && active !== nextRef.current) {
+      focusedControl.current = null;
+      return;
+    }
+    if (focusedControl.current === "next" && current === count && current > 1) previousRef.current?.focus();
+    else if (focusedControl.current === "previous" && current === 1 && count > 1) nextRef.current?.focus();
+  }, [current, count, disabled]);
   return (
     <nav
       {...props}
@@ -453,6 +492,9 @@ export function Pagination({
       className={`krigsvold-pagination ${className}`}
     >
       <Button
+        ref={previousRef}
+        onFocus={() => { focusedControl.current = "previous"; }}
+        onBlur={(event) => { if (!event.currentTarget.disabled) focusedControl.current = null; }}
         variant="secondary"
         disabled={disabled || current === 1}
         onClick={() => onPageChange(current - 1)}
@@ -463,6 +505,9 @@ export function Pagination({
         Page {current} of {count}
       </p>
       <Button
+        ref={nextRef}
+        onFocus={() => { focusedControl.current = "next"; }}
+        onBlur={(event) => { if (!event.currentTarget.disabled) focusedControl.current = null; }}
         variant="secondary"
         disabled={disabled || current === count}
         onClick={() => onPageChange(current + 1)}
@@ -549,6 +594,7 @@ export function Tabs({
 }) {
   const generatedId = useId();
   const buttons = useRef<(HTMLButtonElement | null)[]>([]);
+  const [focusedId, setFocusedId] = useState<string | null>(null);
   const enabled = items
     .map((item, index) => (item.disabled ? -1 : index))
     .filter((index) => index >= 0);
@@ -556,12 +602,34 @@ export function Tabs({
     (item) => item.id === value && !item.disabled,
   );
   const active = selected >= 0 ? selected : (enabled[0] ?? -1);
+  const focused = items.findIndex((item) => item.id === focusedId && !item.disabled);
+  const tabStop = focused >= 0 ? focused : active;
+  const lastFocusedTab = useRef<HTMLButtonElement | null>(null);
+  useLayoutEffect(() => {
+    const previous = lastFocusedTab.current;
+    if (previous && (!previous.isConnected || previous.disabled)) {
+      lastFocusedTab.current = null;
+      const document = previous.ownerDocument;
+      if (document.hasFocus() && (document.activeElement === document.body || document.activeElement === previous)) {
+        buttons.current[active]?.focus();
+      }
+    }
+  });
   return (
     <div {...props} className={`krigsvold-tabs ${className}`}>
       <div
         role="tablist"
         aria-label={label}
         aria-orientation={orientation}
+        onBlur={(event) => {
+          if (!(event.relatedTarget instanceof Node) || !event.currentTarget.contains(event.relatedTarget)) {
+            setFocusedId(null);
+            const prior = lastFocusedTab.current;
+            // Keep the last tab only when React has just disabled or removed it;
+            // an ordinary blur, including a move to outside content, clears it.
+            if (event.relatedTarget || !prior || (prior.isConnected && !prior.disabled)) lastFocusedTab.current = null;
+          }
+        }}
         onKeyDown={(event) => {
           const target = (event.target as HTMLElement).closest('[role="tab"]');
           const index = buttons.current.findIndex(
@@ -599,8 +667,9 @@ export function Tabs({
             id={`${generatedId}-tab-${index}`}
             aria-controls={`${generatedId}-panel-${index}`}
             aria-selected={index === active}
-            tabIndex={index === active ? 0 : -1}
+            tabIndex={index === tabStop ? 0 : -1}
             disabled={item.disabled}
+            onFocus={(event) => { lastFocusedTab.current = event.currentTarget; setFocusedId(item.id); }}
             onClick={() => onValueChange(item.id)}
           >
             {item.label}

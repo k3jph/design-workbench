@@ -225,6 +225,12 @@ for (const family of ["martlet", "krigsvold"]) {
     recursive: true,
   });
   await cp("LICENSE", `${dir}/LICENSE`);
+  // Use the locked dependency set for the generated manifest as well, so the
+  // install contract cannot silently drift from the audited archive lockfile.
+  const lock = JSON.parse(await readFile("mcp/agent-lock.json", "utf8"));
+  const dependencies = lock.packages?.[""]?.dependencies;
+  if (!dependencies || typeof dependencies !== "object")
+    throw new Error("Agent lockfile is missing root dependencies");
   await writeFile(
     `${dir}/package.json`,
     JSON.stringify(
@@ -235,13 +241,12 @@ for (const family of ["martlet", "krigsvold"]) {
         type: "module",
         license: "MIT",
         engines: { node: ">=24.19.0 <25" },
-        dependencies: { "@modelcontextprotocol/server": "2.3.1", zod: "4.3.6" },
+        dependencies,
       },
       null,
       2,
     ) + "\n",
   );
-  const lock = JSON.parse(await readFile("mcp/agent-lock.json", "utf8"));
   lock.name = `${family}-design-language-mcp`;
   lock.packages[""].name = lock.name;
   await writeFile(

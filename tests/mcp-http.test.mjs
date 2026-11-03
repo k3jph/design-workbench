@@ -40,3 +40,27 @@ test('HTTP rejects unrelated browser origins and oversized bodies before tool ex
     for(const origin of ['https://claude.ai','https://martletdesign.dev','https://martlettheme.dev']) assert.equal((await handler.fetch(new Request('https://language.test/mcp',{method:'OPTIONS',headers:{Origin:origin}}))).status,204);
   } finally {await handler.close();}
 });
+for(const family of ['martlet','krigsvold']) test(`${family}: initialization rejects pathological icon validation while preserving bounded valid requests`,async()=>{
+  const catalog=JSON.parse(await readFile(`mcp/catalogs/${family}.json`,'utf8'));
+  const handler=createLanguageHttp(catalog);
+  const headers={'Content-Type':'application/json',Accept:'application/json, text/event-stream',Origin:'https://chatgpt.com'};
+  const initialize=(clientInfo)=>({jsonrpc:'2.0',id:42,method:'initialize',params:{protocolVersion:'2025-06-18',capabilities:{},clientInfo:{name:'bounded-test',version:'1',...clientInfo}}});
+  const send=body=>handler.fetch(new Request('https://language.test/mcp',{method:'POST',headers,body:JSON.stringify(body)}));
+  try {
+    for(const clientInfo of [{icons:Array(10000).fill(0)},{icons:[{src:'https://example.test/icon.png',sizes:Array(10000).fill(0)}]}]) {
+      const payload=initialize(clientInfo);assert.ok(Buffer.byteLength(JSON.stringify(payload))<32768);
+      const response=await send(payload),text=await response.text();
+      assert.equal(response.status,400);assert.ok(Buffer.byteLength(text)<1024,'invalid initialization response must remain bounded');
+      assert.equal(response.headers.get('access-control-allow-origin'),'https://chatgpt.com');
+      const json=JSON.parse(text);assert.equal(json.jsonrpc,'2.0');assert.equal(json.id,42);assert.equal(json.error.code,-32600);
+    }
+    const batch=Array.from({length:65},()=>initialize({icons:[0,0]}));
+    const batchResponse=await send(batch),batchText=await batchResponse.text();assert.equal(batchResponse.status,400);assert.ok(batchText.length<1024);const batchError=JSON.parse(batchText);assert.equal(batchError.length,1);assert.equal(batchError[0].id,null);assert.equal(batchError[0].error.code,-32600);
+    const valid=initialize({description:'x'.repeat(18000),icons:Array.from({length:120},()=>({src:'https://example.test/icon.png',sizes:['32x32','64x64']}))});
+    assert.ok(Buffer.byteLength(JSON.stringify(valid))<32768);
+    const response=await send(valid);assert.equal(response.status,200);const text=await response.text();assert.match(text,/protocolVersion/);
+    const malformed=await send(initialize({icons:[0]}));assert.match(await malformed.text(),/"error"/,'an invalid short input must still be rejected');
+    const stream=new ReadableStream({start(controller){controller.enqueue(new TextEncoder().encode('x'.repeat(32769)));controller.close();}});
+    const oversized=await handler.fetch(new Request('https://language.test/mcp',{method:'POST',headers,body:stream,duplex:'half'}));assert.equal(oversized.status,413);
+  } finally {await handler.close();}
+});

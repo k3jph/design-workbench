@@ -1,0 +1,1326 @@
+{
+  "source": "https://github.com/k3jph/design-workbench/actions/runs/40988368952",
+  "candidate": "5138a89fc2956d9019d5bd720c987b8b9e24533b",
+  "note": "Exact target arrays from hosted axe incomplete output; a scan is not one target. Incomplete means manual review, not a passing result. Identical rule-and-target arrays are deduplicated; each scan references its complete target group.",
+  "scans": [
+    {
+      "engine": "firefox",
+      "timestamp": "2026-10-30T01:53:42.5684364Z",
+      "family": "martlet",
+      "framework": "jekyll",
+      "appearance": "light",
+      "state": "article",
+      "target_group": "targets-01"
+    },
+    {
+      "engine": "firefox",
+      "timestamp": "2026-10-30T01:53:45.2077234Z",
+      "family": "martlet",
+      "framework": "jekyll",
+      "appearance": "light",
+      "state": "validated sign-in",
+      "target_group": "targets-02"
+    },
+    {
+      "engine": "firefox",
+      "timestamp": "2026-10-30T01:53:46.6739343Z",
+      "family": "martlet",
+      "framework": "jekyll",
+      "appearance": "light",
+      "state": "filtered analytics with chart data open",
+      "target_group": "targets-03"
+    },
+    {
+      "engine": "firefox",
+      "timestamp": "2026-10-30T01:53:48.3234393Z",
+      "family": "martlet",
+      "framework": "jekyll",
+      "appearance": "light",
+      "state": "scientific calculation after validation and recovery",
+      "target_group": "targets-04"
+    },
+    {
+      "engine": "firefox",
+      "timestamp": "2026-10-30T01:53:52.3233705Z",
+      "family": "martlet",
+      "framework": "jekyll",
+      "appearance": "dark",
+      "state": "filtered analytics with chart data open",
+      "target_group": "targets-03"
+    },
+    {
+      "engine": "firefox",
+      "timestamp": "2026-10-30T01:53:58.7452570Z",
+      "family": "martlet",
+      "framework": "astro",
+      "appearance": "light",
+      "state": "filtered analytics with chart data open",
+      "target_group": "targets-05"
+    },
+    {
+      "engine": "firefox",
+      "timestamp": "2026-10-30T01:54:04.0128289Z",
+      "family": "martlet",
+      "framework": "astro",
+      "appearance": "dark",
+      "state": "filtered analytics with chart data open",
+      "target_group": "targets-05"
+    },
+    {
+      "engine": "firefox",
+      "timestamp": "2026-10-30T01:54:10.3097994Z",
+      "family": "martlet",
+      "framework": "react",
+      "appearance": "light",
+      "state": "filtered analytics with chart data open",
+      "target_group": "targets-06"
+    },
+    {
+      "engine": "firefox",
+      "timestamp": "2026-10-30T01:54:16.9336508Z",
+      "family": "martlet",
+      "framework": "react",
+      "appearance": "dark",
+      "state": "filtered analytics with chart data open",
+      "target_group": "targets-06"
+    },
+    {
+      "engine": "firefox",
+      "timestamp": "2026-10-30T01:54:19.3265088Z",
+      "family": "krigsvold",
+      "framework": "jekyll",
+      "appearance": "light",
+      "state": "article",
+      "target_group": "targets-07"
+    },
+    {
+      "engine": "firefox",
+      "timestamp": "2026-10-30T01:54:21.9544558Z",
+      "family": "krigsvold",
+      "framework": "jekyll",
+      "appearance": "light",
+      "state": "validated sign-in",
+      "target_group": "targets-08"
+    },
+    {
+      "engine": "firefox",
+      "timestamp": "2026-10-30T01:54:23.4693221Z",
+      "family": "krigsvold",
+      "framework": "jekyll",
+      "appearance": "light",
+      "state": "filtered analytics with chart data open",
+      "target_group": "targets-09"
+    },
+    {
+      "engine": "firefox",
+      "timestamp": "2026-10-30T01:54:25.0532858Z",
+      "family": "krigsvold",
+      "framework": "jekyll",
+      "appearance": "light",
+      "state": "scientific calculation after validation and recovery",
+      "target_group": "targets-10"
+    },
+    {
+      "engine": "firefox",
+      "timestamp": "2026-10-30T01:54:28.9298592Z",
+      "family": "krigsvold",
+      "framework": "jekyll",
+      "appearance": "dark",
+      "state": "filtered analytics with chart data open",
+      "target_group": "targets-09"
+    },
+    {
+      "engine": "firefox",
+      "timestamp": "2026-10-30T01:54:35.3298114Z",
+      "family": "krigsvold",
+      "framework": "astro",
+      "appearance": "light",
+      "state": "filtered analytics with chart data open",
+      "target_group": "targets-11"
+    },
+    {
+      "engine": "firefox",
+      "timestamp": "2026-10-30T01:54:40.4712530Z",
+      "family": "krigsvold",
+      "framework": "astro",
+      "appearance": "dark",
+      "state": "filtered analytics with chart data open",
+      "target_group": "targets-11"
+    },
+    {
+      "engine": "firefox",
+      "timestamp": "2026-10-30T01:54:48.3529995Z",
+      "family": "krigsvold",
+      "framework": "react",
+      "appearance": "light",
+      "state": "filtered analytics with chart data open",
+      "target_group": "targets-12"
+    },
+    {
+      "engine": "firefox",
+      "timestamp": "2026-10-30T01:54:53.5147861Z",
+      "family": "krigsvold",
+      "framework": "react",
+      "appearance": "dark",
+      "state": "filtered analytics with chart data open",
+      "target_group": "targets-12"
+    },
+    {
+      "engine": "webkit",
+      "timestamp": "2026-10-30T01:54:35.5673275Z",
+      "family": "martlet",
+      "framework": "jekyll",
+      "appearance": "light",
+      "state": "article",
+      "target_group": "targets-01"
+    },
+    {
+      "engine": "webkit",
+      "timestamp": "2026-10-30T01:54:38.7118830Z",
+      "family": "martlet",
+      "framework": "jekyll",
+      "appearance": "light",
+      "state": "validated sign-in",
+      "target_group": "targets-02"
+    },
+    {
+      "engine": "webkit",
+      "timestamp": "2026-10-30T01:54:41.6252167Z",
+      "family": "martlet",
+      "framework": "jekyll",
+      "appearance": "light",
+      "state": "filtered analytics with chart data open",
+      "target_group": "targets-03"
+    },
+    {
+      "engine": "webkit",
+      "timestamp": "2026-10-30T01:54:44.2018020Z",
+      "family": "martlet",
+      "framework": "jekyll",
+      "appearance": "light",
+      "state": "scientific calculation after validation and recovery",
+      "target_group": "targets-04"
+    },
+    {
+      "engine": "webkit",
+      "timestamp": "2026-10-30T01:54:48.7140682Z",
+      "family": "martlet",
+      "framework": "jekyll",
+      "appearance": "dark",
+      "state": "filtered analytics with chart data open",
+      "target_group": "targets-03"
+    },
+    {
+      "engine": "webkit",
+      "timestamp": "2026-10-30T01:54:55.7944174Z",
+      "family": "martlet",
+      "framework": "astro",
+      "appearance": "light",
+      "state": "filtered analytics with chart data open",
+      "target_group": "targets-05"
+    },
+    {
+      "engine": "webkit",
+      "timestamp": "2026-10-30T01:55:01.6584560Z",
+      "family": "martlet",
+      "framework": "astro",
+      "appearance": "dark",
+      "state": "filtered analytics with chart data open",
+      "target_group": "targets-05"
+    },
+    {
+      "engine": "webkit",
+      "timestamp": "2026-10-30T01:55:08.7324597Z",
+      "family": "martlet",
+      "framework": "react",
+      "appearance": "light",
+      "state": "filtered analytics with chart data open",
+      "target_group": "targets-06"
+    },
+    {
+      "engine": "webkit",
+      "timestamp": "2026-10-30T01:55:14.6656279Z",
+      "family": "martlet",
+      "framework": "react",
+      "appearance": "dark",
+      "state": "filtered analytics with chart data open",
+      "target_group": "targets-06"
+    },
+    {
+      "engine": "webkit",
+      "timestamp": "2026-10-30T01:55:18.3576156Z",
+      "family": "krigsvold",
+      "framework": "jekyll",
+      "appearance": "light",
+      "state": "article",
+      "target_group": "targets-07"
+    },
+    {
+      "engine": "webkit",
+      "timestamp": "2026-10-30T01:55:21.5377071Z",
+      "family": "krigsvold",
+      "framework": "jekyll",
+      "appearance": "light",
+      "state": "validated sign-in",
+      "target_group": "targets-08"
+    },
+    {
+      "engine": "webkit",
+      "timestamp": "2026-10-30T01:55:23.3253799Z",
+      "family": "krigsvold",
+      "framework": "jekyll",
+      "appearance": "light",
+      "state": "filtered analytics with chart data open",
+      "target_group": "targets-09"
+    },
+    {
+      "engine": "webkit",
+      "timestamp": "2026-10-30T01:55:25.4045285Z",
+      "family": "krigsvold",
+      "framework": "jekyll",
+      "appearance": "light",
+      "state": "scientific calculation after validation and recovery",
+      "target_group": "targets-10"
+    },
+    {
+      "engine": "webkit",
+      "timestamp": "2026-10-30T01:55:30.0581750Z",
+      "family": "krigsvold",
+      "framework": "jekyll",
+      "appearance": "dark",
+      "state": "filtered analytics with chart data open",
+      "target_group": "targets-09"
+    },
+    {
+      "engine": "webkit",
+      "timestamp": "2026-10-30T01:55:37.0444880Z",
+      "family": "krigsvold",
+      "framework": "astro",
+      "appearance": "light",
+      "state": "filtered analytics with chart data open",
+      "target_group": "targets-11"
+    },
+    {
+      "engine": "webkit",
+      "timestamp": "2026-10-30T01:55:42.7821899Z",
+      "family": "krigsvold",
+      "framework": "astro",
+      "appearance": "dark",
+      "state": "filtered analytics with chart data open",
+      "target_group": "targets-11"
+    },
+    {
+      "engine": "webkit",
+      "timestamp": "2026-10-30T01:55:49.8941686Z",
+      "family": "krigsvold",
+      "framework": "react",
+      "appearance": "light",
+      "state": "filtered analytics with chart data open",
+      "target_group": "targets-12"
+    },
+    {
+      "engine": "webkit",
+      "timestamp": "2026-10-30T01:55:55.8504953Z",
+      "family": "krigsvold",
+      "framework": "react",
+      "appearance": "dark",
+      "state": "filtered analytics with chart data open",
+      "target_group": "targets-12"
+    }
+  ],
+  "target_groups": {
+    "targets-01": [
+      {
+        "id": "color-contrast",
+        "targets": [
+          [
+            ".brand > span"
+          ],
+          [
+            ".menu-button"
+          ],
+          [
+            ".page-intro__content > .eyebrow"
+          ],
+          [
+            "#page-title"
+          ],
+          [
+            "p:nth-child(3)"
+          ],
+          [
+            ".masthead-metadata"
+          ],
+          [
+            "time"
+          ]
+        ]
+      }
+    ],
+    "targets-02": [
+      {
+        "id": "color-contrast",
+        "targets": [
+          [
+            ".page-intro__content > .eyebrow"
+          ],
+          [
+            "#page-title"
+          ],
+          [
+            ".page-intro__content > p:nth-child(3)"
+          ]
+        ]
+      }
+    ],
+    "targets-03": [
+      {
+        "id": "color-contrast",
+        "targets": [
+          [
+            "div[data-chart=\"sessions\"] > svg > text[y=\"122\"][x=\"40\"][text-anchor=\"end\"]"
+          ],
+          [
+            "text[y=\"88.66666666666666\"]"
+          ],
+          [
+            "text[y=\"55.33333333333333\"]"
+          ],
+          [
+            "text[y=\"22.000000000000014\"]"
+          ],
+          [
+            "div[data-chart=\"sessions\"] > svg > text[x=\"48\"][text-anchor=\"start\"][y=\"146\"]"
+          ],
+          [
+            "div[data-chart=\"sessions\"] > svg > text[x=\"272\"][y=\"146\"][text-anchor=\"end\"]"
+          ],
+          [
+            "div[data-chart=\"downloads\"] > svg > text[y=\"122\"][x=\"40\"][text-anchor=\"end\"]"
+          ],
+          [
+            "text[y=\"88.66666666666667\"]"
+          ],
+          [
+            "text[y=\"55.33333333333334\"]"
+          ],
+          [
+            "div[data-chart=\"downloads\"] > svg > text[y=\"22\"][x=\"40\"][text-anchor=\"end\"]"
+          ],
+          [
+            "div[data-chart=\"downloads\"] > svg > text[x=\"48\"][text-anchor=\"start\"][y=\"146\"]"
+          ],
+          [
+            "div[data-chart=\"downloads\"] > svg > text[x=\"272\"][y=\"146\"][text-anchor=\"end\"]"
+          ],
+          [
+            "text[y=\"112\"]"
+          ],
+          [
+            "text[y=\"82\"]"
+          ],
+          [
+            "text[y=\"52\"]"
+          ],
+          [
+            "div[data-chart=\"categories\"] > svg > text[y=\"22\"][x=\"40\"][text-anchor=\"end\"]"
+          ],
+          [
+            "text[x=\"160\"]"
+          ]
+        ]
+      }
+    ],
+    "targets-04": [
+      {
+        "id": "color-contrast",
+        "targets": [
+          [
+            ".eyebrow"
+          ],
+          [
+            "#page-title"
+          ],
+          [
+            ".page-intro__content > p:nth-child(3)"
+          ]
+        ]
+      }
+    ],
+    "targets-05": [
+      {
+        "id": "color-contrast",
+        "targets": [
+          [
+            "div[data-chart=\"sessions\"] > svg > text[y=\"122\"][x=\"40\"][text-anchor=\"end\"]"
+          ],
+          [
+            "text[y=\"88.66666666666666\"]"
+          ],
+          [
+            "text[y=\"55.33333333333333\"]"
+          ],
+          [
+            "text[y=\"22.000000000000014\"]"
+          ],
+          [
+            "div[data-chart=\"sessions\"] > svg > text[x=\"48\"][text-anchor=\"start\"][y=\"146\"]"
+          ],
+          [
+            "div[data-chart=\"sessions\"] > svg > text[x=\"272\"][y=\"146\"][text-anchor=\"end\"]"
+          ],
+          [
+            "div[data-chart=\"downloads\"] > svg > text[y=\"122\"][x=\"40\"][text-anchor=\"end\"]"
+          ],
+          [
+            "text[y=\"88.66666666666667\"]"
+          ],
+          [
+            "text[y=\"55.33333333333334\"]"
+          ],
+          [
+            "div[data-chart=\"downloads\"] > svg > text[y=\"22\"][x=\"40\"][text-anchor=\"end\"]"
+          ],
+          [
+            "div[data-chart=\"downloads\"] > svg > text[x=\"48\"][text-anchor=\"start\"][y=\"146\"]"
+          ],
+          [
+            "div[data-chart=\"downloads\"] > svg > text[x=\"272\"][y=\"146\"][text-anchor=\"end\"]"
+          ],
+          [
+            "text[y=\"112\"]"
+          ],
+          [
+            "text[y=\"82\"]"
+          ],
+          [
+            "text[y=\"52\"]"
+          ],
+          [
+            "div[data-chart=\"categories\"] > svg > text[y=\"22\"][x=\"40\"][text-anchor=\"end\"]"
+          ],
+          [
+            "text[x=\"160\"]"
+          ],
+          [
+            "#analytics-source > caption"
+          ],
+          [
+            "#analytics-source > tbody > tr:nth-child(1) > td:nth-child(3)"
+          ],
+          [
+            "tr:nth-child(1) > td:nth-child(4)"
+          ],
+          [
+            "tr:nth-child(1) > td:nth-child(5)"
+          ],
+          [
+            "tr:nth-child(2) > td:nth-child(3)"
+          ],
+          [
+            "tr:nth-child(2) > td:nth-child(4)"
+          ],
+          [
+            "tr:nth-child(2) > td:nth-child(5)"
+          ],
+          [
+            "tr:nth-child(3) > td:nth-child(3)"
+          ],
+          [
+            "tr:nth-child(3) > td:nth-child(4)"
+          ],
+          [
+            "tr:nth-child(3) > td:nth-child(5)"
+          ],
+          [
+            "tr:nth-child(4) > td:nth-child(3)"
+          ],
+          [
+            "tr:nth-child(4) > td:nth-child(4)"
+          ],
+          [
+            "tr:nth-child(4) > td:nth-child(5)"
+          ],
+          [
+            "tr:nth-child(5) > td:nth-child(3)"
+          ],
+          [
+            "tr:nth-child(5) > td:nth-child(4)"
+          ],
+          [
+            "tr:nth-child(5) > td:nth-child(5)"
+          ],
+          [
+            "tr:nth-child(6) > td:nth-child(3)"
+          ],
+          [
+            "tr:nth-child(6) > td:nth-child(4)"
+          ],
+          [
+            "tr:nth-child(6) > td:nth-child(5)"
+          ],
+          [
+            "tr:nth-child(7) > td:nth-child(3)"
+          ],
+          [
+            "tr:nth-child(7) > td:nth-child(4)"
+          ],
+          [
+            "tr:nth-child(7) > td:nth-child(5)"
+          ],
+          [
+            "tr:nth-child(8) > td:nth-child(3)"
+          ],
+          [
+            "tr:nth-child(8) > td:nth-child(4)"
+          ],
+          [
+            "tr:nth-child(8) > td:nth-child(5)"
+          ],
+          [
+            "tr:nth-child(9) > td:nth-child(3)"
+          ],
+          [
+            "tr:nth-child(9) > td:nth-child(4)"
+          ],
+          [
+            "tr:nth-child(9) > td:nth-child(5)"
+          ],
+          [
+            "tr:nth-child(10) > td:nth-child(3)"
+          ],
+          [
+            "tr:nth-child(10) > td:nth-child(4)"
+          ],
+          [
+            "tr:nth-child(10) > td:nth-child(5)"
+          ],
+          [
+            "tr:nth-child(11) > td:nth-child(3)"
+          ],
+          [
+            "tr:nth-child(11) > td:nth-child(4)"
+          ],
+          [
+            "tr:nth-child(11) > td:nth-child(5)"
+          ],
+          [
+            "tr:nth-child(12) > td:nth-child(3)"
+          ],
+          [
+            "tr:nth-child(12) > td:nth-child(4)"
+          ],
+          [
+            "tr:nth-child(12) > td:nth-child(5)"
+          ],
+          [
+            "tr:nth-child(13) > td:nth-child(3)"
+          ],
+          [
+            "tr:nth-child(13) > td:nth-child(4)"
+          ],
+          [
+            "tr:nth-child(13) > td:nth-child(5)"
+          ],
+          [
+            "tr:nth-child(14) > td:nth-child(3)"
+          ],
+          [
+            "tr:nth-child(14) > td:nth-child(4)"
+          ],
+          [
+            "tr:nth-child(14) > td:nth-child(5)"
+          ]
+        ]
+      }
+    ],
+    "targets-06": [
+      {
+        "id": "color-contrast",
+        "targets": [
+          [
+            ".ra-chart--sessions > .ra-plot[data-ready=\"true\"] > svg > g:nth-child(2) > text[y=\"122\"][x=\"40\"][text-anchor=\"end\"]"
+          ],
+          [
+            "text[y=\"88.66666666666666\"]"
+          ],
+          [
+            "text[y=\"55.33333333333333\"]"
+          ],
+          [
+            "text[y=\"22.000000000000014\"]"
+          ],
+          [
+            ".ra-chart--sessions > .ra-plot[data-ready=\"true\"] > svg > g:nth-child(7) > text[x=\"48\"][text-anchor=\"start\"][y=\"146\"]"
+          ],
+          [
+            ".ra-chart--sessions > .ra-plot[data-ready=\"true\"] > svg > g:nth-child(20) > text[x=\"272\"][y=\"146\"][text-anchor=\"end\"]"
+          ],
+          [
+            ".ra-chart--downloads > .ra-plot[data-ready=\"true\"] > svg > g:nth-child(2) > text[y=\"122\"][x=\"40\"][text-anchor=\"end\"]"
+          ],
+          [
+            "text[y=\"88.66666666666667\"]"
+          ],
+          [
+            "text[y=\"55.33333333333334\"]"
+          ],
+          [
+            ".ra-chart--downloads > .ra-plot[data-ready=\"true\"] > svg > g:nth-child(5) > text[y=\"22\"][x=\"40\"][text-anchor=\"end\"]"
+          ],
+          [
+            ".ra-chart--downloads > .ra-plot[data-ready=\"true\"] > svg > g:nth-child(7) > text[x=\"48\"][text-anchor=\"start\"][y=\"146\"]"
+          ],
+          [
+            ".ra-chart--downloads > .ra-plot[data-ready=\"true\"] > svg > g:nth-child(20) > text[x=\"272\"][y=\"146\"][text-anchor=\"end\"]"
+          ],
+          [
+            "text[y=\"112\"]"
+          ],
+          [
+            "text[y=\"82\"]"
+          ],
+          [
+            "text[y=\"52\"]"
+          ],
+          [
+            ".ra-chart--categories > .ra-plot[data-ready=\"true\"] > svg > g:nth-child(5) > text[y=\"22\"][x=\"40\"][text-anchor=\"end\"]"
+          ],
+          [
+            "text[x=\"160\"]"
+          ],
+          [
+            "#analytics-source > caption"
+          ],
+          [
+            "#analytics-source > tbody > tr:nth-child(1) > td:nth-child(3)"
+          ],
+          [
+            "tr:nth-child(1) > td:nth-child(4)"
+          ],
+          [
+            "tr:nth-child(1) > td:nth-child(5)"
+          ],
+          [
+            "tr:nth-child(2) > td:nth-child(3)"
+          ],
+          [
+            "tr:nth-child(2) > td:nth-child(4)"
+          ],
+          [
+            "tr:nth-child(2) > td:nth-child(5)"
+          ],
+          [
+            "tr:nth-child(3) > td:nth-child(3)"
+          ],
+          [
+            "tr:nth-child(3) > td:nth-child(4)"
+          ],
+          [
+            "tr:nth-child(3) > td:nth-child(5)"
+          ],
+          [
+            "tr:nth-child(4) > td:nth-child(3)"
+          ],
+          [
+            "tr:nth-child(4) > td:nth-child(4)"
+          ],
+          [
+            "tr:nth-child(4) > td:nth-child(5)"
+          ],
+          [
+            "tr:nth-child(5) > td:nth-child(3)"
+          ],
+          [
+            "tr:nth-child(5) > td:nth-child(4)"
+          ],
+          [
+            "tr:nth-child(5) > td:nth-child(5)"
+          ],
+          [
+            "tr:nth-child(6) > td:nth-child(3)"
+          ],
+          [
+            "tr:nth-child(6) > td:nth-child(4)"
+          ],
+          [
+            "tr:nth-child(6) > td:nth-child(5)"
+          ],
+          [
+            "tr:nth-child(7) > td:nth-child(3)"
+          ],
+          [
+            "tr:nth-child(7) > td:nth-child(4)"
+          ],
+          [
+            "tr:nth-child(7) > td:nth-child(5)"
+          ],
+          [
+            "tr:nth-child(8) > td:nth-child(3)"
+          ],
+          [
+            "tr:nth-child(8) > td:nth-child(4)"
+          ],
+          [
+            "tr:nth-child(8) > td:nth-child(5)"
+          ],
+          [
+            "tr:nth-child(9) > td:nth-child(3)"
+          ],
+          [
+            "tr:nth-child(9) > td:nth-child(4)"
+          ],
+          [
+            "tr:nth-child(9) > td:nth-child(5)"
+          ],
+          [
+            "tr:nth-child(10) > td:nth-child(3)"
+          ],
+          [
+            "tr:nth-child(10) > td:nth-child(4)"
+          ],
+          [
+            "tr:nth-child(10) > td:nth-child(5)"
+          ],
+          [
+            "tr:nth-child(11) > td:nth-child(3)"
+          ],
+          [
+            "tr:nth-child(11) > td:nth-child(4)"
+          ],
+          [
+            "tr:nth-child(11) > td:nth-child(5)"
+          ],
+          [
+            "tr:nth-child(12) > td:nth-child(3)"
+          ],
+          [
+            "tr:nth-child(12) > td:nth-child(4)"
+          ],
+          [
+            "tr:nth-child(12) > td:nth-child(5)"
+          ],
+          [
+            "tr:nth-child(13) > td:nth-child(3)"
+          ],
+          [
+            "tr:nth-child(13) > td:nth-child(4)"
+          ],
+          [
+            "tr:nth-child(13) > td:nth-child(5)"
+          ],
+          [
+            "tr:nth-child(14) > td:nth-child(3)"
+          ],
+          [
+            "tr:nth-child(14) > td:nth-child(4)"
+          ],
+          [
+            "tr:nth-child(14) > td:nth-child(5)"
+          ]
+        ]
+      }
+    ],
+    "targets-07": [
+      {
+        "id": "color-contrast",
+        "targets": [
+          [
+            ".navbar-brand > span"
+          ],
+          [
+            ".col-lg-9 > .eyebrow"
+          ],
+          [
+            "#page-title"
+          ],
+          [
+            "p:nth-child(3)"
+          ],
+          [
+            ".masthead-metadata"
+          ],
+          [
+            "time"
+          ],
+          [
+            "a[href$=\"categories/\"]:nth-child(1)"
+          ],
+          [
+            "a[href$=\"categories/\"]:nth-child(2)"
+          ]
+        ]
+      }
+    ],
+    "targets-08": [
+      {
+        "id": "color-contrast",
+        "targets": [
+          [
+            ".navbar-brand > span"
+          ],
+          [
+            ".col-lg-9 > .eyebrow"
+          ],
+          [
+            "#page-title"
+          ],
+          [
+            ".col-lg-9 > p:nth-child(3)"
+          ]
+        ]
+      }
+    ],
+    "targets-09": [
+      {
+        "id": "color-contrast",
+        "targets": [
+          [
+            "div[data-chart=\"sessions\"] > svg > text[y=\"122\"][x=\"40\"][text-anchor=\"end\"]"
+          ],
+          [
+            "text[y=\"88.66666666666666\"]"
+          ],
+          [
+            "text[y=\"55.33333333333333\"]"
+          ],
+          [
+            "text[y=\"22.000000000000014\"]"
+          ],
+          [
+            "div[data-chart=\"sessions\"] > svg > text[x=\"48\"][text-anchor=\"start\"][y=\"146\"]"
+          ],
+          [
+            "div[data-chart=\"sessions\"] > svg > text[x=\"238\"][y=\"146\"][text-anchor=\"end\"]"
+          ],
+          [
+            "div[data-chart=\"downloads\"] > svg > text[y=\"122\"][x=\"40\"][text-anchor=\"end\"]"
+          ],
+          [
+            "text[y=\"88.66666666666667\"]"
+          ],
+          [
+            "text[y=\"55.33333333333334\"]"
+          ],
+          [
+            "div[data-chart=\"downloads\"] > svg > text[y=\"22\"][x=\"40\"][text-anchor=\"end\"]"
+          ],
+          [
+            "div[data-chart=\"downloads\"] > svg > text[x=\"48\"][text-anchor=\"start\"][y=\"146\"]"
+          ],
+          [
+            "div[data-chart=\"downloads\"] > svg > text[x=\"238\"][y=\"146\"][text-anchor=\"end\"]"
+          ],
+          [
+            "text[y=\"112\"]"
+          ],
+          [
+            "text[y=\"82\"]"
+          ],
+          [
+            "text[y=\"52\"]"
+          ],
+          [
+            "div[data-chart=\"categories\"] > svg > text[y=\"22\"][x=\"40\"][text-anchor=\"end\"]"
+          ],
+          [
+            "text[x=\"143\"]"
+          ]
+        ]
+      }
+    ],
+    "targets-10": [
+      {
+        "id": "color-contrast",
+        "targets": [
+          [
+            ".navbar-brand > span"
+          ],
+          [
+            ".eyebrow"
+          ],
+          [
+            "#page-title"
+          ],
+          [
+            ".col-lg-9 > p:nth-child(3)"
+          ]
+        ]
+      }
+    ],
+    "targets-11": [
+      {
+        "id": "color-contrast",
+        "targets": [
+          [
+            "div[data-chart=\"sessions\"] > svg > text[y=\"122\"][x=\"40\"][text-anchor=\"end\"]"
+          ],
+          [
+            "text[y=\"88.66666666666666\"]"
+          ],
+          [
+            "text[y=\"55.33333333333333\"]"
+          ],
+          [
+            "text[y=\"22.000000000000014\"]"
+          ],
+          [
+            "div[data-chart=\"sessions\"] > svg > text[x=\"48\"][text-anchor=\"start\"][y=\"146\"]"
+          ],
+          [
+            "div[data-chart=\"sessions\"] > svg > text[x=\"238\"][y=\"146\"][text-anchor=\"end\"]"
+          ],
+          [
+            "div[data-chart=\"downloads\"] > svg > text[y=\"122\"][x=\"40\"][text-anchor=\"end\"]"
+          ],
+          [
+            "text[y=\"88.66666666666667\"]"
+          ],
+          [
+            "text[y=\"55.33333333333334\"]"
+          ],
+          [
+            "div[data-chart=\"downloads\"] > svg > text[y=\"22\"][x=\"40\"][text-anchor=\"end\"]"
+          ],
+          [
+            "div[data-chart=\"downloads\"] > svg > text[x=\"48\"][text-anchor=\"start\"][y=\"146\"]"
+          ],
+          [
+            "div[data-chart=\"downloads\"] > svg > text[x=\"238\"][y=\"146\"][text-anchor=\"end\"]"
+          ],
+          [
+            "text[y=\"112\"]"
+          ],
+          [
+            "text[y=\"82\"]"
+          ],
+          [
+            "text[y=\"52\"]"
+          ],
+          [
+            "div[data-chart=\"categories\"] > svg > text[y=\"22\"][x=\"40\"][text-anchor=\"end\"]"
+          ],
+          [
+            "text[x=\"143\"]"
+          ],
+          [
+            "#analytics-source > caption"
+          ],
+          [
+            "#analytics-source > tbody > tr:nth-child(1) > td:nth-child(3)"
+          ],
+          [
+            "tr:nth-child(1) > td:nth-child(4)"
+          ],
+          [
+            "tr:nth-child(1) > td:nth-child(5)"
+          ],
+          [
+            "tr:nth-child(2) > td:nth-child(3)"
+          ],
+          [
+            "tr:nth-child(2) > td:nth-child(4)"
+          ],
+          [
+            "tr:nth-child(2) > td:nth-child(5)"
+          ],
+          [
+            "tr:nth-child(3) > td:nth-child(3)"
+          ],
+          [
+            "tr:nth-child(3) > td:nth-child(4)"
+          ],
+          [
+            "tr:nth-child(3) > td:nth-child(5)"
+          ],
+          [
+            "tr:nth-child(4) > td:nth-child(3)"
+          ],
+          [
+            "tr:nth-child(4) > td:nth-child(4)"
+          ],
+          [
+            "tr:nth-child(4) > td:nth-child(5)"
+          ],
+          [
+            "tr:nth-child(5) > td:nth-child(3)"
+          ],
+          [
+            "tr:nth-child(5) > td:nth-child(4)"
+          ],
+          [
+            "tr:nth-child(5) > td:nth-child(5)"
+          ],
+          [
+            "tr:nth-child(6) > td:nth-child(3)"
+          ],
+          [
+            "tr:nth-child(6) > td:nth-child(4)"
+          ],
+          [
+            "tr:nth-child(6) > td:nth-child(5)"
+          ],
+          [
+            "tr:nth-child(7) > td:nth-child(3)"
+          ],
+          [
+            "tr:nth-child(7) > td:nth-child(4)"
+          ],
+          [
+            "tr:nth-child(7) > td:nth-child(5)"
+          ],
+          [
+            "tr:nth-child(8) > td:nth-child(3)"
+          ],
+          [
+            "tr:nth-child(8) > td:nth-child(4)"
+          ],
+          [
+            "tr:nth-child(8) > td:nth-child(5)"
+          ],
+          [
+            "tr:nth-child(9) > td:nth-child(3)"
+          ],
+          [
+            "tr:nth-child(9) > td:nth-child(4)"
+          ],
+          [
+            "tr:nth-child(9) > td:nth-child(5)"
+          ],
+          [
+            "tr:nth-child(10) > td:nth-child(3)"
+          ],
+          [
+            "tr:nth-child(10) > td:nth-child(4)"
+          ],
+          [
+            "tr:nth-child(10) > td:nth-child(5)"
+          ],
+          [
+            "tr:nth-child(11) > td:nth-child(3)"
+          ],
+          [
+            "tr:nth-child(11) > td:nth-child(4)"
+          ],
+          [
+            "tr:nth-child(11) > td:nth-child(5)"
+          ],
+          [
+            "tr:nth-child(12) > td:nth-child(3)"
+          ],
+          [
+            "tr:nth-child(12) > td:nth-child(4)"
+          ],
+          [
+            "tr:nth-child(12) > td:nth-child(5)"
+          ],
+          [
+            "tr:nth-child(13) > td:nth-child(3)"
+          ],
+          [
+            "tr:nth-child(13) > td:nth-child(4)"
+          ],
+          [
+            "tr:nth-child(13) > td:nth-child(5)"
+          ],
+          [
+            "tr:nth-child(14) > td:nth-child(3)"
+          ],
+          [
+            "tr:nth-child(14) > td:nth-child(4)"
+          ],
+          [
+            "tr:nth-child(14) > td:nth-child(5)"
+          ]
+        ]
+      }
+    ],
+    "targets-12": [
+      {
+        "id": "color-contrast",
+        "targets": [
+          [
+            ".ra-chart--sessions > .ra-plot[data-ready=\"true\"] > svg > g:nth-child(2) > text[y=\"122\"][x=\"40\"][text-anchor=\"end\"]"
+          ],
+          [
+            "text[y=\"88.66666666666666\"]"
+          ],
+          [
+            "text[y=\"55.33333333333333\"]"
+          ],
+          [
+            "text[y=\"22.000000000000014\"]"
+          ],
+          [
+            ".ra-chart--sessions > .ra-plot[data-ready=\"true\"] > svg > g:nth-child(7) > text[x=\"48\"][text-anchor=\"start\"][y=\"146\"]"
+          ],
+          [
+            ".ra-chart--sessions > .ra-plot[data-ready=\"true\"] > svg > g:nth-child(20) > text[x=\"238\"][y=\"146\"][text-anchor=\"end\"]"
+          ],
+          [
+            ".ra-chart--downloads > .ra-plot[data-ready=\"true\"] > svg > g:nth-child(2) > text[y=\"122\"][x=\"40\"][text-anchor=\"end\"]"
+          ],
+          [
+            "text[y=\"88.66666666666667\"]"
+          ],
+          [
+            "text[y=\"55.33333333333334\"]"
+          ],
+          [
+            ".ra-chart--downloads > .ra-plot[data-ready=\"true\"] > svg > g:nth-child(5) > text[y=\"22\"][x=\"40\"][text-anchor=\"end\"]"
+          ],
+          [
+            ".ra-chart--downloads > .ra-plot[data-ready=\"true\"] > svg > g:nth-child(7) > text[x=\"48\"][text-anchor=\"start\"][y=\"146\"]"
+          ],
+          [
+            ".ra-chart--downloads > .ra-plot[data-ready=\"true\"] > svg > g:nth-child(20) > text[x=\"238\"][y=\"146\"][text-anchor=\"end\"]"
+          ],
+          [
+            "text[y=\"112\"]"
+          ],
+          [
+            "text[y=\"82\"]"
+          ],
+          [
+            "text[y=\"52\"]"
+          ],
+          [
+            ".ra-chart--categories > .ra-plot[data-ready=\"true\"] > svg > g:nth-child(5) > text[y=\"22\"][x=\"40\"][text-anchor=\"end\"]"
+          ],
+          [
+            "text[x=\"143\"]"
+          ],
+          [
+            "#analytics-source > caption"
+          ],
+          [
+            "#analytics-source > tbody > tr:nth-child(1) > td:nth-child(3)"
+          ],
+          [
+            "tr:nth-child(1) > td:nth-child(4)"
+          ],
+          [
+            "tr:nth-child(1) > td:nth-child(5)"
+          ],
+          [
+            "tr:nth-child(2) > td:nth-child(3)"
+          ],
+          [
+            "tr:nth-child(2) > td:nth-child(4)"
+          ],
+          [
+            "tr:nth-child(2) > td:nth-child(5)"
+          ],
+          [
+            "tr:nth-child(3) > td:nth-child(3)"
+          ],
+          [
+            "tr:nth-child(3) > td:nth-child(4)"
+          ],
+          [
+            "tr:nth-child(3) > td:nth-child(5)"
+          ],
+          [
+            "tr:nth-child(4) > td:nth-child(3)"
+          ],
+          [
+            "tr:nth-child(4) > td:nth-child(4)"
+          ],
+          [
+            "tr:nth-child(4) > td:nth-child(5)"
+          ],
+          [
+            "tr:nth-child(5) > td:nth-child(3)"
+          ],
+          [
+            "tr:nth-child(5) > td:nth-child(4)"
+          ],
+          [
+            "tr:nth-child(5) > td:nth-child(5)"
+          ],
+          [
+            "tr:nth-child(6) > td:nth-child(3)"
+          ],
+          [
+            "tr:nth-child(6) > td:nth-child(4)"
+          ],
+          [
+            "tr:nth-child(6) > td:nth-child(5)"
+          ],
+          [
+            "tr:nth-child(7) > td:nth-child(3)"
+          ],
+          [
+            "tr:nth-child(7) > td:nth-child(4)"
+          ],
+          [
+            "tr:nth-child(7) > td:nth-child(5)"
+          ],
+          [
+            "tr:nth-child(8) > td:nth-child(3)"
+          ],
+          [
+            "tr:nth-child(8) > td:nth-child(4)"
+          ],
+          [
+            "tr:nth-child(8) > td:nth-child(5)"
+          ],
+          [
+            "tr:nth-child(9) > td:nth-child(3)"
+          ],
+          [
+            "tr:nth-child(9) > td:nth-child(4)"
+          ],
+          [
+            "tr:nth-child(9) > td:nth-child(5)"
+          ],
+          [
+            "tr:nth-child(10) > td:nth-child(3)"
+          ],
+          [
+            "tr:nth-child(10) > td:nth-child(4)"
+          ],
+          [
+            "tr:nth-child(10) > td:nth-child(5)"
+          ],
+          [
+            "tr:nth-child(11) > td:nth-child(3)"
+          ],
+          [
+            "tr:nth-child(11) > td:nth-child(4)"
+          ],
+          [
+            "tr:nth-child(11) > td:nth-child(5)"
+          ],
+          [
+            "tr:nth-child(12) > td:nth-child(3)"
+          ],
+          [
+            "tr:nth-child(12) > td:nth-child(4)"
+          ],
+          [
+            "tr:nth-child(12) > td:nth-child(5)"
+          ],
+          [
+            "tr:nth-child(13) > td:nth-child(3)"
+          ],
+          [
+            "tr:nth-child(13) > td:nth-child(4)"
+          ],
+          [
+            "tr:nth-child(13) > td:nth-child(5)"
+          ],
+          [
+            "tr:nth-child(14) > td:nth-child(3)"
+          ],
+          [
+            "tr:nth-child(14) > td:nth-child(4)"
+          ],
+          [
+            "tr:nth-child(14) > td:nth-child(5)"
+          ]
+        ]
+      }
+    ]
+  }
+}

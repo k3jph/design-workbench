@@ -1,0 +1,64 @@
+{
+  "family": "krigsvold",
+  "source": "Caller-supplied built output; provenance not attested",
+  "browser": "151.0.7922.173",
+  "viewport": {
+    "width": 320,
+    "height": 900
+  },
+  "base": "/preview/docs/v/0.0.0-dev.0/",
+  "records": [
+    {
+      "selector": ".navbar-brand > span",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "14px",
+      "fontWeight": "700",
+      "rect": {
+        "x": 61,
+        "y": 34.453125,
+        "width": 113.359375,
+        "height": 23.09375
+      },
+      "screenshot": "background-0.png"
+    },
+    {
+      "selector": ".eyebrow",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "12.16px",
+      "fontWeight": "700",
+      "rect": {
+        "x": 12,
+        "y": 211.0625,
+        "width": 296,
+        "height": 19.75
+      },
+      "screenshot": "background-1.png"
+    },
+    {
+      "selector": "#page-title",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "32px",
+      "fontWeight": "600",
+      "rect": {
+        "x": 12,
+        "y": 242.8125,
+        "width": 296,
+        "height": 32
+      },
+      "screenshot": "background-2.png"
+    },
+    {
+      "selector": ".col-lg-9 > p:nth-child(3)",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "rect": {
+        "x": 12,
+        "y": 274.8125,
+        "width": 296,
+        "height": 52
+      },
+      "screenshot": "background-3.png"
+    }
+  ]
+}

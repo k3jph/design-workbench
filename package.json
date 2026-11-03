@@ -28,7 +28,18 @@
     "build:hosted": "node scripts/build-hosted.mjs && node scripts/test-hosted.mjs",
     "build:plugins": "node scripts/build-plugins.mjs",
     "package:preview": "node scripts/package-preview.mjs",
-    "test:public-react": "node scripts/test-public-react.mjs"
+    "test:public-react": "node scripts/test-public-react.mjs",
+    "test:dialog-consumer": "node scripts/test-dialog-consumer.mjs",
+    "test:pagination-consumer": "node scripts/test-pagination-consumer.mjs",
+    "test:tabs-consumer": "node scripts/test-tabs-consumer.mjs && node scripts/test-tabs-packed-dynamic.mjs",
+    "test:error-summary-consumer": "node scripts/test-error-summary-consumer.mjs",
+    "test:fields-consumer": "node scripts/test-fields-consumer.mjs",
+    "test:examples": "node examples/page-archetypes/scripts/verify.mjs && node --test examples/page-archetypes/tests/dashboard-model.test.mjs examples/page-archetypes/tests/catalog-date.test.mjs examples/page-archetypes/tests/event-time.test.mjs",
+    "test:portable-runner": "node --test tests/portable-runner.test.mjs",
+    "test:dashboards": "playwright test --config playwright.dashboard.config.ts",
+    "test:search-safety": "node --test examples/page-archetypes/tests/search-index-safety.test.mjs",
+    "build:examples": "python3 examples/page-archetypes/scripts/build.py",
+    "test:analytics-empty": "node examples/page-archetypes/tests/analytics-empty.mjs"
   },
   "dependencies": {
     "@krigsvold/react": "0.1.0",
@@ -36,7 +47,7 @@
     "@modelcontextprotocol/server": "2.3.1",
     "react": "19.3.1",
     "react-dom": "19.3.1",
-    "zod": "4.3.6"
+    "zod": "4.6.7"
   },
   "devDependencies": {
     "@axe-core/playwright": "4.11.1",
@@ -46,6 +57,9 @@
     "@types/node": "^24.0.0",
     "@types/react": "^19.2.0",
     "@types/react-dom": "^19.2.0",
+    "markdown-it": "14.3.3",
+    "markdown-it-footnote": "4.0.0",
+    "sanitize-html": "2.18.1",
     "typescript": "7.0.2",
     "vite": "8.3.5"
   }

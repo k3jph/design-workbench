@@ -2,9 +2,32 @@ import { mkdtemp, rm, readFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join, resolve } from "node:path";
 import { spawnSync } from "node:child_process";
+import { createHash } from "node:crypto";
 import assert from "node:assert/strict";
 import { Client } from "@modelcontextprotocol/client";
 import { StdioClientTransport } from "@modelcontextprotocol/client/stdio";
+// The archives are referenced by checksum. Rebuild twice under the same
+// environment to catch accidental timestamp, ordering or metadata drift.
+async function archiveHashes() {
+  const hashes = {};
+  for (const family of ["martlet", "krigsvold"]) {
+    for (const suffix of ["agent-tools.tar.gz", "builder.zip"]) {
+      const path = resolve(`agent-dist/${family}-${suffix}`);
+      hashes[path] = createHash("sha256").update(await readFile(path)).digest("hex");
+    }
+  }
+  return hashes;
+}
+for (let run = 0, first; run < 2; run++) {
+  // Cross a timestamp boundary: rapid rebuilds can otherwise accidentally
+  // hide a regression to non-normalized tar entry times.
+  if (run) await new Promise(resolve => setTimeout(resolve, 1100));
+  const build = spawnSync(process.execPath, ["scripts/build-knowledge.mjs"], { encoding: "utf8" });
+  if (build.status !== 0) throw Error(`Agent build failed: ${build.stderr || build.error?.message}`);
+  const hashes = await archiveHashes();
+  if (run === 0) first = hashes;
+  else assert.deepEqual(hashes, first, "Agent archives must be reproducible under identical inputs");
+}
 for (const family of ["martlet", "krigsvold"]) {
   const tmp = await mkdtemp(join(tmpdir(), "language-consumer-"));
   try {

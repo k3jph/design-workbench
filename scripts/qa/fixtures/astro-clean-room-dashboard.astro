@@ -1,0 +1,65 @@
+---
+// Consumer-authored fixture. __FAMILY__ is replaced with the selected npm scope.
+import {Layout, SiteHeader, SiteFooter, Container, SectionHeading, Card, Button} from '@__FAMILY__/astro';
+const home = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+---
+<Layout title="People directory" description="A local, synthetic directory.">
+  <SiteHeader slot="header" name="Field notes" home={home} links={[{href:home,label:'Home'}]} />
+  <Container>
+    <h1>Field notes</h1>
+    <SectionHeading title="People directory" id="directory-title" />
+    <p>Search two synthetic people. Nothing is sent or saved.</p>
+    <Card>
+      <p id="directory-fallback" role="status">The interactive directory is unavailable. Both example records remain visible.</p>
+      <form id="directory-search">
+        <fieldset disabled id="directory-controls">
+          <legend>Search the people directory</legend>
+          <div class="__FAMILY__-field">
+            <label for="directory-query">Find a person</label>
+            <input id="directory-query" name="query" type="search" aria-describedby="directory-hint" />
+            <p id="directory-hint">Search the two example names.</p>
+          </div>
+          <Button type="submit">Apply search</Button>
+          <Button type="reset" class="__FAMILY__-button--secondary">Clear search</Button>
+        </fieldset>
+      </form>
+      <p id="directory-status" role="status" aria-atomic="true"></p>
+      <div class="__FAMILY__-scroll" role="region" aria-label="People table" tabindex="0">
+        <table id="people-directory"><caption>People</caption><thead><tr><th scope="col">Name</th><th scope="col">Status</th></tr></thead>
+          <tbody><tr data-name="Mara"><th scope="row">Mara</th><td>Active</td></tr><tr data-name="Pavel"><th scope="row">Pavel</th><td>Pending</td></tr></tbody>
+        </table>
+      </div>
+      <p id="directory-empty" hidden>No matching people. Change the search to recover.</p>
+    </Card>
+  </Container>
+  <SiteFooter slot="footer"><p>Example content. No service is connected.</p></SiteFooter>
+</Layout>
+<script>
+  // The host owns this deliberately small controller; there is no transport.
+  const form = document.querySelector('#directory-search');
+  const controls = document.querySelector('#directory-controls');
+  const query = document.querySelector('#directory-query');
+  const rows = [...document.querySelectorAll('#people-directory tbody tr')];
+  const status = document.querySelector('#directory-status');
+  const empty = document.querySelector('#directory-empty');
+  const fallback = document.querySelector('#directory-fallback');
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    const value = query.value.toLowerCase();
+    let visible = 0;
+    for (const row of rows) {
+      const match = row.dataset.name.toLowerCase().includes(value);
+      row.hidden = !match;
+      if (match) visible++;
+    }
+    empty.hidden = visible !== 0;
+    status.textContent = 'Search applied to the local example.';
+  });
+  form.addEventListener('reset', () => {
+    for (const row of rows) row.hidden = false;
+    empty.hidden = true;
+    status.textContent = '';
+  });
+  controls.disabled = false;
+  fallback.hidden = true;
+</script>

@@ -1,0 +1,55 @@
+name: Verify local React extraction rehearsal
+on:
+  pull_request:
+    branches: [nightjar/ii-integration-candidate]
+    paths:
+      - 'scripts/nightjar3/**'
+      - 'scripts/test-*-consumer.mjs'
+      - 'scripts/test-tabs-packed-dynamic.mjs'
+      - 'fixtures/nightjar3/react-locks/**'
+      - 'packages/martlet-react/**'
+      - 'packages/krigsvold-react/**'
+      - '.github/workflows/nightjar-iii-react-rehearsal.yml'
+permissions:
+  contents: read
+jobs:
+  packed-consumer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chromium, firefox, webkit]
+    env:
+      WORKBENCH_BROWSER: ${{ matrix.browser }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: npm ci --ignore-scripts
+      - name: Reproduce private standalone candidates at the pinned revision
+        env:
+          NIGHTJAR_REACT_ARCHIVE_DIR: ${{ runner.temp }}/react-archives
+        run: |
+          node --test scripts/nightjar3/react-extraction.test.mjs
+          node scripts/nightjar3/react-extraction.mjs --out "$RUNNER_TEMP/react-candidates"
+          mkdir -p "$NIGHTJAR_REACT_ARCHIVE_DIR"
+          for family in martlet krigsvold; do
+            (cd "$RUNNER_TEMP/react-candidates/$family" && npm ci --ignore-scripts && npm run build && npm pack --ignore-scripts --pack-destination "$NIGHTJAR_REACT_ARCHIVE_DIR")
+          done
+      - name: Install browser
+        timeout-minutes: 10
+        run: npx playwright install --with-deps "${{ matrix.browser }}"
+      - name: Check packed consumers
+        env:
+          NIGHTJAR_REACT_ARCHIVE_DIR: ${{ runner.temp }}/react-archives
+        run: |
+          npm run test:dialog-consumer
+          npm run test:pagination-consumer
+          npm run test:error-summary-consumer
+          npm run test:fields-consumer
+          npm run test:tabs-consumer
+          node scripts/nightjar3/test-packed-shell-table.mjs

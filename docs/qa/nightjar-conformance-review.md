@@ -1,0 +1,33 @@
+# Nightjar conformance review
+
+This review accompanies the [300-cell canonical evidence snapshot](nightjar-conformance.md). The 50 catalog recipes are paired across two languages and three renderers; the experimental scientific workspace is tracked separately. A populated cell records bounded evidence, not approval or certification. The scientific route's later Chromium evidence is recorded at `a20e968`, separately from the canonical snapshot at `22612d2`.
+
+## Evidence and limits
+
+| Dimension | Observed evidence | What remains open |
+| --- | --- | --- |
+| Build and content | All 300 canonical route cells are generated. The no-JavaScript semantic inventory compared titles, structured content and representative dashboard data across renderers; route and local destination checks covered both Jekyll sites. | Catalog presence does not prove all behavior or visual fidelity; recovery recipes do not set actual HTTP error status. |
+| Interaction | The ledger records cross-framework keyboard and behavior checks for representative content and dashboards, including validation, filtering, navigation, local state, dialogs, search and recovery. History-write regressions added after the snapshot check display/export consistency and draft preservation. | The matrix's I marker only means a relevant interaction was exercised. It does not cover all combinations, assistive technologies or every failure. |
+| Automated accessibility | All 300 canonical initial states received Chromium WCAG-tagged axe scans in default and saved-dark appearances. The separate scientific route passed sampled light/dark axe checks in 12 local Chromium builds. | Automated checks are partial; incomplete axe findings are not passes. Manual screen-reader, magnification and speech-input reviews remain open. |
+| Responsive | Astro/React catalog suites checked all 47 content routes at 320px; dashboard checks and additional Jekyll sweeps cover selected states and widths. A 200% root-text test and viewport/density emulation exercise reflow. | Neither test is real browser zoom. Long content, controls, focus and custom content need further review at actual zoom and on physical devices. |
+| Visual | The recorded `c39a3e6` sweep captured 43 remaining records in both families, all renderers, at 320/1440px, checked for overflow/assets/errors and compared desktop heading roles. Focused layout comparisons and selected screenshots are documented in the ledger. | The captures are not approved baselines; full state-by-state visual review and identity sign-off are open. The scientific route has independent captured inspections, not a full cross-framework visual approval. |
+| Other engines | Hosted portable run `40879193134` passed bounded Firefox and WebKit smoke checks for both families and all frameworks, including article, validated sign-in, analytics and gallery behavior. | These are representative checks, not all canonical states. Scientific behavior, genuine browser zoom and full screen-reader/browser combinations still need cross-engine testing. |
+| Print and performance | Chromium print emulation sampled 600 route/mode states and selected PDFs; isolated local transfer-size measurements document family and route differences. | Physical printers, page-break quality, other engines, real-world timing and production network performance remain unverified. |
+
+## Review of unresolved contrast results
+
+Hosted Firefox and WebKit logs for run `40879193134` each report 16 `color-contrast` incomplete results despite successful jobs: filtered analytics in 12 family/framework/appearance states and four Jekyll light masthead states (article and sign-in in both families). Logs identify SVG chart labels, some `#analytics-source` table content including the caption, and masthead/header text over gradients. The CI job checks that there are no automated violations but does not classify these incomplete results as successful contrast assessments.
+
+The existing [bounded Chromium contrast probe](../../examples/page-archetypes/CONTRAST-VERIFICATION.md) examines 17 SVG text labels and 75 selected data-table header/data cells per analytics state, and verifies keyboard scrolling. Its minimum computed ratios were 6.06:1 and 13.72:1 respectively; its Jekyll gradient-endpoint calculations yielded minima of 10.12:1 for Martlet and 17.06:1 for Krigsvold. These calculations do not establish contrast for SVG overlap, table captions, custom images, alpha/gradient variants, other browser rendering or all viewport states. Therefore the Firefox/WebKit incomplete findings remain open rather than being converted to passes. Reproduce these cases in the affected engines, review the caption and rendered overlap/gradient contexts, and retain raw targets and evidence before closing them.
+
+## Representative visual comparison
+
+I re-inspected the existing post-fix `c39a3e6` pricing captures for both families at 320px and 1440px in Jekyll, Astro and React; these are historical screenshots, not a fresh verification of the current head. Each family maintains its own typography and hierarchy, while the captured React masthead is contained within the page and uses a different breadcrumb placement from the Jekyll/Astro full-width header. The fictional Astro/React footer also differs from the original Jekyll source footer. The React notes explicitly describe these shell adaptations; they merit design review rather than an assumption of pixel equivalence or a change to either identity. This small review does not cover other recipes, hover/focus states, dark appearance or current-head rendering, and no baseline was approved.
+
+## Priority follow-up
+
+1. Review the unresolved contrast targets in actual Firefox and WebKit, including table captions and SVG overlap, and preserve engine-specific results.
+2. Test representative form errors, dashboard feedback, native dialogs and pagination with screen readers and keyboard-only interaction in current browser/OS combinations; distinguish observed focus, announced text and timing.
+3. Inspect current-head paired content and dashboard views at narrow/wide widths, light/dark states, validation and interaction states within each language; document approved or intentionally different shell rules without comparing the languages for pixel equality.
+4. Exercise real browser zoom, physical print and selected dense/translated content; viewport emulation and Chromium print emulation remain useful but incomplete substitutes.
+5. Extend the scientific route's behavioral and accessibility tests to Firefox/WebKit and manually review its numerical/chart semantics before treating it as canonical.

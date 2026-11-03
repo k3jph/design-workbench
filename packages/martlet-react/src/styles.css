@@ -71,7 +71,7 @@
 .martlet-table-scroll { overflow:auto; max-inline-size:100%; }
 .martlet-table { border-collapse:collapse; inline-size:100%; text-align:start; font:.94rem/1.5 var(--martlet-font-sans); }
 .martlet-table caption { text-align:start; padding-block:0 1rem; color:var(--ui-muted); font-weight:700; }
-.martlet-table :where(th,td) { padding:.8rem .9rem; border-block-end:1px solid var(--ui-line); vertical-align:top; text-align:start; }
+.martlet-table :where(th,td) { min-inline-size:8rem; padding:.8rem .9rem; border-block-end:1px solid var(--ui-line); vertical-align:top; text-align:start; }
 .martlet-table thead th { color:var(--ui-heading); background:var(--ui-surface); font-size:.8rem; letter-spacing:.06em; text-transform:uppercase; }
 .martlet-table tr[data-selected="true"] { background:var(--martlet-active-bg); }
 .martlet-skip { position:fixed; inset-block-start:-5rem; inset-inline-start:1rem; z-index:2000; background:var(--ui-bg); color:var(--ui-text); padding:.75rem 1rem; font:700 1rem/1.5 var(--martlet-font-sans); }

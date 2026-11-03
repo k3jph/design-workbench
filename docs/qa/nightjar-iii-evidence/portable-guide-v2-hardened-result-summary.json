@@ -1,0 +1,126 @@
+{
+  "version": 1,
+  "runner_scope": "Static content, local link/fragment inventory and experimental static-result presence only. Not full conformance or an accessibility audit.",
+  "network_policy": "Runner performs no fetch; build commands are trusted code and network isolation is not enforced.",
+  "runner": {
+    "commit": "c1ceed9815d000de429d873709814e690ed65ed4",
+    "script_sha256": "6812ad2444b0aadd028834af1d16aa4e9bfcb2c0518c299dc5d917fc18e229f5",
+    "html_verifier_sha256": "fb63da917584af080e34b039714fabcf34bdef1b6713ff294c489ed41e237d34",
+    "worktree_dirty": false
+  },
+  "fixture": {
+    "repository": "fixtures",
+    "commit": "80a5635abe4de7a07a1983de0b3ef796b101e047",
+    "catalog_path": "examples/page-archetypes/content/catalog.json",
+    "dashboards_path": "examples/page-archetypes/content/dashboards.json",
+    "catalog_sha256": "4795e34b2eaea8fa506cca6d7679e93f38c6019cea704834ae736ef2064afd37",
+    "dashboards_sha256": "9a0341f3789a9bf1c9a20cb6c31ace624a1400c3390de8131a305df372d87b35"
+  },
+  "repositories": {
+    "fixtures": {
+      "commit": "80a5635abe4de7a07a1983de0b3ef796b101e047"
+    },
+    "martlet": {
+      "commit": "9ae0b3609c82f1a27291d0934dab5ff4564ea9d0"
+    },
+    "krigsvold": {
+      "commit": "6212d2bc076f959cd88e297023d40dff48dc6554"
+    }
+  },
+  "browser": {
+    "engine": "chromium",
+    "version": "151.0.7922.173"
+  },
+  "node": "v24.19.0",
+  "javascript": "disabled",
+  "results": [
+    {
+      "family": "martlet",
+      "framework": "jekyll",
+      "base": "/",
+      "source": "martlet",
+      "source_commit": "9ae0b3609c82f1a27291d0934dab5ff4564ea9d0",
+      "declared_inputs": {},
+      "declared_input_consumption": "not_verified",
+      "output_tree_sha256": "1941f775d64f74c08b9dbbb1b2c0caf6cb8ffe60c1545b938657d8e08230e25a",
+      "html_check": "Checked 58 rendered pages and 1448 local destinations/fragments under /.",
+      "science": {
+        "status": "experimental",
+        "static_results": "checked",
+        "interactive_behavior": "not_assessed"
+      },
+      "static_route_count": 50
+    },
+    {
+      "family": "martlet",
+      "framework": "jekyll",
+      "base": "/preview",
+      "source": "martlet",
+      "source_commit": "9ae0b3609c82f1a27291d0934dab5ff4564ea9d0",
+      "declared_inputs": {},
+      "declared_input_consumption": "not_verified",
+      "output_tree_sha256": "207c99b95c75026b56c675bfb482ed2962241e132da64058bd90a7bc70f6228d",
+      "html_check": "Checked 58 rendered pages and 1448 local destinations/fragments under /preview.",
+      "science": {
+        "status": "experimental",
+        "static_results": "checked",
+        "interactive_behavior": "not_assessed"
+      },
+      "static_route_count": 50
+    },
+    {
+      "family": "krigsvold",
+      "framework": "jekyll",
+      "base": "/",
+      "source": "krigsvold",
+      "source_commit": "6212d2bc076f959cd88e297023d40dff48dc6554",
+      "declared_inputs": {},
+      "declared_input_consumption": "not_verified",
+      "output_tree_sha256": "e6d5bf6f810dc48a68e3fde5ec0efd2674c906c28231ca82626e07b9bb132d21",
+      "html_check": "Checked 58 rendered pages and 1448 local destinations/fragments under /.",
+      "science": {
+        "status": "experimental",
+        "static_results": "checked",
+        "interactive_behavior": "not_assessed"
+      },
+      "static_route_count": 50
+    },
+    {
+      "family": "krigsvold",
+      "framework": "jekyll",
+      "base": "/preview",
+      "source": "krigsvold",
+      "source_commit": "6212d2bc076f959cd88e297023d40dff48dc6554",
+      "declared_inputs": {},
+      "declared_input_consumption": "not_verified",
+      "output_tree_sha256": "73cbeb3429dab5fc79d1f8d829bcb82e890e4f8477293273f5601fb52be94f06",
+      "html_check": "Checked 58 rendered pages and 1448 local destinations/fragments under /preview.",
+      "science": {
+        "status": "experimental",
+        "static_results": "checked",
+        "interactive_behavior": "not_assessed"
+      },
+      "static_route_count": 50
+    }
+  ],
+  "missing": [
+    "martlet/astro",
+    "martlet/react",
+    "krigsvold/astro",
+    "krigsvold/react"
+  ],
+  "not_assessed": [
+    "declared package input consumption",
+    "interactive behavior",
+    "JavaScript failure recovery",
+    "automated accessibility",
+    "contrast incomplete findings",
+    "visual identity",
+    "manual assistive technology",
+    "physical print",
+    "performance"
+  ],
+  "evidence_note": "Summary of an exact clean-commit local run. Full result and original local manifest were hashed before sanitizing; the example manifest preserves commands and pins but replaces machine-specific paths. Declared inputs are not proof of consumption and static checks do not certify parity or accessibility.",
+  "complete_result_sha256": "dd24242191bff48232e63dae32279fcf66ceaedec31f27546af16afc88fd232d",
+  "original_local_manifest_sha256": "33e8f708bb9010fdfac8c5c89c7160d3c74b66c3c13c611bc9f31f2ce9a211b3"
+}

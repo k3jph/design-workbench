@@ -117,3 +117,7 @@ See [experimental release preparation](docs/release-policy.md), the [changelog](
 Browser engine selection: `WORKBENCH_BROWSER=firefox npm run test:browser` or `WORKBENCH_BROWSER=webkit npm run test:browser`; Chromium remains the default. Install the selected Playwright engine and host dependencies first. `WORKBENCH_TEST_PORT` selects an isolated test-server port when running independent engines concurrently. CI runs all three engines.
 
 The [grammar coverage review](docs/qa/grammar-coverage-2026-10-24.md) records clarified rules and remaining evidence. Each React reference adds validated-form, query/selection and coverage pages under `?page=patterns`.
+
+## Portable page archetypes and Jekyll references
+
+[50 shared page recipes](examples/page-archetypes/README.md) now exercise both languages with identical fictional content, typed section roles, semantic article/event contracts, and separate family compositions. Complete standalone sources are in `examples/jekyll/martlet` and `examples/jekyll/krigsvold`; [porting guidance](examples/page-archetypes/PORTING.md) defines the path to Astro and React without parsing Liquid or copying rendered HTML.

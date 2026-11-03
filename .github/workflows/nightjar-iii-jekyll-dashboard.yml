@@ -1,0 +1,60 @@
+name: Verify standalone Jekyll directory rehearsal
+on:
+  pull_request:
+    branches: [nightjar3/jekyll-dashboard-adoption, nightjar/ii-integration-candidate]
+permissions:
+  contents: read
+jobs:
+  standalone-directory:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chromium, firefox, webkit]
+    env:
+      NIGHTJAR_BROWSER: ${{ matrix.browser }}
+      BUNDLE_FROZEN: 'true'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+      - name: Install locked test and Jekyll dependencies
+        run: |
+          npm ci --ignore-scripts
+          (cd examples/jekyll/martlet && bundle install)
+          (cd examples/jekyll/krigsvold && bundle install)
+      - name: Materialize and pin the exact reviewed guide snapshots
+        env:
+          NIGHTJAR_JEKYLL_CANDIDATES: ${{ runner.temp }}/nightjar-jekyll-candidates
+        shell: bash
+        run: |
+          mkdir -p "$NIGHTJAR_JEKYLL_CANDIDATES"
+          python3 scripts/qa/nightjar-jekyll-rehearsal.py --destination "$NIGHTJAR_JEKYLL_CANDIDATES" --source-commit d45c1c64df5d189f45790c34344eaa7c293ea9e6
+          martlet_tree=$(git -C "$NIGHTJAR_JEKYLL_CANDIDATES/jekyll-martlet" rev-parse 'HEAD^{tree}')
+          krigsvold_tree=$(git -C "$NIGHTJAR_JEKYLL_CANDIDATES/jekyll-krigsvold" rev-parse 'HEAD^{tree}')
+          test "$martlet_tree" = 212297767a5c8ccd5c957b1fd446f62afcb92ab5
+          test "$krigsvold_tree" = a66856ab8cd568a2a50a22f8099149b0c598fdf2
+          martlet_commit=$(git -C "$NIGHTJAR_JEKYLL_CANDIDATES/jekyll-martlet" rev-parse HEAD)
+          krigsvold_commit=$(git -C "$NIGHTJAR_JEKYLL_CANDIDATES/jekyll-krigsvold" rev-parse HEAD)
+          printf 'NIGHTJAR_MARTLET_COMMIT=%s\nNIGHTJAR_KRIGSVOLD_COMMIT=%s\n' "$martlet_commit" "$krigsvold_commit" >> "$GITHUB_ENV"
+          printf 'Pinned Martlet %s tree %s; Krigsvold %s tree %s\n' "$martlet_commit" "$martlet_tree" "$krigsvold_commit" "$krigsvold_tree"
+      - name: Use the Ubuntu archive for browser dependencies
+        run: |
+          if [ -f /etc/apt/apt-mirrors.txt ]; then
+            sudo sed -i 's|http://azure.archive.ubuntu.com/ubuntu|https://archive.ubuntu.com/ubuntu|g' /etc/apt/apt-mirrors.txt
+          fi
+      - name: Install the selected browser
+        run: npx playwright install --with-deps "$NIGHTJAR_BROWSER"
+      - name: Verify documented consumer and archive
+        env:
+          NIGHTJAR_JEKYLL_CANDIDATES: ${{ runner.temp }}/nightjar-jekyll-candidates
+        run: node scripts/qa/nightjar-iii-jekyll-dashboard-adoption.mjs

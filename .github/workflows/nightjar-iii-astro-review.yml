@@ -1,0 +1,45 @@
+name: Nightjar III Astro starter review
+on:
+  pull_request:
+    paths:
+      - 'scripts/qa/astro-starter-check/**'
+      - 'scripts/qa/nightjar-iii-button-transition.mjs'
+      - 'docs/qa/nightjar-iii-astro-patches/**'
+      - 'docs/qa/nightjar-iii-theme-patches/**'
+      - '.github/workflows/nightjar-iii-astro-review.yml'
+permissions:
+  contents: read
+jobs:
+  starter:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        astro: [astro5, astro7]
+        browser: [firefox, webkit]
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '24'
+      - name: Install locked test runner
+        run: npm ci --ignore-scripts --no-audit --no-fund
+      - name: Install integrity-locked published package fixtures
+        run: npm ci --ignore-scripts --no-audit --no-fund
+        working-directory: scripts/qa/astro-starter-check/${{ matrix.astro }}
+      - name: Use the Ubuntu archive for browser dependencies
+        run: |
+          if [ -f /etc/apt/apt-mirrors.txt ]; then
+            sudo sed -i 's|http://azure.archive.ubuntu.com/ubuntu|https://archive.ubuntu.com/ubuntu|g' /etc/apt/apt-mirrors.txt
+          fi
+      - name: Install browser dependencies and selected engine
+        run: npx playwright install --with-deps "${{ matrix.browser }}"
+      - name: Verify source, apply reviewed starter patches and test both families
+        run: node scripts/qa/astro-starter-check/run.mjs
+        env:
+          NIGHTJAR_ASTRO_MATRIX: ${{ matrix.astro }}
+          DESIGN_BROWSER: ${{ matrix.browser }}
+          ASTRO_TELEMETRY_DISABLED: '1'
