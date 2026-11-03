@@ -121,7 +121,16 @@
       "rule": "Keep collection/object commands distinct and name pending/committed/unavailable state and recovery scope."
     }
   },
-  "captureEvidence": [],
+  "captureEvidence": [
+    {
+      "kind": "baseline-rendered-semantics",
+      "summary": "baseline-contract-summary.json",
+      "sourceArtifact": "/workspace/work/jekyll-grammar/acceptance/baseline-contracts.json",
+      "sha256": "f56462da6fe22eb6081fb2557bb9ad0d627a77c96e886faa3f6adacc6a6603d9",
+      "result": "Both50route baselines capture616renderedmeaningchunks;6genericdashboardplaceholdervalues are notliteraldisplay; exact stable IDs/links/forms/controls recorded.",
+      "acceptanceScope": "baseline only; not visual fidelity or final implementation parity"
+    }
+  ],
   "rows": [
     {
       "order": 1,
@@ -186,6 +195,32 @@
       "familyImplementationStatus": {
         "martlet": "not-started",
         "krigsvold": "not-started"
+      },
+      "localReview": {
+        "status": "pending-systemwide-visual-review",
+        "noUniversalFidelityClaim": true
+      },
+      "baselineRenderedContract": {
+        "martlet": {
+          "id": "home",
+          "meaningChunks": 14,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 4,
+          "links": 9,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        "krigsvold": {
+          "id": "home",
+          "meaningChunks": 14,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 4,
+          "links": 9,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        }
       }
     },
     {
@@ -253,6 +288,32 @@
       "familyImplementationStatus": {
         "martlet": "not-started",
         "krigsvold": "not-started"
+      },
+      "localReview": {
+        "status": "pending-systemwide-visual-review",
+        "noUniversalFidelityClaim": true
+      },
+      "baselineRenderedContract": {
+        "martlet": {
+          "id": "about",
+          "meaningChunks": 17,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 5,
+          "links": 9,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        "krigsvold": {
+          "id": "about",
+          "meaningChunks": 17,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 5,
+          "links": 9,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        }
       }
     },
     {
@@ -320,6 +381,32 @@
       "familyImplementationStatus": {
         "martlet": "not-started",
         "krigsvold": "not-started"
+      },
+      "localReview": {
+        "status": "pending-systemwide-visual-review",
+        "noUniversalFidelityClaim": true
+      },
+      "baselineRenderedContract": {
+        "martlet": {
+          "id": "article",
+          "meaningChunks": 18,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 5,
+          "links": 11,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        "krigsvold": {
+          "id": "article",
+          "meaningChunks": 18,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 5,
+          "links": 11,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        }
       }
     },
     {
@@ -383,6 +470,32 @@
       "familyImplementationStatus": {
         "martlet": "not-started",
         "krigsvold": "not-started"
+      },
+      "localReview": {
+        "status": "pending-systemwide-visual-review",
+        "noUniversalFidelityClaim": true
+      },
+      "baselineRenderedContract": {
+        "martlet": {
+          "id": "archive",
+          "meaningChunks": 21,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 3,
+          "links": 10,
+          "controls": 2,
+          "details": 0,
+          "forms": 0
+        },
+        "krigsvold": {
+          "id": "archive",
+          "meaningChunks": 21,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 3,
+          "links": 10,
+          "controls": 2,
+          "details": 0,
+          "forms": 0
+        }
       }
     },
     {
@@ -446,6 +559,32 @@
       "familyImplementationStatus": {
         "martlet": "not-started",
         "krigsvold": "not-started"
+      },
+      "localReview": {
+        "status": "pending-systemwide-visual-review",
+        "noUniversalFidelityClaim": true
+      },
+      "baselineRenderedContract": {
+        "martlet": {
+          "id": "category",
+          "meaningChunks": 9,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 3,
+          "links": 6,
+          "controls": 2,
+          "details": 0,
+          "forms": 0
+        },
+        "krigsvold": {
+          "id": "category",
+          "meaningChunks": 9,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 3,
+          "links": 6,
+          "controls": 2,
+          "details": 0,
+          "forms": 0
+        }
       }
     },
     {
@@ -509,6 +648,32 @@
       "familyImplementationStatus": {
         "martlet": "not-started",
         "krigsvold": "not-started"
+      },
+      "localReview": {
+        "status": "pending-systemwide-visual-review",
+        "noUniversalFidelityClaim": true
+      },
+      "baselineRenderedContract": {
+        "martlet": {
+          "id": "categories",
+          "meaningChunks": 9,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 3,
+          "links": 7,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        "krigsvold": {
+          "id": "categories",
+          "meaningChunks": 9,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 3,
+          "links": 7,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        }
       }
     },
     {
@@ -576,6 +741,32 @@
       "familyImplementationStatus": {
         "martlet": "not-started",
         "krigsvold": "not-started"
+      },
+      "localReview": {
+        "status": "pending-systemwide-visual-review",
+        "noUniversalFidelityClaim": true
+      },
+      "baselineRenderedContract": {
+        "martlet": {
+          "id": "person",
+          "meaningChunks": 22,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 5,
+          "links": 7,
+          "controls": 2,
+          "details": 0,
+          "forms": 0
+        },
+        "krigsvold": {
+          "id": "person",
+          "meaningChunks": 22,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 5,
+          "links": 7,
+          "controls": 2,
+          "details": 0,
+          "forms": 0
+        }
       }
     },
     {
@@ -639,6 +830,32 @@
       "familyImplementationStatus": {
         "martlet": "not-started",
         "krigsvold": "not-started"
+      },
+      "localReview": {
+        "status": "pending-systemwide-visual-review",
+        "noUniversalFidelityClaim": true
+      },
+      "baselineRenderedContract": {
+        "martlet": {
+          "id": "projects",
+          "meaningChunks": 12,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 3,
+          "links": 7,
+          "controls": 2,
+          "details": 0,
+          "forms": 0
+        },
+        "krigsvold": {
+          "id": "projects",
+          "meaningChunks": 12,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 3,
+          "links": 7,
+          "controls": 2,
+          "details": 0,
+          "forms": 0
+        }
       }
     },
     {
@@ -708,6 +925,32 @@
       "familyImplementationStatus": {
         "martlet": "not-started",
         "krigsvold": "not-started"
+      },
+      "localReview": {
+        "status": "pending-systemwide-visual-review",
+        "noUniversalFidelityClaim": true
+      },
+      "baselineRenderedContract": {
+        "martlet": {
+          "id": "case-study",
+          "meaningChunks": 19,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 6,
+          "links": 6,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        "krigsvold": {
+          "id": "case-study",
+          "meaningChunks": 19,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 6,
+          "links": 6,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        }
       }
     },
     {
@@ -771,6 +1014,32 @@
       "familyImplementationStatus": {
         "martlet": "not-started",
         "krigsvold": "not-started"
+      },
+      "localReview": {
+        "status": "pending-systemwide-visual-review",
+        "noUniversalFidelityClaim": true
+      },
+      "baselineRenderedContract": {
+        "martlet": {
+          "id": "documentation",
+          "meaningChunks": 9,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 3,
+          "links": 7,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        "krigsvold": {
+          "id": "documentation",
+          "meaningChunks": 9,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 3,
+          "links": 7,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        }
       }
     },
     {
@@ -851,6 +1120,32 @@
       "familyImplementationStatus": {
         "martlet": "not-started",
         "krigsvold": "not-started"
+      },
+      "localReview": {
+        "status": "pending-systemwide-visual-review",
+        "noUniversalFidelityClaim": true
+      },
+      "baselineRenderedContract": {
+        "martlet": {
+          "id": "guide",
+          "meaningChunks": 16,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 5,
+          "links": 9,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        "krigsvold": {
+          "id": "guide",
+          "meaningChunks": 16,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 5,
+          "links": 9,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        }
       }
     },
     {
@@ -934,6 +1229,32 @@
       "familyImplementationStatus": {
         "martlet": "not-started",
         "krigsvold": "not-started"
+      },
+      "localReview": {
+        "status": "pending-systemwide-visual-review",
+        "noUniversalFidelityClaim": true
+      },
+      "baselineRenderedContract": {
+        "martlet": {
+          "id": "reference",
+          "meaningChunks": 13,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 6,
+          "links": 8,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        "krigsvold": {
+          "id": "reference",
+          "meaningChunks": 13,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 6,
+          "links": 8,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        }
       }
     },
     {
@@ -1000,6 +1321,32 @@
       "familyImplementationStatus": {
         "martlet": "not-started",
         "krigsvold": "not-started"
+      },
+      "localReview": {
+        "status": "pending-systemwide-visual-review",
+        "noUniversalFidelityClaim": true
+      },
+      "baselineRenderedContract": {
+        "martlet": {
+          "id": "contact",
+          "meaningChunks": 10,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 9,
+          "links": 4,
+          "controls": 6,
+          "details": 0,
+          "forms": 1
+        },
+        "krigsvold": {
+          "id": "contact",
+          "meaningChunks": 10,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 9,
+          "links": 4,
+          "controls": 6,
+          "details": 0,
+          "forms": 1
+        }
       }
     },
     {
@@ -1056,7 +1403,24 @@
         "representative Chromium/Firefox/WebKit; axe+manual paired visual review",
         "native details Enter/Space/open/close; exact questions+answers; noJS disclosures"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "family": "martlet",
+          "kind": "exact-head-source-archive",
+          "sourceCommit": "d025637e1fe4c11d84c691276d6b3652719b9a30",
+          "artifact": "/workspace/work/jekyll-grammar/martlet-final-source/template.zip",
+          "sha256": "9f736850fb4ae8edd64aa85862d419a261f60c4a22484c5ecda79d735c1bf269",
+          "result": "Independently opened all240uniqueentries and compared bytes to exact head; fixtureSHA unchanged.",
+          "verification": "independently observed; does not prove hosted/browser/visual acceptance"
+        },
+        {
+          "family": "martlet",
+          "kind": "local-regression",
+          "sourceCommit": "d025637e1fe4c11d84c691276d6b3652719b9a30",
+          "result": "Owner reports53Python tests,36targetedChrome+6noJS,original32hero+200recipes,lint and standalone sourceZIP checks passed.",
+          "verification": "owner-reported; hosted and independent paired visual review pending"
+        }
+      ],
       "pullRequests": [],
       "exceptions": [],
       "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
@@ -1075,8 +1439,34 @@
         }
       ],
       "familyImplementationStatus": {
-        "martlet": "implemented-locally; unpinned/preview acceptance pending",
-        "krigsvold": "implementation in progress; exact status pending owner update"
+        "martlet": "implemented at d025637e1fe4c11d84c691276d6b3652719b9a30; local checks passed; isolated preview and independent visual acceptance pending",
+        "krigsvold": "implemented-locally; local verification running; pinned head/preview acceptance pending"
+      },
+      "localReview": {
+        "status": "pending-systemwide-visual-review",
+        "noUniversalFidelityClaim": true
+      },
+      "baselineRenderedContract": {
+        "martlet": {
+          "id": "faq",
+          "meaningChunks": 11,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 3,
+          "links": 5,
+          "controls": 0,
+          "details": 4,
+          "forms": 0
+        },
+        "krigsvold": {
+          "id": "faq",
+          "meaningChunks": 11,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 3,
+          "links": 5,
+          "controls": 0,
+          "details": 4,
+          "forms": 0
+        }
       }
     },
     {
@@ -1157,6 +1547,32 @@
       "familyImplementationStatus": {
         "martlet": "not-started",
         "krigsvold": "not-started"
+      },
+      "localReview": {
+        "status": "pending-systemwide-visual-review",
+        "noUniversalFidelityClaim": true
+      },
+      "baselineRenderedContract": {
+        "martlet": {
+          "id": "privacy",
+          "meaningChunks": 14,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 5,
+          "links": 9,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        "krigsvold": {
+          "id": "privacy",
+          "meaningChunks": 14,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 5,
+          "links": 9,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        }
       }
     },
     {
@@ -1237,6 +1653,32 @@
       "familyImplementationStatus": {
         "martlet": "not-started",
         "krigsvold": "not-started"
+      },
+      "localReview": {
+        "status": "pending-systemwide-visual-review",
+        "noUniversalFidelityClaim": true
+      },
+      "baselineRenderedContract": {
+        "martlet": {
+          "id": "terms",
+          "meaningChunks": 14,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 5,
+          "links": 9,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        "krigsvold": {
+          "id": "terms",
+          "meaningChunks": 14,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 5,
+          "links": 9,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        }
       }
     },
     {
@@ -1304,6 +1746,32 @@
       "familyImplementationStatus": {
         "martlet": "not-started",
         "krigsvold": "not-started"
+      },
+      "localReview": {
+        "status": "pending-systemwide-visual-review",
+        "noUniversalFidelityClaim": true
+      },
+      "baselineRenderedContract": {
+        "martlet": {
+          "id": "service",
+          "meaningChunks": 16,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 5,
+          "links": 9,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        "krigsvold": {
+          "id": "service",
+          "meaningChunks": 16,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 5,
+          "links": 9,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        }
       }
     },
     {
@@ -1371,6 +1839,32 @@
       "familyImplementationStatus": {
         "martlet": "not-started",
         "krigsvold": "not-started"
+      },
+      "localReview": {
+        "status": "pending-systemwide-visual-review",
+        "noUniversalFidelityClaim": true
+      },
+      "baselineRenderedContract": {
+        "martlet": {
+          "id": "place",
+          "meaningChunks": 16,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 5,
+          "links": 6,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        "krigsvold": {
+          "id": "place",
+          "meaningChunks": 16,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 5,
+          "links": 6,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        }
       }
     },
     {
@@ -1437,6 +1931,32 @@
       "familyImplementationStatus": {
         "martlet": "not-started",
         "krigsvold": "not-started"
+      },
+      "localReview": {
+        "status": "pending-systemwide-visual-review",
+        "noUniversalFidelityClaim": true
+      },
+      "baselineRenderedContract": {
+        "martlet": {
+          "id": "pricing",
+          "meaningChunks": 15,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 4,
+          "links": 7,
+          "controls": 0,
+          "details": 1,
+          "forms": 0
+        },
+        "krigsvold": {
+          "id": "pricing",
+          "meaningChunks": 15,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 4,
+          "links": 7,
+          "controls": 0,
+          "details": 1,
+          "forms": 0
+        }
       }
     },
     {
@@ -1500,6 +2020,32 @@
       "familyImplementationStatus": {
         "martlet": "not-started",
         "krigsvold": "not-started"
+      },
+      "localReview": {
+        "status": "pending-systemwide-visual-review",
+        "noUniversalFidelityClaim": true
+      },
+      "baselineRenderedContract": {
+        "martlet": {
+          "id": "careers",
+          "meaningChunks": 9,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 3,
+          "links": 6,
+          "controls": 2,
+          "details": 0,
+          "forms": 0
+        },
+        "krigsvold": {
+          "id": "careers",
+          "meaningChunks": 9,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 3,
+          "links": 6,
+          "controls": 2,
+          "details": 0,
+          "forms": 0
+        }
       }
     },
     {
@@ -1582,6 +2128,32 @@
       "familyImplementationStatus": {
         "martlet": "not-started",
         "krigsvold": "not-started"
+      },
+      "localReview": {
+        "status": "pending-systemwide-visual-review",
+        "noUniversalFidelityClaim": true
+      },
+      "baselineRenderedContract": {
+        "martlet": {
+          "id": "opportunity",
+          "meaningChunks": 19,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 6,
+          "links": 9,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        "krigsvold": {
+          "id": "opportunity",
+          "meaningChunks": 19,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 6,
+          "links": 9,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        }
       }
     },
     {
@@ -1649,6 +2221,32 @@
       "familyImplementationStatus": {
         "martlet": "not-started",
         "krigsvold": "not-started"
+      },
+      "localReview": {
+        "status": "pending-systemwide-visual-review",
+        "noUniversalFidelityClaim": true
+      },
+      "baselineRenderedContract": {
+        "martlet": {
+          "id": "software",
+          "meaningChunks": 17,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 5,
+          "links": 9,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        "krigsvold": {
+          "id": "software",
+          "meaningChunks": 17,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 5,
+          "links": 9,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        }
       }
     },
     {
@@ -1716,6 +2314,32 @@
       "familyImplementationStatus": {
         "martlet": "not-started",
         "krigsvold": "not-started"
+      },
+      "localReview": {
+        "status": "pending-systemwide-visual-review",
+        "noUniversalFidelityClaim": true
+      },
+      "baselineRenderedContract": {
+        "martlet": {
+          "id": "product",
+          "meaningChunks": 14,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 5,
+          "links": 5,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        "krigsvold": {
+          "id": "product",
+          "meaningChunks": 14,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 5,
+          "links": 5,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        }
       }
     },
     {
@@ -1779,6 +2403,32 @@
       "familyImplementationStatus": {
         "martlet": "not-started",
         "krigsvold": "not-started"
+      },
+      "localReview": {
+        "status": "pending-systemwide-visual-review",
+        "noUniversalFidelityClaim": true
+      },
+      "baselineRenderedContract": {
+        "martlet": {
+          "id": "collection",
+          "meaningChunks": 15,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 3,
+          "links": 8,
+          "controls": 2,
+          "details": 0,
+          "forms": 0
+        },
+        "krigsvold": {
+          "id": "collection",
+          "meaningChunks": 15,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 3,
+          "links": 8,
+          "controls": 2,
+          "details": 0,
+          "forms": 0
+        }
       }
     },
     {
@@ -1846,6 +2496,32 @@
       "familyImplementationStatus": {
         "martlet": "not-started",
         "krigsvold": "not-started"
+      },
+      "localReview": {
+        "status": "pending-systemwide-visual-review",
+        "noUniversalFidelityClaim": true
+      },
+      "baselineRenderedContract": {
+        "martlet": {
+          "id": "collection-item",
+          "meaningChunks": 17,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 5,
+          "links": 5,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        "krigsvold": {
+          "id": "collection-item",
+          "meaningChunks": 17,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 5,
+          "links": 5,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        }
       }
     },
     {
@@ -1911,6 +2587,32 @@
       "familyImplementationStatus": {
         "martlet": "not-started",
         "krigsvold": "not-started"
+      },
+      "localReview": {
+        "status": "pending-systemwide-visual-review",
+        "noUniversalFidelityClaim": true
+      },
+      "baselineRenderedContract": {
+        "martlet": {
+          "id": "events",
+          "meaningChunks": 10,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 4,
+          "links": 6,
+          "controls": 4,
+          "details": 0,
+          "forms": 0
+        },
+        "krigsvold": {
+          "id": "events",
+          "meaningChunks": 10,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 4,
+          "links": 6,
+          "controls": 4,
+          "details": 0,
+          "forms": 0
+        }
       }
     },
     {
@@ -1979,6 +2681,32 @@
       "familyImplementationStatus": {
         "martlet": "not-started",
         "krigsvold": "not-started"
+      },
+      "localReview": {
+        "status": "pending-systemwide-visual-review",
+        "noUniversalFidelityClaim": true
+      },
+      "baselineRenderedContract": {
+        "martlet": {
+          "id": "event",
+          "meaningChunks": 15,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 5,
+          "links": 5,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        "krigsvold": {
+          "id": "event",
+          "meaningChunks": 15,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 5,
+          "links": 5,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        }
       }
     },
     {
@@ -2049,6 +2777,32 @@
       "familyImplementationStatus": {
         "martlet": "not-started",
         "krigsvold": "not-started"
+      },
+      "localReview": {
+        "status": "pending-systemwide-visual-review",
+        "noUniversalFidelityClaim": true
+      },
+      "baselineRenderedContract": {
+        "martlet": {
+          "id": "report",
+          "meaningChunks": 18,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 6,
+          "links": 6,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        "krigsvold": {
+          "id": "report",
+          "meaningChunks": 18,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 6,
+          "links": 6,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        }
       }
     },
     {
@@ -2114,6 +2868,32 @@
       "familyImplementationStatus": {
         "martlet": "not-started",
         "krigsvold": "not-started"
+      },
+      "localReview": {
+        "status": "pending-systemwide-visual-review",
+        "noUniversalFidelityClaim": true
+      },
+      "baselineRenderedContract": {
+        "martlet": {
+          "id": "gallery",
+          "meaningChunks": 12,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 4,
+          "links": 7,
+          "controls": 1,
+          "details": 0,
+          "forms": 0
+        },
+        "krigsvold": {
+          "id": "gallery",
+          "meaningChunks": 12,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 4,
+          "links": 7,
+          "controls": 1,
+          "details": 0,
+          "forms": 0
+        }
       }
     },
     {
@@ -2174,9 +2954,32 @@
         "representative Chromium/Firefox/WebKit; axe+manual paired visual review",
         "full release titles/bodies and v1-2/v1-1/v1-0 anchors; no invented machine dates"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "family": "martlet",
+          "kind": "exact-head-source-archive",
+          "sourceCommit": "d025637e1fe4c11d84c691276d6b3652719b9a30",
+          "artifact": "/workspace/work/jekyll-grammar/martlet-final-source/template.zip",
+          "sha256": "9f736850fb4ae8edd64aa85862d419a261f60c4a22484c5ecda79d735c1bf269",
+          "result": "Independently opened all240uniqueentries and compared bytes to exact head; fixtureSHA unchanged.",
+          "verification": "independently observed; does not prove hosted/browser/visual acceptance"
+        },
+        {
+          "family": "martlet",
+          "kind": "local-regression",
+          "sourceCommit": "d025637e1fe4c11d84c691276d6b3652719b9a30",
+          "result": "Owner reports53Python tests,36targetedChrome+6noJS,original32hero+200recipes,lint and standalone sourceZIP checks passed.",
+          "verification": "owner-reported; hosted and independent paired visual review pending"
+        }
+      ],
       "pullRequests": [],
-      "exceptions": [],
+      "exceptions": [
+        {
+          "kind": "authored-field-boundary",
+          "detail": "Version/date are authored together in fullhuman sectiontitles. Preserve original titles/body; currentfixedfixture date-only <time> values may be derived and pinned by tests. No separatelyauthoredtimestamp/timezone/releasestate field or arbitrarytitle parsing contract is implied.",
+          "status": "intentional-boundary"
+        }
+      ],
       "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
       "compositionRefinements": [
         {
@@ -2193,8 +2996,34 @@
         }
       ],
       "familyImplementationStatus": {
-        "martlet": "implemented-locally; unpinned/preview acceptance pending",
-        "krigsvold": "implementation in progress; exact status pending owner update"
+        "martlet": "implemented at d025637e1fe4c11d84c691276d6b3652719b9a30; local checks passed; isolated preview and independent visual acceptance pending",
+        "krigsvold": "implemented-locally; local verification running; pinned head/preview acceptance pending"
+      },
+      "localReview": {
+        "status": "pending-systemwide-visual-review",
+        "noUniversalFidelityClaim": true
+      },
+      "baselineRenderedContract": {
+        "martlet": {
+          "id": "changelog",
+          "meaningChunks": 11,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 7,
+          "links": 7,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        "krigsvold": {
+          "id": "changelog",
+          "meaningChunks": 11,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 7,
+          "links": 7,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        }
       }
     },
     {
@@ -2261,6 +3090,32 @@
       "familyImplementationStatus": {
         "martlet": "not-started",
         "krigsvold": "not-started"
+      },
+      "localReview": {
+        "status": "pending-systemwide-visual-review",
+        "noUniversalFidelityClaim": true
+      },
+      "baselineRenderedContract": {
+        "martlet": {
+          "id": "search",
+          "meaningChunks": 3,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 4,
+          "links": 5,
+          "controls": 2,
+          "details": 0,
+          "forms": 1
+        },
+        "krigsvold": {
+          "id": "search",
+          "meaningChunks": 3,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 4,
+          "links": 5,
+          "controls": 2,
+          "details": 0,
+          "forms": 1
+        }
       }
     },
     {
@@ -2329,6 +3184,32 @@
       "familyImplementationStatus": {
         "martlet": "not-started",
         "krigsvold": "not-started"
+      },
+      "localReview": {
+        "status": "pending-systemwide-visual-review",
+        "noUniversalFidelityClaim": true
+      },
+      "baselineRenderedContract": {
+        "martlet": {
+          "id": "sign-in",
+          "meaningChunks": 12,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 8,
+          "links": 10,
+          "controls": 4,
+          "details": 0,
+          "forms": 1
+        },
+        "krigsvold": {
+          "id": "sign-in",
+          "meaningChunks": 12,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 8,
+          "links": 10,
+          "controls": 4,
+          "details": 0,
+          "forms": 1
+        }
       }
     },
     {
@@ -2397,6 +3278,32 @@
       "familyImplementationStatus": {
         "martlet": "not-started",
         "krigsvold": "not-started"
+      },
+      "localReview": {
+        "status": "pending-systemwide-visual-review",
+        "noUniversalFidelityClaim": true
+      },
+      "baselineRenderedContract": {
+        "martlet": {
+          "id": "sign-up",
+          "meaningChunks": 12,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 9,
+          "links": 10,
+          "controls": 6,
+          "details": 0,
+          "forms": 1
+        },
+        "krigsvold": {
+          "id": "sign-up",
+          "meaningChunks": 12,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 9,
+          "links": 10,
+          "controls": 6,
+          "details": 0,
+          "forms": 1
+        }
       }
     },
     {
@@ -2465,6 +3372,32 @@
       "familyImplementationStatus": {
         "martlet": "not-started",
         "krigsvold": "not-started"
+      },
+      "localReview": {
+        "status": "pending-systemwide-visual-review",
+        "noUniversalFidelityClaim": true
+      },
+      "baselineRenderedContract": {
+        "martlet": {
+          "id": "password-reset",
+          "meaningChunks": 12,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 6,
+          "links": 10,
+          "controls": 3,
+          "details": 0,
+          "forms": 1
+        },
+        "krigsvold": {
+          "id": "password-reset",
+          "meaningChunks": 12,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 6,
+          "links": 10,
+          "controls": 3,
+          "details": 0,
+          "forms": 1
+        }
       }
     },
     {
@@ -2533,6 +3466,32 @@
       "familyImplementationStatus": {
         "martlet": "not-started",
         "krigsvold": "not-started"
+      },
+      "localReview": {
+        "status": "pending-systemwide-visual-review",
+        "noUniversalFidelityClaim": true
+      },
+      "baselineRenderedContract": {
+        "martlet": {
+          "id": "two-factor",
+          "meaningChunks": 12,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 7,
+          "links": 10,
+          "controls": 3,
+          "details": 0,
+          "forms": 1
+        },
+        "krigsvold": {
+          "id": "two-factor",
+          "meaningChunks": 12,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 7,
+          "links": 10,
+          "controls": 3,
+          "details": 0,
+          "forms": 1
+        }
       }
     },
     {
@@ -2601,6 +3560,32 @@
       "familyImplementationStatus": {
         "martlet": "not-started",
         "krigsvold": "not-started"
+      },
+      "localReview": {
+        "status": "pending-systemwide-visual-review",
+        "noUniversalFidelityClaim": true
+      },
+      "baselineRenderedContract": {
+        "martlet": {
+          "id": "coming-soon",
+          "meaningChunks": 6,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 6,
+          "links": 6,
+          "controls": 4,
+          "details": 0,
+          "forms": 1
+        },
+        "krigsvold": {
+          "id": "coming-soon",
+          "meaningChunks": 6,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 6,
+          "links": 6,
+          "controls": 4,
+          "details": 0,
+          "forms": 1
+        }
       }
     },
     {
@@ -2666,6 +3651,32 @@
       "familyImplementationStatus": {
         "martlet": "not-started",
         "krigsvold": "not-started"
+      },
+      "localReview": {
+        "status": "pending-systemwide-visual-review",
+        "noUniversalFidelityClaim": true
+      },
+      "baselineRenderedContract": {
+        "martlet": {
+          "id": "not-found",
+          "meaningChunks": 6,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 3,
+          "links": 7,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        "krigsvold": {
+          "id": "not-found",
+          "meaningChunks": 6,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 3,
+          "links": 7,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        }
       }
     },
     {
@@ -2731,6 +3742,32 @@
       "familyImplementationStatus": {
         "martlet": "not-started",
         "krigsvold": "not-started"
+      },
+      "localReview": {
+        "status": "pending-systemwide-visual-review",
+        "noUniversalFidelityClaim": true
+      },
+      "baselineRenderedContract": {
+        "martlet": {
+          "id": "server-error",
+          "meaningChunks": 7,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 3,
+          "links": 7,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        "krigsvold": {
+          "id": "server-error",
+          "meaningChunks": 7,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 3,
+          "links": 7,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        }
       }
     },
     {
@@ -2797,6 +3834,32 @@
       "familyImplementationStatus": {
         "martlet": "not-started",
         "krigsvold": "not-started"
+      },
+      "localReview": {
+        "status": "pending-systemwide-visual-review",
+        "noUniversalFidelityClaim": true
+      },
+      "baselineRenderedContract": {
+        "martlet": {
+          "id": "workspace",
+          "meaningChunks": 12,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 4,
+          "links": 4,
+          "controls": 6,
+          "details": 0,
+          "forms": 0
+        },
+        "krigsvold": {
+          "id": "workspace",
+          "meaningChunks": 12,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 4,
+          "links": 4,
+          "controls": 6,
+          "details": 0,
+          "forms": 0
+        }
       }
     },
     {
@@ -2863,6 +3926,32 @@
       "familyImplementationStatus": {
         "martlet": "not-started",
         "krigsvold": "not-started"
+      },
+      "localReview": {
+        "status": "pending-systemwide-visual-review",
+        "noUniversalFidelityClaim": true
+      },
+      "baselineRenderedContract": {
+        "martlet": {
+          "id": "chat",
+          "meaningChunks": 3,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 3,
+          "links": 4,
+          "controls": 3,
+          "details": 0,
+          "forms": 1
+        },
+        "krigsvold": {
+          "id": "chat",
+          "meaningChunks": 3,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 3,
+          "links": 4,
+          "controls": 3,
+          "details": 0,
+          "forms": 1
+        }
       }
     },
     {
@@ -2929,6 +4018,32 @@
       "familyImplementationStatus": {
         "martlet": "not-started",
         "krigsvold": "not-started"
+      },
+      "localReview": {
+        "status": "pending-systemwide-visual-review",
+        "noUniversalFidelityClaim": true
+      },
+      "baselineRenderedContract": {
+        "martlet": {
+          "id": "sensors",
+          "meaningChunks": 3,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 4,
+          "links": 4,
+          "controls": 2,
+          "details": 0,
+          "forms": 0
+        },
+        "krigsvold": {
+          "id": "sensors",
+          "meaningChunks": 3,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 4,
+          "links": 4,
+          "controls": 2,
+          "details": 0,
+          "forms": 0
+        }
       }
     },
     {
@@ -2995,6 +4110,32 @@
       "familyImplementationStatus": {
         "martlet": "not-started",
         "krigsvold": "not-started"
+      },
+      "localReview": {
+        "status": "pending-systemwide-visual-review",
+        "noUniversalFidelityClaim": true
+      },
+      "baselineRenderedContract": {
+        "martlet": {
+          "id": "fleet",
+          "meaningChunks": 9,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 4,
+          "links": 4,
+          "controls": 5,
+          "details": 0,
+          "forms": 0
+        },
+        "krigsvold": {
+          "id": "fleet",
+          "meaningChunks": 9,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 4,
+          "links": 4,
+          "controls": 5,
+          "details": 0,
+          "forms": 0
+        }
       }
     },
     {
@@ -3062,6 +4203,32 @@
       "familyImplementationStatus": {
         "martlet": "not-started",
         "krigsvold": "not-started"
+      },
+      "localReview": {
+        "status": "pending-systemwide-visual-review",
+        "noUniversalFidelityClaim": true
+      },
+      "baselineRenderedContract": {
+        "martlet": {
+          "id": "scene",
+          "meaningChunks": 6,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 5,
+          "links": 4,
+          "controls": 1,
+          "details": 0,
+          "forms": 0
+        },
+        "krigsvold": {
+          "id": "scene",
+          "meaningChunks": 6,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 5,
+          "links": 4,
+          "controls": 1,
+          "details": 0,
+          "forms": 0
+        }
       }
     },
     {
@@ -3143,6 +4310,32 @@
       "familyImplementationStatus": {
         "martlet": "not-started",
         "krigsvold": "not-started"
+      },
+      "localReview": {
+        "status": "pending-systemwide-visual-review",
+        "noUniversalFidelityClaim": true
+      },
+      "baselineRenderedContract": {
+        "martlet": {
+          "id": "integrations",
+          "meaningChunks": 11,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 5,
+          "links": 7,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        "krigsvold": {
+          "id": "integrations",
+          "meaningChunks": 11,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 5,
+          "links": 7,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        }
       }
     },
     {
@@ -3228,6 +4421,32 @@
       "familyImplementationStatus": {
         "martlet": "not-started",
         "krigsvold": "not-started"
+      },
+      "localReview": {
+        "status": "pending-systemwide-visual-review",
+        "noUniversalFidelityClaim": true
+      },
+      "baselineRenderedContract": {
+        "martlet": {
+          "id": "stress-test",
+          "meaningChunks": 28,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 13,
+          "links": 13,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        "krigsvold": {
+          "id": "stress-test",
+          "meaningChunks": 28,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 13,
+          "links": 13,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        }
       }
     },
     {
@@ -3298,6 +4517,32 @@
       "familyImplementationStatus": {
         "martlet": "not-started",
         "krigsvold": "not-started"
+      },
+      "localReview": {
+        "status": "pending-systemwide-visual-review",
+        "noUniversalFidelityClaim": true
+      },
+      "baselineRenderedContract": {
+        "martlet": {
+          "id": "patterns",
+          "meaningChunks": 20,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 6,
+          "links": 5,
+          "controls": 0,
+          "details": 2,
+          "forms": 0
+        },
+        "krigsvold": {
+          "id": "patterns",
+          "meaningChunks": 20,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 6,
+          "links": 5,
+          "controls": 0,
+          "details": 2,
+          "forms": 0
+        }
       }
     },
     {
@@ -3359,12 +4604,89 @@
       ],
       "evidence": [],
       "pullRequests": [],
-      "exceptions": [],
+      "exceptions": [
+        {
+          "kind": "baseline-specialized-dashboard-renderer",
+          "family": "martlet",
+          "detail": "Generic fixture placeholder section title/body are not literal content in accepted baseline; actual specialized dashboard heading, summary, data and controls are captured separately. Do not claim all raw JSON leaf strings are displayed.",
+          "baselineValues": [
+            {
+              "path": "sections.0.title",
+              "text": "Analytics workspace"
+            },
+            {
+              "path": "sections.0.body",
+              "text": "Shared synthetic analytics and controls."
+            }
+          ],
+          "status": "observed-existing-boundary"
+        },
+        {
+          "kind": "baseline-specialized-dashboard-renderer",
+          "family": "krigsvold",
+          "detail": "Generic fixture placeholder section title/body are not literal content in accepted baseline; actual specialized dashboard heading, summary, data and controls are captured separately. Do not claim all raw JSON leaf strings are displayed.",
+          "baselineValues": [
+            {
+              "path": "sections.0.title",
+              "text": "Analytics workspace"
+            },
+            {
+              "path": "sections.0.body",
+              "text": "Shared synthetic analytics and controls."
+            }
+          ],
+          "status": "observed-existing-boundary"
+        }
+      ],
       "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
       "compositionRefinements": [],
       "familyImplementationStatus": {
         "martlet": "not-started",
         "krigsvold": "not-started"
+      },
+      "localReview": {
+        "status": "pending-systemwide-visual-review",
+        "noUniversalFidelityClaim": true
+      },
+      "baselineRenderedContract": {
+        "martlet": {
+          "id": "dashboard-analytics",
+          "meaningChunks": 2,
+          "nonLiteralFixtureValues": [
+            {
+              "path": "sections.0.title",
+              "text": "Analytics workspace"
+            },
+            {
+              "path": "sections.0.body",
+              "text": "Shared synthetic analytics and controls."
+            }
+          ],
+          "stableIds": 16,
+          "links": 6,
+          "controls": 7,
+          "details": 3,
+          "forms": 1
+        },
+        "krigsvold": {
+          "id": "dashboard-analytics",
+          "meaningChunks": 2,
+          "nonLiteralFixtureValues": [
+            {
+              "path": "sections.0.title",
+              "text": "Analytics workspace"
+            },
+            {
+              "path": "sections.0.body",
+              "text": "Shared synthetic analytics and controls."
+            }
+          ],
+          "stableIds": 16,
+          "links": 6,
+          "controls": 7,
+          "details": 3,
+          "forms": 1
+        }
       }
     },
     {
@@ -3426,9 +4748,38 @@
         "keyboard/focus; noJS; reduced motion; forced colors; print",
         "representative Chromium/Firefox/WebKit; axe+manual paired visual review"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "family": "martlet",
+          "kind": "exact-head-source-archive",
+          "sourceCommit": "d025637e1fe4c11d84c691276d6b3652719b9a30",
+          "artifact": "/workspace/work/jekyll-grammar/martlet-final-source/template.zip",
+          "sha256": "9f736850fb4ae8edd64aa85862d419a261f60c4a22484c5ecda79d735c1bf269",
+          "result": "Independently opened all240uniqueentries and compared bytes to exact head; fixtureSHA unchanged.",
+          "verification": "independently observed; does not prove hosted/browser/visual acceptance"
+        },
+        {
+          "family": "martlet",
+          "kind": "local-regression",
+          "sourceCommit": "d025637e1fe4c11d84c691276d6b3652719b9a30",
+          "result": "Owner reports53Python tests,36targetedChrome+6noJS,original32hero+200recipes,lint and standalone sourceZIP checks passed.",
+          "verification": "owner-reported; hosted and independent paired visual review pending"
+        }
+      ],
       "pullRequests": [],
-      "exceptions": [],
+      "exceptions": [
+        {
+          "kind": "model-scope",
+          "detail": "Canonical route contains four capability-reference prose sections, not22componentrecords. Reactcatalog is organizational precedent only. No invented components/fields/data contract.",
+          "anchors": [
+            "composition",
+            "metrics",
+            "behaviour",
+            "authority"
+          ],
+          "status": "intentional-boundary"
+        }
+      ],
       "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
       "compositionRefinements": [
         {
@@ -3445,8 +4796,34 @@
         }
       ],
       "familyImplementationStatus": {
-        "martlet": "implemented-locally; unpinned/preview acceptance pending",
-        "krigsvold": "implementation in progress; exact status pending owner update"
+        "martlet": "implemented at d025637e1fe4c11d84c691276d6b3652719b9a30; local checks passed; isolated preview and independent visual acceptance pending",
+        "krigsvold": "implemented-locally; local verification running; pinned head/preview acceptance pending"
+      },
+      "localReview": {
+        "status": "pending-systemwide-visual-review",
+        "noUniversalFidelityClaim": true
+      },
+      "baselineRenderedContract": {
+        "martlet": {
+          "id": "dashboard-components",
+          "meaningChunks": 16,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 6,
+          "links": 8,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        "krigsvold": {
+          "id": "dashboard-components",
+          "meaningChunks": 16,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 6,
+          "links": 8,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        }
       }
     },
     {
@@ -3508,12 +4885,89 @@
       ],
       "evidence": [],
       "pullRequests": [],
-      "exceptions": [],
+      "exceptions": [
+        {
+          "kind": "baseline-specialized-dashboard-renderer",
+          "family": "martlet",
+          "detail": "Generic fixture placeholder section title/body are not literal content in accepted baseline; actual specialized dashboard heading, summary, data and controls are captured separately. Do not claim all raw JSON leaf strings are displayed.",
+          "baselineValues": [
+            {
+              "path": "sections.0.title",
+              "text": "Administration workspace"
+            },
+            {
+              "path": "sections.0.body",
+              "text": "Shared synthetic data and equivalent application behaviour."
+            }
+          ],
+          "status": "observed-existing-boundary"
+        },
+        {
+          "kind": "baseline-specialized-dashboard-renderer",
+          "family": "krigsvold",
+          "detail": "Generic fixture placeholder section title/body are not literal content in accepted baseline; actual specialized dashboard heading, summary, data and controls are captured separately. Do not claim all raw JSON leaf strings are displayed.",
+          "baselineValues": [
+            {
+              "path": "sections.0.title",
+              "text": "Administration workspace"
+            },
+            {
+              "path": "sections.0.body",
+              "text": "Shared synthetic data and equivalent application behaviour."
+            }
+          ],
+          "status": "observed-existing-boundary"
+        }
+      ],
       "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
       "compositionRefinements": [],
       "familyImplementationStatus": {
         "martlet": "not-started",
         "krigsvold": "not-started"
+      },
+      "localReview": {
+        "status": "pending-systemwide-visual-review",
+        "noUniversalFidelityClaim": true
+      },
+      "baselineRenderedContract": {
+        "martlet": {
+          "id": "dashboard-administration",
+          "meaningChunks": 2,
+          "nonLiteralFixtureValues": [
+            {
+              "path": "sections.0.title",
+              "text": "Administration workspace"
+            },
+            {
+              "path": "sections.0.body",
+              "text": "Shared synthetic data and equivalent application behaviour."
+            }
+          ],
+          "stableIds": 25,
+          "links": 6,
+          "controls": 26,
+          "details": 0,
+          "forms": 2
+        },
+        "krigsvold": {
+          "id": "dashboard-administration",
+          "meaningChunks": 2,
+          "nonLiteralFixtureValues": [
+            {
+              "path": "sections.0.title",
+              "text": "Administration workspace"
+            },
+            {
+              "path": "sections.0.body",
+              "text": "Shared synthetic data and equivalent application behaviour."
+            }
+          ],
+          "stableIds": 25,
+          "links": 6,
+          "controls": 26,
+          "details": 0,
+          "forms": 2
+        }
       }
     },
     {
@@ -3575,12 +5029,89 @@
       ],
       "evidence": [],
       "pullRequests": [],
-      "exceptions": [],
+      "exceptions": [
+        {
+          "kind": "baseline-specialized-dashboard-renderer",
+          "family": "martlet",
+          "detail": "Generic fixture placeholder section title/body are not literal content in accepted baseline; actual specialized dashboard heading, summary, data and controls are captured separately. Do not claim all raw JSON leaf strings are displayed.",
+          "baselineValues": [
+            {
+              "path": "sections.0.title",
+              "text": "Operations workspace"
+            },
+            {
+              "path": "sections.0.body",
+              "text": "Shared synthetic data and equivalent application behaviour."
+            }
+          ],
+          "status": "observed-existing-boundary"
+        },
+        {
+          "kind": "baseline-specialized-dashboard-renderer",
+          "family": "krigsvold",
+          "detail": "Generic fixture placeholder section title/body are not literal content in accepted baseline; actual specialized dashboard heading, summary, data and controls are captured separately. Do not claim all raw JSON leaf strings are displayed.",
+          "baselineValues": [
+            {
+              "path": "sections.0.title",
+              "text": "Operations workspace"
+            },
+            {
+              "path": "sections.0.body",
+              "text": "Shared synthetic data and equivalent application behaviour."
+            }
+          ],
+          "status": "observed-existing-boundary"
+        }
+      ],
       "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
       "compositionRefinements": [],
       "familyImplementationStatus": {
         "martlet": "not-started",
         "krigsvold": "not-started"
+      },
+      "localReview": {
+        "status": "pending-systemwide-visual-review",
+        "noUniversalFidelityClaim": true
+      },
+      "baselineRenderedContract": {
+        "martlet": {
+          "id": "dashboard-operations",
+          "meaningChunks": 2,
+          "nonLiteralFixtureValues": [
+            {
+              "path": "sections.0.title",
+              "text": "Operations workspace"
+            },
+            {
+              "path": "sections.0.body",
+              "text": "Shared synthetic data and equivalent application behaviour."
+            }
+          ],
+          "stableIds": 18,
+          "links": 6,
+          "controls": 8,
+          "details": 1,
+          "forms": 1
+        },
+        "krigsvold": {
+          "id": "dashboard-operations",
+          "meaningChunks": 2,
+          "nonLiteralFixtureValues": [
+            {
+              "path": "sections.0.title",
+              "text": "Operations workspace"
+            },
+            {
+              "path": "sections.0.body",
+              "text": "Shared synthetic data and equivalent application behaviour."
+            }
+          ],
+          "stableIds": 18,
+          "links": 6,
+          "controls": 8,
+          "details": 1,
+          "forms": 1
+        }
       }
     }
   ],

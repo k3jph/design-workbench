@@ -23,6 +23,8 @@ Two points in PR92 need dated qualification:
 
 PR92's screenshot observation is retained as reported evidence. The new paired baseline capture and identity/photo-masked comparison provide the reproducible observation for this run; they must be attached before claiming that a route has passed visual acceptance.
 
+The [rendered baseline contract summary](baseline-contract-summary.json) covers all 50 routes per family: 616 captured human-meaning chunks, plus stable IDs, links, forms, controls and native disclosures. Six generic fixture placeholder values on the three specialized dashboards are not literal baseline output; their actual specialized headings, summaries, data and controls are captured separately. This is an explicit observed model/rendering boundary, not permission to drop new content or a claim that every raw JSON leaf appears verbatim.
+
 ## Source judgment and boundaries
 
 [Martlet grammar](../../languages/martlet/grammar.md) and [source decisions](../../languages/martlet/decisions.md) establish proximity, readable sequence, bounded reading and continuity. They also support compact controls, comparison tables and simultaneous reference when the task warrants them. The warm gold-forward Jekyll host expression does not rewrite the canonical origin's blue tokens.
@@ -44,7 +46,7 @@ Both hosted MCP endpoints returned HTTP 403 to the read-only `tools/list` probe 
 
 FAQ grouping derives from the four existing questions: two concern the fixture/languages, and two concern local behavior/capability boundaries. Group labels are shared presentation annotations, not new fixture content. Native `details` remains available without JavaScript.
 
-Changelog titles contain versions and human-readable dates, not a separately authored machine-time field. Keep their full original titles and Markdown bodies, including Added/Migration text, and stable release anchors. Presentation may expose existing version/date relationships but may not invent release status, migration facts or timestamp semantics.
+Changelog titles contain versions and human-readable dates, not a separately authored machine-time field. Keep their full original titles and Markdown bodies, including Added/Migration text, and stable release anchors. Presentation may expose existing version/date relationships but may not invent release status, migration facts or timezone/timestamp semantics. Martlet’s current fixed-fixture date-only `time` attributes are derived from those authored titles and pinned by tests; this is not a new date field or an arbitrary-title parser contract.
 
 The capability-reference route retains its four full sections. Krigsvold inspection may use native disclosures; Martlet annotated reading may remain expanded. Whether a disclosure is initially open is presentation, not a deletion of content or replacement of a native interaction.
 
