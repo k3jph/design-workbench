@@ -1,0 +1,14 @@
+{
+  "id": "final-premerge-native-source-guards-8b0d2f8519a1",
+  "record": "evidence/final-premerge-native-source-guards-8b0d2f8519a1.json",
+  "originalName": "final-premerge-native-source-guards.json",
+  "kind": "file",
+  "rawSha256": "20fa0876ce4e7d30d251be925f9908fb5d450036ac83537bbe7a1701a4b3f503",
+  "rawBytesIncluded": false,
+  "retentionStatus": "preserved-locally-not-bundled",
+  "summaryDocuments": [
+    "final-acceptance.json"
+  ],
+  "sourceBindings": {},
+  "note": "Hash identifies original raw evidence retained outside this repository. Linked portable summaries contain observations and public source/CI/preview URLs."
+}

@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "issue": "https://github.com/k3jph/design-workbench/issues/91",
-  "updatedAt": "2026-11-03T22:38:09.273625+00:00",
-  "scope": "All50 paired recipe dispositions implemented or explicitly retained and exact final candidates technically verified; source-bound visual acceptance and normal integration recorded separately.",
+  "updatedAt": "2026-11-03T22:54:40.575041+00:00",
+  "scope": "Complete all50paired reconciliation: independent source-backed change/retention judgments, exact technical and bounded visual gates passed, approved source normally integrated into develop. Ordinary postmerge native delivery tracked separately.",
   "baselines": {
     "workbenchDevelop": "8dfb0ffe374cdc07dca370f80122ccd7c49edb50",
     "priorAuditPr": "https://github.com/k3jph/design-workbench/pull/92",
@@ -215,7 +215,7 @@
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 3,
       "implementationStatus": "complete: existing family-native recipe retained",
-      "visualReviewStatus": "All50 actual source-bound final capture complete; independent manual review receipt pending.",
+      "visualReviewStatus": "Passed independent bounded source-backed composition review of final actual HTTPS normal/strict images; no current visual blocker.",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -289,25 +289,28 @@
           "number": 21,
           "url": "https://github.com/krigsvolddesign/jekyll/pull/21",
           "head": "3e5d49dcf47cc3b9e6646e66274fb246d5848df2",
-          "status": "original native failed; exact reviewed ancestor preserved by normal merge into consolidatedPR22"
+          "status": "closed-unmerged-as-superseded; original native failed; reviewed ancestry preserved in normally consolidatedPR22",
+          "closedAt": "2026-11-03T22:45:11Z",
+          "supersessionCommentUrl": "https://github.com/krigsvolddesign/jekyll/pull/21#issuecomment-6617395960"
         },
         {
           "family": "krigsvold",
           "number": 22,
           "url": "https://github.com/krigsvolddesign/jekyll/pull/22",
           "head": "983dee5d27ad02458baef6edc5a39279e24028ea",
-          "status": "consolidated exact final candidate technically passed; normal integration pending"
+          "status": "merged through normal develop merge; exact tested/reviewed source tree preserved",
+          "mergeCommit": "c85e01c4975bbb490637f06a9db62af525ffbbde"
         }
       ],
       "exceptions": [],
       "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
       "compositionRefinements": [],
       "familyImplementationStatus": {
-        "martlet": "Exact final source 0c0e0a7452444c41a3876c2f8732c6439c6097b9 passes full technical gate; integration status in final-acceptance.json",
-        "krigsvold": "Exact final source 983dee5d27ad02458baef6edc5a39279e24028ea passes full technical gate; integration status in final-acceptance.json"
+        "martlet": "Accepted exact final head 0c0e0a7452444c41a3876c2f8732c6439c6097b9 through normal develop merge 8c19cad7b403da5fc65f2a8d4336170a4dbc5de5; tree identical to tested/reviewed source.",
+        "krigsvold": "Accepted exact final head 983dee5d27ad02458baef6edc5a39279e24028ea through normal develop merge c85e01c4975bbb490637f06a9db62af525ffbbde; tree identical to tested/reviewed source."
       },
       "localReview": {
-        "status": "final source-bound actual capture complete; independent manual all50 review receipt pending",
+        "status": "Passed bounded final all50 visual review; no universal fidelity or manualATclaim.",
         "noUniversalFidelityClaim": true
       },
       "baselineRenderedContract": {
@@ -351,6 +354,23 @@
         "actualHTTPSCasesPerFamily": 516,
         "actualAxeViolations": 0,
         "knownFailureExceptions": []
+      },
+      "finalVisualAcceptance": {
+        "summary": "visual-review.json",
+        "route": "home",
+        "verdict": "pass",
+        "observedFinding": "The introductory reading sequence, two actions, and three routes remain intact. Martlet keeps its bounded lead and subsequent choices; Krigsvold aligns the introduction and choices within purposeful regions. Narrow reflow preserves the sequence in both modes.",
+        "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+        "remainingVisualBlockers": []
+      },
+      "finalSourceIntegration": {
+        "summary": "final-acceptance.json",
+        "target": "develop",
+        "normalMergeCommits": {
+          "martlet": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5",
+          "krigsvold": "c85e01c4975bbb490637f06a9db62af525ffbbde"
+        },
+        "exactReviewedTreesPreserved": true
       }
     },
     {
@@ -402,7 +422,7 @@
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 3,
       "implementationStatus": "complete: existing family-native recipe retained",
-      "visualReviewStatus": "All50 actual source-bound final capture complete; independent manual review receipt pending.",
+      "visualReviewStatus": "Passed independent bounded source-backed composition review of final actual HTTPS normal/strict images; no current visual blocker.",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -476,25 +496,28 @@
           "number": 21,
           "url": "https://github.com/krigsvolddesign/jekyll/pull/21",
           "head": "3e5d49dcf47cc3b9e6646e66274fb246d5848df2",
-          "status": "original native failed; exact reviewed ancestor preserved by normal merge into consolidatedPR22"
+          "status": "closed-unmerged-as-superseded; original native failed; reviewed ancestry preserved in normally consolidatedPR22",
+          "closedAt": "2026-11-03T22:45:11Z",
+          "supersessionCommentUrl": "https://github.com/krigsvolddesign/jekyll/pull/21#issuecomment-6617395960"
         },
         {
           "family": "krigsvold",
           "number": 22,
           "url": "https://github.com/krigsvolddesign/jekyll/pull/22",
           "head": "983dee5d27ad02458baef6edc5a39279e24028ea",
-          "status": "consolidated exact final candidate technically passed; normal integration pending"
+          "status": "merged through normal develop merge; exact tested/reviewed source tree preserved",
+          "mergeCommit": "c85e01c4975bbb490637f06a9db62af525ffbbde"
         }
       ],
       "exceptions": [],
       "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
       "compositionRefinements": [],
       "familyImplementationStatus": {
-        "martlet": "Exact final source 0c0e0a7452444c41a3876c2f8732c6439c6097b9 passes full technical gate; integration status in final-acceptance.json",
-        "krigsvold": "Exact final source 983dee5d27ad02458baef6edc5a39279e24028ea passes full technical gate; integration status in final-acceptance.json"
+        "martlet": "Accepted exact final head 0c0e0a7452444c41a3876c2f8732c6439c6097b9 through normal develop merge 8c19cad7b403da5fc65f2a8d4336170a4dbc5de5; tree identical to tested/reviewed source.",
+        "krigsvold": "Accepted exact final head 983dee5d27ad02458baef6edc5a39279e24028ea through normal develop merge c85e01c4975bbb490637f06a9db62af525ffbbde; tree identical to tested/reviewed source."
       },
       "localReview": {
-        "status": "final source-bound actual capture complete; independent manual all50 review receipt pending",
+        "status": "Passed bounded final all50 visual review; no universal fidelity or manualATclaim.",
         "noUniversalFidelityClaim": true
       },
       "baselineRenderedContract": {
@@ -538,6 +561,23 @@
         "actualHTTPSCasesPerFamily": 516,
         "actualAxeViolations": 0,
         "knownFailureExceptions": []
+      },
+      "finalVisualAcceptance": {
+        "summary": "visual-review.json",
+        "route": "about",
+        "verdict": "pass",
+        "observedFinding": "Mission, working principles, and people remain a readable progression. Martlet uses heading-led prose and linked groups; Krigsvold uses aligned label/content regions. No extra card or invented organization capability was introduced.",
+        "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+        "remainingVisualBlockers": []
+      },
+      "finalSourceIntegration": {
+        "summary": "final-acceptance.json",
+        "target": "develop",
+        "normalMergeCommits": {
+          "martlet": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5",
+          "krigsvold": "c85e01c4975bbb490637f06a9db62af525ffbbde"
+        },
+        "exactReviewedTreesPreserved": true
       }
     },
     {
@@ -589,7 +629,7 @@
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 2,
       "implementationStatus": "complete: source-justified modification",
-      "visualReviewStatus": "All50 actual source-bound final capture complete; independent manual review receipt pending.",
+      "visualReviewStatus": "Passed independent bounded source-backed composition review of final actual HTTPS normal/strict images; no current visual blocker.",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -710,11 +750,11 @@
       "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
       "compositionRefinements": [],
       "familyImplementationStatus": {
-        "martlet": "Exact final source 0c0e0a7452444c41a3876c2f8732c6439c6097b9 passes full technical gate; integration status in final-acceptance.json",
-        "krigsvold": "Exact final source 983dee5d27ad02458baef6edc5a39279e24028ea passes full technical gate; integration status in final-acceptance.json"
+        "martlet": "Accepted exact final head 0c0e0a7452444c41a3876c2f8732c6439c6097b9 through normal develop merge 8c19cad7b403da5fc65f2a8d4336170a4dbc5de5; tree identical to tested/reviewed source.",
+        "krigsvold": "Accepted exact final head 983dee5d27ad02458baef6edc5a39279e24028ea through normal develop merge c85e01c4975bbb490637f06a9db62af525ffbbde; tree identical to tested/reviewed source."
       },
       "localReview": {
-        "status": "final source-bound actual capture complete; independent manual all50 review receipt pending",
+        "status": "Passed bounded final all50 visual review; no universal fidelity or manualATclaim.",
         "noUniversalFidelityClaim": true
       },
       "baselineRenderedContract": {
@@ -792,6 +832,23 @@
         "actualHTTPSCasesPerFamily": 516,
         "actualAxeViolations": 0,
         "knownFailureExceptions": []
+      },
+      "finalVisualAcceptance": {
+        "summary": "visual-review.json",
+        "route": "article",
+        "verdict": "pass",
+        "observedFinding": "Martlet now uses the observed cream inline contents block with its small gold interface label; it is not a new serif heading. Krigsvold keeps an unboxed contents sequence and ruled reading sections. Author links, three sections, and final actions remain present.",
+        "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+        "remainingVisualBlockers": []
+      },
+      "finalSourceIntegration": {
+        "summary": "final-acceptance.json",
+        "target": "develop",
+        "normalMergeCommits": {
+          "martlet": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5",
+          "krigsvold": "c85e01c4975bbb490637f06a9db62af525ffbbde"
+        },
+        "exactReviewedTreesPreserved": true
       }
     },
     {
@@ -839,7 +896,7 @@
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 3,
       "implementationStatus": "complete: existing family-native recipe retained",
-      "visualReviewStatus": "All50 actual source-bound final capture complete; independent manual review receipt pending.",
+      "visualReviewStatus": "Passed independent bounded source-backed composition review of final actual HTTPS normal/strict images; no current visual blocker.",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -913,25 +970,28 @@
           "number": 21,
           "url": "https://github.com/krigsvolddesign/jekyll/pull/21",
           "head": "3e5d49dcf47cc3b9e6646e66274fb246d5848df2",
-          "status": "original native failed; exact reviewed ancestor preserved by normal merge into consolidatedPR22"
+          "status": "closed-unmerged-as-superseded; original native failed; reviewed ancestry preserved in normally consolidatedPR22",
+          "closedAt": "2026-11-03T22:45:11Z",
+          "supersessionCommentUrl": "https://github.com/krigsvolddesign/jekyll/pull/21#issuecomment-6617395960"
         },
         {
           "family": "krigsvold",
           "number": 22,
           "url": "https://github.com/krigsvolddesign/jekyll/pull/22",
           "head": "983dee5d27ad02458baef6edc5a39279e24028ea",
-          "status": "consolidated exact final candidate technically passed; normal integration pending"
+          "status": "merged through normal develop merge; exact tested/reviewed source tree preserved",
+          "mergeCommit": "c85e01c4975bbb490637f06a9db62af525ffbbde"
         }
       ],
       "exceptions": [],
       "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
       "compositionRefinements": [],
       "familyImplementationStatus": {
-        "martlet": "Exact final source 0c0e0a7452444c41a3876c2f8732c6439c6097b9 passes full technical gate; integration status in final-acceptance.json",
-        "krigsvold": "Exact final source 983dee5d27ad02458baef6edc5a39279e24028ea passes full technical gate; integration status in final-acceptance.json"
+        "martlet": "Accepted exact final head 0c0e0a7452444c41a3876c2f8732c6439c6097b9 through normal develop merge 8c19cad7b403da5fc65f2a8d4336170a4dbc5de5; tree identical to tested/reviewed source.",
+        "krigsvold": "Accepted exact final head 983dee5d27ad02458baef6edc5a39279e24028ea through normal develop merge c85e01c4975bbb490637f06a9db62af525ffbbde; tree identical to tested/reviewed source."
       },
       "localReview": {
-        "status": "final source-bound actual capture complete; independent manual all50 review receipt pending",
+        "status": "Passed bounded final all50 visual review; no universal fidelity or manualATclaim.",
         "noUniversalFidelityClaim": true
       },
       "baselineRenderedContract": {
@@ -975,6 +1035,23 @@
         "actualHTTPSCasesPerFamily": 516,
         "actualAxeViolations": 0,
         "knownFailureExceptions": []
+      },
+      "finalVisualAcceptance": {
+        "summary": "visual-review.json",
+        "route": "archive",
+        "verdict": "pass",
+        "observedFinding": "Dates, subject labels, linked titles, summaries, and pagination remain together. Martlet retains a reading-led list; Krigsvold retains aligned records with a stable section label. Both stack clearly at320px without forcing different behavior.",
+        "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+        "remainingVisualBlockers": []
+      },
+      "finalSourceIntegration": {
+        "summary": "final-acceptance.json",
+        "target": "develop",
+        "normalMergeCommits": {
+          "martlet": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5",
+          "krigsvold": "c85e01c4975bbb490637f06a9db62af525ffbbde"
+        },
+        "exactReviewedTreesPreserved": true
       }
     },
     {
@@ -1022,7 +1099,7 @@
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 3,
       "implementationStatus": "complete: existing family-native recipe retained",
-      "visualReviewStatus": "All50 actual source-bound final capture complete; independent manual review receipt pending.",
+      "visualReviewStatus": "Passed independent bounded source-backed composition review of final actual HTTPS normal/strict images; no current visual blocker.",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -1096,25 +1173,28 @@
           "number": 21,
           "url": "https://github.com/krigsvolddesign/jekyll/pull/21",
           "head": "3e5d49dcf47cc3b9e6646e66274fb246d5848df2",
-          "status": "original native failed; exact reviewed ancestor preserved by normal merge into consolidatedPR22"
+          "status": "closed-unmerged-as-superseded; original native failed; reviewed ancestry preserved in normally consolidatedPR22",
+          "closedAt": "2026-11-03T22:45:11Z",
+          "supersessionCommentUrl": "https://github.com/krigsvolddesign/jekyll/pull/21#issuecomment-6617395960"
         },
         {
           "family": "krigsvold",
           "number": 22,
           "url": "https://github.com/krigsvolddesign/jekyll/pull/22",
           "head": "983dee5d27ad02458baef6edc5a39279e24028ea",
-          "status": "consolidated exact final candidate technically passed; normal integration pending"
+          "status": "merged through normal develop merge; exact tested/reviewed source tree preserved",
+          "mergeCommit": "c85e01c4975bbb490637f06a9db62af525ffbbde"
         }
       ],
       "exceptions": [],
       "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
       "compositionRefinements": [],
       "familyImplementationStatus": {
-        "martlet": "Exact final source 0c0e0a7452444c41a3876c2f8732c6439c6097b9 passes full technical gate; integration status in final-acceptance.json",
-        "krigsvold": "Exact final source 983dee5d27ad02458baef6edc5a39279e24028ea passes full technical gate; integration status in final-acceptance.json"
+        "martlet": "Accepted exact final head 0c0e0a7452444c41a3876c2f8732c6439c6097b9 through normal develop merge 8c19cad7b403da5fc65f2a8d4336170a4dbc5de5; tree identical to tested/reviewed source.",
+        "krigsvold": "Accepted exact final head 983dee5d27ad02458baef6edc5a39279e24028ea through normal develop merge c85e01c4975bbb490637f06a9db62af525ffbbde; tree identical to tested/reviewed source."
       },
       "localReview": {
-        "status": "final source-bound actual capture complete; independent manual all50 review receipt pending",
+        "status": "Passed bounded final all50 visual review; no universal fidelity or manualATclaim.",
         "noUniversalFidelityClaim": true
       },
       "baselineRenderedContract": {
@@ -1158,6 +1238,23 @@
         "actualHTTPSCasesPerFamily": 516,
         "actualAxeViolations": 0,
         "knownFailureExceptions": []
+      },
+      "finalVisualAcceptance": {
+        "summary": "visual-review.json",
+        "route": "category",
+        "verdict": "pass",
+        "observedFinding": "The same two dated records and subject context remain. The narrow single-column sequence is appropriate in both families; desktop organization and family-native type distinguish the treatments without changing taxonomy.",
+        "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+        "remainingVisualBlockers": []
+      },
+      "finalSourceIntegration": {
+        "summary": "final-acceptance.json",
+        "target": "develop",
+        "normalMergeCommits": {
+          "martlet": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5",
+          "krigsvold": "c85e01c4975bbb490637f06a9db62af525ffbbde"
+        },
+        "exactReviewedTreesPreserved": true
       }
     },
     {
@@ -1205,7 +1302,7 @@
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 3,
       "implementationStatus": "complete: existing family-native recipe retained",
-      "visualReviewStatus": "All50 actual source-bound final capture complete; independent manual review receipt pending.",
+      "visualReviewStatus": "Passed independent bounded source-backed composition review of final actual HTTPS normal/strict images; no current visual blocker.",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -1279,25 +1376,28 @@
           "number": 21,
           "url": "https://github.com/krigsvolddesign/jekyll/pull/21",
           "head": "3e5d49dcf47cc3b9e6646e66274fb246d5848df2",
-          "status": "original native failed; exact reviewed ancestor preserved by normal merge into consolidatedPR22"
+          "status": "closed-unmerged-as-superseded; original native failed; reviewed ancestry preserved in normally consolidatedPR22",
+          "closedAt": "2026-11-03T22:45:11Z",
+          "supersessionCommentUrl": "https://github.com/krigsvolddesign/jekyll/pull/21#issuecomment-6617395960"
         },
         {
           "family": "krigsvold",
           "number": 22,
           "url": "https://github.com/krigsvolddesign/jekyll/pull/22",
           "head": "983dee5d27ad02458baef6edc5a39279e24028ea",
-          "status": "consolidated exact final candidate technically passed; normal integration pending"
+          "status": "merged through normal develop merge; exact tested/reviewed source tree preserved",
+          "mergeCommit": "c85e01c4975bbb490637f06a9db62af525ffbbde"
         }
       ],
       "exceptions": [],
       "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
       "compositionRefinements": [],
       "familyImplementationStatus": {
-        "martlet": "Exact final source 0c0e0a7452444c41a3876c2f8732c6439c6097b9 passes full technical gate; integration status in final-acceptance.json",
-        "krigsvold": "Exact final source 983dee5d27ad02458baef6edc5a39279e24028ea passes full technical gate; integration status in final-acceptance.json"
+        "martlet": "Accepted exact final head 0c0e0a7452444c41a3876c2f8732c6439c6097b9 through normal develop merge 8c19cad7b403da5fc65f2a8d4336170a4dbc5de5; tree identical to tested/reviewed source.",
+        "krigsvold": "Accepted exact final head 983dee5d27ad02458baef6edc5a39279e24028ea through normal develop merge c85e01c4975bbb490637f06a9db62af525ffbbde; tree identical to tested/reviewed source."
       },
       "localReview": {
-        "status": "final source-bound actual capture complete; independent manual all50 review receipt pending",
+        "status": "Passed bounded final all50 visual review; no universal fidelity or manualATclaim.",
         "noUniversalFidelityClaim": true
       },
       "baselineRenderedContract": {
@@ -1341,6 +1441,23 @@
         "actualHTTPSCasesPerFamily": 516,
         "actualAxeViolations": 0,
         "knownFailureExceptions": []
+      },
+      "finalVisualAcceptance": {
+        "summary": "visual-review.json",
+        "route": "categories",
+        "verdict": "pass",
+        "observedFinding": "All three subject destinations and descriptions remain visible. Martlet uses a heading and linked groups; Krigsvold places them in a region aligned to its label. Light/dark and narrow states retain the same hierarchy.",
+        "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+        "remainingVisualBlockers": []
+      },
+      "finalSourceIntegration": {
+        "summary": "final-acceptance.json",
+        "target": "develop",
+        "normalMergeCommits": {
+          "martlet": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5",
+          "krigsvold": "c85e01c4975bbb490637f06a9db62af525ffbbde"
+        },
+        "exactReviewedTreesPreserved": true
       }
     },
     {
@@ -1392,7 +1509,7 @@
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 3,
       "implementationStatus": "complete: existing family-native recipe retained",
-      "visualReviewStatus": "All50 actual source-bound final capture complete; independent manual review receipt pending.",
+      "visualReviewStatus": "Passed independent bounded source-backed composition review of final actual HTTPS normal/strict images; no current visual blocker.",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -1466,25 +1583,28 @@
           "number": 21,
           "url": "https://github.com/krigsvolddesign/jekyll/pull/21",
           "head": "3e5d49dcf47cc3b9e6646e66274fb246d5848df2",
-          "status": "original native failed; exact reviewed ancestor preserved by normal merge into consolidatedPR22"
+          "status": "closed-unmerged-as-superseded; original native failed; reviewed ancestry preserved in normally consolidatedPR22",
+          "closedAt": "2026-11-03T22:45:11Z",
+          "supersessionCommentUrl": "https://github.com/krigsvolddesign/jekyll/pull/21#issuecomment-6617395960"
         },
         {
           "family": "krigsvold",
           "number": 22,
           "url": "https://github.com/krigsvolddesign/jekyll/pull/22",
           "head": "983dee5d27ad02458baef6edc5a39279e24028ea",
-          "status": "consolidated exact final candidate technically passed; normal integration pending"
+          "status": "merged through normal develop merge; exact tested/reviewed source tree preserved",
+          "mergeCommit": "c85e01c4975bbb490637f06a9db62af525ffbbde"
         }
       ],
       "exceptions": [],
       "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
       "compositionRefinements": [],
       "familyImplementationStatus": {
-        "martlet": "Exact final source 0c0e0a7452444c41a3876c2f8732c6439c6097b9 passes full technical gate; integration status in final-acceptance.json",
-        "krigsvold": "Exact final source 983dee5d27ad02458baef6edc5a39279e24028ea passes full technical gate; integration status in final-acceptance.json"
+        "martlet": "Accepted exact final head 0c0e0a7452444c41a3876c2f8732c6439c6097b9 through normal develop merge 8c19cad7b403da5fc65f2a8d4336170a4dbc5de5; tree identical to tested/reviewed source.",
+        "krigsvold": "Accepted exact final head 983dee5d27ad02458baef6edc5a39279e24028ea through normal develop merge c85e01c4975bbb490637f06a9db62af525ffbbde; tree identical to tested/reviewed source."
       },
       "localReview": {
-        "status": "final source-bound actual capture complete; independent manual all50 review receipt pending",
+        "status": "Passed bounded final all50 visual review; no universal fidelity or manualATclaim.",
         "noUniversalFidelityClaim": true
       },
       "baselineRenderedContract": {
@@ -1528,6 +1648,23 @@
         "actualHTTPSCasesPerFamily": 516,
         "actualAxeViolations": 0,
         "knownFailureExceptions": []
+      },
+      "finalVisualAcceptance": {
+        "summary": "visual-review.json",
+        "route": "person",
+        "verdict": "pass",
+        "observedFinding": "Biography, three facts, and selected writing retain their roles. Martlet separates biography from supporting facts through reading order; Krigsvold aligns each region and its label. The fiction boundary and contact route remain explicit.",
+        "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+        "remainingVisualBlockers": []
+      },
+      "finalSourceIntegration": {
+        "summary": "final-acceptance.json",
+        "target": "develop",
+        "normalMergeCommits": {
+          "martlet": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5",
+          "krigsvold": "c85e01c4975bbb490637f06a9db62af525ffbbde"
+        },
+        "exactReviewedTreesPreserved": true
       }
     },
     {
@@ -1575,7 +1712,7 @@
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 3,
       "implementationStatus": "complete: existing family-native recipe retained",
-      "visualReviewStatus": "All50 actual source-bound final capture complete; independent manual review receipt pending.",
+      "visualReviewStatus": "Passed independent bounded source-backed composition review of final actual HTTPS normal/strict images; no current visual blocker.",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -1649,25 +1786,28 @@
           "number": 21,
           "url": "https://github.com/krigsvolddesign/jekyll/pull/21",
           "head": "3e5d49dcf47cc3b9e6646e66274fb246d5848df2",
-          "status": "original native failed; exact reviewed ancestor preserved by normal merge into consolidatedPR22"
+          "status": "closed-unmerged-as-superseded; original native failed; reviewed ancestry preserved in normally consolidatedPR22",
+          "closedAt": "2026-11-03T22:45:11Z",
+          "supersessionCommentUrl": "https://github.com/krigsvolddesign/jekyll/pull/21#issuecomment-6617395960"
         },
         {
           "family": "krigsvold",
           "number": 22,
           "url": "https://github.com/krigsvolddesign/jekyll/pull/22",
           "head": "983dee5d27ad02458baef6edc5a39279e24028ea",
-          "status": "consolidated exact final candidate technically passed; normal integration pending"
+          "status": "merged through normal develop merge; exact tested/reviewed source tree preserved",
+          "mergeCommit": "c85e01c4975bbb490637f06a9db62af525ffbbde"
         }
       ],
       "exceptions": [],
       "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
       "compositionRefinements": [],
       "familyImplementationStatus": {
-        "martlet": "Exact final source 0c0e0a7452444c41a3876c2f8732c6439c6097b9 passes full technical gate; integration status in final-acceptance.json",
-        "krigsvold": "Exact final source 983dee5d27ad02458baef6edc5a39279e24028ea passes full technical gate; integration status in final-acceptance.json"
+        "martlet": "Accepted exact final head 0c0e0a7452444c41a3876c2f8732c6439c6097b9 through normal develop merge 8c19cad7b403da5fc65f2a8d4336170a4dbc5de5; tree identical to tested/reviewed source.",
+        "krigsvold": "Accepted exact final head 983dee5d27ad02458baef6edc5a39279e24028ea through normal develop merge c85e01c4975bbb490637f06a9db62af525ffbbde; tree identical to tested/reviewed source."
       },
       "localReview": {
-        "status": "final source-bound actual capture complete; independent manual all50 review receipt pending",
+        "status": "Passed bounded final all50 visual review; no universal fidelity or manualATclaim.",
         "noUniversalFidelityClaim": true
       },
       "baselineRenderedContract": {
@@ -1711,6 +1851,23 @@
         "actualHTTPSCasesPerFamily": 516,
         "actualAxeViolations": 0,
         "knownFailureExceptions": []
+      },
+      "finalVisualAcceptance": {
+        "summary": "visual-review.json",
+        "route": "projects",
+        "verdict": "pass",
+        "observedFinding": "Published, ongoing, and annual statuses stay with the same three project links. Stable label/title/description groupings survive narrow reflow; family type and section relationships remain coherent after identity masking.",
+        "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+        "remainingVisualBlockers": []
+      },
+      "finalSourceIntegration": {
+        "summary": "final-acceptance.json",
+        "target": "develop",
+        "normalMergeCommits": {
+          "martlet": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5",
+          "krigsvold": "c85e01c4975bbb490637f06a9db62af525ffbbde"
+        },
+        "exactReviewedTreesPreserved": true
       }
     },
     {
@@ -1764,7 +1921,7 @@
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 3,
       "implementationStatus": "complete: existing family-native recipe retained",
-      "visualReviewStatus": "All50 actual source-bound final capture complete; independent manual review receipt pending.",
+      "visualReviewStatus": "Passed independent bounded source-backed composition review of final actual HTTPS normal/strict images; no current visual blocker.",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -1838,25 +1995,28 @@
           "number": 21,
           "url": "https://github.com/krigsvolddesign/jekyll/pull/21",
           "head": "3e5d49dcf47cc3b9e6646e66274fb246d5848df2",
-          "status": "original native failed; exact reviewed ancestor preserved by normal merge into consolidatedPR22"
+          "status": "closed-unmerged-as-superseded; original native failed; reviewed ancestry preserved in normally consolidatedPR22",
+          "closedAt": "2026-11-03T22:45:11Z",
+          "supersessionCommentUrl": "https://github.com/krigsvolddesign/jekyll/pull/21#issuecomment-6617395960"
         },
         {
           "family": "krigsvold",
           "number": 22,
           "url": "https://github.com/krigsvolddesign/jekyll/pull/22",
           "head": "983dee5d27ad02458baef6edc5a39279e24028ea",
-          "status": "consolidated exact final candidate technically passed; normal integration pending"
+          "status": "merged through normal develop merge; exact tested/reviewed source tree preserved",
+          "mergeCommit": "c85e01c4975bbb490637f06a9db62af525ffbbde"
         }
       ],
       "exceptions": [],
       "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
       "compositionRefinements": [],
       "familyImplementationStatus": {
-        "martlet": "Exact final source 0c0e0a7452444c41a3876c2f8732c6439c6097b9 passes full technical gate; integration status in final-acceptance.json",
-        "krigsvold": "Exact final source 983dee5d27ad02458baef6edc5a39279e24028ea passes full technical gate; integration status in final-acceptance.json"
+        "martlet": "Accepted exact final head 0c0e0a7452444c41a3876c2f8732c6439c6097b9 through normal develop merge 8c19cad7b403da5fc65f2a8d4336170a4dbc5de5; tree identical to tested/reviewed source.",
+        "krigsvold": "Accepted exact final head 983dee5d27ad02458baef6edc5a39279e24028ea through normal develop merge c85e01c4975bbb490637f06a9db62af525ffbbde; tree identical to tested/reviewed source."
       },
       "localReview": {
-        "status": "final source-bound actual capture complete; independent manual all50 review receipt pending",
+        "status": "Passed bounded final all50 visual review; no universal fidelity or manualATclaim.",
         "noUniversalFidelityClaim": true
       },
       "baselineRenderedContract": {
@@ -1900,6 +2060,23 @@
         "actualHTTPSCasesPerFamily": 516,
         "actualAxeViolations": 0,
         "knownFailureExceptions": []
+      },
+      "finalVisualAcceptance": {
+        "summary": "visual-review.json",
+        "route": "case-study",
+        "verdict": "pass",
+        "observedFinding": "The question, approach, learned facts, uncertainty, and actions remain a continuous account. Both use the same semantic sequence; Martlet's heading-led reading and Krigsvold's aligned regional labels are legitimate distinct compositions.",
+        "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+        "remainingVisualBlockers": []
+      },
+      "finalSourceIntegration": {
+        "summary": "final-acceptance.json",
+        "target": "develop",
+        "normalMergeCommits": {
+          "martlet": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5",
+          "krigsvold": "c85e01c4975bbb490637f06a9db62af525ffbbde"
+        },
+        "exactReviewedTreesPreserved": true
       }
     },
     {
@@ -1947,7 +2124,7 @@
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 2,
       "implementationStatus": "complete: source-justified modification",
-      "visualReviewStatus": "All50 actual source-bound final capture complete; independent manual review receipt pending.",
+      "visualReviewStatus": "Passed independent bounded source-backed composition review of final actual HTTPS normal/strict images; no current visual blocker.",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -2068,11 +2245,11 @@
       "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
       "compositionRefinements": [],
       "familyImplementationStatus": {
-        "martlet": "Exact final source 0c0e0a7452444c41a3876c2f8732c6439c6097b9 passes full technical gate; integration status in final-acceptance.json",
-        "krigsvold": "Exact final source 983dee5d27ad02458baef6edc5a39279e24028ea passes full technical gate; integration status in final-acceptance.json"
+        "martlet": "Accepted exact final head 0c0e0a7452444c41a3876c2f8732c6439c6097b9 through normal develop merge 8c19cad7b403da5fc65f2a8d4336170a4dbc5de5; tree identical to tested/reviewed source.",
+        "krigsvold": "Accepted exact final head 983dee5d27ad02458baef6edc5a39279e24028ea through normal develop merge c85e01c4975bbb490637f06a9db62af525ffbbde; tree identical to tested/reviewed source."
       },
       "localReview": {
-        "status": "final source-bound actual capture complete; independent manual all50 review receipt pending",
+        "status": "Passed bounded final all50 visual review; no universal fidelity or manualATclaim.",
         "noUniversalFidelityClaim": true
       },
       "baselineRenderedContract": {
@@ -2150,6 +2327,23 @@
         "actualHTTPSCasesPerFamily": 516,
         "actualAxeViolations": 0,
         "knownFailureExceptions": []
+      },
+      "finalVisualAcceptance": {
+        "summary": "visual-review.json",
+        "route": "documentation",
+        "verdict": "pass",
+        "observedFinding": "The three task links are preserved. Martlet replaces the generic card grid with a flowing definition-style link sequence; Krigsvold uses aligned link-and-description rows. Larger details confirm readable links and subordinate descriptions.",
+        "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+        "remainingVisualBlockers": []
+      },
+      "finalSourceIntegration": {
+        "summary": "final-acceptance.json",
+        "target": "develop",
+        "normalMergeCommits": {
+          "martlet": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5",
+          "krigsvold": "c85e01c4975bbb490637f06a9db62af525ffbbde"
+        },
+        "exactReviewedTreesPreserved": true
       }
     },
     {
@@ -2201,7 +2395,7 @@
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 2,
       "implementationStatus": "complete: source-justified modification",
-      "visualReviewStatus": "All50 actual source-bound final capture complete; independent manual review receipt pending.",
+      "visualReviewStatus": "Passed independent bounded source-backed composition review of final actual HTTPS normal/strict images; no current visual blocker.",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -2335,11 +2529,11 @@
         }
       ],
       "familyImplementationStatus": {
-        "martlet": "Exact final source 0c0e0a7452444c41a3876c2f8732c6439c6097b9 passes full technical gate; integration status in final-acceptance.json",
-        "krigsvold": "Exact final source 983dee5d27ad02458baef6edc5a39279e24028ea passes full technical gate; integration status in final-acceptance.json"
+        "martlet": "Accepted exact final head 0c0e0a7452444c41a3876c2f8732c6439c6097b9 through normal develop merge 8c19cad7b403da5fc65f2a8d4336170a4dbc5de5; tree identical to tested/reviewed source.",
+        "krigsvold": "Accepted exact final head 983dee5d27ad02458baef6edc5a39279e24028ea through normal develop merge c85e01c4975bbb490637f06a9db62af525ffbbde; tree identical to tested/reviewed source."
       },
       "localReview": {
-        "status": "final source-bound actual capture complete; independent manual all50 review receipt pending",
+        "status": "Passed bounded final all50 visual review; no universal fidelity or manualATclaim.",
         "noUniversalFidelityClaim": true
       },
       "baselineRenderedContract": {
@@ -2468,6 +2662,23 @@
         "actualHTTPSCasesPerFamily": 516,
         "actualAxeViolations": 0,
         "knownFailureExceptions": []
+      },
+      "finalVisualAcceptance": {
+        "summary": "visual-review.json",
+        "route": "guide",
+        "verdict": "pass",
+        "observedFinding": "The same prerequisites, ordered arrival steps, and follow-up actions remain. Martlet widens the bounded task document while retaining the contents index; Krigsvold gives each stage an aligned labeled region. At320px, index and stages follow a coherent single reading order.",
+        "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+        "remainingVisualBlockers": []
+      },
+      "finalSourceIntegration": {
+        "summary": "final-acceptance.json",
+        "target": "develop",
+        "normalMergeCommits": {
+          "martlet": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5",
+          "krigsvold": "c85e01c4975bbb490637f06a9db62af525ffbbde"
+        },
+        "exactReviewedTreesPreserved": true
       }
     },
     {
@@ -2521,7 +2732,7 @@
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 2,
       "implementationStatus": "complete: source-justified modification",
-      "visualReviewStatus": "All50 actual source-bound final capture complete; independent manual review receipt pending.",
+      "visualReviewStatus": "Passed independent bounded source-backed composition review of final actual HTTPS normal/strict images; no current visual blocker.",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -2656,11 +2867,11 @@
         }
       ],
       "familyImplementationStatus": {
-        "martlet": "Exact final source 0c0e0a7452444c41a3876c2f8732c6439c6097b9 passes full technical gate; integration status in final-acceptance.json",
-        "krigsvold": "Exact final source 983dee5d27ad02458baef6edc5a39279e24028ea passes full technical gate; integration status in final-acceptance.json"
+        "martlet": "Accepted exact final head 0c0e0a7452444c41a3876c2f8732c6439c6097b9 through normal develop merge 8c19cad7b403da5fc65f2a8d4336170a4dbc5de5; tree identical to tested/reviewed source.",
+        "krigsvold": "Accepted exact final head 983dee5d27ad02458baef6edc5a39279e24028ea through normal develop merge c85e01c4975bbb490637f06a9db62af525ffbbde; tree identical to tested/reviewed source."
       },
       "localReview": {
-        "status": "final source-bound actual capture complete; independent manual all50 review receipt pending",
+        "status": "Passed bounded final all50 visual review; no universal fidelity or manualATclaim.",
         "noUniversalFidelityClaim": true
       },
       "baselineRenderedContract": {
@@ -2811,6 +3022,23 @@
         "actualHTTPSCasesPerFamily": 516,
         "actualAxeViolations": 0,
         "knownFailureExceptions": []
+      },
+      "finalVisualAcceptance": {
+        "summary": "visual-review.json",
+        "route": "reference",
+        "verdict": "pass",
+        "observedFinding": "The four field records, sample JSON, scope, and correction guidance remain. Martlet presents a readable technical document with source-native table treatment; Krigsvold aligns labeled sections and its own table vocabulary. Tables intentionally have bounded horizontal overflow at narrow widths, separately verified by technical tests.",
+        "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+        "remainingVisualBlockers": []
+      },
+      "finalSourceIntegration": {
+        "summary": "final-acceptance.json",
+        "target": "develop",
+        "normalMergeCommits": {
+          "martlet": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5",
+          "krigsvold": "c85e01c4975bbb490637f06a9db62af525ffbbde"
+        },
+        "exactReviewedTreesPreserved": true
       }
     },
     {
@@ -2860,7 +3088,7 @@
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 3,
       "implementationStatus": "complete: existing family-native recipe retained",
-      "visualReviewStatus": "All50 actual source-bound final capture complete; independent manual review receipt pending.",
+      "visualReviewStatus": "Passed independent bounded source-backed composition review of final actual HTTPS normal/strict images; no current visual blocker.",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -2935,25 +3163,28 @@
           "number": 21,
           "url": "https://github.com/krigsvolddesign/jekyll/pull/21",
           "head": "3e5d49dcf47cc3b9e6646e66274fb246d5848df2",
-          "status": "original native failed; exact reviewed ancestor preserved by normal merge into consolidatedPR22"
+          "status": "closed-unmerged-as-superseded; original native failed; reviewed ancestry preserved in normally consolidatedPR22",
+          "closedAt": "2026-11-03T22:45:11Z",
+          "supersessionCommentUrl": "https://github.com/krigsvolddesign/jekyll/pull/21#issuecomment-6617395960"
         },
         {
           "family": "krigsvold",
           "number": 22,
           "url": "https://github.com/krigsvolddesign/jekyll/pull/22",
           "head": "983dee5d27ad02458baef6edc5a39279e24028ea",
-          "status": "consolidated exact final candidate technically passed; normal integration pending"
+          "status": "merged through normal develop merge; exact tested/reviewed source tree preserved",
+          "mergeCommit": "c85e01c4975bbb490637f06a9db62af525ffbbde"
         }
       ],
       "exceptions": [],
       "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
       "compositionRefinements": [],
       "familyImplementationStatus": {
-        "martlet": "Exact final source 0c0e0a7452444c41a3876c2f8732c6439c6097b9 passes full technical gate; integration status in final-acceptance.json",
-        "krigsvold": "Exact final source 983dee5d27ad02458baef6edc5a39279e24028ea passes full technical gate; integration status in final-acceptance.json"
+        "martlet": "Accepted exact final head 0c0e0a7452444c41a3876c2f8732c6439c6097b9 through normal develop merge 8c19cad7b403da5fc65f2a8d4336170a4dbc5de5; tree identical to tested/reviewed source.",
+        "krigsvold": "Accepted exact final head 983dee5d27ad02458baef6edc5a39279e24028ea through normal develop merge c85e01c4975bbb490637f06a9db62af525ffbbde; tree identical to tested/reviewed source."
       },
       "localReview": {
-        "status": "final source-bound actual capture complete; independent manual all50 review receipt pending",
+        "status": "Passed bounded final all50 visual review; no universal fidelity or manualATclaim.",
         "noUniversalFidelityClaim": true
       },
       "baselineRenderedContract": {
@@ -2997,6 +3228,23 @@
         "actualHTTPSCasesPerFamily": 516,
         "actualAxeViolations": 0,
         "knownFailureExceptions": []
+      },
+      "finalVisualAcceptance": {
+        "summary": "visual-review.json",
+        "route": "contact",
+        "verdict": "pass",
+        "observedFinding": "The research, visits, and corrections routes remain above the same labeled form. Both retain familiar controls and the local-demonstration notice. Similar form geometry is justified by the task and shared accessibility obligations.",
+        "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+        "remainingVisualBlockers": []
+      },
+      "finalSourceIntegration": {
+        "summary": "final-acceptance.json",
+        "target": "develop",
+        "normalMergeCommits": {
+          "martlet": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5",
+          "krigsvold": "c85e01c4975bbb490637f06a9db62af525ffbbde"
+        },
+        "exactReviewedTreesPreserved": true
       }
     },
     {
@@ -3044,7 +3292,7 @@
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 1,
       "implementationStatus": "complete: source-justified modification",
-      "visualReviewStatus": "All50 actual source-bound final capture complete; independent manual review receipt pending.",
+      "visualReviewStatus": "Passed independent bounded source-backed composition review of final actual HTTPS normal/strict images; no current visual blocker.",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -3233,11 +3481,11 @@
         }
       ],
       "familyImplementationStatus": {
-        "martlet": "Exact final source 0c0e0a7452444c41a3876c2f8732c6439c6097b9 passes full technical gate; integration status in final-acceptance.json",
-        "krigsvold": "Exact final source 983dee5d27ad02458baef6edc5a39279e24028ea passes full technical gate; integration status in final-acceptance.json"
+        "martlet": "Accepted exact final head 0c0e0a7452444c41a3876c2f8732c6439c6097b9 through normal develop merge 8c19cad7b403da5fc65f2a8d4336170a4dbc5de5; tree identical to tested/reviewed source.",
+        "krigsvold": "Accepted exact final head 983dee5d27ad02458baef6edc5a39279e24028ea through normal develop merge c85e01c4975bbb490637f06a9db62af525ffbbde; tree identical to tested/reviewed source."
       },
       "localReview": {
-        "status": "final source-bound actual capture complete; independent manual all50 review receipt pending",
+        "status": "Passed bounded final all50 visual review; no universal fidelity or manualATclaim.",
         "noUniversalFidelityClaim": true
       },
       "baselineRenderedContract": {
@@ -3356,6 +3604,23 @@
         "actualHTTPSCasesPerFamily": 516,
         "actualAxeViolations": 0,
         "knownFailureExceptions": []
+      },
+      "finalVisualAcceptance": {
+        "summary": "visual-review.json",
+        "route": "faq",
+        "verdict": "pass",
+        "observedFinding": "Both retain the four disclosure questions and answers in two named groups. Martlet uses flowing group headings and native triangular disclosures; Krigsvold uses labeled ruled rows and plus indicators. The strict main comparisons show structural differences without the marks or color.",
+        "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+        "remainingVisualBlockers": []
+      },
+      "finalSourceIntegration": {
+        "summary": "final-acceptance.json",
+        "target": "develop",
+        "normalMergeCommits": {
+          "martlet": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5",
+          "krigsvold": "c85e01c4975bbb490637f06a9db62af525ffbbde"
+        },
+        "exactReviewedTreesPreserved": true
       }
     },
     {
@@ -3407,7 +3672,7 @@
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 2,
       "implementationStatus": "complete: source-justified modification",
-      "visualReviewStatus": "All50 actual source-bound final capture complete; independent manual review receipt pending.",
+      "visualReviewStatus": "Passed independent bounded source-backed composition review of final actual HTTPS normal/strict images; no current visual blocker.",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -3541,11 +3806,11 @@
         }
       ],
       "familyImplementationStatus": {
-        "martlet": "Exact final source 0c0e0a7452444c41a3876c2f8732c6439c6097b9 passes full technical gate; integration status in final-acceptance.json",
-        "krigsvold": "Exact final source 983dee5d27ad02458baef6edc5a39279e24028ea passes full technical gate; integration status in final-acceptance.json"
+        "martlet": "Accepted exact final head 0c0e0a7452444c41a3876c2f8732c6439c6097b9 through normal develop merge 8c19cad7b403da5fc65f2a8d4336170a4dbc5de5; tree identical to tested/reviewed source.",
+        "krigsvold": "Accepted exact final head 983dee5d27ad02458baef6edc5a39279e24028ea through normal develop merge c85e01c4975bbb490637f06a9db62af525ffbbde; tree identical to tested/reviewed source."
       },
       "localReview": {
-        "status": "final source-bound actual capture complete; independent manual all50 review receipt pending",
+        "status": "Passed bounded final all50 visual review; no universal fidelity or manualATclaim.",
         "noUniversalFidelityClaim": true
       },
       "baselineRenderedContract": {
@@ -3674,6 +3939,23 @@
         "actualHTTPSCasesPerFamily": 516,
         "actualAxeViolations": 0,
         "knownFailureExceptions": []
+      },
+      "finalVisualAcceptance": {
+        "summary": "visual-review.json",
+        "route": "privacy",
+        "verdict": "pass",
+        "observedFinding": "The same scope, demonstration boundaries, effective date, and contact/history actions remain. The wider readable document is a recipe-level CSS refinement, while its semantic anatomy is retained. Any short eyebrow cut at a contact-cell edge is packaging crop, not a current product finding.",
+        "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+        "remainingVisualBlockers": []
+      },
+      "finalSourceIntegration": {
+        "summary": "final-acceptance.json",
+        "target": "develop",
+        "normalMergeCommits": {
+          "martlet": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5",
+          "krigsvold": "c85e01c4975bbb490637f06a9db62af525ffbbde"
+        },
+        "exactReviewedTreesPreserved": true
       }
     },
     {
@@ -3725,7 +4007,7 @@
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 2,
       "implementationStatus": "complete: source-justified modification",
-      "visualReviewStatus": "All50 actual source-bound final capture complete; independent manual review receipt pending.",
+      "visualReviewStatus": "Passed independent bounded source-backed composition review of final actual HTTPS normal/strict images; no current visual blocker.",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -3859,11 +4141,11 @@
         }
       ],
       "familyImplementationStatus": {
-        "martlet": "Exact final source 0c0e0a7452444c41a3876c2f8732c6439c6097b9 passes full technical gate; integration status in final-acceptance.json",
-        "krigsvold": "Exact final source 983dee5d27ad02458baef6edc5a39279e24028ea passes full technical gate; integration status in final-acceptance.json"
+        "martlet": "Accepted exact final head 0c0e0a7452444c41a3876c2f8732c6439c6097b9 through normal develop merge 8c19cad7b403da5fc65f2a8d4336170a4dbc5de5; tree identical to tested/reviewed source.",
+        "krigsvold": "Accepted exact final head 983dee5d27ad02458baef6edc5a39279e24028ea through normal develop merge c85e01c4975bbb490637f06a9db62af525ffbbde; tree identical to tested/reviewed source."
       },
       "localReview": {
-        "status": "final source-bound actual capture complete; independent manual all50 review receipt pending",
+        "status": "Passed bounded final all50 visual review; no universal fidelity or manualATclaim.",
         "noUniversalFidelityClaim": true
       },
       "baselineRenderedContract": {
@@ -3992,6 +4274,23 @@
         "actualHTTPSCasesPerFamily": 516,
         "actualAxeViolations": 0,
         "knownFailureExceptions": []
+      },
+      "finalVisualAcceptance": {
+        "summary": "visual-review.json",
+        "route": "terms",
+        "verdict": "pass",
+        "observedFinding": "The same three policy sections, effective date, and actions remain. Martlet uses measured prose; Krigsvold retains aligned headings and reading regions. The refinement changes available reading width rather than policy meaning.",
+        "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+        "remainingVisualBlockers": []
+      },
+      "finalSourceIntegration": {
+        "summary": "final-acceptance.json",
+        "target": "develop",
+        "normalMergeCommits": {
+          "martlet": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5",
+          "krigsvold": "c85e01c4975bbb490637f06a9db62af525ffbbde"
+        },
+        "exactReviewedTreesPreserved": true
       }
     },
     {
@@ -4043,7 +4342,7 @@
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 3,
       "implementationStatus": "complete: existing family-native recipe retained",
-      "visualReviewStatus": "All50 actual source-bound final capture complete; independent manual review receipt pending.",
+      "visualReviewStatus": "Passed independent bounded source-backed composition review of final actual HTTPS normal/strict images; no current visual blocker.",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -4117,25 +4416,28 @@
           "number": 21,
           "url": "https://github.com/krigsvolddesign/jekyll/pull/21",
           "head": "3e5d49dcf47cc3b9e6646e66274fb246d5848df2",
-          "status": "original native failed; exact reviewed ancestor preserved by normal merge into consolidatedPR22"
+          "status": "closed-unmerged-as-superseded; original native failed; reviewed ancestry preserved in normally consolidatedPR22",
+          "closedAt": "2026-11-03T22:45:11Z",
+          "supersessionCommentUrl": "https://github.com/krigsvolddesign/jekyll/pull/21#issuecomment-6617395960"
         },
         {
           "family": "krigsvold",
           "number": 22,
           "url": "https://github.com/krigsvolddesign/jekyll/pull/22",
           "head": "983dee5d27ad02458baef6edc5a39279e24028ea",
-          "status": "consolidated exact final candidate technically passed; normal integration pending"
+          "status": "merged through normal develop merge; exact tested/reviewed source tree preserved",
+          "mergeCommit": "c85e01c4975bbb490637f06a9db62af525ffbbde"
         }
       ],
       "exceptions": [],
       "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
       "compositionRefinements": [],
       "familyImplementationStatus": {
-        "martlet": "Exact final source 0c0e0a7452444c41a3876c2f8732c6439c6097b9 passes full technical gate; integration status in final-acceptance.json",
-        "krigsvold": "Exact final source 983dee5d27ad02458baef6edc5a39279e24028ea passes full technical gate; integration status in final-acceptance.json"
+        "martlet": "Accepted exact final head 0c0e0a7452444c41a3876c2f8732c6439c6097b9 through normal develop merge 8c19cad7b403da5fc65f2a8d4336170a4dbc5de5; tree identical to tested/reviewed source.",
+        "krigsvold": "Accepted exact final head 983dee5d27ad02458baef6edc5a39279e24028ea through normal develop merge c85e01c4975bbb490637f06a9db62af525ffbbde; tree identical to tested/reviewed source."
       },
       "localReview": {
-        "status": "final source-bound actual capture complete; independent manual all50 review receipt pending",
+        "status": "Passed bounded final all50 visual review; no universal fidelity or manualATclaim.",
         "noUniversalFidelityClaim": true
       },
       "baselineRenderedContract": {
@@ -4179,6 +4481,23 @@
         "actualHTTPSCasesPerFamily": 516,
         "actualAxeViolations": 0,
         "knownFailureExceptions": []
+      },
+      "finalVisualAcceptance": {
+        "summary": "visual-review.json",
+        "route": "service",
+        "verdict": "pass",
+        "observedFinding": "Offer, three preparation stages, and session actions remain intact. Martlet's lead and subsequent groups and Krigsvold's label/content regions remain visible in strict comparisons. Neither composition implies a live booking service.",
+        "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+        "remainingVisualBlockers": []
+      },
+      "finalSourceIntegration": {
+        "summary": "final-acceptance.json",
+        "target": "develop",
+        "normalMergeCommits": {
+          "martlet": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5",
+          "krigsvold": "c85e01c4975bbb490637f06a9db62af525ffbbde"
+        },
+        "exactReviewedTreesPreserved": true
       }
     },
     {
@@ -4230,7 +4549,7 @@
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 3,
       "implementationStatus": "complete: existing family-native recipe retained",
-      "visualReviewStatus": "All50 actual source-bound final capture complete; independent manual review receipt pending.",
+      "visualReviewStatus": "Passed independent bounded source-backed composition review of final actual HTTPS normal/strict images; no current visual blocker.",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -4304,25 +4623,28 @@
           "number": 21,
           "url": "https://github.com/krigsvolddesign/jekyll/pull/21",
           "head": "3e5d49dcf47cc3b9e6646e66274fb246d5848df2",
-          "status": "original native failed; exact reviewed ancestor preserved by normal merge into consolidatedPR22"
+          "status": "closed-unmerged-as-superseded; original native failed; reviewed ancestry preserved in normally consolidatedPR22",
+          "closedAt": "2026-11-03T22:45:11Z",
+          "supersessionCommentUrl": "https://github.com/krigsvolddesign/jekyll/pull/21#issuecomment-6617395960"
         },
         {
           "family": "krigsvold",
           "number": 22,
           "url": "https://github.com/krigsvolddesign/jekyll/pull/22",
           "head": "983dee5d27ad02458baef6edc5a39279e24028ea",
-          "status": "consolidated exact final candidate technically passed; normal integration pending"
+          "status": "merged through normal develop merge; exact tested/reviewed source tree preserved",
+          "mergeCommit": "c85e01c4975bbb490637f06a9db62af525ffbbde"
         }
       ],
       "exceptions": [],
       "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
       "compositionRefinements": [],
       "familyImplementationStatus": {
-        "martlet": "Exact final source 0c0e0a7452444c41a3876c2f8732c6439c6097b9 passes full technical gate; integration status in final-acceptance.json",
-        "krigsvold": "Exact final source 983dee5d27ad02458baef6edc5a39279e24028ea passes full technical gate; integration status in final-acceptance.json"
+        "martlet": "Accepted exact final head 0c0e0a7452444c41a3876c2f8732c6439c6097b9 through normal develop merge 8c19cad7b403da5fc65f2a8d4336170a4dbc5de5; tree identical to tested/reviewed source.",
+        "krigsvold": "Accepted exact final head 983dee5d27ad02458baef6edc5a39279e24028ea through normal develop merge c85e01c4975bbb490637f06a9db62af525ffbbde; tree identical to tested/reviewed source."
       },
       "localReview": {
-        "status": "final source-bound actual capture complete; independent manual all50 review receipt pending",
+        "status": "Passed bounded final all50 visual review; no universal fidelity or manualATclaim.",
         "noUniversalFidelityClaim": true
       },
       "baselineRenderedContract": {
@@ -4366,6 +4688,23 @@
         "actualHTTPSCasesPerFamily": 516,
         "actualAxeViolations": 0,
         "knownFailureExceptions": []
+      },
+      "finalVisualAcceptance": {
+        "summary": "visual-review.json",
+        "route": "place",
+        "verdict": "pass",
+        "observedFinding": "The original station illustration, caption, facilities, access, location, and visit actions remain. Removing media in diagnostic masks leaves the intended text relationships visible; the primary normal images confirm the illustration is still present.",
+        "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+        "remainingVisualBlockers": []
+      },
+      "finalSourceIntegration": {
+        "summary": "final-acceptance.json",
+        "target": "develop",
+        "normalMergeCommits": {
+          "martlet": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5",
+          "krigsvold": "c85e01c4975bbb490637f06a9db62af525ffbbde"
+        },
+        "exactReviewedTreesPreserved": true
       }
     },
     {
@@ -4415,7 +4754,7 @@
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 3,
       "implementationStatus": "complete: existing family-native recipe retained",
-      "visualReviewStatus": "All50 actual source-bound final capture complete; independent manual review receipt pending.",
+      "visualReviewStatus": "Passed independent bounded source-backed composition review of final actual HTTPS normal/strict images; no current visual blocker.",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -4490,25 +4829,28 @@
           "number": 21,
           "url": "https://github.com/krigsvolddesign/jekyll/pull/21",
           "head": "3e5d49dcf47cc3b9e6646e66274fb246d5848df2",
-          "status": "original native failed; exact reviewed ancestor preserved by normal merge into consolidatedPR22"
+          "status": "closed-unmerged-as-superseded; original native failed; reviewed ancestry preserved in normally consolidatedPR22",
+          "closedAt": "2026-11-03T22:45:11Z",
+          "supersessionCommentUrl": "https://github.com/krigsvolddesign/jekyll/pull/21#issuecomment-6617395960"
         },
         {
           "family": "krigsvold",
           "number": 22,
           "url": "https://github.com/krigsvolddesign/jekyll/pull/22",
           "head": "983dee5d27ad02458baef6edc5a39279e24028ea",
-          "status": "consolidated exact final candidate technically passed; normal integration pending"
+          "status": "merged through normal develop merge; exact tested/reviewed source tree preserved",
+          "mergeCommit": "c85e01c4975bbb490637f06a9db62af525ffbbde"
         }
       ],
       "exceptions": [],
       "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
       "compositionRefinements": [],
       "familyImplementationStatus": {
-        "martlet": "Exact final source 0c0e0a7452444c41a3876c2f8732c6439c6097b9 passes full technical gate; integration status in final-acceptance.json",
-        "krigsvold": "Exact final source 983dee5d27ad02458baef6edc5a39279e24028ea passes full technical gate; integration status in final-acceptance.json"
+        "martlet": "Accepted exact final head 0c0e0a7452444c41a3876c2f8732c6439c6097b9 through normal develop merge 8c19cad7b403da5fc65f2a8d4336170a4dbc5de5; tree identical to tested/reviewed source.",
+        "krigsvold": "Accepted exact final head 983dee5d27ad02458baef6edc5a39279e24028ea through normal develop merge c85e01c4975bbb490637f06a9db62af525ffbbde; tree identical to tested/reviewed source."
       },
       "localReview": {
-        "status": "final source-bound actual capture complete; independent manual all50 review receipt pending",
+        "status": "Passed bounded final all50 visual review; no universal fidelity or manualATclaim.",
         "noUniversalFidelityClaim": true
       },
       "baselineRenderedContract": {
@@ -4552,6 +4894,23 @@
         "actualHTTPSCasesPerFamily": 516,
         "actualAxeViolations": 0,
         "knownFailureExceptions": []
+      },
+      "finalVisualAcceptance": {
+        "summary": "visual-review.json",
+        "route": "pricing",
+        "verdict": "pass",
+        "observedFinding": "All three illustrative packages, prices, inclusions, and actions retain their associations. The comparison uses columns on desktop and readable sequential packages on mobile in both families. Native controls and family hierarchy remain legible in dark mode.",
+        "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+        "remainingVisualBlockers": []
+      },
+      "finalSourceIntegration": {
+        "summary": "final-acceptance.json",
+        "target": "develop",
+        "normalMergeCommits": {
+          "martlet": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5",
+          "krigsvold": "c85e01c4975bbb490637f06a9db62af525ffbbde"
+        },
+        "exactReviewedTreesPreserved": true
       }
     },
     {
@@ -4599,7 +4958,7 @@
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 3,
       "implementationStatus": "complete: existing family-native recipe retained",
-      "visualReviewStatus": "All50 actual source-bound final capture complete; independent manual review receipt pending.",
+      "visualReviewStatus": "Passed independent bounded source-backed composition review of final actual HTTPS normal/strict images; no current visual blocker.",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -4673,25 +5032,28 @@
           "number": 21,
           "url": "https://github.com/krigsvolddesign/jekyll/pull/21",
           "head": "3e5d49dcf47cc3b9e6646e66274fb246d5848df2",
-          "status": "original native failed; exact reviewed ancestor preserved by normal merge into consolidatedPR22"
+          "status": "closed-unmerged-as-superseded; original native failed; reviewed ancestry preserved in normally consolidatedPR22",
+          "closedAt": "2026-11-03T22:45:11Z",
+          "supersessionCommentUrl": "https://github.com/krigsvolddesign/jekyll/pull/21#issuecomment-6617395960"
         },
         {
           "family": "krigsvold",
           "number": 22,
           "url": "https://github.com/krigsvolddesign/jekyll/pull/22",
           "head": "983dee5d27ad02458baef6edc5a39279e24028ea",
-          "status": "consolidated exact final candidate technically passed; normal integration pending"
+          "status": "merged through normal develop merge; exact tested/reviewed source tree preserved",
+          "mergeCommit": "c85e01c4975bbb490637f06a9db62af525ffbbde"
         }
       ],
       "exceptions": [],
       "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
       "compositionRefinements": [],
       "familyImplementationStatus": {
-        "martlet": "Exact final source 0c0e0a7452444c41a3876c2f8732c6439c6097b9 passes full technical gate; integration status in final-acceptance.json",
-        "krigsvold": "Exact final source 983dee5d27ad02458baef6edc5a39279e24028ea passes full technical gate; integration status in final-acceptance.json"
+        "martlet": "Accepted exact final head 0c0e0a7452444c41a3876c2f8732c6439c6097b9 through normal develop merge 8c19cad7b403da5fc65f2a8d4336170a4dbc5de5; tree identical to tested/reviewed source.",
+        "krigsvold": "Accepted exact final head 983dee5d27ad02458baef6edc5a39279e24028ea through normal develop merge c85e01c4975bbb490637f06a9db62af525ffbbde; tree identical to tested/reviewed source."
       },
       "localReview": {
-        "status": "final source-bound actual capture complete; independent manual all50 review receipt pending",
+        "status": "Passed bounded final all50 visual review; no universal fidelity or manualATclaim.",
         "noUniversalFidelityClaim": true
       },
       "baselineRenderedContract": {
@@ -4735,6 +5097,23 @@
         "actualHTTPSCasesPerFamily": 516,
         "actualAxeViolations": 0,
         "knownFailureExceptions": []
+      },
+      "finalVisualAcceptance": {
+        "summary": "visual-review.json",
+        "route": "careers",
+        "verdict": "pass",
+        "observedFinding": "The two fictional opportunities retain type, arrangement, deadline, and linked destinations. Both use scannable records rather than inventing application behavior; narrow grouping and metadata remain coherent.",
+        "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+        "remainingVisualBlockers": []
+      },
+      "finalSourceIntegration": {
+        "summary": "final-acceptance.json",
+        "target": "develop",
+        "normalMergeCommits": {
+          "martlet": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5",
+          "krigsvold": "c85e01c4975bbb490637f06a9db62af525ffbbde"
+        },
+        "exactReviewedTreesPreserved": true
       }
     },
     {
@@ -4788,7 +5167,7 @@
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 2,
       "implementationStatus": "complete: source-justified modification",
-      "visualReviewStatus": "All50 actual source-bound final capture complete; independent manual review receipt pending.",
+      "visualReviewStatus": "Passed independent bounded source-backed composition review of final actual HTTPS normal/strict images; no current visual blocker.",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -4922,11 +5301,11 @@
         }
       ],
       "familyImplementationStatus": {
-        "martlet": "Exact final source 0c0e0a7452444c41a3876c2f8732c6439c6097b9 passes full technical gate; integration status in final-acceptance.json",
-        "krigsvold": "Exact final source 983dee5d27ad02458baef6edc5a39279e24028ea passes full technical gate; integration status in final-acceptance.json"
+        "martlet": "Accepted exact final head 0c0e0a7452444c41a3876c2f8732c6439c6097b9 through normal develop merge 8c19cad7b403da5fc65f2a8d4336170a4dbc5de5; tree identical to tested/reviewed source.",
+        "krigsvold": "Accepted exact final head 983dee5d27ad02458baef6edc5a39279e24028ea through normal develop merge c85e01c4975bbb490637f06a9db62af525ffbbde; tree identical to tested/reviewed source."
       },
       "localReview": {
-        "status": "final source-bound actual capture complete; independent manual all50 review receipt pending",
+        "status": "Passed bounded final all50 visual review; no universal fidelity or manualATclaim.",
         "noUniversalFidelityClaim": true
       },
       "baselineRenderedContract": {
@@ -5055,6 +5434,23 @@
         "actualHTTPSCasesPerFamily": 516,
         "actualAxeViolations": 0,
         "knownFailureExceptions": []
+      },
+      "finalVisualAcceptance": {
+        "summary": "visual-review.json",
+        "route": "opportunity",
+        "verdict": "pass",
+        "observedFinding": "Responsibilities, three qualifications, arrangement facts, and application route remain. Martlet uses a measured document progression; Krigsvold aligns labeled stages and facts. The explicit fictional-vacancy boundary remains visible.",
+        "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+        "remainingVisualBlockers": []
+      },
+      "finalSourceIntegration": {
+        "summary": "final-acceptance.json",
+        "target": "develop",
+        "normalMergeCommits": {
+          "martlet": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5",
+          "krigsvold": "c85e01c4975bbb490637f06a9db62af525ffbbde"
+        },
+        "exactReviewedTreesPreserved": true
       }
     },
     {
@@ -5106,7 +5502,7 @@
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 3,
       "implementationStatus": "complete: existing family-native recipe retained",
-      "visualReviewStatus": "All50 actual source-bound final capture complete; independent manual review receipt pending.",
+      "visualReviewStatus": "Passed independent bounded source-backed composition review of final actual HTTPS normal/strict images; no current visual blocker.",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -5180,25 +5576,28 @@
           "number": 21,
           "url": "https://github.com/krigsvolddesign/jekyll/pull/21",
           "head": "3e5d49dcf47cc3b9e6646e66274fb246d5848df2",
-          "status": "original native failed; exact reviewed ancestor preserved by normal merge into consolidatedPR22"
+          "status": "closed-unmerged-as-superseded; original native failed; reviewed ancestry preserved in normally consolidatedPR22",
+          "closedAt": "2026-11-03T22:45:11Z",
+          "supersessionCommentUrl": "https://github.com/krigsvolddesign/jekyll/pull/21#issuecomment-6617395960"
         },
         {
           "family": "krigsvold",
           "number": 22,
           "url": "https://github.com/krigsvolddesign/jekyll/pull/22",
           "head": "983dee5d27ad02458baef6edc5a39279e24028ea",
-          "status": "consolidated exact final candidate technically passed; normal integration pending"
+          "status": "merged through normal develop merge; exact tested/reviewed source tree preserved",
+          "mergeCommit": "c85e01c4975bbb490637f06a9db62af525ffbbde"
         }
       ],
       "exceptions": [],
       "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
       "compositionRefinements": [],
       "familyImplementationStatus": {
-        "martlet": "Exact final source 0c0e0a7452444c41a3876c2f8732c6439c6097b9 passes full technical gate; integration status in final-acceptance.json",
-        "krigsvold": "Exact final source 983dee5d27ad02458baef6edc5a39279e24028ea passes full technical gate; integration status in final-acceptance.json"
+        "martlet": "Accepted exact final head 0c0e0a7452444c41a3876c2f8732c6439c6097b9 through normal develop merge 8c19cad7b403da5fc65f2a8d4336170a4dbc5de5; tree identical to tested/reviewed source.",
+        "krigsvold": "Accepted exact final head 983dee5d27ad02458baef6edc5a39279e24028ea through normal develop merge c85e01c4975bbb490637f06a9db62af525ffbbde; tree identical to tested/reviewed source."
       },
       "localReview": {
-        "status": "final source-bound actual capture complete; independent manual all50 review receipt pending",
+        "status": "Passed bounded final all50 visual review; no universal fidelity or manualATclaim.",
         "noUniversalFidelityClaim": true
       },
       "baselineRenderedContract": {
@@ -5242,6 +5641,23 @@
         "actualHTTPSCasesPerFamily": 516,
         "actualAxeViolations": 0,
         "knownFailureExceptions": []
+      },
+      "finalVisualAcceptance": {
+        "summary": "visual-review.json",
+        "route": "software",
+        "verdict": "pass",
+        "observedFinding": "Product explanation, three capability destinations, and integration actions remain. Martlet keeps a reading-led progression; Krigsvold groups them into purposeful aligned regions. The local preview and integration boundary remain explicit.",
+        "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+        "remainingVisualBlockers": []
+      },
+      "finalSourceIntegration": {
+        "summary": "final-acceptance.json",
+        "target": "develop",
+        "normalMergeCommits": {
+          "martlet": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5",
+          "krigsvold": "c85e01c4975bbb490637f06a9db62af525ffbbde"
+        },
+        "exactReviewedTreesPreserved": true
       }
     },
     {
@@ -5293,7 +5709,7 @@
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 3,
       "implementationStatus": "complete: existing family-native recipe retained",
-      "visualReviewStatus": "All50 actual source-bound final capture complete; independent manual review receipt pending.",
+      "visualReviewStatus": "Passed independent bounded source-backed composition review of final actual HTTPS normal/strict images; no current visual blocker.",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -5367,25 +5783,28 @@
           "number": 21,
           "url": "https://github.com/krigsvolddesign/jekyll/pull/21",
           "head": "3e5d49dcf47cc3b9e6646e66274fb246d5848df2",
-          "status": "original native failed; exact reviewed ancestor preserved by normal merge into consolidatedPR22"
+          "status": "closed-unmerged-as-superseded; original native failed; reviewed ancestry preserved in normally consolidatedPR22",
+          "closedAt": "2026-11-03T22:45:11Z",
+          "supersessionCommentUrl": "https://github.com/krigsvolddesign/jekyll/pull/21#issuecomment-6617395960"
         },
         {
           "family": "krigsvold",
           "number": 22,
           "url": "https://github.com/krigsvolddesign/jekyll/pull/22",
           "head": "983dee5d27ad02458baef6edc5a39279e24028ea",
-          "status": "consolidated exact final candidate technically passed; normal integration pending"
+          "status": "merged through normal develop merge; exact tested/reviewed source tree preserved",
+          "mergeCommit": "c85e01c4975bbb490637f06a9db62af525ffbbde"
         }
       ],
       "exceptions": [],
       "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
       "compositionRefinements": [],
       "familyImplementationStatus": {
-        "martlet": "Exact final source 0c0e0a7452444c41a3876c2f8732c6439c6097b9 passes full technical gate; integration status in final-acceptance.json",
-        "krigsvold": "Exact final source 983dee5d27ad02458baef6edc5a39279e24028ea passes full technical gate; integration status in final-acceptance.json"
+        "martlet": "Accepted exact final head 0c0e0a7452444c41a3876c2f8732c6439c6097b9 through normal develop merge 8c19cad7b403da5fc65f2a8d4336170a4dbc5de5; tree identical to tested/reviewed source.",
+        "krigsvold": "Accepted exact final head 983dee5d27ad02458baef6edc5a39279e24028ea through normal develop merge c85e01c4975bbb490637f06a9db62af525ffbbde; tree identical to tested/reviewed source."
       },
       "localReview": {
-        "status": "final source-bound actual capture complete; independent manual all50 review receipt pending",
+        "status": "Passed bounded final all50 visual review; no universal fidelity or manualATclaim.",
         "noUniversalFidelityClaim": true
       },
       "baselineRenderedContract": {
@@ -5429,6 +5848,23 @@
         "actualHTTPSCasesPerFamily": 516,
         "actualAxeViolations": 0,
         "knownFailureExceptions": []
+      },
+      "finalVisualAcceptance": {
+        "summary": "visual-review.json",
+        "route": "product",
+        "verdict": "pass",
+        "observedFinding": "The notebook illustration, caption, specifications, and purchasing boundary remain. The primary normal images show the unchanged artwork; strict views isolate specification grouping. No checkout or commerce service has been implied.",
+        "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+        "remainingVisualBlockers": []
+      },
+      "finalSourceIntegration": {
+        "summary": "final-acceptance.json",
+        "target": "develop",
+        "normalMergeCommits": {
+          "martlet": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5",
+          "krigsvold": "c85e01c4975bbb490637f06a9db62af525ffbbde"
+        },
+        "exactReviewedTreesPreserved": true
       }
     },
     {
@@ -5476,7 +5912,7 @@
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 3,
       "implementationStatus": "complete: existing family-native recipe retained",
-      "visualReviewStatus": "All50 actual source-bound final capture complete; independent manual review receipt pending.",
+      "visualReviewStatus": "Passed independent bounded source-backed composition review of final actual HTTPS normal/strict images; no current visual blocker.",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -5550,25 +5986,28 @@
           "number": 21,
           "url": "https://github.com/krigsvolddesign/jekyll/pull/21",
           "head": "3e5d49dcf47cc3b9e6646e66274fb246d5848df2",
-          "status": "original native failed; exact reviewed ancestor preserved by normal merge into consolidatedPR22"
+          "status": "closed-unmerged-as-superseded; original native failed; reviewed ancestry preserved in normally consolidatedPR22",
+          "closedAt": "2026-11-03T22:45:11Z",
+          "supersessionCommentUrl": "https://github.com/krigsvolddesign/jekyll/pull/21#issuecomment-6617395960"
         },
         {
           "family": "krigsvold",
           "number": 22,
           "url": "https://github.com/krigsvolddesign/jekyll/pull/22",
           "head": "983dee5d27ad02458baef6edc5a39279e24028ea",
-          "status": "consolidated exact final candidate technically passed; normal integration pending"
+          "status": "merged through normal develop merge; exact tested/reviewed source tree preserved",
+          "mergeCommit": "c85e01c4975bbb490637f06a9db62af525ffbbde"
         }
       ],
       "exceptions": [],
       "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
       "compositionRefinements": [],
       "familyImplementationStatus": {
-        "martlet": "Exact final source 0c0e0a7452444c41a3876c2f8732c6439c6097b9 passes full technical gate; integration status in final-acceptance.json",
-        "krigsvold": "Exact final source 983dee5d27ad02458baef6edc5a39279e24028ea passes full technical gate; integration status in final-acceptance.json"
+        "martlet": "Accepted exact final head 0c0e0a7452444c41a3876c2f8732c6439c6097b9 through normal develop merge 8c19cad7b403da5fc65f2a8d4336170a4dbc5de5; tree identical to tested/reviewed source.",
+        "krigsvold": "Accepted exact final head 983dee5d27ad02458baef6edc5a39279e24028ea through normal develop merge c85e01c4975bbb490637f06a9db62af525ffbbde; tree identical to tested/reviewed source."
       },
       "localReview": {
-        "status": "final source-bound actual capture complete; independent manual all50 review receipt pending",
+        "status": "Passed bounded final all50 visual review; no universal fidelity or manualATclaim.",
         "noUniversalFidelityClaim": true
       },
       "baselineRenderedContract": {
@@ -5612,6 +6051,23 @@
         "actualHTTPSCasesPerFamily": 516,
         "actualAxeViolations": 0,
         "knownFailureExceptions": []
+      },
+      "finalVisualAcceptance": {
+        "summary": "visual-review.json",
+        "route": "collection",
+        "verdict": "pass",
+        "observedFinding": "The same notebook, protocol, exhibition records, and pagination remain. Desktop record alignment and narrow reading order remain coherent. Similar content structures are justified; type and region organization retain each language's identity.",
+        "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+        "remainingVisualBlockers": []
+      },
+      "finalSourceIntegration": {
+        "summary": "final-acceptance.json",
+        "target": "develop",
+        "normalMergeCommits": {
+          "martlet": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5",
+          "krigsvold": "c85e01c4975bbb490637f06a9db62af525ffbbde"
+        },
+        "exactReviewedTreesPreserved": true
       }
     },
     {
@@ -5663,7 +6119,7 @@
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 3,
       "implementationStatus": "complete: existing family-native recipe retained",
-      "visualReviewStatus": "All50 actual source-bound final capture complete; independent manual review receipt pending.",
+      "visualReviewStatus": "Passed independent bounded source-backed composition review of final actual HTTPS normal/strict images; no current visual blocker.",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -5737,25 +6193,28 @@
           "number": 21,
           "url": "https://github.com/krigsvolddesign/jekyll/pull/21",
           "head": "3e5d49dcf47cc3b9e6646e66274fb246d5848df2",
-          "status": "original native failed; exact reviewed ancestor preserved by normal merge into consolidatedPR22"
+          "status": "closed-unmerged-as-superseded; original native failed; reviewed ancestry preserved in normally consolidatedPR22",
+          "closedAt": "2026-11-03T22:45:11Z",
+          "supersessionCommentUrl": "https://github.com/krigsvolddesign/jekyll/pull/21#issuecomment-6617395960"
         },
         {
           "family": "krigsvold",
           "number": 22,
           "url": "https://github.com/krigsvolddesign/jekyll/pull/22",
           "head": "983dee5d27ad02458baef6edc5a39279e24028ea",
-          "status": "consolidated exact final candidate technically passed; normal integration pending"
+          "status": "merged through normal develop merge; exact tested/reviewed source tree preserved",
+          "mergeCommit": "c85e01c4975bbb490637f06a9db62af525ffbbde"
         }
       ],
       "exceptions": [],
       "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
       "compositionRefinements": [],
       "familyImplementationStatus": {
-        "martlet": "Exact final source 0c0e0a7452444c41a3876c2f8732c6439c6097b9 passes full technical gate; integration status in final-acceptance.json",
-        "krigsvold": "Exact final source 983dee5d27ad02458baef6edc5a39279e24028ea passes full technical gate; integration status in final-acceptance.json"
+        "martlet": "Accepted exact final head 0c0e0a7452444c41a3876c2f8732c6439c6097b9 through normal develop merge 8c19cad7b403da5fc65f2a8d4336170a4dbc5de5; tree identical to tested/reviewed source.",
+        "krigsvold": "Accepted exact final head 983dee5d27ad02458baef6edc5a39279e24028ea through normal develop merge c85e01c4975bbb490637f06a9db62af525ffbbde; tree identical to tested/reviewed source."
       },
       "localReview": {
-        "status": "final source-bound actual capture complete; independent manual all50 review receipt pending",
+        "status": "Passed bounded final all50 visual review; no universal fidelity or manualATclaim.",
         "noUniversalFidelityClaim": true
       },
       "baselineRenderedContract": {
@@ -5799,6 +6258,23 @@
         "actualHTTPSCasesPerFamily": 516,
         "actualAxeViolations": 0,
         "knownFailureExceptions": []
+      },
+      "finalVisualAcceptance": {
+        "summary": "visual-review.json",
+        "route": "collection-item",
+        "verdict": "pass",
+        "observedFinding": "The original notebook image, caption, identifier, creator, date, rights, and context remain associated. Martlet uses a heading-led record; Krigsvold uses labeled regions. The normal frame, not the photo-free diagnostic mask, establishes image presence.",
+        "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+        "remainingVisualBlockers": []
+      },
+      "finalSourceIntegration": {
+        "summary": "final-acceptance.json",
+        "target": "develop",
+        "normalMergeCommits": {
+          "martlet": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5",
+          "krigsvold": "c85e01c4975bbb490637f06a9db62af525ffbbde"
+        },
+        "exactReviewedTreesPreserved": true
       }
     },
     {
@@ -5848,7 +6324,7 @@
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 3,
       "implementationStatus": "complete: existing family-native recipe retained",
-      "visualReviewStatus": "All50 actual source-bound final capture complete; independent manual review receipt pending.",
+      "visualReviewStatus": "Passed independent bounded source-backed composition review of final actual HTTPS normal/strict images; no current visual blocker.",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -5922,25 +6398,28 @@
           "number": 21,
           "url": "https://github.com/krigsvolddesign/jekyll/pull/21",
           "head": "3e5d49dcf47cc3b9e6646e66274fb246d5848df2",
-          "status": "original native failed; exact reviewed ancestor preserved by normal merge into consolidatedPR22"
+          "status": "closed-unmerged-as-superseded; original native failed; reviewed ancestry preserved in normally consolidatedPR22",
+          "closedAt": "2026-11-03T22:45:11Z",
+          "supersessionCommentUrl": "https://github.com/krigsvolddesign/jekyll/pull/21#issuecomment-6617395960"
         },
         {
           "family": "krigsvold",
           "number": 22,
           "url": "https://github.com/krigsvolddesign/jekyll/pull/22",
           "head": "983dee5d27ad02458baef6edc5a39279e24028ea",
-          "status": "consolidated exact final candidate technically passed; normal integration pending"
+          "status": "merged through normal develop merge; exact tested/reviewed source tree preserved",
+          "mergeCommit": "c85e01c4975bbb490637f06a9db62af525ffbbde"
         }
       ],
       "exceptions": [],
       "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
       "compositionRefinements": [],
       "familyImplementationStatus": {
-        "martlet": "Exact final source 0c0e0a7452444c41a3876c2f8732c6439c6097b9 passes full technical gate; integration status in final-acceptance.json",
-        "krigsvold": "Exact final source 983dee5d27ad02458baef6edc5a39279e24028ea passes full technical gate; integration status in final-acceptance.json"
+        "martlet": "Accepted exact final head 0c0e0a7452444c41a3876c2f8732c6439c6097b9 through normal develop merge 8c19cad7b403da5fc65f2a8d4336170a4dbc5de5; tree identical to tested/reviewed source.",
+        "krigsvold": "Accepted exact final head 983dee5d27ad02458baef6edc5a39279e24028ea through normal develop merge c85e01c4975bbb490637f06a9db62af525ffbbde; tree identical to tested/reviewed source."
       },
       "localReview": {
-        "status": "final source-bound actual capture complete; independent manual all50 review receipt pending",
+        "status": "Passed bounded final all50 visual review; no universal fidelity or manualATclaim.",
         "noUniversalFidelityClaim": true
       },
       "baselineRenderedContract": {
@@ -5984,6 +6463,23 @@
         "actualHTTPSCasesPerFamily": 516,
         "actualAxeViolations": 0,
         "knownFailureExceptions": []
+      },
+      "finalVisualAcceptance": {
+        "summary": "visual-review.json",
+        "route": "events",
+        "verdict": "pass",
+        "observedFinding": "Upcoming workshop and past programme entries retain dates, timezone, location, and destination. Both preserve scannable event grouping; Krigsvold's regional label alignment and Martlet's heading-led sequence remain consistent at both widths.",
+        "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+        "remainingVisualBlockers": []
+      },
+      "finalSourceIntegration": {
+        "summary": "final-acceptance.json",
+        "target": "develop",
+        "normalMergeCommits": {
+          "martlet": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5",
+          "krigsvold": "c85e01c4975bbb490637f06a9db62af525ffbbde"
+        },
+        "exactReviewedTreesPreserved": true
       }
     },
     {
@@ -6035,7 +6531,7 @@
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 3,
       "implementationStatus": "complete: source-justified modification",
-      "visualReviewStatus": "All50 actual source-bound final capture complete; independent manual review receipt pending.",
+      "visualReviewStatus": "Passed independent bounded source-backed composition review of final actual HTTPS normal/strict images; no current visual blocker.",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -6132,25 +6628,28 @@
           "number": 21,
           "url": "https://github.com/krigsvolddesign/jekyll/pull/21",
           "head": "3e5d49dcf47cc3b9e6646e66274fb246d5848df2",
-          "status": "original native failed; exact reviewed ancestor preserved by normal merge into consolidatedPR22"
+          "status": "closed-unmerged-as-superseded; original native failed; reviewed ancestry preserved in normally consolidatedPR22",
+          "closedAt": "2026-11-03T22:45:11Z",
+          "supersessionCommentUrl": "https://github.com/krigsvolddesign/jekyll/pull/21#issuecomment-6617395960"
         },
         {
           "family": "krigsvold",
           "number": 22,
           "url": "https://github.com/krigsvolddesign/jekyll/pull/22",
           "head": "983dee5d27ad02458baef6edc5a39279e24028ea",
-          "status": "consolidated exact final candidate technically passed; normal integration pending"
+          "status": "merged through normal develop merge; exact tested/reviewed source tree preserved",
+          "mergeCommit": "c85e01c4975bbb490637f06a9db62af525ffbbde"
         }
       ],
       "exceptions": [],
       "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
       "compositionRefinements": [],
       "familyImplementationStatus": {
-        "martlet": "Exact final source 0c0e0a7452444c41a3876c2f8732c6439c6097b9 passes full technical gate; integration status in final-acceptance.json",
-        "krigsvold": "Exact final source 983dee5d27ad02458baef6edc5a39279e24028ea passes full technical gate; integration status in final-acceptance.json"
+        "martlet": "Accepted exact final head 0c0e0a7452444c41a3876c2f8732c6439c6097b9 through normal develop merge 8c19cad7b403da5fc65f2a8d4336170a4dbc5de5; tree identical to tested/reviewed source.",
+        "krigsvold": "Accepted exact final head 983dee5d27ad02458baef6edc5a39279e24028ea through normal develop merge c85e01c4975bbb490637f06a9db62af525ffbbde; tree identical to tested/reviewed source."
       },
       "localReview": {
-        "status": "final source-bound actual capture complete; independent manual all50 review receipt pending",
+        "status": "Passed bounded final all50 visual review; no universal fidelity or manualATclaim.",
         "noUniversalFidelityClaim": true
       },
       "baselineRenderedContract": {
@@ -6228,6 +6727,23 @@
         "actualHTTPSCasesPerFamily": 516,
         "actualAxeViolations": 0,
         "knownFailureExceptions": []
+      },
+      "finalVisualAcceptance": {
+        "summary": "visual-review.json",
+        "route": "event",
+        "verdict": "pass",
+        "observedFinding": "The event notice, schedule, access facts, and unavailable-registration explanation remain. The event anatomy remains retained; its recorded technical refinement gives the native table scroll region a unique accessible name. The normal states preserve the same local-only registration boundary.",
+        "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+        "remainingVisualBlockers": []
+      },
+      "finalSourceIntegration": {
+        "summary": "final-acceptance.json",
+        "target": "develop",
+        "normalMergeCommits": {
+          "martlet": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5",
+          "krigsvold": "c85e01c4975bbb490637f06a9db62af525ffbbde"
+        },
+        "exactReviewedTreesPreserved": true
       }
     },
     {
@@ -6281,7 +6797,7 @@
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 3,
       "implementationStatus": "complete: source-justified modification",
-      "visualReviewStatus": "All50 actual source-bound final capture complete; independent manual review receipt pending.",
+      "visualReviewStatus": "Passed independent bounded source-backed composition review of final actual HTTPS normal/strict images; no current visual blocker.",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -6378,25 +6894,28 @@
           "number": 21,
           "url": "https://github.com/krigsvolddesign/jekyll/pull/21",
           "head": "3e5d49dcf47cc3b9e6646e66274fb246d5848df2",
-          "status": "original native failed; exact reviewed ancestor preserved by normal merge into consolidatedPR22"
+          "status": "closed-unmerged-as-superseded; original native failed; reviewed ancestry preserved in normally consolidatedPR22",
+          "closedAt": "2026-11-03T22:45:11Z",
+          "supersessionCommentUrl": "https://github.com/krigsvolddesign/jekyll/pull/21#issuecomment-6617395960"
         },
         {
           "family": "krigsvold",
           "number": 22,
           "url": "https://github.com/krigsvolddesign/jekyll/pull/22",
           "head": "983dee5d27ad02458baef6edc5a39279e24028ea",
-          "status": "consolidated exact final candidate technically passed; normal integration pending"
+          "status": "merged through normal develop merge; exact tested/reviewed source tree preserved",
+          "mergeCommit": "c85e01c4975bbb490637f06a9db62af525ffbbde"
         }
       ],
       "exceptions": [],
       "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
       "compositionRefinements": [],
       "familyImplementationStatus": {
-        "martlet": "Exact final source 0c0e0a7452444c41a3876c2f8732c6439c6097b9 passes full technical gate; integration status in final-acceptance.json",
-        "krigsvold": "Exact final source 983dee5d27ad02458baef6edc5a39279e24028ea passes full technical gate; integration status in final-acceptance.json"
+        "martlet": "Accepted exact final head 0c0e0a7452444c41a3876c2f8732c6439c6097b9 through normal develop merge 8c19cad7b403da5fc65f2a8d4336170a4dbc5de5; tree identical to tested/reviewed source.",
+        "krigsvold": "Accepted exact final head 983dee5d27ad02458baef6edc5a39279e24028ea through normal develop merge c85e01c4975bbb490637f06a9db62af525ffbbde; tree identical to tested/reviewed source."
       },
       "localReview": {
-        "status": "final source-bound actual capture complete; independent manual all50 review receipt pending",
+        "status": "Passed bounded final all50 visual review; no universal fidelity or manualATclaim.",
         "noUniversalFidelityClaim": true
       },
       "baselineRenderedContract": {
@@ -6484,6 +7003,23 @@
         "actualHTTPSCasesPerFamily": 516,
         "actualAxeViolations": 0,
         "knownFailureExceptions": []
+      },
+      "finalVisualAcceptance": {
+        "summary": "visual-review.json",
+        "route": "report",
+        "verdict": "pass",
+        "observedFinding": "The reporting period,12/4/2 measures, four observation rows, methodology, CSV, and protocol action remain. Martlet adds a document index beside narrative; Krigsvold uses horizontal navigation and labeled regional rows. The larger detail confirms no data was dropped by this reorganization.",
+        "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+        "remainingVisualBlockers": []
+      },
+      "finalSourceIntegration": {
+        "summary": "final-acceptance.json",
+        "target": "develop",
+        "normalMergeCommits": {
+          "martlet": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5",
+          "krigsvold": "c85e01c4975bbb490637f06a9db62af525ffbbde"
+        },
+        "exactReviewedTreesPreserved": true
       }
     },
     {
@@ -6533,7 +7069,7 @@
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 3,
       "implementationStatus": "complete: existing family-native recipe retained",
-      "visualReviewStatus": "All50 actual source-bound final capture complete; independent manual review receipt pending.",
+      "visualReviewStatus": "Passed independent bounded source-backed composition review of final actual HTTPS normal/strict images; no current visual blocker.",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -6607,25 +7143,28 @@
           "number": 21,
           "url": "https://github.com/krigsvolddesign/jekyll/pull/21",
           "head": "3e5d49dcf47cc3b9e6646e66274fb246d5848df2",
-          "status": "original native failed; exact reviewed ancestor preserved by normal merge into consolidatedPR22"
+          "status": "closed-unmerged-as-superseded; original native failed; reviewed ancestry preserved in normally consolidatedPR22",
+          "closedAt": "2026-11-03T22:45:11Z",
+          "supersessionCommentUrl": "https://github.com/krigsvolddesign/jekyll/pull/21#issuecomment-6617395960"
         },
         {
           "family": "krigsvold",
           "number": 22,
           "url": "https://github.com/krigsvolddesign/jekyll/pull/22",
           "head": "983dee5d27ad02458baef6edc5a39279e24028ea",
-          "status": "consolidated exact final candidate technically passed; normal integration pending"
+          "status": "merged through normal develop merge; exact tested/reviewed source tree preserved",
+          "mergeCommit": "c85e01c4975bbb490637f06a9db62af525ffbbde"
         }
       ],
       "exceptions": [],
       "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
       "compositionRefinements": [],
       "familyImplementationStatus": {
-        "martlet": "Exact final source 0c0e0a7452444c41a3876c2f8732c6439c6097b9 passes full technical gate; integration status in final-acceptance.json",
-        "krigsvold": "Exact final source 983dee5d27ad02458baef6edc5a39279e24028ea passes full technical gate; integration status in final-acceptance.json"
+        "martlet": "Accepted exact final head 0c0e0a7452444c41a3876c2f8732c6439c6097b9 through normal develop merge 8c19cad7b403da5fc65f2a8d4336170a4dbc5de5; tree identical to tested/reviewed source.",
+        "krigsvold": "Accepted exact final head 983dee5d27ad02458baef6edc5a39279e24028ea through normal develop merge c85e01c4975bbb490637f06a9db62af525ffbbde; tree identical to tested/reviewed source."
       },
       "localReview": {
-        "status": "final source-bound actual capture complete; independent manual all50 review receipt pending",
+        "status": "Passed bounded final all50 visual review; no universal fidelity or manualATclaim.",
         "noUniversalFidelityClaim": true
       },
       "baselineRenderedContract": {
@@ -6669,6 +7208,23 @@
         "actualHTTPSCasesPerFamily": 516,
         "actualAxeViolations": 0,
         "knownFailureExceptions": []
+      },
+      "finalVisualAcceptance": {
+        "summary": "visual-review.json",
+        "route": "gallery",
+        "verdict": "pass",
+        "observedFinding": "All three illustrations, enlargement links, captions, and exhibition explanation remain. Martlet's three-across and Krigsvold's regional two-across desktop presentation reflow to a readable narrow sequence. Media-free masks are diagnostic blanks, not missing-image claims.",
+        "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+        "remainingVisualBlockers": []
+      },
+      "finalSourceIntegration": {
+        "summary": "final-acceptance.json",
+        "target": "develop",
+        "normalMergeCommits": {
+          "martlet": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5",
+          "krigsvold": "c85e01c4975bbb490637f06a9db62af525ffbbde"
+        },
+        "exactReviewedTreesPreserved": true
       }
     },
     {
@@ -6720,7 +7276,7 @@
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 1,
       "implementationStatus": "complete: source-justified modification",
-      "visualReviewStatus": "All50 actual source-bound final capture complete; independent manual review receipt pending.",
+      "visualReviewStatus": "Passed independent bounded source-backed composition review of final actual HTTPS normal/strict images; no current visual blocker.",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -6906,11 +7462,11 @@
         }
       ],
       "familyImplementationStatus": {
-        "martlet": "Exact final source 0c0e0a7452444c41a3876c2f8732c6439c6097b9 passes full technical gate; integration status in final-acceptance.json",
-        "krigsvold": "Exact final source 983dee5d27ad02458baef6edc5a39279e24028ea passes full technical gate; integration status in final-acceptance.json"
+        "martlet": "Accepted exact final head 0c0e0a7452444c41a3876c2f8732c6439c6097b9 through normal develop merge 8c19cad7b403da5fc65f2a8d4336170a4dbc5de5; tree identical to tested/reviewed source.",
+        "krigsvold": "Accepted exact final head 983dee5d27ad02458baef6edc5a39279e24028ea through normal develop merge c85e01c4975bbb490637f06a9db62af525ffbbde; tree identical to tested/reviewed source."
       },
       "localReview": {
-        "status": "final source-bound actual capture complete; independent manual all50 review receipt pending",
+        "status": "Passed bounded final all50 visual review; no universal fidelity or manualATclaim.",
         "noUniversalFidelityClaim": true
       },
       "baselineRenderedContract": {
@@ -7027,6 +7583,23 @@
         "actualHTTPSCasesPerFamily": 516,
         "actualAxeViolations": 0,
         "knownFailureExceptions": []
+      },
+      "finalVisualAcceptance": {
+        "summary": "visual-review.json",
+        "route": "changelog",
+        "verdict": "pass",
+        "observedFinding": "All three versions, dates, additions, migration notes, and fragment links remain. Martlet uses a quiet version/date column beside narrative; Krigsvold uses ruled release rows with precise metadata. No table is invented as a universal family rule.",
+        "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+        "remainingVisualBlockers": []
+      },
+      "finalSourceIntegration": {
+        "summary": "final-acceptance.json",
+        "target": "develop",
+        "normalMergeCommits": {
+          "martlet": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5",
+          "krigsvold": "c85e01c4975bbb490637f06a9db62af525ffbbde"
+        },
+        "exactReviewedTreesPreserved": true
       }
     },
     {
@@ -7076,7 +7649,7 @@
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 3,
       "implementationStatus": "complete: source-justified modification",
-      "visualReviewStatus": "All50 actual source-bound final capture complete; independent manual review receipt pending.",
+      "visualReviewStatus": "Passed independent bounded source-backed composition review of final actual HTTPS normal/strict images; no current visual blocker.",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -7151,25 +7724,28 @@
           "number": 21,
           "url": "https://github.com/krigsvolddesign/jekyll/pull/21",
           "head": "3e5d49dcf47cc3b9e6646e66274fb246d5848df2",
-          "status": "original native failed; exact reviewed ancestor preserved by normal merge into consolidatedPR22"
+          "status": "closed-unmerged-as-superseded; original native failed; reviewed ancestry preserved in normally consolidatedPR22",
+          "closedAt": "2026-11-03T22:45:11Z",
+          "supersessionCommentUrl": "https://github.com/krigsvolddesign/jekyll/pull/21#issuecomment-6617395960"
         },
         {
           "family": "krigsvold",
           "number": 22,
           "url": "https://github.com/krigsvolddesign/jekyll/pull/22",
           "head": "983dee5d27ad02458baef6edc5a39279e24028ea",
-          "status": "consolidated exact final candidate technically passed; normal integration pending"
+          "status": "merged through normal develop merge; exact tested/reviewed source tree preserved",
+          "mergeCommit": "c85e01c4975bbb490637f06a9db62af525ffbbde"
         }
       ],
       "exceptions": [],
       "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
       "compositionRefinements": [],
       "familyImplementationStatus": {
-        "martlet": "Exact final source 0c0e0a7452444c41a3876c2f8732c6439c6097b9 passes full technical gate; integration status in final-acceptance.json",
-        "krigsvold": "Exact final source 983dee5d27ad02458baef6edc5a39279e24028ea passes full technical gate; integration status in final-acceptance.json"
+        "martlet": "Accepted exact final head 0c0e0a7452444c41a3876c2f8732c6439c6097b9 through normal develop merge 8c19cad7b403da5fc65f2a8d4336170a4dbc5de5; tree identical to tested/reviewed source.",
+        "krigsvold": "Accepted exact final head 983dee5d27ad02458baef6edc5a39279e24028ea through normal develop merge c85e01c4975bbb490637f06a9db62af525ffbbde; tree identical to tested/reviewed source."
       },
       "localReview": {
-        "status": "final source-bound actual capture complete; independent manual all50 review receipt pending",
+        "status": "Passed bounded final all50 visual review; no universal fidelity or manualATclaim.",
         "noUniversalFidelityClaim": true
       },
       "baselineRenderedContract": {
@@ -7241,6 +7817,23 @@
         "actualHTTPSCasesPerFamily": 516,
         "actualAxeViolations": 0,
         "knownFailureExceptions": []
+      },
+      "finalVisualAcceptance": {
+        "summary": "visual-review.json",
+        "route": "search",
+        "verdict": "pass",
+        "observedFinding": "The protocol query returns the same single protocol result. Martlet's source-observed serif query prompt and gold-topped group now lead a readable result; Krigsvold uses a scoped query region and aligned result. The before captures' narrow desktop result wrapping is historical and preserved.",
+        "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+        "remainingVisualBlockers": []
+      },
+      "finalSourceIntegration": {
+        "summary": "final-acceptance.json",
+        "target": "develop",
+        "normalMergeCommits": {
+          "martlet": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5",
+          "krigsvold": "c85e01c4975bbb490637f06a9db62af525ffbbde"
+        },
+        "exactReviewedTreesPreserved": true
       }
     },
     {
@@ -7292,7 +7885,7 @@
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 4,
       "implementationStatus": "complete: existing family-native recipe retained",
-      "visualReviewStatus": "All50 actual source-bound final capture complete; independent manual review receipt pending.",
+      "visualReviewStatus": "Passed independent bounded source-backed composition review of final actual HTTPS normal/strict images; no current visual blocker.",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -7359,25 +7952,27 @@
           "number": 24,
           "url": "https://github.com/martletdesign/jekyll/pull/24",
           "head": "0c0e0a7452444c41a3876c2f8732c6439c6097b9",
-          "status": "exact final candidate technically passed; normal integration pending"
+          "status": "merged through normal develop merge; exact tested/reviewed source tree preserved",
+          "mergeCommit": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5"
         },
         {
           "family": "krigsvold",
           "number": 22,
           "url": "https://github.com/krigsvolddesign/jekyll/pull/22",
           "head": "983dee5d27ad02458baef6edc5a39279e24028ea",
-          "status": "exact final candidate technically passed; normal integration pending"
+          "status": "merged through normal develop merge; exact tested/reviewed source tree preserved",
+          "mergeCommit": "c85e01c4975bbb490637f06a9db62af525ffbbde"
         }
       ],
       "exceptions": [],
       "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
       "compositionRefinements": [],
       "familyImplementationStatus": {
-        "martlet": "Exact final source 0c0e0a7452444c41a3876c2f8732c6439c6097b9 passes full technical gate; integration status in final-acceptance.json",
-        "krigsvold": "Exact final source 983dee5d27ad02458baef6edc5a39279e24028ea passes full technical gate; integration status in final-acceptance.json"
+        "martlet": "Accepted exact final head 0c0e0a7452444c41a3876c2f8732c6439c6097b9 through normal develop merge 8c19cad7b403da5fc65f2a8d4336170a4dbc5de5; tree identical to tested/reviewed source.",
+        "krigsvold": "Accepted exact final head 983dee5d27ad02458baef6edc5a39279e24028ea through normal develop merge c85e01c4975bbb490637f06a9db62af525ffbbde; tree identical to tested/reviewed source."
       },
       "localReview": {
-        "status": "final source-bound actual capture complete; independent manual all50 review receipt pending",
+        "status": "Passed bounded final all50 visual review; no universal fidelity or manualATclaim.",
         "noUniversalFidelityClaim": true
       },
       "baselineRenderedContract": {
@@ -7420,6 +8015,23 @@
         "actualHTTPSCasesPerFamily": 516,
         "actualAxeViolations": 0,
         "knownFailureExceptions": []
+      },
+      "finalVisualAcceptance": {
+        "summary": "visual-review.json",
+        "route": "sign-in",
+        "verdict": "pass",
+        "observedFinding": "The email/password specimen, hint, validation/clear actions, and account routes retain conventional geometry. Family type, notices, actions, and reading relationships remain coherent. These images do not certify authentication or durable state.",
+        "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+        "remainingVisualBlockers": []
+      },
+      "finalSourceIntegration": {
+        "summary": "final-acceptance.json",
+        "target": "develop",
+        "normalMergeCommits": {
+          "martlet": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5",
+          "krigsvold": "c85e01c4975bbb490637f06a9db62af525ffbbde"
+        },
+        "exactReviewedTreesPreserved": true
       }
     },
     {
@@ -7471,7 +8083,7 @@
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 4,
       "implementationStatus": "complete: existing family-native recipe retained",
-      "visualReviewStatus": "All50 actual source-bound final capture complete; independent manual review receipt pending.",
+      "visualReviewStatus": "Passed independent bounded source-backed composition review of final actual HTTPS normal/strict images; no current visual blocker.",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -7538,25 +8150,27 @@
           "number": 24,
           "url": "https://github.com/martletdesign/jekyll/pull/24",
           "head": "0c0e0a7452444c41a3876c2f8732c6439c6097b9",
-          "status": "exact final candidate technically passed; normal integration pending"
+          "status": "merged through normal develop merge; exact tested/reviewed source tree preserved",
+          "mergeCommit": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5"
         },
         {
           "family": "krigsvold",
           "number": 22,
           "url": "https://github.com/krigsvolddesign/jekyll/pull/22",
           "head": "983dee5d27ad02458baef6edc5a39279e24028ea",
-          "status": "exact final candidate technically passed; normal integration pending"
+          "status": "merged through normal develop merge; exact tested/reviewed source tree preserved",
+          "mergeCommit": "c85e01c4975bbb490637f06a9db62af525ffbbde"
         }
       ],
       "exceptions": [],
       "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
       "compositionRefinements": [],
       "familyImplementationStatus": {
-        "martlet": "Exact final source 0c0e0a7452444c41a3876c2f8732c6439c6097b9 passes full technical gate; integration status in final-acceptance.json",
-        "krigsvold": "Exact final source 983dee5d27ad02458baef6edc5a39279e24028ea passes full technical gate; integration status in final-acceptance.json"
+        "martlet": "Accepted exact final head 0c0e0a7452444c41a3876c2f8732c6439c6097b9 through normal develop merge 8c19cad7b403da5fc65f2a8d4336170a4dbc5de5; tree identical to tested/reviewed source.",
+        "krigsvold": "Accepted exact final head 983dee5d27ad02458baef6edc5a39279e24028ea through normal develop merge c85e01c4975bbb490637f06a9db62af525ffbbde; tree identical to tested/reviewed source."
       },
       "localReview": {
-        "status": "final source-bound actual capture complete; independent manual all50 review receipt pending",
+        "status": "Passed bounded final all50 visual review; no universal fidelity or manualATclaim.",
         "noUniversalFidelityClaim": true
       },
       "baselineRenderedContract": {
@@ -7599,6 +8213,23 @@
         "actualHTTPSCasesPerFamily": 516,
         "actualAxeViolations": 0,
         "knownFailureExceptions": []
+      },
+      "finalVisualAcceptance": {
+        "summary": "visual-review.json",
+        "route": "sign-up",
+        "verdict": "pass",
+        "observedFinding": "The same name/email/password and local-demonstration acknowledgement remain in order. Both retain ordinary form semantics with visible labels. No account provisioning is claimed; the similarity of task controls is intentional.",
+        "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+        "remainingVisualBlockers": []
+      },
+      "finalSourceIntegration": {
+        "summary": "final-acceptance.json",
+        "target": "develop",
+        "normalMergeCommits": {
+          "martlet": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5",
+          "krigsvold": "c85e01c4975bbb490637f06a9db62af525ffbbde"
+        },
+        "exactReviewedTreesPreserved": true
       }
     },
     {
@@ -7650,7 +8281,7 @@
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 4,
       "implementationStatus": "complete: existing family-native recipe retained",
-      "visualReviewStatus": "All50 actual source-bound final capture complete; independent manual review receipt pending.",
+      "visualReviewStatus": "Passed independent bounded source-backed composition review of final actual HTTPS normal/strict images; no current visual blocker.",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -7717,25 +8348,27 @@
           "number": 24,
           "url": "https://github.com/martletdesign/jekyll/pull/24",
           "head": "0c0e0a7452444c41a3876c2f8732c6439c6097b9",
-          "status": "exact final candidate technically passed; normal integration pending"
+          "status": "merged through normal develop merge; exact tested/reviewed source tree preserved",
+          "mergeCommit": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5"
         },
         {
           "family": "krigsvold",
           "number": 22,
           "url": "https://github.com/krigsvolddesign/jekyll/pull/22",
           "head": "983dee5d27ad02458baef6edc5a39279e24028ea",
-          "status": "exact final candidate technically passed; normal integration pending"
+          "status": "merged through normal develop merge; exact tested/reviewed source tree preserved",
+          "mergeCommit": "c85e01c4975bbb490637f06a9db62af525ffbbde"
         }
       ],
       "exceptions": [],
       "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
       "compositionRefinements": [],
       "familyImplementationStatus": {
-        "martlet": "Exact final source 0c0e0a7452444c41a3876c2f8732c6439c6097b9 passes full technical gate; integration status in final-acceptance.json",
-        "krigsvold": "Exact final source 983dee5d27ad02458baef6edc5a39279e24028ea passes full technical gate; integration status in final-acceptance.json"
+        "martlet": "Accepted exact final head 0c0e0a7452444c41a3876c2f8732c6439c6097b9 through normal develop merge 8c19cad7b403da5fc65f2a8d4336170a4dbc5de5; tree identical to tested/reviewed source.",
+        "krigsvold": "Accepted exact final head 983dee5d27ad02458baef6edc5a39279e24028ea through normal develop merge c85e01c4975bbb490637f06a9db62af525ffbbde; tree identical to tested/reviewed source."
       },
       "localReview": {
-        "status": "final source-bound actual capture complete; independent manual all50 review receipt pending",
+        "status": "Passed bounded final all50 visual review; no universal fidelity or manualATclaim.",
         "noUniversalFidelityClaim": true
       },
       "baselineRenderedContract": {
@@ -7778,6 +8411,23 @@
         "actualHTTPSCasesPerFamily": 516,
         "actualAxeViolations": 0,
         "knownFailureExceptions": []
+      },
+      "finalVisualAcceptance": {
+        "summary": "visual-review.json",
+        "route": "password-reset",
+        "verdict": "pass",
+        "observedFinding": "The single email field and validate/clear actions remain with their local-only boundary and account links. Both provide a focused sequence without unnecessary invented family differences.",
+        "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+        "remainingVisualBlockers": []
+      },
+      "finalSourceIntegration": {
+        "summary": "final-acceptance.json",
+        "target": "develop",
+        "normalMergeCommits": {
+          "martlet": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5",
+          "krigsvold": "c85e01c4975bbb490637f06a9db62af525ffbbde"
+        },
+        "exactReviewedTreesPreserved": true
       }
     },
     {
@@ -7829,7 +8479,7 @@
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 4,
       "implementationStatus": "complete: existing family-native recipe retained",
-      "visualReviewStatus": "All50 actual source-bound final capture complete; independent manual review receipt pending.",
+      "visualReviewStatus": "Passed independent bounded source-backed composition review of final actual HTTPS normal/strict images; no current visual blocker.",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -7896,25 +8546,27 @@
           "number": 24,
           "url": "https://github.com/martletdesign/jekyll/pull/24",
           "head": "0c0e0a7452444c41a3876c2f8732c6439c6097b9",
-          "status": "exact final candidate technically passed; normal integration pending"
+          "status": "merged through normal develop merge; exact tested/reviewed source tree preserved",
+          "mergeCommit": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5"
         },
         {
           "family": "krigsvold",
           "number": 22,
           "url": "https://github.com/krigsvolddesign/jekyll/pull/22",
           "head": "983dee5d27ad02458baef6edc5a39279e24028ea",
-          "status": "exact final candidate technically passed; normal integration pending"
+          "status": "merged through normal develop merge; exact tested/reviewed source tree preserved",
+          "mergeCommit": "c85e01c4975bbb490637f06a9db62af525ffbbde"
         }
       ],
       "exceptions": [],
       "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
       "compositionRefinements": [],
       "familyImplementationStatus": {
-        "martlet": "Exact final source 0c0e0a7452444c41a3876c2f8732c6439c6097b9 passes full technical gate; integration status in final-acceptance.json",
-        "krigsvold": "Exact final source 983dee5d27ad02458baef6edc5a39279e24028ea passes full technical gate; integration status in final-acceptance.json"
+        "martlet": "Accepted exact final head 0c0e0a7452444c41a3876c2f8732c6439c6097b9 through normal develop merge 8c19cad7b403da5fc65f2a8d4336170a4dbc5de5; tree identical to tested/reviewed source.",
+        "krigsvold": "Accepted exact final head 983dee5d27ad02458baef6edc5a39279e24028ea through normal develop merge c85e01c4975bbb490637f06a9db62af525ffbbde; tree identical to tested/reviewed source."
       },
       "localReview": {
-        "status": "final source-bound actual capture complete; independent manual all50 review receipt pending",
+        "status": "Passed bounded final all50 visual review; no universal fidelity or manualATclaim.",
         "noUniversalFidelityClaim": true
       },
       "baselineRenderedContract": {
@@ -7957,6 +8609,23 @@
         "actualHTTPSCasesPerFamily": 516,
         "actualAxeViolations": 0,
         "knownFailureExceptions": []
+      },
+      "finalVisualAcceptance": {
+        "summary": "visual-review.json",
+        "route": "two-factor",
+        "verdict": "pass",
+        "observedFinding": "The six-digit example field, format hint, validate/clear actions, and account routes remain. Clear labels and task sequence survive both modes and widths; no real second-factor service is represented.",
+        "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+        "remainingVisualBlockers": []
+      },
+      "finalSourceIntegration": {
+        "summary": "final-acceptance.json",
+        "target": "develop",
+        "normalMergeCommits": {
+          "martlet": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5",
+          "krigsvold": "c85e01c4975bbb490637f06a9db62af525ffbbde"
+        },
+        "exactReviewedTreesPreserved": true
       }
     },
     {
@@ -8008,7 +8677,7 @@
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 4,
       "implementationStatus": "complete: existing family-native recipe retained",
-      "visualReviewStatus": "All50 actual source-bound final capture complete; independent manual review receipt pending.",
+      "visualReviewStatus": "Passed independent bounded source-backed composition review of final actual HTTPS normal/strict images; no current visual blocker.",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -8075,25 +8744,27 @@
           "number": 24,
           "url": "https://github.com/martletdesign/jekyll/pull/24",
           "head": "0c0e0a7452444c41a3876c2f8732c6439c6097b9",
-          "status": "exact final candidate technically passed; normal integration pending"
+          "status": "merged through normal develop merge; exact tested/reviewed source tree preserved",
+          "mergeCommit": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5"
         },
         {
           "family": "krigsvold",
           "number": 22,
           "url": "https://github.com/krigsvolddesign/jekyll/pull/22",
           "head": "983dee5d27ad02458baef6edc5a39279e24028ea",
-          "status": "exact final candidate technically passed; normal integration pending"
+          "status": "merged through normal develop merge; exact tested/reviewed source tree preserved",
+          "mergeCommit": "c85e01c4975bbb490637f06a9db62af525ffbbde"
         }
       ],
       "exceptions": [],
       "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
       "compositionRefinements": [],
       "familyImplementationStatus": {
-        "martlet": "Exact final source 0c0e0a7452444c41a3876c2f8732c6439c6097b9 passes full technical gate; integration status in final-acceptance.json",
-        "krigsvold": "Exact final source 983dee5d27ad02458baef6edc5a39279e24028ea passes full technical gate; integration status in final-acceptance.json"
+        "martlet": "Accepted exact final head 0c0e0a7452444c41a3876c2f8732c6439c6097b9 through normal develop merge 8c19cad7b403da5fc65f2a8d4336170a4dbc5de5; tree identical to tested/reviewed source.",
+        "krigsvold": "Accepted exact final head 983dee5d27ad02458baef6edc5a39279e24028ea through normal develop merge c85e01c4975bbb490637f06a9db62af525ffbbde; tree identical to tested/reviewed source."
       },
       "localReview": {
-        "status": "final source-bound actual capture complete; independent manual all50 review receipt pending",
+        "status": "Passed bounded final all50 visual review; no universal fidelity or manualATclaim.",
         "noUniversalFidelityClaim": true
       },
       "baselineRenderedContract": {
@@ -8136,6 +8807,23 @@
         "actualHTTPSCasesPerFamily": 516,
         "actualAxeViolations": 0,
         "knownFailureExceptions": []
+      },
+      "finalVisualAcceptance": {
+        "summary": "visual-review.json",
+        "route": "coming-soon",
+        "verdict": "pass",
+        "observedFinding": "Purpose, programme-update form, and explicit local-demonstration notice remain. The page uses a focused reading sequence and conventional fields in each family. No launch date or subscription backend was invented.",
+        "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+        "remainingVisualBlockers": []
+      },
+      "finalSourceIntegration": {
+        "summary": "final-acceptance.json",
+        "target": "develop",
+        "normalMergeCommits": {
+          "martlet": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5",
+          "krigsvold": "c85e01c4975bbb490637f06a9db62af525ffbbde"
+        },
+        "exactReviewedTreesPreserved": true
       }
     },
     {
@@ -8185,7 +8873,7 @@
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 4,
       "implementationStatus": "complete: existing family-native recipe retained",
-      "visualReviewStatus": "All50 actual source-bound final capture complete; independent manual review receipt pending.",
+      "visualReviewStatus": "Passed independent bounded source-backed composition review of final actual HTTPS normal/strict images; no current visual blocker.",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -8251,25 +8939,27 @@
           "number": 24,
           "url": "https://github.com/martletdesign/jekyll/pull/24",
           "head": "0c0e0a7452444c41a3876c2f8732c6439c6097b9",
-          "status": "exact final candidate technically passed; normal integration pending"
+          "status": "merged through normal develop merge; exact tested/reviewed source tree preserved",
+          "mergeCommit": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5"
         },
         {
           "family": "krigsvold",
           "number": 22,
           "url": "https://github.com/krigsvolddesign/jekyll/pull/22",
           "head": "983dee5d27ad02458baef6edc5a39279e24028ea",
-          "status": "exact final candidate technically passed; normal integration pending"
+          "status": "merged through normal develop merge; exact tested/reviewed source tree preserved",
+          "mergeCommit": "c85e01c4975bbb490637f06a9db62af525ffbbde"
         }
       ],
       "exceptions": [],
       "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
       "compositionRefinements": [],
       "familyImplementationStatus": {
-        "martlet": "Exact final source 0c0e0a7452444c41a3876c2f8732c6439c6097b9 passes full technical gate; integration status in final-acceptance.json",
-        "krigsvold": "Exact final source 983dee5d27ad02458baef6edc5a39279e24028ea passes full technical gate; integration status in final-acceptance.json"
+        "martlet": "Accepted exact final head 0c0e0a7452444c41a3876c2f8732c6439c6097b9 through normal develop merge 8c19cad7b403da5fc65f2a8d4336170a4dbc5de5; tree identical to tested/reviewed source.",
+        "krigsvold": "Accepted exact final head 983dee5d27ad02458baef6edc5a39279e24028ea through normal develop merge c85e01c4975bbb490637f06a9db62af525ffbbde; tree identical to tested/reviewed source."
       },
       "localReview": {
-        "status": "final source-bound actual capture complete; independent manual all50 review receipt pending",
+        "status": "Passed bounded final all50 visual review; no universal fidelity or manualATclaim.",
         "noUniversalFidelityClaim": true
       },
       "baselineRenderedContract": {
@@ -8312,6 +9002,23 @@
         "actualHTTPSCasesPerFamily": 516,
         "actualAxeViolations": 0,
         "knownFailureExceptions": []
+      },
+      "finalVisualAcceptance": {
+        "summary": "visual-review.json",
+        "route": "not-found",
+        "verdict": "pass",
+        "observedFinding": "The missing-page explanation and two recovery routes remain immediately usable. Both retain a short, task-focused composition; shared error conventions need no forced stylistic opposition.",
+        "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+        "remainingVisualBlockers": []
+      },
+      "finalSourceIntegration": {
+        "summary": "final-acceptance.json",
+        "target": "develop",
+        "normalMergeCommits": {
+          "martlet": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5",
+          "krigsvold": "c85e01c4975bbb490637f06a9db62af525ffbbde"
+        },
+        "exactReviewedTreesPreserved": true
       }
     },
     {
@@ -8361,7 +9068,7 @@
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 4,
       "implementationStatus": "complete: existing family-native recipe retained",
-      "visualReviewStatus": "All50 actual source-bound final capture complete; independent manual review receipt pending.",
+      "visualReviewStatus": "Passed independent bounded source-backed composition review of final actual HTTPS normal/strict images; no current visual blocker.",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -8427,25 +9134,27 @@
           "number": 24,
           "url": "https://github.com/martletdesign/jekyll/pull/24",
           "head": "0c0e0a7452444c41a3876c2f8732c6439c6097b9",
-          "status": "exact final candidate technically passed; normal integration pending"
+          "status": "merged through normal develop merge; exact tested/reviewed source tree preserved",
+          "mergeCommit": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5"
         },
         {
           "family": "krigsvold",
           "number": 22,
           "url": "https://github.com/krigsvolddesign/jekyll/pull/22",
           "head": "983dee5d27ad02458baef6edc5a39279e24028ea",
-          "status": "exact final candidate technically passed; normal integration pending"
+          "status": "merged through normal develop merge; exact tested/reviewed source tree preserved",
+          "mergeCommit": "c85e01c4975bbb490637f06a9db62af525ffbbde"
         }
       ],
       "exceptions": [],
       "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
       "compositionRefinements": [],
       "familyImplementationStatus": {
-        "martlet": "Exact final source 0c0e0a7452444c41a3876c2f8732c6439c6097b9 passes full technical gate; integration status in final-acceptance.json",
-        "krigsvold": "Exact final source 983dee5d27ad02458baef6edc5a39279e24028ea passes full technical gate; integration status in final-acceptance.json"
+        "martlet": "Accepted exact final head 0c0e0a7452444c41a3876c2f8732c6439c6097b9 through normal develop merge 8c19cad7b403da5fc65f2a8d4336170a4dbc5de5; tree identical to tested/reviewed source.",
+        "krigsvold": "Accepted exact final head 983dee5d27ad02458baef6edc5a39279e24028ea through normal develop merge c85e01c4975bbb490637f06a9db62af525ffbbde; tree identical to tested/reviewed source."
       },
       "localReview": {
-        "status": "final source-bound actual capture complete; independent manual all50 review receipt pending",
+        "status": "Passed bounded final all50 visual review; no universal fidelity or manualATclaim.",
         "noUniversalFidelityClaim": true
       },
       "baselineRenderedContract": {
@@ -8488,6 +9197,23 @@
         "actualHTTPSCasesPerFamily": 516,
         "actualAxeViolations": 0,
         "knownFailureExceptions": []
+      },
+      "finalVisualAcceptance": {
+        "summary": "visual-review.json",
+        "route": "server-error",
+        "verdict": "pass",
+        "observedFinding": "The retained-work guidance and help/contact actions remain readable. The page explicitly says it is a static specimen and does not generateHTTP500. The contact book is not evidence of a real server failure or recovery service.",
+        "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+        "remainingVisualBlockers": []
+      },
+      "finalSourceIntegration": {
+        "summary": "final-acceptance.json",
+        "target": "develop",
+        "normalMergeCommits": {
+          "martlet": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5",
+          "krigsvold": "c85e01c4975bbb490637f06a9db62af525ffbbde"
+        },
+        "exactReviewedTreesPreserved": true
       }
     },
     {
@@ -8537,7 +9263,7 @@
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 4,
       "implementationStatus": "complete: existing family-native recipe retained",
-      "visualReviewStatus": "All50 actual source-bound final capture complete; independent manual review receipt pending.",
+      "visualReviewStatus": "Passed independent bounded source-backed composition review of final actual HTTPS normal/strict images; no current visual blocker.",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -8604,25 +9330,27 @@
           "number": 24,
           "url": "https://github.com/martletdesign/jekyll/pull/24",
           "head": "0c0e0a7452444c41a3876c2f8732c6439c6097b9",
-          "status": "exact final candidate technically passed; normal integration pending"
+          "status": "merged through normal develop merge; exact tested/reviewed source tree preserved",
+          "mergeCommit": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5"
         },
         {
           "family": "krigsvold",
           "number": 22,
           "url": "https://github.com/krigsvolddesign/jekyll/pull/22",
           "head": "983dee5d27ad02458baef6edc5a39279e24028ea",
-          "status": "exact final candidate technically passed; normal integration pending"
+          "status": "merged through normal develop merge; exact tested/reviewed source tree preserved",
+          "mergeCommit": "c85e01c4975bbb490637f06a9db62af525ffbbde"
         }
       ],
       "exceptions": [],
       "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
       "compositionRefinements": [],
       "familyImplementationStatus": {
-        "martlet": "Exact final source 0c0e0a7452444c41a3876c2f8732c6439c6097b9 passes full technical gate; integration status in final-acceptance.json",
-        "krigsvold": "Exact final source 983dee5d27ad02458baef6edc5a39279e24028ea passes full technical gate; integration status in final-acceptance.json"
+        "martlet": "Accepted exact final head 0c0e0a7452444c41a3876c2f8732c6439c6097b9 through normal develop merge 8c19cad7b403da5fc65f2a8d4336170a4dbc5de5; tree identical to tested/reviewed source.",
+        "krigsvold": "Accepted exact final head 983dee5d27ad02458baef6edc5a39279e24028ea through normal develop merge c85e01c4975bbb490637f06a9db62af525ffbbde; tree identical to tested/reviewed source."
       },
       "localReview": {
-        "status": "final source-bound actual capture complete; independent manual all50 review receipt pending",
+        "status": "Passed bounded final all50 visual review; no universal fidelity or manualATclaim.",
         "noUniversalFidelityClaim": true
       },
       "baselineRenderedContract": {
@@ -8665,6 +9393,23 @@
         "actualHTTPSCasesPerFamily": 516,
         "actualAxeViolations": 0,
         "knownFailureExceptions": []
+      },
+      "finalVisualAcceptance": {
+        "summary": "visual-review.json",
+        "route": "workspace",
+        "verdict": "pass",
+        "observedFinding": "Three observation records, filter, selection, and review/reset commands remain. Martlet keeps its record collection above the selected-record block; Krigsvold uses a simultaneous result/detail region on desktop. Both reflow sensibly at320px; state behavior is verified separately.",
+        "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+        "remainingVisualBlockers": []
+      },
+      "finalSourceIntegration": {
+        "summary": "final-acceptance.json",
+        "target": "develop",
+        "normalMergeCommits": {
+          "martlet": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5",
+          "krigsvold": "c85e01c4975bbb490637f06a9db62af525ffbbde"
+        },
+        "exactReviewedTreesPreserved": true
       }
     },
     {
@@ -8714,7 +9459,7 @@
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 4,
       "implementationStatus": "complete: existing family-native recipe retained",
-      "visualReviewStatus": "All50 actual source-bound final capture complete; independent manual review receipt pending.",
+      "visualReviewStatus": "Passed independent bounded source-backed composition review of final actual HTTPS normal/strict images; no current visual blocker.",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -8781,25 +9526,27 @@
           "number": 24,
           "url": "https://github.com/martletdesign/jekyll/pull/24",
           "head": "0c0e0a7452444c41a3876c2f8732c6439c6097b9",
-          "status": "exact final candidate technically passed; normal integration pending"
+          "status": "merged through normal develop merge; exact tested/reviewed source tree preserved",
+          "mergeCommit": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5"
         },
         {
           "family": "krigsvold",
           "number": 22,
           "url": "https://github.com/krigsvolddesign/jekyll/pull/22",
           "head": "983dee5d27ad02458baef6edc5a39279e24028ea",
-          "status": "exact final candidate technically passed; normal integration pending"
+          "status": "merged through normal develop merge; exact tested/reviewed source tree preserved",
+          "mergeCommit": "c85e01c4975bbb490637f06a9db62af525ffbbde"
         }
       ],
       "exceptions": [],
       "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
       "compositionRefinements": [],
       "familyImplementationStatus": {
-        "martlet": "Exact final source 0c0e0a7452444c41a3876c2f8732c6439c6097b9 passes full technical gate; integration status in final-acceptance.json",
-        "krigsvold": "Exact final source 983dee5d27ad02458baef6edc5a39279e24028ea passes full technical gate; integration status in final-acceptance.json"
+        "martlet": "Accepted exact final head 0c0e0a7452444c41a3876c2f8732c6439c6097b9 through normal develop merge 8c19cad7b403da5fc65f2a8d4336170a4dbc5de5; tree identical to tested/reviewed source.",
+        "krigsvold": "Accepted exact final head 983dee5d27ad02458baef6edc5a39279e24028ea through normal develop merge c85e01c4975bbb490637f06a9db62af525ffbbde; tree identical to tested/reviewed source."
       },
       "localReview": {
-        "status": "final source-bound actual capture complete; independent manual all50 review receipt pending",
+        "status": "Passed bounded final all50 visual review; no universal fidelity or manualATclaim.",
         "noUniversalFidelityClaim": true
       },
       "baselineRenderedContract": {
@@ -8842,6 +9589,23 @@
         "actualHTTPSCasesPerFamily": 516,
         "actualAxeViolations": 0,
         "knownFailureExceptions": []
+      },
+      "finalVisualAcceptance": {
+        "summary": "visual-review.json",
+        "route": "chat",
+        "verdict": "pass",
+        "observedFinding": "The two initial messages, composition field, add/reset actions, and page-memory boundary remain. Familiar message/form sequencing is retained in both families, with native typography and action roles. No delivery service is implied.",
+        "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+        "remainingVisualBlockers": []
+      },
+      "finalSourceIntegration": {
+        "summary": "final-acceptance.json",
+        "target": "develop",
+        "normalMergeCommits": {
+          "martlet": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5",
+          "krigsvold": "c85e01c4975bbb490637f06a9db62af525ffbbde"
+        },
+        "exactReviewedTreesPreserved": true
       }
     },
     {
@@ -8891,7 +9655,7 @@
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 4,
       "implementationStatus": "complete: existing family-native recipe retained",
-      "visualReviewStatus": "All50 actual source-bound final capture complete; independent manual review receipt pending.",
+      "visualReviewStatus": "Passed independent bounded source-backed composition review of final actual HTTPS normal/strict images; no current visual blocker.",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -8958,25 +9722,27 @@
           "number": 24,
           "url": "https://github.com/martletdesign/jekyll/pull/24",
           "head": "0c0e0a7452444c41a3876c2f8732c6439c6097b9",
-          "status": "exact final candidate technically passed; normal integration pending"
+          "status": "merged through normal develop merge; exact tested/reviewed source tree preserved",
+          "mergeCommit": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5"
         },
         {
           "family": "krigsvold",
           "number": 22,
           "url": "https://github.com/krigsvolddesign/jekyll/pull/22",
           "head": "983dee5d27ad02458baef6edc5a39279e24028ea",
-          "status": "exact final candidate technically passed; normal integration pending"
+          "status": "merged through normal develop merge; exact tested/reviewed source tree preserved",
+          "mergeCommit": "c85e01c4975bbb490637f06a9db62af525ffbbde"
         }
       ],
       "exceptions": [],
       "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
       "compositionRefinements": [],
       "familyImplementationStatus": {
-        "martlet": "Exact final source 0c0e0a7452444c41a3876c2f8732c6439c6097b9 passes full technical gate; integration status in final-acceptance.json",
-        "krigsvold": "Exact final source 983dee5d27ad02458baef6edc5a39279e24028ea passes full technical gate; integration status in final-acceptance.json"
+        "martlet": "Accepted exact final head 0c0e0a7452444c41a3876c2f8732c6439c6097b9 through normal develop merge 8c19cad7b403da5fc65f2a8d4336170a4dbc5de5; tree identical to tested/reviewed source.",
+        "krigsvold": "Accepted exact final head 983dee5d27ad02458baef6edc5a39279e24028ea through normal develop merge c85e01c4975bbb490637f06a9db62af525ffbbde; tree identical to tested/reviewed source."
       },
       "localReview": {
-        "status": "final source-bound actual capture complete; independent manual all50 review receipt pending",
+        "status": "Passed bounded final all50 visual review; no universal fidelity or manualATclaim.",
         "noUniversalFidelityClaim": true
       },
       "baselineRenderedContract": {
@@ -9019,6 +9785,23 @@
         "actualHTTPSCasesPerFamily": 516,
         "actualAxeViolations": 0,
         "knownFailureExceptions": []
+      },
+      "finalVisualAcceptance": {
+        "summary": "visual-review.json",
+        "route": "sensors",
+        "verdict": "pass",
+        "observedFinding": "The18\u00b0C/72%/Simulation measures, condition selector, ventilation control, and no-device boundary remain. Related controls remain grouped and legible; both deliberately use the same shared synthetic values.",
+        "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+        "remainingVisualBlockers": []
+      },
+      "finalSourceIntegration": {
+        "summary": "final-acceptance.json",
+        "target": "develop",
+        "normalMergeCommits": {
+          "martlet": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5",
+          "krigsvold": "c85e01c4975bbb490637f06a9db62af525ffbbde"
+        },
+        "exactReviewedTreesPreserved": true
       }
     },
     {
@@ -9068,7 +9851,7 @@
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 4,
       "implementationStatus": "complete: existing family-native recipe retained",
-      "visualReviewStatus": "All50 actual source-bound final capture complete; independent manual review receipt pending.",
+      "visualReviewStatus": "Passed independent bounded source-backed composition review of final actual HTTPS normal/strict images; no current visual blocker.",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -9135,25 +9918,27 @@
           "number": 24,
           "url": "https://github.com/martletdesign/jekyll/pull/24",
           "head": "0c0e0a7452444c41a3876c2f8732c6439c6097b9",
-          "status": "exact final candidate technically passed; normal integration pending"
+          "status": "merged through normal develop merge; exact tested/reviewed source tree preserved",
+          "mergeCommit": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5"
         },
         {
           "family": "krigsvold",
           "number": 22,
           "url": "https://github.com/krigsvolddesign/jekyll/pull/22",
           "head": "983dee5d27ad02458baef6edc5a39279e24028ea",
-          "status": "exact final candidate technically passed; normal integration pending"
+          "status": "merged through normal develop merge; exact tested/reviewed source tree preserved",
+          "mergeCommit": "c85e01c4975bbb490637f06a9db62af525ffbbde"
         }
       ],
       "exceptions": [],
       "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
       "compositionRefinements": [],
       "familyImplementationStatus": {
-        "martlet": "Exact final source 0c0e0a7452444c41a3876c2f8732c6439c6097b9 passes full technical gate; integration status in final-acceptance.json",
-        "krigsvold": "Exact final source 983dee5d27ad02458baef6edc5a39279e24028ea passes full technical gate; integration status in final-acceptance.json"
+        "martlet": "Accepted exact final head 0c0e0a7452444c41a3876c2f8732c6439c6097b9 through normal develop merge 8c19cad7b403da5fc65f2a8d4336170a4dbc5de5; tree identical to tested/reviewed source.",
+        "krigsvold": "Accepted exact final head 983dee5d27ad02458baef6edc5a39279e24028ea through normal develop merge c85e01c4975bbb490637f06a9db62af525ffbbde; tree identical to tested/reviewed source."
       },
       "localReview": {
-        "status": "final source-bound actual capture complete; independent manual all50 review receipt pending",
+        "status": "Passed bounded final all50 visual review; no universal fidelity or manualATclaim.",
         "noUniversalFidelityClaim": true
       },
       "baselineRenderedContract": {
@@ -9196,6 +9981,23 @@
         "actualHTTPSCasesPerFamily": 516,
         "actualAxeViolations": 0,
         "knownFailureExceptions": []
+      },
+      "finalVisualAcceptance": {
+        "summary": "visual-review.json",
+        "route": "fleet",
+        "verdict": "pass",
+        "observedFinding": "The two vehicles, charge/status context, filter, selected-record block, and review/reset actions remain. Martlet uses collection-first reading order; Krigsvold uses aligned result/detail regions. Narrow states preserve the same object/action associations.",
+        "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+        "remainingVisualBlockers": []
+      },
+      "finalSourceIntegration": {
+        "summary": "final-acceptance.json",
+        "target": "develop",
+        "normalMergeCommits": {
+          "martlet": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5",
+          "krigsvold": "c85e01c4975bbb490637f06a9db62af525ffbbde"
+        },
+        "exactReviewedTreesPreserved": true
       }
     },
     {
@@ -9247,7 +10049,7 @@
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 4,
       "implementationStatus": "complete: existing family-native recipe retained",
-      "visualReviewStatus": "All50 actual source-bound final capture complete; independent manual review receipt pending.",
+      "visualReviewStatus": "Passed independent bounded source-backed composition review of final actual HTTPS normal/strict images; no current visual blocker.",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -9313,25 +10115,27 @@
           "number": 24,
           "url": "https://github.com/martletdesign/jekyll/pull/24",
           "head": "0c0e0a7452444c41a3876c2f8732c6439c6097b9",
-          "status": "exact final candidate technically passed; normal integration pending"
+          "status": "merged through normal develop merge; exact tested/reviewed source tree preserved",
+          "mergeCommit": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5"
         },
         {
           "family": "krigsvold",
           "number": 22,
           "url": "https://github.com/krigsvolddesign/jekyll/pull/22",
           "head": "983dee5d27ad02458baef6edc5a39279e24028ea",
-          "status": "exact final candidate technically passed; normal integration pending"
+          "status": "merged through normal develop merge; exact tested/reviewed source tree preserved",
+          "mergeCommit": "c85e01c4975bbb490637f06a9db62af525ffbbde"
         }
       ],
       "exceptions": [],
       "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
       "compositionRefinements": [],
       "familyImplementationStatus": {
-        "martlet": "Exact final source 0c0e0a7452444c41a3876c2f8732c6439c6097b9 passes full technical gate; integration status in final-acceptance.json",
-        "krigsvold": "Exact final source 983dee5d27ad02458baef6edc5a39279e24028ea passes full technical gate; integration status in final-acceptance.json"
+        "martlet": "Accepted exact final head 0c0e0a7452444c41a3876c2f8732c6439c6097b9 through normal develop merge 8c19cad7b403da5fc65f2a8d4336170a4dbc5de5; tree identical to tested/reviewed source.",
+        "krigsvold": "Accepted exact final head 983dee5d27ad02458baef6edc5a39279e24028ea through normal develop merge c85e01c4975bbb490637f06a9db62af525ffbbde; tree identical to tested/reviewed source."
       },
       "localReview": {
-        "status": "final source-bound actual capture complete; independent manual all50 review receipt pending",
+        "status": "Passed bounded final all50 visual review; no universal fidelity or manualATclaim.",
         "noUniversalFidelityClaim": true
       },
       "baselineRenderedContract": {
@@ -9374,6 +10178,23 @@
         "actualHTTPSCasesPerFamily": 516,
         "actualAxeViolations": 0,
         "knownFailureExceptions": []
+      },
+      "finalVisualAcceptance": {
+        "summary": "visual-review.json",
+        "route": "scene",
+        "verdict": "pass",
+        "observedFinding": "The viewpoint control, coastline illustration and caption, static fallback, and no-hardware explanation remain. Media masking correctly removes the illustration only for diagnosis. The primary normal views establish a coherent accessible image-viewer specimen.",
+        "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+        "remainingVisualBlockers": []
+      },
+      "finalSourceIntegration": {
+        "summary": "final-acceptance.json",
+        "target": "develop",
+        "normalMergeCommits": {
+          "martlet": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5",
+          "krigsvold": "c85e01c4975bbb490637f06a9db62af525ffbbde"
+        },
+        "exactReviewedTreesPreserved": true
       }
     },
     {
@@ -9425,7 +10246,7 @@
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 2,
       "implementationStatus": "complete: source-justified modification",
-      "visualReviewStatus": "All50 actual source-bound final capture complete; independent manual review receipt pending.",
+      "visualReviewStatus": "Passed independent bounded source-backed composition review of final actual HTTPS normal/strict images; no current visual blocker.",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -9560,11 +10381,11 @@
         }
       ],
       "familyImplementationStatus": {
-        "martlet": "Exact final source 0c0e0a7452444c41a3876c2f8732c6439c6097b9 passes full technical gate; integration status in final-acceptance.json",
-        "krigsvold": "Exact final source 983dee5d27ad02458baef6edc5a39279e24028ea passes full technical gate; integration status in final-acceptance.json"
+        "martlet": "Accepted exact final head 0c0e0a7452444c41a3876c2f8732c6439c6097b9 through normal develop merge 8c19cad7b403da5fc65f2a8d4336170a4dbc5de5; tree identical to tested/reviewed source.",
+        "krigsvold": "Accepted exact final head 983dee5d27ad02458baef6edc5a39279e24028ea through normal develop merge c85e01c4975bbb490637f06a9db62af525ffbbde; tree identical to tested/reviewed source."
       },
       "localReview": {
-        "status": "final source-bound actual capture complete; independent manual all50 review receipt pending",
+        "status": "Passed bounded final all50 visual review; no universal fidelity or manualATclaim.",
         "noUniversalFidelityClaim": true
       },
       "baselineRenderedContract": {
@@ -9715,6 +10536,23 @@
         "actualHTTPSCasesPerFamily": 516,
         "actualAxeViolations": 0,
         "knownFailureExceptions": []
+      },
+      "finalVisualAcceptance": {
+        "summary": "visual-review.json",
+        "route": "integrations",
+        "verdict": "pass",
+        "observedFinding": "The same capability/integration/boundary table and role-porting guidance remain. The widened document retains native table geometry and bounded overflow; no backend, auth, payment, sensor, orHTTP integration is represented as shipped functionality.",
+        "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+        "remainingVisualBlockers": []
+      },
+      "finalSourceIntegration": {
+        "summary": "final-acceptance.json",
+        "target": "develop",
+        "normalMergeCommits": {
+          "martlet": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5",
+          "krigsvold": "c85e01c4975bbb490637f06a9db62af525ffbbde"
+        },
+        "exactReviewedTreesPreserved": true
       }
     },
     {
@@ -9770,7 +10608,7 @@
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 2,
       "implementationStatus": "complete: source-justified modification",
-      "visualReviewStatus": "All50 actual source-bound final capture complete; independent manual review receipt pending.",
+      "visualReviewStatus": "Passed independent bounded source-backed composition review of final actual HTTPS normal/strict images; no current visual blocker.",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -9905,11 +10743,11 @@
         }
       ],
       "familyImplementationStatus": {
-        "martlet": "Exact final source 0c0e0a7452444c41a3876c2f8732c6439c6097b9 passes full technical gate; integration status in final-acceptance.json",
-        "krigsvold": "Exact final source 983dee5d27ad02458baef6edc5a39279e24028ea passes full technical gate; integration status in final-acceptance.json"
+        "martlet": "Accepted exact final head 0c0e0a7452444c41a3876c2f8732c6439c6097b9 through normal develop merge 8c19cad7b403da5fc65f2a8d4336170a4dbc5de5; tree identical to tested/reviewed source.",
+        "krigsvold": "Accepted exact final head 983dee5d27ad02458baef6edc5a39279e24028ea through normal develop merge c85e01c4975bbb490637f06a9db62af525ffbbde; tree identical to tested/reviewed source."
       },
       "localReview": {
-        "status": "final source-bound actual capture complete; independent manual all50 review receipt pending",
+        "status": "Passed bounded final all50 visual review; no universal fidelity or manualATclaim.",
         "noUniversalFidelityClaim": true
       },
       "baselineRenderedContract": {
@@ -10071,6 +10909,23 @@
         "actualHTTPSCasesPerFamily": 516,
         "actualAxeViolations": 0,
         "knownFailureExceptions": []
+      },
+      "finalVisualAcceptance": {
+        "summary": "visual-review.json",
+        "route": "stress-test",
+        "verdict": "pass",
+        "observedFinding": "Long title, unbroken identifier, nested lists, quote, footnote, and technical sections remain. Wider document geometry is a measured CSS refinement. At320px the long identifier wraps rather than forcing page-width overflow; detailed table behavior is separately tested.",
+        "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+        "remainingVisualBlockers": []
+      },
+      "finalSourceIntegration": {
+        "summary": "final-acceptance.json",
+        "target": "develop",
+        "normalMergeCommits": {
+          "martlet": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5",
+          "krigsvold": "c85e01c4975bbb490637f06a9db62af525ffbbde"
+        },
+        "exactReviewedTreesPreserved": true
       }
     },
     {
@@ -10124,7 +10979,7 @@
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 3,
       "implementationStatus": "complete: existing family-native recipe retained",
-      "visualReviewStatus": "All50 actual source-bound final capture complete; independent manual review receipt pending.",
+      "visualReviewStatus": "Passed independent bounded source-backed composition review of final actual HTTPS normal/strict images; no current visual blocker.",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -10199,25 +11054,28 @@
           "number": 21,
           "url": "https://github.com/krigsvolddesign/jekyll/pull/21",
           "head": "3e5d49dcf47cc3b9e6646e66274fb246d5848df2",
-          "status": "original native failed; exact reviewed ancestor preserved by normal merge into consolidatedPR22"
+          "status": "closed-unmerged-as-superseded; original native failed; reviewed ancestry preserved in normally consolidatedPR22",
+          "closedAt": "2026-11-03T22:45:11Z",
+          "supersessionCommentUrl": "https://github.com/krigsvolddesign/jekyll/pull/21#issuecomment-6617395960"
         },
         {
           "family": "krigsvold",
           "number": 22,
           "url": "https://github.com/krigsvolddesign/jekyll/pull/22",
           "head": "983dee5d27ad02458baef6edc5a39279e24028ea",
-          "status": "consolidated exact final candidate technically passed; normal integration pending"
+          "status": "merged through normal develop merge; exact tested/reviewed source tree preserved",
+          "mergeCommit": "c85e01c4975bbb490637f06a9db62af525ffbbde"
         }
       ],
       "exceptions": [],
       "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
       "compositionRefinements": [],
       "familyImplementationStatus": {
-        "martlet": "Exact final source 0c0e0a7452444c41a3876c2f8732c6439c6097b9 passes full technical gate; integration status in final-acceptance.json",
-        "krigsvold": "Exact final source 983dee5d27ad02458baef6edc5a39279e24028ea passes full technical gate; integration status in final-acceptance.json"
+        "martlet": "Accepted exact final head 0c0e0a7452444c41a3876c2f8732c6439c6097b9 through normal develop merge 8c19cad7b403da5fc65f2a8d4336170a4dbc5de5; tree identical to tested/reviewed source.",
+        "krigsvold": "Accepted exact final head 983dee5d27ad02458baef6edc5a39279e24028ea through normal develop merge c85e01c4975bbb490637f06a9db62af525ffbbde; tree identical to tested/reviewed source."
       },
       "localReview": {
-        "status": "final source-bound actual capture complete; independent manual all50 review receipt pending",
+        "status": "Passed bounded final all50 visual review; no universal fidelity or manualATclaim.",
         "noUniversalFidelityClaim": true
       },
       "baselineRenderedContract": {
@@ -10261,6 +11119,23 @@
         "actualHTTPSCasesPerFamily": 516,
         "actualAxeViolations": 0,
         "knownFailureExceptions": []
+      },
+      "finalVisualAcceptance": {
+        "summary": "visual-review.json",
+        "route": "patterns",
+        "verdict": "pass",
+        "observedFinding": "The facts, dated measures, disclosures, and action remain a compact vocabulary specimen. Martlet's reading progression and Krigsvold's aligned labeled regions remain visible after masking; the same native disclosure behavior can legitimately serve both.",
+        "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+        "remainingVisualBlockers": []
+      },
+      "finalSourceIntegration": {
+        "summary": "final-acceptance.json",
+        "target": "develop",
+        "normalMergeCommits": {
+          "martlet": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5",
+          "krigsvold": "c85e01c4975bbb490637f06a9db62af525ffbbde"
+        },
+        "exactReviewedTreesPreserved": true
       }
     },
     {
@@ -10310,7 +11185,7 @@
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 4,
       "implementationStatus": "complete: source-justified modification",
-      "visualReviewStatus": "All50 actual source-bound final capture complete; independent manual review receipt pending.",
+      "visualReviewStatus": "Passed independent bounded source-backed composition review of final actual HTTPS normal/strict images; no current visual blocker.",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -10378,14 +11253,16 @@
           "number": 24,
           "url": "https://github.com/martletdesign/jekyll/pull/24",
           "head": "0c0e0a7452444c41a3876c2f8732c6439c6097b9",
-          "status": "exact final candidate technically passed; normal integration pending"
+          "status": "merged through normal develop merge; exact tested/reviewed source tree preserved",
+          "mergeCommit": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5"
         },
         {
           "family": "krigsvold",
           "number": 22,
           "url": "https://github.com/krigsvolddesign/jekyll/pull/22",
           "head": "983dee5d27ad02458baef6edc5a39279e24028ea",
-          "status": "exact final candidate technically passed; normal integration pending"
+          "status": "merged through normal develop merge; exact tested/reviewed source tree preserved",
+          "mergeCommit": "c85e01c4975bbb490637f06a9db62af525ffbbde"
         }
       ],
       "exceptions": [
@@ -10425,11 +11302,11 @@
       "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
       "compositionRefinements": [],
       "familyImplementationStatus": {
-        "martlet": "Exact final source 0c0e0a7452444c41a3876c2f8732c6439c6097b9 passes full technical gate; integration status in final-acceptance.json",
-        "krigsvold": "Exact final source 983dee5d27ad02458baef6edc5a39279e24028ea passes full technical gate; integration status in final-acceptance.json"
+        "martlet": "Accepted exact final head 0c0e0a7452444c41a3876c2f8732c6439c6097b9 through normal develop merge 8c19cad7b403da5fc65f2a8d4336170a4dbc5de5; tree identical to tested/reviewed source.",
+        "krigsvold": "Accepted exact final head 983dee5d27ad02458baef6edc5a39279e24028ea through normal develop merge c85e01c4975bbb490637f06a9db62af525ffbbde; tree identical to tested/reviewed source."
       },
       "localReview": {
-        "status": "final source-bound actual capture complete; independent manual all50 review receipt pending",
+        "status": "Passed bounded final all50 visual review; no universal fidelity or manualATclaim.",
         "noUniversalFidelityClaim": true
       },
       "baselineRenderedContract": {
@@ -10492,6 +11369,24 @@
         "actualHTTPSCasesPerFamily": 516,
         "actualAxeViolations": 0,
         "knownFailureExceptions": []
+      },
+      "visualEvidenceQualification": "Eight baseline analytics frames and eight baseline operations frames contain the literal initial/unavailable fallback metrics or em dashes, with empty captured error arrays; final actual frames show initialized browser values. These are differing initialization states, not matched hydration timing or evidence that reconciliation introduced fixture data. Original captures remain unchanged; frozen data/controller hashes and actual behavior acceptance establish preservation separately.",
+      "finalVisualAcceptance": {
+        "summary": "visual-review.json",
+        "route": "dashboard-analytics",
+        "verdict": "pass",
+        "observedFinding": "The final initialized analytics view shows a scoped filter form and four dated metrics, with Martlet's heading-led sections and Krigsvold's bounded regions. Mobile dashboard navigation remains coherent; the shared host navigation repair is documented separately. Baseline frames show unavailable-control fallback and em-dashes; they are not matched initialization-state comparisons, and displayed values do not imply added fixture data.",
+        "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+        "remainingVisualBlockers": []
+      },
+      "finalSourceIntegration": {
+        "summary": "final-acceptance.json",
+        "target": "develop",
+        "normalMergeCommits": {
+          "martlet": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5",
+          "krigsvold": "c85e01c4975bbb490637f06a9db62af525ffbbde"
+        },
+        "exactReviewedTreesPreserved": true
       }
     },
     {
@@ -10545,7 +11440,7 @@
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 1,
       "implementationStatus": "complete: source-justified modification",
-      "visualReviewStatus": "All50 actual source-bound final capture complete; independent manual review receipt pending.",
+      "visualReviewStatus": "Passed independent bounded source-backed composition review of final actual HTTPS normal/strict images; no current visual blocker.",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -10736,11 +11631,11 @@
         }
       ],
       "familyImplementationStatus": {
-        "martlet": "Exact final source 0c0e0a7452444c41a3876c2f8732c6439c6097b9 passes full technical gate; integration status in final-acceptance.json",
-        "krigsvold": "Exact final source 983dee5d27ad02458baef6edc5a39279e24028ea passes full technical gate; integration status in final-acceptance.json"
+        "martlet": "Accepted exact final head 0c0e0a7452444c41a3876c2f8732c6439c6097b9 through normal develop merge 8c19cad7b403da5fc65f2a8d4336170a4dbc5de5; tree identical to tested/reviewed source.",
+        "krigsvold": "Accepted exact final head 983dee5d27ad02458baef6edc5a39279e24028ea through normal develop merge c85e01c4975bbb490637f06a9db62af525ffbbde; tree identical to tested/reviewed source."
       },
       "localReview": {
-        "status": "final source-bound actual capture complete; independent manual all50 review receipt pending",
+        "status": "Passed bounded final all50 visual review; no universal fidelity or manualATclaim.",
         "noUniversalFidelityClaim": true
       },
       "baselineRenderedContract": {
@@ -10857,6 +11752,23 @@
         "actualHTTPSCasesPerFamily": 516,
         "actualAxeViolations": 0,
         "knownFailureExceptions": []
+      },
+      "finalVisualAcceptance": {
+        "summary": "visual-review.json",
+        "route": "dashboard-components",
+        "verdict": "pass",
+        "observedFinding": "All four capability sections and their content remain. Martlet uses a readable document sequence; Krigsvold splits each section into label and explanatory region. This Jekyll page is not the22-record React inventory, and the comparison does not claim all React APIs were ported.",
+        "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+        "remainingVisualBlockers": []
+      },
+      "finalSourceIntegration": {
+        "summary": "final-acceptance.json",
+        "target": "develop",
+        "normalMergeCommits": {
+          "martlet": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5",
+          "krigsvold": "c85e01c4975bbb490637f06a9db62af525ffbbde"
+        },
+        "exactReviewedTreesPreserved": true
       }
     },
     {
@@ -10906,7 +11818,7 @@
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 4,
       "implementationStatus": "complete: source-justified modification",
-      "visualReviewStatus": "All50 actual source-bound final capture complete; independent manual review receipt pending.",
+      "visualReviewStatus": "Passed independent bounded source-backed composition review of final actual HTTPS normal/strict images; no current visual blocker.",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -10974,14 +11886,16 @@
           "number": 24,
           "url": "https://github.com/martletdesign/jekyll/pull/24",
           "head": "0c0e0a7452444c41a3876c2f8732c6439c6097b9",
-          "status": "exact final candidate technically passed; normal integration pending"
+          "status": "merged through normal develop merge; exact tested/reviewed source tree preserved",
+          "mergeCommit": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5"
         },
         {
           "family": "krigsvold",
           "number": 22,
           "url": "https://github.com/krigsvolddesign/jekyll/pull/22",
           "head": "983dee5d27ad02458baef6edc5a39279e24028ea",
-          "status": "exact final candidate technically passed; normal integration pending"
+          "status": "merged through normal develop merge; exact tested/reviewed source tree preserved",
+          "mergeCommit": "c85e01c4975bbb490637f06a9db62af525ffbbde"
         }
       ],
       "exceptions": [
@@ -11021,11 +11935,11 @@
       "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
       "compositionRefinements": [],
       "familyImplementationStatus": {
-        "martlet": "Exact final source 0c0e0a7452444c41a3876c2f8732c6439c6097b9 passes full technical gate; integration status in final-acceptance.json",
-        "krigsvold": "Exact final source 983dee5d27ad02458baef6edc5a39279e24028ea passes full technical gate; integration status in final-acceptance.json"
+        "martlet": "Accepted exact final head 0c0e0a7452444c41a3876c2f8732c6439c6097b9 through normal develop merge 8c19cad7b403da5fc65f2a8d4336170a4dbc5de5; tree identical to tested/reviewed source.",
+        "krigsvold": "Accepted exact final head 983dee5d27ad02458baef6edc5a39279e24028ea through normal develop merge c85e01c4975bbb490637f06a9db62af525ffbbde; tree identical to tested/reviewed source."
       },
       "localReview": {
-        "status": "final source-bound actual capture complete; independent manual all50 review receipt pending",
+        "status": "Passed bounded final all50 visual review; no universal fidelity or manualATclaim.",
         "noUniversalFidelityClaim": true
       },
       "baselineRenderedContract": {
@@ -11089,6 +12003,23 @@
         "actualHTTPSCasesPerFamily": 516,
         "actualAxeViolations": 0,
         "knownFailureExceptions": []
+      },
+      "finalVisualAcceptance": {
+        "summary": "visual-review.json",
+        "route": "dashboard-administration",
+        "verdict": "pass",
+        "observedFinding": "The final initialized directory keeps filter, selection, bulk commands, person editor, and pagination scope distinct. Martlet places editing after the directory; Krigsvold places a working editor beside it at desktop. Mobile navigation and controls retain a coherent sequence; horizontal table access is covered by separate technical receipts.",
+        "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+        "remainingVisualBlockers": []
+      },
+      "finalSourceIntegration": {
+        "summary": "final-acceptance.json",
+        "target": "develop",
+        "normalMergeCommits": {
+          "martlet": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5",
+          "krigsvold": "c85e01c4975bbb490637f06a9db62af525ffbbde"
+        },
+        "exactReviewedTreesPreserved": true
       }
     },
     {
@@ -11138,7 +12069,7 @@
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 4,
       "implementationStatus": "complete: source-justified modification",
-      "visualReviewStatus": "All50 actual source-bound final capture complete; independent manual review receipt pending.",
+      "visualReviewStatus": "Passed independent bounded source-backed composition review of final actual HTTPS normal/strict images; no current visual blocker.",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -11206,14 +12137,16 @@
           "number": 24,
           "url": "https://github.com/martletdesign/jekyll/pull/24",
           "head": "0c0e0a7452444c41a3876c2f8732c6439c6097b9",
-          "status": "exact final candidate technically passed; normal integration pending"
+          "status": "merged through normal develop merge; exact tested/reviewed source tree preserved",
+          "mergeCommit": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5"
         },
         {
           "family": "krigsvold",
           "number": 22,
           "url": "https://github.com/krigsvolddesign/jekyll/pull/22",
           "head": "983dee5d27ad02458baef6edc5a39279e24028ea",
-          "status": "exact final candidate technically passed; normal integration pending"
+          "status": "merged through normal develop merge; exact tested/reviewed source tree preserved",
+          "mergeCommit": "c85e01c4975bbb490637f06a9db62af525ffbbde"
         }
       ],
       "exceptions": [
@@ -11253,11 +12186,11 @@
       "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
       "compositionRefinements": [],
       "familyImplementationStatus": {
-        "martlet": "Exact final source 0c0e0a7452444c41a3876c2f8732c6439c6097b9 passes full technical gate; integration status in final-acceptance.json",
-        "krigsvold": "Exact final source 983dee5d27ad02458baef6edc5a39279e24028ea passes full technical gate; integration status in final-acceptance.json"
+        "martlet": "Accepted exact final head 0c0e0a7452444c41a3876c2f8732c6439c6097b9 through normal develop merge 8c19cad7b403da5fc65f2a8d4336170a4dbc5de5; tree identical to tested/reviewed source.",
+        "krigsvold": "Accepted exact final head 983dee5d27ad02458baef6edc5a39279e24028ea through normal develop merge c85e01c4975bbb490637f06a9db62af525ffbbde; tree identical to tested/reviewed source."
       },
       "localReview": {
-        "status": "final source-bound actual capture complete; independent manual all50 review receipt pending",
+        "status": "Passed bounded final all50 visual review; no universal fidelity or manualATclaim.",
         "noUniversalFidelityClaim": true
       },
       "baselineRenderedContract": {
@@ -11351,6 +12284,24 @@
         "actualHTTPSCasesPerFamily": 516,
         "actualAxeViolations": 0,
         "knownFailureExceptions": []
+      },
+      "visualEvidenceQualification": "Eight baseline analytics frames and eight baseline operations frames contain the literal initial/unavailable fallback metrics or em dashes, with empty captured error arrays; final actual frames show initialized browser values. These are differing initialization states, not matched hydration timing or evidence that reconciliation introduced fixture data. Original captures remain unchanged; frozen data/controller hashes and actual behavior acceptance establish preservation separately.",
+      "finalVisualAcceptance": {
+        "summary": "visual-review.json",
+        "route": "dashboard-operations",
+        "verdict": "pass",
+        "observedFinding": "The final initialized view separates monitoring scope, metrics, latency/activity, service status, and alert commands. Martlet retains heading-led flow; Krigsvold uses distinct working regions with native tables. The literal unavailable-control/em-dash baseline differs in initialization state; metrics and synthetic data parity require the separate frozen-controller evidence.",
+        "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+        "remainingVisualBlockers": []
+      },
+      "finalSourceIntegration": {
+        "summary": "final-acceptance.json",
+        "target": "develop",
+        "normalMergeCommits": {
+          "martlet": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5",
+          "krigsvold": "c85e01c4975bbb490637f06a9db62af525ffbbde"
+        },
+        "exactReviewedTreesPreserved": true
       }
     }
   ],
@@ -11360,7 +12311,7 @@
       "martlet",
       "krigsvold"
     ],
-    "status": "actual exact final capture complete; independent manual review receipt pending",
+    "status": "Independent bounded all50 composition review passed; exact approved97-fileportablebookcopied and checksummed",
     "actualHTTPSStates": 406,
     "finalCaptureReceipt": {
       "artifact": {
@@ -11370,7 +12321,13 @@
       },
       "sha256": "f2623024491a62aa3a5742198d951dd63f48e993efdfa2538b559a3b0206fb47"
     },
-    "requirement": "Manual source-bound comparison is separate from screenshot existence and technical checks; book approval is required before copying binaries."
+    "requirement": "Manual source-bound comparison is separate from screenshot existence and technical checks; book approval is required before copying binaries.",
+    "manualReviewSummary": "visual-review.json",
+    "contactSheetsInspected": 80,
+    "readableDetailsInspected": 12,
+    "remainingVisualBlockers": [],
+    "portableBook": "visual-book/README.md",
+    "bookCopyApproval": "visual-book-approval.json"
   },
   "acceptedWaves": [
     {
@@ -11409,10 +12366,25 @@
         "krigsvold": "3e5d49dcf47cc3b9e6646e66274fb246d5848df2"
       },
       "developMergeCommits": {
-        "martlet": "343bfb64d6f4a8159bf5f85f1ebbd226f9185177"
+        "martlet": "343bfb64d6f4a8159bf5f85f1ebbd226f9185177",
+        "krigsvold": "c85e01c4975bbb490637f06a9db62af525ffbbde"
       },
-      "status": "Martlet accepted; Krigsvold exact reviewed ancestor normally consolidated into finalPR22 after original native403. Final983 native passed.",
+      "status": "accepted: MartletPR23normallymerged; Krigsvold exact3e5 reviewed ancestor preserved through consolidatedPR22normaldevelopmerge",
       "scope": "23 primary collection/detail routes;2 local composition changes and21 retained anatomies."
+    },
+    {
+      "wave": 4,
+      "summary": "final-acceptance.json",
+      "sourceHeads": {
+        "martlet": "0c0e0a7452444c41a3876c2f8732c6439c6097b9",
+        "krigsvold": "983dee5d27ad02458baef6edc5a39279e24028ea"
+      },
+      "developMergeCommits": {
+        "martlet": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5",
+        "krigsvold": "c85e01c4975bbb490637f06a9db62af525ffbbde"
+      },
+      "status": "accepted-into-develop-by-normal-two-parent-merges",
+      "scope": "15 primary workspace/form/recovery routes, including three targeted specialized-dashboard refinements and12 retained recipe-local anatomies; also both shared-host enlarged-text repairs. Krigsvold candidate incorporates reviewed collection wave."
     }
   ],
   "countsAreProvisional": false,
@@ -11480,9 +12452,10 @@
     "technicalAll50AccessibilityPassed": true,
     "technicalKnownFailureExceptions": [],
     "sourceBoundVisualCaptureComplete": true,
-    "independentAll50VisualAcceptanceComplete": false,
+    "independentAll50VisualAcceptanceComplete": true,
     "hostWideRefinementsAreSeparateFromRecipeComposition": true,
-    "genuinelyUnchangedAcrossAllTestedStatesByFamily": "None claimed across complete host+recipe: both shared headers received measured enlarged-text accessibility repairs.32 recipe-local compositions/styles were retained."
+    "genuinelyUnchangedAcrossAllTestedStatesByFamily": "None claimed across complete host+recipe: both shared headers received measured enlarged-text accessibility repairs.32 recipe-local compositions/styles were retained.",
+    "approvedSourceIntegratedIntoDevelop": true
   },
   "primaryReviewScopes": {
     "1": [
@@ -11601,5 +12574,8 @@
       "finalAcceptance": "final-acceptance.json"
     }
   ],
-  "portableEvidenceRegistry": "evidence-registry.json"
+  "portableEvidenceRegistry": "evidence-registry.json",
+  "normalIntegrationReceipt": "final-acceptance.json",
+  "operationalHistoryNote": "Historical failure records are preserved below. No current final technical or bounded visual blocker remains; old403underlying reason and unrelatedoldMartletcause are still unknown, with current genuine native acceptance independently passed.",
+  "historicalRecordSemantics": "Nested earlier local-review/evidence subrecords preserve the status at their original observation, including historical pending/failed wording. Current authoritative row statuses are finalTechnicalAcceptance, finalVisualAcceptance and finalSourceIntegration; final-acceptance.json binds exact accepted sources. Historical raw evidence is not relabeled."
 }

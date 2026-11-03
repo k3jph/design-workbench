@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "sourceWorkbenchCommit": "5c8dbbd0b6312fca4140e41dab42c232bdd9119d",
-  "scope": "Portable source-bound all50 implementation and final technical acceptance summaries. Visual acceptance and normal integration status are explicitly recorded in final-acceptance.json.",
+  "scope": "Portable source-bound all50 implementation and exact technical/visual/integration summaries; each completion gate remains explicit in final-acceptance.json.",
   "rawArtifactsBundled": false,
   "imagesCopied": false,
   "records": {
@@ -1069,6 +1069,67 @@
       "sourceBindings": {},
       "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
       "portableRecordSha256": "031f4173fca1c8f8c67ed4b5d9dd95b585ffffaf39d7304b83e4bbb4436c710e"
+    },
+    "final-premerge-github-guards-8145a2e0ff0e": {
+      "id": "final-premerge-github-guards-8145a2e0ff0e",
+      "record": "evidence/final-premerge-github-guards-8145a2e0ff0e.json",
+      "originalName": "final-premerge-github-guards.json",
+      "kind": "file",
+      "rawSha256": "8b7588a3be58976addf54aba5a0b49f6b0b50401aebb046dc49a909f82621b83",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "final-acceptance.json"
+      ],
+      "sourceBindings": {},
+      "note": "Hash identifies original raw evidence retained outside this repository. Linked portable summaries contain observations and public source/CI/preview URLs.",
+      "portableRecordSha256": "6b6d5d9a8a034987957cb330817e393e494e97816ccb9da32321da0b6ff62523"
+    },
+    "final-premerge-native-source-guards-8b0d2f8519a1": {
+      "id": "final-premerge-native-source-guards-8b0d2f8519a1",
+      "record": "evidence/final-premerge-native-source-guards-8b0d2f8519a1.json",
+      "originalName": "final-premerge-native-source-guards.json",
+      "kind": "file",
+      "rawSha256": "20fa0876ce4e7d30d251be925f9908fb5d450036ac83537bbe7a1701a4b3f503",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "final-acceptance.json"
+      ],
+      "sourceBindings": {},
+      "note": "Hash identifies original raw evidence retained outside this repository. Linked portable summaries contain observations and public source/CI/preview URLs.",
+      "portableRecordSha256": "a35f772fb3e7c34639b5e7d13a5b82aac0d8734e7c29df41d2c226555c1d1324"
+    },
+    "final-route-review-e8a3f77052f1": {
+      "id": "final-route-review-e8a3f77052f1",
+      "record": "evidence/final-route-review-e8a3f77052f1.json",
+      "originalName": "final-route-review.json",
+      "kind": "file",
+      "rawSha256": "24f51a01d90e348ef4f254a484ac0ca11b4ba6a8445efe65834785b88db9259d",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "final-acceptance.json",
+        "visual-review.json"
+      ],
+      "sourceBindings": {},
+      "note": "Hash identifies original raw evidence retained outside this repository. Linked portable summaries contain observations and public source/CI/preview URLs.",
+      "portableRecordSha256": "580ba9602d9283acb5079bfe679ee6bc0e79f36fd43e5fdf70a8dcf52a79e6fb"
+    },
+    "final-develop-merge-source-proof-d0c941a669bd": {
+      "id": "final-develop-merge-source-proof-d0c941a669bd",
+      "record": "evidence/final-develop-merge-source-proof-d0c941a669bd.json",
+      "originalName": "final-develop-merge-source-proof.json",
+      "kind": "file",
+      "rawSha256": "ad1e3f7b9a0dc04ef16e4a7a5e6a449fb004e7879aeb55b6304974c6204837f0",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "final-acceptance.json"
+      ],
+      "sourceBindings": {},
+      "note": "Hash identifies original raw evidence retained outside this repository. Linked portable summaries contain observations and public source/CI/preview URLs.",
+      "portableRecordSha256": "8a41c552fc9a83c2b2786ead604269168bcd7cd2d25e9f34d55d3b05a606abad"
     }
   },
   "documents": [
@@ -1085,17 +1146,17 @@
     {
       "path": "disposition.json",
       "sourceSha256": "716305bb82427e18bcc386c5e08a2c949b7fbc2e341ed049365c91cc12c8c60f",
-      "portableSha256": "367dcb0ff5e4b0e3440bba24dab24a557be471692c420853b4b1214147ae3ccf"
+      "portableSha256": "279e9eb0b24f845e7c3f12b4789539538b624e77690fc8865610db26f7a71db9"
     },
     {
       "path": "final-acceptance.json",
       "sourceSha256": "78d7147b65cec8d5733fcd8e84ee770c58babab891c403ba80d605a6f77a9dcc",
-      "portableSha256": "4d18d895d59df51a07972943597bc7aba3e540d30b79a7c5ba90964a2a16a0f1"
+      "portableSha256": "bd72109ed7bc1ec127249912b1d6c2223af325b302497da8d747cc4700ad04fb"
     },
     {
       "path": "native-failure-history.json",
       "sourceSha256": "ca4439ebd3cf71d0d6cde3c2d122dc82e718a3028489686f8a9069474db2cdf2",
-      "portableSha256": "5a3dfa1b4a52bbec8eb9ec4d9e817533bb9d029797d2987d35d8487b2a8a733c"
+      "portableSha256": "ffa2c93d39862e321a2006790f0210c86149d0699698500f486d33055c5899fb"
     },
     {
       "path": "next-wave-scopes.json",
@@ -1106,6 +1167,16 @@
       "path": "source-and-capture-evidence.json",
       "sourceSha256": "e651e350a2f309327a24176dd953c90da8d4772a8bf5cfef6c0f49d0a86ea573",
       "portableSha256": "2581c3f52ea004cb51f749a31829666d214b6b87cd6838e607d577effbd02098"
+    },
+    {
+      "path": "visual-book-approval.json",
+      "sourceSha256": null,
+      "portableSha256": "e30a123afb6b8363e669ff8767ea36c60eac56a5111b4564ba1be52b47676bce"
+    },
+    {
+      "path": "visual-review.json",
+      "sourceSha256": null,
+      "portableSha256": "ab885e3c5dc279a0691edcef5ccca554f750b605caa6b7da00f217ff5cf58ad2"
     },
     {
       "path": "wave1-acceptance.json",
@@ -1135,5 +1206,6 @@
   ],
   "versionMismatches": [],
   "unresolvedVersionMismatchCount": 0,
-  "historical616Exception": "The observed616raw packet was not retained; its historical summary explicitly records this limitation. Current frozen v2 baseline/tool are separately pinned."
+  "historical616Exception": "The observed616raw packet was not retained; its historical summary explicitly records this limitation. Current frozen v2 baseline/tool are separately pinned.",
+  "evolutionNote": "Initial local raw-reference conversion used sourceWorkbenchCommit. Subsequent normal commits update summaries and append hash records without changing historical raw evidence; final Git commit identifies the reviewable bundle."
 }

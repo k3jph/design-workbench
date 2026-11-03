@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "issue": "https://github.com/k3jph/design-workbench/issues/91",
-  "updatedAt": "2026-11-03T22:38:09.273625+00:00",
-  "status": "exact-final-candidates-technically-passed; final visual and develop integration receipts pending",
+  "updatedAt": "2026-11-03T22:54:40.575041+00:00",
+  "status": "complete: all50implemented-or-justifiably-retained, exact technical and independent visual gates passed, approved source normally integrated into develop",
   "scope": "All 50 paired Jekyll recipes, identical fixture/capability contracts; final source-bound nonproduction acceptance",
   "families": {
     "martlet": {
@@ -201,7 +201,9 @@
           },
           "sha256": "b72b0c046db5f81a81c022bc800ddee19e4524656d5214b2e593048dc17f4c7b"
         }
-      }
+      },
+      "developMergeCommit": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5",
+      "exactReviewedTreePreservedInDevelop": true
     },
     "krigsvold": {
       "repository": "krigsvolddesign/jekyll",
@@ -418,7 +420,9 @@
           },
           "sha256": "b72b0c046db5f81a81c022bc800ddee19e4524656d5214b2e593048dc17f4c7b"
         }
-      }
+      },
+      "developMergeCommit": "c85e01c4975bbb490637f06a9db62af525ffbbde",
+      "exactReviewedTreePreservedInDevelop": true
     }
   },
   "actualHTTPS": {
@@ -555,13 +559,57 @@
       },
       "sha256": "82c5b43f37e2755210afd23dca15e1cb881bfd728b04b1199d02a61e5e13da9e"
     },
-    "manualVisualReview": "Pending separate source-bound all50 review receipt; capture completion alone is not visual acceptance."
+    "manualVisualReview": "Independent all50 bounded composition review passed; see visual-review.json for exact source bindings and initialization-state/capture limits.",
+    "captureStateQualification": "Eight baseline analytics frames and eight baseline operations frames contain the literal initial/unavailable fallback metrics or em dashes, with empty captured error arrays; final actual frames show initialized browser values. These are differing initialization states, not matched hydration timing or evidence that reconciliation introduced fixture data. Original captures remain unchanged; frozen data/controller hashes and actual behavior acceptance establish preservation separately."
   },
   "integration": {
     "target": "develop",
-    "martletFinalPR": 24,
-    "krigsvoldFinalPR": 22,
-    "status": "Await coordinator verified normal merge receipts; no main/production/npm authority implied"
+    "status": "completed-normal-two-parent-merges-with-exact-reviewed-source-trees",
+    "families": {
+      "martlet": {
+        "repository": "martletdesign/jekyll",
+        "mergeCommit": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5",
+        "tree": "6d1810333cbdc157f2b9de56a9906fbe97536736",
+        "develop": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5",
+        "parents": [
+          "343bfb64d6f4a8159bf5f85f1ebbd226f9185177",
+          "0c0e0a7452444c41a3876c2f8732c6439c6097b9"
+        ],
+        "exactCandidateTreePreserved": true,
+        "candidateHeadIsDirectParent": true
+      },
+      "krigsvold": {
+        "repository": "krigsvolddesign/jekyll",
+        "mergeCommit": "c85e01c4975bbb490637f06a9db62af525ffbbde",
+        "tree": "a019a52c5ba2edddcbc6a8f4582527da0dfe4ab2",
+        "develop": "c85e01c4975bbb490637f06a9db62af525ffbbde",
+        "parents": [
+          "bdbf62c0d37b705b6dbd35900bcaf40cd7dfb787",
+          "983dee5d27ad02458baef6edc5a39279e24028ea"
+        ],
+        "exactCandidateTreePreserved": true,
+        "candidateHeadIsDirectParent": true,
+        "reviewedCollectionAncestor": "3e5d49dcf47cc3b9e6646e66274fb246d5848df2",
+        "collectionAncestryProved": true,
+        "collectionComparisonStatus": "ahead",
+        "supersededPR21": {
+          "state": "closed",
+          "merged": false,
+          "mergedAt": null,
+          "head": "3e5d49dcf47cc3b9e6646e66274fb246d5848df2"
+        }
+      }
+    },
+    "verifiedAt": "2026-11-03T22:53:26.443896+00:00",
+    "receipt": {
+      "artifact": {
+        "evidenceRef": "final-develop-merge-source-proof-d0c941a669bd",
+        "record": "evidence/final-develop-merge-source-proof-d0c941a669bd.json",
+        "rawBytesIncluded": false
+      },
+      "sha256": "ad1e3f7b9a0dc04ef16e4a7a5e6a449fb004e7879aeb55b6304974c6204837f0"
+    },
+    "mainMerged": false
   },
   "limitations": [
     "Automated axe/keyboard checks are not manual assistive-technology certification.",
@@ -598,5 +646,93 @@
     },
     "integrationGuard": "Coordinator explicitly verifies exact PR head, all six genuine successful check identities, genuine native preview and source/payload/visual acceptance before ordinary develop merge. Current develop metadata does not show server-enforced required checks."
   },
-  "portableEvidenceRegistry": "evidence-registry.json"
+  "portableEvidenceRegistry": "evidence-registry.json",
+  "latestPremergeReadback": {
+    "at": "2026-11-03T22:43:17.674566+00:00",
+    "allTwelveGenuineActionsChecksPassed": true,
+    "bothGenuineNativeChecksPassed": true,
+    "exactHeadsAndTreesMatched": true,
+    "mainAndProductionUnchangedAtObservation": true,
+    "receipts": [
+      {
+        "artifact": {
+          "evidenceRef": "final-premerge-github-guards-8145a2e0ff0e",
+          "record": "evidence/final-premerge-github-guards-8145a2e0ff0e.json",
+          "rawBytesIncluded": false
+        },
+        "sha256": "8b7588a3be58976addf54aba5a0b49f6b0b50401aebb046dc49a909f82621b83"
+      },
+      {
+        "artifact": {
+          "evidenceRef": "final-premerge-native-source-guards-8b0d2f8519a1",
+          "record": "evidence/final-premerge-native-source-guards-8b0d2f8519a1.json",
+          "rawBytesIncluded": false
+        },
+        "sha256": "20fa0876ce4e7d30d251be925f9908fb5d450036ac83537bbe7a1701a4b3f503"
+      }
+    ]
+  },
+  "supersededOriginalKrigsvoldPR": {
+    "number": 21,
+    "head": "3e5d49dcf47cc3b9e6646e66274fb246d5848df2",
+    "state": "closed-unmerged-as-superseded",
+    "closedAt": "2026-11-03T22:45:11Z",
+    "commentUrl": "https://github.com/krigsvolddesign/jekyll/pull/21#issuecomment-6617395960",
+    "reviewedAncestryPreservedInFinal983": true,
+    "originalNativeFailureRelabeledAsSuccess": false
+  },
+  "visualAcceptance": {
+    "status": "passed-bounded-source-backed-composition-review",
+    "summary": "visual-review.json",
+    "readableSummary": "visual-review.md",
+    "rawReceipt": {
+      "artifact": {
+        "evidenceRef": "final-route-review-e8a3f77052f1",
+        "record": "evidence/final-route-review-e8a3f77052f1.json",
+        "rawBytesIncluded": false
+      },
+      "sha256": "24f51a01d90e348ef4f254a484ac0ca11b4ba6a8445efe65834785b88db9259d"
+    },
+    "pairedRoutes": 50,
+    "contactSheetsIndependentlyInspected": 80,
+    "readableDetailsIndependentlyInspected": 12,
+    "remainingVisualBlockers": [],
+    "manualAssistiveTechnologyClaimed": false,
+    "universalVisualFidelityClaimed": false,
+    "bookCopyStatus": "Root approved exact final manifest;97files copied byte-for-byte and all96manifest checksums verified.",
+    "portableBook": {
+      "directory": "visual-book/",
+      "readme": "visual-book/README.md",
+      "index": "visual-book/index.json",
+      "checksumManifest": "visual-book/SHA256SUMS",
+      "files": 97,
+      "bytes": 18552704,
+      "hardByteCap": 20000000,
+      "checksumManifestSha256": "e0f8bdf9348b1244a1d831ee4e76e0f7b954eac5f3be70302a6bcfcc0baba4ee",
+      "indexSha256": "41535de094b4e2f303f0cbc6fde71009b08b5267a75ef9122a6ef881db3bd9c7",
+      "approval": "visual-book-approval.json",
+      "all92ImagesByteIdenticalToIndependentlyReviewedDraft": true,
+      "copyReencodedOrRegeneratedImages": false
+    }
+  },
+  "postMergeAutomaticDevelopDelivery": {
+    "status": "Native ordinary develop builds observed in progress at exact merge heads; delivery success not yet claimed",
+    "evidenceLocation": "Final coordinator completion comment on https://github.com/k3jph/design-workbench/issues/91 will record the exact ordinary native develop delivery receipts and any actual exception.",
+    "independentExactPRNativeAcceptanceAlreadyPassed": true,
+    "newBuildOrBrowserRerunRequestedByEvidenceTask": false,
+    "noSecondEvidencePushForTimingMetadata": true,
+    "lastKnownNativeBuilds": {
+      "observationSource": "Root coordinating agent live native status handoff at document finalization",
+      "martlet": {
+        "commit": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5",
+        "nativeBuildUuid": "1588a98d-7168-49a9-9b11-55bfdae056bc",
+        "status": "in-progress"
+      },
+      "krigsvold": {
+        "commit": "c85e01c4975bbb490637f06a9db62af525ffbbde",
+        "nativeBuildUuid": "6093179a-53a2-49af-b177-fb0d59d98cbc",
+        "status": "in-progress"
+      }
+    }
+  }
 }

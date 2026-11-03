@@ -63,5 +63,11 @@
     "currentAvailability": "Later ordinary develop d983 native success and final exact0c native success; no inference from unrelated K403 logs.",
     "status": "historical failure preserved; not a current verified-preview blocker"
   },
-  "portableEvidenceRegistry": "evidence-registry.json"
+  "portableEvidenceRegistry": "evidence-registry.json",
+  "originalPullRequestClosure": {
+    "state": "closed-unmerged-as-superseded",
+    "at": "2026-11-03T22:45:11Z",
+    "commentUrl": "https://github.com/krigsvolddesign/jekyll/pull/21#issuecomment-6617395960",
+    "sourceAttributionAndNormalAncestryRetained": true
+  }
 }

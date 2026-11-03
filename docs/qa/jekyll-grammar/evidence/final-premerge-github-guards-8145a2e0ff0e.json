@@ -1,0 +1,14 @@
+{
+  "id": "final-premerge-github-guards-8145a2e0ff0e",
+  "record": "evidence/final-premerge-github-guards-8145a2e0ff0e.json",
+  "originalName": "final-premerge-github-guards.json",
+  "kind": "file",
+  "rawSha256": "8b7588a3be58976addf54aba5a0b49f6b0b50401aebb046dc49a909f82621b83",
+  "rawBytesIncluded": false,
+  "retentionStatus": "preserved-locally-not-bundled",
+  "summaryDocuments": [
+    "final-acceptance.json"
+  ],
+  "sourceBindings": {},
+  "note": "Hash identifies original raw evidence retained outside this repository. Linked portable summaries contain observations and public source/CI/preview URLs."
+}
