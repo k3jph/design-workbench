@@ -1,0 +1,144 @@
+{
+  "sourceManifestArtifact": "/workspace/work/jekyll-grammar/visual/source-authorities/retrieval.json",
+  "sourceManifestSha256": "e9e43630e84d624d6709ac3ce1e3799f8762c6bee6c1317b6a595d6fed654f74",
+  "sources": [
+    {
+      "name": "martlet-origin",
+      "requestedUrl": "https://jameshoward.us/",
+      "finalUrl": "https://jameshoward.us/",
+      "status": 200,
+      "retrievedAt": "2026-11-03T20:04:59.545378+00:00",
+      "sha256": "61fa43271a9708e34351d07bb1220b233ecc9142cef82136cf1f7a53e32ce1c4",
+      "stylesheets": [
+        {
+          "url": "https://jameshoward.us/assets/css/ukraine.css?v=20260927-1",
+          "sha256": "a03001c4a38a717bd26255b04f903eb9cbf28a74c72061b14974ed599d299bd8"
+        },
+        {
+          "url": "https://jameshoward.us/_astro/BaseLayout.Vddcf7CK.css",
+          "sha256": "f9c96297195b4101f63fdd8ecfab6afec507d6bbb6eae507a73783a199631cd2"
+        },
+        {
+          "url": "https://jameshoward.us/_astro/index.CXznNZ2K.css",
+          "sha256": "7e16c2ef253a70b2550d1b2998cebdc87c52e368f6618c6f8b73db964ab0d9cc"
+        },
+        {
+          "url": "https://jameshoward.us/assets/css/gdpr-cookie.css",
+          "sha256": "b9d448b7c06658161e7e79ab35412404d41dd3f9bedc6361d55be48ca81502d6"
+        }
+      ],
+      "authorityRole": "canonical-origin",
+      "savedHtmlDigestIndependentlyVerified": true
+    },
+    {
+      "name": "krigsvold-origin",
+      "requestedUrl": "https://krigsvold.org/",
+      "finalUrl": "https://krigsvold.org/",
+      "status": 200,
+      "retrievedAt": "2026-11-03T20:04:59.651906+00:00",
+      "sha256": "4e1f9a4b83efa8249521045e5b490ba78d8765ea216914a26dc8c8d0c8903803",
+      "stylesheets": [
+        {
+          "url": "https://krigsvold.org/assets/css/material-kit.css?v=3.0.4",
+          "sha256": "f279a09d5875efb5688153e084b7857873d4697229b1ab68421fadb3718f4976"
+        },
+        {
+          "url": "https://krigsvold.org/assets/css/gdpr-cookie.css",
+          "sha256": "5040adc3fe893f93b7cf7b170502117c52384ed1655e081b6c9bddda9d19c26f"
+        },
+        {
+          "url": "https://krigsvold.org/_astro/Page.7T515cpF.css",
+          "sha256": "2d2203baeaf2013ba46f30d26d81f0946f99508e8ee8895cab15da77ee5631f8"
+        }
+      ],
+      "authorityRole": "canonical-origin",
+      "savedHtmlDigestIndependentlyVerified": true
+    },
+    {
+      "name": "martlet-react",
+      "requestedUrl": "https://react.martletdesign.dev/",
+      "finalUrl": "https://react.martletdesign.dev/",
+      "status": 200,
+      "retrievedAt": "2026-11-03T20:05:00.771568+00:00",
+      "sha256": "9b120afffbc5bd1e7caf124fe76077d42748eaa325a059b409d929f20f4d4c88",
+      "stylesheets": [
+        {
+          "url": "https://react.martletdesign.dev/assets/index-DLDsFAYc.css",
+          "sha256": "fa527ea7199f1ce396a13f6f0b7572cec245b2a58672f930f536e7690edd40ae"
+        }
+      ],
+      "authorityRole": "supporting React precedent; not origin authority or an implementation API claim",
+      "savedHtmlDigestIndependentlyVerified": true
+    },
+    {
+      "name": "krigsvold-react",
+      "requestedUrl": "https://react.krigsvolddesign.dev/",
+      "finalUrl": "https://react.krigsvolddesign.dev/",
+      "status": 200,
+      "retrievedAt": "2026-11-03T20:05:00.790327+00:00",
+      "sha256": "ba1e0abacaf74199063f64320a1ea6d737f437df52fe24b18791de2c1e86d37f",
+      "stylesheets": [
+        {
+          "url": "https://react.krigsvolddesign.dev/assets/index-BAIYZBXM.css",
+          "sha256": "e20afc3b2cd9978121ef37ebb86770556240d88115ef371750ecc987815c795d"
+        }
+      ],
+      "authorityRole": "supporting React precedent; not origin authority or an implementation API claim",
+      "savedHtmlDigestIndependentlyVerified": true
+    }
+  ],
+  "baselineCapture": {
+    "provenanceArtifact": "/workspace/work/jekyll-grammar/visual/baseline-provenance.json",
+    "provenanceSha256": "865d9738d655f15d8e71c010c69b7aa4591260b0bfd6b24cc9dedbcc94750513",
+    "reviewArtifact": "/workspace/work/jekyll-grammar/visual/before/review.json",
+    "reviewSha256": "54800a8c55c71a7eff5165c3fb176012c85d328bea859af1dd4de0eb1c45c5e0",
+    "caseCount": 72,
+    "normalScreenshots": 72,
+    "maskedDiagnosticScreenshots": 72,
+    "routes": [
+      "changelog",
+      "collection",
+      "dashboard-administration",
+      "dashboard-components",
+      "documentation",
+      "faq"
+    ],
+    "widths": [
+      320,
+      768,
+      1440
+    ],
+    "appearances": [
+      "dark",
+      "light"
+    ],
+    "observedPageErrors": 0,
+    "observedOverflowCases": [],
+    "acceptanceScope": "baseline captures only, not universal visual acceptance or final compliance"
+  },
+  "sourceCssObservations": [
+    {
+      "family": "martlet",
+      "kind": "observed-declarations-not-computed-cascade",
+      "selectorsOrTokens": [
+        "--martlet-reading-width:48rem",
+        "--martlet-font-serif:\"Cambo\"",
+        "--martlet-font-sans:\"Lato\"",
+        ".reading-container{--container-width:var(--reading-width)}"
+      ],
+      "judgment": "Bounded source reading has a distinct measure; current Jekyll index-plus-body wrapper must be measured separately. A rootstylesheet token alone does not prove every deeper document layout."
+    },
+    {
+      "family": "krigsvold",
+      "kind": "observed-declarations-not-computed-cascade",
+      "selectorsOrTokens": [
+        "--krigsvold-reading-width:760px",
+        "--krigsvold-font-serif:\"Roboto Slab\"",
+        "--krigsvold-font-sans:\"Roboto\"",
+        ".news-listing grid-template-columns:minmax(200px,34%) 1fr",
+        ".krigsvold-faq summary:after plus/open-minus cues"
+      ],
+      "judgment": "Source has purposeful news regions and native disclosure states; these are precedents for task translations, not universal tables or a compulsory register."
+    }
+  ]
+}

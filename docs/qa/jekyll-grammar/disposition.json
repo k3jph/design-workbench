@@ -127,8 +127,14 @@
       "summary": "baseline-contract-summary.json",
       "sourceArtifact": "/workspace/work/jekyll-grammar/acceptance/baseline-contracts.json",
       "sha256": "f56462da6fe22eb6081fb2557bb9ad0d627a77c96e886faa3f6adacc6a6603d9",
-      "result": "Both50route baselines capture616renderedmeaningchunks;6genericdashboardplaceholdervalues are notliteraldisplay; exact stable IDs/links/forms/controls recorded.",
+      "result": "Both 50-route baselines capture 616 rendered meaning chunks; six generic dashboard placeholder values are not literal display; exact stable IDs, links, forms and controls are recorded.",
       "acceptanceScope": "baseline only; not visual fidelity or final implementation parity"
+    },
+    {
+      "kind": "origin-and-six-specimen-baseline",
+      "summary": "source-and-capture-evidence.json",
+      "result": "Four actual HTTP 200 origin/React HTML retrievals; all saved linked CSS digests verified; 72 normal and 72 masked matching baseline frames at pinned heads.",
+      "acceptanceScope": "Source retrieval and six baseline specimen captures; all 50-route visual review still incomplete."
     }
   ],
   "rows": [
@@ -998,7 +1004,7 @@
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 2,
       "implementationStatus": "not-started",
-      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "visualReviewStatus": "matching pinned baseline captured at320/768/1440 light/dark plus masked diagnostic; independent after acceptance pending",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -1394,7 +1400,7 @@
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 1,
       "implementationStatus": "in-progress-awaiting-pinned-PR-preview-review",
-      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "visualReviewStatus": "matching pinned baseline captured at320/768/1440 light/dark plus masked diagnostic; independent after acceptance pending",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -1410,15 +1416,24 @@
           "sourceCommit": "d025637e1fe4c11d84c691276d6b3652719b9a30",
           "artifact": "/workspace/work/jekyll-grammar/martlet-final-source/template.zip",
           "sha256": "9f736850fb4ae8edd64aa85862d419a261f60c4a22484c5ecda79d735c1bf269",
-          "result": "Independently opened all240uniqueentries and compared bytes to exact head; fixtureSHA unchanged.",
+          "result": "Independently opened all 240 unique entries and compared bytes to exact head; fixture SHA unchanged.",
           "verification": "independently observed; does not prove hosted/browser/visual acceptance"
         },
         {
           "family": "martlet",
           "kind": "local-regression",
           "sourceCommit": "d025637e1fe4c11d84c691276d6b3652719b9a30",
-          "result": "Owner reports53Python tests,36targetedChrome+6noJS,original32hero+200recipes,lint and standalone sourceZIP checks passed.",
+          "result": "Owner reports53Python tests,36targetedChrome+6noJS,original32hero+200recipes,lint and standalone source ZIP checks passed.",
           "verification": "owner-reported; hosted and independent paired visual review pending"
+        },
+        {
+          "kind": "manual-baseline-observation",
+          "frames": [
+            "before/martlet/faq-1440-light.png",
+            "before/krigsvold/faq-1440-light.png"
+          ],
+          "result": "Independently viewed: both use a left local index and four equal native disclosure rows with the same question ordering; native typography/header/footer differ, but topical question grouping remains convergent.",
+          "acceptanceScope": "Two baselineFAQ frames only; not a finalqualityjudgment across allstates."
         }
       ],
       "pullRequests": [],
@@ -1439,7 +1454,7 @@
         }
       ],
       "familyImplementationStatus": {
-        "martlet": "implemented at d025637e1fe4c11d84c691276d6b3652719b9a30; local checks passed; isolated preview and independent visual acceptance pending",
+        "martlet": "implemented at cff96a8586ab5300a38c68847cdbdee8c6aa5dab; robust authoredtitle/date fallback tested locally; isolated preview and final visual acceptance pending",
         "krigsvold": "implemented-locally; local verification running; pinned head/preview acceptance pending"
       },
       "localReview": {
@@ -2387,7 +2402,7 @@
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 3,
       "implementationStatus": "not-started",
-      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "visualReviewStatus": "matching pinned baseline captured at320/768/1440 light/dark plus masked diagnostic; independent after acceptance pending",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -2945,7 +2960,7 @@
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 1,
       "implementationStatus": "in-progress-awaiting-pinned-PR-preview-review",
-      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "visualReviewStatus": "matching pinned baseline captured at320/768/1440 light/dark plus masked diagnostic; independent after acceptance pending",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -2961,14 +2976,14 @@
           "sourceCommit": "d025637e1fe4c11d84c691276d6b3652719b9a30",
           "artifact": "/workspace/work/jekyll-grammar/martlet-final-source/template.zip",
           "sha256": "9f736850fb4ae8edd64aa85862d419a261f60c4a22484c5ecda79d735c1bf269",
-          "result": "Independently opened all240uniqueentries and compared bytes to exact head; fixtureSHA unchanged.",
+          "result": "Independently opened all 240 unique entries and compared bytes to exact head; fixture SHA unchanged.",
           "verification": "independently observed; does not prove hosted/browser/visual acceptance"
         },
         {
           "family": "martlet",
           "kind": "local-regression",
           "sourceCommit": "d025637e1fe4c11d84c691276d6b3652719b9a30",
-          "result": "Owner reports53Python tests,36targetedChrome+6noJS,original32hero+200recipes,lint and standalone sourceZIP checks passed.",
+          "result": "Owner reports53Python tests,36targetedChrome+6noJS,original32hero+200recipes,lint and standalone source ZIP checks passed.",
           "verification": "owner-reported; hosted and independent paired visual review pending"
         }
       ],
@@ -2976,7 +2991,7 @@
       "exceptions": [
         {
           "kind": "authored-field-boundary",
-          "detail": "Version/date are authored together in fullhuman sectiontitles. Preserve original titles/body; currentfixedfixture date-only <time> values may be derived and pinned by tests. No separatelyauthoredtimestamp/timezone/releasestate field or arbitrarytitle parsing contract is implied.",
+          "detail": "Version/date are authored together in full human sectiontitles. Preserve original titles/body; currentfixedfixture date-only <time> values may be derived and pinned by tests. No separately authored timestamp/timezone/releasestate field or arbitrary title parsing contract is implied.",
           "status": "intentional-boundary"
         }
       ],
@@ -2996,7 +3011,7 @@
         }
       ],
       "familyImplementationStatus": {
-        "martlet": "implemented at d025637e1fe4c11d84c691276d6b3652719b9a30; local checks passed; isolated preview and independent visual acceptance pending",
+        "martlet": "implemented at cff96a8586ab5300a38c68847cdbdee8c6aa5dab; robust authoredtitle/date fallback tested locally; isolated preview and final visual acceptance pending",
         "krigsvold": "implemented-locally; local verification running; pinned head/preview acceptance pending"
       },
       "localReview": {
@@ -4740,7 +4755,7 @@
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 1,
       "implementationStatus": "in-progress-awaiting-pinned-PR-preview-review",
-      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "visualReviewStatus": "matching pinned baseline captured at320/768/1440 light/dark plus masked diagnostic; independent after acceptance pending",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
@@ -4755,14 +4770,14 @@
           "sourceCommit": "d025637e1fe4c11d84c691276d6b3652719b9a30",
           "artifact": "/workspace/work/jekyll-grammar/martlet-final-source/template.zip",
           "sha256": "9f736850fb4ae8edd64aa85862d419a261f60c4a22484c5ecda79d735c1bf269",
-          "result": "Independently opened all240uniqueentries and compared bytes to exact head; fixtureSHA unchanged.",
+          "result": "Independently opened all 240 unique entries and compared bytes to exact head; fixture SHA unchanged.",
           "verification": "independently observed; does not prove hosted/browser/visual acceptance"
         },
         {
           "family": "martlet",
           "kind": "local-regression",
           "sourceCommit": "d025637e1fe4c11d84c691276d6b3652719b9a30",
-          "result": "Owner reports53Python tests,36targetedChrome+6noJS,original32hero+200recipes,lint and standalone sourceZIP checks passed.",
+          "result": "Owner reports53Python tests,36targetedChrome+6noJS,original32hero+200recipes,lint and standalone source ZIP checks passed.",
           "verification": "owner-reported; hosted and independent paired visual review pending"
         }
       ],
@@ -4770,7 +4785,7 @@
       "exceptions": [
         {
           "kind": "model-scope",
-          "detail": "Canonical route contains four capability-reference prose sections, not22componentrecords. Reactcatalog is organizational precedent only. No invented components/fields/data contract.",
+          "detail": "Canonical route contains four capability-reference prose sections, not22 component records. React catalog is organizational precedent only. No invented components/fields/data contract.",
           "anchors": [
             "composition",
             "metrics",
@@ -4796,7 +4811,7 @@
         }
       ],
       "familyImplementationStatus": {
-        "martlet": "implemented at d025637e1fe4c11d84c691276d6b3652719b9a30; local checks passed; isolated preview and independent visual acceptance pending",
+        "martlet": "implemented at cff96a8586ab5300a38c68847cdbdee8c6aa5dab; robust authoredtitle/date fallback tested locally; isolated preview and final visual acceptance pending",
         "krigsvold": "implemented-locally; local verification running; pinned head/preview acceptance pending"
       },
       "localReview": {
@@ -4873,7 +4888,7 @@
       "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
       "wave": 4,
       "implementationStatus": "not-started",
-      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "visualReviewStatus": "matching pinned baseline captured at320/768/1440 light/dark plus masked diagnostic; independent after acceptance pending",
       "testPlan": [
         "identical fixture JSON/IDs/section order/actions",
         "root and /preview links/anchors",
