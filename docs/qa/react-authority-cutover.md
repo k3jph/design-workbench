@@ -31,3 +31,20 @@ If npm publication has succeeded, verify the registry artifact and provenance
 and use the dedicated repository's recovery procedure rather than republishing
 or restoring a competing authority. Restoration of any legacy publisher is a
 separate production change requiring maintainer authorization.
+
+
+## Issue #81 integration
+
+The standing authorization assigns npm and public reference-site authority to the
+standalone React repositories. This integration removes the legacy npm event
+publisher and both callers of the workbench reference publication/adoption
+workflow. The reference packaging, manifest, recovery and adoption test modules
+remain as tested conformance infrastructure; their old production automation is
+not an alternative publication path. Existing public npm versions, GitHub releases
+and historical source attribution remain preserved. The workbench's private
+workspaces are test fixtures, not another release authority.
+
+The integration coordinator must verify the dedicated trusted publishers and the
+effective workflow set at cutover before any publication. No branch-protection or
+required-review bypass is permitted. Routine PR and engineering decisions are
+covered by Issue #81; platform identity/2FA requirements remain human gates.

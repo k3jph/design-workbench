@@ -69,13 +69,3 @@ jobs:
           name: public-react-consumers-${{ matrix.browser }}
           path: test-results/public-react/
           if-no-files-found: ignore
-
-  references:
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-    needs: verify
-    permissions:
-      contents: write
-    uses: ./.github/workflows/reference-release.yml
-    with:
-      source_sha: ${{ github.sha }}
-    secrets: inherit

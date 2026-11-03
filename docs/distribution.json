@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewedAt": "2026-10-26",
+  "reviewedAt": "2026-11-02",
   "families": {
     "martlet": {
       "mcp": {
@@ -12,10 +12,18 @@
       },
       "packages": {
         "core": {
-          "name": "@martlet/theme",
-          "version": "2.2.2",
+          "name": "@martlet/core",
+          "version": "2.2.3",
           "published": true,
-          "tag": "next"
+          "tag": "latest",
+          "repository": "https://github.com/martletdesign/core",
+          "tarball": {
+            "url": "https://registry.npmjs.org/@martlet/core/-/core-2.2.3.tgz",
+            "sha256": "1395eb206514b54500e4a098b1aafe59492c516c301a7e8c81a18672f6f4ce42",
+            "integrity": "sha512-Yan9LJSOTAP+BDeqXMZfZ+uq9oVOb7xGczHEM7fxKTAwI3SQgoLu06te5R1qLu/IB/KHNL2WuAfRLvXU/XsXwQ==",
+            "available": true,
+            "source": "npm registry independently matched reviewed archive SHA-256"
+          }
         },
         "Astro": {
           "name": "@martlet/astro",
@@ -41,6 +49,12 @@
             "latest": "0.1.0",
             "next": "0.1.0"
           }
+        },
+        "legacyTheme": {
+          "name": "@martlet/theme",
+          "version": "2.2.2",
+          "published": true,
+          "tag": "next"
         }
       },
       "preview": {
@@ -60,10 +74,18 @@
       },
       "packages": {
         "core": {
-          "name": "@krigsvold/theme",
-          "version": "2.2.3",
+          "name": "@krigsvold/core",
+          "version": "2.2.4",
           "published": true,
-          "tag": "next"
+          "tag": "latest",
+          "repository": "https://github.com/krigsvolddesign/core",
+          "tarball": {
+            "url": "https://registry.npmjs.org/@krigsvold/core/-/core-2.2.4.tgz",
+            "sha256": "c2088b2585e913c11f74a045805bcef186e8e830f5c626e46c0c299e6a6eb7c4",
+            "integrity": "sha512-bApvYVgYbGl/lkOYI1i/HYr1uS8ZwITrr/H1SBT2C3/ziA0UvXSsAS2Pppk/L6E46uxboArsfxaSaUwZ7rV2GQ==",
+            "available": true,
+            "source": "npm registry independently matched reviewed archive SHA-256"
+          }
         },
         "Astro": {
           "name": "@krigsvold/astro",
@@ -89,6 +111,12 @@
             "latest": "0.1.0",
             "next": "0.1.0"
           }
+        },
+        "legacyTheme": {
+          "name": "@krigsvold/theme",
+          "version": "2.2.3",
+          "published": true,
+          "tag": "next"
         }
       },
       "preview": {

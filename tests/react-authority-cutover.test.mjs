@@ -12,10 +12,14 @@ test('workbench workflows contain no npm publication or OIDC publisher', async()
   }
 });
 
-test('opt-in reference publication remains separately identifiable',async()=>{
-  const manual=await readFile('.github/workflows/prepare-release.yml','utf8');
+test('legacy reference publication has no production or manual caller',async()=>{
+  const names=await readdir('.github/workflows');
+  for(const name of names.filter(name=>/\.ya?ml$/.test(name))){
+    const workflow=await readFile(`.github/workflows/${name}`,'utf8');
+    assert.doesNotMatch(workflow,/uses:\s*\.\/\.github\/workflows\/reference-release\.yml/,name);
+    assert.doesNotMatch(workflow,/inputs\.publish_references/,name);
+  }
   const reference=await readFile('.github/workflows/reference-release.yml','utf8');
-  assert.match(manual,/inputs\.publish_references/);
-  assert.match(manual,/uses:\s*\.\/\.github\/workflows\/reference-release\.yml/);
-  assert.match(reference,/scripts\/reference-release\/publish\.mjs/);
+  assert.match(reference,/workflow_call:/);
+  assert.doesNotMatch(reference,/workflow_dispatch:|release:|push:/);
 });

@@ -8130,5 +8130,74 @@
     "storage": "No Nightjar bucket in returned account inventory; no R2 bindings on two live Workers. Object permissions, writer isolation and retention unverified.",
     "authentication": "User-token verify 401; account/zone and multiple resource reads 200. Endpoint-specific failures preserved in site-readiness record.",
     "details": "docs/qa/nightjar-iv-site-readiness.md"
+  },
+  "standingOrderIssue81": {
+    "issue": "https://github.com/k3jph/design-workbench/issues/81",
+    "observedAt": "2026-11-03T01:39:53.532446+00:00",
+    "authorization": "End-to-end integration, verified package publication, all eight deployments; no branch-protection or 2FA bypass",
+    "publishedCore": {
+      "@martlet/core": "2.2.3",
+      "@krigsvold/core": "2.2.4",
+      "reviewedHashesMatched": true
+    },
+    "ownership": {
+      "core": "core_integration",
+      "astro": "astro_integration",
+      "react": "react_integration",
+      "jekyll": "jekyll_integration",
+      "website": "website_integration",
+      "workbench": "workbench_integration",
+      "publication_cloudflare_final_verification": "root"
+    },
+    "barriersObserved": [
+      {
+        "system": "npm",
+        "operation": "stage list and trust list",
+        "status": 401,
+        "effect": "Local npm identity unavailable; use actual standalone GHA OIDC stage attempt, then batch required human npm identity/trust actions if denied"
+      },
+      {
+        "system": "GitHub",
+        "operation": "create immutable tag ruleset",
+        "repository": "martletdesign/jekyll",
+        "status": 403,
+        "message": "Resource not accessible by integration",
+        "effect": "Cannot claim effective tag protection; do not bypass protected-tag release guards"
+      }
+    ],
+    "rollout": "Keep existing sites online; predeployment Worker IDs recorded in cloudflare-before.json; new archive runtime disabled until separately proven",
+    "workbenchIntegration": {
+      "branch": "feature/standing-workbench-integration",
+      "sourceLibrary": [
+        "PR79 canonical output contracts",
+        "PR80 live R2 evidence",
+        "PR77 historical Jekyll docs contract",
+        "PR73 GitFlow audit",
+        "PR68 Core migration",
+        "PR70 staging safeguards",
+        "PR78 publisher retirement"
+      ],
+      "status": "local verification in progress; no main merge, npm publication or Cloudflare deployment by this candidate",
+      "localChecks": {
+        "workbenchUnit": {
+          "passed": 132,
+          "failed": 0
+        },
+        "archiveGitFlowContracts": {
+          "passed": 24,
+          "failed": 0
+        },
+        "registryCoreCleanRoom": "passed exact reviewed Core archives and packed React rendering",
+        "agents": "passed extracted archives outside workbench",
+        "compiledWorkers": "passed both family MCP APIs with asset fallback"
+      },
+      "browserVerification": "Chromium/Firefox/WebKit complete suites in progress; initial Chromium/WebKit launch setup failures are not passes",
+      "publicationAuthority": "Standalone package/site repositories; legacy workbench npm event publisher and reference publication callers retired in candidate; coordinator controls final trust cutover",
+      "manualLimitations": [
+        "No manual assistive-technology certification",
+        "RTL/localization and sustained-use evidence remain open",
+        "R2 administrator immutability not claimed; advanced archive disabled until verified"
+      ]
+    }
   }
 }
