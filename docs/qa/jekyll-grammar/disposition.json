@@ -1,0 +1,3596 @@
+{
+  "schemaVersion": 1,
+  "issue": "https://github.com/k3jph/design-workbench/issues/91",
+  "updatedAt": "2026-11-03T19:59:23.261020+00:00",
+  "scope": "50 paired Jekyll routes; semantic-anatomy dispositions plus separately tracked source-justified CSS/composition changes, not completed conformance",
+  "baselines": {
+    "workbenchDevelop": "8dfb0ffe374cdc07dca370f80122ccd7c49edb50",
+    "priorAuditPr": "https://github.com/k3jph/design-workbench/pull/92",
+    "priorAuditCommit": "9f14abb2c7607522cea4c98c714c80e6a9576dd8",
+    "jekyllDevelop": {
+      "martlet": "ac0a64c6cd5167ccbdf96bb20e46e5d547a49a5d",
+      "krigsvold": "35c7f54aa9418286956f8aa50c2a3dd141006ab2"
+    },
+    "fixtureSha256": "4795e34b2eaea8fa506cca6d7679e93f38c6019cea704834ae736ef2064afd37"
+  },
+  "invariants": [
+    "Exact shared fixture/content/data/routes/behavior; no new backend/package/dependency",
+    "Source/license/provenance and accepted hero/footer work preserved",
+    "Shared native semantics and accessibility are not a failure of independence",
+    "Retain dispositions still need paired visual/state review; no blanket all50 redesign mandate",
+    "Origin sites are authority; grammar and live React/Astro are supporting evidence with experimental/application boundaries",
+    "A retain semantic-anatomy decision does not freeze CSS; source-justified measured layout corrections must be recorded as changes."
+  ],
+  "baselineChecks": [
+    {
+      "path": "_data/examples.json",
+      "byteIdentical": true,
+      "sha256": {
+        "martlet": "4795e34b2eaea8fa506cca6d7679e93f38c6019cea704834ae736ef2064afd37",
+        "krigsvold": "4795e34b2eaea8fa506cca6d7679e93f38c6019cea704834ae736ef2064afd37"
+      }
+    },
+    {
+      "path": "_includes/examples/faq.html",
+      "byteIdentical": true,
+      "sha256": {
+        "martlet": "c9b5e0cfbf2bce8444c591e3a495bafe6b1663429966bd196f32956d37ccb566",
+        "krigsvold": "c9b5e0cfbf2bce8444c591e3a495bafe6b1663429966bd196f32956d37ccb566"
+      }
+    },
+    {
+      "path": "_includes/examples/recipe.html",
+      "byteIdentical": true,
+      "sha256": {
+        "martlet": "c7143653fe3a05b72947eb550d31305c7623d0b258a77ce7e463674992a18759",
+        "krigsvold": "c7143653fe3a05b72947eb550d31305c7623d0b258a77ce7e463674992a18759"
+      }
+    },
+    {
+      "path": "_layouts/example-document.html",
+      "byteIdentical": true,
+      "sha256": {
+        "martlet": "5198db7bb412b301fc6e58aa56968817ab9feffb177c3020a54edc4ea366ea2f",
+        "krigsvold": "5198db7bb412b301fc6e58aa56968817ab9feffb177c3020a54edc4ea366ea2f"
+      }
+    },
+    {
+      "path": "assets/css/examples-family.css",
+      "byteIdentical": false,
+      "sha256": {
+        "martlet": "00a00e79a0cfa9253b3a0ceb3f0d2438b692f53c70332e08a08aef077878843a",
+        "krigsvold": "189a7318406b5762fb8fa085e50db1133eb663c758cca8dbd48a6ba185f20dec"
+      }
+    },
+    {
+      "path": "assets/css/dashboard-family.css",
+      "byteIdentical": false,
+      "sha256": {
+        "martlet": "0e9e979525831029745a80858bdc8e17ec5b40e6171bf1fd8f593153c2e18396",
+        "krigsvold": "c6881d516291fff6ec1c5383b43cfeb5a1f4682559685f250ecfb51a4e4ae609"
+      }
+    }
+  ],
+  "rules": {
+    "M-relationship": {
+      "family": "martlet",
+      "classification": "application-grammar",
+      "source": "docs/languages/martlet/grammar.md#begin-with-relationships",
+      "rule": "Field, related group and task region use progressively stronger separation; do not box every paragraph."
+    },
+    "M-sequence": {
+      "family": "martlet",
+      "classification": "application-grammar",
+      "source": "docs/languages/martlet/grammar.md#give-the-work-a-readable-sequence",
+      "rule": "Orientation, subject, nearby context and next action form a readable progression; compact tables/forms remain valid."
+    },
+    "M-source": {
+      "family": "martlet",
+      "classification": "origin-profile",
+      "source": "docs/languages/martlet/decisions.md",
+      "rule": "Cambo sustained reading, Lato UI, selective Cinzel; bounded source document index distinct from supporting context. Canonical origin blue tokens unchanged."
+    },
+    "M-continuity": {
+      "family": "martlet",
+      "classification": "application-grammar",
+      "source": "docs/languages/martlet/grammar.md#preserve-continuity",
+      "rule": "Preserve place/input on failure and give explicit recovery and focus return."
+    },
+    "K-region": {
+      "family": "krigsvold",
+      "classification": "application-grammar",
+      "source": "docs/languages/krigsvold/grammar.md#assign-each-region-a-job",
+      "rule": "Orientation, scope, work, support and commands have meaningful regions; avoid borders for every field."
+    },
+    "K-alignment": {
+      "family": "krigsvold",
+      "classification": "application-grammar",
+      "source": "docs/languages/krigsvold/grammar.md#make-hierarchy-exact",
+      "rule": "Align comparable labels/values/actions; Roboto UI and Roboto Slab hierarchy; density follows regional purpose."
+    },
+    "K-source": {
+      "family": "krigsvold",
+      "classification": "origin-profile",
+      "source": "docs/languages/krigsvold/decisions.md",
+      "rule": "Bounded source reading, native navy/ice role semantics and source controls remain; neither sidebar nor table is mandatory."
+    },
+    "K-state": {
+      "family": "krigsvold",
+      "classification": "application-grammar",
+      "source": "docs/languages/krigsvold/grammar.md#make-scope-visible",
+      "rule": "Keep collection/object commands distinct and name pending/committed/unavailable state and recovery scope."
+    }
+  },
+  "captureEvidence": [],
+  "rows": [
+    {
+      "order": 1,
+      "id": "home",
+      "route": "/examples/home/",
+      "semanticClass": "landing",
+      "composition": "landing",
+      "baseline": {
+        "files": {
+          "martlet": "examples/home.html",
+          "krigsvold": "examples/home.html"
+        },
+        "layout": "example-landing",
+        "sectionIds": [
+          "welcome",
+          "work"
+        ],
+        "sectionKinds": [
+          "prose",
+          "cards"
+        ],
+        "currentAnatomy": "shared example-landing frame and typed sections: prose, cards",
+        "existingDifferencesToRetain": {
+          "martlet": "bounded document reading; editorial metadata/list relationship; collection before focused record where existing task requires",
+          "krigsvold": "purpose-labelled aligned section regions and scan rows; persistent collection/detail where existing task requires"
+        }
+      },
+      "authenticFamilyRules": {
+        "martlet": [
+          "M-relationship",
+          "M-sequence",
+          "M-source"
+        ],
+        "krigsvold": [
+          "K-region",
+          "K-alignment",
+          "K-source"
+        ]
+      },
+      "disposition": "retain",
+      "rationale": "Two existing sections orient and offer three related routes; existing family landing composition already serves discovery.",
+      "familyJudgment": {
+        "martlet": "Retain bounded introduction and separated related destinations.",
+        "krigsvold": "Retain purpose-labelled landing regions and aligned section edges."
+      },
+      "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
+      "wave": 3,
+      "implementationStatus": "not-started",
+      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "testPlan": [
+        "identical fixture JSON/IDs/section order/actions",
+        "root and /preview links/anchors",
+        "320/768/1440 light+dark; 200% text",
+        "keyboard/focus; noJS; reduced motion; forced colors; print",
+        "representative Chromium/Firefox/WebKit; axe+manual paired visual review"
+      ],
+      "evidence": [],
+      "pullRequests": [],
+      "exceptions": [],
+      "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
+      "compositionRefinements": [],
+      "familyImplementationStatus": {
+        "martlet": "not-started",
+        "krigsvold": "not-started"
+      }
+    },
+    {
+      "order": 2,
+      "id": "about",
+      "route": "/examples/about/",
+      "semanticClass": "organization",
+      "composition": "landing",
+      "baseline": {
+        "files": {
+          "martlet": "examples/about.html",
+          "krigsvold": "examples/about.html"
+        },
+        "layout": "example-landing",
+        "sectionIds": [
+          "purpose",
+          "principles",
+          "people"
+        ],
+        "sectionKinds": [
+          "prose",
+          "cards",
+          "cards"
+        ],
+        "currentAnatomy": "shared example-landing frame and typed sections: prose, cards, cards",
+        "existingDifferencesToRetain": {
+          "martlet": "bounded document reading; editorial metadata/list relationship; collection before focused record where existing task requires",
+          "krigsvold": "purpose-labelled aligned section regions and scan rows; persistent collection/detail where existing task requires"
+        }
+      },
+      "authenticFamilyRules": {
+        "martlet": [
+          "M-relationship",
+          "M-sequence",
+          "M-source"
+        ],
+        "krigsvold": [
+          "K-region",
+          "K-alignment",
+          "K-source"
+        ]
+      },
+      "disposition": "retain",
+      "rationale": "Mission, principles and people already form an intelligible progression; no evidence justifies a new frame.",
+      "familyJudgment": {
+        "martlet": "Retain purpose-to-principles-to-people sequence and readable groups.",
+        "krigsvold": "Retain labelled purpose/principles/people regions without manufacturing a comparison table."
+      },
+      "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
+      "wave": 3,
+      "implementationStatus": "not-started",
+      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "testPlan": [
+        "identical fixture JSON/IDs/section order/actions",
+        "root and /preview links/anchors",
+        "320/768/1440 light+dark; 200% text",
+        "keyboard/focus; noJS; reduced motion; forced colors; print",
+        "representative Chromium/Firefox/WebKit; axe+manual paired visual review"
+      ],
+      "evidence": [],
+      "pullRequests": [],
+      "exceptions": [],
+      "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
+      "compositionRefinements": [],
+      "familyImplementationStatus": {
+        "martlet": "not-started",
+        "krigsvold": "not-started"
+      }
+    },
+    {
+      "order": 3,
+      "id": "article",
+      "route": "/examples/article/",
+      "semanticClass": "article",
+      "composition": "reading",
+      "baseline": {
+        "files": {
+          "martlet": "examples/article.html",
+          "krigsvold": "examples/article.html"
+        },
+        "layout": "example-reading",
+        "sectionIds": [
+          "return",
+          "evidence",
+          "limits"
+        ],
+        "sectionKinds": [
+          "prose",
+          "prose",
+          "prose"
+        ],
+        "currentAnatomy": "shared example-reading frame and typed sections: prose, prose, prose",
+        "existingDifferencesToRetain": {
+          "martlet": "bounded document reading; editorial metadata/list relationship; collection before focused record where existing task requires",
+          "krigsvold": "purpose-labelled aligned section regions and scan rows; persistent collection/detail where existing task requires"
+        }
+      },
+      "authenticFamilyRules": {
+        "martlet": [
+          "M-relationship",
+          "M-sequence",
+          "M-source"
+        ],
+        "krigsvold": [
+          "K-region",
+          "K-alignment",
+          "K-source"
+        ]
+      },
+      "disposition": "retain",
+      "rationale": "Sustained reading benefits from common article semantics; retain source date, author, tags and body order.",
+      "familyJudgment": {
+        "martlet": "Retain Cambo reading measure and distinct supporting context.",
+        "krigsvold": "Retain Slab hierarchy and regional heading rhythm; no forced split pane."
+      },
+      "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
+      "wave": 2,
+      "implementationStatus": "not-started",
+      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "testPlan": [
+        "identical fixture JSON/IDs/section order/actions",
+        "root and /preview links/anchors",
+        "320/768/1440 light+dark; 200% text",
+        "keyboard/focus; noJS; reduced motion; forced colors; print",
+        "representative Chromium/Firefox/WebKit; axe+manual paired visual review"
+      ],
+      "evidence": [],
+      "pullRequests": [],
+      "exceptions": [],
+      "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
+      "compositionRefinements": [],
+      "familyImplementationStatus": {
+        "martlet": "not-started",
+        "krigsvold": "not-started"
+      }
+    },
+    {
+      "order": 4,
+      "id": "archive",
+      "route": "/examples/archive/",
+      "semanticClass": "archive",
+      "composition": "collection",
+      "baseline": {
+        "files": {
+          "martlet": "examples/archive.html",
+          "krigsvold": "examples/archive.html"
+        },
+        "layout": "example-collection",
+        "sectionIds": [
+          "entries"
+        ],
+        "sectionKinds": [
+          "listing"
+        ],
+        "currentAnatomy": "shared example-collection frame and typed sections: listing",
+        "existingDifferencesToRetain": {
+          "martlet": "bounded document reading; editorial metadata/list relationship; collection before focused record where existing task requires",
+          "krigsvold": "purpose-labelled aligned section regions and scan rows; persistent collection/detail where existing task requires"
+        }
+      },
+      "authenticFamilyRules": {
+        "martlet": [
+          "M-relationship",
+          "M-sequence",
+          "M-source"
+        ],
+        "krigsvold": [
+          "K-region",
+          "K-alignment",
+          "K-source"
+        ]
+      },
+      "disposition": "retain",
+      "rationale": "Existing family collection metadata columns differ meaningfully; preserve linked records and date context.",
+      "familyJudgment": {
+        "martlet": "Retain separate contextual metadata beside editorial record excerpts.",
+        "krigsvold": "Retain aligned scan rows and stable metadata edges."
+      },
+      "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
+      "wave": 3,
+      "implementationStatus": "not-started",
+      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "testPlan": [
+        "identical fixture JSON/IDs/section order/actions",
+        "root and /preview links/anchors",
+        "320/768/1440 light+dark; 200% text",
+        "keyboard/focus; noJS; reduced motion; forced colors; print",
+        "representative Chromium/Firefox/WebKit; axe+manual paired visual review"
+      ],
+      "evidence": [],
+      "pullRequests": [],
+      "exceptions": [],
+      "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
+      "compositionRefinements": [],
+      "familyImplementationStatus": {
+        "martlet": "not-started",
+        "krigsvold": "not-started"
+      }
+    },
+    {
+      "order": 5,
+      "id": "category",
+      "route": "/examples/category/",
+      "semanticClass": "taxonomy",
+      "composition": "collection",
+      "baseline": {
+        "files": {
+          "martlet": "examples/category.html",
+          "krigsvold": "examples/category.html"
+        },
+        "layout": "example-collection",
+        "sectionIds": [
+          "entries"
+        ],
+        "sectionKinds": [
+          "listing"
+        ],
+        "currentAnatomy": "shared example-collection frame and typed sections: listing",
+        "existingDifferencesToRetain": {
+          "martlet": "bounded document reading; editorial metadata/list relationship; collection before focused record where existing task requires",
+          "krigsvold": "purpose-labelled aligned section regions and scan rows; persistent collection/detail where existing task requires"
+        }
+      },
+      "authenticFamilyRules": {
+        "martlet": [
+          "M-relationship",
+          "M-sequence",
+          "M-source"
+        ],
+        "krigsvold": [
+          "K-region",
+          "K-alignment",
+          "K-source"
+        ]
+      },
+      "disposition": "retain",
+      "rationale": "A scoped collection is already represented by its heading and records; avoid an invented second hierarchy.",
+      "familyJudgment": {
+        "martlet": "Retain related-record sequence within the named topic.",
+        "krigsvold": "Retain scope heading and comparable record rows."
+      },
+      "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
+      "wave": 3,
+      "implementationStatus": "not-started",
+      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "testPlan": [
+        "identical fixture JSON/IDs/section order/actions",
+        "root and /preview links/anchors",
+        "320/768/1440 light+dark; 200% text",
+        "keyboard/focus; noJS; reduced motion; forced colors; print",
+        "representative Chromium/Firefox/WebKit; axe+manual paired visual review"
+      ],
+      "evidence": [],
+      "pullRequests": [],
+      "exceptions": [],
+      "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
+      "compositionRefinements": [],
+      "familyImplementationStatus": {
+        "martlet": "not-started",
+        "krigsvold": "not-started"
+      }
+    },
+    {
+      "order": 6,
+      "id": "categories",
+      "route": "/examples/categories/",
+      "semanticClass": "taxonomy-index",
+      "composition": "collection",
+      "baseline": {
+        "files": {
+          "martlet": "examples/categories.html",
+          "krigsvold": "examples/categories.html"
+        },
+        "layout": "example-collection",
+        "sectionIds": [
+          "topics"
+        ],
+        "sectionKinds": [
+          "cards"
+        ],
+        "currentAnatomy": "shared example-collection frame and typed sections: cards",
+        "existingDifferencesToRetain": {
+          "martlet": "bounded document reading; editorial metadata/list relationship; collection before focused record where existing task requires",
+          "krigsvold": "purpose-labelled aligned section regions and scan rows; persistent collection/detail where existing task requires"
+        }
+      },
+      "authenticFamilyRules": {
+        "martlet": [
+          "M-relationship",
+          "M-sequence",
+          "M-source"
+        ],
+        "krigsvold": [
+          "K-region",
+          "K-alignment",
+          "K-source"
+        ]
+      },
+      "disposition": "retain",
+      "rationale": "A short topic index does not need a dense register or unrelated prose treatment.",
+      "familyJudgment": {
+        "martlet": "Retain browsable topic groups and destinations.",
+        "krigsvold": "Retain clearly bounded topic choices with equivalent destinations."
+      },
+      "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
+      "wave": 3,
+      "implementationStatus": "not-started",
+      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "testPlan": [
+        "identical fixture JSON/IDs/section order/actions",
+        "root and /preview links/anchors",
+        "320/768/1440 light+dark; 200% text",
+        "keyboard/focus; noJS; reduced motion; forced colors; print",
+        "representative Chromium/Firefox/WebKit; axe+manual paired visual review"
+      ],
+      "evidence": [],
+      "pullRequests": [],
+      "exceptions": [],
+      "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
+      "compositionRefinements": [],
+      "familyImplementationStatus": {
+        "martlet": "not-started",
+        "krigsvold": "not-started"
+      }
+    },
+    {
+      "order": 7,
+      "id": "person",
+      "route": "/examples/person/",
+      "semanticClass": "person",
+      "composition": "detail",
+      "baseline": {
+        "files": {
+          "martlet": "examples/person.html",
+          "krigsvold": "examples/person.html"
+        },
+        "layout": "example-detail",
+        "sectionIds": [
+          "biography",
+          "details",
+          "work"
+        ],
+        "sectionKinds": [
+          "prose",
+          "facts",
+          "listing"
+        ],
+        "currentAnatomy": "shared example-detail frame and typed sections: prose, facts, listing",
+        "existingDifferencesToRetain": {
+          "martlet": "bounded document reading; editorial metadata/list relationship; collection before focused record where existing task requires",
+          "krigsvold": "purpose-labelled aligned section regions and scan rows; persistent collection/detail where existing task requires"
+        }
+      },
+      "authenticFamilyRules": {
+        "martlet": [
+          "M-relationship",
+          "M-sequence",
+          "M-source"
+        ],
+        "krigsvold": [
+          "K-region",
+          "K-alignment",
+          "K-source"
+        ]
+      },
+      "disposition": "retain",
+      "rationale": "Biography, facts and work already separate personal narrative from factual support.",
+      "familyJudgment": {
+        "martlet": "Retain biography-first progression and supporting facts near related work.",
+        "krigsvold": "Retain purpose-labelled biography/facts/work regions and aligned facts."
+      },
+      "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
+      "wave": 3,
+      "implementationStatus": "not-started",
+      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "testPlan": [
+        "identical fixture JSON/IDs/section order/actions",
+        "root and /preview links/anchors",
+        "320/768/1440 light+dark; 200% text",
+        "keyboard/focus; noJS; reduced motion; forced colors; print",
+        "representative Chromium/Firefox/WebKit; axe+manual paired visual review"
+      ],
+      "evidence": [],
+      "pullRequests": [],
+      "exceptions": [],
+      "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
+      "compositionRefinements": [],
+      "familyImplementationStatus": {
+        "martlet": "not-started",
+        "krigsvold": "not-started"
+      }
+    },
+    {
+      "order": 8,
+      "id": "projects",
+      "route": "/examples/projects/",
+      "semanticClass": "project-index",
+      "composition": "collection",
+      "baseline": {
+        "files": {
+          "martlet": "examples/projects.html",
+          "krigsvold": "examples/projects.html"
+        },
+        "layout": "example-collection",
+        "sectionIds": [
+          "projects"
+        ],
+        "sectionKinds": [
+          "listing"
+        ],
+        "currentAnatomy": "shared example-collection frame and typed sections: listing",
+        "existingDifferencesToRetain": {
+          "martlet": "bounded document reading; editorial metadata/list relationship; collection before focused record where existing task requires",
+          "krigsvold": "purpose-labelled aligned section regions and scan rows; persistent collection/detail where existing task requires"
+        }
+      },
+      "authenticFamilyRules": {
+        "martlet": [
+          "M-relationship",
+          "M-sequence",
+          "M-source"
+        ],
+        "krigsvold": [
+          "K-region",
+          "K-alignment",
+          "K-source"
+        ]
+      },
+      "disposition": "retain",
+      "rationale": "Existing project collection layouts are already distinct; task is finding a project, not editing a register.",
+      "familyJudgment": {
+        "martlet": "Retain annotated project entries and contextual metadata.",
+        "krigsvold": "Retain scannable project rows with aligned metadata."
+      },
+      "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
+      "wave": 3,
+      "implementationStatus": "not-started",
+      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "testPlan": [
+        "identical fixture JSON/IDs/section order/actions",
+        "root and /preview links/anchors",
+        "320/768/1440 light+dark; 200% text",
+        "keyboard/focus; noJS; reduced motion; forced colors; print",
+        "representative Chromium/Firefox/WebKit; axe+manual paired visual review"
+      ],
+      "evidence": [],
+      "pullRequests": [],
+      "exceptions": [],
+      "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
+      "compositionRefinements": [],
+      "familyImplementationStatus": {
+        "martlet": "not-started",
+        "krigsvold": "not-started"
+      }
+    },
+    {
+      "order": 9,
+      "id": "case-study",
+      "route": "/examples/case-study/",
+      "semanticClass": "case-study",
+      "composition": "dossier",
+      "baseline": {
+        "files": {
+          "martlet": "examples/case-study.html",
+          "krigsvold": "examples/case-study.html"
+        },
+        "layout": "example-dossier",
+        "sectionIds": [
+          "context",
+          "method",
+          "observations",
+          "limits"
+        ],
+        "sectionKinds": [
+          "prose",
+          "prose",
+          "facts",
+          "prose"
+        ],
+        "currentAnatomy": "shared example-dossier frame and typed sections: prose, prose, facts, prose",
+        "existingDifferencesToRetain": {
+          "martlet": "bounded document reading; editorial metadata/list relationship; collection before focused record where existing task requires",
+          "krigsvold": "purpose-labelled aligned section regions and scan rows; persistent collection/detail where existing task requires"
+        }
+      },
+      "authenticFamilyRules": {
+        "martlet": [
+          "M-relationship",
+          "M-sequence",
+          "M-source"
+        ],
+        "krigsvold": [
+          "K-region",
+          "K-alignment",
+          "K-source"
+        ]
+      },
+      "disposition": "retain",
+      "rationale": "Context, method, observations and limitations are already a meaningful evidential sequence.",
+      "familyJudgment": {
+        "martlet": "Retain dossier reading flow with inset supporting observations.",
+        "krigsvold": "Retain labelled evidence regions and comparable observation facts."
+      },
+      "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
+      "wave": 3,
+      "implementationStatus": "not-started",
+      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "testPlan": [
+        "identical fixture JSON/IDs/section order/actions",
+        "root and /preview links/anchors",
+        "320/768/1440 light+dark; 200% text",
+        "keyboard/focus; noJS; reduced motion; forced colors; print",
+        "representative Chromium/Firefox/WebKit; axe+manual paired visual review"
+      ],
+      "evidence": [],
+      "pullRequests": [],
+      "exceptions": [],
+      "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
+      "compositionRefinements": [],
+      "familyImplementationStatus": {
+        "martlet": "not-started",
+        "krigsvold": "not-started"
+      }
+    },
+    {
+      "order": 10,
+      "id": "documentation",
+      "route": "/examples/documentation/",
+      "semanticClass": "documentation-index",
+      "composition": "collection",
+      "baseline": {
+        "files": {
+          "martlet": "examples/documentation.html",
+          "krigsvold": "examples/documentation.html"
+        },
+        "layout": "example-collection",
+        "sectionIds": [
+          "start"
+        ],
+        "sectionKinds": [
+          "cards"
+        ],
+        "currentAnatomy": "shared example-collection frame and typed sections: cards",
+        "existingDifferencesToRetain": {
+          "martlet": "bounded document reading; editorial metadata/list relationship; collection before focused record where existing task requires",
+          "krigsvold": "purpose-labelled aligned section regions and scan rows; persistent collection/detail where existing task requires"
+        }
+      },
+      "authenticFamilyRules": {
+        "martlet": [
+          "M-relationship",
+          "M-sequence",
+          "M-source"
+        ],
+        "krigsvold": [
+          "K-region",
+          "K-alignment",
+          "K-source"
+        ]
+      },
+      "disposition": "change",
+      "rationale": "The documentation start cards should preserve navigational grouping while making the getting-started sequence explicit.",
+      "familyJudgment": {
+        "martlet": "Refine reading-route hierarchy and nearby next-step context without inventing new links.",
+        "krigsvold": "Refine labelled documentation scope and aligned navigation groups without a compulsory sidebar."
+      },
+      "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
+      "wave": 2,
+      "implementationStatus": "not-started",
+      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "testPlan": [
+        "identical fixture JSON/IDs/section order/actions",
+        "root and /preview links/anchors",
+        "320/768/1440 light+dark; 200% text",
+        "keyboard/focus; noJS; reduced motion; forced colors; print",
+        "representative Chromium/Firefox/WebKit; axe+manual paired visual review"
+      ],
+      "evidence": [],
+      "pullRequests": [],
+      "exceptions": [],
+      "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
+      "compositionRefinements": [],
+      "familyImplementationStatus": {
+        "martlet": "not-started",
+        "krigsvold": "not-started"
+      }
+    },
+    {
+      "order": 11,
+      "id": "guide",
+      "route": "/examples/guide/",
+      "semanticClass": "guide",
+      "composition": "document",
+      "baseline": {
+        "files": {
+          "martlet": "examples/guide.html",
+          "krigsvold": "examples/guide.html"
+        },
+        "layout": "example-document",
+        "sectionIds": [
+          "before",
+          "arrival",
+          "after"
+        ],
+        "sectionKinds": [
+          "prose",
+          "prose",
+          "prose"
+        ],
+        "currentAnatomy": "shared example-document frame and typed sections: prose, prose, prose",
+        "existingDifferencesToRetain": {
+          "martlet": "bounded document reading; editorial metadata/list relationship; collection before focused record where existing task requires",
+          "krigsvold": "purpose-labelled aligned section regions and scan rows; persistent collection/detail where existing task requires"
+        }
+      },
+      "authenticFamilyRules": {
+        "martlet": [
+          "M-relationship",
+          "M-sequence",
+          "M-source"
+        ],
+        "krigsvold": [
+          "K-region",
+          "K-alignment",
+          "K-source"
+        ]
+      },
+      "disposition": "change",
+      "rationale": "Before/arrival/after are an authored process; distinguish sequence and supporting navigation without adding artificial step numbers.",
+      "familyJudgment": {
+        "martlet": "Readable process progression with contextual index and distinct assistance.",
+        "krigsvold": "Stable phase regions with aligned labels and compact in-region instructions."
+      },
+      "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
+      "wave": 2,
+      "implementationStatus": "not-started",
+      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "testPlan": [
+        "identical fixture JSON/IDs/section order/actions",
+        "root and /preview links/anchors",
+        "320/768/1440 light+dark; 200% text",
+        "keyboard/focus; noJS; reduced motion; forced colors; print",
+        "representative Chromium/Firefox/WebKit; axe+manual paired visual review"
+      ],
+      "evidence": [],
+      "pullRequests": [],
+      "exceptions": [],
+      "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
+      "compositionRefinements": [
+        {
+          "id": "document-index-body-measure",
+          "status": "rendered-measure-review-required",
+          "baselineSourceObservation": "Shared .example-reading max-width46rem constrains entire .example-document, including family14rem/13rem index and gap; source authority separates navigation from readable body. Exact computed body widths pending route screenshots/DOM measurement.",
+          "requiredJudgment": "Retain semantic sections/anchors where justified while correcting proven cramped total-wrapper/body geometry. Record CSS refinement as an actual change even when semantic anatomy is retained.",
+          "familySourceRules": [
+            "M-source",
+            "M-sequence",
+            "K-source",
+            "K-region"
+          ]
+        }
+      ],
+      "familyImplementationStatus": {
+        "martlet": "not-started",
+        "krigsvold": "not-started"
+      }
+    },
+    {
+      "order": 12,
+      "id": "reference",
+      "route": "/examples/reference/",
+      "semanticClass": "reference",
+      "composition": "document",
+      "baseline": {
+        "files": {
+          "martlet": "examples/reference.html",
+          "krigsvold": "examples/reference.html"
+        },
+        "layout": "example-document",
+        "sectionIds": [
+          "scope",
+          "fields",
+          "example",
+          "corrections"
+        ],
+        "sectionKinds": [
+          "prose",
+          "table",
+          "prose",
+          "prose"
+        ],
+        "currentAnatomy": "shared example-document frame and typed sections: prose, table, prose, prose",
+        "existingDifferencesToRetain": {
+          "martlet": "bounded document reading; editorial metadata/list relationship; collection before focused record where existing task requires",
+          "krigsvold": "purpose-labelled aligned section regions and scan rows; persistent collection/detail where existing task requires"
+        }
+      },
+      "authenticFamilyRules": {
+        "martlet": [
+          "M-relationship",
+          "M-sequence",
+          "M-source"
+        ],
+        "krigsvold": [
+          "K-region",
+          "K-alignment",
+          "K-source"
+        ]
+      },
+      "disposition": "change",
+      "rationale": "Scope, field table, example and corrections need a stronger distinction between navigation and supporting reference content.",
+      "familyJudgment": {
+        "martlet": "Keep bounded explanation and an independent field reference near its example.",
+        "krigsvold": "Align field comparison and separate scope/example/correction regions."
+      },
+      "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
+      "wave": 2,
+      "implementationStatus": "not-started",
+      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "testPlan": [
+        "identical fixture JSON/IDs/section order/actions",
+        "root and /preview links/anchors",
+        "320/768/1440 light+dark; 200% text",
+        "keyboard/focus; noJS; reduced motion; forced colors; print",
+        "representative Chromium/Firefox/WebKit; axe+manual paired visual review",
+        "table captions/headers; independent overflow; chart/source-table exact data and unique region names"
+      ],
+      "evidence": [],
+      "pullRequests": [],
+      "exceptions": [],
+      "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
+      "compositionRefinements": [
+        {
+          "id": "document-index-body-measure",
+          "status": "rendered-measure-review-required",
+          "baselineSourceObservation": "Shared .example-reading max-width46rem constrains entire .example-document, including family14rem/13rem index and gap; source authority separates navigation from readable body. Exact computed body widths pending route screenshots/DOM measurement.",
+          "requiredJudgment": "Retain semantic sections/anchors where justified while correcting proven cramped total-wrapper/body geometry. Record CSS refinement as an actual change even when semantic anatomy is retained.",
+          "familySourceRules": [
+            "M-source",
+            "M-sequence",
+            "K-source",
+            "K-region"
+          ]
+        }
+      ],
+      "familyImplementationStatus": {
+        "martlet": "not-started",
+        "krigsvold": "not-started"
+      }
+    },
+    {
+      "order": 13,
+      "id": "contact",
+      "route": "/examples/contact/",
+      "semanticClass": "contact",
+      "composition": "detail",
+      "baseline": {
+        "files": {
+          "martlet": "examples/contact.html",
+          "krigsvold": "examples/contact.html"
+        },
+        "layout": "example-detail",
+        "sectionIds": [
+          "routes",
+          "message"
+        ],
+        "sectionKinds": [
+          "facts",
+          "form"
+        ],
+        "currentAnatomy": "shared example-detail frame and typed sections: facts, form",
+        "existingDifferencesToRetain": {
+          "martlet": "bounded document reading; editorial metadata/list relationship; collection before focused record where existing task requires",
+          "krigsvold": "purpose-labelled aligned section regions and scan rows; persistent collection/detail where existing task requires"
+        }
+      },
+      "authenticFamilyRules": {
+        "martlet": [
+          "M-relationship",
+          "M-sequence",
+          "M-source"
+        ],
+        "krigsvold": [
+          "K-region",
+          "K-alignment",
+          "K-source"
+        ]
+      },
+      "disposition": "retain",
+      "rationale": "Contact routes and a local form are already separate tasks; preserve native validation rather than gratuitous structural divergence.",
+      "familyJudgment": {
+        "martlet": "Retain help beside the field and explicit committing action.",
+        "krigsvold": "Retain named contact scope and form region with precise local-only status."
+      },
+      "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
+      "wave": 3,
+      "implementationStatus": "not-started",
+      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "testPlan": [
+        "identical fixture JSON/IDs/section order/actions",
+        "root and /preview links/anchors",
+        "320/768/1440 light+dark; 200% text",
+        "keyboard/focus; noJS; reduced motion; forced colors; print",
+        "representative Chromium/Firefox/WebKit; axe+manual paired visual review",
+        "native required/format validation; whitespace rejection; retain text/reset/status; no submission/auth claim"
+      ],
+      "evidence": [],
+      "pullRequests": [],
+      "exceptions": [],
+      "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
+      "compositionRefinements": [],
+      "familyImplementationStatus": {
+        "martlet": "not-started",
+        "krigsvold": "not-started"
+      }
+    },
+    {
+      "order": 14,
+      "id": "faq",
+      "route": "/examples/faq/",
+      "semanticClass": "faq",
+      "composition": "document",
+      "baseline": {
+        "files": {
+          "martlet": "examples/faq.html",
+          "krigsvold": "examples/faq.html"
+        },
+        "layout": "example-document",
+        "sectionIds": [
+          "questions"
+        ],
+        "sectionKinds": [
+          "faq"
+        ],
+        "currentAnatomy": "shared example-document frame and typed sections: faq",
+        "existingDifferencesToRetain": {
+          "martlet": "bounded document reading; editorial metadata/list relationship; collection before focused record where existing task requires",
+          "krigsvold": "purpose-labelled aligned section regions and scan rows; persistent collection/detail where existing task requires"
+        }
+      },
+      "authenticFamilyRules": {
+        "martlet": [
+          "M-relationship",
+          "M-sequence",
+          "M-source"
+        ],
+        "krigsvold": [
+          "K-region",
+          "K-alignment",
+          "K-source"
+        ]
+      },
+      "disposition": "change",
+      "rationale": "Four native disclosures currently share identical anatomy; group two topics without changing any question, answer or order.",
+      "familyJudgment": {
+        "martlet": "Editorial question groups with nearby answers in native disclosure flow.",
+        "krigsvold": "Labelled question scopes with aligned topic region and inspectable native disclosures."
+      },
+      "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
+      "wave": 1,
+      "implementationStatus": "in-progress-awaiting-pinned-PR-preview-review",
+      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "testPlan": [
+        "identical fixture JSON/IDs/section order/actions",
+        "root and /preview links/anchors",
+        "320/768/1440 light+dark; 200% text",
+        "keyboard/focus; noJS; reduced motion; forced colors; print",
+        "representative Chromium/Firefox/WebKit; axe+manual paired visual review",
+        "native details Enter/Space/open/close; exact questions+answers; noJS disclosures"
+      ],
+      "evidence": [],
+      "pullRequests": [],
+      "exceptions": [],
+      "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
+      "compositionRefinements": [
+        {
+          "id": "document-index-body-measure",
+          "status": "rendered-measure-review-required",
+          "baselineSourceObservation": "Shared .example-reading max-width46rem constrains entire .example-document, including family14rem/13rem index and gap; source authority separates navigation from readable body. Exact computed body widths pending route screenshots/DOM measurement.",
+          "requiredJudgment": "Retain semantic sections/anchors where justified while correcting proven cramped total-wrapper/body geometry. Record CSS refinement as an actual change even when semantic anatomy is retained.",
+          "familySourceRules": [
+            "M-source",
+            "M-sequence",
+            "K-source",
+            "K-region"
+          ]
+        }
+      ],
+      "familyImplementationStatus": {
+        "martlet": "implemented-locally; unpinned/preview acceptance pending",
+        "krigsvold": "implementation in progress; exact status pending owner update"
+      }
+    },
+    {
+      "order": 15,
+      "id": "privacy",
+      "route": "/examples/privacy/",
+      "semanticClass": "policy",
+      "composition": "document",
+      "baseline": {
+        "files": {
+          "martlet": "examples/privacy.html",
+          "krigsvold": "examples/privacy.html"
+        },
+        "layout": "example-document",
+        "sectionIds": [
+          "scope",
+          "demo",
+          "changes"
+        ],
+        "sectionKinds": [
+          "prose",
+          "prose",
+          "prose"
+        ],
+        "currentAnatomy": "shared example-document frame and typed sections: prose, prose, prose",
+        "existingDifferencesToRetain": {
+          "martlet": "bounded document reading; editorial metadata/list relationship; collection before focused record where existing task requires",
+          "krigsvold": "purpose-labelled aligned section regions and scan rows; persistent collection/detail where existing task requires"
+        }
+      },
+      "authenticFamilyRules": {
+        "martlet": [
+          "M-relationship",
+          "M-sequence",
+          "M-source"
+        ],
+        "krigsvold": [
+          "K-region",
+          "K-alignment",
+          "K-source"
+        ]
+      },
+      "disposition": "retain",
+      "rationale": "Policy statements need stable headings, navigation and reading order; a second visual grammar is not grounds for rewriting legal meaning.",
+      "familyJudgment": {
+        "martlet": "Retain restrained bounded policy reading.",
+        "krigsvold": "Retain clear policy scope and heading boundaries without forcing a table."
+      },
+      "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
+      "wave": 2,
+      "implementationStatus": "not-started",
+      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "testPlan": [
+        "identical fixture JSON/IDs/section order/actions",
+        "root and /preview links/anchors",
+        "320/768/1440 light+dark; 200% text",
+        "keyboard/focus; noJS; reduced motion; forced colors; print",
+        "representative Chromium/Firefox/WebKit; axe+manual paired visual review"
+      ],
+      "evidence": [],
+      "pullRequests": [],
+      "exceptions": [],
+      "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
+      "compositionRefinements": [
+        {
+          "id": "document-index-body-measure",
+          "status": "rendered-measure-review-required",
+          "baselineSourceObservation": "Shared .example-reading max-width46rem constrains entire .example-document, including family14rem/13rem index and gap; source authority separates navigation from readable body. Exact computed body widths pending route screenshots/DOM measurement.",
+          "requiredJudgment": "Retain semantic sections/anchors where justified while correcting proven cramped total-wrapper/body geometry. Record CSS refinement as an actual change even when semantic anatomy is retained.",
+          "familySourceRules": [
+            "M-source",
+            "M-sequence",
+            "K-source",
+            "K-region"
+          ]
+        }
+      ],
+      "familyImplementationStatus": {
+        "martlet": "not-started",
+        "krigsvold": "not-started"
+      }
+    },
+    {
+      "order": 16,
+      "id": "terms",
+      "route": "/examples/terms/",
+      "semanticClass": "policy",
+      "composition": "document",
+      "baseline": {
+        "files": {
+          "martlet": "examples/terms.html",
+          "krigsvold": "examples/terms.html"
+        },
+        "layout": "example-document",
+        "sectionIds": [
+          "scope",
+          "demo",
+          "changes"
+        ],
+        "sectionKinds": [
+          "prose",
+          "prose",
+          "prose"
+        ],
+        "currentAnatomy": "shared example-document frame and typed sections: prose, prose, prose",
+        "existingDifferencesToRetain": {
+          "martlet": "bounded document reading; editorial metadata/list relationship; collection before focused record where existing task requires",
+          "krigsvold": "purpose-labelled aligned section regions and scan rows; persistent collection/detail where existing task requires"
+        }
+      },
+      "authenticFamilyRules": {
+        "martlet": [
+          "M-relationship",
+          "M-sequence",
+          "M-source"
+        ],
+        "krigsvold": [
+          "K-region",
+          "K-alignment",
+          "K-source"
+        ]
+      },
+      "disposition": "retain",
+      "rationale": "The same three policy sections are intentionally conventional; preserve exact content and restrained access.",
+      "familyJudgment": {
+        "martlet": "Retain readable policy progression and contextual index.",
+        "krigsvold": "Retain precise labelled policy regions and normal text flow."
+      },
+      "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
+      "wave": 2,
+      "implementationStatus": "not-started",
+      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "testPlan": [
+        "identical fixture JSON/IDs/section order/actions",
+        "root and /preview links/anchors",
+        "320/768/1440 light+dark; 200% text",
+        "keyboard/focus; noJS; reduced motion; forced colors; print",
+        "representative Chromium/Firefox/WebKit; axe+manual paired visual review"
+      ],
+      "evidence": [],
+      "pullRequests": [],
+      "exceptions": [],
+      "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
+      "compositionRefinements": [
+        {
+          "id": "document-index-body-measure",
+          "status": "rendered-measure-review-required",
+          "baselineSourceObservation": "Shared .example-reading max-width46rem constrains entire .example-document, including family14rem/13rem index and gap; source authority separates navigation from readable body. Exact computed body widths pending route screenshots/DOM measurement.",
+          "requiredJudgment": "Retain semantic sections/anchors where justified while correcting proven cramped total-wrapper/body geometry. Record CSS refinement as an actual change even when semantic anatomy is retained.",
+          "familySourceRules": [
+            "M-source",
+            "M-sequence",
+            "K-source",
+            "K-region"
+          ]
+        }
+      ],
+      "familyImplementationStatus": {
+        "martlet": "not-started",
+        "krigsvold": "not-started"
+      }
+    },
+    {
+      "order": 17,
+      "id": "service",
+      "route": "/examples/service/",
+      "semanticClass": "service",
+      "composition": "landing",
+      "baseline": {
+        "files": {
+          "martlet": "examples/service.html",
+          "krigsvold": "examples/service.html"
+        },
+        "layout": "example-landing",
+        "sectionIds": [
+          "offer",
+          "process",
+          "next"
+        ],
+        "sectionKinds": [
+          "prose",
+          "cards",
+          "prose"
+        ],
+        "currentAnatomy": "shared example-landing frame and typed sections: prose, cards, prose",
+        "existingDifferencesToRetain": {
+          "martlet": "bounded document reading; editorial metadata/list relationship; collection before focused record where existing task requires",
+          "krigsvold": "purpose-labelled aligned section regions and scan rows; persistent collection/detail where existing task requires"
+        }
+      },
+      "authenticFamilyRules": {
+        "martlet": [
+          "M-relationship",
+          "M-sequence",
+          "M-source"
+        ],
+        "krigsvold": [
+          "K-region",
+          "K-alignment",
+          "K-source"
+        ]
+      },
+      "disposition": "retain",
+      "rationale": "Offer, process and next action already define a task progression; keep existing family landing differences.",
+      "familyJudgment": {
+        "martlet": "Retain offer-to-process-to-next-step grouping.",
+        "krigsvold": "Retain labelled service/process/action regions."
+      },
+      "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
+      "wave": 3,
+      "implementationStatus": "not-started",
+      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "testPlan": [
+        "identical fixture JSON/IDs/section order/actions",
+        "root and /preview links/anchors",
+        "320/768/1440 light+dark; 200% text",
+        "keyboard/focus; noJS; reduced motion; forced colors; print",
+        "representative Chromium/Firefox/WebKit; axe+manual paired visual review"
+      ],
+      "evidence": [],
+      "pullRequests": [],
+      "exceptions": [],
+      "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
+      "compositionRefinements": [],
+      "familyImplementationStatus": {
+        "martlet": "not-started",
+        "krigsvold": "not-started"
+      }
+    },
+    {
+      "order": 18,
+      "id": "place",
+      "route": "/examples/place/",
+      "semanticClass": "place",
+      "composition": "detail",
+      "baseline": {
+        "files": {
+          "martlet": "examples/place.html",
+          "krigsvold": "examples/place.html"
+        },
+        "layout": "example-detail",
+        "sectionIds": [
+          "setting",
+          "facilities",
+          "booking"
+        ],
+        "sectionKinds": [
+          "figure",
+          "facts",
+          "prose"
+        ],
+        "currentAnatomy": "shared example-detail frame and typed sections: figure, facts, prose",
+        "existingDifferencesToRetain": {
+          "martlet": "bounded document reading; editorial metadata/list relationship; collection before focused record where existing task requires",
+          "krigsvold": "purpose-labelled aligned section regions and scan rows; persistent collection/detail where existing task requires"
+        }
+      },
+      "authenticFamilyRules": {
+        "martlet": [
+          "M-relationship",
+          "M-sequence",
+          "M-source"
+        ],
+        "krigsvold": [
+          "K-region",
+          "K-alignment",
+          "K-source"
+        ]
+      },
+      "disposition": "retain",
+      "rationale": "Image, facilities and booking guidance already have distinct jobs; no extra cinematic treatment is warranted.",
+      "familyJudgment": {
+        "martlet": "Retain figure context and nearby supporting facility facts.",
+        "krigsvold": "Retain image/facility/booking scope with aligned fact labels."
+      },
+      "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
+      "wave": 3,
+      "implementationStatus": "not-started",
+      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "testPlan": [
+        "identical fixture JSON/IDs/section order/actions",
+        "root and /preview links/anchors",
+        "320/768/1440 light+dark; 200% text",
+        "keyboard/focus; noJS; reduced motion; forced colors; print",
+        "representative Chromium/Firefox/WebKit; axe+manual paired visual review"
+      ],
+      "evidence": [],
+      "pullRequests": [],
+      "exceptions": [],
+      "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
+      "compositionRefinements": [],
+      "familyImplementationStatus": {
+        "martlet": "not-started",
+        "krigsvold": "not-started"
+      }
+    },
+    {
+      "order": 19,
+      "id": "pricing",
+      "route": "/examples/pricing/",
+      "semanticClass": "comparison",
+      "composition": "landing",
+      "baseline": {
+        "files": {
+          "martlet": "examples/pricing.html",
+          "krigsvold": "examples/pricing.html"
+        },
+        "layout": "example-landing",
+        "sectionIds": [
+          "plans",
+          "questions"
+        ],
+        "sectionKinds": [
+          "plans",
+          "faq"
+        ],
+        "currentAnatomy": "shared example-landing frame and typed sections: plans, faq",
+        "existingDifferencesToRetain": {
+          "martlet": "bounded document reading; editorial metadata/list relationship; collection before focused record where existing task requires",
+          "krigsvold": "purpose-labelled aligned section regions and scan rows; persistent collection/detail where existing task requires"
+        }
+      },
+      "authenticFamilyRules": {
+        "martlet": [
+          "M-relationship",
+          "M-sequence",
+          "M-source"
+        ],
+        "krigsvold": [
+          "K-region",
+          "K-alignment",
+          "K-source"
+        ]
+      },
+      "disposition": "retain",
+      "rationale": "Plan comparison legitimately benefits from the same comparison semantics in both families; pricing is not grounds for opposing anatomy.",
+      "familyJudgment": {
+        "martlet": "Retain comparable plans with explanatory disclosure support.",
+        "krigsvold": "Retain comparable plan fields and explicit conditions; no extra metadata invented."
+      },
+      "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
+      "wave": 3,
+      "implementationStatus": "not-started",
+      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "testPlan": [
+        "identical fixture JSON/IDs/section order/actions",
+        "root and /preview links/anchors",
+        "320/768/1440 light+dark; 200% text",
+        "keyboard/focus; noJS; reduced motion; forced colors; print",
+        "representative Chromium/Firefox/WebKit; axe+manual paired visual review",
+        "native details Enter/Space/open/close; exact questions+answers; noJS disclosures"
+      ],
+      "evidence": [],
+      "pullRequests": [],
+      "exceptions": [],
+      "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
+      "compositionRefinements": [],
+      "familyImplementationStatus": {
+        "martlet": "not-started",
+        "krigsvold": "not-started"
+      }
+    },
+    {
+      "order": 20,
+      "id": "careers",
+      "route": "/examples/careers/",
+      "semanticClass": "opportunity-index",
+      "composition": "collection",
+      "baseline": {
+        "files": {
+          "martlet": "examples/careers.html",
+          "krigsvold": "examples/careers.html"
+        },
+        "layout": "example-collection",
+        "sectionIds": [
+          "roles"
+        ],
+        "sectionKinds": [
+          "listing"
+        ],
+        "currentAnatomy": "shared example-collection frame and typed sections: listing",
+        "existingDifferencesToRetain": {
+          "martlet": "bounded document reading; editorial metadata/list relationship; collection before focused record where existing task requires",
+          "krigsvold": "purpose-labelled aligned section regions and scan rows; persistent collection/detail where existing task requires"
+        }
+      },
+      "authenticFamilyRules": {
+        "martlet": [
+          "M-relationship",
+          "M-sequence",
+          "M-source"
+        ],
+        "krigsvold": [
+          "K-region",
+          "K-alignment",
+          "K-source"
+        ]
+      },
+      "disposition": "retain",
+      "rationale": "A small opportunity list already supports finding an opening; retain existing family collection organization.",
+      "familyJudgment": {
+        "martlet": "Retain readable opportunity annotations.",
+        "krigsvold": "Retain aligned opportunity facts and actionable destinations."
+      },
+      "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
+      "wave": 3,
+      "implementationStatus": "not-started",
+      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "testPlan": [
+        "identical fixture JSON/IDs/section order/actions",
+        "root and /preview links/anchors",
+        "320/768/1440 light+dark; 200% text",
+        "keyboard/focus; noJS; reduced motion; forced colors; print",
+        "representative Chromium/Firefox/WebKit; axe+manual paired visual review"
+      ],
+      "evidence": [],
+      "pullRequests": [],
+      "exceptions": [],
+      "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
+      "compositionRefinements": [],
+      "familyImplementationStatus": {
+        "martlet": "not-started",
+        "krigsvold": "not-started"
+      }
+    },
+    {
+      "order": 21,
+      "id": "opportunity",
+      "route": "/examples/opportunity/",
+      "semanticClass": "opportunity",
+      "composition": "document",
+      "baseline": {
+        "files": {
+          "martlet": "examples/opportunity.html",
+          "krigsvold": "examples/opportunity.html"
+        },
+        "layout": "example-document",
+        "sectionIds": [
+          "role",
+          "requirements",
+          "arrangements",
+          "apply"
+        ],
+        "sectionKinds": [
+          "prose",
+          "prose",
+          "facts",
+          "prose"
+        ],
+        "currentAnatomy": "shared example-document frame and typed sections: prose, prose, facts, prose",
+        "existingDifferencesToRetain": {
+          "martlet": "bounded document reading; editorial metadata/list relationship; collection before focused record where existing task requires",
+          "krigsvold": "purpose-labelled aligned section regions and scan rows; persistent collection/detail where existing task requires"
+        }
+      },
+      "authenticFamilyRules": {
+        "martlet": [
+          "M-relationship",
+          "M-sequence",
+          "M-source"
+        ],
+        "krigsvold": [
+          "K-region",
+          "K-alignment",
+          "K-source"
+        ]
+      },
+      "disposition": "change",
+      "rationale": "Role, requirements, arrangements and application separate a reading task from a decision; contextual supporting facts should remain distinct.",
+      "familyJudgment": {
+        "martlet": "Read requirements in sequence with arrangements as nearby support.",
+        "krigsvold": "Label role/requirements/arrangements/application scope with aligned facts."
+      },
+      "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
+      "wave": 2,
+      "implementationStatus": "not-started",
+      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "testPlan": [
+        "identical fixture JSON/IDs/section order/actions",
+        "root and /preview links/anchors",
+        "320/768/1440 light+dark; 200% text",
+        "keyboard/focus; noJS; reduced motion; forced colors; print",
+        "representative Chromium/Firefox/WebKit; axe+manual paired visual review"
+      ],
+      "evidence": [],
+      "pullRequests": [],
+      "exceptions": [],
+      "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
+      "compositionRefinements": [
+        {
+          "id": "document-index-body-measure",
+          "status": "rendered-measure-review-required",
+          "baselineSourceObservation": "Shared .example-reading max-width46rem constrains entire .example-document, including family14rem/13rem index and gap; source authority separates navigation from readable body. Exact computed body widths pending route screenshots/DOM measurement.",
+          "requiredJudgment": "Retain semantic sections/anchors where justified while correcting proven cramped total-wrapper/body geometry. Record CSS refinement as an actual change even when semantic anatomy is retained.",
+          "familySourceRules": [
+            "M-source",
+            "M-sequence",
+            "K-source",
+            "K-region"
+          ]
+        }
+      ],
+      "familyImplementationStatus": {
+        "martlet": "not-started",
+        "krigsvold": "not-started"
+      }
+    },
+    {
+      "order": 22,
+      "id": "software",
+      "route": "/examples/software/",
+      "semanticClass": "software",
+      "composition": "landing",
+      "baseline": {
+        "files": {
+          "martlet": "examples/software.html",
+          "krigsvold": "examples/software.html"
+        },
+        "layout": "example-landing",
+        "sectionIds": [
+          "overview",
+          "capabilities",
+          "try"
+        ],
+        "sectionKinds": [
+          "prose",
+          "cards",
+          "prose"
+        ],
+        "currentAnatomy": "shared example-landing frame and typed sections: prose, cards, prose",
+        "existingDifferencesToRetain": {
+          "martlet": "bounded document reading; editorial metadata/list relationship; collection before focused record where existing task requires",
+          "krigsvold": "purpose-labelled aligned section regions and scan rows; persistent collection/detail where existing task requires"
+        }
+      },
+      "authenticFamilyRules": {
+        "martlet": [
+          "M-relationship",
+          "M-sequence",
+          "M-source"
+        ],
+        "krigsvold": [
+          "K-region",
+          "K-alignment",
+          "K-source"
+        ]
+      },
+      "disposition": "retain",
+      "rationale": "Overview, capabilities and trial destination already form an appropriate shared task sequence.",
+      "familyJudgment": {
+        "martlet": "Retain explanation-to-capabilities-to-action hierarchy.",
+        "krigsvold": "Retain clearly named capability and trial regions."
+      },
+      "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
+      "wave": 3,
+      "implementationStatus": "not-started",
+      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "testPlan": [
+        "identical fixture JSON/IDs/section order/actions",
+        "root and /preview links/anchors",
+        "320/768/1440 light+dark; 200% text",
+        "keyboard/focus; noJS; reduced motion; forced colors; print",
+        "representative Chromium/Firefox/WebKit; axe+manual paired visual review"
+      ],
+      "evidence": [],
+      "pullRequests": [],
+      "exceptions": [],
+      "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
+      "compositionRefinements": [],
+      "familyImplementationStatus": {
+        "martlet": "not-started",
+        "krigsvold": "not-started"
+      }
+    },
+    {
+      "order": 23,
+      "id": "product",
+      "route": "/examples/product/",
+      "semanticClass": "product",
+      "composition": "detail",
+      "baseline": {
+        "files": {
+          "martlet": "examples/product.html",
+          "krigsvold": "examples/product.html"
+        },
+        "layout": "example-detail",
+        "sectionIds": [
+          "image",
+          "specifications",
+          "purchase"
+        ],
+        "sectionKinds": [
+          "figure",
+          "facts",
+          "prose"
+        ],
+        "currentAnatomy": "shared example-detail frame and typed sections: figure, facts, prose",
+        "existingDifferencesToRetain": {
+          "martlet": "bounded document reading; editorial metadata/list relationship; collection before focused record where existing task requires",
+          "krigsvold": "purpose-labelled aligned section regions and scan rows; persistent collection/detail where existing task requires"
+        }
+      },
+      "authenticFamilyRules": {
+        "martlet": [
+          "M-relationship",
+          "M-sequence",
+          "M-source"
+        ],
+        "krigsvold": [
+          "K-region",
+          "K-alignment",
+          "K-source"
+        ]
+      },
+      "disposition": "retain",
+      "rationale": "A product figure, specification facts and purchase boundary already serve the task; preserve enquiry-only capability.",
+      "familyJudgment": {
+        "martlet": "Retain object-first context and nearby specifications.",
+        "krigsvold": "Retain aligned specifications and explicit purchase/enquiry scope."
+      },
+      "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
+      "wave": 3,
+      "implementationStatus": "not-started",
+      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "testPlan": [
+        "identical fixture JSON/IDs/section order/actions",
+        "root and /preview links/anchors",
+        "320/768/1440 light+dark; 200% text",
+        "keyboard/focus; noJS; reduced motion; forced colors; print",
+        "representative Chromium/Firefox/WebKit; axe+manual paired visual review"
+      ],
+      "evidence": [],
+      "pullRequests": [],
+      "exceptions": [],
+      "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
+      "compositionRefinements": [],
+      "familyImplementationStatus": {
+        "martlet": "not-started",
+        "krigsvold": "not-started"
+      }
+    },
+    {
+      "order": 24,
+      "id": "collection",
+      "route": "/examples/collection/",
+      "semanticClass": "collection",
+      "composition": "collection",
+      "baseline": {
+        "files": {
+          "martlet": "examples/collection.html",
+          "krigsvold": "examples/collection.html"
+        },
+        "layout": "example-collection",
+        "sectionIds": [
+          "records"
+        ],
+        "sectionKinds": [
+          "listing"
+        ],
+        "currentAnatomy": "shared example-collection frame and typed sections: listing",
+        "existingDifferencesToRetain": {
+          "martlet": "bounded document reading; editorial metadata/list relationship; collection before focused record where existing task requires",
+          "krigsvold": "purpose-labelled aligned section regions and scan rows; persistent collection/detail where existing task requires"
+        }
+      },
+      "authenticFamilyRules": {
+        "martlet": [
+          "M-relationship",
+          "M-sequence",
+          "M-source"
+        ],
+        "krigsvold": [
+          "K-region",
+          "K-alignment",
+          "K-source"
+        ]
+      },
+      "disposition": "retain",
+      "rationale": "Existing collection layouts already have purposeful differences; do not replace them with a generic common card grid.",
+      "familyJudgment": {
+        "martlet": "Retain annotated record browsing.",
+        "krigsvold": "Retain aligned record scan rows."
+      },
+      "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
+      "wave": 3,
+      "implementationStatus": "not-started",
+      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "testPlan": [
+        "identical fixture JSON/IDs/section order/actions",
+        "root and /preview links/anchors",
+        "320/768/1440 light+dark; 200% text",
+        "keyboard/focus; noJS; reduced motion; forced colors; print",
+        "representative Chromium/Firefox/WebKit; axe+manual paired visual review"
+      ],
+      "evidence": [],
+      "pullRequests": [],
+      "exceptions": [],
+      "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
+      "compositionRefinements": [],
+      "familyImplementationStatus": {
+        "martlet": "not-started",
+        "krigsvold": "not-started"
+      }
+    },
+    {
+      "order": 25,
+      "id": "collection-item",
+      "route": "/examples/collection-item/",
+      "semanticClass": "collection-item",
+      "composition": "detail",
+      "baseline": {
+        "files": {
+          "martlet": "examples/collection-item.html",
+          "krigsvold": "examples/collection-item.html"
+        },
+        "layout": "example-detail",
+        "sectionIds": [
+          "object",
+          "record",
+          "context"
+        ],
+        "sectionKinds": [
+          "figure",
+          "facts",
+          "prose"
+        ],
+        "currentAnatomy": "shared example-detail frame and typed sections: figure, facts, prose",
+        "existingDifferencesToRetain": {
+          "martlet": "bounded document reading; editorial metadata/list relationship; collection before focused record where existing task requires",
+          "krigsvold": "purpose-labelled aligned section regions and scan rows; persistent collection/detail where existing task requires"
+        }
+      },
+      "authenticFamilyRules": {
+        "martlet": [
+          "M-relationship",
+          "M-sequence",
+          "M-source"
+        ],
+        "krigsvold": [
+          "K-region",
+          "K-alignment",
+          "K-source"
+        ]
+      },
+      "disposition": "retain",
+      "rationale": "Object image, record and context already form an understandable detail page.",
+      "familyJudgment": {
+        "martlet": "Retain object-to-record-to-context reading progression.",
+        "krigsvold": "Retain distinctly labelled object/record/context regions."
+      },
+      "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
+      "wave": 3,
+      "implementationStatus": "not-started",
+      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "testPlan": [
+        "identical fixture JSON/IDs/section order/actions",
+        "root and /preview links/anchors",
+        "320/768/1440 light+dark; 200% text",
+        "keyboard/focus; noJS; reduced motion; forced colors; print",
+        "representative Chromium/Firefox/WebKit; axe+manual paired visual review"
+      ],
+      "evidence": [],
+      "pullRequests": [],
+      "exceptions": [],
+      "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
+      "compositionRefinements": [],
+      "familyImplementationStatus": {
+        "martlet": "not-started",
+        "krigsvold": "not-started"
+      }
+    },
+    {
+      "order": 26,
+      "id": "events",
+      "route": "/examples/events/",
+      "semanticClass": "event-index",
+      "composition": "collection",
+      "baseline": {
+        "files": {
+          "martlet": "examples/events.html",
+          "krigsvold": "examples/events.html"
+        },
+        "layout": "example-collection",
+        "sectionIds": [
+          "upcoming",
+          "past"
+        ],
+        "sectionKinds": [
+          "listing",
+          "listing"
+        ],
+        "currentAnatomy": "shared example-collection frame and typed sections: listing, listing",
+        "existingDifferencesToRetain": {
+          "martlet": "bounded document reading; editorial metadata/list relationship; collection before focused record where existing task requires",
+          "krigsvold": "purpose-labelled aligned section regions and scan rows; persistent collection/detail where existing task requires"
+        }
+      },
+      "authenticFamilyRules": {
+        "martlet": [
+          "M-relationship",
+          "M-sequence",
+          "M-source"
+        ],
+        "krigsvold": [
+          "K-region",
+          "K-alignment",
+          "K-source"
+        ]
+      },
+      "disposition": "retain",
+      "rationale": "Upcoming and past lists are meaningful common groups; retain exact ordering and destinations.",
+      "familyJudgment": {
+        "martlet": "Retain chronological event browsing with contextual metadata.",
+        "krigsvold": "Retain clearly scoped upcoming/past rows with aligned dates."
+      },
+      "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
+      "wave": 3,
+      "implementationStatus": "not-started",
+      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "testPlan": [
+        "identical fixture JSON/IDs/section order/actions",
+        "root and /preview links/anchors",
+        "320/768/1440 light+dark; 200% text",
+        "keyboard/focus; noJS; reduced motion; forced colors; print",
+        "representative Chromium/Firefox/WebKit; axe+manual paired visual review"
+      ],
+      "evidence": [],
+      "pullRequests": [],
+      "exceptions": [],
+      "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
+      "compositionRefinements": [],
+      "familyImplementationStatus": {
+        "martlet": "not-started",
+        "krigsvold": "not-started"
+      }
+    },
+    {
+      "order": 27,
+      "id": "event",
+      "route": "/examples/event/",
+      "semanticClass": "event",
+      "composition": "detail",
+      "baseline": {
+        "files": {
+          "martlet": "examples/event.html",
+          "krigsvold": "examples/event.html"
+        },
+        "layout": "example-detail",
+        "sectionIds": [
+          "details",
+          "schedule",
+          "next"
+        ],
+        "sectionKinds": [
+          "facts",
+          "table",
+          "prose"
+        ],
+        "currentAnatomy": "shared example-detail frame and typed sections: facts, table, prose",
+        "existingDifferencesToRetain": {
+          "martlet": "bounded document reading; editorial metadata/list relationship; collection before focused record where existing task requires",
+          "krigsvold": "purpose-labelled aligned section regions and scan rows; persistent collection/detail where existing task requires"
+        }
+      },
+      "authenticFamilyRules": {
+        "martlet": [
+          "M-relationship",
+          "M-sequence",
+          "M-source"
+        ],
+        "krigsvold": [
+          "K-region",
+          "K-alignment",
+          "K-source"
+        ]
+      },
+      "disposition": "retain",
+      "rationale": "Event facts, schedule and next step need correct timestamps and registration boundaries more than novel anatomy.",
+      "familyJudgment": {
+        "martlet": "Retain nearby event context and schedule reading sequence.",
+        "krigsvold": "Retain aligned schedule fields and explicit registration status region."
+      },
+      "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
+      "wave": 3,
+      "implementationStatus": "not-started",
+      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "testPlan": [
+        "identical fixture JSON/IDs/section order/actions",
+        "root and /preview links/anchors",
+        "320/768/1440 light+dark; 200% text",
+        "keyboard/focus; noJS; reduced motion; forced colors; print",
+        "representative Chromium/Firefox/WebKit; axe+manual paired visual review",
+        "table captions/headers; independent overflow; chart/source-table exact data and unique region names"
+      ],
+      "evidence": [],
+      "pullRequests": [],
+      "exceptions": [],
+      "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
+      "compositionRefinements": [],
+      "familyImplementationStatus": {
+        "martlet": "not-started",
+        "krigsvold": "not-started"
+      }
+    },
+    {
+      "order": 28,
+      "id": "report",
+      "route": "/examples/report/",
+      "semanticClass": "report",
+      "composition": "dossier",
+      "baseline": {
+        "files": {
+          "martlet": "examples/report.html",
+          "krigsvold": "examples/report.html"
+        },
+        "layout": "example-dossier",
+        "sectionIds": [
+          "summary",
+          "measures",
+          "register",
+          "method"
+        ],
+        "sectionKinds": [
+          "prose",
+          "stats",
+          "table",
+          "prose"
+        ],
+        "currentAnatomy": "shared example-dossier frame and typed sections: prose, stats, table, prose",
+        "existingDifferencesToRetain": {
+          "martlet": "bounded document reading; editorial metadata/list relationship; collection before focused record where existing task requires",
+          "krigsvold": "purpose-labelled aligned section regions and scan rows; persistent collection/detail where existing task requires"
+        }
+      },
+      "authenticFamilyRules": {
+        "martlet": [
+          "M-relationship",
+          "M-sequence",
+          "M-source"
+        ],
+        "krigsvold": [
+          "K-region",
+          "K-alignment",
+          "K-source"
+        ]
+      },
+      "disposition": "change",
+      "rationale": "Summary, metrics, register and method should make evidence relationships clearer without changing numbers or scope.",
+      "familyJudgment": {
+        "martlet": "Readable summary followed by nearby measures and cited register/method.",
+        "krigsvold": "Label evidence regions, align comparable metrics/register fields and keep method scope explicit."
+      },
+      "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
+      "wave": 3,
+      "implementationStatus": "not-started",
+      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "testPlan": [
+        "identical fixture JSON/IDs/section order/actions",
+        "root and /preview links/anchors",
+        "320/768/1440 light+dark; 200% text",
+        "keyboard/focus; noJS; reduced motion; forced colors; print",
+        "representative Chromium/Firefox/WebKit; axe+manual paired visual review",
+        "table captions/headers; independent overflow; chart/source-table exact data and unique region names"
+      ],
+      "evidence": [],
+      "pullRequests": [],
+      "exceptions": [],
+      "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
+      "compositionRefinements": [],
+      "familyImplementationStatus": {
+        "martlet": "not-started",
+        "krigsvold": "not-started"
+      }
+    },
+    {
+      "order": 29,
+      "id": "gallery",
+      "route": "/examples/gallery/",
+      "semanticClass": "exhibition",
+      "composition": "landing",
+      "baseline": {
+        "files": {
+          "martlet": "examples/gallery.html",
+          "krigsvold": "examples/gallery.html"
+        },
+        "layout": "example-landing",
+        "sectionIds": [
+          "views",
+          "curation"
+        ],
+        "sectionKinds": [
+          "gallery",
+          "prose"
+        ],
+        "currentAnatomy": "shared example-landing frame and typed sections: gallery, prose",
+        "existingDifferencesToRetain": {
+          "martlet": "bounded document reading; editorial metadata/list relationship; collection before focused record where existing task requires",
+          "krigsvold": "purpose-labelled aligned section regions and scan rows; persistent collection/detail where existing task requires"
+        }
+      },
+      "authenticFamilyRules": {
+        "martlet": [
+          "M-relationship",
+          "M-sequence",
+          "M-source"
+        ],
+        "krigsvold": [
+          "K-region",
+          "K-alignment",
+          "K-source"
+        ]
+      },
+      "disposition": "retain",
+      "rationale": "The exhibition already separates visual collection and curatorial explanation; imagery is host content, not grammar proof.",
+      "familyJudgment": {
+        "martlet": "Retain curated browsing and subsequent reading context.",
+        "krigsvold": "Retain clearly scoped image region with comparable captions and curation."
+      },
+      "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
+      "wave": 3,
+      "implementationStatus": "not-started",
+      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "testPlan": [
+        "identical fixture JSON/IDs/section order/actions",
+        "root and /preview links/anchors",
+        "320/768/1440 light+dark; 200% text",
+        "keyboard/focus; noJS; reduced motion; forced colors; print",
+        "representative Chromium/Firefox/WebKit; axe+manual paired visual review"
+      ],
+      "evidence": [],
+      "pullRequests": [],
+      "exceptions": [],
+      "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
+      "compositionRefinements": [],
+      "familyImplementationStatus": {
+        "martlet": "not-started",
+        "krigsvold": "not-started"
+      }
+    },
+    {
+      "order": 30,
+      "id": "changelog",
+      "route": "/examples/changelog/",
+      "semanticClass": "changelog",
+      "composition": "document",
+      "baseline": {
+        "files": {
+          "martlet": "examples/changelog.html",
+          "krigsvold": "examples/changelog.html"
+        },
+        "layout": "example-document",
+        "sectionIds": [
+          "v1-2",
+          "v1-1",
+          "v1-0"
+        ],
+        "sectionKinds": [
+          "prose",
+          "prose",
+          "prose"
+        ],
+        "currentAnatomy": "shared example-document frame and typed sections: prose, prose, prose",
+        "existingDifferencesToRetain": {
+          "martlet": "bounded document reading; editorial metadata/list relationship; collection before focused record where existing task requires",
+          "krigsvold": "purpose-labelled aligned section regions and scan rows; persistent collection/detail where existing task requires"
+        }
+      },
+      "authenticFamilyRules": {
+        "martlet": [
+          "M-relationship",
+          "M-sequence",
+          "M-source"
+        ],
+        "krigsvold": [
+          "K-region",
+          "K-alignment",
+          "K-source"
+        ]
+      },
+      "disposition": "change",
+      "rationale": "Three release sections share a generic document renderer; make chronology and comparable release scope explicit while retaining full titles and bodies.",
+      "familyJudgment": {
+        "martlet": "Version chronology with contextual date/migration marginalia derived only from existing content.",
+        "krigsvold": "Aligned version/date/change regions; no invented release fields or ISO date claims."
+      },
+      "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
+      "wave": 1,
+      "implementationStatus": "in-progress-awaiting-pinned-PR-preview-review",
+      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "testPlan": [
+        "identical fixture JSON/IDs/section order/actions",
+        "root and /preview links/anchors",
+        "320/768/1440 light+dark; 200% text",
+        "keyboard/focus; noJS; reduced motion; forced colors; print",
+        "representative Chromium/Firefox/WebKit; axe+manual paired visual review",
+        "full release titles/bodies and v1-2/v1-1/v1-0 anchors; no invented machine dates"
+      ],
+      "evidence": [],
+      "pullRequests": [],
+      "exceptions": [],
+      "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
+      "compositionRefinements": [
+        {
+          "id": "document-index-body-measure",
+          "status": "rendered-measure-review-required",
+          "baselineSourceObservation": "Shared .example-reading max-width46rem constrains entire .example-document, including family14rem/13rem index and gap; source authority separates navigation from readable body. Exact computed body widths pending route screenshots/DOM measurement.",
+          "requiredJudgment": "Retain semantic sections/anchors where justified while correcting proven cramped total-wrapper/body geometry. Record CSS refinement as an actual change even when semantic anatomy is retained.",
+          "familySourceRules": [
+            "M-source",
+            "M-sequence",
+            "K-source",
+            "K-region"
+          ]
+        }
+      ],
+      "familyImplementationStatus": {
+        "martlet": "implemented-locally; unpinned/preview acceptance pending",
+        "krigsvold": "implementation in progress; exact status pending owner update"
+      }
+    },
+    {
+      "order": 31,
+      "id": "search",
+      "route": "/examples/search/",
+      "semanticClass": "search",
+      "composition": "collection",
+      "baseline": {
+        "files": {
+          "martlet": "examples/search.html",
+          "krigsvold": "examples/search.html"
+        },
+        "layout": "example-collection",
+        "sectionIds": [
+          "search"
+        ],
+        "sectionKinds": [
+          "search"
+        ],
+        "currentAnatomy": "shared example-collection frame and typed sections: search",
+        "existingDifferencesToRetain": {
+          "martlet": "bounded document reading; editorial metadata/list relationship; collection before focused record where existing task requires",
+          "krigsvold": "purpose-labelled aligned section regions and scan rows; persistent collection/detail where existing task requires"
+        }
+      },
+      "authenticFamilyRules": {
+        "martlet": [
+          "M-relationship",
+          "M-sequence",
+          "M-source",
+          "M-continuity"
+        ],
+        "krigsvold": [
+          "K-region",
+          "K-alignment",
+          "K-source",
+          "K-state"
+        ]
+      },
+      "disposition": "change",
+      "rationale": "Search results need explicit query/result scope and continuity; change only composition, preserving the current state machine.",
+      "familyJudgment": {
+        "martlet": "Keep pending query near action and result context on return.",
+        "krigsvold": "Expose named query scope and aligned result context/count."
+      },
+      "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
+      "wave": 3,
+      "implementationStatus": "not-started",
+      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "testPlan": [
+        "identical fixture JSON/IDs/section order/actions",
+        "root and /preview links/anchors",
+        "320/768/1440 light+dark; 200% text",
+        "keyboard/focus; noJS; reduced motion; forced colors; print",
+        "representative Chromium/Firefox/WebKit; axe+manual paired visual review",
+        "existing query/selection/local state + empty/no-match/recovery/reset contract; no data loss or new backend"
+      ],
+      "evidence": [],
+      "pullRequests": [],
+      "exceptions": [],
+      "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
+      "compositionRefinements": [],
+      "familyImplementationStatus": {
+        "martlet": "not-started",
+        "krigsvold": "not-started"
+      }
+    },
+    {
+      "order": 32,
+      "id": "sign-in",
+      "route": "/examples/sign-in/",
+      "semanticClass": "account",
+      "composition": "reading",
+      "baseline": {
+        "files": {
+          "martlet": "examples/sign-in.html",
+          "krigsvold": "examples/sign-in.html"
+        },
+        "layout": "example-reading",
+        "sectionIds": [
+          "form",
+          "routes"
+        ],
+        "sectionKinds": [
+          "form",
+          "cards"
+        ],
+        "currentAnatomy": "shared example-reading frame and typed sections: form, cards",
+        "existingDifferencesToRetain": {
+          "martlet": "bounded document reading; editorial metadata/list relationship; collection before focused record where existing task requires",
+          "krigsvold": "purpose-labelled aligned section regions and scan rows; persistent collection/detail where existing task requires"
+        }
+      },
+      "authenticFamilyRules": {
+        "martlet": [
+          "M-relationship",
+          "M-sequence",
+          "M-source",
+          "M-continuity"
+        ],
+        "krigsvold": [
+          "K-region",
+          "K-alignment",
+          "K-source",
+          "K-state"
+        ]
+      },
+      "disposition": "retain",
+      "rationale": "Native account-demo forms should remain familiar; arbitrary family opposition would obscure inputs and false authentication boundaries.",
+      "familyJudgment": {
+        "martlet": "Retain label/help/action proximity and recovery links.",
+        "krigsvold": "Retain precise sign-in scope and local-validation-only status."
+      },
+      "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
+      "wave": 4,
+      "implementationStatus": "not-started",
+      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "testPlan": [
+        "identical fixture JSON/IDs/section order/actions",
+        "root and /preview links/anchors",
+        "320/768/1440 light+dark; 200% text",
+        "keyboard/focus; noJS; reduced motion; forced colors; print",
+        "representative Chromium/Firefox/WebKit; axe+manual paired visual review",
+        "native required/format validation; whitespace rejection; retain text/reset/status; no submission/auth claim"
+      ],
+      "evidence": [],
+      "pullRequests": [],
+      "exceptions": [],
+      "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
+      "compositionRefinements": [],
+      "familyImplementationStatus": {
+        "martlet": "not-started",
+        "krigsvold": "not-started"
+      }
+    },
+    {
+      "order": 33,
+      "id": "sign-up",
+      "route": "/examples/sign-up/",
+      "semanticClass": "account",
+      "composition": "reading",
+      "baseline": {
+        "files": {
+          "martlet": "examples/sign-up.html",
+          "krigsvold": "examples/sign-up.html"
+        },
+        "layout": "example-reading",
+        "sectionIds": [
+          "form",
+          "routes"
+        ],
+        "sectionKinds": [
+          "form",
+          "cards"
+        ],
+        "currentAnatomy": "shared example-reading frame and typed sections: form, cards",
+        "existingDifferencesToRetain": {
+          "martlet": "bounded document reading; editorial metadata/list relationship; collection before focused record where existing task requires",
+          "krigsvold": "purpose-labelled aligned section regions and scan rows; persistent collection/detail where existing task requires"
+        }
+      },
+      "authenticFamilyRules": {
+        "martlet": [
+          "M-relationship",
+          "M-sequence",
+          "M-source",
+          "M-continuity"
+        ],
+        "krigsvold": [
+          "K-region",
+          "K-alignment",
+          "K-source",
+          "K-state"
+        ]
+      },
+      "disposition": "retain",
+      "rationale": "Shared required fields, validation and recovery are intentional; no source evidence justifies a new multistep registration flow.",
+      "familyJudgment": {
+        "martlet": "Retain coherent field grouping and nearby explanation.",
+        "krigsvold": "Retain clear registration scope and visible local-only boundary."
+      },
+      "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
+      "wave": 4,
+      "implementationStatus": "not-started",
+      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "testPlan": [
+        "identical fixture JSON/IDs/section order/actions",
+        "root and /preview links/anchors",
+        "320/768/1440 light+dark; 200% text",
+        "keyboard/focus; noJS; reduced motion; forced colors; print",
+        "representative Chromium/Firefox/WebKit; axe+manual paired visual review",
+        "native required/format validation; whitespace rejection; retain text/reset/status; no submission/auth claim"
+      ],
+      "evidence": [],
+      "pullRequests": [],
+      "exceptions": [],
+      "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
+      "compositionRefinements": [],
+      "familyImplementationStatus": {
+        "martlet": "not-started",
+        "krigsvold": "not-started"
+      }
+    },
+    {
+      "order": 34,
+      "id": "password-reset",
+      "route": "/examples/password-reset/",
+      "semanticClass": "account",
+      "composition": "reading",
+      "baseline": {
+        "files": {
+          "martlet": "examples/password-reset.html",
+          "krigsvold": "examples/password-reset.html"
+        },
+        "layout": "example-reading",
+        "sectionIds": [
+          "form",
+          "routes"
+        ],
+        "sectionKinds": [
+          "form",
+          "cards"
+        ],
+        "currentAnatomy": "shared example-reading frame and typed sections: form, cards",
+        "existingDifferencesToRetain": {
+          "martlet": "bounded document reading; editorial metadata/list relationship; collection before focused record where existing task requires",
+          "krigsvold": "purpose-labelled aligned section regions and scan rows; persistent collection/detail where existing task requires"
+        }
+      },
+      "authenticFamilyRules": {
+        "martlet": [
+          "M-relationship",
+          "M-sequence",
+          "M-source",
+          "M-continuity"
+        ],
+        "krigsvold": [
+          "K-region",
+          "K-alignment",
+          "K-source",
+          "K-state"
+        ]
+      },
+      "disposition": "retain",
+      "rationale": "Recovery must be clear and conventional; preserve local format-validation demonstration and existing links.",
+      "familyJudgment": {
+        "martlet": "Retain explanation-field-action-recovery sequence.",
+        "krigsvold": "Retain named recovery task and precise local-only feedback."
+      },
+      "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
+      "wave": 4,
+      "implementationStatus": "not-started",
+      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "testPlan": [
+        "identical fixture JSON/IDs/section order/actions",
+        "root and /preview links/anchors",
+        "320/768/1440 light+dark; 200% text",
+        "keyboard/focus; noJS; reduced motion; forced colors; print",
+        "representative Chromium/Firefox/WebKit; axe+manual paired visual review",
+        "native required/format validation; whitespace rejection; retain text/reset/status; no submission/auth claim"
+      ],
+      "evidence": [],
+      "pullRequests": [],
+      "exceptions": [],
+      "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
+      "compositionRefinements": [],
+      "familyImplementationStatus": {
+        "martlet": "not-started",
+        "krigsvold": "not-started"
+      }
+    },
+    {
+      "order": 35,
+      "id": "two-factor",
+      "route": "/examples/two-factor/",
+      "semanticClass": "account",
+      "composition": "reading",
+      "baseline": {
+        "files": {
+          "martlet": "examples/two-factor.html",
+          "krigsvold": "examples/two-factor.html"
+        },
+        "layout": "example-reading",
+        "sectionIds": [
+          "form",
+          "routes"
+        ],
+        "sectionKinds": [
+          "form",
+          "cards"
+        ],
+        "currentAnatomy": "shared example-reading frame and typed sections: form, cards",
+        "existingDifferencesToRetain": {
+          "martlet": "bounded document reading; editorial metadata/list relationship; collection before focused record where existing task requires",
+          "krigsvold": "purpose-labelled aligned section regions and scan rows; persistent collection/detail where existing task requires"
+        }
+      },
+      "authenticFamilyRules": {
+        "martlet": [
+          "M-relationship",
+          "M-sequence",
+          "M-source",
+          "M-continuity"
+        ],
+        "krigsvold": [
+          "K-region",
+          "K-alignment",
+          "K-source",
+          "K-state"
+        ]
+      },
+      "disposition": "retain",
+      "rationale": "A code-entry specimen is not a live authenticator; preserve native controls and shared validation semantics.",
+      "familyJudgment": {
+        "martlet": "Retain code assistance near its input and named return route.",
+        "krigsvold": "Retain exact verification scope and status without fake security claims."
+      },
+      "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
+      "wave": 4,
+      "implementationStatus": "not-started",
+      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "testPlan": [
+        "identical fixture JSON/IDs/section order/actions",
+        "root and /preview links/anchors",
+        "320/768/1440 light+dark; 200% text",
+        "keyboard/focus; noJS; reduced motion; forced colors; print",
+        "representative Chromium/Firefox/WebKit; axe+manual paired visual review",
+        "native required/format validation; whitespace rejection; retain text/reset/status; no submission/auth claim"
+      ],
+      "evidence": [],
+      "pullRequests": [],
+      "exceptions": [],
+      "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
+      "compositionRefinements": [],
+      "familyImplementationStatus": {
+        "martlet": "not-started",
+        "krigsvold": "not-started"
+      }
+    },
+    {
+      "order": 36,
+      "id": "coming-soon",
+      "route": "/examples/coming-soon/",
+      "semanticClass": "announcement",
+      "composition": "reading",
+      "baseline": {
+        "files": {
+          "martlet": "examples/coming-soon.html",
+          "krigsvold": "examples/coming-soon.html"
+        },
+        "layout": "example-reading",
+        "sectionIds": [
+          "announcement",
+          "updates"
+        ],
+        "sectionKinds": [
+          "prose",
+          "form"
+        ],
+        "currentAnatomy": "shared example-reading frame and typed sections: prose, form",
+        "existingDifferencesToRetain": {
+          "martlet": "bounded document reading; editorial metadata/list relationship; collection before focused record where existing task requires",
+          "krigsvold": "purpose-labelled aligned section regions and scan rows; persistent collection/detail where existing task requires"
+        }
+      },
+      "authenticFamilyRules": {
+        "martlet": [
+          "M-relationship",
+          "M-sequence",
+          "M-source",
+          "M-continuity"
+        ],
+        "krigsvold": [
+          "K-region",
+          "K-alignment",
+          "K-source",
+          "K-state"
+        ]
+      },
+      "disposition": "retain",
+      "rationale": "Announcement and newsletter field already supply a clear minimal task; do not add a hero or dashboard.",
+      "familyJudgment": {
+        "martlet": "Retain short announcement-to-update action sequence.",
+        "krigsvold": "Retain announcement and local signup scope as simple regions."
+      },
+      "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
+      "wave": 4,
+      "implementationStatus": "not-started",
+      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "testPlan": [
+        "identical fixture JSON/IDs/section order/actions",
+        "root and /preview links/anchors",
+        "320/768/1440 light+dark; 200% text",
+        "keyboard/focus; noJS; reduced motion; forced colors; print",
+        "representative Chromium/Firefox/WebKit; axe+manual paired visual review",
+        "native required/format validation; whitespace rejection; retain text/reset/status; no submission/auth claim"
+      ],
+      "evidence": [],
+      "pullRequests": [],
+      "exceptions": [],
+      "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
+      "compositionRefinements": [],
+      "familyImplementationStatus": {
+        "martlet": "not-started",
+        "krigsvold": "not-started"
+      }
+    },
+    {
+      "order": 37,
+      "id": "not-found",
+      "route": "/examples/not-found/",
+      "semanticClass": "error",
+      "composition": "reading",
+      "baseline": {
+        "files": {
+          "martlet": "examples/not-found.html",
+          "krigsvold": "examples/not-found.html"
+        },
+        "layout": "example-reading",
+        "sectionIds": [
+          "recover"
+        ],
+        "sectionKinds": [
+          "prose"
+        ],
+        "currentAnatomy": "shared example-reading frame and typed sections: prose",
+        "existingDifferencesToRetain": {
+          "martlet": "bounded document reading; editorial metadata/list relationship; collection before focused record where existing task requires",
+          "krigsvold": "purpose-labelled aligned section regions and scan rows; persistent collection/detail where existing task requires"
+        }
+      },
+      "authenticFamilyRules": {
+        "martlet": [
+          "M-relationship",
+          "M-sequence",
+          "M-source",
+          "M-continuity"
+        ],
+        "krigsvold": [
+          "K-region",
+          "K-alignment",
+          "K-source",
+          "K-state"
+        ]
+      },
+      "disposition": "retain",
+      "rationale": "An error page needs immediate recovery, not artificial family-specific complexity.",
+      "familyJudgment": {
+        "martlet": "Retain clear recovery links beside explanation.",
+        "krigsvold": "Retain exact missing-page scope and clear recovery commands."
+      },
+      "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
+      "wave": 4,
+      "implementationStatus": "not-started",
+      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "testPlan": [
+        "identical fixture JSON/IDs/section order/actions",
+        "root and /preview links/anchors",
+        "320/768/1440 light+dark; 200% text",
+        "keyboard/focus; noJS; reduced motion; forced colors; print",
+        "representative Chromium/Firefox/WebKit; axe+manual paired visual review"
+      ],
+      "evidence": [],
+      "pullRequests": [],
+      "exceptions": [],
+      "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
+      "compositionRefinements": [],
+      "familyImplementationStatus": {
+        "martlet": "not-started",
+        "krigsvold": "not-started"
+      }
+    },
+    {
+      "order": 38,
+      "id": "server-error",
+      "route": "/examples/server-error/",
+      "semanticClass": "error",
+      "composition": "reading",
+      "baseline": {
+        "files": {
+          "martlet": "examples/server-error.html",
+          "krigsvold": "examples/server-error.html"
+        },
+        "layout": "example-reading",
+        "sectionIds": [
+          "recover"
+        ],
+        "sectionKinds": [
+          "prose"
+        ],
+        "currentAnatomy": "shared example-reading frame and typed sections: prose",
+        "existingDifferencesToRetain": {
+          "martlet": "bounded document reading; editorial metadata/list relationship; collection before focused record where existing task requires",
+          "krigsvold": "purpose-labelled aligned section regions and scan rows; persistent collection/detail where existing task requires"
+        }
+      },
+      "authenticFamilyRules": {
+        "martlet": [
+          "M-relationship",
+          "M-sequence",
+          "M-source",
+          "M-continuity"
+        ],
+        "krigsvold": [
+          "K-region",
+          "K-alignment",
+          "K-source",
+          "K-state"
+        ]
+      },
+      "disposition": "retain",
+      "rationale": "This static example returns normal HTTP status; keep that boundary explicit and do not invent a retry backend.",
+      "familyJudgment": {
+        "martlet": "Retain concise explanation and useful next actions.",
+        "krigsvold": "Retain precise failure wording and bounded recovery scope."
+      },
+      "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
+      "wave": 4,
+      "implementationStatus": "not-started",
+      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "testPlan": [
+        "identical fixture JSON/IDs/section order/actions",
+        "root and /preview links/anchors",
+        "320/768/1440 light+dark; 200% text",
+        "keyboard/focus; noJS; reduced motion; forced colors; print",
+        "representative Chromium/Firefox/WebKit; axe+manual paired visual review"
+      ],
+      "evidence": [],
+      "pullRequests": [],
+      "exceptions": [],
+      "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
+      "compositionRefinements": [],
+      "familyImplementationStatus": {
+        "martlet": "not-started",
+        "krigsvold": "not-started"
+      }
+    },
+    {
+      "order": 39,
+      "id": "workspace",
+      "route": "/examples/workspace/",
+      "semanticClass": "record-workspace",
+      "composition": "workspace",
+      "baseline": {
+        "files": {
+          "martlet": "examples/workspace.html",
+          "krigsvold": "examples/workspace.html"
+        },
+        "layout": "example-workspace",
+        "sectionIds": [
+          "desk"
+        ],
+        "sectionKinds": [
+          "workspace"
+        ],
+        "currentAnatomy": "shared example-workspace frame and typed sections: workspace",
+        "existingDifferencesToRetain": {
+          "martlet": "bounded document reading; editorial metadata/list relationship; collection before focused record where existing task requires",
+          "krigsvold": "purpose-labelled aligned section regions and scan rows; persistent collection/detail where existing task requires"
+        }
+      },
+      "authenticFamilyRules": {
+        "martlet": [
+          "M-relationship",
+          "M-sequence",
+          "M-source",
+          "M-continuity"
+        ],
+        "krigsvold": [
+          "K-region",
+          "K-alignment",
+          "K-source",
+          "K-state"
+        ]
+      },
+      "disposition": "retain",
+      "rationale": "Existing family composition already differentiates a browsable collection-to-record flow from persistent comparison regions.",
+      "familyJudgment": {
+        "martlet": "Retain collection before focused detail and contextual return.",
+        "krigsvold": "Retain collection/detail split where space allows, with selected-state non-color cue."
+      },
+      "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
+      "wave": 4,
+      "implementationStatus": "not-started",
+      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "testPlan": [
+        "identical fixture JSON/IDs/section order/actions",
+        "root and /preview links/anchors",
+        "320/768/1440 light+dark; 200% text",
+        "keyboard/focus; noJS; reduced motion; forced colors; print",
+        "representative Chromium/Firefox/WebKit; axe+manual paired visual review",
+        "existing query/selection/local state + empty/no-match/recovery/reset contract; no data loss or new backend"
+      ],
+      "evidence": [],
+      "pullRequests": [],
+      "exceptions": [],
+      "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
+      "compositionRefinements": [],
+      "familyImplementationStatus": {
+        "martlet": "not-started",
+        "krigsvold": "not-started"
+      }
+    },
+    {
+      "order": 40,
+      "id": "chat",
+      "route": "/examples/chat/",
+      "semanticClass": "messaging",
+      "composition": "workspace",
+      "baseline": {
+        "files": {
+          "martlet": "examples/chat.html",
+          "krigsvold": "examples/chat.html"
+        },
+        "layout": "example-workspace",
+        "sectionIds": [
+          "messages"
+        ],
+        "sectionKinds": [
+          "chat"
+        ],
+        "currentAnatomy": "shared example-workspace frame and typed sections: chat",
+        "existingDifferencesToRetain": {
+          "martlet": "bounded document reading; editorial metadata/list relationship; collection before focused record where existing task requires",
+          "krigsvold": "purpose-labelled aligned section regions and scan rows; persistent collection/detail where existing task requires"
+        }
+      },
+      "authenticFamilyRules": {
+        "martlet": [
+          "M-relationship",
+          "M-sequence",
+          "M-source",
+          "M-continuity"
+        ],
+        "krigsvold": [
+          "K-region",
+          "K-alignment",
+          "K-source",
+          "K-state"
+        ]
+      },
+      "disposition": "retain",
+      "rationale": "Messaging chronology and native input order should remain conventional; no new service or identity claims.",
+      "familyJudgment": {
+        "martlet": "Retain message continuity and composer assistance.",
+        "krigsvold": "Retain conversation/composer scope and precise local-only status."
+      },
+      "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
+      "wave": 4,
+      "implementationStatus": "not-started",
+      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "testPlan": [
+        "identical fixture JSON/IDs/section order/actions",
+        "root and /preview links/anchors",
+        "320/768/1440 light+dark; 200% text",
+        "keyboard/focus; noJS; reduced motion; forced colors; print",
+        "representative Chromium/Firefox/WebKit; axe+manual paired visual review",
+        "existing query/selection/local state + empty/no-match/recovery/reset contract; no data loss or new backend"
+      ],
+      "evidence": [],
+      "pullRequests": [],
+      "exceptions": [],
+      "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
+      "compositionRefinements": [],
+      "familyImplementationStatus": {
+        "martlet": "not-started",
+        "krigsvold": "not-started"
+      }
+    },
+    {
+      "order": 41,
+      "id": "sensors",
+      "route": "/examples/sensors/",
+      "semanticClass": "device-controls",
+      "composition": "workspace",
+      "baseline": {
+        "files": {
+          "martlet": "examples/sensors.html",
+          "krigsvold": "examples/sensors.html"
+        },
+        "layout": "example-workspace",
+        "sectionIds": [
+          "controls"
+        ],
+        "sectionKinds": [
+          "sensors"
+        ],
+        "currentAnatomy": "shared example-workspace frame and typed sections: sensors",
+        "existingDifferencesToRetain": {
+          "martlet": "bounded document reading; editorial metadata/list relationship; collection before focused record where existing task requires",
+          "krigsvold": "purpose-labelled aligned section regions and scan rows; persistent collection/detail where existing task requires"
+        }
+      },
+      "authenticFamilyRules": {
+        "martlet": [
+          "M-relationship",
+          "M-sequence",
+          "M-source",
+          "M-continuity"
+        ],
+        "krigsvold": [
+          "K-region",
+          "K-alignment",
+          "K-source",
+          "K-state"
+        ]
+      },
+      "disposition": "retain",
+      "rationale": "Control association and feedback are more important than forced divergent widgets.",
+      "familyJudgment": {
+        "martlet": "Retain related control/reading/help grouping.",
+        "krigsvold": "Retain explicit device/control scope and status alignment."
+      },
+      "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
+      "wave": 4,
+      "implementationStatus": "not-started",
+      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "testPlan": [
+        "identical fixture JSON/IDs/section order/actions",
+        "root and /preview links/anchors",
+        "320/768/1440 light+dark; 200% text",
+        "keyboard/focus; noJS; reduced motion; forced colors; print",
+        "representative Chromium/Firefox/WebKit; axe+manual paired visual review",
+        "existing query/selection/local state + empty/no-match/recovery/reset contract; no data loss or new backend"
+      ],
+      "evidence": [],
+      "pullRequests": [],
+      "exceptions": [],
+      "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
+      "compositionRefinements": [],
+      "familyImplementationStatus": {
+        "martlet": "not-started",
+        "krigsvold": "not-started"
+      }
+    },
+    {
+      "order": 42,
+      "id": "fleet",
+      "route": "/examples/fleet/",
+      "semanticClass": "record-workspace",
+      "composition": "workspace",
+      "baseline": {
+        "files": {
+          "martlet": "examples/fleet.html",
+          "krigsvold": "examples/fleet.html"
+        },
+        "layout": "example-workspace",
+        "sectionIds": [
+          "fleet"
+        ],
+        "sectionKinds": [
+          "workspace"
+        ],
+        "currentAnatomy": "shared example-workspace frame and typed sections: workspace",
+        "existingDifferencesToRetain": {
+          "martlet": "bounded document reading; editorial metadata/list relationship; collection before focused record where existing task requires",
+          "krigsvold": "purpose-labelled aligned section regions and scan rows; persistent collection/detail where existing task requires"
+        }
+      },
+      "authenticFamilyRules": {
+        "martlet": [
+          "M-relationship",
+          "M-sequence",
+          "M-source",
+          "M-continuity"
+        ],
+        "krigsvold": [
+          "K-region",
+          "K-alignment",
+          "K-source",
+          "K-state"
+        ]
+      },
+      "disposition": "retain",
+      "rationale": "Existing collection/detail composition already serves simulated fleet inspection with shared review/reset behavior.",
+      "familyJudgment": {
+        "martlet": "Retain contextual browse-to-focused-record progression.",
+        "krigsvold": "Retain comparable device records and persistent current-record region."
+      },
+      "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
+      "wave": 4,
+      "implementationStatus": "not-started",
+      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "testPlan": [
+        "identical fixture JSON/IDs/section order/actions",
+        "root and /preview links/anchors",
+        "320/768/1440 light+dark; 200% text",
+        "keyboard/focus; noJS; reduced motion; forced colors; print",
+        "representative Chromium/Firefox/WebKit; axe+manual paired visual review",
+        "existing query/selection/local state + empty/no-match/recovery/reset contract; no data loss or new backend"
+      ],
+      "evidence": [],
+      "pullRequests": [],
+      "exceptions": [],
+      "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
+      "compositionRefinements": [],
+      "familyImplementationStatus": {
+        "martlet": "not-started",
+        "krigsvold": "not-started"
+      }
+    },
+    {
+      "order": 43,
+      "id": "scene",
+      "route": "/examples/scene/",
+      "semanticClass": "scene-viewer",
+      "composition": "landing",
+      "baseline": {
+        "files": {
+          "martlet": "examples/scene.html",
+          "krigsvold": "examples/scene.html"
+        },
+        "layout": "example-landing",
+        "sectionIds": [
+          "scene",
+          "scope"
+        ],
+        "sectionKinds": [
+          "scene",
+          "prose"
+        ],
+        "currentAnatomy": "shared example-landing frame and typed sections: scene, prose",
+        "existingDifferencesToRetain": {
+          "martlet": "bounded document reading; editorial metadata/list relationship; collection before focused record where existing task requires",
+          "krigsvold": "purpose-labelled aligned section regions and scan rows; persistent collection/detail where existing task requires"
+        }
+      },
+      "authenticFamilyRules": {
+        "martlet": [
+          "M-relationship",
+          "M-sequence",
+          "M-source",
+          "M-continuity"
+        ],
+        "krigsvold": [
+          "K-region",
+          "K-alignment",
+          "K-source",
+          "K-state"
+        ]
+      },
+      "disposition": "retain",
+      "rationale": "A static captioned scene selector is not a VR renderer; preserve meaningful selector/caption relationships.",
+      "familyJudgment": {
+        "martlet": "Retain descriptive scene context and explicit capability limit.",
+        "krigsvold": "Retain named scene/selection scope and visible state without invented controls."
+      },
+      "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
+      "wave": 4,
+      "implementationStatus": "not-started",
+      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "testPlan": [
+        "identical fixture JSON/IDs/section order/actions",
+        "root and /preview links/anchors",
+        "320/768/1440 light+dark; 200% text",
+        "keyboard/focus; noJS; reduced motion; forced colors; print",
+        "representative Chromium/Firefox/WebKit; axe+manual paired visual review"
+      ],
+      "evidence": [],
+      "pullRequests": [],
+      "exceptions": [],
+      "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
+      "compositionRefinements": [],
+      "familyImplementationStatus": {
+        "martlet": "not-started",
+        "krigsvold": "not-started"
+      }
+    },
+    {
+      "order": 44,
+      "id": "integrations",
+      "route": "/examples/integrations/",
+      "semanticClass": "integration-guide",
+      "composition": "document",
+      "baseline": {
+        "files": {
+          "martlet": "examples/integrations.html",
+          "krigsvold": "examples/integrations.html"
+        },
+        "layout": "example-document",
+        "sectionIds": [
+          "static",
+          "services",
+          "ports"
+        ],
+        "sectionKinds": [
+          "prose",
+          "table",
+          "prose"
+        ],
+        "currentAnatomy": "shared example-document frame and typed sections: prose, table, prose",
+        "existingDifferencesToRetain": {
+          "martlet": "bounded document reading; editorial metadata/list relationship; collection before focused record where existing task requires",
+          "krigsvold": "purpose-labelled aligned section regions and scan rows; persistent collection/detail where existing task requires"
+        }
+      },
+      "authenticFamilyRules": {
+        "martlet": [
+          "M-relationship",
+          "M-sequence",
+          "M-source"
+        ],
+        "krigsvold": [
+          "K-region",
+          "K-alignment",
+          "K-source"
+        ]
+      },
+      "disposition": "change",
+      "rationale": "Static capabilities, service table and portability need distinct evidence boundaries; avoid implying unimplemented backends.",
+      "familyJudgment": {
+        "martlet": "Read capability explanation alongside nearby integration guidance.",
+        "krigsvold": "Align capability/service requirements and separate implemented versus required-adapter scope."
+      },
+      "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
+      "wave": 2,
+      "implementationStatus": "not-started",
+      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "testPlan": [
+        "identical fixture JSON/IDs/section order/actions",
+        "root and /preview links/anchors",
+        "320/768/1440 light+dark; 200% text",
+        "keyboard/focus; noJS; reduced motion; forced colors; print",
+        "representative Chromium/Firefox/WebKit; axe+manual paired visual review",
+        "table captions/headers; independent overflow; chart/source-table exact data and unique region names"
+      ],
+      "evidence": [],
+      "pullRequests": [],
+      "exceptions": [],
+      "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
+      "compositionRefinements": [
+        {
+          "id": "document-index-body-measure",
+          "status": "rendered-measure-review-required",
+          "baselineSourceObservation": "Shared .example-reading max-width46rem constrains entire .example-document, including family14rem/13rem index and gap; source authority separates navigation from readable body. Exact computed body widths pending route screenshots/DOM measurement.",
+          "requiredJudgment": "Retain semantic sections/anchors where justified while correcting proven cramped total-wrapper/body geometry. Record CSS refinement as an actual change even when semantic anatomy is retained.",
+          "familySourceRules": [
+            "M-source",
+            "M-sequence",
+            "K-source",
+            "K-region"
+          ]
+        }
+      ],
+      "familyImplementationStatus": {
+        "martlet": "not-started",
+        "krigsvold": "not-started"
+      }
+    },
+    {
+      "order": 45,
+      "id": "stress-test",
+      "route": "/examples/stress-test/",
+      "semanticClass": "content-test",
+      "composition": "document",
+      "baseline": {
+        "files": {
+          "martlet": "examples/stress-test.html",
+          "krigsvold": "examples/stress-test.html"
+        },
+        "layout": "example-document",
+        "sectionIds": [
+          "prose",
+          "hierarchy",
+          "wide",
+          "code",
+          "missing"
+        ],
+        "sectionKinds": [
+          "prose",
+          "prose",
+          "table",
+          "prose",
+          "cards"
+        ],
+        "currentAnatomy": "shared example-document frame and typed sections: prose, prose, table, prose, cards",
+        "existingDifferencesToRetain": {
+          "martlet": "bounded document reading; editorial metadata/list relationship; collection before focused record where existing task requires",
+          "krigsvold": "purpose-labelled aligned section regions and scan rows; persistent collection/detail where existing task requires"
+        }
+      },
+      "authenticFamilyRules": {
+        "martlet": [
+          "M-relationship",
+          "M-sequence",
+          "M-source"
+        ],
+        "krigsvold": [
+          "K-region",
+          "K-alignment",
+          "K-source"
+        ]
+      },
+      "disposition": "retain",
+      "rationale": "This intentionally pathological fixture tests long prose, hierarchy, table, code and missing media; retain stressors and semantics.",
+      "familyJudgment": {
+        "martlet": "Retain bounded prose with independent media/code overflow.",
+        "krigsvold": "Retain purposeful regions and independently scrollable wide comparison content."
+      },
+      "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
+      "wave": 2,
+      "implementationStatus": "not-started",
+      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "testPlan": [
+        "identical fixture JSON/IDs/section order/actions",
+        "root and /preview links/anchors",
+        "320/768/1440 light+dark; 200% text",
+        "keyboard/focus; noJS; reduced motion; forced colors; print",
+        "representative Chromium/Firefox/WebKit; axe+manual paired visual review",
+        "table captions/headers; independent overflow; chart/source-table exact data and unique region names"
+      ],
+      "evidence": [],
+      "pullRequests": [],
+      "exceptions": [],
+      "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
+      "compositionRefinements": [
+        {
+          "id": "document-index-body-measure",
+          "status": "rendered-measure-review-required",
+          "baselineSourceObservation": "Shared .example-reading max-width46rem constrains entire .example-document, including family14rem/13rem index and gap; source authority separates navigation from readable body. Exact computed body widths pending route screenshots/DOM measurement.",
+          "requiredJudgment": "Retain semantic sections/anchors where justified while correcting proven cramped total-wrapper/body geometry. Record CSS refinement as an actual change even when semantic anatomy is retained.",
+          "familySourceRules": [
+            "M-source",
+            "M-sequence",
+            "K-source",
+            "K-region"
+          ]
+        }
+      ],
+      "familyImplementationStatus": {
+        "martlet": "not-started",
+        "krigsvold": "not-started"
+      }
+    },
+    {
+      "order": 46,
+      "id": "patterns",
+      "route": "/examples/patterns/",
+      "semanticClass": "section-library",
+      "composition": "landing",
+      "baseline": {
+        "files": {
+          "martlet": "examples/patterns.html",
+          "krigsvold": "examples/patterns.html"
+        },
+        "layout": "example-landing",
+        "sectionIds": [
+          "facts",
+          "stats",
+          "disclosures",
+          "action"
+        ],
+        "sectionKinds": [
+          "facts",
+          "stats",
+          "faq",
+          "prose"
+        ],
+        "currentAnatomy": "shared example-landing frame and typed sections: facts, stats, faq, prose",
+        "existingDifferencesToRetain": {
+          "martlet": "bounded document reading; editorial metadata/list relationship; collection before focused record where existing task requires",
+          "krigsvold": "purpose-labelled aligned section regions and scan rows; persistent collection/detail where existing task requires"
+        }
+      },
+      "authenticFamilyRules": {
+        "martlet": [
+          "M-relationship",
+          "M-sequence",
+          "M-source"
+        ],
+        "krigsvold": [
+          "K-region",
+          "K-alignment",
+          "K-source"
+        ]
+      },
+      "disposition": "retain",
+      "rationale": "Mixed facts, stats, disclosure and action are a capability specimen, not justification for a new universal frame.",
+      "familyJudgment": {
+        "martlet": "Retain local relationship grouping for each demonstrated object.",
+        "krigsvold": "Retain named object scopes and consistent alignment where it supports comparison."
+      },
+      "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
+      "wave": 3,
+      "implementationStatus": "not-started",
+      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "testPlan": [
+        "identical fixture JSON/IDs/section order/actions",
+        "root and /preview links/anchors",
+        "320/768/1440 light+dark; 200% text",
+        "keyboard/focus; noJS; reduced motion; forced colors; print",
+        "representative Chromium/Firefox/WebKit; axe+manual paired visual review",
+        "native details Enter/Space/open/close; exact questions+answers; noJS disclosures"
+      ],
+      "evidence": [],
+      "pullRequests": [],
+      "exceptions": [],
+      "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
+      "compositionRefinements": [],
+      "familyImplementationStatus": {
+        "martlet": "not-started",
+        "krigsvold": "not-started"
+      }
+    },
+    {
+      "order": 47,
+      "id": "dashboard-analytics",
+      "route": "/examples/dashboard-analytics/",
+      "semanticClass": "analytics-dashboard",
+      "composition": "dashboard",
+      "baseline": {
+        "files": {
+          "martlet": "examples/dashboard-analytics.html",
+          "krigsvold": "examples/dashboard-analytics.html"
+        },
+        "layout": "example-dashboard",
+        "sectionIds": [
+          "workspace"
+        ],
+        "sectionKinds": [
+          "prose"
+        ],
+        "currentAnatomy": "specialized dashboard layout renders data-driven chart/table/control regions; fixture workspace prose is not the operative body",
+        "existingDifferencesToRetain": {
+          "martlet": "bounded document reading; editorial metadata/list relationship; collection before focused record where existing task requires",
+          "krigsvold": "purpose-labelled aligned section regions and scan rows; persistent collection/detail where existing task requires"
+        }
+      },
+      "authenticFamilyRules": {
+        "martlet": [
+          "M-relationship",
+          "M-sequence",
+          "M-source",
+          "M-continuity"
+        ],
+        "krigsvold": [
+          "K-region",
+          "K-alignment",
+          "K-source",
+          "K-state"
+        ]
+      },
+      "disposition": "change",
+      "rationale": "Existing dashboard-family CSS already differs; review comparative evidence and context boundaries without discarding its chart/table accessibility.",
+      "familyJudgment": {
+        "martlet": "Refine explanatory context near metrics and collection-to-reading continuity.",
+        "krigsvold": "Refine aligned metric/chart/table regions and explicit committed filter scope."
+      },
+      "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
+      "wave": 4,
+      "implementationStatus": "not-started",
+      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "testPlan": [
+        "identical fixture JSON/IDs/section order/actions",
+        "root and /preview links/anchors",
+        "320/768/1440 light+dark; 200% text",
+        "keyboard/focus; noJS; reduced motion; forced colors; print",
+        "representative Chromium/Firefox/WebKit; axe+manual paired visual review",
+        "existing query/selection/local state + empty/no-match/recovery/reset contract; no data loss or new backend",
+        "table captions/headers; independent overflow; chart/source-table exact data and unique region names"
+      ],
+      "evidence": [],
+      "pullRequests": [],
+      "exceptions": [],
+      "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
+      "compositionRefinements": [],
+      "familyImplementationStatus": {
+        "martlet": "not-started",
+        "krigsvold": "not-started"
+      }
+    },
+    {
+      "order": 48,
+      "id": "dashboard-components",
+      "route": "/examples/dashboard-components/",
+      "semanticClass": "reference",
+      "composition": "document",
+      "baseline": {
+        "files": {
+          "martlet": "examples/dashboard-components.html",
+          "krigsvold": "examples/dashboard-components.html"
+        },
+        "layout": "example-document",
+        "sectionIds": [
+          "composition",
+          "metrics",
+          "behaviour",
+          "authority"
+        ],
+        "sectionKinds": [
+          "prose",
+          "prose",
+          "prose",
+          "prose"
+        ],
+        "currentAnatomy": "shared example-document frame and typed sections: prose, prose, prose, prose",
+        "existingDifferencesToRetain": {
+          "martlet": "bounded document reading; editorial metadata/list relationship; collection before focused record where existing task requires",
+          "krigsvold": "purpose-labelled aligned section regions and scan rows; persistent collection/detail where existing task requires"
+        }
+      },
+      "authenticFamilyRules": {
+        "martlet": [
+          "M-relationship",
+          "M-sequence",
+          "M-source"
+        ],
+        "krigsvold": [
+          "K-region",
+          "K-alignment",
+          "K-source"
+        ]
+      },
+      "disposition": "change",
+      "rationale": "The route is four capability-reference sections, not the React catalog of 22 components; make its actual reference anatomy independently native.",
+      "familyJudgment": {
+        "martlet": "Annotated browsable capability document retaining four full sections and anchors.",
+        "krigsvold": "Inspectable capability register with four named regions, not an invented component inventory."
+      },
+      "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
+      "wave": 1,
+      "implementationStatus": "in-progress-awaiting-pinned-PR-preview-review",
+      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "testPlan": [
+        "identical fixture JSON/IDs/section order/actions",
+        "root and /preview links/anchors",
+        "320/768/1440 light+dark; 200% text",
+        "keyboard/focus; noJS; reduced motion; forced colors; print",
+        "representative Chromium/Firefox/WebKit; axe+manual paired visual review"
+      ],
+      "evidence": [],
+      "pullRequests": [],
+      "exceptions": [],
+      "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
+      "compositionRefinements": [
+        {
+          "id": "document-index-body-measure",
+          "status": "rendered-measure-review-required",
+          "baselineSourceObservation": "Shared .example-reading max-width46rem constrains entire .example-document, including family14rem/13rem index and gap; source authority separates navigation from readable body. Exact computed body widths pending route screenshots/DOM measurement.",
+          "requiredJudgment": "Retain semantic sections/anchors where justified while correcting proven cramped total-wrapper/body geometry. Record CSS refinement as an actual change even when semantic anatomy is retained.",
+          "familySourceRules": [
+            "M-source",
+            "M-sequence",
+            "K-source",
+            "K-region"
+          ]
+        }
+      ],
+      "familyImplementationStatus": {
+        "martlet": "implemented-locally; unpinned/preview acceptance pending",
+        "krigsvold": "implementation in progress; exact status pending owner update"
+      }
+    },
+    {
+      "order": 49,
+      "id": "dashboard-administration",
+      "route": "/examples/dashboard-administration/",
+      "semanticClass": "administration-dashboard",
+      "composition": "dashboard",
+      "baseline": {
+        "files": {
+          "martlet": "examples/dashboard-administration.html",
+          "krigsvold": "examples/dashboard-administration.html"
+        },
+        "layout": "example-dashboard",
+        "sectionIds": [
+          "workspace"
+        ],
+        "sectionKinds": [
+          "prose"
+        ],
+        "currentAnatomy": "specialized dashboard layout renders data-driven chart/table/control regions; fixture workspace prose is not the operative body",
+        "existingDifferencesToRetain": {
+          "martlet": "bounded document reading; editorial metadata/list relationship; collection before focused record where existing task requires",
+          "krigsvold": "purpose-labelled aligned section regions and scan rows; persistent collection/detail where existing task requires"
+        }
+      },
+      "authenticFamilyRules": {
+        "martlet": [
+          "M-relationship",
+          "M-sequence",
+          "M-source",
+          "M-continuity"
+        ],
+        "krigsvold": [
+          "K-region",
+          "K-alignment",
+          "K-source",
+          "K-state"
+        ]
+      },
+      "disposition": "change",
+      "rationale": "Administration needs clear collection/object command scope and visible draft/recovery state, not decorative restyling.",
+      "familyJudgment": {
+        "martlet": "Refine related field/command grouping and retained collection context.",
+        "krigsvold": "Refine selection/object/bulk command region boundaries and explicit applied state."
+      },
+      "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
+      "wave": 4,
+      "implementationStatus": "not-started",
+      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "testPlan": [
+        "identical fixture JSON/IDs/section order/actions",
+        "root and /preview links/anchors",
+        "320/768/1440 light+dark; 200% text",
+        "keyboard/focus; noJS; reduced motion; forced colors; print",
+        "representative Chromium/Firefox/WebKit; axe+manual paired visual review",
+        "existing query/selection/local state + empty/no-match/recovery/reset contract; no data loss or new backend",
+        "table captions/headers; independent overflow; chart/source-table exact data and unique region names"
+      ],
+      "evidence": [],
+      "pullRequests": [],
+      "exceptions": [],
+      "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
+      "compositionRefinements": [],
+      "familyImplementationStatus": {
+        "martlet": "not-started",
+        "krigsvold": "not-started"
+      }
+    },
+    {
+      "order": 50,
+      "id": "dashboard-operations",
+      "route": "/examples/dashboard-operations/",
+      "semanticClass": "operations-dashboard",
+      "composition": "dashboard",
+      "baseline": {
+        "files": {
+          "martlet": "examples/dashboard-operations.html",
+          "krigsvold": "examples/dashboard-operations.html"
+        },
+        "layout": "example-dashboard",
+        "sectionIds": [
+          "workspace"
+        ],
+        "sectionKinds": [
+          "prose"
+        ],
+        "currentAnatomy": "specialized dashboard layout renders data-driven chart/table/control regions; fixture workspace prose is not the operative body",
+        "existingDifferencesToRetain": {
+          "martlet": "bounded document reading; editorial metadata/list relationship; collection before focused record where existing task requires",
+          "krigsvold": "purpose-labelled aligned section regions and scan rows; persistent collection/detail where existing task requires"
+        }
+      },
+      "authenticFamilyRules": {
+        "martlet": [
+          "M-relationship",
+          "M-sequence",
+          "M-source",
+          "M-continuity"
+        ],
+        "krigsvold": [
+          "K-region",
+          "K-alignment",
+          "K-source",
+          "K-state"
+        ]
+      },
+      "disposition": "change",
+      "rationale": "Operations needs clearly associated thresholds, acknowledgement state and exact data; preserve all existing state and recovery behavior.",
+      "familyJudgment": {
+        "martlet": "Refine signal/context/action relationships and continuity through acknowledgement.",
+        "krigsvold": "Refine aligned operational regions and exact threshold/acknowledgement scope."
+      },
+      "judgmentClassification": "contextual task translation; source-backed grammar, not a claim this exact object was observed at origin",
+      "wave": 4,
+      "implementationStatus": "not-started",
+      "visualReviewStatus": "baseline capture pending; no universal fidelity claim",
+      "testPlan": [
+        "identical fixture JSON/IDs/section order/actions",
+        "root and /preview links/anchors",
+        "320/768/1440 light+dark; 200% text",
+        "keyboard/focus; noJS; reduced motion; forced colors; print",
+        "representative Chromium/Firefox/WebKit; axe+manual paired visual review",
+        "existing query/selection/local state + empty/no-match/recovery/reset contract; no data loss or new backend",
+        "table captions/headers; independent overflow; chart/source-table exact data and unique region names"
+      ],
+      "evidence": [],
+      "pullRequests": [],
+      "exceptions": [],
+      "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
+      "compositionRefinements": [],
+      "familyImplementationStatus": {
+        "martlet": "not-started",
+        "krigsvold": "not-started"
+      }
+    }
+  ],
+  "systemWideVisualEvidence": {
+    "requiredRoutes": 50,
+    "requiredFamilies": [
+      "martlet",
+      "krigsvold"
+    ],
+    "status": "not-complete",
+    "requirement": "All50 paired routes need actual rendered visual review/contact sheets, beyond six baseline specimens; control browser concurrency."
+  }
+}
