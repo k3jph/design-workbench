@@ -1,0 +1,50 @@
+[
+  {
+    "repository": "martletdesign/astro",
+    "head": "bbc009169976115ff3c8e102eca8a74950bad3ed",
+    "unit": {
+      "tests": 49,
+      "pass": 49,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0
+    },
+    "miniflareSmokeOutput": "Miniflare R2 create-only archive, conditional catalog and promotion pointers, history and /preview passed"
+  },
+  {
+    "repository": "martletdesign/react",
+    "head": "dfc75923c281cfffb623500594babdb6baf8a012",
+    "unit": {
+      "tests": 38,
+      "pass": 38,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0
+    },
+    "miniflareSmokeOutput": "Miniflare R2 create-only archive, conditional catalog and promotion pointers, history and /preview passed"
+  },
+  {
+    "repository": "krigsvolddesign/astro",
+    "head": "4c3361a6df683b408a33fd02dae8d017123c8608",
+    "unit": {
+      "tests": 49,
+      "pass": 49,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0
+    },
+    "miniflareSmokeOutput": "Miniflare R2 create-only archive, conditional catalog and promotion pointers, history and /preview passed"
+  },
+  {
+    "repository": "krigsvolddesign/react",
+    "head": "a3b657bfddf019ffffeba8248b5636c3a690fe92",
+    "unit": {
+      "tests": 38,
+      "pass": 38,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0
+    },
+    "miniflareSmokeOutput": "Miniflare R2 create-only archive, conditional catalog and promotion pointers, history and /preview passed"
+  }
+]

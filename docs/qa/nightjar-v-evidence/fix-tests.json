@@ -1,0 +1,26 @@
+[
+  {
+    "family": "martlet",
+    "framework": "astro",
+    "unit_exit": 0,
+    "emulator_exit": 0
+  },
+  {
+    "family": "martlet",
+    "framework": "react",
+    "unit_exit": 0,
+    "emulator_exit": 0
+  },
+  {
+    "family": "krigsvold",
+    "framework": "astro",
+    "unit_exit": 0,
+    "emulator_exit": 0
+  },
+  {
+    "family": "krigsvold",
+    "framework": "react",
+    "unit_exit": 0,
+    "emulator_exit": 0
+  }
+]

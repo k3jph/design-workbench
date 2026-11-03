@@ -1,0 +1,77 @@
+{
+  "scope": "Local session observations; not a signed build attestation",
+  "implementations": [
+    {
+      "family": "martlet",
+      "framework": "astro",
+      "repository": "martletdesign/astro",
+      "commit": "43a858cffd144663b5316b2858272b370cf390ee",
+      "tree": "513c5ddbab84e4bf9822da5f96c220c82bebe404",
+      "tracked_changes": "",
+      "lockfiles": {
+        "package-lock.json": "e7d593268a7cda86ef522bb5fd971a2345511b8d3b6e0900b2d6c08de2d5c3f9",
+        "docs-release-lock.json": "ab549e4f00db1249fc2a25fb336e408210eb28852a7f771baf968ab086641512"
+      }
+    },
+    {
+      "family": "martlet",
+      "framework": "react",
+      "repository": "martletdesign/react",
+      "commit": "7ffe7b32ce2f250c8cae17bb4e85960d1a079f7c",
+      "tree": "42fe4fd3451cc418532d69c7ec9eb2e957739c38",
+      "tracked_changes": "",
+      "lockfiles": {
+        "package-lock.json": "a91a630e0a28c497a878ed5cd6c0dc20a81380544040e119c7c5ac16f52c6a92",
+        "docs-release-lock.json": "4e04ddf66c39526960719c784ff333bffcd79c821081be30686f16d9fa6e0a1e"
+      }
+    },
+    {
+      "family": "martlet",
+      "framework": "jekyll",
+      "repository": "martletdesign/jekyll",
+      "commit": "a243900a57e71dc0acb2ff3b853da6181d7325f9",
+      "tree": "a9caea0986f46e72f797884dfba5dc4e092fb0a8",
+      "tracked_changes": "",
+      "lockfiles": {
+        "package-lock.json": "0d021547ba3dee5a114101dbf0ae9a875238c8f42ce133861efe2fa9a81b2448",
+        "Gemfile.lock": "5c244649c6fe9484d1456707d0faf018bcf0b8dd7d1bc5ec9d4ae50ecf9bf608"
+      }
+    },
+    {
+      "family": "krigsvold",
+      "framework": "astro",
+      "repository": "krigsvolddesign/astro",
+      "commit": "82ac5eddbc5e870985c3e74d9e7435dd2901e05d",
+      "tree": "ba603c41942471322889ae363631dba80b9e0a7d",
+      "tracked_changes": "",
+      "lockfiles": {
+        "package-lock.json": "5c3d147b4099b8419059288c346433f612ebfe49cd614057471acd00f0ff4d79",
+        "docs-release-lock.json": "d31727cefa0cf41fc176efb1c1c6c8c7bebab609488bff49ed9005fb6e9de9d2"
+      }
+    },
+    {
+      "family": "krigsvold",
+      "framework": "react",
+      "repository": "krigsvolddesign/react",
+      "commit": "4fdc39d3056b5b7db0414ea09870d97b4126628f",
+      "tree": "5278b6e4621aa45082981fa82dac3117b6571211",
+      "tracked_changes": "",
+      "lockfiles": {
+        "package-lock.json": "3c3ffe7b9343544a9397e9f2f2d2e5fdfb744820c305c3a88abbd33c11cca717",
+        "docs-release-lock.json": "c8f8408646cc4731b75a80c53bd9d69efde67b6a70eebfae2a50353e37a389d0"
+      }
+    },
+    {
+      "family": "krigsvold",
+      "framework": "jekyll",
+      "repository": "krigsvolddesign/jekyll",
+      "commit": "84a3884cd3f1c0c99ab315a207784ba59a27c7c7",
+      "tree": "555472a38b65eefeb47766a9a7f6ec771be3069c",
+      "tracked_changes": "",
+      "lockfiles": {
+        "package-lock.json": "0d021547ba3dee5a114101dbf0ae9a875238c8f42ce133861efe2fa9a81b2448",
+        "Gemfile.lock": "5c244649c6fe9484d1456707d0faf018bcf0b8dd7d1bc5ec9d4ae50ecf9bf608"
+      }
+    }
+  ]
+}

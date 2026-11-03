@@ -1,0 +1,9 @@
+{
+  "key": "nv-b261923f3da7/s3/native-stream/interrupted.bin",
+  "bytesProducedBeforeInterruption": 65536,
+  "totalExpectedBytes": 1048576,
+  "interruptedRequestFailed": true,
+  "incompleteObjectStatus": 404,
+  "retryStatus": 200,
+  "verifiedSha256": "9110073e562ad3c7bba0f03d7ec3881bd05cb4e13bb7fab6a63e704f3c80e08c"
+}
