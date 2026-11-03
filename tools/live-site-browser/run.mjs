@@ -42,12 +42,15 @@ async function routeFrames(t){
     const r=await page.goto(url,{waitUntil:'load'});assert.equal(r.status(),200);assert.equal(await page.locator('main').count(),1);assert.equal(await page.locator('h1').count(),1);assert.equal((await page.locator('h1').textContent()).replace(/\s+/g,' ').trim(),recipe.title.replace(/\s+/g,' ').trim());assert.ok((await page.locator('main').textContent()).replace(/\s+/g,' ').includes(recipe.summary.replace(/\s+/g,' ')));
     // Loading=eager makes every declared image part of this route's asset gate,
     // including images below the fold which otherwise begin loading too late.
-    await operation(t,'image loading '+recipe.id,()=>page.evaluate(async()=>{
-     await Promise.all([...document.images].map(image=>new Promise((resolve,reject)=>{
-      const loaded=()=>image.naturalWidth>0?resolve():reject(Error('Image has no decoded width: '+image.src));
-      image.loading='eager';if(image.complete){loaded();return}image.addEventListener('load',loaded,{once:true});image.addEventListener('error',()=>reject(Error('Image failed: '+image.src)),{once:true});
-     })));document.documentElement.getBoundingClientRect();
-    }),15000);
+    await operation(t,'image loading '+recipe.id,async()=>{
+     await page.evaluate(()=>{for(const image of document.images){if(!image.hasAttribute('src')&&!image.hasAttribute('srcset')&&!image.currentSrc){const dialog=image.closest('dialog.example-lightbox');if(!dialog||dialog.open||image.getAttribute('alt')!=='')throw Error('Source-less image is not a dormant decorative lightbox slot')}else image.loading='eager'}document.documentElement.getBoundingClientRect()});
+     // Poll from Node: Firefox may not deliver injected asynchronous callbacks
+     // when page JavaScript is disabled, although actual resources still load.
+     for(;;){const images=await page.evaluate(()=>[...document.images].filter(image=>image.hasAttribute('src')||image.hasAttribute('srcset')||image.currentSrc).map(image=>({src:image.currentSrc||image.src,complete:image.complete,width:image.naturalWidth})));const broken=images.find(image=>image.complete&&image.width<=0);if(broken)throw Error('Image failed or has no decoded width: '+broken.src);if(images.every(image=>image.complete&&image.width>0))break;await new Promise(resolve=>setTimeout(resolve,25))}
+    },15000);
+    if(javaScriptEnabled&&recipe.id==='gallery'&&await page.locator('[data-gallery] [data-enlarge]').count())await operation(t,'gallery lightbox real image and focus',async()=>{
+     const opener=page.locator('[data-gallery] [data-enlarge]').first(),expected=await opener.getAttribute('href'),alt=await opener.locator('img').getAttribute('alt'),dialog=page.locator('dialog.example-lightbox');await opener.focus();await page.keyboard.press('Enter');await dialog.waitFor({state:'visible'});const image=dialog.locator('img');assert.equal(await image.getAttribute('src'),new URL(expected,page.url()).href);assert.equal(await image.getAttribute('alt'),alt);await image.evaluate(image=>image.complete&&image.naturalWidth>0?true:new Promise((resolve,reject)=>{image.addEventListener('load',()=>image.naturalWidth>0?resolve(true):reject(Error('Lightbox image has no decoded width')),{once:true});image.addEventListener('error',()=>reject(Error('Lightbox image failed')),{once:true})}));await page.keyboard.press('Escape');await dialog.waitFor({state:'hidden'});assert.equal(await opener.evaluate(n=>document.activeElement===n),true,'lightbox Escape returns opener focus');
+    },15000);
     if(javaScriptEnabled)await fontsReady(page,t,recipe.id);
     await operation(t,'resource settlement '+recipe.id,async()=>{
      // Zero pending same-origin requests must remain stable across rendering
