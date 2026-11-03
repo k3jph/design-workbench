@@ -1,0 +1,19 @@
+# Framework adapter onboarding
+
+The runner is a neutral static-contract laboratory. Its default matrix lives in `scripts/qa/portable-matrix.json`; manifests may instead declare an explicit `matrix` with unique `families` and `frameworks` arrays. `--require-matrix` requires every configured family/framework pair, rejects duplicates and any target outside that matrix, and requires each target in an explicit matrix to identify its matching `adapter.framework`. A matching label is a configuration check, not proof of the implementation technology. Existing manifests omit `matrix` and keep the original two-family, three-framework `catalog` behavior. A catalog still contains exactly 50 unique canonical records, regardless of framework count.
+
+An illustrative fourth-framework declaration is:
+
+```json
+{
+  "matrix": {"families": ["martlet", "krigsvold"], "frameworks": ["jekyll", "astro", "react", "vue"]},
+  "family": "martlet", "framework": "vue", "adapter": {"framework": "vue"},
+  "capability": "static-route-smoke"
+}
+```
+
+The fragment combines a manifest-level matrix and target fields only; see `nightjar-iii-portable-runner.md` for the full manifest, pinned repositories, commands and output format. Each configured cell needs a separately reviewed target: full Git object IDs, declared inputs and package identity checks where applicable, trusted argument-array commands, and an output root generated from `{output}` for both `{base}` values. `catalog` is the default and runs the existing 50-route and experimental science static checks. `static-route-smoke` checks only the first canonical record's heading, summary and main landmark, plus local link validity. It records a single `adapter-smoke` cell per base, science `not_assessed`, and does not imply the rest of the catalog or any interaction, accessibility, visual identity or Vue implementation is complete. Unsupported capabilities fail validation. `--require-matrix` checks coverage of declared cells, not equivalence of capabilities; review each cell's capability explicitly.
+
+To onboard a future Vue implementation, create a family-owned implementation for each language, consume the correct pinned family core/theme package and its notices, implement the shared route/fixture and behavioral contracts in idiomatic Vue, and document its public imports, SSR or hydration and static fallback. Add pinned sources, integrity checks and build commands to the manifest; use `static-route-smoke` while the adapter is incomplete, then `catalog` only when it actually provides all expected routes and science static output. Add independently executed interaction, keyboard/focus, accessibility, performance, responsive and family-specific visual checks; static evidence does not stand in for them. The current runner does not manage long-running servers or verify arbitrary commands consume their declared package inputs; those remain separate review and test responsibilities. Build commands execute with caller permissions and are not network-sandboxed.
+
+`scripts/qa/portable-extensibility.test.mjs` creates a disposable pinned repository containing a tiny deterministic HTML-producing adapter and synthetic canonical fixtures. It configures two families by four framework labels, checks both base paths and their base-aware links, and asserts missing Vue, duplicate target, unknown/mismatched framework, unsupported capability, nonexistent pin, incorrect HTML and a broken subpath link fail. It removes the fourth label and repeats the default three-framework matrix. The synthetic adapter is not Vue, and no result is a Vue implementation or canonical parity claim. Run with `CHROMIUM_PATH=/path/to/chromium node --test tests/portable-runner.test.mjs scripts/qa/portable-extensibility.test.mjs`. The real six-target catalog manifest must still be run separately against actual pinned implementations.

@@ -1,0 +1,78 @@
+name: Verify publishable-form core artifacts without publishing
+on:
+  pull_request:
+    paths:
+      - 'scripts/core-release/**'
+      - 'fixtures/core-release/**'
+      - 'tests/core-stage-preparation.test.mjs'
+      - '.github/workflows/core-publishable-rehearsal.yml'
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+jobs:
+  consumers:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    strategy:
+      fail-fast: false
+      max-parallel: 2
+      matrix:
+        browser: [chromium, firefox, webkit]
+    env:
+      WORKBENCH_BROWSER: ${{ matrix.browser }}
+      CORE_CONSUMER_NETWORK: '1'
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          repository: martletdesign/core
+          ref: 107257a176b960cdf94f87fda95a3fe563c48111
+          path: .core-martlet
+          persist-credentials: false
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          repository: krigsvolddesign/core
+          ref: 39e000864082b93cce75df368a9bbeccbd5284ce
+          path: .core-krigsvold
+          persist-credentials: false
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          repository: k3jph/design-workbench
+          ref: 04d3e14b1b1943cbf2a90f1a727822d87327b2ae
+          path: .react-source
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '24.19.0'
+      - run: npm install --global npm@11.15.0
+      - run: node --test tests/core-stage-preparation.test.mjs
+      - name: Rebuild and verify the exact publishable-form artifacts
+        run: |
+          umask 077
+          chmod -R go-rwx .core-martlet .core-krigsvold
+          for family in martlet krigsvold; do (cd ".core-$family" && npm ci --ignore-scripts); done
+          export NIGHTJAR_NPM_CLI="$(readlink -f "$(command -v npm)")"
+          node scripts/core-release/prepare-artifact.mjs .core-martlet 107257a176b960cdf94f87fda95a3fe563c48111 @martlet/core 2.2.3 "$RUNNER_TEMP/martlet"
+          node scripts/core-release/prepare-artifact.mjs .core-krigsvold 39e000864082b93cce75df368a9bbeccbd5284ce @krigsvold/core 2.2.4 "$RUNNER_TEMP/krigsvold"
+          printf '%s  %s\n' '1395eb206514b54500e4a098b1aafe59492c516c301a7e8c81a18672f6f4ce42' "$RUNNER_TEMP/martlet/martlet-core-2.2.3.tgz" | sha256sum --check
+          printf '%s  %s\n' 'c2088b2585e913c11f74a045805bcef186e8e830f5c626e46c0c299e6a6eb7c4' "$RUNNER_TEMP/krigsvold/krigsvold-core-2.2.4.tgz" | sha256sum --check
+          node scripts/core-release/verify-consumer.mjs "$RUNNER_TEMP/martlet/martlet-core-2.2.3.tgz" @martlet/core 2.2.3 1395eb206514b54500e4a098b1aafe59492c516c301a7e8c81a18672f6f4ce42
+          node scripts/core-release/verify-consumer.mjs "$RUNNER_TEMP/krigsvold/krigsvold-core-2.2.4.tgz" @krigsvold/core 2.2.4 c2088b2585e913c11f74a045805bcef186e8e830f5c626e46c0c299e6a6eb7c4
+      - name: Pack React candidates with verified inputs
+        run: |
+          mkdir "$RUNNER_TEMP/consumer-inputs"
+          cp "$RUNNER_TEMP/martlet/martlet-core-2.2.3.tgz" "$RUNNER_TEMP/krigsvold/krigsvold-core-2.2.4.tgz" "$RUNNER_TEMP/consumer-inputs/"
+          cd .react-source
+          npm ci --ignore-scripts
+          npm run build --workspaces
+          npm pack --workspace @martlet/react --workspace @krigsvold/react --ignore-scripts --pack-destination "$RUNNER_TEMP/consumer-inputs"
+      - run: cd .react-source && npx playwright install --with-deps "${{ matrix.browser }}"
+      - name: Exercise exact core tarballs at root and subpath
+        env:
+          NIGHTJAR_CORE_ARCHIVE_DIR: ${{ runner.temp }}/consumer-inputs
+          NIGHTJAR_REACT_ARCHIVE_DIR: ${{ runner.temp }}/consumer-inputs
+        run: cd .react-source && node scripts/nightjar3/test-core-react-bases.mjs

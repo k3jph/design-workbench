@@ -23,8 +23,8 @@ import { readPreferences } from "./preferences.mjs";
 import { RevisionReview } from "./revisions";
 import "@martlet/react/styles.css";
 import "@krigsvold/react/styles.css";
-import "@martlet/theme/fonts.css";
-import "@krigsvold/theme/fonts.css";
+import "@martlet/core/fonts.css";
+import "@krigsvold/core/fonts.css";
 import {
   categories,
   maturities,

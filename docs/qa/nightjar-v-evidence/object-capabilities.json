@@ -1,0 +1,82 @@
+[
+  {
+    "path": "accounts/f6142510bef6212dfa78bc6932acc80f/r2/buckets/nightjar-archive-sandbox/objects/nv-b261923f3da7%2Fcapabilities%2Fseed.txt",
+    "method": "PUT",
+    "status": 200,
+    "body": {
+      "success": true,
+      "errors": [],
+      "messages": [],
+      "result": {
+        "key": "nv-b261923f3da7/capabilities/seed.txt",
+        "size": "17",
+        "etag": "c748783a98cc432c1c800da2881b0fc8",
+        "version": "7e5e618ad5db287d44befab73715b3a0",
+        "uploaded": "2026-11-02T22:50:41.216Z",
+        "storage_class": "Standard"
+      }
+    },
+    "headers": {
+      "cf-auditlog-id": "01a19e75-28b9-7117-921c-afe0dd9d6a19",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Mon, 02 Nov 2026 22:50:41 GMT"
+    }
+  },
+  {
+    "path": "accounts/f6142510bef6212dfa78bc6932acc80f/r2/buckets/nightjar-archive-sandbox/objects/nv-b261923f3da7%2Fcapabilities%2Fseed.txt",
+    "method": "GET",
+    "status": 200,
+    "body": {
+      "bytes": 17,
+      "sha256": "830054237e91e49addbd0af3f4188ac0cdd22c7b256131ccb6989866fc15705e",
+      "matches_original": true,
+      "matches_conflicting": false
+    },
+    "headers": {
+      "cf-auditlog-id": "01a19e75-2b9f-7136-852f-7abecfdccf0e",
+      "content-type": "text/plain",
+      "date": "Mon, 02 Nov 2026 22:50:41 GMT",
+      "etag": "\"c748783a98cc432c1c800da2881b0fc8\""
+    }
+  },
+  {
+    "path": "accounts/f6142510bef6212dfa78bc6932acc80f/r2/buckets/nightjar-archive-sandbox/objects/nv-b261923f3da7%2Fcapabilities%2Fseed.txt",
+    "method": "PUT",
+    "status": 200,
+    "body": {
+      "success": true,
+      "errors": [],
+      "messages": [],
+      "result": {
+        "key": "nv-b261923f3da7/capabilities/seed.txt",
+        "size": "20",
+        "etag": "00f1e9b1e6951d6d8283754070164cd7",
+        "version": "7e5e618ad17bc524bb5e5f6fb51494fd",
+        "uploaded": "2026-11-02T22:50:42.320Z",
+        "storage_class": "Standard"
+      }
+    },
+    "headers": {
+      "cf-auditlog-id": "01a19e75-2d8c-7cb7-93ab-e1067926fec3",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Mon, 02 Nov 2026 22:50:42 GMT"
+    }
+  },
+  {
+    "path": "accounts/f6142510bef6212dfa78bc6932acc80f/r2/buckets/nightjar-archive-sandbox/objects/nv-b261923f3da7%2Fcapabilities%2Fseed.txt",
+    "method": "GET",
+    "status": 200,
+    "body": {
+      "bytes": 20,
+      "sha256": "738483bb2d9f60ce60afd8160c56d0081e8ec2e79d5fcadabe1beebce2195b2d",
+      "matches_original": false,
+      "matches_conflicting": true
+    },
+    "headers": {
+      "cf-auditlog-id": "01a19e75-2fc3-7aca-8f97-37318c3c4fe7",
+      "content-type": "text/plain",
+      "date": "Mon, 02 Nov 2026 22:50:42 GMT",
+      "etag": "\"00f1e9b1e6951d6d8283754070164cd7\""
+    }
+  }
+]

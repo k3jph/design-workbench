@@ -14,7 +14,7 @@ for(const family of ['martlet','krigsvold']) {
  const dir=await mkdtemp(join(tmpdir(),'design-preview-'));
  try {
   const docs=join(dir,'react');await cp(`docs-dist/${family}`,docs,{recursive:true});await mkdir(join(docs,'licenses'),{recursive:true});
-  const dependencies=['react','react-dom',`@${family}/theme`,...(family==='martlet'?['@fontsource/cambo','@fontsource/cinzel','@fontsource/lato','@fontsource/ibm-plex-mono']:['@fontsource/roboto','@fontsource/roboto-slab','@fontsource/roboto-mono'])];
+  const dependencies=['react','react-dom',`@${family}/theme`,`@${family}/core`,...(family==='martlet'?['@fontsource/cambo','@fontsource/cinzel','@fontsource/lato','@fontsource/ibm-plex-mono']:['@fontsource/roboto','@fontsource/roboto-slab','@fontsource/roboto-mono'])];
   for(const pkg of dependencies)await cp(`node_modules/${pkg}/LICENSE`,join(docs,'licenses',pkg.replaceAll('/','-').replace('@','')+'.txt'));
   await cp('LICENSE',join(docs,'licenses/workbench.txt'));await cp(`packages/${family}-react/NOTICE.md`,join(docs,'licenses/react-notice.md'));await cp('docs-app/brand/provenance.json',join(docs,'licenses/brand-provenance.json'));
   const metadata={family,preview:distribution.preview,artifactVersion,sourceCommit:commit,base:'/',readOnlyReference:true};await writeFile(join(docs,'preview.json'),JSON.stringify(metadata,null,2)+'\n');

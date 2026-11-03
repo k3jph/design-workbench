@@ -1,0 +1,40 @@
+[
+  {
+    "package": "@martlet/core",
+    "version": "2.2.3",
+    "sha256": "1395eb206514b54500e4a098b1aafe59492c516c301a7e8c81a18672f6f4ce42",
+    "matches_reviewed_bytes": true,
+    "registry_integrity": "sha512-Yan9LJSOTAP+BDeqXMZfZ+uq9oVOb7xGczHEM7fxKTAwI3SQgoLu06te5R1qLu/IB/KHNL2WuAfRLvXU/XsXwQ==",
+    "integrity_matches": true,
+    "attestations": {
+      "url": "https://registry.npmjs.org/-/npm/v1/attestations/@martlet%2fcore@2.2.3",
+      "provenance": {
+        "predicateType": "https://slsa.dev/provenance/v1"
+      }
+    },
+    "repository": {
+      "url": "git+https://github.com/martletdesign/core.git",
+      "type": "git"
+    },
+    "note": "Registry bytes verified; no independent provenance signature verification performed."
+  },
+  {
+    "package": "@krigsvold/core",
+    "version": "2.2.4",
+    "sha256": "c2088b2585e913c11f74a045805bcef186e8e830f5c626e46c0c299e6a6eb7c4",
+    "matches_reviewed_bytes": true,
+    "registry_integrity": "sha512-bApvYVgYbGl/lkOYI1i/HYr1uS8ZwITrr/H1SBT2C3/ziA0UvXSsAS2Pppk/L6E46uxboArsfxaSaUwZ7rV2GQ==",
+    "integrity_matches": true,
+    "attestations": {
+      "url": "https://registry.npmjs.org/-/npm/v1/attestations/@krigsvold%2fcore@2.2.4",
+      "provenance": {
+        "predicateType": "https://slsa.dev/provenance/v1"
+      }
+    },
+    "repository": {
+      "url": "git+https://github.com/krigsvolddesign/core.git",
+      "type": "git"
+    },
+    "note": "Registry bytes verified; no independent provenance signature verification performed."
+  }
+]

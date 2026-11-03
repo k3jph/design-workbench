@@ -1,0 +1,7 @@
+# React gallery component
+
+`src/interactive/Gallery.tsx` takes a catalog `GallerySection` (id, title and image items). It displays the canonical image, alternative text, caption and an ordinary image link in server-rendered markup. Hydrated browsers with native dialog support open an image detail dialog; Escape or Close returns focus to the link that opened that instance. With JavaScript disabled or native `showModal` unavailable, links navigate directly to the base-aware image. Multiple gallery instances keep separate dialog state and unique label IDs. Images use the existing `exampleImage` allowlist; the catalog build must copy the canonical SVG files as it already does for the scene specimen.
+
+From the workbench root run `CHROMIUM_PATH=/usr/bin/chromium node examples/react-catalog/test-gallery.mjs`. The isolated SSR/hydration harness tests both families at root and subpath: two independent instances, keyboard open and Escape, initial dialog focus and focus return, alt/caption, light/dark axe, 320px reflow, no-JavaScript direct image navigation and the no-native-dialog fallback. A strict TypeScript check with `allowJs` covers the component and harness. Nothing is sent to an external service.
+
+This component is not yet wired into the React catalog route. Exact visual parity, other browser engines, manual assistive-technology review and sustained use remain open. The family React packages are experimental.

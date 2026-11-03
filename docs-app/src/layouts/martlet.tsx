@@ -11,7 +11,7 @@ import {
   TableOfContents,
 } from "docs-family";
 import mark from "../../brand/martlet-mark.svg";
-import { groups, descriptions, repo } from "../data";
+import { groups, descriptions, repo, implementationVersion } from "../data";
 export const familyMark = mark;
 import type { LayoutProps, PageProps } from "../layout-types";
 import "./martlet.css";
@@ -31,7 +31,7 @@ export function ComponentPage({
       title={name}
       eyebrow={category}
       summary={description}
-      metadata={<Badge>Experimental · 0.1.0</Badge>}
+      metadata={<Badge>Experimental · {implementationVersion}</Badge>}
       contents={
         <TableOfContents
           items={[

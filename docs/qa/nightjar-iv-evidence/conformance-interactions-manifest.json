@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "targets": [
+    {
+      "family": "martlet",
+      "framework": "astro",
+      "root": "/workspace/work/conformance-output/martlet/astro/archives/2.0.0",
+      "source_commit": "43a858cffd144663b5316b2858272b370cf390ee",
+      "base": "/preview/docs/v/2.0.0/",
+      "catalog": {
+        "path": "/workspace/work/conformance-output/martlet/astro/catalog.json",
+        "url": "/preview/docs/catalog.json"
+      }
+    },
+    {
+      "family": "martlet",
+      "framework": "react",
+      "root": "/workspace/work/conformance-output/martlet/react-preview",
+      "source_commit": "7ffe7b32ce2f250c8cae17bb4e85960d1a079f7c",
+      "base": "/preview/"
+    },
+    {
+      "family": "krigsvold",
+      "framework": "astro",
+      "root": "/workspace/work/conformance-output/krigsvold/astro/archives/2.0.0",
+      "source_commit": "82ac5eddbc5e870985c3e74d9e7435dd2901e05d",
+      "base": "/preview/docs/v/2.0.0/",
+      "catalog": {
+        "path": "/workspace/work/conformance-output/krigsvold/astro/catalog.json",
+        "url": "/preview/docs/catalog.json"
+      }
+    },
+    {
+      "family": "krigsvold",
+      "framework": "react",
+      "root": "/workspace/work/conformance-output/krigsvold/react-preview",
+      "source_commit": "4fdc39d3056b5b7db0414ea09870d97b4126628f",
+      "base": "/preview/"
+    }
+  ]
+}

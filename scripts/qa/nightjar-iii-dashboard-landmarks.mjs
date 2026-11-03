@@ -1,0 +1,12 @@
+// Audit a built administration page, including an applied query, using axe's
+// full default rule set (which includes the landmark-unique best practice).
+import assert from 'node:assert/strict';
+import {createServer} from 'node:http';
+import {readFileSync} from 'node:fs';
+import {extname,resolve,sep} from 'node:path';
+import {chromium,expect} from '@playwright/test';
+import AxeBuilder from '@axe-core/playwright';
+const root=resolve(process.argv[2]||''),base=process.argv[3]||'/';if(!process.argv[2]||!/^\/(?:[^/]+\/)?$/.test(base))throw Error('Pass a built site directory and optional / or /preview/ base.');
+const server=createServer((req,res)=>{const path=new URL(req.url,'http://localhost').pathname;if(!path.startsWith(base))return res.writeHead(404).end();const name=decodeURIComponent(path.slice(base.length)),file=resolve(root,name.endsWith('/')?`${name}index.html`:name);if(!file.startsWith(root+sep))return res.writeHead(403).end();try{const data=readFileSync(file);res.writeHead(200,{'Content-Type':({'.html':'text/html','.js':'text/javascript','.mjs':'text/javascript','.css':'text/css','.json':'application/json','.woff':'font/woff','.woff2':'font/woff2','.svg':'image/svg+xml'})[extname(file)]||'application/octet-stream'}).end(data)}catch{res.writeHead(404).end()}});
+await new Promise(done=>server.listen(0,'127.0.0.1',done));const browser=await chromium.launch({headless:true,...(process.env.CHROMIUM_PATH?{executablePath:process.env.CHROMIUM_PATH}:{})});
+try{const context=await browser.newContext({viewport:{width:320,height:900}}),page=await context.newPage();await page.goto(`http://127.0.0.1:${server.address().port}${base}examples/dashboard-administration/`,{waitUntil:'networkidle'});await page.getByLabel('Search people').fill('Amara');await page.getByLabel('Search people').press('Enter');await expect(page.locator('#people-table tbody')).toContainText('Amara');assert.equal(await page.locator('#people-table tbody tr').count(),1);const violations=(await new AxeBuilder({page}).analyze()).violations;if(violations.length)console.error(JSON.stringify(violations.map(v=>({id:v.id,nodes:v.nodes.map(n=>({target:n.target,html:n.html}))}))));assert.deepEqual(violations.map(v=>v.id),[]);await expect(page.getByRole('region',{name:'People directory table'})).toBeVisible();console.log(`${root} ${base}: filtered administration has distinct landmarks and no axe violations`);await context.close()}finally{await browser.close();server.closeAllConnections();await new Promise(done=>server.close(done))}

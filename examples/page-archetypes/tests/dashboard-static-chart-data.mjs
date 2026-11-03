@@ -1,0 +1,18 @@
+// Verify no-JavaScript chart alternatives against the same synthetic model used by enhancement.
+import assert from 'node:assert/strict';
+import {createServer} from 'node:http';
+import {readFile} from 'node:fs/promises';
+import {resolve,extname} from 'node:path';
+import {chromium} from '@playwright/test';
+import {analyticsView,operationsView} from '../jekyll/assets/js/dashboard-model.mjs';
+const fixture=JSON.parse(await readFile('examples/page-archetypes/content/dashboards.json','utf8'));
+const analytics=analyticsView(fixture,{start:'2026-10-22',end:'2026-10-28',category:'All',coverage:{start:'2026-09-03',end:'2026-10-28'}}),operations=operationsView(fixture,{});
+assert.equal(analytics.error,'');assert.equal(operations.error,undefined);
+const expected={
+ 'Session trend':analytics.days.map(day=>[day.date,String(day.sessions)]),
+ 'Download trend':analytics.days.map(day=>[day.date,String(day.downloads)]),
+ 'Category comparison':analytics.categories.filter(category=>analytics.rows.some(row=>row.category===category.name)).map(category=>[category.name,String(category.sessions),String(analytics.previousCategories?.find(previous=>previous.name===category.name)?.sessions??'Unavailable')]),
+ 'Latency trend':operations.points.map(point=>[`${point.time.slice(11,16)} UTC`,String(point.latency_ms)])};
+const roots=[['Jekyll',process.env.NIGHTJAR_JEKYLL_ROOT],['Astro',process.env.NIGHTJAR_ASTRO_ROOT||'examples/astro-slice/dist'],['React',process.env.NIGHTJAR_REACT_ROOT||'examples/react-catalog/dist']];if(!roots[0][1])throw Error('Set NIGHTJAR_JEKYLL_ROOT to paired root-path builds');
+const browser=await chromium.launch({headless:true,...(process.env.CHROMIUM_PATH?{executablePath:process.env.CHROMIUM_PATH}:{})});
+try{for(const [framework,source] of roots)for(const family of ['martlet','krigsvold']){const directory=resolve(source,family),server=createServer(async(req,res)=>{const path=new URL(req.url,'http://localhost').pathname,file=resolve(directory,path.slice(1)+(path.endsWith('/')?'index.html':''));if(!file.startsWith(directory+'/')){res.writeHead(403).end();return}try{const data=await readFile(file),type={'.html':'text/html','.css':'text/css','.js':'text/javascript','.mjs':'text/javascript','.svg':'image/svg+xml','.woff':'font/woff','.woff2':'font/woff2'};res.writeHead(200,{'Content-Type':type[extname(file)]||'application/octet-stream'}).end(data)}catch{res.writeHead(404).end()}});await new Promise(r=>server.listen(0,'127.0.0.1',r));try{const context=await browser.newContext({javaScriptEnabled:false,viewport:{width:320,height:900}}),page=await context.newPage(),origin=`http://127.0.0.1:${server.address().port}`;for(const [route,titles] of [['analytics',['Session trend','Download trend','Category comparison']],['operations',['Latency trend']]]){await page.goto(`${origin}/examples/dashboard-${route}/`);for(const title of titles){const figure=page.locator('figure').filter({has:page.getByRole('heading',{name:title,exact:true})});await figure.locator('summary').click();const table=figure.locator('table'),rows=await table.locator('tbody tr').evaluateAll(items=>items.map(row=>[...row.children].map(cell=>cell.textContent.trim())));assert.deepEqual(rows,expected[title],`${framework}/${family}/${title}: static chart observations`);assert.ok(await table.locator('caption').count());assert.ok(await table.locator('thead th[scope=col]').count()>=2);assert.equal(await table.locator('tbody th[scope=row]').count(),rows.length);}}await context.close();console.log(`${framework} ${family}: all four no-JS chart data tables match the shared model`);}finally{server.closeAllConnections();await new Promise(r=>server.close(r))}}}finally{await browser.close();}

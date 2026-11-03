@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "sourceRef": "REPLACE_WITH_VERIFIED_WORKBENCH_COMMIT",
+  "families": [
+    {
+      "family": "martlet",
+      "version": "0.2.0",
+      "sourceCommit": "322e549d15812d74257ace37207f62410d6f0911",
+      "archive": "artifacts/martlet-react-0.2.0.tgz",
+      "sha256": "185bf53ada0b4bdb792a1ba78223068ec3eda29ba1e74a6f85415c6cdf98f6d1",
+      "integrity": "sha512-IIAJRRgbpyEtea4hZpGSsQ3rynC+GAjOk/phrCgx/2bWM34yKvmB38qCAOx65ScSY19//1EmE5Y7APghZdfH9w==",
+      "core": {
+        "version": "2.2.3",
+        "integrity": "sha512-Yan9LJSOTAP+BDeqXMZfZ+uq9oVOb7xGczHEM7fxKTAwI3SQgoLu06te5R1qLu/IB/KHNL2WuAfRLvXU/XsXwQ=="
+      },
+      "agents": [
+        {
+          "name": "martlet-builder.zip",
+          "archive": "artifacts/martlet-builder.zip",
+          "sha256": "979881ab2b34e5b712ad6fd68a72e34f665400cf7185aa98efa031737f9b0b77",
+          "sourceCommit": "94aceab07935b1e103c5d924f0538788c337ff06",
+          "final": false
+        },
+        {
+          "name": "martlet-agent-tools.tar.gz",
+          "archive": "artifacts/martlet-agent-tools.tar.gz",
+          "sha256": "6a0cf32cd45cc3859e97c9024f27257f7be21039c509b3048a57ec6c2bbe8f5b",
+          "sourceCommit": "94aceab07935b1e103c5d924f0538788c337ff06",
+          "final": false
+        }
+      ]
+    },
+    {
+      "family": "krigsvold",
+      "version": "0.2.0",
+      "sourceCommit": "5128c6bf26cdba8ddb3c2d88de65b2307d3661b4",
+      "archive": "artifacts/krigsvold-react-0.2.0.tgz",
+      "sha256": "26db29737f69e5bb20ecc7b138acb35656c68c3f4eea80defdfb6a3d1bfb9961",
+      "integrity": "sha512-35kPqHPuFEyLP03Kps5JujlHN3PmhU59W0+39/CUjWbkUa90nFNiV3V2UnmkngVzjN3YBk/h4rRV4vWgNwBqIw==",
+      "core": {
+        "version": "2.2.4",
+        "integrity": "sha512-bApvYVgYbGl/lkOYI1i/HYr1uS8ZwITrr/H1SBT2C3/ziA0UvXSsAS2Pppk/L6E46uxboArsfxaSaUwZ7rV2GQ=="
+      },
+      "agents": [
+        {
+          "name": "krigsvold-builder.zip",
+          "archive": "artifacts/krigsvold-builder.zip",
+          "sha256": "71e6f5a86e8329f272d10188fa009b8f301f6901ceeb87b681e8f45e5723a2e3",
+          "sourceCommit": "94aceab07935b1e103c5d924f0538788c337ff06",
+          "final": false
+        },
+        {
+          "name": "krigsvold-agent-tools.tar.gz",
+          "archive": "artifacts/krigsvold-agent-tools.tar.gz",
+          "sha256": "f9c1c6df92a0075028978cc99fa5300fe9b5da61fca781f9583086b977ccfa02",
+          "sourceCommit": "94aceab07935b1e103c5d924f0538788c337ff06",
+          "final": false
+        }
+      ]
+    }
+  ]
+}

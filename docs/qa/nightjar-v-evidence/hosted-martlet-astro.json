@@ -1,0 +1,165 @@
+{
+  "headRefOid": "bbc009169976115ff3c8e102eca8a74950bad3ed",
+  "statusCheckRollup": [
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-02T23:18:52Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/martletdesign/astro/actions/runs/41544416506/job/125616363890",
+      "name": "registry-check",
+      "startedAt": "2026-11-02T23:18:40Z",
+      "status": "COMPLETED",
+      "workflowName": "Existing npm version rejection (read only)"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-02T23:18:57Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/martletdesign/astro/actions/runs/41544416531/job/125616364177",
+      "name": "audit",
+      "startedAt": "2026-11-02T23:18:41Z",
+      "status": "COMPLETED",
+      "workflowName": "Published provenance rehearsal (read only)"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-02T23:18:58Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/martletdesign/astro/actions/runs/41544416416/job/125616364563",
+      "name": "local-runtime",
+      "startedAt": "2026-11-02T23:18:40Z",
+      "status": "COMPLETED",
+      "workflowName": "R2 archive gateway rehearsal"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-02T23:19:54Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/martletdesign/astro/actions/runs/41544416507/job/125616364854",
+      "name": "verify (5.18.2, chromium)",
+      "startedAt": "2026-11-02T23:18:41Z",
+      "status": "COMPLETED",
+      "workflowName": "Verify Martlet Astro"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-02T23:19:35Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/martletdesign/astro/actions/runs/41544416419/job/125616364676",
+      "name": "archive (chromium)",
+      "startedAt": "2026-11-02T23:18:40Z",
+      "status": "COMPLETED",
+      "workflowName": "Versioned Astro archive rehearsal"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-02T23:20:25Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/martletdesign/astro/actions/runs/41544416507/job/125616364534",
+      "name": "verify (5.18.2, firefox)",
+      "startedAt": "2026-11-02T23:18:40Z",
+      "status": "COMPLETED",
+      "workflowName": "Verify Martlet Astro"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-02T23:19:30Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/martletdesign/astro/actions/runs/41544416419/job/125616364797",
+      "name": "archive (chromium, /preview)",
+      "startedAt": "2026-11-02T23:18:41Z",
+      "status": "COMPLETED",
+      "workflowName": "Versioned Astro archive rehearsal"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-02T23:20:19Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/martletdesign/astro/actions/runs/41544416507/job/125616365086",
+      "name": "verify (5.18.2, webkit)",
+      "startedAt": "2026-11-02T23:18:41Z",
+      "status": "COMPLETED",
+      "workflowName": "Verify Martlet Astro"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-02T23:19:43Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/martletdesign/astro/actions/runs/41544416419/job/125616364753",
+      "name": "archive (firefox)",
+      "startedAt": "2026-11-02T23:18:41Z",
+      "status": "COMPLETED",
+      "workflowName": "Versioned Astro archive rehearsal"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-02T23:19:54Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/martletdesign/astro/actions/runs/41544416507/job/125616364844",
+      "name": "verify (7.3.2, chromium)",
+      "startedAt": "2026-11-02T23:18:41Z",
+      "status": "COMPLETED",
+      "workflowName": "Verify Martlet Astro"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-02T23:19:43Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/martletdesign/astro/actions/runs/41544416419/job/125616364628",
+      "name": "archive (firefox, /preview)",
+      "startedAt": "2026-11-02T23:18:40Z",
+      "status": "COMPLETED",
+      "workflowName": "Versioned Astro archive rehearsal"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-02T23:20:05Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/martletdesign/astro/actions/runs/41544416507/job/125616364733",
+      "name": "verify (7.3.2, firefox)",
+      "startedAt": "2026-11-02T23:18:40Z",
+      "status": "COMPLETED",
+      "workflowName": "Verify Martlet Astro"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-02T23:20:03Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/martletdesign/astro/actions/runs/41544416419/job/125616364621",
+      "name": "archive (webkit)",
+      "startedAt": "2026-11-02T23:18:40Z",
+      "status": "COMPLETED",
+      "workflowName": "Versioned Astro archive rehearsal"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-02T23:20:23Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/martletdesign/astro/actions/runs/41544416507/job/125616364881",
+      "name": "verify (7.3.2, webkit)",
+      "startedAt": "2026-11-02T23:18:41Z",
+      "status": "COMPLETED",
+      "workflowName": "Verify Martlet Astro"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-02T23:19:52Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/martletdesign/astro/actions/runs/41544416419/job/125616364748",
+      "name": "archive (webkit, /preview)",
+      "startedAt": "2026-11-02T23:18:40Z",
+      "status": "COMPLETED",
+      "workflowName": "Versioned Astro archive rehearsal"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-02T23:19:21Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/martletdesign/astro/actions/runs/41544416419/job/125616364245",
+      "name": "history",
+      "startedAt": "2026-11-02T23:18:40Z",
+      "status": "COMPLETED",
+      "workflowName": "Versioned Astro archive rehearsal"
+    }
+  ]
+}

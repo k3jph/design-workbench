@@ -1,0 +1,91 @@
+{
+  "account": "f6142510bef6212dfa78bc6932acc80f",
+  "newReferenceWorkers": [
+    {
+      "family": "martlet",
+      "framework": "astro",
+      "worker": "martletdesign-astro-reference",
+      "host": "astro.martletdesign.dev",
+      "zone": "69dea64caef3fdd16cbd2e46daa534b2",
+      "legacyQueryReference": false,
+      "deliveryMode": "native-static-assets",
+      "runtimeBindings": []
+    },
+    {
+      "family": "martlet",
+      "framework": "react",
+      "worker": "martletdesign-react-reference",
+      "host": "react.martletdesign.dev",
+      "zone": "69dea64caef3fdd16cbd2e46daa534b2",
+      "previousWorker": "martlettheme",
+      "legacyQueryReference": true,
+      "deliveryMode": "custom-worker-with-assets",
+      "runtimeBindings": [
+        "ASSETS"
+      ]
+    },
+    {
+      "family": "martlet",
+      "framework": "jekyll",
+      "worker": "martletdesign-jekyll-reference",
+      "host": "jekyll.martletdesign.dev",
+      "zone": "69dea64caef3fdd16cbd2e46daa534b2",
+      "legacyQueryReference": false,
+      "deliveryMode": "native-static-assets",
+      "runtimeBindings": []
+    },
+    {
+      "family": "krigsvold",
+      "framework": "astro",
+      "worker": "krigsvolddesign-astro-reference",
+      "host": "astro.krigsvolddesign.dev",
+      "zone": "c59d0469424ebea0c460d455b30af1c6",
+      "legacyQueryReference": false,
+      "deliveryMode": "native-static-assets",
+      "runtimeBindings": []
+    },
+    {
+      "family": "krigsvold",
+      "framework": "react",
+      "worker": "krigsvolddesign-react-reference",
+      "host": "react.krigsvolddesign.dev",
+      "zone": "c59d0469424ebea0c460d455b30af1c6",
+      "previousWorker": "krigsvoldtheme",
+      "legacyQueryReference": true,
+      "deliveryMode": "custom-worker-with-assets",
+      "runtimeBindings": [
+        "ASSETS"
+      ]
+    },
+    {
+      "family": "krigsvold",
+      "framework": "jekyll",
+      "worker": "krigsvolddesign-jekyll-reference",
+      "host": "jekyll.krigsvolddesign.dev",
+      "zone": "c59d0469424ebea0c460d455b30af1c6",
+      "legacyQueryReference": false,
+      "deliveryMode": "native-static-assets",
+      "runtimeBindings": []
+    }
+  ],
+  "existingMainWorkers": [
+    {
+      "worker": "martlettheme",
+      "host": "martletdesign.dev",
+      "rollbackVersion": "e86442c3-905b-4c24-af1f-2073ee23786b",
+      "rollbackDeployment": "34090854-95ee-49fa-8c5f-e00141b7d0c6"
+    },
+    {
+      "worker": "krigsvoldtheme",
+      "host": "krigsvolddesign.dev",
+      "rollbackVersion": "aeead116-1705-489a-b5e4-0fc71a8c86a1",
+      "rollbackDeployment": "704f8d02-041f-4306-9617-e92285eb3693"
+    }
+  ],
+  "advancedArchiveEnabled": false,
+  "deploymentGate": "Exact main source, passing local/hosted verification, registry-backed dependency identity; then live smoke and cross-browser checks before accepting adoption",
+  "assetsRunWorkerFirst": true,
+  "allowedRuntimeBindings": [
+    "ASSETS"
+  ]
+}

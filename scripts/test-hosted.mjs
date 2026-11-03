@@ -25,7 +25,7 @@ for(const family of ['martlet','krigsvold']) {
   try {
    await client.connect(new StreamableHTTPClientTransport(new URL(origin+'/mcp'),{fetch:(input,init)=>worker.fetch(new Request(input,init))}));
    const r=await client.callTool({name:'get_manifest',arguments:{}}),manifest=JSON.parse(r.content[0].text);
-   assert.equal(manifest.family,family);assert.equal(manifest.references.length,61);
+   assert.equal(manifest.family,family);assert.equal(manifest.references.length,62);
    assert.ok(manifest.references.some(r=>r.id==='builder-skill'));
    const skill=await client.callTool({name:'get_reference',arguments:{id:'builder-skill'}});
    assert.ok(JSON.parse(skill.content[0].text).content.includes(`name: ${family}-builder`));

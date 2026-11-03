@@ -1,0 +1,62 @@
+[
+  {
+    "family": "martlet",
+    "repo": "martletdesign/website",
+    "head": "2ddc5674a44116287b03649180f5816e97432132",
+    "run": 41563723221,
+    "jobs": [
+      {
+        "id": 125680099301,
+        "name": "Pre-release consumer proof (webkit)",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/martletdesign/website/actions/runs/41563723221/job/125680099301"
+      },
+      {
+        "id": 125680099533,
+        "name": "Pre-release consumer proof (firefox)",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/martletdesign/website/actions/runs/41563723221/job/125680099533"
+      },
+      {
+        "id": 125680099556,
+        "name": "Pre-release consumer proof (chromium)",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/martletdesign/website/actions/runs/41563723221/job/125680099556"
+      }
+    ],
+    "evidenceKind": "prerelease immutable-source consumer proof; final registry-backed CI remains required before production"
+  },
+  {
+    "family": "krigsvold",
+    "repo": "krigsvolddesign/website",
+    "head": "29e00af450f4914bb35379d3d5ad1435eb15942b",
+    "run": 41565290699,
+    "jobs": [
+      {
+        "id": 125685238323,
+        "name": "Pre-release consumer proof (webkit)",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/krigsvolddesign/website/actions/runs/41565290699/job/125685238323"
+      },
+      {
+        "id": 125685238474,
+        "name": "Pre-release consumer proof (chromium)",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/krigsvolddesign/website/actions/runs/41565290699/job/125685238474"
+      },
+      {
+        "id": 125685238507,
+        "name": "Pre-release consumer proof (firefox)",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/krigsvolddesign/website/actions/runs/41565290699/job/125685238507"
+      }
+    ],
+    "evidenceKind": "prerelease immutable-source consumer proof; final registry-backed CI remains required before production"
+  }
+]

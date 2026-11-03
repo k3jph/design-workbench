@@ -21,7 +21,7 @@ import { LanguageGuide } from "./language-guide";
 import {ResearchProject} from "./research-project";
 import { ReferencePatterns } from './lab/patterns';
 
-import { repo, groups, descriptions } from "./data";
+import { repo, sharedContractRepo, implementationVersion, implementationSourceCommit, groups, descriptions } from "./data";
 import {
   FamilyLayout,
   ComponentPage,
@@ -281,7 +281,7 @@ function Playground({ name, mode }: { name: string; mode: string }) {
 function Start() {
   return (
     <article className="reference-page">
-      <p className="eyebrow">Design language 0.3 preview · React 0.1.0</p>
+      <p className="eyebrow">Design language 0.3 preview · React {implementationVersion}</p>
       <h2>
         A small beginning.
         <br />A real foundation.
@@ -291,25 +291,27 @@ function Start() {
         Explore the components here, then follow the installation instructions for the verified release.
       </p>
       <div className="callout">
-        <strong>{delivery.packages.React.published ? "Experimental 0.1.0 · published on npm" : "Release candidate · registry publication pending"}</strong>
+        <strong>{delivery.packages.React.published && delivery.packages.React.version===implementationVersion ? `Experimental ${implementationVersion} · published on npm` : `React ${implementationVersion} release candidate · registry publication pending`}</strong>
         <p>
           Every export remains experimental. Verify the family and version before adopting it; publication does not establish stability.
         </p>
       </div>
       <h2>Install in a React 19 project</h2>
-      <CopyCode label="Terminal" code={delivery.packages.React.install} />
-      <p>The API remains experimental. This pinned command uses the verified distribution route.</p>
+      {delivery.packages.React.published && delivery.packages.React.version===implementationVersion
+        ? <CopyCode label="Terminal" code={delivery.packages.React.install} />
+        : <p>Registry publication of this reference version is not yet verified. Use the independently pinned source below; current public release status is recorded on the <a href={`${delivery.home}/agents/`}>agent setup page</a>.</p>}
+      <p>The API remains experimental. Published installation commands appear only after this exact reference version is verified.</p>
       <h2>Reproduce from source</h2>
       <p>
         Use Node 24.19 or later within Node 24. The packages target React 19 and
         ship ES modules, declarations, and CSS.
       </p>
       <CopyCode label="Terminal"
-        code={`git clone ${repo}.git\ncd design-workbench\ngit checkout design-v0.3.0\nnpm ci --ignore-scripts\nnpm run build\nnpm run pack:react\n\n# In a separate React 19 project, use the generated tarball:\nnpm install /absolute/path/to/${family}-react-0.1.0.tgz`}
+        code={`git clone ${repo}.git\ncd react\ngit checkout ${implementationSourceCommit}\nnpm ci --ignore-scripts\nnpm run build\nnpm test\nnpm pack --ignore-scripts\n\n# In a separate React 19 project, use the generated tarball:\nnpm install /absolute/path/to/${family}-react-${implementationVersion}.tgz`}
       />
       <h2>Import components and styles</h2>
       <CopyCode
-        code={`import { Button } from '@${family}/react';\nimport '@${family}/react/styles.css';\nimport '@${family}/theme/fonts.css';\n\n<Button onClick={() => console.log('Ready')}>Continue</Button>`}
+        code={`import { Button } from '@${family}/react';\nimport '@${family}/react/styles.css';\nimport '@${family}/core/fonts.css';\n\n<Button onClick={() => console.log('Ready')}>Continue</Button>`}
       />
       <h2>Choose a color mode</h2>
       <p>
@@ -331,13 +333,13 @@ function Start() {
         Automated rendering, browser, keyboard, and accessibility checks are
         part of development. Manual screen-reader review, localization, RTL
         behavior, and sustained production use remain open validation work.
-        Every export is experimental.
+        Every export is experimental. The <a href={sharedContractRepo}>shared workbench</a> owns the cross-family recipe/behavior contracts and conformance harness; the standalone repository owns this React implementation.
       </p>
       <p>
         <a
-          href={`${repo}/blob/work/registry-foundations/docs/release-policy.md`}
+          href={`${repo}/blob/${implementationSourceCommit}/README.md`}
         >
-          Read the release policy ↗
+          Read the standalone source and release contract ↗
         </a>
       </p>
     </article>
@@ -392,7 +394,7 @@ function Agents() {
     <h2>Optional installed skill or offline server</h2>
     <p><a href={`agents/${family}-builder.zip`} download>Download {familyName} builder skill</a> · <a href={`agents/${family}-agent-tools.tar.gz`} download>Download offline MCP and skill</a></p>
     <p>Use your client’s supported skill upload or skills directory. The offline archive runs with Node 24: extract, run npm ci --ignore-scripts, and configure a stdio client to launch its index.mjs. Do not use a local file path as a remote endpoint.</p>
-    <h2>Verification and limits</h2><p>The SDK client checks modern and legacy HTTP negotiation, exact retrieval, hashes, family isolation, unsupported requests and offline installation. These checks do not establish successful installation in every ChatGPT or Claude account. Grammar 0.3, React 0.1.0 and new application compositions remain experimental; manual assistive technology, RTL and sustained use remain open.</p>
+    <h2>Verification and limits</h2><p>The SDK client checks modern and legacy HTTP negotiation, exact retrieval, hashes, family isolation, unsupported requests and offline installation. These checks do not establish successful installation in every ChatGPT or Claude account. Grammar 0.3, React {implementationVersion} and new application compositions remain experimental; manual assistive technology, RTL and sustained use remain open.</p>
     <p><a href={`${delivery.home}/agents/`}>Public setup and publication status ↗</a> · <a href="?page=language">Read the grammar →</a></p>
   </article>;
 }

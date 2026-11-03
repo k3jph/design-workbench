@@ -1,0 +1,23 @@
+// Exercise the moment an unavailable sign-in action becomes available.
+// Disabled controls are reported, not asserted against the enabled-text threshold.
+import assert from 'node:assert/strict';
+import {createServer} from 'node:http';
+import {readFile} from 'node:fs/promises';
+import {resolve,extname} from 'node:path';
+import {chromium,expect} from '@playwright/test';
+
+const roots={jekyll:process.env.NIGHTJAR_JEKYLL_ROOT,astro:process.env.NIGHTJAR_ASTRO_ROOT||'examples/astro-slice/dist',react:process.env.NIGHTJAR_REACT_ROOT||'examples/react-catalog/dist'};
+if(!roots.jekyll)throw Error('NIGHTJAR_JEKYLL_ROOT must contain paired root-path builds');
+const channel=n=>{n/=255;return n<=.04045?n/12.92:((n+.055)/1.055)**2.4};
+const luminance=rgb=>.2126*channel(rgb[0])+.7152*channel(rgb[1])+.0722*channel(rgb[2]);
+const ratio=(a,b)=>{a=luminance(a);b=luminance(b);return (Math.max(a,b)+.05)/(Math.min(a,b)+.05)};
+function color(value){const match=value.match(/^rgba?\((\d+),\s*(\d+),\s*(\d+)(?:,\s*([\d.]+))?\)$/);assert.ok(match,`Unsupported color ${value}`);return {rgb:match.slice(1,4).map(Number),alpha:match[4]===undefined?1:Number(match[4])};}
+async function serve(root){const server=createServer(async(req,res)=>{const path=new URL(req.url,'http://localhost').pathname,file=resolve(root,path.slice(1)+(path.endsWith('/')?'index.html':''));if(!file.startsWith(root+'/'))return res.writeHead(403).end();try{const data=await readFile(file),types={'.html':'text/html','.css':'text/css','.js':'text/javascript','.mjs':'text/javascript','.svg':'image/svg+xml','.woff':'font/woff','.woff2':'font/woff2'};res.writeHead(200,{'Content-Type':types[extname(file)]||'application/octet-stream'}).end(data)}catch{res.writeHead(404).end()}});await new Promise(r=>server.listen(0,'127.0.0.1',r));return server}
+const browser=await chromium.launch({headless:true,...(process.env.CHROMIUM_PATH?{executablePath:process.env.CHROMIUM_PATH}:{})});
+try{for(const [framework,base] of Object.entries(roots))for(const family of ['martlet','krigsvold']){const server=await serve(resolve(base,family)),origin=`http://127.0.0.1:${server.address().port}`;try{for(const appearance of ['light','dark']){const context=await browser.newContext({viewport:{width:320,height:900}});await context.addInitScript(value=>{localStorage.setItem('nightjar-appearance',value);localStorage.setItem('design-appearance',value)},appearance);const page=await context.newPage();try{
+ await page.goto(`${origin}/examples/sign-in/`,{waitUntil:'networkidle'});if(framework==='react')await page.waitForFunction(value=>document.querySelector('.source-shell')?.dataset.mode===value,appearance);else await page.waitForFunction(value=>document.documentElement.dataset.appearance===value,appearance);
+ const button=page.locator('main form button[type="submit"]').first();await expect(button).toBeEnabled();
+ const {disabled,samples}=await button.evaluate(async button=>{const sample=()=>{const style=getComputedStyle(button),parents=[];for(let parent=button.parentElement;parent;parent=parent.parentElement)parents.push(getComputedStyle(parent).opacity);return {color:style.color,background:style.backgroundColor,image:style.backgroundImage,opacity:style.opacity,parents}};button.disabled=true;await new Promise(resolve=>setTimeout(resolve,400));const disabled=sample();button.disabled=false;const start=performance.now(),samples=[sample()];while(performance.now()-start<400){await new Promise(resolve=>requestAnimationFrame(resolve));samples.push(sample())}return {disabled,samples}});
+ assert.ok(samples.length>=3,`${framework}/${family}/${appearance}: insufficient transition samples`);let min=Infinity;for(const state of samples){const foreground=color(state.color),background=color(state.background);assert.equal(foreground.alpha,1,'translucent text requires separate review');assert.equal(background.alpha,1,'translucent button background requires separate review');assert.equal(state.image,'none','image background requires separate review');assert.equal(state.opacity,'1','enabled action must be fully opaque');assert.ok(state.parents.every(value=>value==='1'),'ancestor opacity requires separate review');const value=ratio(foreground.rgb,background.rgb);min=Math.min(min,value);assert.ok(value>=4.5,`${framework}/${family}/${appearance}: enabled action contrast ${value.toFixed(2)}:1`)}
+ console.log(`${framework} ${family} ${appearance}: disabled ${disabled.color} on ${disabled.background}, opacity ${disabled.opacity}; ${samples.length} enabled frames ≥${min.toFixed(2)}:1`);
+ }finally{await context.close()}}}finally{server.closeAllConnections();await new Promise(r=>server.close(r))}}}finally{await browser.close()}

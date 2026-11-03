@@ -146,7 +146,14 @@ for (const [family, UI] of [
     );
     assert.match(field, /for="spec-summary"/);
     assert.match(field, /id="spec-summary"/);
-    assert.match(field, /aria-describedby="spec-summary-error"/);
+    const description = field.match(/aria-describedby="([^"]+)"/)[1];
+    assert.ok(field.includes(`id="${description}" class="${family}-error">Enter a summary.</p>`));
+    const legacy = renderToStaticMarkup(
+      h(UI.Field, {id:"legacy", label:"Legacy", hint:"Hint.", error:"Error.", hintId:"legacy-hint", errorId:"legacy-error"}, (props) => h(UI.TextInput, props)),
+    );
+    assert.ok(legacy.includes('aria-describedby="legacy-hint legacy-error"'));
+    assert.ok(legacy.includes('id="legacy-hint"'));
+    assert.ok(legacy.includes('id="legacy-error"'));
   });
 }
 for (const [family, UI] of [
@@ -248,10 +255,11 @@ for (const [family, UI] of [
     assert.match(markup, /multiple=""/);
     assert.match(markup, /disabled=""/);
     assert.match(markup, /aria-invalid="true"/);
-    assert.match(
-      markup,
-      /aria-describedby="registry-file-hint registry-file-error"/,
-    );
+    const descriptions = markup.match(/aria-describedby="([^"]+)"/)[1].split(" ");
+    assert.equal(descriptions.length, 2);
+    assert.notEqual(descriptions[0], descriptions[1]);
+    assert.ok(markup.includes(`id="${descriptions[0]}" class="${family}-hint">JSON only</p>`));
+    assert.ok(markup.includes(`id="${descriptions[1]}" class="${family}-error">Choose a valid file.</p>`));
     assert.doesNotMatch(markup, /value="/);
   });
 }

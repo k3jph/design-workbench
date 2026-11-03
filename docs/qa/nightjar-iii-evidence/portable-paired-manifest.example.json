@@ -1,0 +1,336 @@
+{
+  "version": 1,
+  "repositories": {
+    "fixtures": {
+      "path": "REPLACE_WITH_LOCAL_REPOSITORY_FIXTURES",
+      "commit": "80a5635abe4de7a07a1983de0b3ef796b101e047"
+    },
+    "martlet": {
+      "path": "REPLACE_WITH_LOCAL_REPOSITORY_MARTLET",
+      "commit": "3a2edc64aa46c38069f5479d0816cb12d54269a6"
+    },
+    "krigsvold": {
+      "path": "REPLACE_WITH_LOCAL_REPOSITORY_KRIGSVOLD",
+      "commit": "bb5c940495320db59769180bbd76341b4dbddb0f"
+    },
+    "react-martlet": {
+      "path": "REPLACE_WITH_LOCAL_REPOSITORY_REACT_MARTLET",
+      "commit": "af9b22320cca37b8d39951a071b2a2813655a926"
+    },
+    "react-krigsvold": {
+      "path": "REPLACE_WITH_LOCAL_REPOSITORY_REACT_KRIGSVOLD",
+      "commit": "8e639da4b4ad2ef6f5fe5ea87c9a2809b656cc6f"
+    },
+    "astro-martlet": {
+      "path": "REPLACE_WITH_LOCAL_REPOSITORY_ASTRO_MARTLET",
+      "commit": "ed1f121ae991fd868e757228664d1c3a737c3c10"
+    },
+    "astro-krigsvold": {
+      "path": "REPLACE_WITH_LOCAL_REPOSITORY_ASTRO_KRIGSVOLD",
+      "commit": "af57afbc6413d7690cea8a839c7c0e1d48e2730c"
+    }
+  },
+  "fixture": {
+    "repository": "fixtures",
+    "catalog": "examples/page-archetypes/content/catalog.json",
+    "dashboards": "examples/page-archetypes/content/dashboards.json"
+  },
+  "targets": [
+    {
+      "family": "martlet",
+      "framework": "jekyll",
+      "repository": "martlet",
+      "commands": [
+        [
+          "python3",
+          "nightjar/build.py",
+          "--baseurl",
+          "{base}",
+          "--destination",
+          "{output}"
+        ]
+      ]
+    },
+    {
+      "family": "krigsvold",
+      "framework": "jekyll",
+      "repository": "krigsvold",
+      "commands": [
+        [
+          "python3",
+          "nightjar/build.py",
+          "--baseurl",
+          "{base}",
+          "--destination",
+          "{output}"
+        ]
+      ]
+    },
+    {
+      "family": "martlet",
+      "framework": "react",
+      "repository": "fixtures",
+      "inputs": [
+        "react-martlet"
+      ],
+      "commands": [
+        [
+          "npm",
+          "ci",
+          "--offline",
+          "--ignore-scripts"
+        ],
+        [
+          "npm",
+          "run",
+          "build",
+          "--workspaces"
+        ],
+        [
+          "npm",
+          "ci",
+          "--offline",
+          "--ignore-scripts",
+          "--prefix",
+          "{source:react-martlet}"
+        ],
+        [
+          "npm",
+          "run",
+          "build",
+          "--prefix",
+          "{source:react-martlet}"
+        ],
+        [
+          "npm",
+          "pack",
+          "{source:react-martlet}",
+          "--ignore-scripts",
+          "--pack-destination",
+          "{source:react-martlet}"
+        ],
+        [
+          "node",
+          "-e",
+          "const f=require(\"fs\");f.unlinkSync(\"node_modules/@martlet/react\");f.mkdirSync(\"node_modules/@martlet/react\")"
+        ],
+        [
+          "tar",
+          "-xzf",
+          "{source:react-martlet}/martlet-react-0.1.0.tgz",
+          "--strip-components=1",
+          "-C",
+          "node_modules/@martlet/react"
+        ],
+        [
+          "env",
+          "NIGHTJAR_FAMILY=martlet",
+          "NIGHTJAR_BASE={baseSlash}",
+          "node",
+          "examples/react-catalog/build.mjs"
+        ],
+        [
+          "cp",
+          "-a",
+          "{source:fixtures}/examples/react-catalog/dist/martlet/.",
+          "{output}"
+        ]
+      ]
+    },
+    {
+      "family": "krigsvold",
+      "framework": "react",
+      "repository": "fixtures",
+      "inputs": [
+        "react-krigsvold"
+      ],
+      "commands": [
+        [
+          "npm",
+          "ci",
+          "--offline",
+          "--ignore-scripts"
+        ],
+        [
+          "npm",
+          "run",
+          "build",
+          "--workspaces"
+        ],
+        [
+          "npm",
+          "ci",
+          "--offline",
+          "--ignore-scripts",
+          "--prefix",
+          "{source:react-krigsvold}"
+        ],
+        [
+          "npm",
+          "run",
+          "build",
+          "--prefix",
+          "{source:react-krigsvold}"
+        ],
+        [
+          "npm",
+          "pack",
+          "{source:react-krigsvold}",
+          "--ignore-scripts",
+          "--pack-destination",
+          "{source:react-krigsvold}"
+        ],
+        [
+          "node",
+          "-e",
+          "const f=require(\"fs\");f.unlinkSync(\"node_modules/@krigsvold/react\");f.mkdirSync(\"node_modules/@krigsvold/react\")"
+        ],
+        [
+          "tar",
+          "-xzf",
+          "{source:react-krigsvold}/krigsvold-react-0.1.0.tgz",
+          "--strip-components=1",
+          "-C",
+          "node_modules/@krigsvold/react"
+        ],
+        [
+          "env",
+          "NIGHTJAR_FAMILY=krigsvold",
+          "NIGHTJAR_BASE={baseSlash}",
+          "node",
+          "examples/react-catalog/build.mjs"
+        ],
+        [
+          "cp",
+          "-a",
+          "{source:fixtures}/examples/react-catalog/dist/krigsvold/.",
+          "{output}"
+        ]
+      ]
+    },
+    {
+      "family": "martlet",
+      "framework": "astro",
+      "repository": "fixtures",
+      "inputs": [
+        "astro-martlet"
+      ],
+      "commands": [
+        [
+          "npm",
+          "ci",
+          "--offline",
+          "--ignore-scripts"
+        ],
+        [
+          "npm",
+          "ci",
+          "--offline",
+          "--ignore-scripts",
+          "--prefix",
+          "examples/astro-slice"
+        ],
+        [
+          "npm",
+          "pack",
+          "{source:astro-martlet}",
+          "--ignore-scripts",
+          "--pack-destination",
+          "{source:astro-martlet}"
+        ],
+        [
+          "node",
+          "-e",
+          "const f=require(\"fs\");f.rmSync(\"examples/astro-slice/node_modules/@martlet/astro\",{recursive:true,force:true});f.mkdirSync(\"examples/astro-slice/node_modules/@martlet/astro\",{recursive:true})"
+        ],
+        [
+          "tar",
+          "-xzf",
+          "{source:astro-martlet}/martlet-astro-1.2.2.tgz",
+          "--strip-components=1",
+          "-C",
+          "examples/astro-slice/node_modules/@martlet/astro"
+        ],
+        [
+          "env",
+          "ASTRO_TELEMETRY_DISABLED=1",
+          "NIGHTJAR_FAMILY=martlet",
+          "NIGHTJAR_BASE={baseSlash}",
+          "npm",
+          "--prefix",
+          "examples/astro-slice",
+          "run",
+          "build"
+        ],
+        [
+          "cp",
+          "-a",
+          "{source:fixtures}/examples/astro-slice/dist/martlet/.",
+          "{output}"
+        ]
+      ]
+    },
+    {
+      "family": "krigsvold",
+      "framework": "astro",
+      "repository": "fixtures",
+      "inputs": [
+        "astro-krigsvold"
+      ],
+      "commands": [
+        [
+          "npm",
+          "ci",
+          "--offline",
+          "--ignore-scripts"
+        ],
+        [
+          "npm",
+          "ci",
+          "--offline",
+          "--ignore-scripts",
+          "--prefix",
+          "examples/astro-slice"
+        ],
+        [
+          "npm",
+          "pack",
+          "{source:astro-krigsvold}",
+          "--ignore-scripts",
+          "--pack-destination",
+          "{source:astro-krigsvold}"
+        ],
+        [
+          "node",
+          "-e",
+          "const f=require(\"fs\");f.rmSync(\"examples/astro-slice/node_modules/@krigsvold/astro\",{recursive:true,force:true});f.mkdirSync(\"examples/astro-slice/node_modules/@krigsvold/astro\",{recursive:true})"
+        ],
+        [
+          "tar",
+          "-xzf",
+          "{source:astro-krigsvold}/krigsvold-astro-1.2.2.tgz",
+          "--strip-components=1",
+          "-C",
+          "examples/astro-slice/node_modules/@krigsvold/astro"
+        ],
+        [
+          "env",
+          "ASTRO_TELEMETRY_DISABLED=1",
+          "NIGHTJAR_FAMILY=krigsvold",
+          "NIGHTJAR_BASE={baseSlash}",
+          "npm",
+          "--prefix",
+          "examples/astro-slice",
+          "run",
+          "build"
+        ],
+        [
+          "cp",
+          "-a",
+          "{source:fixtures}/examples/astro-slice/dist/krigsvold/.",
+          "{output}"
+        ]
+      ]
+    }
+  ]
+}

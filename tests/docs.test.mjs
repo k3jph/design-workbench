@@ -82,6 +82,9 @@ for (const family of ["martlet", "krigsvold"]) {
   });
   test(`${family} deployment contains only its selected component styles, fonts and no workbench service`, async () => {
     const other = family === "martlet" ? "krigsvold" : "martlet";
+    const index=await readFile(`docs-dist/${family}/index.html`,'utf8');
+    assert.ok(index.includes(`<noscript><main><h1>${family==='martlet'?'Martlet':'Krigsvold'} React component reference</h1>`),'JavaScript-off readers retain the correct family identity');
+    assert.ok(index.includes('href="../examples/"'),'Static recipes remain discoverable without JavaScript');
     const dir = `docs-dist/${family}/assets`;
     const files = await readdir(dir);
     const css = (
@@ -118,10 +121,13 @@ for (const family of ["martlet", "krigsvold"]) {
   test(`${family} reference uses its native shell, page composition, original mark and token colors`, async () => {
     const dir = await mkdtemp(resolve("test-results/docs-layout-"));
     try {
-      await writeFile(
-        join(dir, "data.mjs"),
-        compile(await readFile("docs-app/src/data.ts", "utf8"), "data"),
-      );
+      // Reproduce Vite's selected-family/distribution virtual modules for SSR.
+      await writeFile(join(dir,'family.mjs'),`export * from '@${family}/react';export const family=${JSON.stringify(family)};`);
+      await writeFile(join(dir,'distribution.mjs'),`export default ${await readFile(`mcp/catalogs/${family}-distribution.json`,'utf8')};`);
+      const dataSource=(await readFile('docs-app/src/data.ts','utf8'))
+        .replace(/from ['"]docs-family['"]/g,"from './family.mjs'")
+        .replace(/from ['"]docs-distribution['"]/g,"from './distribution.mjs'");
+      await writeFile(join(dir,'data.mjs'),compile(dataSource,'data'));
       const adapter=(await readFile('docs-app/src/shell/AstroShell.tsx','utf8'))
         .replace(/^import .* from ['"][^'"]+\.svg['"];?$/gm,line=>`const ${line.split(' ')[1]} = '/'+${JSON.stringify(family)}+'-mark.svg';`)
         .replace(/from ['"]\.\.\/data['"]/g,"from './data.mjs'")

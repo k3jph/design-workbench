@@ -1,0 +1,64 @@
+diff --git a/README.md b/README.md
+index 0920e38..5dcb17b 100644
+--- a/README.md
++++ b/README.md
+@@ -69 +69 @@ Astro 1.2.2 pairs with core ^2.2.2. [New contents/footer contracts and migration
+-The starter `/form/` demonstrates native HTML with supported core form classes, explicit submit/reset types, validation, retained input, simulated failure/retry, and a changed-reset dialog. Nothing is sent or stored durably. Core owns the appearance; the small controller is host example code, not a new Astro API. See the core [form styling contract](https://github.com/martlettheme/npm/blob/main/docs/form-styling.md). A `Button` accepts `type="submit"`, `type="reset"`, or its default `type="button"` without duplicate attributes; modifiers use `class="martlet-button--secondary"`.
++The starter `/form/` demonstrates native HTML with supported core form classes, explicit submit/reset types, validation, retained input, simulated failure/retry, and a changed-reset dialog. Nothing is sent or stored durably. Its local controls start disabled and are enabled only after initialization completes. If JavaScript is disabled, blocked, or fails during setup, an unavailable message remains visible and values cannot be submitted to the hosting server. Core owns the appearance; the small controller is host example code, not a new Astro API. See the core [form styling contract](https://github.com/martlettheme/npm/blob/main/docs/form-styling.md). A `Button` accepts `type="submit"`, `type="reset"`, or its default `type="button"` without duplicate attributes; modifiers use `class="martlet-button--secondary"`.
+diff --git a/scripts/form-checks.mjs b/scripts/form-checks.mjs
+index 93ed47f..dc34e45 100644
+--- a/scripts/form-checks.mjs
++++ b/scripts/form-checks.mjs
+@@ -15,0 +16,18 @@ export async function formChecks(browser, base) {
++    // The specimen must not submit personal-looking values when enhancement is absent.
++    for (const mode of ['nojs', 'blocked', 'partial']) {
++      const offline = await browser.newContext({javaScriptEnabled:mode !== 'nojs'});
++      const fallback = await offline.newPage();
++      const navigations = [];
++      fallback.on('request', request => { if (request.isNavigationRequest()) navigations.push(request.url()); });
++      if (mode === 'blocked') await fallback.route('**/*', async route => { if (route.request().isNavigationRequest()) { const response = await route.fetch(); return route.fulfill({response, headers:{...response.headers(), 'content-security-policy':"script-src 'none'"}}); } return route.request().resourceType() === 'script' ? route.abort() : route.continue(); });
++      if (mode === 'partial') await fallback.addInitScript(() => { const original = EventTarget.prototype.addEventListener; EventTarget.prototype.addEventListener = function(type, listener, options) { if (type === 'reset' && this instanceof HTMLFormElement && this.id === 'registration') throw new Error('synthetic registration setup failure'); return original.call(this,type,listener,options); }; });
++      await fallback.goto(base + '/form/');
++      assert.equal(await fallback.locator('#name').isDisabled(), true, `${mode}: form is disabled before complete initialization`);
++      assert.equal(await fallback.locator('#submit').isDisabled(), true, `${mode}: submit is disabled before complete initialization`);
++      assert.equal(await fallback.locator('#registration').evaluate(node => node.noValidate), false, `${mode}: native validation remains intact`);
++      assert.equal(await fallback.locator('#form-fallback').isVisible(), true, `${mode}: unavailable state is explained`);
++      const before = navigations.length;
++      await fallback.locator('#submit').evaluate(node => node.click());
++      assert.equal(navigations.length, before, `${mode}: disabled form never navigates`);
++      await offline.close();
++    }
+diff --git a/starter/src/pages/form.astro b/starter/src/pages/form.astro
+index 15d213a..8f191e9 100644
+--- a/starter/src/pages/form.astro
++++ b/starter/src/pages/form.astro
+@@ -10 +10,2 @@ import '@martlet/theme/source-profile.css';
+-    <form id="registration" class="martlet-form" aria-label="Workshop registration" novalidate>
++    <p id="form-fallback" role="status">Interactive registration is unavailable. Enable JavaScript and reload to use this local example.</p>
++    <form id="registration" class="martlet-form" aria-label="Workshop registration">
+@@ -15 +16 @@ import '@martlet/theme/source-profile.css';
+-      <fieldset class="martlet-fieldset" id="details">
++      <fieldset class="martlet-fieldset" id="details" disabled>
+@@ -26 +27 @@ import '@martlet/theme/source-profile.css';
+-      <fieldset class="martlet-fieldset" id="attendance-group" tabindex="-1" aria-describedby="attendance-error">
++      <fieldset class="martlet-fieldset" id="attendance-group" tabindex="-1" aria-describedby="attendance-error" disabled>
+@@ -32 +33 @@ import '@martlet/theme/source-profile.css';
+-      <fieldset class="martlet-fieldset"><legend>Preferences</legend>
++      <fieldset class="martlet-fieldset" disabled><legend>Preferences</legend>
+@@ -36 +37 @@ import '@martlet/theme/source-profile.css';
+-      <div class="martlet-actions"><Button type="submit" id="submit">Register</Button><Button type="reset" id="reset-button" class="martlet-button--secondary">Reset registration</Button><Button id="default-button" class="martlet-button--quiet">Preview only</Button><Button disabled class="martlet-button--secondary" id="disabled-button">Unavailable</Button></div>
++      <div class="martlet-actions"><Button type="submit" id="submit" disabled>Register</Button><Button type="reset" id="reset-button" disabled class="martlet-button--secondary">Reset registration</Button><Button disabled id="default-button" class="martlet-button--quiet">Preview only</Button><Button disabled class="martlet-button--secondary" id="disabled-button">Unavailable</Button></div>
+diff --git a/starter/src/scripts/form-demo.js b/starter/src/scripts/form-demo.js
+index 3e3d638..cc5a7d5 100644
+--- a/starter/src/scripts/form-demo.js
++++ b/starter/src/scripts/form-demo.js
+@@ -83,0 +84,9 @@ window.addEventListener('beforeunload', event => { if (dirty) { event.preventDef
++
++// Only enable the local demonstration after all handlers are installed. A failed
++// or blocked script must never submit form values to the hosting server.
++form.noValidate = true;
++for (const fieldset of form.querySelectorAll('fieldset')) fieldset.disabled = false;
++submit.disabled = false;
++reset.disabled = false;
++document.querySelector('#default-button').disabled = false;
++document.querySelector('#form-fallback').hidden = true;

@@ -1,0 +1,22 @@
+[
+  {
+    "repository": "krigsvolddesign/emacs",
+    "head": "3b18a072691b81f127613cc17833e4323c834e06",
+    "exit": 0
+  },
+  {
+    "repository": "krigsvolddesign/vim",
+    "head": "19a6e71cdc94f2eac3c3ae3445d98169211b3f2b",
+    "exit": 0
+  },
+  {
+    "repository": "martletdesign/emacs",
+    "head": "e32d2fc69480b9d1d27b830705c0990d0a3f0318",
+    "exit": 0
+  },
+  {
+    "repository": "martletdesign/vim",
+    "head": "c362095a47e72a4576f43494e60f44213559fb08",
+    "exit": 0
+  }
+]

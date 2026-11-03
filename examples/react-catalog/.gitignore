@@ -1,0 +1,11 @@
+dist/
+analytics-dist/
+operations-dist/
+nav-dist/
+administration-dist/
+interactive-specimen-dist/
+simulation-dist/
+scientific-dist/
+src/rendered.json
+
+gallery-test-dist/

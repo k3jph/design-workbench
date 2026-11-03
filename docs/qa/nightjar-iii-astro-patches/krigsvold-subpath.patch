@@ -1,0 +1,124 @@
+diff --git a/scripts/smoke.mjs b/scripts/smoke.mjs
+index 4f2abf6..cb26274 100644
+--- a/scripts/smoke.mjs
++++ b/scripts/smoke.mjs
+@@ -56,0 +57,4 @@ try {
++  // A host may install this starter beneath a prefix; test its emitted internal URLs.
++  await writeFile(join(site,'astro.config.mjs'), "import { defineConfig } from 'astro/config'; export default defineConfig({base:'/preview'});\n");
++  execFileSync('npm',['run','build'],{cwd:site,stdio:'inherit',timeout:180000});
++  execFileSync(process.execPath,[join(root,'scripts/subpath-check.mjs'),join(site,'dist')],{cwd:root,stdio:'inherit',timeout:30000});
+diff --git a/scripts/subpath-check.mjs b/scripts/subpath-check.mjs
+new file mode 100644
+index 0000000..857462d
+--- /dev/null
++++ b/scripts/subpath-check.mjs
+@@ -0,0 +1,28 @@
++import assert from 'node:assert/strict';
++import {readFile} from 'node:fs/promises';
++import {join} from 'node:path';
++const dist=process.argv[2], base='/preview/';
++for(const route of ['', 'article', 'documentation', 'layouts', 'form']) {
++ const page=await readFile(join(dist, route, 'index.html'),'utf8');
++ const hrefs=[...page.matchAll(/\bhref="([^"]*)"/g)].map(m=>m[1]);
++ const escaped=hrefs.filter(href=>href.startsWith('/')&&!href.startsWith(base));
++ assert.deepEqual(escaped,[],`${route||'index'}: root-relative hrefs must remain under ${base}`);
++}
++const home=await readFile(join(dist,'index.html'),'utf8');
++assert.match(home,/href="\/preview\/article\/"/);
++assert.match(home,/href="\/preview\/form\/"/);
++console.log('Five starter pages retain their links and assets under /preview/.');
++
++// Exercise navigation under the mounted base with and without JavaScript.
++if (process.env.MARTLET_BROWSER === '1' || process.env.KRIGSVOLD_BROWSER === '1') {
++ const {createServer} = await import('node:http');
++ const {resolve,extname,sep} = await import('node:path');
++ const {chromium,firefox,webkit} = await import('playwright');
++ const root = resolve(dist), engine = process.env.DESIGN_BROWSER || 'chromium';
++ assert.ok(['chromium','firefox','webkit'].includes(engine));
++ const server=createServer(async(req,res)=>{try {const url=new URL(req.url,'http://localhost'); if(!url.pathname.startsWith(base)){res.writeHead(404).end();return;}const path=resolve(root,'.'+decodeURIComponent(url.pathname.slice(base.length-1))+(url.pathname.endsWith('/')?'index.html':''));if(!path.startsWith(root+sep)){res.writeHead(403).end();return;}const data=await readFile(path),type={'.html':'text/html','.css':'text/css','.js':'application/javascript','.woff2':'font/woff2'}[extname(path)]||'application/octet-stream';res.writeHead(200,{'Content-Type':type}).end(data);}catch{res.writeHead(404).end();}});
++ await new Promise(done=>server.listen(0,'127.0.0.1',done));
++ const browser=await ({chromium,firefox,webkit})[engine].launch(engine==='chromium'&&process.env.PLAYWRIGHT_EXECUTABLE_PATH?{executablePath:process.env.PLAYWRIGHT_EXECUTABLE_PATH}:{});
++ try {for(const enabled of [false,true]) {const context=await browser.newContext({javaScriptEnabled:enabled}),page=await context.newPage();const origin=`http://127.0.0.1:${server.address().port}`;const response=await page.goto(origin+base);assert.equal(response.status(),200);const link=page.getByRole('link',{name:'Try registration, recovery and reset.'});assert.equal(await link.getAttribute('href'),base+'form/');await link.click();assert.equal(new URL(page.url()).pathname,base+'form/');assert.equal(await page.locator('#submit').isDisabled(),!enabled);await page.locator('header a').first().click();assert.equal(new URL(page.url()).pathname,base);await context.close();}}finally{await browser.close();server.closeAllConnections();await new Promise(done=>server.close(done));}
++ console.log(`${engine}: subpath navigation and JavaScript fallbacks passed.`);
++}
+diff --git a/starter/src/pages/article.astro b/starter/src/pages/article.astro
+index d9271c7..6899457 100644
+--- a/starter/src/pages/article.astro
++++ b/starter/src/pages/article.astro
+@@ -3,0 +4 @@ import '@krigsvold/theme/source-profile.css';
++import { localPath } from '../paths';
+@@ -7 +8 @@ import '@krigsvold/theme/source-profile.css';
+-  <SiteHeader slot="header" name="Your website" links={[{href:'/',label:'Home'},{href:'/documentation/',label:'Guide'}]} />
++  <SiteHeader slot="header" home={localPath('/')} name="Your website" links={[{href:localPath('/'),label:'Home'},{href:localPath('/documentation/'),label:'Guide'}]} />
+@@ -14,3 +15,3 @@ import '@krigsvold/theme/source-profile.css';
+-  <p><a href="/documentation/">Continue to the documentation example.</a></p>
+-  <Stack slot="sidebar"><h2>Related reading</h2><p>Supporting context follows the article in both source and narrow layouts.</p><a href="/layouts/">Layout lab</a></Stack>
+-  <SiteFooter slot="footer" variant="grouped" groups={['Explore','Resources','Project','Legal'].map(label=>({label,links:[{href:'/documentation/',label:'Your destination'}]}))}>
++  <p><a href={localPath('/documentation/')}>Continue to the documentation example.</a></p>
++  <Stack slot="sidebar"><h2>Related reading</h2><p>Supporting context follows the article in both source and narrow layouts.</p><a href={localPath('/layouts/')}>Layout lab</a></Stack>
++  <SiteFooter slot="footer" variant="grouped" groups={['Explore','Resources','Project','Legal'].map(label=>({label,links:[{href:localPath('/documentation/'),label:'Your destination'}]}))}>
+@@ -18 +19 @@ import '@krigsvold/theme/source-profile.css';
+-    <p slot="base">Your ownership statement.</p><a slot="base" href="/">Your contact destination</a>
++    <p slot="base">Your ownership statement.</p><a slot="base" href={localPath('/')}>Your contact destination</a>
+diff --git a/starter/src/pages/documentation.astro b/starter/src/pages/documentation.astro
+index e6be717..19f6be0 100644
+--- a/starter/src/pages/documentation.astro
++++ b/starter/src/pages/documentation.astro
+@@ -2,0 +3 @@ import { DocumentationLayout, SiteHeader, SiteFooter, Stack } from '@krigsvold/a
++import { localPath } from '../paths';
+@@ -5 +6 @@ import { DocumentationLayout, SiteHeader, SiteFooter, Stack } from '@krigsvold/a
+-  <SiteHeader slot="header" name="Your website" links={[{href:'/',label:'Home'},{href:'/article/',label:'Article'}]} />
++  <SiteHeader slot="header" home={localPath('/')} name="Your website" links={[{href:localPath('/'),label:'Home'},{href:localPath('/article/'),label:'Article'}]} />
+diff --git a/starter/src/pages/form.astro b/starter/src/pages/form.astro
+index 79c3fcc..ab4db52 100644
+--- a/starter/src/pages/form.astro
++++ b/starter/src/pages/form.astro
+@@ -3,0 +4 @@ import '@krigsvold/theme/source-profile.css';
++import { localPath } from '../paths';
+@@ -6 +7 @@ import '@krigsvold/theme/source-profile.css';
+-  <SiteHeader slot="header" name="Example workshop" links={[{href:'/',label:'Home'},{href:'/form/',label:'Registration',current:true}]}><Button slot="actions" id="appearance" aria-pressed="false">Dark appearance</Button></SiteHeader>
++  <SiteHeader slot="header" home={localPath('/')} name="Example workshop" links={[{href:localPath('/'),label:'Home'},{href:localPath('/form/'),label:'Registration',current:true}]}><Button slot="actions" id="appearance" aria-pressed="false">Dark appearance</Button></SiteHeader>
+diff --git a/starter/src/pages/index.astro b/starter/src/pages/index.astro
+index 8b30c98..77515c9 100644
+--- a/starter/src/pages/index.astro
++++ b/starter/src/pages/index.astro
+@@ -3 +3,2 @@ import { LandingLayout, SiteHeader, SiteFooter, Section, Grid, Stack, Card, Butt
+-const links=[{href:'/',label:'Home',current:true},{href:'/article/',label:'Article'},{href:'/documentation/',label:'Documentation'},{href:'/layouts/',label:'Layout lab'}];
++const links=[{href:localPath('/'),label:'Home',current:true},{href:localPath('/article/'),label:'Article'},{href:localPath('/documentation/'),label:'Documentation'},{href:localPath('/layouts/'),label:'Layout lab'}];
++import { localPath } from '../paths';
+@@ -6 +7 @@ const links=[{href:'/',label:'Home',current:true},{href:'/article/',label:'Artic
+-  <SiteHeader slot="header" name="Your website" links={links} />
++  <SiteHeader slot="header" home={localPath('/')} name="Your website" links={links} />
+@@ -8,3 +9,3 @@ const links=[{href:'/',label:'Home',current:true},{href:'/article/',label:'Artic
+-    <Card><h3>An article</h3><p>Readable prose with optional supporting material.</p><Button href="/article/">Read the article</Button></Card>
+-    <Card><h3>Documentation</h3><p>A guide with navigation before its reading column.</p><Button href="/documentation/">Open the guide</Button></Card>
+-    <Card><h3>Structural layouts</h3><p>Responsive arrangements that work within their available space.</p><Button href="/layouts/">Explore layouts</Button></Card>
++    <Card><h3>An article</h3><p>Readable prose with optional supporting material.</p><Button href={localPath('/article/')}>Read the article</Button></Card>
++    <Card><h3>Documentation</h3><p>A guide with navigation before its reading column.</p><Button href={localPath('/documentation/')}>Open the guide</Button></Card>
++    <Card><h3>Structural layouts</h3><p>Responsive arrangements that work within their available space.</p><Button href={localPath('/layouts/')}>Explore layouts</Button></Card>
+@@ -14 +15 @@ const links=[{href:'/',label:'Home',current:true},{href:'/article/',label:'Artic
+-  <Section><h2>Native form pattern</h2><p><Button href="/form/">Try registration, recovery and reset.</Button></p></Section>
++  <Section><h2>Native form pattern</h2><p><Button href={localPath('/form/')}>Try registration, recovery and reset.</Button></p></Section>
+diff --git a/starter/src/pages/layouts.astro b/starter/src/pages/layouts.astro
+index d6fb134..e939023 100644
+--- a/starter/src/pages/layouts.astro
++++ b/starter/src/pages/layouts.astro
+@@ -4,0 +5 @@ const letters='abcdefghijklmnopqrstuvwxyz'.repeat(12);
++import { localPath } from '../paths';
+@@ -7 +8 @@ const letters='abcdefghijklmnopqrstuvwxyz'.repeat(12);
+-  <SiteHeader slot="header" name="Your website" links={[{href:'/',label:'Home'},{href:'/article/',label:'Article'},{href:'/documentation/',label:'Documentation'}]} />
++  <SiteHeader slot="header" home={localPath('/')} name="Your website" links={[{href:localPath('/'),label:'Home'},{href:localPath('/article/'),label:'Article'},{href:localPath('/documentation/'),label:'Documentation'}]} />
+@@ -12 +13 @@ const letters='abcdefghijklmnopqrstuvwxyz'.repeat(12);
+-    <section><h2>Stack and cluster</h2><Stack space="small"><Stack class="probe-regular-space"><p>Nested regular first.</p><p>Nested regular second.</p></Stack><p>First item.</p><p>Second item.</p><Cluster as="ul" space="small"><li><a href="/">Home</a></li><li><a href="/article/">A longer article label</a></li><li><a href="/documentation/">Documentation</a></li></Cluster></Stack></section>
++    <section><h2>Stack and cluster</h2><Stack space="small"><Stack class="probe-regular-space"><p>Nested regular first.</p><p>Nested regular second.</p></Stack><p>First item.</p><p>Second item.</p><Cluster as="ul" space="small"><li><a href={localPath('/')}>Home</a></li><li><a href={localPath('/article/')}>A longer article label</a></li><li><a href={localPath('/documentation/')}>Documentation</a></li></Cluster></Stack></section>
+@@ -18 +19 @@ const letters='abcdefghijklmnopqrstuvwxyz'.repeat(12);
+-    <section id={mode==='light'?'stress':undefined}><h2>Long references and code</h2><a href={`/#${letters}`}>{letters}</a><pre><code>{letters}</code></pre><div class="krigsvold-scroll" tabindex="0" role="region" aria-label={`${mode} wide table`}><table><caption>Wide data example</caption><thead><tr>{['First measurement','Second measurement','Third measurement','Fourth measurement'].map(x=><th scope="col">{x}</th>)}</tr></thead><tbody><tr>{[1,2,3,4].map(x=><td>{x}</td>)}</tr></tbody></table></div></section>
++    <section id={mode==='light'?'stress':undefined}><h2>Long references and code</h2><a href={`${localPath('/')}#${letters}`}>{letters}</a><pre><code>{letters}</code></pre><div class="krigsvold-scroll" tabindex="0" role="region" aria-label={`${mode} wide table`}><table><caption>Wide data example</caption><thead><tr>{['First measurement','Second measurement','Third measurement','Fourth measurement'].map(x=><th scope="col">{x}</th>)}</tr></thead><tbody><tr>{[1,2,3,4].map(x=><td>{x}</td>)}</tr></tbody></table></div></section>
+diff --git a/starter/src/paths.ts b/starter/src/paths.ts
+new file mode 100644
+index 0000000..7c81b7e
+--- /dev/null
++++ b/starter/src/paths.ts
+@@ -0,0 +1,2 @@
++/** Resolve a starter-local route under the configured Astro base. */
++export const localPath = (path = '') => `${import.meta.env.BASE_URL.replace(/\/?$/, '/')}${path.replace(/^\/+/, '')}`;

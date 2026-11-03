@@ -1,0 +1,77 @@
+name: Verify Core-backed React consumers
+on:
+  pull_request:
+    paths:
+      - 'scripts/nightjar3/**'
+      - 'scripts/test-*-consumer.mjs'
+      - 'scripts/test-tabs-packed-dynamic.mjs'
+      - 'scripts/reviewed-registry-core.mjs'
+      - 'scripts/qa/prepare-react-conformance-inputs.mjs'
+      - 'packages/**'
+      - 'package.json'
+      - 'package-lock.json'
+      - '.github/workflows/core-react-rehearsal.yml'
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+jobs:
+  core-consumers:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      max-parallel: 2
+      matrix:
+        browser: [chromium, firefox, webkit]
+        source: [standalone, workspace]
+    env:
+      WORKBENCH_BROWSER: ${{ matrix.browser }}
+      NIGHTJAR_REACT_ARCHIVE_VERSION: '0.2.0'
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        if: matrix.source == 'standalone'
+        with:
+          repository: martletdesign/react
+          ref: ec9d3515c2233514304908d0e343bfd291505ebe
+          path: .react-source-martlet
+          persist-credentials: false
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        if: matrix.source == 'standalone'
+        with:
+          repository: krigsvolddesign/react
+          ref: 2bb52de74314f50c854429f3f90f11631f5aeb8b
+          path: .react-source-krigsvold
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '24.19.0'
+      - run: npm install --global npm@11.15.0
+      - run: npm ci --ignore-scripts
+      - name: Set isolated consumer input paths
+        run: |
+          echo "NIGHTJAR_REACT_ARCHIVE_DIR=$RUNNER_TEMP/reviewed-consumers" >> "$GITHUB_ENV"
+          echo "NIGHTJAR_CORE_ARCHIVE_DIR=$RUNNER_TEMP/reviewed-consumers" >> "$GITHUB_ENV"
+      - name: Prepare exact independent or fixture React inputs and reviewed registry Core
+        run: node scripts/qa/prepare-react-conformance-inputs.mjs '${{ matrix.source }}' "$NIGHTJAR_REACT_ARCHIVE_DIR"
+      - run: npx playwright install --with-deps '${{ matrix.browser }}'
+        timeout-minutes: 10
+      - name: Verify every packed-consumer contract
+        run: |
+          npm run test:dialog-consumer
+          npm run test:pagination-consumer
+          npm run test:error-summary-consumer
+          npm run test:fields-consumer
+          npm run test:tabs-consumer
+          node scripts/nightjar3/test-packed-shell-table.mjs
+          node scripts/nightjar3/test-core-react-bases.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: core-react-inputs-${{ matrix.source }}-${{ matrix.browser }}
+          path: ${{ runner.temp }}/reviewed-consumers/inputs.json
+          if-no-files-found: error

@@ -7,17 +7,15 @@ on:
         type: choice
         options: [both, martlet, krigsvold]
         default: both
-      publish_references:
-        description: Also publish tested reference archives and open host adoption PRs
-        type: boolean
-        default: false
 permissions:
   contents: read
 jobs:
   verify:
     runs-on: ubuntu-latest
+    timeout-minutes: 45
     strategy:
       fail-fast: false
+      max-parallel: 2
       matrix:
         browser: [chromium, firefox, webkit]
     env:
@@ -45,6 +43,7 @@ jobs:
   prepare:
     needs: verify
     runs-on: ubuntu-latest
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -61,13 +60,3 @@ jobs:
           name: experimental-react-candidates
           path: release-candidates/
           if-no-files-found: error
-
-  references:
-    if: inputs.publish_references && github.ref == 'refs/heads/main'
-    needs: verify
-    permissions:
-      contents: write
-    uses: ./.github/workflows/reference-release.yml
-    with:
-      source_sha: ${{ github.sha }}
-    secrets: inherit

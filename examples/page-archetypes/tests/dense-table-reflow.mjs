@@ -1,0 +1,19 @@
+// Bound the page and retain useful, keyboard-scrollable columns under dense content.
+import assert from 'node:assert/strict';
+import {createServer} from 'node:http';
+import {readFile} from 'node:fs/promises';
+import {resolve,extname} from 'node:path';
+import {chromium} from '@playwright/test';
+const root=process.cwd(),only=process.env.NIGHTJAR_TABLE_FRAMEWORK||'all';
+if(!['all','Jekyll','Astro','React'].includes(only))throw Error('Choose all, Jekyll, Astro or React');
+const sources=[['Jekyll',process.env.NIGHTJAR_JEKYLL_ROOT],['Astro',process.env.NIGHTJAR_ASTRO_ROOT||resolve(root,'examples/astro-slice/dist')],['React',process.env.NIGHTJAR_REACT_ROOT||resolve(root,'examples/react-catalog/dist')]];
+if((only==='all'||only==='Jekyll')&&!sources[0][1])throw Error('Set NIGHTJAR_JEKYLL_ROOT to the paired root-path builds');
+const browser=await chromium.launch({headless:true,...(process.env.CHROMIUM_PATH?{executablePath:process.env.CHROMIUM_PATH}:{})});
+try {for(const [framework,source] of sources.filter(([name])=>only==='all'||name===only))for(const family of ['martlet','krigsvold']){
+ const directory=resolve(source,family),server=createServer(async(req,res)=>{const path=new URL(req.url,'http://localhost').pathname,file=resolve(directory,path.slice(1)+(path.endsWith('/')?'index.html':''));if(!file.startsWith(directory+'/')){res.writeHead(403).end();return}try{const data=await readFile(file),type={'.html':'text/html','.css':'text/css','.js':'text/javascript','.mjs':'text/javascript','.svg':'image/svg+xml','.woff':'font/woff','.woff2':'font/woff2'};res.writeHead(200,{'Content-Type':type[extname(file)]||'application/octet-stream'}).end(data)}catch{res.writeHead(404).end()}});await new Promise(r=>server.listen(0,'127.0.0.1',r));
+ try{const page=await browser.newPage({viewport:{width:320,height:900}}),origin=`http://127.0.0.1:${server.address().port}`;await page.goto(`${origin}/examples/report/`,{waitUntil:'networkidle'});const region=page.locator('[role=region]:has(table)').first();assert.equal(await region.getAttribute('tabindex'),'0');assert.ok(await region.getAttribute('aria-label'));
+  await region.evaluate(region=>{const table=region.querySelector('table'),head=table.tHead.rows[0],headerTemplate=head.cells[0],rowHeader=table.tBodies[0].querySelector('th'),dataCell=table.tBodies[0].querySelector('td');for(let i=0;i<16;i++){const th=headerTemplate.cloneNode(false);th.scope='col';th.textContent=`Extra column ${i}`;head.append(th)}for(let n=0;n<100;n++){const row=table.tBodies[0].insertRow();for(let i=0;i<19;i++){const cell=(i===0?rowHeader:dataCell).cloneNode(false);if(i===0)cell.scope='row';cell.textContent=i===4?'Überlängenbeobachtungsbezeichnung'.repeat(4):`Dense content ${n} ${i}`;row.append(cell)}}});
+  const geometry=await region.evaluate(el=>({width:el.clientWidth,scroll:el.scrollWidth,doc:document.documentElement.scrollWidth,viewport:innerWidth,cell:el.querySelector('thead th:last-child').getBoundingClientRect().width,rows:el.querySelectorAll('tbody tr').length}));const label=`${framework}/${family}`;assert.ok(geometry.rows>=100,`${label}: dense rows retained`);assert.ok(geometry.doc<=geometry.viewport+1,`${label}: document overflow ${JSON.stringify(geometry)}`);assert.ok(geometry.scroll>geometry.width,`${label}: table should scroll`);assert.ok(geometry.cell>=127,`${label}: columns too narrow ${JSON.stringify(geometry)}`);
+  await region.focus();assert.equal(await region.evaluate(el=>document.activeElement===el),true);await page.keyboard.press('ArrowRight');await page.waitForFunction(el=>el.scrollLeft>0,await region.elementHandle());await page.close();console.log(`${label}: 100 rows, 19 columns, long labels and keyboard scrolling passed`);
+ }finally{server.closeAllConnections();await new Promise(r=>server.close(r));}
+}}finally{await browser.close();}
