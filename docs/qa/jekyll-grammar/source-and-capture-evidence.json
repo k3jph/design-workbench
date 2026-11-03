@@ -265,5 +265,33 @@
       "Actual Krigsvold mission/method body is856px withRoboto16px at this viewport/pagegenre. The profile760px token is not a universal reading-width mandate."
     ],
     "classification": "Observed source objects; geometry is contextual and must not become a universal forced frame."
+  },
+  "completeInitialBaselineScreenshotIntegrity": {
+    "sourceIndex": "/workspace/work/jekyll-grammar/evidence/baseline-all50-index-78ebb0fc6c89.json",
+    "sha256": "78ebb0fc6c8928b70b3e6dff8358ecfab71aea27b6cc6a5e61c4f63395a13320",
+    "sourceCommits": {
+      "martlet": "ac0a64c6cd5167ccbdf96bb20e46e5d547a49a5d",
+      "krigsvold": "35c7f54aa9418286956f8aa50c2a3dd141006ab2"
+    },
+    "statePairsVerified": 404,
+    "normalPngDigestsVerified": 404,
+    "strictMainMaskedPngDigestsVerified": 404,
+    "canonicalRouteCount": 50,
+    "widths": [
+      320,
+      1440
+    ],
+    "appearances": [
+      "light",
+      "dark"
+    ],
+    "extraSearchWidth": 768,
+    "scope": "Immutable initial baseline captures only. This is not final-after capture or global visual/behavior/accessibility acceptance.",
+    "originalFullCapturesPreservedLocally": true,
+    "binaryCopyIntoRepositoryPerformed": false,
+    "sourceIndexProducerPath": "/workspace/work/jekyll-grammar/visual/baseline-all50-screenshot-index.json",
+    "searchStatesIndependentlyMatchedToRawReports": 12,
+    "sourceIndexIsImmutableCopiedBytes": true,
+    "reviewScope": "All50 initial baselines and12 observed populated-search states are hashed; final-after captures, visual decisions and global accessibility remain separate."
   }
 }

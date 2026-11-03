@@ -1,0 +1,139 @@
+{
+  "scope": "Read-only protected-source/CI review before wave3 first pushes; no hosted or global visual pass implied",
+  "fullReviewSha256": "fffb229720ea737bdcf5fc73cdedf0ff483f816f83dfe369db48fe572241fbaf",
+  "fullReview": [
+    {
+      "family": "martlet",
+      "base": "d983fcc22218de9e96dd932d5d0cb149740b1dbd",
+      "head": "378fe1701aa996678c4d33acbbbe33e36a2abc54",
+      "protectedGitObjectIdsUnchanged": {
+        "_data": "ee5cbe2d61aedc64b45565d922022370d09a85ce",
+        "assets/images": "d494e12bc3d840725f958608344ed6df9533c1c1",
+        "assets/fonts": "6714aab948ca4a80eca4f04eb737ef25558b9a78",
+        "assets/js": "affb8f2c156200e92ced64bfe8aebae7704fcd58",
+        "assets/css/shell.css": "4d798ed89b05b13b365abe5801eeaafe37b3839d",
+        "assets/css/fonts.css": "c31b7589a3bfb384173b812e4324c1fa4f42a680",
+        "assets/css/jekyll.css": "48af1a4885e3522a14bb0ea11dbc71c2d2aad15b",
+        "assets/css/dashboard.css": "58ca9665d2baf15bbc88e6db39c8d3c8f540617b",
+        "assets/css/dashboard-family.css": "374d796ccbbbf9961f400eee392dc3c9d013f3bb",
+        "infra": "0b56904e8a435384925a2742686e85abd2edd09c",
+        "scripts/deployment": "1f314e96287b20af14ec30d88098ec9fa377d89a",
+        "release-policy.json": "762b10cf7207f86016b3a90bd8e884ce77ad0170",
+        "Gemfile.lock": "2719adcd7c5eaecee53b01e76ddd96a709d759d3",
+        "package-lock.json": "b932ff38a397e4b5a533ed465c072eea12332485"
+      },
+      "fixtureSha256": "4795e34b2eaea8fa506cca6d7679e93f38c6019cea704834ae736ef2064afd37",
+      "sourceAllowlistCount": 243,
+      "sourceAllowlistAdded": [
+        "docs/qa/grammar-collections.md"
+      ],
+      "allAllowlistedPathsRegularTrackedFiles": true,
+      "secretsBuildOutputsAndTraversalNotAllowlisted": true,
+      "runtimeDependenciesAndPublicationConfigurationUnchanged": true,
+      "existingCiAssertionsRetained": true,
+      "browserEngines": [
+        "chromium",
+        "firefox",
+        "webkit"
+      ],
+      "jobTimeoutMinutes": 15,
+      "matrixMaxParallel": 2,
+      "concurrencyCancelsObsoleteRuns": true,
+      "collectionsStepTimeoutMinutes": 4,
+      "browserOverallWatchdogSeconds": 240,
+      "navigationTimeoutSeconds": 15,
+      "axeTimeoutSeconds": 45,
+      "cleanupTimeoutSeconds": 10,
+      "scope": "Read-only exact Git-object review; hosted behavior/source binding owned by coordinator",
+      "changedPaths": [
+        ".github/workflows/browser.yml",
+        "_includes/examples/local-index.html",
+        "_includes/examples/search.html",
+        "_layouts/example-dossier.html",
+        "assets/css/examples-family.css",
+        "docs/qa/grammar-collections.md",
+        "nightjar/source-files.json",
+        "package.json",
+        "tests/collections.mjs"
+      ],
+      "securityVerdict": "No blocking finding"
+    },
+    {
+      "family": "krigsvold",
+      "base": "bdbf62c0d37b705b6dbd35900bcaf40cd7dfb787",
+      "head": "8f716dc4853e7481aab5342b9479ef65b5f83e30",
+      "protectedGitObjectIdsUnchanged": {
+        "_data": "98ea7b75874936d29bfe3bef486bc8bb7c30792b",
+        "assets/images": "14bc1ffae7e144e3c163259a0481764940b5ecb0",
+        "assets/fonts": "0ea619eeff547393767c9c030d628af18cc3ba2c",
+        "assets/js": "b94de7c0df6f6e6a0d50766957dfc3574c2c78f9",
+        "assets/css/shell.css": "1e79ce523ae5177670d2da7e6b434ef0d69de72a",
+        "assets/css/fonts.css": "a5161dc742c136e5768c0038945ec38bfd6a85f5",
+        "assets/css/jekyll.css": "4ca3a177a36801522f09c315be5ed57b0ce54821",
+        "assets/css/dashboard.css": "58ca9665d2baf15bbc88e6db39c8d3c8f540617b",
+        "assets/css/dashboard-family.css": "70628688eb49fa757b1fa558561d3dff61e7a912",
+        "infra": "55b42c385c2c254453e95336ea20c5d4627726ec",
+        "scripts/deployment": "5ded347026c17fe0a19074f63dc39c210dce1fae",
+        "release-policy.json": "c8ebdeb99f2a77556a8c403e63412fc26da6687e",
+        "Gemfile.lock": "2719adcd7c5eaecee53b01e76ddd96a709d759d3",
+        "package-lock.json": "b932ff38a397e4b5a533ed465c072eea12332485"
+      },
+      "fixtureSha256": "4795e34b2eaea8fa506cca6d7679e93f38c6019cea704834ae736ef2064afd37",
+      "sourceAllowlistCount": 235,
+      "sourceAllowlistAdded": [
+        "docs/GRAMMAR-COLLECTIONS.md"
+      ],
+      "allAllowlistedPathsRegularTrackedFiles": true,
+      "secretsBuildOutputsAndTraversalNotAllowlisted": true,
+      "runtimeDependenciesAndPublicationConfigurationUnchanged": true,
+      "existingCiAssertionsRetained": true,
+      "browserEngines": [
+        "chromium",
+        "firefox",
+        "webkit"
+      ],
+      "jobTimeoutMinutes": 15,
+      "matrixMaxParallel": 2,
+      "concurrencyCancelsObsoleteRuns": true,
+      "collectionsStepTimeoutMinutes": 4,
+      "browserOverallWatchdogSeconds": 210,
+      "navigationTimeoutSeconds": 15,
+      "axeTimeoutSeconds": 30,
+      "cleanupTimeoutSeconds": 10,
+      "scope": "Read-only exact Git-object review; hosted behavior/source binding owned by coordinator",
+      "changedPaths": [
+        ".github/workflows/browser.yml",
+        "_includes/examples/local-index.html",
+        "_includes/examples/search.html",
+        "_layouts/example-dossier.html",
+        "assets/css/examples-family.css",
+        "docs/GRAMMAR-COLLECTIONS.md",
+        "nightjar/source-files.json",
+        "package.json",
+        "tests/collections.mjs"
+      ],
+      "securityVerdict": "No blocking finding"
+    }
+  ],
+  "krigsvoldSearchDeltaSha256": "51741ec7b04b01fa0bf74543d10fa18d556882598754fcfca93c99e94ef53ee3",
+  "krigsvoldSearchDelta": {
+    "family": "krigsvold",
+    "priorReviewedHead": "8f716dc4853e7481aab5342b9479ef65b5f83e30",
+    "head": "3e5d49dcf47cc3b9e6646e66274fb246d5848df2",
+    "changedPaths": [
+      "assets/css/examples-family.css",
+      "tests/collections.mjs"
+    ],
+    "scope": "Search input flex basis and intrinsic submit width only; rendered label geometry regression added for normal/200% text.",
+    "protectedObjectsAndCiUnchanged": true,
+    "allPriorBehaviorAndAccessibilityAssertionsRetained": true,
+    "newAssertionChecksRenderedGeometryRatherThanOnlyCssValue": true,
+    "securityVerdict": "No blocking finding; browser/hosted verification remains independent.",
+    "newSeparateGlobalException": "Krigsvold host header overlaps brand/navigation at true200%/1440; wave4 scoped host fix and actual visual proof required. No global all50 fidelity/200% pass claimed."
+  },
+  "currentSourceHeads": {
+    "martlet": "378fe1701aa996678c4d33acbbbe33e36a2abc54",
+    "krigsvold": "3e5d49dcf47cc3b9e6646e66274fb246d5848df2"
+  },
+  "separateFinalBlocker": "Krigsvold shared navigation overlap at true200%/1440 remains unresolved outside the report/search recipe scope."
+}
