@@ -506,6 +506,17 @@
           "summary": "wave1-acceptance.json#all50SemanticV2Checks",
           "result": "Frozen692 meaning chunk baseline and native control/time/data contract pass for both families at root and /preview.",
           "acceptanceScope": "Exact wave1 semantic acceptance, not universal accessibility/fidelity."
+        },
+        {
+          "kind": "local-wave2-visual-review",
+          "sourceCommits": {
+            "martlet": "434b8543dbc5ee07abfebe78a5fc0f8ce13ed637",
+            "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
+          },
+          "artifact": "/workspace/work/jekyll-grammar/visual/reading/review.json",
+          "artifactSha256": "b75337720476cfdfb9be5f6dcc13827f6cc332c24e8c0ee7c397f7137db63b67",
+          "result": "Specialist reviewed12 paired routes at320/1440 light/dark;96 normal states plus8actual200%Krigsvold targets. No captured page overflow/errors; native local table/code scrolling retained.",
+          "acceptanceScope": "Local104case scope; hosted/CI/independent after semantic and accessibility gates remain pending."
         }
       ],
       "pullRequests": [],
@@ -555,6 +566,35 @@
       "candidateSourceHeads": {
         "martlet": "434b8543dbc5ee07abfebe78a5fc0f8ce13ed637",
         "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
+      },
+      "candidateAfterGeometry": {
+        "artifact": "/workspace/work/jekyll-grammar/visual/reading/route-measures.json",
+        "sha256": "5c2092d1ce1fb7edcac01fd16173d1d198f04729794e21116a08a56a7d9d4a3d",
+        "sourceCommits": {
+          "martlet": "434b8543dbc5ee07abfebe78a5fc0f8ce13ed637",
+          "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
+        },
+        "measurements": [
+          {
+            "family": "martlet",
+            "route": "article",
+            "wrapperWidth": 768,
+            "indexWidth": 768,
+            "bodyWidths": [
+              768
+            ]
+          },
+          {
+            "family": "krigsvold",
+            "route": "article",
+            "wrapperWidth": 736,
+            "indexWidth": 736,
+            "bodyWidths": [
+              736
+            ]
+          }
+        ],
+        "scope": "Local wave2 candidates only; normal1440px computed dimensions, not hosted source proof."
       }
     },
     {
@@ -1422,6 +1462,17 @@
           "summary": "wave1-acceptance.json#all50SemanticV2Checks",
           "result": "Frozen692 meaning chunk baseline and native control/time/data contract pass for both families at root and /preview.",
           "acceptanceScope": "Exact wave1 semantic acceptance, not universal accessibility/fidelity."
+        },
+        {
+          "kind": "local-wave2-visual-review",
+          "sourceCommits": {
+            "martlet": "434b8543dbc5ee07abfebe78a5fc0f8ce13ed637",
+            "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
+          },
+          "artifact": "/workspace/work/jekyll-grammar/visual/reading/review.json",
+          "artifactSha256": "b75337720476cfdfb9be5f6dcc13827f6cc332c24e8c0ee7c397f7137db63b67",
+          "result": "Specialist reviewed12 paired routes at320/1440 light/dark;96 normal states plus8actual200%Krigsvold targets. No captured page overflow/errors; native local table/code scrolling retained.",
+          "acceptanceScope": "Local104case scope; hosted/CI/independent after semantic and accessibility gates remain pending."
         }
       ],
       "pullRequests": [],
@@ -1471,6 +1522,35 @@
       "candidateSourceHeads": {
         "martlet": "434b8543dbc5ee07abfebe78a5fc0f8ce13ed637",
         "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
+      },
+      "candidateAfterGeometry": {
+        "artifact": "/workspace/work/jekyll-grammar/visual/reading/route-measures.json",
+        "sha256": "5c2092d1ce1fb7edcac01fd16173d1d198f04729794e21116a08a56a7d9d4a3d",
+        "sourceCommits": {
+          "martlet": "434b8543dbc5ee07abfebe78a5fc0f8ce13ed637",
+          "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
+        },
+        "measurements": [
+          {
+            "family": "martlet",
+            "route": "documentation",
+            "wrapperWidth": 1184,
+            "indexWidth": null,
+            "bodyWidths": [
+              1184
+            ]
+          },
+          {
+            "family": "krigsvold",
+            "route": "documentation",
+            "wrapperWidth": 1184,
+            "indexWidth": null,
+            "bodyWidths": [
+              844.8
+            ]
+          }
+        ],
+        "scope": "Local wave2 candidates only; normal1440px computed dimensions, not hosted source proof."
       }
     },
     {
@@ -1564,6 +1644,17 @@
           "summary": "wave1-acceptance.json#all50SemanticV2Checks",
           "result": "Frozen692 meaning chunk baseline and native control/time/data contract pass for both families at root and /preview.",
           "acceptanceScope": "Exact wave1 semantic acceptance, not universal accessibility/fidelity."
+        },
+        {
+          "kind": "local-wave2-visual-review",
+          "sourceCommits": {
+            "martlet": "434b8543dbc5ee07abfebe78a5fc0f8ce13ed637",
+            "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
+          },
+          "artifact": "/workspace/work/jekyll-grammar/visual/reading/review.json",
+          "artifactSha256": "b75337720476cfdfb9be5f6dcc13827f6cc332c24e8c0ee7c397f7137db63b67",
+          "result": "Specialist reviewed12 paired routes at320/1440 light/dark;96 normal states plus8actual200%Krigsvold targets. No captured page overflow/errors; native local table/code scrolling retained.",
+          "acceptanceScope": "Local104case scope; hosted/CI/independent after semantic and accessibility gates remain pending."
         }
       ],
       "pullRequests": [],
@@ -1658,7 +1749,43 @@
       "candidateSourceHeads": {
         "martlet": "434b8543dbc5ee07abfebe78a5fc0f8ce13ed637",
         "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
-      }
+      },
+      "candidateAfterGeometry": {
+        "artifact": "/workspace/work/jekyll-grammar/visual/reading/route-measures.json",
+        "sha256": "5c2092d1ce1fb7edcac01fd16173d1d198f04729794e21116a08a56a7d9d4a3d",
+        "sourceCommits": {
+          "martlet": "434b8543dbc5ee07abfebe78a5fc0f8ce13ed637",
+          "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
+        },
+        "measurements": [
+          {
+            "family": "martlet",
+            "route": "guide",
+            "wrapperWidth": 1184,
+            "indexWidth": 240,
+            "bodyWidths": [
+              736
+            ]
+          },
+          {
+            "family": "krigsvold",
+            "route": "guide",
+            "wrapperWidth": 1184,
+            "indexWidth": 208,
+            "bodyWidths": [
+              656.4
+            ]
+          }
+        ],
+        "scope": "Local wave2 candidates only; normal1440px computed dimensions, not hosted source proof."
+      },
+      "reviewedRetentionRationale": [
+        {
+          "source": "/workspace/work/jekyll-grammar/visual/reading/README.md",
+          "judgment": "Native policy/procedural/list/definition-list/code/table anatomy remains justified while independent document-envelope geometry is corrected. Local horizontal table scrolling is intentional, keyboard accessible and distinct from page overflow.",
+          "scope": "Local paired visual review; final hosted/global acceptance pending."
+        }
+      ]
     },
     {
       "order": 12,
@@ -1754,6 +1881,17 @@
           "summary": "wave1-acceptance.json#all50SemanticV2Checks",
           "result": "Frozen692 meaning chunk baseline and native control/time/data contract pass for both families at root and /preview.",
           "acceptanceScope": "Exact wave1 semantic acceptance, not universal accessibility/fidelity."
+        },
+        {
+          "kind": "local-wave2-visual-review",
+          "sourceCommits": {
+            "martlet": "434b8543dbc5ee07abfebe78a5fc0f8ce13ed637",
+            "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
+          },
+          "artifact": "/workspace/work/jekyll-grammar/visual/reading/review.json",
+          "artifactSha256": "b75337720476cfdfb9be5f6dcc13827f6cc332c24e8c0ee7c397f7137db63b67",
+          "result": "Specialist reviewed12 paired routes at320/1440 light/dark;96 normal states plus8actual200%Krigsvold targets. No captured page overflow/errors; native local table/code scrolling retained.",
+          "acceptanceScope": "Local104case scope; hosted/CI/independent after semantic and accessibility gates remain pending."
         }
       ],
       "pullRequests": [],
@@ -1871,6 +2009,35 @@
       "candidateSourceHeads": {
         "martlet": "434b8543dbc5ee07abfebe78a5fc0f8ce13ed637",
         "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
+      },
+      "candidateAfterGeometry": {
+        "artifact": "/workspace/work/jekyll-grammar/visual/reading/route-measures.json",
+        "sha256": "5c2092d1ce1fb7edcac01fd16173d1d198f04729794e21116a08a56a7d9d4a3d",
+        "sourceCommits": {
+          "martlet": "434b8543dbc5ee07abfebe78a5fc0f8ce13ed637",
+          "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
+        },
+        "measurements": [
+          {
+            "family": "martlet",
+            "route": "reference",
+            "wrapperWidth": 1184,
+            "indexWidth": 240,
+            "bodyWidths": [
+              736
+            ]
+          },
+          {
+            "family": "krigsvold",
+            "route": "reference",
+            "wrapperWidth": 1184,
+            "indexWidth": 208,
+            "bodyWidths": [
+              656.4
+            ]
+          }
+        ],
+        "scope": "Local wave2 candidates only; normal1440px computed dimensions, not hosted source proof."
       }
     },
     {
@@ -2150,6 +2317,17 @@
           "summary": "wave1-acceptance.json#all50SemanticV2Checks",
           "result": "Frozen692 meaning chunk baseline and native control/time/data contract pass for both families at root and /preview.",
           "acceptanceScope": "Exact wave1 semantic acceptance, not universal accessibility/fidelity."
+        },
+        {
+          "kind": "local-wave2-visual-review",
+          "sourceCommits": {
+            "martlet": "434b8543dbc5ee07abfebe78a5fc0f8ce13ed637",
+            "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
+          },
+          "artifact": "/workspace/work/jekyll-grammar/visual/reading/review.json",
+          "artifactSha256": "b75337720476cfdfb9be5f6dcc13827f6cc332c24e8c0ee7c397f7137db63b67",
+          "result": "Specialist reviewed12 paired routes at320/1440 light/dark;96 normal states plus8actual200%Krigsvold targets. No captured page overflow/errors; native local table/code scrolling retained.",
+          "acceptanceScope": "Local104case scope; hosted/CI/independent after semantic and accessibility gates remain pending."
         }
       ],
       "pullRequests": [
@@ -2259,7 +2437,36 @@
       ],
       "pendingChangeCategories": [
         "wave2 compatibility review of accepted exemplar envelope"
-      ]
+      ],
+      "candidateAfterGeometry": {
+        "artifact": "/workspace/work/jekyll-grammar/visual/reading/route-measures.json",
+        "sha256": "5c2092d1ce1fb7edcac01fd16173d1d198f04729794e21116a08a56a7d9d4a3d",
+        "sourceCommits": {
+          "martlet": "434b8543dbc5ee07abfebe78a5fc0f8ce13ed637",
+          "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
+        },
+        "measurements": [
+          {
+            "family": "martlet",
+            "route": "faq",
+            "wrapperWidth": 1184,
+            "indexWidth": 229.0,
+            "bodyWidths": [
+              736
+            ]
+          },
+          {
+            "family": "krigsvold",
+            "route": "faq",
+            "wrapperWidth": 1184,
+            "indexWidth": 208,
+            "bodyWidths": [
+              918.4
+            ]
+          }
+        ],
+        "scope": "Local wave2 candidates only; normal1440px computed dimensions, not hosted source proof."
+      }
     },
     {
       "order": 15,
@@ -2352,6 +2559,17 @@
           "summary": "wave1-acceptance.json#all50SemanticV2Checks",
           "result": "Frozen692 meaning chunk baseline and native control/time/data contract pass for both families at root and /preview.",
           "acceptanceScope": "Exact wave1 semantic acceptance, not universal accessibility/fidelity."
+        },
+        {
+          "kind": "local-wave2-visual-review",
+          "sourceCommits": {
+            "martlet": "434b8543dbc5ee07abfebe78a5fc0f8ce13ed637",
+            "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
+          },
+          "artifact": "/workspace/work/jekyll-grammar/visual/reading/review.json",
+          "artifactSha256": "b75337720476cfdfb9be5f6dcc13827f6cc332c24e8c0ee7c397f7137db63b67",
+          "result": "Specialist reviewed12 paired routes at320/1440 light/dark;96 normal states plus8actual200%Krigsvold targets. No captured page overflow/errors; native local table/code scrolling retained.",
+          "acceptanceScope": "Local104case scope; hosted/CI/independent after semantic and accessibility gates remain pending."
         }
       ],
       "pullRequests": [],
@@ -2446,7 +2664,43 @@
       "candidateSourceHeads": {
         "martlet": "434b8543dbc5ee07abfebe78a5fc0f8ce13ed637",
         "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
-      }
+      },
+      "candidateAfterGeometry": {
+        "artifact": "/workspace/work/jekyll-grammar/visual/reading/route-measures.json",
+        "sha256": "5c2092d1ce1fb7edcac01fd16173d1d198f04729794e21116a08a56a7d9d4a3d",
+        "sourceCommits": {
+          "martlet": "434b8543dbc5ee07abfebe78a5fc0f8ce13ed637",
+          "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
+        },
+        "measurements": [
+          {
+            "family": "martlet",
+            "route": "privacy",
+            "wrapperWidth": 1184,
+            "indexWidth": 240,
+            "bodyWidths": [
+              736
+            ]
+          },
+          {
+            "family": "krigsvold",
+            "route": "privacy",
+            "wrapperWidth": 1184,
+            "indexWidth": 208,
+            "bodyWidths": [
+              918.4
+            ]
+          }
+        ],
+        "scope": "Local wave2 candidates only; normal1440px computed dimensions, not hosted source proof."
+      },
+      "reviewedRetentionRationale": [
+        {
+          "source": "/workspace/work/jekyll-grammar/visual/reading/README.md",
+          "judgment": "Native policy/procedural/list/definition-list/code/table anatomy remains justified while independent document-envelope geometry is corrected. Local horizontal table scrolling is intentional, keyboard accessible and distinct from page overflow.",
+          "scope": "Local paired visual review; final hosted/global acceptance pending."
+        }
+      ]
     },
     {
       "order": 16,
@@ -2539,6 +2793,17 @@
           "summary": "wave1-acceptance.json#all50SemanticV2Checks",
           "result": "Frozen692 meaning chunk baseline and native control/time/data contract pass for both families at root and /preview.",
           "acceptanceScope": "Exact wave1 semantic acceptance, not universal accessibility/fidelity."
+        },
+        {
+          "kind": "local-wave2-visual-review",
+          "sourceCommits": {
+            "martlet": "434b8543dbc5ee07abfebe78a5fc0f8ce13ed637",
+            "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
+          },
+          "artifact": "/workspace/work/jekyll-grammar/visual/reading/review.json",
+          "artifactSha256": "b75337720476cfdfb9be5f6dcc13827f6cc332c24e8c0ee7c397f7137db63b67",
+          "result": "Specialist reviewed12 paired routes at320/1440 light/dark;96 normal states plus8actual200%Krigsvold targets. No captured page overflow/errors; native local table/code scrolling retained.",
+          "acceptanceScope": "Local104case scope; hosted/CI/independent after semantic and accessibility gates remain pending."
         }
       ],
       "pullRequests": [],
@@ -2633,7 +2898,43 @@
       "candidateSourceHeads": {
         "martlet": "434b8543dbc5ee07abfebe78a5fc0f8ce13ed637",
         "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
-      }
+      },
+      "candidateAfterGeometry": {
+        "artifact": "/workspace/work/jekyll-grammar/visual/reading/route-measures.json",
+        "sha256": "5c2092d1ce1fb7edcac01fd16173d1d198f04729794e21116a08a56a7d9d4a3d",
+        "sourceCommits": {
+          "martlet": "434b8543dbc5ee07abfebe78a5fc0f8ce13ed637",
+          "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
+        },
+        "measurements": [
+          {
+            "family": "martlet",
+            "route": "terms",
+            "wrapperWidth": 1184,
+            "indexWidth": 240,
+            "bodyWidths": [
+              736
+            ]
+          },
+          {
+            "family": "krigsvold",
+            "route": "terms",
+            "wrapperWidth": 1184,
+            "indexWidth": 208,
+            "bodyWidths": [
+              918.4
+            ]
+          }
+        ],
+        "scope": "Local wave2 candidates only; normal1440px computed dimensions, not hosted source proof."
+      },
+      "reviewedRetentionRationale": [
+        {
+          "source": "/workspace/work/jekyll-grammar/visual/reading/README.md",
+          "judgment": "Native policy/procedural/list/definition-list/code/table anatomy remains justified while independent document-envelope geometry is corrected. Local horizontal table scrolling is intentional, keyboard accessible and distinct from page overflow.",
+          "scope": "Local paired visual review; final hosted/global acceptance pending."
+        }
+      ]
     },
     {
       "order": 17,
@@ -3251,6 +3552,17 @@
           "summary": "wave1-acceptance.json#all50SemanticV2Checks",
           "result": "Frozen692 meaning chunk baseline and native control/time/data contract pass for both families at root and /preview.",
           "acceptanceScope": "Exact wave1 semantic acceptance, not universal accessibility/fidelity."
+        },
+        {
+          "kind": "local-wave2-visual-review",
+          "sourceCommits": {
+            "martlet": "434b8543dbc5ee07abfebe78a5fc0f8ce13ed637",
+            "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
+          },
+          "artifact": "/workspace/work/jekyll-grammar/visual/reading/review.json",
+          "artifactSha256": "b75337720476cfdfb9be5f6dcc13827f6cc332c24e8c0ee7c397f7137db63b67",
+          "result": "Specialist reviewed12 paired routes at320/1440 light/dark;96 normal states plus8actual200%Krigsvold targets. No captured page overflow/errors; native local table/code scrolling retained.",
+          "acceptanceScope": "Local104case scope; hosted/CI/independent after semantic and accessibility gates remain pending."
         }
       ],
       "pullRequests": [],
@@ -3345,7 +3657,43 @@
       "candidateSourceHeads": {
         "martlet": "434b8543dbc5ee07abfebe78a5fc0f8ce13ed637",
         "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
-      }
+      },
+      "candidateAfterGeometry": {
+        "artifact": "/workspace/work/jekyll-grammar/visual/reading/route-measures.json",
+        "sha256": "5c2092d1ce1fb7edcac01fd16173d1d198f04729794e21116a08a56a7d9d4a3d",
+        "sourceCommits": {
+          "martlet": "434b8543dbc5ee07abfebe78a5fc0f8ce13ed637",
+          "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
+        },
+        "measurements": [
+          {
+            "family": "martlet",
+            "route": "opportunity",
+            "wrapperWidth": 1184,
+            "indexWidth": 240,
+            "bodyWidths": [
+              736
+            ]
+          },
+          {
+            "family": "krigsvold",
+            "route": "opportunity",
+            "wrapperWidth": 1184,
+            "indexWidth": 208,
+            "bodyWidths": [
+              656.4
+            ]
+          }
+        ],
+        "scope": "Local wave2 candidates only; normal1440px computed dimensions, not hosted source proof."
+      },
+      "reviewedRetentionRationale": [
+        {
+          "source": "/workspace/work/jekyll-grammar/visual/reading/README.md",
+          "judgment": "Native policy/procedural/list/definition-list/code/table anatomy remains justified while independent document-envelope geometry is corrected. Local horizontal table scrolling is intentional, keyboard accessible and distinct from page overflow.",
+          "scope": "Local paired visual review; final hosted/global acceptance pending."
+        }
+      ]
     },
     {
       "order": 22,
@@ -4598,6 +4946,17 @@
           "summary": "wave1-acceptance.json#all50SemanticV2Checks",
           "result": "Frozen692 meaning chunk baseline and native control/time/data contract pass for both families at root and /preview.",
           "acceptanceScope": "Exact wave1 semantic acceptance, not universal accessibility/fidelity."
+        },
+        {
+          "kind": "local-wave2-visual-review",
+          "sourceCommits": {
+            "martlet": "434b8543dbc5ee07abfebe78a5fc0f8ce13ed637",
+            "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
+          },
+          "artifact": "/workspace/work/jekyll-grammar/visual/reading/review.json",
+          "artifactSha256": "b75337720476cfdfb9be5f6dcc13827f6cc332c24e8c0ee7c397f7137db63b67",
+          "result": "Specialist reviewed12 paired routes at320/1440 light/dark;96 normal states plus8actual200%Krigsvold targets. No captured page overflow/errors; native local table/code scrolling retained.",
+          "acceptanceScope": "Local104case scope; hosted/CI/independent after semantic and accessibility gates remain pending."
         }
       ],
       "pullRequests": [
@@ -4713,7 +5072,34 @@
       ],
       "pendingChangeCategories": [
         "wave2 compatibility review of accepted exemplar envelope"
-      ]
+      ],
+      "candidateAfterGeometry": {
+        "artifact": "/workspace/work/jekyll-grammar/visual/reading/route-measures.json",
+        "sha256": "5c2092d1ce1fb7edcac01fd16173d1d198f04729794e21116a08a56a7d9d4a3d",
+        "sourceCommits": {
+          "martlet": "434b8543dbc5ee07abfebe78a5fc0f8ce13ed637",
+          "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
+        },
+        "measurements": [
+          {
+            "family": "martlet",
+            "route": "changelog",
+            "wrapperWidth": 1184,
+            "indexWidth": 229.0,
+            "bodyWidths": []
+          },
+          {
+            "family": "krigsvold",
+            "route": "changelog",
+            "wrapperWidth": 1184,
+            "indexWidth": 208,
+            "bodyWidths": [
+              625.2
+            ]
+          }
+        ],
+        "scope": "Local wave2 candidates only; normal1440px computed dimensions, not hosted source proof."
+      }
     },
     {
       "order": 31,
@@ -6519,6 +6905,17 @@
           "summary": "wave1-acceptance.json#all50SemanticV2Checks",
           "result": "Frozen692 meaning chunk baseline and native control/time/data contract pass for both families at root and /preview.",
           "acceptanceScope": "Exact wave1 semantic acceptance, not universal accessibility/fidelity."
+        },
+        {
+          "kind": "local-wave2-visual-review",
+          "sourceCommits": {
+            "martlet": "434b8543dbc5ee07abfebe78a5fc0f8ce13ed637",
+            "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
+          },
+          "artifact": "/workspace/work/jekyll-grammar/visual/reading/review.json",
+          "artifactSha256": "b75337720476cfdfb9be5f6dcc13827f6cc332c24e8c0ee7c397f7137db63b67",
+          "result": "Specialist reviewed12 paired routes at320/1440 light/dark;96 normal states plus8actual200%Krigsvold targets. No captured page overflow/errors; native local table/code scrolling retained.",
+          "acceptanceScope": "Local104case scope; hosted/CI/independent after semantic and accessibility gates remain pending."
         }
       ],
       "pullRequests": [],
@@ -6636,6 +7033,35 @@
       "candidateSourceHeads": {
         "martlet": "434b8543dbc5ee07abfebe78a5fc0f8ce13ed637",
         "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
+      },
+      "candidateAfterGeometry": {
+        "artifact": "/workspace/work/jekyll-grammar/visual/reading/route-measures.json",
+        "sha256": "5c2092d1ce1fb7edcac01fd16173d1d198f04729794e21116a08a56a7d9d4a3d",
+        "sourceCommits": {
+          "martlet": "434b8543dbc5ee07abfebe78a5fc0f8ce13ed637",
+          "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
+        },
+        "measurements": [
+          {
+            "family": "martlet",
+            "route": "integrations",
+            "wrapperWidth": 1184,
+            "indexWidth": 240,
+            "bodyWidths": [
+              736
+            ]
+          },
+          {
+            "family": "krigsvold",
+            "route": "integrations",
+            "wrapperWidth": 1184,
+            "indexWidth": 208,
+            "bodyWidths": [
+              656.4
+            ]
+          }
+        ],
+        "scope": "Local wave2 candidates only; normal1440px computed dimensions, not hosted source proof."
       }
     },
     {
@@ -6734,6 +7160,17 @@
           "summary": "wave1-acceptance.json#all50SemanticV2Checks",
           "result": "Frozen692 meaning chunk baseline and native control/time/data contract pass for both families at root and /preview.",
           "acceptanceScope": "Exact wave1 semantic acceptance, not universal accessibility/fidelity."
+        },
+        {
+          "kind": "local-wave2-visual-review",
+          "sourceCommits": {
+            "martlet": "434b8543dbc5ee07abfebe78a5fc0f8ce13ed637",
+            "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
+          },
+          "artifact": "/workspace/work/jekyll-grammar/visual/reading/review.json",
+          "artifactSha256": "b75337720476cfdfb9be5f6dcc13827f6cc332c24e8c0ee7c397f7137db63b67",
+          "result": "Specialist reviewed12 paired routes at320/1440 light/dark;96 normal states plus8actual200%Krigsvold targets. No captured page overflow/errors; native local table/code scrolling retained.",
+          "acceptanceScope": "Local104case scope; hosted/CI/independent after semantic and accessibility gates remain pending."
         }
       ],
       "pullRequests": [],
@@ -6851,7 +7288,43 @@
       "candidateSourceHeads": {
         "martlet": "434b8543dbc5ee07abfebe78a5fc0f8ce13ed637",
         "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
-      }
+      },
+      "candidateAfterGeometry": {
+        "artifact": "/workspace/work/jekyll-grammar/visual/reading/route-measures.json",
+        "sha256": "5c2092d1ce1fb7edcac01fd16173d1d198f04729794e21116a08a56a7d9d4a3d",
+        "sourceCommits": {
+          "martlet": "434b8543dbc5ee07abfebe78a5fc0f8ce13ed637",
+          "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
+        },
+        "measurements": [
+          {
+            "family": "martlet",
+            "route": "stress-test",
+            "wrapperWidth": 1184,
+            "indexWidth": 240,
+            "bodyWidths": [
+              736
+            ]
+          },
+          {
+            "family": "krigsvold",
+            "route": "stress-test",
+            "wrapperWidth": 1184,
+            "indexWidth": 208,
+            "bodyWidths": [
+              918.4
+            ]
+          }
+        ],
+        "scope": "Local wave2 candidates only; normal1440px computed dimensions, not hosted source proof."
+      },
+      "reviewedRetentionRationale": [
+        {
+          "source": "/workspace/work/jekyll-grammar/visual/reading/README.md",
+          "judgment": "Native policy/procedural/list/definition-list/code/table anatomy remains justified while independent document-envelope geometry is corrected. Local horizontal table scrolling is intentional, keyboard accessible and distinct from page overflow.",
+          "scope": "Local paired visual review; final hosted/global acceptance pending."
+        }
+      ]
     },
     {
       "order": 46,
@@ -7313,6 +7786,17 @@
           "summary": "wave1-acceptance.json#all50SemanticV2Checks",
           "result": "Frozen692 meaning chunk baseline and native control/time/data contract pass for both families at root and /preview.",
           "acceptanceScope": "Exact wave1 semantic acceptance, not universal accessibility/fidelity."
+        },
+        {
+          "kind": "local-wave2-visual-review",
+          "sourceCommits": {
+            "martlet": "434b8543dbc5ee07abfebe78a5fc0f8ce13ed637",
+            "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
+          },
+          "artifact": "/workspace/work/jekyll-grammar/visual/reading/review.json",
+          "artifactSha256": "b75337720476cfdfb9be5f6dcc13827f6cc332c24e8c0ee7c397f7137db63b67",
+          "result": "Specialist reviewed12 paired routes at320/1440 light/dark;96 normal states plus8actual200%Krigsvold targets. No captured page overflow/errors; native local table/code scrolling retained.",
+          "acceptanceScope": "Local104case scope; hosted/CI/independent after semantic and accessibility gates remain pending."
         }
       ],
       "pullRequests": [
@@ -7434,7 +7918,34 @@
       ],
       "pendingChangeCategories": [
         "wave2 compatibility review of accepted exemplar envelope"
-      ]
+      ],
+      "candidateAfterGeometry": {
+        "artifact": "/workspace/work/jekyll-grammar/visual/reading/route-measures.json",
+        "sha256": "5c2092d1ce1fb7edcac01fd16173d1d198f04729794e21116a08a56a7d9d4a3d",
+        "sourceCommits": {
+          "martlet": "434b8543dbc5ee07abfebe78a5fc0f8ce13ed637",
+          "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
+        },
+        "measurements": [
+          {
+            "family": "martlet",
+            "route": "dashboard-components",
+            "wrapperWidth": 1184,
+            "indexWidth": 229.0,
+            "bodyWidths": []
+          },
+          {
+            "family": "krigsvold",
+            "route": "dashboard-components",
+            "wrapperWidth": 1184,
+            "indexWidth": 208,
+            "bodyWidths": [
+              625.2
+            ]
+          }
+        ],
+        "scope": "Local wave2 candidates only; normal1440px computed dimensions, not hosted source proof."
+      }
     },
     {
       "order": 49,
