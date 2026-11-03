@@ -7,9 +7,13 @@ on:
     paths: ['examples/**', 'packages/**', 'package.json', 'package-lock.json', 'playwright.dashboard.config.ts', '.github/workflows/jekyll-examples.yml']
 permissions:
   contents: read
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 jobs:
   examples:
     runs-on: ubuntu-latest
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -163,6 +167,7 @@ jobs:
     timeout-minutes: 20
     strategy:
       fail-fast: false
+      max-parallel: 2
       matrix:
         browser: [firefox, webkit]
     env:
@@ -221,6 +226,7 @@ jobs:
     timeout-minutes: 30
     strategy:
       fail-fast: false
+      max-parallel: 2
       matrix:
         suite: [analytics-coverage, analytics-precision, operations-directory]
     env:
