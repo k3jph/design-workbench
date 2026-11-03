@@ -55,6 +55,33 @@
           "version": "2.2.2",
           "published": true,
           "tag": "next"
+        },
+        "Jekyll": {
+          "kind": "git",
+          "repository": "https://github.com/martletdesign/jekyll",
+          "version": "1.0.0",
+          "sourceAvailable": true,
+          "sourceCommit": "92b8fc22fc5d42ccba4cffba6d5de8fb53103e9c",
+          "published": true,
+          "recipeCount": 50,
+          "core": null,
+          "legacyTheme": {
+            "name": "@martlet/theme",
+            "version": "2.2.2",
+            "integrity": "sha512-rCj2xwimGy8AbFVqWWU7QfWgamHaVL5E41KaA1/s3XGC69iHZdHWV2POKtBKC+CAmPHCptmHD8I5u3BLoqUFBw==",
+            "sourceShellSha256": "d5cf12b35bac7b01cfb2c0298102454309fe979e19584c00490a21c93d500f45"
+          },
+          "advancedArchiveEnabled": false,
+          "tag": "v1.0.0",
+          "release": "https://github.com/martletdesign/jekyll/releases/tag/v1.0.0",
+          "sourceZip": {
+            "url": "https://github.com/martletdesign/jekyll/releases/download/v1.0.0/source.zip",
+            "sha256": "de97e71a49f1a270c9b548b8fae10db2d8741ae77fecc9f01263e92097c33710",
+            "bytes": 775234,
+            "available": true,
+            "reviewedBytesMatched": true
+          },
+          "releaseAssetImmutable": false
         }
       },
       "preview": {
@@ -117,6 +144,33 @@
           "version": "2.2.3",
           "published": true,
           "tag": "next"
+        },
+        "Jekyll": {
+          "kind": "git",
+          "repository": "https://github.com/krigsvolddesign/jekyll",
+          "version": "1.0.0",
+          "sourceAvailable": true,
+          "sourceCommit": "52df2775f9cd487b2b527032b99d4d7806fe52ea",
+          "published": true,
+          "recipeCount": 50,
+          "core": null,
+          "legacyTheme": {
+            "name": "@krigsvold/theme",
+            "version": "2.2.3",
+            "integrity": "sha512-SWsyy7btUfuj2n5VeQXPJrh4LPutkxBH2cjya8Z9Nlits2sYdE50++8fJcbXKU8PrbM6f7ALTqpy7yAlhQ2yTg==",
+            "sourceShellSha256": "a65b1cbbe032d46be7373b1f3a90ca46ba1b3971fa85c98975cd9ec76394c05d"
+          },
+          "advancedArchiveEnabled": false,
+          "tag": "v1.0.0",
+          "release": "https://github.com/krigsvolddesign/jekyll/releases/tag/v1.0.0",
+          "sourceZip": {
+            "url": "https://github.com/krigsvolddesign/jekyll/releases/download/v1.0.0/source.zip",
+            "sha256": "aac2f16d643a331f40d2a15ea3d4bfaf8ee64c96742fb28b7bb8620c64d58a17",
+            "bytes": 781359,
+            "available": true,
+            "reviewedBytesMatched": true
+          },
+          "releaseAssetImmutable": false
         }
       },
       "preview": {

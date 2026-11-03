@@ -38,6 +38,6 @@ declare module "docs-decisions" {
 }
 
 declare module 'docs-distribution' {
- const value: {home:string;preview:{version:string;stage:string};mcp:{url:string;published:boolean};packages:{React:{published:boolean;install:string}}};
+ const value: {home:string;preview:{version:string;stage:string};mcp:{url:string;published:boolean};packages:{React:{version:string;published:boolean;install:string;sourceCommit?:string}}};
  export default value;
 }

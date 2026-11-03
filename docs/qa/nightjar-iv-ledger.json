@@ -8180,7 +8180,7 @@
       "status": "local verification in progress; no main merge, npm publication or Cloudflare deployment by this candidate",
       "localChecks": {
         "workbenchUnit": {
-          "passed": 132,
+          "passed": 137,
           "failed": 0
         },
         "archiveGitFlowContracts": {
@@ -8189,15 +8189,212 @@
         },
         "registryCoreCleanRoom": "passed exact reviewed Core archives and packed React rendering",
         "agents": "passed extracted archives outside workbench",
-        "compiledWorkers": "passed both family MCP APIs with asset fallback"
+        "compiledWorkers": "passed both family MCP APIs with asset fallback",
+        "publicationBoundaryTests": {
+          "passed": 11,
+          "failed": 0
+        },
+        "independentReactArchives": {
+          "passed": true,
+          "sourcePins": {
+            "martlet": "ec9d3515c2233514304908d0e343bfd291505ebe",
+            "krigsvold": "2bb52de74314f50c854429f3f90f11631f5aeb8b"
+          },
+          "allReviewedArchiveBytesMatched": true,
+          "normalization": "Explicit payload0644/directories0755 in isolated export; npm11.15.0",
+          "consumerBrowser": "All seven unchanged consumer commands passed in Chromium for both families, including root/preview and narrow-keyboard/axe contracts"
+        },
+        "jekyllGuidance": {
+          "platform": "platform:Jekyll",
+          "referencesPerFamily": 62,
+          "MCPProtocolCasesPassed": 9,
+          "extractedArchiveTests": "passed both families",
+          "compiledWorkerTests": "passed both families, both protocol eras and static asset fallback",
+          "authority": "Independent public Git/source releases with core:null and explicit legacy-theme provenance; published availability only after independently verified assets"
+        }
       },
-      "browserVerification": "Chromium/Firefox/WebKit complete suites in progress; initial Chromium/WebKit launch setup failures are not passes",
+      "browserVerification": "Hosted full178-case verification passed in Chromium, Firefox and WebKit at e56d97f000a91e0aae12b2c087a8b3b7e7b5e114, including package/agent/compiled-Worker follow-up. Local broad partial results are preserved without claiming completion; unchanged isolated restoration cases2/2 passed and all seven corrected independent-archive consumer commands passed in one Chromium context.",
       "publicationAuthority": "Standalone package/site repositories; legacy workbench npm event publisher and reference publication callers retired in candidate; coordinator controls final trust cutover",
       "manualLimitations": [
         "No manual assistive-technology certification",
         "RTL/localization and sustained-use evidence remain open",
         "R2 administrator immutability not claimed; advanced archive disabled until verified"
-      ]
+      ],
+      "websiteConsumerVerificationOwnership": {
+        "status": "all six equivalent private hosted prerelease source proofs passed before obsolete cross-private-checkout retirement",
+        "jobEvidence": "docs/qa/website-consumer-verification.json",
+        "assertionMapping": "docs/qa/website-consumer-verification.md",
+        "finalRegistryBackedWebsiteCIStillRequired": true,
+        "proofs": [
+          {
+            "family": "martlet",
+            "repo": "martletdesign/website",
+            "head": "2ddc5674a44116287b03649180f5816e97432132",
+            "run": 41563723221,
+            "jobs": [
+              {
+                "id": 125680099301,
+                "name": "Pre-release consumer proof (webkit)",
+                "status": "completed",
+                "conclusion": "success",
+                "url": "https://github.com/martletdesign/website/actions/runs/41563723221/job/125680099301"
+              },
+              {
+                "id": 125680099533,
+                "name": "Pre-release consumer proof (firefox)",
+                "status": "completed",
+                "conclusion": "success",
+                "url": "https://github.com/martletdesign/website/actions/runs/41563723221/job/125680099533"
+              },
+              {
+                "id": 125680099556,
+                "name": "Pre-release consumer proof (chromium)",
+                "status": "completed",
+                "conclusion": "success",
+                "url": "https://github.com/martletdesign/website/actions/runs/41563723221/job/125680099556"
+              }
+            ],
+            "evidenceKind": "prerelease immutable-source consumer proof; final registry-backed CI remains required before production"
+          },
+          {
+            "family": "krigsvold",
+            "repo": "krigsvolddesign/website",
+            "head": "29e00af450f4914bb35379d3d5ad1435eb15942b",
+            "run": 41565290699,
+            "jobs": [
+              {
+                "id": 125685238323,
+                "name": "Pre-release consumer proof (webkit)",
+                "status": "completed",
+                "conclusion": "success",
+                "url": "https://github.com/krigsvolddesign/website/actions/runs/41565290699/job/125685238323"
+              },
+              {
+                "id": 125685238474,
+                "name": "Pre-release consumer proof (chromium)",
+                "status": "completed",
+                "conclusion": "success",
+                "url": "https://github.com/krigsvolddesign/website/actions/runs/41565290699/job/125685238474"
+              },
+              {
+                "id": 125685238507,
+                "name": "Pre-release consumer proof (firefox)",
+                "status": "completed",
+                "conclusion": "success",
+                "url": "https://github.com/krigsvolddesign/website/actions/runs/41565290699/job/125685238507"
+              }
+            ],
+            "evidenceKind": "prerelease immutable-source consumer proof; final registry-backed CI remains required before production"
+          }
+        ]
+      }
+    },
+    "verifiedReleases": {
+      "martletJekyll": {
+        "repository": "martletdesign/jekyll",
+        "version": "1.0.0",
+        "tag": "v1.0.0",
+        "sourceCommit": "92b8fc22fc5d42ccba4cffba6d5de8fb53103e9c",
+        "releaseUrl": "https://github.com/martletdesign/jekyll/releases/tag/v1.0.0",
+        "releaseId": 432190561,
+        "immutable": false,
+        "sourceZipSha256": "de97e71a49f1a270c9b548b8fae10db2d8741ae77fecc9f01263e92097c33710",
+        "reviewedBytesMatched": true,
+        "sourceVerification": "Verified 201 exact standalone source files; advanced R2 archive remains disabled.",
+        "workflowRun": "https://github.com/martletdesign/jekyll/actions/runs/41563130314",
+        "assets": [
+          {
+            "name": "SHA256SUMS",
+            "bytes": 77,
+            "digest": "sha256:f2f0463162fc8009364961baca38c92a63b884dbc95c1d26f68c2ac2e1c83e30",
+            "url": "https://github.com/martletdesign/jekyll/releases/download/v1.0.0/SHA256SUMS"
+          },
+          {
+            "name": "source.zip",
+            "bytes": 775234,
+            "digest": "sha256:de97e71a49f1a270c9b548b8fae10db2d8741ae77fecc9f01263e92097c33710",
+            "url": "https://github.com/martletdesign/jekyll/releases/download/v1.0.0/source.zip"
+          }
+        ]
+      },
+      "krigsvoldJekyll": {
+        "repository": "krigsvolddesign/jekyll",
+        "version": "1.0.0",
+        "tag": "v1.0.0",
+        "sourceCommit": "52df2775f9cd487b2b527032b99d4d7806fe52ea",
+        "releaseUrl": "https://github.com/krigsvolddesign/jekyll/releases/tag/v1.0.0",
+        "releaseId": 432194518,
+        "immutable": false,
+        "sourceZipSha256": "aac2f16d643a331f40d2a15ea3d4bfaf8ee64c96742fb28b7bb8620c64d58a17",
+        "reviewedBytesMatched": true,
+        "sourceVerification": "Verified 193 exact standalone source files; advanced R2 archive remains disabled.",
+        "workflowRun": "https://github.com/krigsvolddesign/jekyll/actions/runs/41563598378",
+        "assets": [
+          {
+            "name": "SHA256SUMS",
+            "bytes": 77,
+            "digest": "sha256:9fa4c900495b54b551a6677c81555e439803fbb42e9577e4f673c3fa15d85606",
+            "url": "https://github.com/krigsvolddesign/jekyll/releases/download/v1.0.0/SHA256SUMS"
+          },
+          {
+            "name": "source.zip",
+            "bytes": 781359,
+            "digest": "sha256:aac2f16d643a331f40d2a15ea3d4bfaf8ee64c96742fb28b7bb8620c64d58a17",
+            "url": "https://github.com/krigsvolddesign/jekyll/releases/download/v1.0.0/source.zip"
+          }
+        ]
+      }
+    },
+    "staticDeliveryRuntimeProbe": {
+      "url": "https://nightjar-release-auth-probe.k3jph.workers.dev",
+      "productionChanged": false,
+      "sourceSha256": "e1907556849b6cdc9e8d37db8880ed6330c2f936fd089fc28b188031e94ef92a",
+      "tests": [
+        {
+          "path": "/",
+          "method": "GET",
+          "status": 200,
+          "expected": 200,
+          "bodySha256": "c07c19272f419d0b95e97d73568737bad13aa38bfcb196f42da24e4729b16f4c",
+          "contentType": "text/html",
+          "nosniff": "nosniff"
+        },
+        {
+          "path": "/_archive/catalog",
+          "method": "PUT",
+          "status": 404,
+          "expected": 404,
+          "bodySha256": "fdc8abbf676beb375ab660cf267eb1025c981f695d095bed47463508b429f88f",
+          "contentType": "text/plain; charset=utf-8",
+          "nosniff": null
+        },
+        {
+          "path": "/",
+          "method": "POST",
+          "status": 405,
+          "expected": 405,
+          "bodySha256": "3f687f2a3eda37ca9a28ac409e8cffa1721162cd32118510670c5adab6bbdd8e",
+          "contentType": "text/plain;charset=UTF-8",
+          "nosniff": null
+        },
+        {
+          "operation": "actual-runtime-binding-readback",
+          "bindings": [
+            {
+              "name": "ASSETS",
+              "type": "assets"
+            }
+          ],
+          "R2BindingPresent": false,
+          "accountCredentialBindingPresent": false
+        },
+        {
+          "operation": "isolated-probe-cleanup",
+          "status": 200,
+          "success": true
+        }
+      ],
+      "failure": null
     }
   }
 }

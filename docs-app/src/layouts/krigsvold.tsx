@@ -11,7 +11,7 @@ import {
   Disclosure,
 } from "docs-family";
 import mark from "../../brand/krigsvold-mark.svg";
-import { groups, descriptions, repo } from "../data";
+import { groups, descriptions, repo, implementationVersion } from "../data";
 export const familyMark = mark;
 import type { LayoutProps, PageProps } from "../layout-types";
 import "./krigsvold.css";
@@ -50,7 +50,7 @@ function ReferenceRegister({page}:{page:LayoutProps['page']}) {
               <a href="https://krigsvolddesign.dev/">Design Language ↗</a>
               <a href={repo}>Source ↗</a>
             </div>
-            <span>0.3 PREVIEW · REACT 0.1.0</span>
+            <span>0.3 PREVIEW · REACT {implementationVersion}</span>
           </div>);
 }
 export function FamilyLayout(props: LayoutProps) { return <AstroShell {...props} family="krigsvold" chrome={chrome} />; }
@@ -71,7 +71,7 @@ export function ComponentPage({
         <DefinitionList
           items={[
             { id: "status", term: "Status", description: "Experimental" },
-            { id: "version", term: "Version", description: "0.1.0" },
+            { id: "version", term: "Version", description: implementationVersion },
             { id: "platform", term: "Platform", description: "React 19" },
           ]}
         />
@@ -110,7 +110,7 @@ export function FamilyHome() {
             { id: "license", term: "License", description: "MIT" },
           ]}
         />
-        <Badge>Experimental · 0.1.0</Badge>
+        <Badge>Experimental · {implementationVersion}</Badge>
       </div>
       <section id="components" className="krigsvold-reference-catalog">
         <header>

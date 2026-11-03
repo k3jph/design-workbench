@@ -31,7 +31,7 @@ export default defineConfig(({ mode }) => {
                   : undefined,
         load: (id) =>
           id === "\0docs-family"
-            ? `export * from '@${mode}/react'; import '@${mode}/react/styles.css'; import '@${mode}/theme/fonts.css'; export const family = '${mode}'; export const familyName = '${name}';`
+            ? `export * from '@${mode}/react'; import '@${mode}/react/styles.css'; import '@${mode}/core/fonts.css'; export const family = '${mode}'; export const familyName = '${name}';`
             : id === "\0docs-grammar" || id === "\0docs-decisions"
               ? `export default ${JSON.stringify(readFileSync(new URL(`../docs/languages/${mode}/${id === "\0docs-grammar" ? "grammar" : "decisions"}.md`, import.meta.url), "utf8"))}`
               : undefined,
@@ -42,7 +42,7 @@ export default defineConfig(({ mode }) => {
           html.replace(
             "<title>React reference</title>",
             `<title>${name} React · Component reference</title>`,
-          ),
+          ).replace('<noscript><main><h1>React component reference</h1>',`<noscript><main><h1>${name} React component reference</h1>`),
       },
     ],
     build: {
