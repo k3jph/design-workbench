@@ -39,7 +39,7 @@ async function routeFrames(t){
    page.on('response',r=>{if(new URL(r.url()).origin===t.origin&&r.status()>=400)failures.push(r.status()+' '+r.url())});
    const url=t.origin+t.base+'examples/'+recipe.id+'/';
    try{await operation(t,`route ${recipe.id} JS=${javaScriptEnabled}`,async()=>{
-    const r=await page.goto(url,{waitUntil:'load'});assert.equal(r.status(),200);assert.equal(await page.locator('main').count(),1);assert.equal(await page.locator('h1').count(),1);assert.equal((await page.locator('h1').textContent()).replace(/\s+/g,' ').trim(),recipe.title.replace(/\s+/g,' ').trim());assert.ok((await page.locator('main').textContent()).replace(/\s+/g,' ').includes(recipe.summary.replace(/\s+/g,' ')));
+    const r=await page.goto(url,{waitUntil:'load'});assert.equal(r.status(),200);assert.match(r.headers()['cache-control']||'',/(?:^|,)\s*no-transform\s*(?:,|$)/i,'HTML must prevent automatic edge transformation');assert.equal(await page.locator('main').count(),1);assert.equal(await page.locator('h1').count(),1);assert.equal((await page.locator('h1').textContent()).replace(/\s+/g,' ').trim(),recipe.title.replace(/\s+/g,' ').trim());assert.ok((await page.locator('main').textContent()).replace(/\s+/g,' ').includes(recipe.summary.replace(/\s+/g,' ')));
     // Loading=eager makes every declared image part of this route's asset gate,
     // including images below the fold which otherwise begin loading too late.
     await operation(t,'image loading '+recipe.id,async()=>{
