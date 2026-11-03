@@ -281,7 +281,8 @@
         }
       },
       "semanticAnatomyDecision": "retain",
-      "observedChangeCategories": []
+      "observedChangeCategories": [],
+      "wave3ReviewDisposition": "retain-existing-native-composition-with-actual-review"
     },
     {
       "order": 2,
@@ -413,7 +414,8 @@
         }
       },
       "semanticAnatomyDecision": "retain",
-      "observedChangeCategories": []
+      "observedChangeCategories": [],
+      "wave3ReviewDisposition": "retain-existing-native-composition-with-actual-review"
     },
     {
       "order": 3,
@@ -729,7 +731,8 @@
         }
       },
       "semanticAnatomyDecision": "retain",
-      "observedChangeCategories": []
+      "observedChangeCategories": [],
+      "wave3ReviewDisposition": "retain-existing-native-composition-with-actual-review"
     },
     {
       "order": 5,
@@ -857,7 +860,8 @@
         }
       },
       "semanticAnatomyDecision": "retain",
-      "observedChangeCategories": []
+      "observedChangeCategories": [],
+      "wave3ReviewDisposition": "retain-existing-native-composition-with-actual-review"
     },
     {
       "order": 6,
@@ -985,7 +989,8 @@
         }
       },
       "semanticAnatomyDecision": "retain",
-      "observedChangeCategories": []
+      "observedChangeCategories": [],
+      "wave3ReviewDisposition": "retain-existing-native-composition-with-actual-review"
     },
     {
       "order": 7,
@@ -1117,7 +1122,8 @@
         }
       },
       "semanticAnatomyDecision": "retain",
-      "observedChangeCategories": []
+      "observedChangeCategories": [],
+      "wave3ReviewDisposition": "retain-existing-native-composition-with-actual-review"
     },
     {
       "order": 8,
@@ -1245,7 +1251,8 @@
         }
       },
       "semanticAnatomyDecision": "retain",
-      "observedChangeCategories": []
+      "observedChangeCategories": [],
+      "wave3ReviewDisposition": "retain-existing-native-composition-with-actual-review"
     },
     {
       "order": 9,
@@ -1379,7 +1386,8 @@
         }
       },
       "semanticAnatomyDecision": "retain",
-      "observedChangeCategories": []
+      "observedChangeCategories": [],
+      "wave3ReviewDisposition": "retain-existing-native-composition-with-actual-review"
     },
     {
       "order": 10,
@@ -2194,7 +2202,8 @@
         }
       },
       "semanticAnatomyDecision": "retain",
-      "observedChangeCategories": []
+      "observedChangeCategories": [],
+      "wave3ReviewDisposition": "retain-existing-native-composition-with-actual-review"
     },
     {
       "order": 14,
@@ -3103,7 +3112,8 @@
         }
       },
       "semanticAnatomyDecision": "retain",
-      "observedChangeCategories": []
+      "observedChangeCategories": [],
+      "wave3ReviewDisposition": "retain-existing-native-composition-with-actual-review"
     },
     {
       "order": 18,
@@ -3235,7 +3245,8 @@
         }
       },
       "semanticAnatomyDecision": "retain",
-      "observedChangeCategories": []
+      "observedChangeCategories": [],
+      "wave3ReviewDisposition": "retain-existing-native-composition-with-actual-review"
     },
     {
       "order": 19,
@@ -3366,7 +3377,8 @@
         }
       },
       "semanticAnatomyDecision": "retain",
-      "observedChangeCategories": []
+      "observedChangeCategories": [],
+      "wave3ReviewDisposition": "retain-existing-native-composition-with-actual-review"
     },
     {
       "order": 20,
@@ -3494,7 +3506,8 @@
         }
       },
       "semanticAnatomyDecision": "retain",
-      "observedChangeCategories": []
+      "observedChangeCategories": [],
+      "wave3ReviewDisposition": "retain-existing-native-composition-with-actual-review"
     },
     {
       "order": 21,
@@ -3868,7 +3881,8 @@
         }
       },
       "semanticAnatomyDecision": "retain",
-      "observedChangeCategories": []
+      "observedChangeCategories": [],
+      "wave3ReviewDisposition": "retain-existing-native-composition-with-actual-review"
     },
     {
       "order": 23,
@@ -4000,7 +4014,8 @@
         }
       },
       "semanticAnatomyDecision": "retain",
-      "observedChangeCategories": []
+      "observedChangeCategories": [],
+      "wave3ReviewDisposition": "retain-existing-native-composition-with-actual-review"
     },
     {
       "order": 24,
@@ -4128,7 +4143,8 @@
         }
       },
       "semanticAnatomyDecision": "retain",
-      "observedChangeCategories": []
+      "observedChangeCategories": [],
+      "wave3ReviewDisposition": "retain-existing-native-composition-with-actual-review"
     },
     {
       "order": 25,
@@ -4260,7 +4276,8 @@
         }
       },
       "semanticAnatomyDecision": "retain",
-      "observedChangeCategories": []
+      "observedChangeCategories": [],
+      "wave3ReviewDisposition": "retain-existing-native-composition-with-actual-review"
     },
     {
       "order": 26,
@@ -4390,7 +4407,8 @@
         }
       },
       "semanticAnatomyDecision": "retain",
-      "observedChangeCategories": []
+      "observedChangeCategories": [],
+      "wave3ReviewDisposition": "retain-existing-native-composition-with-actual-review"
     },
     {
       "order": 27,
@@ -4559,7 +4577,8 @@
       "candidateSourceHeads": {
         "martlet": "434b8543dbc5ee07abfebe78a5fc0f8ce13ed637",
         "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
-      }
+      },
+      "wave3ReviewDisposition": "retain-existing-native-composition-with-actual-review"
     },
     {
       "order": 28,
@@ -4730,7 +4749,8 @@
       "candidateSourceHeads": {
         "martlet": "434b8543dbc5ee07abfebe78a5fc0f8ce13ed637",
         "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
-      }
+      },
+      "wave3ReviewDisposition": "focused-change-proposal"
     },
     {
       "order": 29,
@@ -4860,7 +4880,8 @@
         }
       },
       "semanticAnatomyDecision": "retain",
-      "observedChangeCategories": []
+      "observedChangeCategories": [],
+      "wave3ReviewDisposition": "retain-existing-native-composition-with-actual-review"
     },
     {
       "order": 30,
@@ -5287,7 +5308,8 @@
         }
       },
       "semanticAnatomyDecision": "change",
-      "observedChangeCategories": []
+      "observedChangeCategories": [],
+      "wave3ReviewDisposition": "focused-change-proposal"
     },
     {
       "order": 32,
@@ -7530,7 +7552,8 @@
         }
       },
       "semanticAnatomyDecision": "retain",
-      "observedChangeCategories": []
+      "observedChangeCategories": [],
+      "wave3ReviewDisposition": "retain-existing-native-composition-with-actual-review"
     },
     {
       "order": 47,
@@ -8470,5 +8493,66 @@
       "stress-test",
       "dashboard-operations"
     ]
-  }
+  },
+  "primaryReviewScopes": {
+    "1": [
+      "faq",
+      "changelog",
+      "dashboard-components"
+    ],
+    "2": [
+      "guide",
+      "reference",
+      "privacy",
+      "terms",
+      "opportunity",
+      "integrations",
+      "stress-test",
+      "article",
+      "documentation"
+    ],
+    "3": [
+      "home",
+      "about",
+      "archive",
+      "category",
+      "categories",
+      "person",
+      "projects",
+      "case-study",
+      "contact",
+      "service",
+      "place",
+      "pricing",
+      "careers",
+      "software",
+      "product",
+      "collection",
+      "collection-item",
+      "events",
+      "event",
+      "report",
+      "gallery",
+      "search",
+      "patterns"
+    ],
+    "4": [
+      "sign-in",
+      "sign-up",
+      "password-reset",
+      "two-factor",
+      "not-found",
+      "server-error",
+      "workspace",
+      "chat",
+      "sensors",
+      "fleet",
+      "dashboard-analytics",
+      "dashboard-administration",
+      "dashboard-operations",
+      "scene",
+      "coming-soon"
+    ]
+  },
+  "primaryReviewScopeNote": "Disjoint50-route review partition. Generic table-label repairs cross scope boundaries: event/report are wave3 review subjects whose accessibility repair lands in wave2."
 }

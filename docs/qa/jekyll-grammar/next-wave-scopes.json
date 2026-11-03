@@ -1,0 +1,430 @@
+{
+  "schemaVersion": 1,
+  "authority": "disposition.json remains the route-by-route decision/evidence source",
+  "wave3": {
+    "scopeCount": 23,
+    "focusedChangeProposals": [
+      "report",
+      "search"
+    ],
+    "retainCurrentNativeComposition": [
+      "home",
+      "about",
+      "archive",
+      "category",
+      "categories",
+      "person",
+      "projects",
+      "case-study",
+      "contact",
+      "service",
+      "place",
+      "pricing",
+      "careers",
+      "software",
+      "product",
+      "collection",
+      "collection-item",
+      "events",
+      "event",
+      "gallery",
+      "patterns"
+    ],
+    "scopeExceptions": [
+      {
+        "id": "documentation",
+        "reason": "Reading wave2 owns the annotated documentation index. Preserve that accepted result when integrating collections."
+      },
+      {
+        "id": "scene",
+        "reason": "Static scene-selection behavior belongs to operational wave4; no invented VR renderer."
+      }
+    ],
+    "routes": [
+      {
+        "id": "home",
+        "route": "/examples/home/",
+        "semanticClass": "landing",
+        "composition": "landing",
+        "reviewDisposition": "retain-existing-native-composition",
+        "rationale": "Two existing sections orient and offer three related routes; existing family landing composition already serves discovery.",
+        "martlet": "Retain bounded introduction and separated related destinations.",
+        "krigsvold": "Retain purpose-labelled landing regions and aligned section edges."
+      },
+      {
+        "id": "about",
+        "route": "/examples/about/",
+        "semanticClass": "organization",
+        "composition": "landing",
+        "reviewDisposition": "retain-existing-native-composition",
+        "rationale": "Mission, principles and people already form an intelligible progression; no evidence justifies a new frame.",
+        "martlet": "Retain purpose-to-principles-to-people sequence and readable groups.",
+        "krigsvold": "Retain labelled purpose/principles/people regions without manufacturing a comparison table."
+      },
+      {
+        "id": "archive",
+        "route": "/examples/archive/",
+        "semanticClass": "archive",
+        "composition": "collection",
+        "reviewDisposition": "retain-existing-native-composition",
+        "rationale": "Existing family collection metadata columns differ meaningfully; preserve linked records and date context.",
+        "martlet": "Retain separate contextual metadata beside editorial record excerpts.",
+        "krigsvold": "Retain aligned scan rows and stable metadata edges."
+      },
+      {
+        "id": "category",
+        "route": "/examples/category/",
+        "semanticClass": "taxonomy",
+        "composition": "collection",
+        "reviewDisposition": "retain-existing-native-composition",
+        "rationale": "A scoped collection is already represented by its heading and records; avoid an invented second hierarchy.",
+        "martlet": "Retain related-record sequence within the named topic.",
+        "krigsvold": "Retain scope heading and comparable record rows."
+      },
+      {
+        "id": "categories",
+        "route": "/examples/categories/",
+        "semanticClass": "taxonomy-index",
+        "composition": "collection",
+        "reviewDisposition": "retain-existing-native-composition",
+        "rationale": "A short topic index does not need a dense register or unrelated prose treatment.",
+        "martlet": "Retain browsable topic groups and destinations.",
+        "krigsvold": "Retain clearly bounded topic choices with equivalent destinations."
+      },
+      {
+        "id": "person",
+        "route": "/examples/person/",
+        "semanticClass": "person",
+        "composition": "detail",
+        "reviewDisposition": "retain-existing-native-composition",
+        "rationale": "Biography, facts and work already separate personal narrative from factual support.",
+        "martlet": "Retain biography-first progression and supporting facts near related work.",
+        "krigsvold": "Retain purpose-labelled biography/facts/work regions and aligned facts."
+      },
+      {
+        "id": "projects",
+        "route": "/examples/projects/",
+        "semanticClass": "project-index",
+        "composition": "collection",
+        "reviewDisposition": "retain-existing-native-composition",
+        "rationale": "Existing project collection layouts are already distinct; task is finding a project, not editing a register.",
+        "martlet": "Retain annotated project entries and contextual metadata.",
+        "krigsvold": "Retain scannable project rows with aligned metadata."
+      },
+      {
+        "id": "case-study",
+        "route": "/examples/case-study/",
+        "semanticClass": "case-study",
+        "composition": "dossier",
+        "reviewDisposition": "retain-existing-native-composition",
+        "rationale": "Context, method, observations and limitations are already a meaningful evidential sequence.",
+        "martlet": "Retain dossier reading flow with inset supporting observations.",
+        "krigsvold": "Retain labelled evidence regions and comparable observation facts."
+      },
+      {
+        "id": "contact",
+        "route": "/examples/contact/",
+        "semanticClass": "contact",
+        "composition": "detail",
+        "reviewDisposition": "retain-existing-native-composition",
+        "rationale": "Contact routes and a local form are already separate tasks; preserve native validation rather than gratuitous structural divergence.",
+        "martlet": "Retain help beside the field and explicit committing action.",
+        "krigsvold": "Retain named contact scope and form region with precise local-only status."
+      },
+      {
+        "id": "service",
+        "route": "/examples/service/",
+        "semanticClass": "service",
+        "composition": "landing",
+        "reviewDisposition": "retain-existing-native-composition",
+        "rationale": "Offer, process and next action already define a task progression; keep existing family landing differences.",
+        "martlet": "Retain offer-to-process-to-next-step grouping.",
+        "krigsvold": "Retain labelled service/process/action regions."
+      },
+      {
+        "id": "place",
+        "route": "/examples/place/",
+        "semanticClass": "place",
+        "composition": "detail",
+        "reviewDisposition": "retain-existing-native-composition",
+        "rationale": "Image, facilities and booking guidance already have distinct jobs; no extra cinematic treatment is warranted.",
+        "martlet": "Retain figure context and nearby supporting facility facts.",
+        "krigsvold": "Retain image/facility/booking scope with aligned fact labels."
+      },
+      {
+        "id": "pricing",
+        "route": "/examples/pricing/",
+        "semanticClass": "comparison",
+        "composition": "landing",
+        "reviewDisposition": "retain-existing-native-composition",
+        "rationale": "Plan comparison legitimately benefits from the same comparison semantics in both families; pricing is not grounds for opposing anatomy.",
+        "martlet": "Retain comparable plans with explanatory disclosure support.",
+        "krigsvold": "Retain comparable plan fields and explicit conditions; no extra metadata invented."
+      },
+      {
+        "id": "careers",
+        "route": "/examples/careers/",
+        "semanticClass": "opportunity-index",
+        "composition": "collection",
+        "reviewDisposition": "retain-existing-native-composition",
+        "rationale": "A small opportunity list already supports finding an opening; retain existing family collection organization.",
+        "martlet": "Retain readable opportunity annotations.",
+        "krigsvold": "Retain aligned opportunity facts and actionable destinations."
+      },
+      {
+        "id": "software",
+        "route": "/examples/software/",
+        "semanticClass": "software",
+        "composition": "landing",
+        "reviewDisposition": "retain-existing-native-composition",
+        "rationale": "Overview, capabilities and trial destination already form an appropriate shared task sequence.",
+        "martlet": "Retain explanation-to-capabilities-to-action hierarchy.",
+        "krigsvold": "Retain clearly named capability and trial regions."
+      },
+      {
+        "id": "product",
+        "route": "/examples/product/",
+        "semanticClass": "product",
+        "composition": "detail",
+        "reviewDisposition": "retain-existing-native-composition",
+        "rationale": "A product figure, specification facts and purchase boundary already serve the task; preserve enquiry-only capability.",
+        "martlet": "Retain object-first context and nearby specifications.",
+        "krigsvold": "Retain aligned specifications and explicit purchase/enquiry scope."
+      },
+      {
+        "id": "collection",
+        "route": "/examples/collection/",
+        "semanticClass": "collection",
+        "composition": "collection",
+        "reviewDisposition": "retain-existing-native-composition",
+        "rationale": "Existing collection layouts already have purposeful differences; do not replace them with a generic common card grid.",
+        "martlet": "Retain annotated record browsing.",
+        "krigsvold": "Retain aligned record scan rows."
+      },
+      {
+        "id": "collection-item",
+        "route": "/examples/collection-item/",
+        "semanticClass": "collection-item",
+        "composition": "detail",
+        "reviewDisposition": "retain-existing-native-composition",
+        "rationale": "Object image, record and context already form an understandable detail page.",
+        "martlet": "Retain object-to-record-to-context reading progression.",
+        "krigsvold": "Retain distinctly labelled object/record/context regions."
+      },
+      {
+        "id": "events",
+        "route": "/examples/events/",
+        "semanticClass": "event-index",
+        "composition": "collection",
+        "reviewDisposition": "retain-existing-native-composition",
+        "rationale": "Upcoming and past lists are meaningful common groups; retain exact ordering and destinations.",
+        "martlet": "Retain chronological event browsing with contextual metadata.",
+        "krigsvold": "Retain clearly scoped upcoming/past rows with aligned dates."
+      },
+      {
+        "id": "event",
+        "route": "/examples/event/",
+        "semanticClass": "event",
+        "composition": "detail",
+        "reviewDisposition": "retain-existing-native-composition",
+        "rationale": "Event facts, schedule and next step need correct timestamps and registration boundaries more than novel anatomy.",
+        "martlet": "Retain nearby event context and schedule reading sequence.",
+        "krigsvold": "Retain aligned schedule fields and explicit registration status region."
+      },
+      {
+        "id": "report",
+        "route": "/examples/report/",
+        "semanticClass": "report",
+        "composition": "dossier",
+        "reviewDisposition": "focused-change-proposal",
+        "rationale": "Summary, metrics, register and method should make evidence relationships clearer without changing numbers or scope.",
+        "martlet": "Readable summary followed by nearby measures and cited register/method.",
+        "krigsvold": "Label evidence regions, align comparable metrics/register fields and keep method scope explicit."
+      },
+      {
+        "id": "gallery",
+        "route": "/examples/gallery/",
+        "semanticClass": "exhibition",
+        "composition": "landing",
+        "reviewDisposition": "retain-existing-native-composition",
+        "rationale": "The exhibition already separates visual collection and curatorial explanation; imagery is host content, not grammar proof.",
+        "martlet": "Retain curated browsing and subsequent reading context.",
+        "krigsvold": "Retain clearly scoped image region with comparable captions and curation."
+      },
+      {
+        "id": "search",
+        "route": "/examples/search/",
+        "semanticClass": "search",
+        "composition": "collection",
+        "reviewDisposition": "focused-change-proposal",
+        "rationale": "Search results need explicit query/result scope and continuity; change only composition, preserving the current state machine.",
+        "martlet": "Keep pending query near action and result context on return.",
+        "krigsvold": "Expose named query scope and aligned result context/count."
+      },
+      {
+        "id": "patterns",
+        "route": "/examples/patterns/",
+        "semanticClass": "section-library",
+        "composition": "landing",
+        "reviewDisposition": "retain-existing-native-composition",
+        "rationale": "Mixed facts, stats, disclosure and action are a capability specimen, not justification for a new universal frame.",
+        "martlet": "Retain local relationship grouping for each demonstrated object.",
+        "krigsvold": "Retain named object scopes and consistent alignment where it supports comparison."
+      }
+    ]
+  },
+  "wave4": {
+    "operationalAccountRecoveryCount": 13,
+    "routes": [
+      {
+        "id": "sign-in",
+        "semanticClass": "account",
+        "reviewDisposition": "retain",
+        "rationale": "Native account-demo forms should remain familiar; arbitrary family opposition would obscure inputs and false authentication boundaries.",
+        "martlet": "Retain label/help/action proximity and recovery links.",
+        "krigsvold": "Retain precise sign-in scope and local-validation-only status."
+      },
+      {
+        "id": "sign-up",
+        "semanticClass": "account",
+        "reviewDisposition": "retain",
+        "rationale": "Shared required fields, validation and recovery are intentional; no source evidence justifies a new multistep registration flow.",
+        "martlet": "Retain coherent field grouping and nearby explanation.",
+        "krigsvold": "Retain clear registration scope and visible local-only boundary."
+      },
+      {
+        "id": "password-reset",
+        "semanticClass": "account",
+        "reviewDisposition": "retain",
+        "rationale": "Recovery must be clear and conventional; preserve local format-validation demonstration and existing links.",
+        "martlet": "Retain explanation-field-action-recovery sequence.",
+        "krigsvold": "Retain named recovery task and precise local-only feedback."
+      },
+      {
+        "id": "two-factor",
+        "semanticClass": "account",
+        "reviewDisposition": "retain",
+        "rationale": "A code-entry specimen is not a live authenticator; preserve native controls and shared validation semantics.",
+        "martlet": "Retain code assistance near its input and named return route.",
+        "krigsvold": "Retain exact verification scope and status without fake security claims."
+      },
+      {
+        "id": "not-found",
+        "semanticClass": "error",
+        "reviewDisposition": "retain",
+        "rationale": "An error page needs immediate recovery, not artificial family-specific complexity.",
+        "martlet": "Retain clear recovery links beside explanation.",
+        "krigsvold": "Retain exact missing-page scope and clear recovery commands."
+      },
+      {
+        "id": "server-error",
+        "semanticClass": "error",
+        "reviewDisposition": "retain",
+        "rationale": "This static example returns normal HTTP status; keep that boundary explicit and do not invent a retry backend.",
+        "martlet": "Retain concise explanation and useful next actions.",
+        "krigsvold": "Retain precise failure wording and bounded recovery scope."
+      },
+      {
+        "id": "workspace",
+        "semanticClass": "record-workspace",
+        "reviewDisposition": "retain",
+        "rationale": "Existing family composition already differentiates a browsable collection-to-record flow from persistent comparison regions.",
+        "martlet": "Retain collection before focused detail and contextual return.",
+        "krigsvold": "Retain collection/detail split where space allows, with selected-state non-color cue."
+      },
+      {
+        "id": "chat",
+        "semanticClass": "messaging",
+        "reviewDisposition": "retain",
+        "rationale": "Messaging chronology and native input order should remain conventional; no new service or identity claims.",
+        "martlet": "Retain message continuity and composer assistance.",
+        "krigsvold": "Retain conversation/composer scope and precise local-only status."
+      },
+      {
+        "id": "sensors",
+        "semanticClass": "device-controls",
+        "reviewDisposition": "retain",
+        "rationale": "Control association and feedback are more important than forced divergent widgets.",
+        "martlet": "Retain related control/reading/help grouping.",
+        "krigsvold": "Retain explicit device/control scope and status alignment."
+      },
+      {
+        "id": "fleet",
+        "semanticClass": "record-workspace",
+        "reviewDisposition": "retain",
+        "rationale": "Existing collection/detail composition already serves simulated fleet inspection with shared review/reset behavior.",
+        "martlet": "Retain contextual browse-to-focused-record progression.",
+        "krigsvold": "Retain comparable device records and persistent current-record region."
+      },
+      {
+        "id": "dashboard-analytics",
+        "semanticClass": "analytics-dashboard",
+        "reviewDisposition": "change",
+        "rationale": "Existing dashboard-family CSS already differs; review comparative evidence and context boundaries without discarding its chart/table accessibility.",
+        "martlet": "Refine explanatory context near metrics and collection-to-reading continuity.",
+        "krigsvold": "Refine aligned metric/chart/table regions and explicit committed filter scope."
+      },
+      {
+        "id": "dashboard-administration",
+        "semanticClass": "administration-dashboard",
+        "reviewDisposition": "change",
+        "rationale": "Administration needs clear collection/object command scope and visible draft/recovery state, not decorative restyling.",
+        "martlet": "Refine related field/command grouping and retained collection context.",
+        "krigsvold": "Refine selection/object/bulk command region boundaries and explicit applied state."
+      },
+      {
+        "id": "dashboard-operations",
+        "semanticClass": "operations-dashboard",
+        "reviewDisposition": "change",
+        "rationale": "Operations needs clearly associated thresholds, acknowledgement state and exact data; preserve all existing state and recovery behavior.",
+        "martlet": "Refine signal/context/action relationships and continuity through acknowledgement.",
+        "krigsvold": "Refine aligned operational regions and exact threshold/acknowledgement scope."
+      }
+    ],
+    "additionalRetainedReviews": [
+      {
+        "id": "scene",
+        "rationale": "A static captioned scene selector is not a VR renderer; preserve meaningful selector/caption relationships.",
+        "capabilityBoundary": "Captioned static selector; no renderer/device service invented."
+      },
+      {
+        "id": "coming-soon",
+        "rationale": "Announcement and newsletter field already supply a clear minimal task; do not add a hero or dashboard.",
+        "capabilityBoundary": "Minimal announcement and local-only update form; no signup backend invented."
+      }
+    ],
+    "knownRequiredAccessibilityCorrection": "dashboard-operations must receive a distinct nested table-region name and independent recheck; this is not waived."
+  },
+  "sourceEvidenceBeyondNewsFellow": [
+    {
+      "source": "https://jameshoward.us/blog/",
+      "observedObject": "Lead story, secondary annotation and subsequent card grid",
+      "judgment": "Supports annotated collection/reading hierarchy; does not prescribe prose-only Martlet."
+    },
+    {
+      "source": "https://krigsvold.org/",
+      "observedObject": "Purposeful homepage work-card regions",
+      "judgment": "Supports grouped choices without making every collection a table."
+    },
+    {
+      "source": "https://krigsvold.org/mission-and-method/",
+      "observedObject": "Coherent editorial reading,856px actual body at the recorded1440px page/viewport",
+      "judgment": "Krigsvold supports sustained prose and genre-specific widths;760px profile token is not universal."
+    },
+    {
+      "source": "https://krigsvold.org/faq/",
+      "observedObject": "Topic headings and native disclosures",
+      "judgment": "Purposeful scope supports grouping without requiring a field register."
+    }
+  ],
+  "reportConstraints": [
+    "Keep all four authored section IDs/titles/prose, metrics units and exact register values.",
+    "Preserve every typed block and action/download attribute; compose existing renderers rather than copying partial fixture data.",
+    "Use evidence relationships and aligned comparable fields where the task warrants them; summary/method remain prose."
+  ],
+  "searchConstraints": [
+    "Preserve current query/results state machine, URL/base-path behavior, counts, exact result destinations and no-match recovery.",
+    "Keep no-JS boundary honest; do not introduce backend search or change index data to manufacture a visual result.",
+    "Capture populated?q=protocol state at320/768/1440; a blank empty query is insufficient visual evidence."
+  ]
+}
