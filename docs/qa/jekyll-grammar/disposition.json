@@ -525,6 +525,16 @@
           "summary": "wave2-local-review.json",
           "result": "All50 strengthened v2 semantics pass both bases; all five generic table-region label fixes independently confirmed; native table data/focus/scrolling checks pass.",
           "acceptanceScope": "Exact local source heads only. Two operations label failures per family remain failures; hosted/CI/visual acceptance is separate."
+        },
+        {
+          "kind": "wave2-protected-source-security",
+          "summary": "wave2-protected-security-review.json",
+          "sourceCommits": {
+            "martlet": "0e507e424a787c6631d631f4264c9bd08da01321",
+            "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
+          },
+          "result": "Fixture/images/fonts/shell/hero/runtimeJS/infra/deployment/releasepolicy/locks are unchanged Gitobjects. Sourceallowlists add only intended adapter+QA doc, all regular safe paths. Engines/cancellation/job/operation bounds preserved.",
+          "acceptanceScope": "Read-only source security verdict, not full hosted acceptance."
         }
       ],
       "pullRequests": [],
@@ -532,8 +542,8 @@
       "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
       "compositionRefinements": [],
       "familyImplementationStatus": {
-        "martlet": "Wave2 candidate locally implemented at 434b8543dbc5ee07abfebe78a5fc0f8ce13ed637 after normal integration of accepted wave1; required full checks, isolated preview and after review pending.",
-        "krigsvold": "Wave2 candidate locally implemented at 45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303 after normal integration of accepted wave1; required full checks, isolated preview and after review pending."
+        "martlet": "Published wave2 exact source 0e507e424a787c6631d631f4264c9bd08da01321; six genuine CI/native checks passed, final paired actual acceptance and normal integration still pending.",
+        "krigsvold": "Published wave2 exact source 45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303; six genuine CI/native checks passed, final paired actual acceptance and normal integration still pending."
       },
       "localReview": {
         "status": "pending-systemwide-visual-review",
@@ -572,7 +582,7 @@
         "source-observed-inline-article-navigation"
       ],
       "candidateSourceHeads": {
-        "martlet": "434b8543dbc5ee07abfebe78a5fc0f8ce13ed637",
+        "martlet": "0e507e424a787c6631d631f4264c9bd08da01321",
         "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
       },
       "candidateAfterGeometry": {
@@ -1493,6 +1503,16 @@
           "summary": "wave2-local-review.json",
           "result": "All50 strengthened v2 semantics pass both bases; all five generic table-region label fixes independently confirmed; native table data/focus/scrolling checks pass.",
           "acceptanceScope": "Exact local source heads only. Two operations label failures per family remain failures; hosted/CI/visual acceptance is separate."
+        },
+        {
+          "kind": "wave2-protected-source-security",
+          "summary": "wave2-protected-security-review.json",
+          "sourceCommits": {
+            "martlet": "0e507e424a787c6631d631f4264c9bd08da01321",
+            "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
+          },
+          "result": "Fixture/images/fonts/shell/hero/runtimeJS/infra/deployment/releasepolicy/locks are unchanged Gitobjects. Sourceallowlists add only intended adapter+QA doc, all regular safe paths. Engines/cancellation/job/operation bounds preserved.",
+          "acceptanceScope": "Read-only source security verdict, not full hosted acceptance."
         }
       ],
       "pullRequests": [],
@@ -1500,8 +1520,8 @@
       "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
       "compositionRefinements": [],
       "familyImplementationStatus": {
-        "martlet": "Wave2 candidate locally implemented at 434b8543dbc5ee07abfebe78a5fc0f8ce13ed637 after normal integration of accepted wave1; required full checks, isolated preview and after review pending.",
-        "krigsvold": "Wave2 candidate locally implemented at 45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303 after normal integration of accepted wave1; required full checks, isolated preview and after review pending."
+        "martlet": "Published wave2 exact source 0e507e424a787c6631d631f4264c9bd08da01321; six genuine CI/native checks passed, final paired actual acceptance and normal integration still pending.",
+        "krigsvold": "Published wave2 exact source 45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303; six genuine CI/native checks passed, final paired actual acceptance and normal integration still pending."
       },
       "localReview": {
         "status": "pending-systemwide-visual-review",
@@ -1540,7 +1560,7 @@
         "documentation-start-link-composition"
       ],
       "candidateSourceHeads": {
-        "martlet": "434b8543dbc5ee07abfebe78a5fc0f8ce13ed637",
+        "martlet": "0e507e424a787c6631d631f4264c9bd08da01321",
         "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
       },
       "candidateAfterGeometry": {
@@ -1681,6 +1701,16 @@
           "summary": "wave2-local-review.json",
           "result": "All50 strengthened v2 semantics pass both bases; all five generic table-region label fixes independently confirmed; native table data/focus/scrolling checks pass.",
           "acceptanceScope": "Exact local source heads only. Two operations label failures per family remain failures; hosted/CI/visual acceptance is separate."
+        },
+        {
+          "kind": "wave2-protected-source-security",
+          "summary": "wave2-protected-security-review.json",
+          "sourceCommits": {
+            "martlet": "0e507e424a787c6631d631f4264c9bd08da01321",
+            "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
+          },
+          "result": "Fixture/images/fonts/shell/hero/runtimeJS/infra/deployment/releasepolicy/locks are unchanged Gitobjects. Sourceallowlists add only intended adapter+QA doc, all regular safe paths. Engines/cancellation/job/operation bounds preserved.",
+          "acceptanceScope": "Read-only source security verdict, not full hosted acceptance."
         }
       ],
       "pullRequests": [],
@@ -1701,8 +1731,8 @@
         }
       ],
       "familyImplementationStatus": {
-        "martlet": "Wave2 candidate locally implemented at 434b8543dbc5ee07abfebe78a5fc0f8ce13ed637 after normal integration of accepted wave1; required full checks, isolated preview and after review pending.",
-        "krigsvold": "Wave2 candidate locally implemented at 45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303 after normal integration of accepted wave1; required full checks, isolated preview and after review pending."
+        "martlet": "Published wave2 exact source 0e507e424a787c6631d631f4264c9bd08da01321; six genuine CI/native checks passed, final paired actual acceptance and normal integration still pending.",
+        "krigsvold": "Published wave2 exact source 45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303; six genuine CI/native checks passed, final paired actual acceptance and normal integration still pending."
       },
       "localReview": {
         "status": "pending-systemwide-visual-review",
@@ -1773,7 +1803,7 @@
         "reading-envelope-css"
       ],
       "candidateSourceHeads": {
-        "martlet": "434b8543dbc5ee07abfebe78a5fc0f8ce13ed637",
+        "martlet": "0e507e424a787c6631d631f4264c9bd08da01321",
         "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
       },
       "candidateAfterGeometry": {
@@ -1924,6 +1954,16 @@
           "summary": "wave2-local-review.json",
           "result": "All50 strengthened v2 semantics pass both bases; all five generic table-region label fixes independently confirmed; native table data/focus/scrolling checks pass.",
           "acceptanceScope": "Exact local source heads only. Two operations label failures per family remain failures; hosted/CI/visual acceptance is separate."
+        },
+        {
+          "kind": "wave2-protected-source-security",
+          "summary": "wave2-protected-security-review.json",
+          "sourceCommits": {
+            "martlet": "0e507e424a787c6631d631f4264c9bd08da01321",
+            "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
+          },
+          "result": "Fixture/images/fonts/shell/hero/runtimeJS/infra/deployment/releasepolicy/locks are unchanged Gitobjects. Sourceallowlists add only intended adapter+QA doc, all regular safe paths. Engines/cancellation/job/operation bounds preserved.",
+          "acceptanceScope": "Read-only source security verdict, not full hosted acceptance."
         }
       ],
       "pullRequests": [],
@@ -1944,8 +1984,8 @@
         }
       ],
       "familyImplementationStatus": {
-        "martlet": "Wave2 candidate locally implemented at 434b8543dbc5ee07abfebe78a5fc0f8ce13ed637 after normal integration of accepted wave1; required full checks, isolated preview and after review pending.",
-        "krigsvold": "Wave2 candidate locally implemented at 45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303 after normal integration of accepted wave1; required full checks, isolated preview and after review pending."
+        "martlet": "Published wave2 exact source 0e507e424a787c6631d631f4264c9bd08da01321; six genuine CI/native checks passed, final paired actual acceptance and normal integration still pending.",
+        "krigsvold": "Published wave2 exact source 45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303; six genuine CI/native checks passed, final paired actual acceptance and normal integration still pending."
       },
       "localReview": {
         "status": "pending-systemwide-visual-review",
@@ -2040,7 +2080,7 @@
         "unique-table-scroll-region-name"
       ],
       "candidateSourceHeads": {
-        "martlet": "434b8543dbc5ee07abfebe78a5fc0f8ce13ed637",
+        "martlet": "0e507e424a787c6631d631f4264c9bd08da01321",
         "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
       },
       "candidateAfterGeometry": {
@@ -2610,6 +2650,16 @@
           "summary": "wave2-local-review.json",
           "result": "All50 strengthened v2 semantics pass both bases; all five generic table-region label fixes independently confirmed; native table data/focus/scrolling checks pass.",
           "acceptanceScope": "Exact local source heads only. Two operations label failures per family remain failures; hosted/CI/visual acceptance is separate."
+        },
+        {
+          "kind": "wave2-protected-source-security",
+          "summary": "wave2-protected-security-review.json",
+          "sourceCommits": {
+            "martlet": "0e507e424a787c6631d631f4264c9bd08da01321",
+            "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
+          },
+          "result": "Fixture/images/fonts/shell/hero/runtimeJS/infra/deployment/releasepolicy/locks are unchanged Gitobjects. Sourceallowlists add only intended adapter+QA doc, all regular safe paths. Engines/cancellation/job/operation bounds preserved.",
+          "acceptanceScope": "Read-only source security verdict, not full hosted acceptance."
         }
       ],
       "pullRequests": [],
@@ -2630,8 +2680,8 @@
         }
       ],
       "familyImplementationStatus": {
-        "martlet": "Wave2 candidate locally implemented at 434b8543dbc5ee07abfebe78a5fc0f8ce13ed637 after normal integration of accepted wave1; required full checks, isolated preview and after review pending.",
-        "krigsvold": "Wave2 candidate locally implemented at 45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303 after normal integration of accepted wave1; required full checks, isolated preview and after review pending."
+        "martlet": "Published wave2 exact source 0e507e424a787c6631d631f4264c9bd08da01321; six genuine CI/native checks passed, final paired actual acceptance and normal integration still pending.",
+        "krigsvold": "Published wave2 exact source 45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303; six genuine CI/native checks passed, final paired actual acceptance and normal integration still pending."
       },
       "localReview": {
         "status": "pending-systemwide-visual-review",
@@ -2702,7 +2752,7 @@
         "reading-envelope-css"
       ],
       "candidateSourceHeads": {
-        "martlet": "434b8543dbc5ee07abfebe78a5fc0f8ce13ed637",
+        "martlet": "0e507e424a787c6631d631f4264c9bd08da01321",
         "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
       },
       "candidateAfterGeometry": {
@@ -2850,6 +2900,16 @@
           "summary": "wave2-local-review.json",
           "result": "All50 strengthened v2 semantics pass both bases; all five generic table-region label fixes independently confirmed; native table data/focus/scrolling checks pass.",
           "acceptanceScope": "Exact local source heads only. Two operations label failures per family remain failures; hosted/CI/visual acceptance is separate."
+        },
+        {
+          "kind": "wave2-protected-source-security",
+          "summary": "wave2-protected-security-review.json",
+          "sourceCommits": {
+            "martlet": "0e507e424a787c6631d631f4264c9bd08da01321",
+            "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
+          },
+          "result": "Fixture/images/fonts/shell/hero/runtimeJS/infra/deployment/releasepolicy/locks are unchanged Gitobjects. Sourceallowlists add only intended adapter+QA doc, all regular safe paths. Engines/cancellation/job/operation bounds preserved.",
+          "acceptanceScope": "Read-only source security verdict, not full hosted acceptance."
         }
       ],
       "pullRequests": [],
@@ -2870,8 +2930,8 @@
         }
       ],
       "familyImplementationStatus": {
-        "martlet": "Wave2 candidate locally implemented at 434b8543dbc5ee07abfebe78a5fc0f8ce13ed637 after normal integration of accepted wave1; required full checks, isolated preview and after review pending.",
-        "krigsvold": "Wave2 candidate locally implemented at 45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303 after normal integration of accepted wave1; required full checks, isolated preview and after review pending."
+        "martlet": "Published wave2 exact source 0e507e424a787c6631d631f4264c9bd08da01321; six genuine CI/native checks passed, final paired actual acceptance and normal integration still pending.",
+        "krigsvold": "Published wave2 exact source 45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303; six genuine CI/native checks passed, final paired actual acceptance and normal integration still pending."
       },
       "localReview": {
         "status": "pending-systemwide-visual-review",
@@ -2942,7 +3002,7 @@
         "reading-envelope-css"
       ],
       "candidateSourceHeads": {
-        "martlet": "434b8543dbc5ee07abfebe78a5fc0f8ce13ed637",
+        "martlet": "0e507e424a787c6631d631f4264c9bd08da01321",
         "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
       },
       "candidateAfterGeometry": {
@@ -3619,6 +3679,16 @@
           "summary": "wave2-local-review.json",
           "result": "All50 strengthened v2 semantics pass both bases; all five generic table-region label fixes independently confirmed; native table data/focus/scrolling checks pass.",
           "acceptanceScope": "Exact local source heads only. Two operations label failures per family remain failures; hosted/CI/visual acceptance is separate."
+        },
+        {
+          "kind": "wave2-protected-source-security",
+          "summary": "wave2-protected-security-review.json",
+          "sourceCommits": {
+            "martlet": "0e507e424a787c6631d631f4264c9bd08da01321",
+            "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
+          },
+          "result": "Fixture/images/fonts/shell/hero/runtimeJS/infra/deployment/releasepolicy/locks are unchanged Gitobjects. Sourceallowlists add only intended adapter+QA doc, all regular safe paths. Engines/cancellation/job/operation bounds preserved.",
+          "acceptanceScope": "Read-only source security verdict, not full hosted acceptance."
         }
       ],
       "pullRequests": [],
@@ -3639,8 +3709,8 @@
         }
       ],
       "familyImplementationStatus": {
-        "martlet": "Wave2 candidate locally implemented at 434b8543dbc5ee07abfebe78a5fc0f8ce13ed637 after normal integration of accepted wave1; required full checks, isolated preview and after review pending.",
-        "krigsvold": "Wave2 candidate locally implemented at 45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303 after normal integration of accepted wave1; required full checks, isolated preview and after review pending."
+        "martlet": "Published wave2 exact source 0e507e424a787c6631d631f4264c9bd08da01321; six genuine CI/native checks passed, final paired actual acceptance and normal integration still pending.",
+        "krigsvold": "Published wave2 exact source 45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303; six genuine CI/native checks passed, final paired actual acceptance and normal integration still pending."
       },
       "localReview": {
         "status": "pending-systemwide-visual-review",
@@ -3711,7 +3781,7 @@
         "reading-envelope-css"
       ],
       "candidateSourceHeads": {
-        "martlet": "434b8543dbc5ee07abfebe78a5fc0f8ce13ed637",
+        "martlet": "0e507e424a787c6631d631f4264c9bd08da01321",
         "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
       },
       "candidateAfterGeometry": {
@@ -4508,6 +4578,16 @@
           "summary": "wave2-local-review.json",
           "result": "All50 strengthened v2 semantics pass both bases; all five generic table-region label fixes independently confirmed; native table data/focus/scrolling checks pass.",
           "acceptanceScope": "Exact local source heads only. Two operations label failures per family remain failures; hosted/CI/visual acceptance is separate."
+        },
+        {
+          "kind": "wave2-protected-source-security",
+          "summary": "wave2-protected-security-review.json",
+          "sourceCommits": {
+            "martlet": "0e507e424a787c6631d631f4264c9bd08da01321",
+            "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
+          },
+          "result": "Fixture/images/fonts/shell/hero/runtimeJS/infra/deployment/releasepolicy/locks are unchanged Gitobjects. Sourceallowlists add only intended adapter+QA doc, all regular safe paths. Engines/cancellation/job/operation bounds preserved.",
+          "acceptanceScope": "Read-only source security verdict, not full hosted acceptance."
         }
       ],
       "pullRequests": [],
@@ -4515,8 +4595,8 @@
       "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
       "compositionRefinements": [],
       "familyImplementationStatus": {
-        "martlet": "Wave2 candidate locally implemented at 434b8543dbc5ee07abfebe78a5fc0f8ce13ed637 after normal integration of accepted wave1; required full checks, isolated preview and after review pending.",
-        "krigsvold": "Wave2 candidate locally implemented at 45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303 after normal integration of accepted wave1; required full checks, isolated preview and after review pending."
+        "martlet": "Published wave2 exact source 0e507e424a787c6631d631f4264c9bd08da01321; six genuine CI/native checks passed, final paired actual acceptance and normal integration still pending.",
+        "krigsvold": "Published wave2 exact source 45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303; six genuine CI/native checks passed, final paired actual acceptance and normal integration still pending."
       },
       "localReview": {
         "status": "pending-systemwide-visual-review",
@@ -4575,7 +4655,7 @@
         "unique-table-scroll-region-name"
       ],
       "candidateSourceHeads": {
-        "martlet": "434b8543dbc5ee07abfebe78a5fc0f8ce13ed637",
+        "martlet": "0e507e424a787c6631d631f4264c9bd08da01321",
         "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
       },
       "wave3ReviewDisposition": "retain-existing-native-composition-with-actual-review"
@@ -4680,6 +4760,16 @@
           "summary": "wave2-local-review.json",
           "result": "All50 strengthened v2 semantics pass both bases; all five generic table-region label fixes independently confirmed; native table data/focus/scrolling checks pass.",
           "acceptanceScope": "Exact local source heads only. Two operations label failures per family remain failures; hosted/CI/visual acceptance is separate."
+        },
+        {
+          "kind": "wave2-protected-source-security",
+          "summary": "wave2-protected-security-review.json",
+          "sourceCommits": {
+            "martlet": "0e507e424a787c6631d631f4264c9bd08da01321",
+            "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
+          },
+          "result": "Fixture/images/fonts/shell/hero/runtimeJS/infra/deployment/releasepolicy/locks are unchanged Gitobjects. Sourceallowlists add only intended adapter+QA doc, all regular safe paths. Engines/cancellation/job/operation bounds preserved.",
+          "acceptanceScope": "Read-only source security verdict, not full hosted acceptance."
         }
       ],
       "pullRequests": [],
@@ -4687,8 +4777,8 @@
       "dispositionScope": "semantic anatomy; retain does not prohibit source-justified CSS/layout corrections",
       "compositionRefinements": [],
       "familyImplementationStatus": {
-        "martlet": "Wave2 candidate locally implemented at 434b8543dbc5ee07abfebe78a5fc0f8ce13ed637 after normal integration of accepted wave1; required full checks, isolated preview and after review pending.",
-        "krigsvold": "Wave2 candidate locally implemented at 45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303 after normal integration of accepted wave1; required full checks, isolated preview and after review pending."
+        "martlet": "Published wave2 exact source 0e507e424a787c6631d631f4264c9bd08da01321; six genuine CI/native checks passed, final paired actual acceptance and normal integration still pending.",
+        "krigsvold": "Published wave2 exact source 45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303; six genuine CI/native checks passed, final paired actual acceptance and normal integration still pending."
       },
       "localReview": {
         "status": "pending-systemwide-visual-review",
@@ -4747,7 +4837,7 @@
         "unique-table-scroll-region-name"
       ],
       "candidateSourceHeads": {
-        "martlet": "434b8543dbc5ee07abfebe78a5fc0f8ce13ed637",
+        "martlet": "0e507e424a787c6631d631f4264c9bd08da01321",
         "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
       },
       "wave3ReviewDisposition": "focused-change-proposal"
@@ -7001,6 +7091,16 @@
           "summary": "wave2-local-review.json",
           "result": "All50 strengthened v2 semantics pass both bases; all five generic table-region label fixes independently confirmed; native table data/focus/scrolling checks pass.",
           "acceptanceScope": "Exact local source heads only. Two operations label failures per family remain failures; hosted/CI/visual acceptance is separate."
+        },
+        {
+          "kind": "wave2-protected-source-security",
+          "summary": "wave2-protected-security-review.json",
+          "sourceCommits": {
+            "martlet": "0e507e424a787c6631d631f4264c9bd08da01321",
+            "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
+          },
+          "result": "Fixture/images/fonts/shell/hero/runtimeJS/infra/deployment/releasepolicy/locks are unchanged Gitobjects. Sourceallowlists add only intended adapter+QA doc, all regular safe paths. Engines/cancellation/job/operation bounds preserved.",
+          "acceptanceScope": "Read-only source security verdict, not full hosted acceptance."
         }
       ],
       "pullRequests": [],
@@ -7021,8 +7121,8 @@
         }
       ],
       "familyImplementationStatus": {
-        "martlet": "Wave2 candidate locally implemented at 434b8543dbc5ee07abfebe78a5fc0f8ce13ed637 after normal integration of accepted wave1; required full checks, isolated preview and after review pending.",
-        "krigsvold": "Wave2 candidate locally implemented at 45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303 after normal integration of accepted wave1; required full checks, isolated preview and after review pending."
+        "martlet": "Published wave2 exact source 0e507e424a787c6631d631f4264c9bd08da01321; six genuine CI/native checks passed, final paired actual acceptance and normal integration still pending.",
+        "krigsvold": "Published wave2 exact source 45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303; six genuine CI/native checks passed, final paired actual acceptance and normal integration still pending."
       },
       "localReview": {
         "status": "pending-systemwide-visual-review",
@@ -7117,7 +7217,7 @@
         "unique-table-scroll-region-name"
       ],
       "candidateSourceHeads": {
-        "martlet": "434b8543dbc5ee07abfebe78a5fc0f8ce13ed637",
+        "martlet": "0e507e424a787c6631d631f4264c9bd08da01321",
         "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
       },
       "candidateAfterGeometry": {
@@ -7263,6 +7363,16 @@
           "summary": "wave2-local-review.json",
           "result": "All50 strengthened v2 semantics pass both bases; all five generic table-region label fixes independently confirmed; native table data/focus/scrolling checks pass.",
           "acceptanceScope": "Exact local source heads only. Two operations label failures per family remain failures; hosted/CI/visual acceptance is separate."
+        },
+        {
+          "kind": "wave2-protected-source-security",
+          "summary": "wave2-protected-security-review.json",
+          "sourceCommits": {
+            "martlet": "0e507e424a787c6631d631f4264c9bd08da01321",
+            "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
+          },
+          "result": "Fixture/images/fonts/shell/hero/runtimeJS/infra/deployment/releasepolicy/locks are unchanged Gitobjects. Sourceallowlists add only intended adapter+QA doc, all regular safe paths. Engines/cancellation/job/operation bounds preserved.",
+          "acceptanceScope": "Read-only source security verdict, not full hosted acceptance."
         }
       ],
       "pullRequests": [],
@@ -7283,8 +7393,8 @@
         }
       ],
       "familyImplementationStatus": {
-        "martlet": "Wave2 candidate locally implemented at 434b8543dbc5ee07abfebe78a5fc0f8ce13ed637 after normal integration of accepted wave1; required full checks, isolated preview and after review pending.",
-        "krigsvold": "Wave2 candidate locally implemented at 45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303 after normal integration of accepted wave1; required full checks, isolated preview and after review pending."
+        "martlet": "Published wave2 exact source 0e507e424a787c6631d631f4264c9bd08da01321; six genuine CI/native checks passed, final paired actual acceptance and normal integration still pending.",
+        "krigsvold": "Published wave2 exact source 45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303; six genuine CI/native checks passed, final paired actual acceptance and normal integration still pending."
       },
       "localReview": {
         "status": "pending-systemwide-visual-review",
@@ -7379,7 +7489,7 @@
         "unique-table-scroll-region-name"
       ],
       "candidateSourceHeads": {
-        "martlet": "434b8543dbc5ee07abfebe78a5fc0f8ce13ed637",
+        "martlet": "0e507e424a787c6631d631f4264c9bd08da01321",
         "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
       },
       "candidateAfterGeometry": {
@@ -8554,5 +8664,14 @@
       "coming-soon"
     ]
   },
-  "primaryReviewScopeNote": "Disjoint50-route review partition. Generic table-label repairs cross scope boundaries: event/report are wave3 review subjects whose accessibility repair lands in wave2."
+  "primaryReviewScopeNote": "Disjoint50-route review partition. Generic table-label repairs cross scope boundaries: event/report are wave3 review subjects whose accessibility repair lands in wave2.",
+  "unresolvedOperationalEvidence": [
+    {
+      "family": "martlet",
+      "sourceCommit": "0701a83e948964fd5bf2e05ee31e7385af7752d6",
+      "issue": "Intermediate ordinary develop native build reported an unknown failure. Preserve its failure evidence; no cause or fix is claimed from successful PR previews.",
+      "nextProofRequired": "A new ordinary develop build after current source integration must prove the accepted source. No manual upload may substitute.",
+      "status": "unresolved-source-of-failure; newer ordinary develop proof pending"
+    }
+  ]
 }
