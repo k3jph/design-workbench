@@ -140,5 +140,103 @@
       ],
       "judgment": "Source has purposeful news regions and native disclosure states; these are precedents for task translations, not universal tables or a compulsory register."
     }
-  ]
+  ],
+  "renderedSourceEvidence": {
+    "artifact": "/workspace/work/jekyll-grammar/visual/source-authorities/rendered-source-review.json",
+    "sha256": "57b5406c8dbae2455a0706ae624126b58bd817d1a9943f6b425614391e3e9fa9",
+    "rows": [
+      {
+        "name": "martlet-home",
+        "requestedUrl": "https://jameshoward.us/",
+        "finalUrl": "https://jameshoward.us/",
+        "status": 200,
+        "observedAt": "2026-11-03T20:08:49.161Z",
+        "renderedDomSha256": "5cf4012d93c65aa4802e4c21de33079d8447713d4cfee1352a847cde47ccc0ad",
+        "paragraphFont": "Cambo, Georgia, serif",
+        "observedPageErrors": []
+      },
+      {
+        "name": "martlet-blog",
+        "requestedUrl": "https://jameshoward.us/blog/",
+        "finalUrl": "https://jameshoward.us/blog/",
+        "status": 200,
+        "observedAt": "2026-11-03T20:08:50.735Z",
+        "renderedDomSha256": "17a0e7cd8964d2c2ea2f4a185528035d1fa6a2ae9c9432a023dd2daddf6a0ae7",
+        "paragraphFont": "Cambo, Georgia, serif",
+        "observedPageErrors": []
+      },
+      {
+        "name": "krigsvold-home",
+        "requestedUrl": "https://krigsvold.org/",
+        "finalUrl": "https://krigsvold.org/",
+        "status": 200,
+        "observedAt": "2026-11-03T20:08:52.273Z",
+        "renderedDomSha256": "7129a29cc8022793288e584e7b053f108ba502bce91e8c4514e16fac4cad0f76",
+        "paragraphFont": "Roboto, Arial, sans-serif",
+        "observedPageErrors": []
+      },
+      {
+        "name": "krigsvold-faq",
+        "requestedUrl": "https://krigsvold.org/faq/",
+        "finalUrl": "https://krigsvold.org/faq/",
+        "status": 200,
+        "observedAt": "2026-11-03T20:08:53.696Z",
+        "renderedDomSha256": "0d06d5395d94e9e8bf2e9b836abaa02c621ab2dd3cae24e9d330a1b4146d7ce9",
+        "paragraphFont": "Roboto, Arial, sans-serif",
+        "observedPageErrors": []
+      },
+      {
+        "name": "krigsvold-news",
+        "requestedUrl": "https://krigsvold.org/news/",
+        "finalUrl": "https://krigsvold.org/news/",
+        "status": 200,
+        "observedAt": "2026-11-03T20:08:54.985Z",
+        "renderedDomSha256": "d483e926b5434409fde6e91aef7f44e3e07073f55f1527327bde0832aeed08c0",
+        "paragraphFont": "Roboto, Arial, sans-serif",
+        "observedPageErrors": []
+      },
+      {
+        "name": "martlet-react",
+        "requestedUrl": "https://react.martletdesign.dev/",
+        "finalUrl": "https://react.martletdesign.dev/",
+        "status": 200,
+        "observedAt": "2026-11-03T20:08:56.586Z",
+        "renderedDomSha256": "511eccbd0a5f0394327fd176e7bd43b48541af0f19ad9c56a2192e27c8138ef9",
+        "paragraphFont": "Lato, \"Helvetica Neue\", Arial, sans-serif",
+        "observedPageErrors": []
+      },
+      {
+        "name": "krigsvold-react",
+        "requestedUrl": "https://react.krigsvolddesign.dev/",
+        "finalUrl": "https://react.krigsvolddesign.dev/",
+        "status": 200,
+        "observedAt": "2026-11-03T20:08:57.846Z",
+        "renderedDomSha256": "3b02301c77ea2e2446d4e7fc5a2f4abe07ef2f5ef8e785f4088436fab31d4bc8",
+        "paragraphFont": "Roboto, Arial, sans-serif",
+        "observedPageErrors": []
+      }
+    ],
+    "observations": [
+      {
+        "source": "martlet-blog",
+        "classification": "origin-observed",
+        "detail": "Lead story with secondary annotation and subsequent card grid demonstrates that Martlet is not restricted to a prose-only page."
+      },
+      {
+        "source": "krigsvold-news",
+        "classification": "origin-observed",
+        "detail": "Actual news-listing DOM has an image column beside a date/title/summary/action column. Measured grid columns are291.031px and 532.969px in an 856px region at 1440px. This supports purposeful regional alignment; it is not an observed release/version-field register."
+      },
+      {
+        "source": "krigsvold-faq",
+        "classification": "origin-observed",
+        "detail": "Topic headings and native FAQ disclosures with plus/minus cues are present. New Jekyll desktop topic-label columns are a contextual translation, not a literal copy of that FAQ."
+      },
+      {
+        "source": "martlet-react/krigsvold-react",
+        "classification": "supporting-framework-precedent",
+        "detail": "Independently viewed diagnostic captures: Martlet groups annotated component links beside categories; Krigsvold aligns Component/Purpose table fields. They support independent organization but do not authorize inventing22records in the four-section Jekyll fixture."
+      }
+    ]
+  }
 }

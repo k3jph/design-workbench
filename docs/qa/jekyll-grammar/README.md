@@ -23,7 +23,7 @@ Two points in PR92 need dated qualification:
 
 PR92's screenshot observation is retained as reported evidence. The new paired baseline capture and identity/photo-masked comparison provide the reproducible observation for this run; they must be attached before claiming that a route has passed visual acceptance.
 
-The [rendered baseline contract summary](baseline-contract-summary.json) covers all 50 routes per family: 616 captured human-meaning chunks, plus stable IDs, links, forms, controls and native disclosures. Six generic fixture placeholder values on the three specialized dashboards are not literal baseline output; their actual specialized headings, summaries, data and controls are captured separately. This is an explicit observed model/rendering boundary, not permission to drop new content or a claim that every raw JSON leaf appears verbatim.
+The [rendered baseline contract summary](baseline-contract-summary.json) covers all 50 routes per family: 692 captured human-meaning chunks, including table headers/cells, plus stable IDs, links, forms, controls, machine-readable times and native disclosures. Six generic fixture placeholder values on the three specialized dashboards are not literal baseline output; their actual specialized headings, summaries, data and controls are captured separately. The frozen v2 raw baseline and tool are hash-pinned in the summary. The earlier 616-checkpoint summary is preserved separately; its original raw packet was not retained, and its unversioned path is explicitly superseded. This is an explicit observed model/rendering boundary, not permission to drop new content or a claim that every raw JSON leaf appears verbatim.
 
 ## Source judgment and boundaries
 
@@ -34,6 +34,14 @@ The [rendered baseline contract summary](baseline-contract-summary.json) covers 
 Each ledger judgment is classified as a contextual application translation. It is not a claim that an exact FAQ, changelog or dashboard object was observed at the origin. Shared native accessibility and familiar form semantics remain intentional. Neither family is defined by being the mechanical opposite of the other.
 
 Both hosted MCP endpoints returned HTTP 403 to the read-only `tools/list` probe during this audit. The repository's versioned grammar and decisions are the explicit fallback, with live origin DOM/CSS and actual framework precedent evidence gathered separately. Do not promote old experimental API/version labels in grammar prose into claims about current packages.
+
+## Accepted first wave
+
+The three exemplars are accepted into `develop` through [Martlet PR21](https://github.com/martletdesign/jekyll/pull/21), head `cff96a8586ab5300a38c68847cdbdee8c6aa5dab`, normal merge `0701a83e948964fd5bf2e05ee31e7385af7752d6`, and [Krigsvold PR19](https://github.com/krigsvolddesign/jekyll/pull/19), head `8dfcca47b5c312e125ac320643c442b1a00f8490`, normal merge `9f443d42608acf3f15df10c980003a128eea0428`. The [wave-one acceptance receipt](wave1-acceptance.json) pins required-check URLs, preview URLs, source/artifact hashes, native build verification and paired visual/state results.
+
+Each head passed six genuine CI checks. Independent native verification compared 1,128 files in total; actual HTTPS acceptance covered 48 route/state cases, 56 check records, 12 axe scans and 738 pixel-contrast samples. Both families have 36 normal and 36 strictly masked exemplar frames. The stronger v2 semantic contract passes all 50 routes at both base paths for these heads. These are scoped observations, not independent build-token attestation or manual assistive-technology certification.
+
+Global accessibility is **not yet complete**. Actual early all-route audits found the same six duplicate region-name failures in both families: reference, event, report, integrations, stress-test and dashboard-operations. Generic table-region labels are scheduled for wave2; operations is tracked in wave4. Behavior checks otherwise have the same 448 tested keys: 436 passes and 12 known failures per family. Their state outcomes are tested against expected behavior, not merely equality. These failures remain failures until corrected and rechecked.
 
 ## Paired implementation waves
 
@@ -52,7 +60,7 @@ The capability-reference route retains its four full sections. Krigsvold inspect
 
 ## Measured document composition review
 
-The shared `.example-reading` rule limits the entire document wrapper to `46rem`, while the family document grids place a `14rem`/`13rem` index and a responsive gap inside that wrapper. This is a concrete source-level reason to measure the remaining body width across all ten document routes. The source reading composition separates its index from its bounded text. FAQ exemplar corrections do not prove that privacy, terms, guide or stress-test bounds are adequate. Record computed geometry and actual CSS corrections separately from preserving section semantics; do not fabricate measurements from declarations.
+The shared `.example-reading` rule limits the entire document wrapper to `46rem`, while the family document grids place a `14rem`/`13rem` index and a responsive gap inside that wrapper. Actual 1440px baseline geometry now confirms the same 736px outer wrapper across all ten document routes: Martlet has a 224px index, 72px gap and 440px article; Krigsvold has 208px, 57.6px and 470.4px respectively. The ledger pins the geometry report and the remaining seven document corrections. The source reading composition separates its index from its bounded text. FAQ exemplar corrections do not prove that privacy, terms, guide or stress-test bounds are adequate. Record computed geometry and actual CSS corrections separately from preserving section semantics; do not fabricate measurements from declarations.
 
 ## Evidence lifecycle
 

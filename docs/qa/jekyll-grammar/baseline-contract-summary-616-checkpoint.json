@@ -1,0 +1,1079 @@
+{
+  "sourceArtifact": "/workspace/work/jekyll-grammar/acceptance/baseline-contracts.json",
+  "sha256": "f56462da6fe22eb6081fb2557bb9ad0d627a77c96e886faa3f6adacc6a6603d9",
+  "observation": "Pinned baseline rendered meaning/semantics, not post-implementation acceptance",
+  "families": {
+    "martlet": {
+      "routeCount": 50,
+      "renderedMeaningChunks": 616,
+      "nonLiteralFixtureValueCount": 6,
+      "rows": [
+        {
+          "id": "home",
+          "meaningChunks": 14,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 4,
+          "links": 9,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "about",
+          "meaningChunks": 17,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 5,
+          "links": 9,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "article",
+          "meaningChunks": 18,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 5,
+          "links": 11,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "archive",
+          "meaningChunks": 21,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 3,
+          "links": 10,
+          "controls": 2,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "category",
+          "meaningChunks": 9,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 3,
+          "links": 6,
+          "controls": 2,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "categories",
+          "meaningChunks": 9,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 3,
+          "links": 7,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "person",
+          "meaningChunks": 22,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 5,
+          "links": 7,
+          "controls": 2,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "projects",
+          "meaningChunks": 12,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 3,
+          "links": 7,
+          "controls": 2,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "case-study",
+          "meaningChunks": 19,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 6,
+          "links": 6,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "documentation",
+          "meaningChunks": 9,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 3,
+          "links": 7,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "guide",
+          "meaningChunks": 16,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 5,
+          "links": 9,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "reference",
+          "meaningChunks": 13,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 6,
+          "links": 8,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "contact",
+          "meaningChunks": 10,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 9,
+          "links": 4,
+          "controls": 6,
+          "details": 0,
+          "forms": 1
+        },
+        {
+          "id": "faq",
+          "meaningChunks": 11,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 3,
+          "links": 5,
+          "controls": 0,
+          "details": 4,
+          "forms": 0
+        },
+        {
+          "id": "privacy",
+          "meaningChunks": 14,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 5,
+          "links": 9,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "terms",
+          "meaningChunks": 14,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 5,
+          "links": 9,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "service",
+          "meaningChunks": 16,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 5,
+          "links": 9,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "place",
+          "meaningChunks": 16,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 5,
+          "links": 6,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "pricing",
+          "meaningChunks": 15,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 4,
+          "links": 7,
+          "controls": 0,
+          "details": 1,
+          "forms": 0
+        },
+        {
+          "id": "careers",
+          "meaningChunks": 9,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 3,
+          "links": 6,
+          "controls": 2,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "opportunity",
+          "meaningChunks": 19,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 6,
+          "links": 9,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "software",
+          "meaningChunks": 17,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 5,
+          "links": 9,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "product",
+          "meaningChunks": 14,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 5,
+          "links": 5,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "collection",
+          "meaningChunks": 15,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 3,
+          "links": 8,
+          "controls": 2,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "collection-item",
+          "meaningChunks": 17,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 5,
+          "links": 5,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "events",
+          "meaningChunks": 10,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 4,
+          "links": 6,
+          "controls": 4,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "event",
+          "meaningChunks": 15,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 5,
+          "links": 5,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "report",
+          "meaningChunks": 18,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 6,
+          "links": 6,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "gallery",
+          "meaningChunks": 12,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 4,
+          "links": 7,
+          "controls": 1,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "changelog",
+          "meaningChunks": 11,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 7,
+          "links": 7,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "search",
+          "meaningChunks": 3,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 4,
+          "links": 5,
+          "controls": 2,
+          "details": 0,
+          "forms": 1
+        },
+        {
+          "id": "sign-in",
+          "meaningChunks": 12,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 8,
+          "links": 10,
+          "controls": 4,
+          "details": 0,
+          "forms": 1
+        },
+        {
+          "id": "sign-up",
+          "meaningChunks": 12,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 9,
+          "links": 10,
+          "controls": 6,
+          "details": 0,
+          "forms": 1
+        },
+        {
+          "id": "password-reset",
+          "meaningChunks": 12,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 6,
+          "links": 10,
+          "controls": 3,
+          "details": 0,
+          "forms": 1
+        },
+        {
+          "id": "two-factor",
+          "meaningChunks": 12,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 7,
+          "links": 10,
+          "controls": 3,
+          "details": 0,
+          "forms": 1
+        },
+        {
+          "id": "coming-soon",
+          "meaningChunks": 6,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 6,
+          "links": 6,
+          "controls": 4,
+          "details": 0,
+          "forms": 1
+        },
+        {
+          "id": "not-found",
+          "meaningChunks": 6,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 3,
+          "links": 7,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "server-error",
+          "meaningChunks": 7,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 3,
+          "links": 7,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "workspace",
+          "meaningChunks": 12,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 4,
+          "links": 4,
+          "controls": 6,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "chat",
+          "meaningChunks": 3,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 3,
+          "links": 4,
+          "controls": 3,
+          "details": 0,
+          "forms": 1
+        },
+        {
+          "id": "sensors",
+          "meaningChunks": 3,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 4,
+          "links": 4,
+          "controls": 2,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "fleet",
+          "meaningChunks": 9,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 4,
+          "links": 4,
+          "controls": 5,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "scene",
+          "meaningChunks": 6,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 5,
+          "links": 4,
+          "controls": 1,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "integrations",
+          "meaningChunks": 11,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 5,
+          "links": 7,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "stress-test",
+          "meaningChunks": 28,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 13,
+          "links": 13,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "patterns",
+          "meaningChunks": 20,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 6,
+          "links": 5,
+          "controls": 0,
+          "details": 2,
+          "forms": 0
+        },
+        {
+          "id": "dashboard-analytics",
+          "meaningChunks": 2,
+          "nonLiteralFixtureValues": [
+            {
+              "path": "sections.0.title",
+              "text": "Analytics workspace"
+            },
+            {
+              "path": "sections.0.body",
+              "text": "Shared synthetic analytics and controls."
+            }
+          ],
+          "stableIds": 16,
+          "links": 6,
+          "controls": 7,
+          "details": 3,
+          "forms": 1
+        },
+        {
+          "id": "dashboard-components",
+          "meaningChunks": 16,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 6,
+          "links": 8,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "dashboard-administration",
+          "meaningChunks": 2,
+          "nonLiteralFixtureValues": [
+            {
+              "path": "sections.0.title",
+              "text": "Administration workspace"
+            },
+            {
+              "path": "sections.0.body",
+              "text": "Shared synthetic data and equivalent application behaviour."
+            }
+          ],
+          "stableIds": 25,
+          "links": 6,
+          "controls": 26,
+          "details": 0,
+          "forms": 2
+        },
+        {
+          "id": "dashboard-operations",
+          "meaningChunks": 2,
+          "nonLiteralFixtureValues": [
+            {
+              "path": "sections.0.title",
+              "text": "Operations workspace"
+            },
+            {
+              "path": "sections.0.body",
+              "text": "Shared synthetic data and equivalent application behaviour."
+            }
+          ],
+          "stableIds": 18,
+          "links": 6,
+          "controls": 8,
+          "details": 1,
+          "forms": 1
+        }
+      ]
+    },
+    "krigsvold": {
+      "routeCount": 50,
+      "renderedMeaningChunks": 616,
+      "nonLiteralFixtureValueCount": 6,
+      "rows": [
+        {
+          "id": "home",
+          "meaningChunks": 14,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 4,
+          "links": 9,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "about",
+          "meaningChunks": 17,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 5,
+          "links": 9,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "article",
+          "meaningChunks": 18,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 5,
+          "links": 11,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "archive",
+          "meaningChunks": 21,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 3,
+          "links": 10,
+          "controls": 2,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "category",
+          "meaningChunks": 9,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 3,
+          "links": 6,
+          "controls": 2,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "categories",
+          "meaningChunks": 9,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 3,
+          "links": 7,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "person",
+          "meaningChunks": 22,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 5,
+          "links": 7,
+          "controls": 2,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "projects",
+          "meaningChunks": 12,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 3,
+          "links": 7,
+          "controls": 2,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "case-study",
+          "meaningChunks": 19,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 6,
+          "links": 6,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "documentation",
+          "meaningChunks": 9,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 3,
+          "links": 7,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "guide",
+          "meaningChunks": 16,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 5,
+          "links": 9,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "reference",
+          "meaningChunks": 13,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 6,
+          "links": 8,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "contact",
+          "meaningChunks": 10,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 9,
+          "links": 4,
+          "controls": 6,
+          "details": 0,
+          "forms": 1
+        },
+        {
+          "id": "faq",
+          "meaningChunks": 11,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 3,
+          "links": 5,
+          "controls": 0,
+          "details": 4,
+          "forms": 0
+        },
+        {
+          "id": "privacy",
+          "meaningChunks": 14,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 5,
+          "links": 9,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "terms",
+          "meaningChunks": 14,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 5,
+          "links": 9,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "service",
+          "meaningChunks": 16,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 5,
+          "links": 9,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "place",
+          "meaningChunks": 16,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 5,
+          "links": 6,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "pricing",
+          "meaningChunks": 15,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 4,
+          "links": 7,
+          "controls": 0,
+          "details": 1,
+          "forms": 0
+        },
+        {
+          "id": "careers",
+          "meaningChunks": 9,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 3,
+          "links": 6,
+          "controls": 2,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "opportunity",
+          "meaningChunks": 19,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 6,
+          "links": 9,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "software",
+          "meaningChunks": 17,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 5,
+          "links": 9,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "product",
+          "meaningChunks": 14,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 5,
+          "links": 5,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "collection",
+          "meaningChunks": 15,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 3,
+          "links": 8,
+          "controls": 2,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "collection-item",
+          "meaningChunks": 17,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 5,
+          "links": 5,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "events",
+          "meaningChunks": 10,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 4,
+          "links": 6,
+          "controls": 4,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "event",
+          "meaningChunks": 15,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 5,
+          "links": 5,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "report",
+          "meaningChunks": 18,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 6,
+          "links": 6,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "gallery",
+          "meaningChunks": 12,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 4,
+          "links": 7,
+          "controls": 1,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "changelog",
+          "meaningChunks": 11,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 7,
+          "links": 7,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "search",
+          "meaningChunks": 3,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 4,
+          "links": 5,
+          "controls": 2,
+          "details": 0,
+          "forms": 1
+        },
+        {
+          "id": "sign-in",
+          "meaningChunks": 12,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 8,
+          "links": 10,
+          "controls": 4,
+          "details": 0,
+          "forms": 1
+        },
+        {
+          "id": "sign-up",
+          "meaningChunks": 12,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 9,
+          "links": 10,
+          "controls": 6,
+          "details": 0,
+          "forms": 1
+        },
+        {
+          "id": "password-reset",
+          "meaningChunks": 12,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 6,
+          "links": 10,
+          "controls": 3,
+          "details": 0,
+          "forms": 1
+        },
+        {
+          "id": "two-factor",
+          "meaningChunks": 12,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 7,
+          "links": 10,
+          "controls": 3,
+          "details": 0,
+          "forms": 1
+        },
+        {
+          "id": "coming-soon",
+          "meaningChunks": 6,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 6,
+          "links": 6,
+          "controls": 4,
+          "details": 0,
+          "forms": 1
+        },
+        {
+          "id": "not-found",
+          "meaningChunks": 6,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 3,
+          "links": 7,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "server-error",
+          "meaningChunks": 7,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 3,
+          "links": 7,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "workspace",
+          "meaningChunks": 12,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 4,
+          "links": 4,
+          "controls": 6,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "chat",
+          "meaningChunks": 3,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 3,
+          "links": 4,
+          "controls": 3,
+          "details": 0,
+          "forms": 1
+        },
+        {
+          "id": "sensors",
+          "meaningChunks": 3,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 4,
+          "links": 4,
+          "controls": 2,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "fleet",
+          "meaningChunks": 9,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 4,
+          "links": 4,
+          "controls": 5,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "scene",
+          "meaningChunks": 6,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 5,
+          "links": 4,
+          "controls": 1,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "integrations",
+          "meaningChunks": 11,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 5,
+          "links": 7,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "stress-test",
+          "meaningChunks": 28,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 13,
+          "links": 13,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "patterns",
+          "meaningChunks": 20,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 6,
+          "links": 5,
+          "controls": 0,
+          "details": 2,
+          "forms": 0
+        },
+        {
+          "id": "dashboard-analytics",
+          "meaningChunks": 2,
+          "nonLiteralFixtureValues": [
+            {
+              "path": "sections.0.title",
+              "text": "Analytics workspace"
+            },
+            {
+              "path": "sections.0.body",
+              "text": "Shared synthetic analytics and controls."
+            }
+          ],
+          "stableIds": 16,
+          "links": 6,
+          "controls": 7,
+          "details": 3,
+          "forms": 1
+        },
+        {
+          "id": "dashboard-components",
+          "meaningChunks": 16,
+          "nonLiteralFixtureValues": [],
+          "stableIds": 6,
+          "links": 8,
+          "controls": 0,
+          "details": 0,
+          "forms": 0
+        },
+        {
+          "id": "dashboard-administration",
+          "meaningChunks": 2,
+          "nonLiteralFixtureValues": [
+            {
+              "path": "sections.0.title",
+              "text": "Administration workspace"
+            },
+            {
+              "path": "sections.0.body",
+              "text": "Shared synthetic data and equivalent application behaviour."
+            }
+          ],
+          "stableIds": 25,
+          "links": 6,
+          "controls": 26,
+          "details": 0,
+          "forms": 2
+        },
+        {
+          "id": "dashboard-operations",
+          "meaningChunks": 2,
+          "nonLiteralFixtureValues": [
+            {
+              "path": "sections.0.title",
+              "text": "Operations workspace"
+            },
+            {
+              "path": "sections.0.body",
+              "text": "Shared synthetic data and equivalent application behaviour."
+            }
+          ],
+          "stableIds": 18,
+          "links": 6,
+          "controls": 8,
+          "details": 1,
+          "forms": 1
+        }
+      ]
+    }
+  },
+  "status": "superseded observed616-checkpoint summary; original raw packet was not retained",
+  "historicalRawArtifactRetained": false,
+  "rawPathIsMutableAndSuperseded": true,
+  "replacement": "baseline-contract-summary.json (v2)"
+}
