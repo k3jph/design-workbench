@@ -238,5 +238,32 @@
         "detail": "Independently viewed diagnostic captures: Martlet groups annotated component links beside categories; Krigsvold aligns Component/Purpose table fields. They support independent organization but do not authorize inventing22records in the four-section Jekyll fixture."
       }
     ]
+  },
+  "supplementalReadingOriginEvidence": {
+    "artifact": "/workspace/work/jekyll-grammar/visual/source-authorities/rendered-reading-source-review.json",
+    "sha256": "3cf199bb0c0facce46813f12518de51bb1239567f748d2b5b6c15071516905f2",
+    "rows": [
+      {
+        "name": "martlet-article",
+        "requestedUrl": "https://jameshoward.us/2026/10/25/what-the-hell-does-temperature-actually-measure/",
+        "finalUrl": "https://jameshoward.us/2026/10/25/what-the-hell-does-temperature-actually-measure/",
+        "status": 200,
+        "observedAt": "2026-11-03T20:44:55.050Z",
+        "renderedDomSha256": "9339d584ee344c0a5f7328dd979ebae4ee211923c5f68ef061a8770c89af4cc9"
+      },
+      {
+        "name": "krigsvold-method",
+        "requestedUrl": "https://krigsvold.org/mission-and-method/",
+        "finalUrl": "https://krigsvold.org/mission-and-method/",
+        "status": 200,
+        "observedAt": "2026-11-03T20:44:56.621Z",
+        "renderedDomSha256": "1655565a847d6a27e771300ba919cc382a7bbddb04e1a5ec79053cfed3ad5617"
+      }
+    ],
+    "observations": [
+      "Actual JPH temperature-article body is768px withCambo17.2px; its inline TOC usesa p.eyebrow UIlabel, not a Cambo content heading. The candidate caption-role correction is separately tracked.",
+      "Actual Krigsvold mission/method body is856px withRoboto16px at this viewport/pagegenre. The profile760px token is not a universal reading-width mandate."
+    ],
+    "classification": "Observed source objects; geometry is contextual and must not become a universal forced frame."
   }
 }

@@ -517,6 +517,12 @@
           "artifactSha256": "b75337720476cfdfb9be5f6dcc13827f6cc332c24e8c0ee7c397f7137db63b67",
           "result": "Specialist reviewed12 paired routes at320/1440 light/dark;96 normal states plus8actual200%Krigsvold targets. No captured page overflow/errors; native local table/code scrolling retained.",
           "acceptanceScope": "Local104case scope; hosted/CI/independent after semantic and accessibility gates remain pending."
+        },
+        {
+          "kind": "wave2-local-semantic-accessibility",
+          "summary": "wave2-local-review.json",
+          "result": "All50 strengthened v2 semantics pass both bases; all five generic table-region label fixes independently confirmed; native table data/focus/scrolling checks pass.",
+          "acceptanceScope": "Exact local source heads only. Two operations label failures per family remain failures; hosted/CI/visual acceptance is separate."
         }
       ],
       "pullRequests": [],
@@ -1473,6 +1479,12 @@
           "artifactSha256": "b75337720476cfdfb9be5f6dcc13827f6cc332c24e8c0ee7c397f7137db63b67",
           "result": "Specialist reviewed12 paired routes at320/1440 light/dark;96 normal states plus8actual200%Krigsvold targets. No captured page overflow/errors; native local table/code scrolling retained.",
           "acceptanceScope": "Local104case scope; hosted/CI/independent after semantic and accessibility gates remain pending."
+        },
+        {
+          "kind": "wave2-local-semantic-accessibility",
+          "summary": "wave2-local-review.json",
+          "result": "All50 strengthened v2 semantics pass both bases; all five generic table-region label fixes independently confirmed; native table data/focus/scrolling checks pass.",
+          "acceptanceScope": "Exact local source heads only. Two operations label failures per family remain failures; hosted/CI/visual acceptance is separate."
         }
       ],
       "pullRequests": [],
@@ -1655,6 +1667,12 @@
           "artifactSha256": "b75337720476cfdfb9be5f6dcc13827f6cc332c24e8c0ee7c397f7137db63b67",
           "result": "Specialist reviewed12 paired routes at320/1440 light/dark;96 normal states plus8actual200%Krigsvold targets. No captured page overflow/errors; native local table/code scrolling retained.",
           "acceptanceScope": "Local104case scope; hosted/CI/independent after semantic and accessibility gates remain pending."
+        },
+        {
+          "kind": "wave2-local-semantic-accessibility",
+          "summary": "wave2-local-review.json",
+          "result": "All50 strengthened v2 semantics pass both bases; all five generic table-region label fixes independently confirmed; native table data/focus/scrolling checks pass.",
+          "acceptanceScope": "Exact local source heads only. Two operations label failures per family remain failures; hosted/CI/visual acceptance is separate."
         }
       ],
       "pullRequests": [],
@@ -1892,6 +1910,12 @@
           "artifactSha256": "b75337720476cfdfb9be5f6dcc13827f6cc332c24e8c0ee7c397f7137db63b67",
           "result": "Specialist reviewed12 paired routes at320/1440 light/dark;96 normal states plus8actual200%Krigsvold targets. No captured page overflow/errors; native local table/code scrolling retained.",
           "acceptanceScope": "Local104case scope; hosted/CI/independent after semantic and accessibility gates remain pending."
+        },
+        {
+          "kind": "wave2-local-semantic-accessibility",
+          "summary": "wave2-local-review.json",
+          "result": "All50 strengthened v2 semantics pass both bases; all five generic table-region label fixes independently confirmed; native table data/focus/scrolling checks pass.",
+          "acceptanceScope": "Exact local source heads only. Two operations label failures per family remain failures; hosted/CI/visual acceptance is separate."
         }
       ],
       "pullRequests": [],
@@ -1947,7 +1971,7 @@
         {
           "id": "distinct-table-region-name",
           "family": "both",
-          "status": "Corrected in both wave2 source candidates by distinct table suffix; independent full recheck pending.",
+          "status": "Verified corrected in both immutable wave2 local candidates; hosted acceptance pending",
           "sourceCommit": "d025637e1fe4c11d84c691276d6b3652719b9a30",
           "artifact": "/workspace/work/jekyll-grammar/acceptance/martlet-candidate-wave1-all50-chromium/report.json",
           "artifactSha256": "2f803bdac9662de2cc99275e5f2e7704b34944ab9348d0df28f6961f1c0e7bc0",
@@ -1962,7 +1986,8 @@
             "martlet": "d025637e1fe4c11d84c691276d6b3652719b9a30",
             "krigsvold": "8dfcca47b5c312e125ac320643c442b1a00f8490"
           },
-          "pairedDiagnostic": "/workspace/work/jekyll-grammar/acceptance/early-all50-audit.json"
+          "pairedDiagnostic": "/workspace/work/jekyll-grammar/acceptance/early-all50-audit.json",
+          "localConfirmation": "wave2-local-review.json"
         }
       ],
       "baselineComputedGeometry": {
@@ -2570,6 +2595,12 @@
           "artifactSha256": "b75337720476cfdfb9be5f6dcc13827f6cc332c24e8c0ee7c397f7137db63b67",
           "result": "Specialist reviewed12 paired routes at320/1440 light/dark;96 normal states plus8actual200%Krigsvold targets. No captured page overflow/errors; native local table/code scrolling retained.",
           "acceptanceScope": "Local104case scope; hosted/CI/independent after semantic and accessibility gates remain pending."
+        },
+        {
+          "kind": "wave2-local-semantic-accessibility",
+          "summary": "wave2-local-review.json",
+          "result": "All50 strengthened v2 semantics pass both bases; all five generic table-region label fixes independently confirmed; native table data/focus/scrolling checks pass.",
+          "acceptanceScope": "Exact local source heads only. Two operations label failures per family remain failures; hosted/CI/visual acceptance is separate."
         }
       ],
       "pullRequests": [],
@@ -2804,6 +2835,12 @@
           "artifactSha256": "b75337720476cfdfb9be5f6dcc13827f6cc332c24e8c0ee7c397f7137db63b67",
           "result": "Specialist reviewed12 paired routes at320/1440 light/dark;96 normal states plus8actual200%Krigsvold targets. No captured page overflow/errors; native local table/code scrolling retained.",
           "acceptanceScope": "Local104case scope; hosted/CI/independent after semantic and accessibility gates remain pending."
+        },
+        {
+          "kind": "wave2-local-semantic-accessibility",
+          "summary": "wave2-local-review.json",
+          "result": "All50 strengthened v2 semantics pass both bases; all five generic table-region label fixes independently confirmed; native table data/focus/scrolling checks pass.",
+          "acceptanceScope": "Exact local source heads only. Two operations label failures per family remain failures; hosted/CI/visual acceptance is separate."
         }
       ],
       "pullRequests": [],
@@ -3563,6 +3600,12 @@
           "artifactSha256": "b75337720476cfdfb9be5f6dcc13827f6cc332c24e8c0ee7c397f7137db63b67",
           "result": "Specialist reviewed12 paired routes at320/1440 light/dark;96 normal states plus8actual200%Krigsvold targets. No captured page overflow/errors; native local table/code scrolling retained.",
           "acceptanceScope": "Local104case scope; hosted/CI/independent after semantic and accessibility gates remain pending."
+        },
+        {
+          "kind": "wave2-local-semantic-accessibility",
+          "summary": "wave2-local-review.json",
+          "result": "All50 strengthened v2 semantics pass both bases; all five generic table-region label fixes independently confirmed; native table data/focus/scrolling checks pass.",
+          "acceptanceScope": "Exact local source heads only. Two operations label failures per family remain failures; hosted/CI/visual acceptance is separate."
         }
       ],
       "pullRequests": [],
@@ -4441,6 +4484,12 @@
           "summary": "wave1-acceptance.json#all50SemanticV2Checks",
           "result": "Frozen692 meaning chunk baseline and native control/time/data contract pass for both families at root and /preview.",
           "acceptanceScope": "Exact wave1 semantic acceptance, not universal accessibility/fidelity."
+        },
+        {
+          "kind": "wave2-local-semantic-accessibility",
+          "summary": "wave2-local-review.json",
+          "result": "All50 strengthened v2 semantics pass both bases; all five generic table-region label fixes independently confirmed; native table data/focus/scrolling checks pass.",
+          "acceptanceScope": "Exact local source heads only. Two operations label failures per family remain failures; hosted/CI/visual acceptance is separate."
         }
       ],
       "pullRequests": [],
@@ -4483,7 +4532,7 @@
         {
           "id": "distinct-table-region-name",
           "family": "both",
-          "status": "Corrected in both wave2 source candidates by distinct table suffix; independent full recheck pending.",
+          "status": "Verified corrected in both immutable wave2 local candidates; hosted acceptance pending",
           "sourceCommit": "d025637e1fe4c11d84c691276d6b3652719b9a30",
           "artifact": "/workspace/work/jekyll-grammar/acceptance/martlet-candidate-wave1-all50-chromium/report.json",
           "artifactSha256": "2f803bdac9662de2cc99275e5f2e7704b34944ab9348d0df28f6961f1c0e7bc0",
@@ -4498,7 +4547,8 @@
             "martlet": "d025637e1fe4c11d84c691276d6b3652719b9a30",
             "krigsvold": "8dfcca47b5c312e125ac320643c442b1a00f8490"
           },
-          "pairedDiagnostic": "/workspace/work/jekyll-grammar/acceptance/early-all50-audit.json"
+          "pairedDiagnostic": "/workspace/work/jekyll-grammar/acceptance/early-all50-audit.json",
+          "localConfirmation": "wave2-local-review.json"
         }
       ],
       "semanticAnatomyDecision": "retain",
@@ -4605,6 +4655,12 @@
           "summary": "wave1-acceptance.json#all50SemanticV2Checks",
           "result": "Frozen692 meaning chunk baseline and native control/time/data contract pass for both families at root and /preview.",
           "acceptanceScope": "Exact wave1 semantic acceptance, not universal accessibility/fidelity."
+        },
+        {
+          "kind": "wave2-local-semantic-accessibility",
+          "summary": "wave2-local-review.json",
+          "result": "All50 strengthened v2 semantics pass both bases; all five generic table-region label fixes independently confirmed; native table data/focus/scrolling checks pass.",
+          "acceptanceScope": "Exact local source heads only. Two operations label failures per family remain failures; hosted/CI/visual acceptance is separate."
         }
       ],
       "pullRequests": [],
@@ -4647,7 +4703,7 @@
         {
           "id": "distinct-table-region-name",
           "family": "both",
-          "status": "Corrected in both wave2 source candidates by distinct table suffix; independent full recheck pending.",
+          "status": "Verified corrected in both immutable wave2 local candidates; hosted acceptance pending",
           "sourceCommit": "d025637e1fe4c11d84c691276d6b3652719b9a30",
           "artifact": "/workspace/work/jekyll-grammar/acceptance/martlet-candidate-wave1-all50-chromium/report.json",
           "artifactSha256": "2f803bdac9662de2cc99275e5f2e7704b34944ab9348d0df28f6961f1c0e7bc0",
@@ -4662,7 +4718,8 @@
             "martlet": "d025637e1fe4c11d84c691276d6b3652719b9a30",
             "krigsvold": "8dfcca47b5c312e125ac320643c442b1a00f8490"
           },
-          "pairedDiagnostic": "/workspace/work/jekyll-grammar/acceptance/early-all50-audit.json"
+          "pairedDiagnostic": "/workspace/work/jekyll-grammar/acceptance/early-all50-audit.json",
+          "localConfirmation": "wave2-local-review.json"
         }
       ],
       "semanticAnatomyDecision": "change",
@@ -6916,6 +6973,12 @@
           "artifactSha256": "b75337720476cfdfb9be5f6dcc13827f6cc332c24e8c0ee7c397f7137db63b67",
           "result": "Specialist reviewed12 paired routes at320/1440 light/dark;96 normal states plus8actual200%Krigsvold targets. No captured page overflow/errors; native local table/code scrolling retained.",
           "acceptanceScope": "Local104case scope; hosted/CI/independent after semantic and accessibility gates remain pending."
+        },
+        {
+          "kind": "wave2-local-semantic-accessibility",
+          "summary": "wave2-local-review.json",
+          "result": "All50 strengthened v2 semantics pass both bases; all five generic table-region label fixes independently confirmed; native table data/focus/scrolling checks pass.",
+          "acceptanceScope": "Exact local source heads only. Two operations label failures per family remain failures; hosted/CI/visual acceptance is separate."
         }
       ],
       "pullRequests": [],
@@ -6971,7 +7034,7 @@
         {
           "id": "distinct-table-region-name",
           "family": "both",
-          "status": "Corrected in both wave2 source candidates by distinct table suffix; independent full recheck pending.",
+          "status": "Verified corrected in both immutable wave2 local candidates; hosted acceptance pending",
           "sourceCommit": "d025637e1fe4c11d84c691276d6b3652719b9a30",
           "artifact": "/workspace/work/jekyll-grammar/acceptance/martlet-candidate-wave1-all50-chromium/report.json",
           "artifactSha256": "2f803bdac9662de2cc99275e5f2e7704b34944ab9348d0df28f6961f1c0e7bc0",
@@ -6986,7 +7049,8 @@
             "martlet": "d025637e1fe4c11d84c691276d6b3652719b9a30",
             "krigsvold": "8dfcca47b5c312e125ac320643c442b1a00f8490"
           },
-          "pairedDiagnostic": "/workspace/work/jekyll-grammar/acceptance/early-all50-audit.json"
+          "pairedDiagnostic": "/workspace/work/jekyll-grammar/acceptance/early-all50-audit.json",
+          "localConfirmation": "wave2-local-review.json"
         }
       ],
       "baselineComputedGeometry": {
@@ -7171,6 +7235,12 @@
           "artifactSha256": "b75337720476cfdfb9be5f6dcc13827f6cc332c24e8c0ee7c397f7137db63b67",
           "result": "Specialist reviewed12 paired routes at320/1440 light/dark;96 normal states plus8actual200%Krigsvold targets. No captured page overflow/errors; native local table/code scrolling retained.",
           "acceptanceScope": "Local104case scope; hosted/CI/independent after semantic and accessibility gates remain pending."
+        },
+        {
+          "kind": "wave2-local-semantic-accessibility",
+          "summary": "wave2-local-review.json",
+          "result": "All50 strengthened v2 semantics pass both bases; all five generic table-region label fixes independently confirmed; native table data/focus/scrolling checks pass.",
+          "acceptanceScope": "Exact local source heads only. Two operations label failures per family remain failures; hosted/CI/visual acceptance is separate."
         }
       ],
       "pullRequests": [],
@@ -7226,7 +7296,7 @@
         {
           "id": "distinct-table-region-name",
           "family": "both",
-          "status": "Corrected in both wave2 source candidates by distinct table suffix; independent full recheck pending.",
+          "status": "Verified corrected in both immutable wave2 local candidates; hosted acceptance pending",
           "sourceCommit": "d025637e1fe4c11d84c691276d6b3652719b9a30",
           "artifact": "/workspace/work/jekyll-grammar/acceptance/martlet-candidate-wave1-all50-chromium/report.json",
           "artifactSha256": "2f803bdac9662de2cc99275e5f2e7704b34944ab9348d0df28f6961f1c0e7bc0",
@@ -7241,7 +7311,8 @@
             "martlet": "d025637e1fe4c11d84c691276d6b3652719b9a30",
             "krigsvold": "8dfcca47b5c312e125ac320643c442b1a00f8490"
           },
-          "pairedDiagnostic": "/workspace/work/jekyll-grammar/acceptance/early-all50-audit.json"
+          "pairedDiagnostic": "/workspace/work/jekyll-grammar/acceptance/early-all50-audit.json",
+          "localConfirmation": "wave2-local-review.json"
         }
       ],
       "baselineComputedGeometry": {
@@ -8314,7 +8385,7 @@
         {
           "id": "distinct-table-region-name",
           "family": "both",
-          "status": "observed in both families; generic five corrections in wave2, operations correction in wave4",
+          "status": "Still fails in both wave2 local candidates; correction scheduled for operations wave.",
           "sourceCommit": "d025637e1fe4c11d84c691276d6b3652719b9a30",
           "artifact": "/workspace/work/jekyll-grammar/acceptance/martlet-candidate-wave1-all50-chromium/report.json",
           "artifactSha256": "2f803bdac9662de2cc99275e5f2e7704b34944ab9348d0df28f6961f1c0e7bc0",
@@ -8387,6 +8458,17 @@
     ],
     "countingScope": "Actual accepted UI/composition/accessibility changes, not generated HTML whitespace or merely a shared file being edited. Initial semantic-anatomy intentions remain provisional; retained anatomy can receive measured CSS/ARIA changes.",
     "globalVisualReviewComplete": false,
-    "all50AccessibilityPassed": false
+    "all50AccessibilityPassed": false,
+    "localWave2RemainingAccessibilityRoutes": [
+      "dashboard-operations"
+    ],
+    "acceptedDevelopRemainingAccessibilityRoutes": [
+      "reference",
+      "event",
+      "report",
+      "integrations",
+      "stress-test",
+      "dashboard-operations"
+    ]
   }
 }
