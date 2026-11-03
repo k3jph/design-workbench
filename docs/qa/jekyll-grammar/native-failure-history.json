@@ -49,7 +49,11 @@
   },
   "unrelatedHistoricalMartlet0701Failure": "Still unexplained; this Krigsvold log does not establish its cause.",
   "rawDiagnosis": {
-    "artifact": "/workspace/work/jekyll-grammar/ci/krigsvold-original-native-failure-diagnosis.json",
+    "artifact": {
+      "evidenceRef": "krigsvold-original-native-failure-diagnosis-d0d4075bc625",
+      "record": "evidence/krigsvold-original-native-failure-diagnosis-d0d4075bc625.json",
+      "rawBytesIncluded": false
+    },
     "sha256": "fee7aa35bf837d5c159332b46ce53e5342324bc3d6ca04ebf81b361a405ce430"
   },
   "historicalMartlet": {
@@ -58,5 +62,6 @@
     "historicalOutcome": "failed native develop build; underlying cause still unknown",
     "currentAvailability": "Later ordinary develop d983 native success and final exact0c native success; no inference from unrelated K403 logs.",
     "status": "historical failure preserved; not a current verified-preview blocker"
-  }
+  },
+  "portableEvidenceRegistry": "evidence-registry.json"
 }

@@ -1,0 +1,14 @@
+{
+  "id": "document-widths-6f77881c9d73",
+  "record": "evidence/document-widths-6f77881c9d73.json",
+  "originalName": "document-widths.json",
+  "kind": "file",
+  "rawSha256": "c3867d5ade7626ba3b1ac544eb2506c0a35f0d51041c76ca6adb4580466602e9",
+  "rawBytesIncluded": false,
+  "retentionStatus": "preserved-locally-not-bundled",
+  "summaryDocuments": [
+    "disposition.json"
+  ],
+  "sourceBindings": {},
+  "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository."
+}

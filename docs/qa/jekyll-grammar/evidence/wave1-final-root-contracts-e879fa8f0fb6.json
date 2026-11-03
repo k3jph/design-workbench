@@ -1,0 +1,17 @@
+{
+  "id": "wave1-final-root-contracts-e879fa8f0fb6",
+  "record": "evidence/wave1-final-root-contracts-e879fa8f0fb6.json",
+  "originalName": "wave1-final-root-contracts.json",
+  "kind": "file",
+  "rawSha256": "85a3a37f7eaf65aaba1978795d9cd24162ec866a73cea5f6727e3f7dbb2e129e",
+  "rawBytesIncluded": false,
+  "retentionStatus": "preserved-locally-not-bundled",
+  "summaryDocuments": [
+    "disposition.json"
+  ],
+  "sourceBindings": {
+    "martlet": "d025637e1fe4c11d84c691276d6b3652719b9a30",
+    "krigsvold": "8dfcca47b5c312e125ac320643c442b1a00f8490"
+  },
+  "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository."
+}

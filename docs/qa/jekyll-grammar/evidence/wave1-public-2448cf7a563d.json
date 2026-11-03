@@ -1,0 +1,14 @@
+{
+  "id": "wave1-public-2448cf7a563d",
+  "record": "evidence/wave1-public-2448cf7a563d.json",
+  "originalName": "wave1-public.json",
+  "kind": "file",
+  "rawSha256": "171215cdc8f8b96b0f4b75854a9584a02880626c64e42a87f21fc8d35be4dda6",
+  "rawBytesIncluded": false,
+  "retentionStatus": "preserved-locally-not-bundled",
+  "summaryDocuments": [
+    "wave1-acceptance.json"
+  ],
+  "sourceBindings": {},
+  "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository."
+}

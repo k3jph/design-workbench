@@ -48,11 +48,19 @@
         }
       },
       "nativeReceipt": {
-        "artifact": "/workspace/work/jekyll-grammar/evidence/wave1/martlet-pr-native-verification.json",
+        "artifact": {
+          "evidenceRef": "martlet-pr-native-verification-b6e7d43773f2",
+          "record": "evidence/martlet-pr-native-verification-b6e7d43773f2.json",
+          "rawBytesIncluded": false
+        },
         "sha256": "e689b49d766c70e6b45f8dbde678c94a6e203201d080633e3dafaa912a00b368"
       },
       "visualReceipt": {
-        "artifact": "/workspace/work/jekyll-grammar/visual/wave1-hosted/martlet-cff96a8586ab/review.json",
+        "artifact": {
+          "evidenceRef": "review-6f519c76b5db",
+          "record": "evidence/review-6f519c76b5db.json",
+          "rawBytesIncluded": false
+        },
         "sha256": "9d15262c1bebae77835a9c08946de5d86856f4cd165816dd7708fc678f2626a8"
       },
       "normalFrames": 36,
@@ -108,11 +116,19 @@
         }
       },
       "nativeReceipt": {
-        "artifact": "/workspace/work/jekyll-grammar/evidence/wave1/krigsvold-pr-native-verification.json",
+        "artifact": {
+          "evidenceRef": "krigsvold-pr-native-verification-5af6cd85da82",
+          "record": "evidence/krigsvold-pr-native-verification-5af6cd85da82.json",
+          "rawBytesIncluded": false
+        },
         "sha256": "54b1ecbcee32e807cca9f169896311f78021af10de657047b2b386d8d07d01d7"
       },
       "visualReceipt": {
-        "artifact": "/workspace/work/jekyll-grammar/visual/wave1-hosted/krigsvold-8dfcca47b5c3/review.json",
+        "artifact": {
+          "evidenceRef": "review-77a3c5b77c93",
+          "record": "evidence/review-77a3c5b77c93.json",
+          "rawBytesIncluded": false
+        },
         "sha256": "ba3cf409f08ddd93b9309a938696f3233c5e301bc630baf8238fe04118a5f04f"
       },
       "normalFrames": 36,
@@ -126,19 +142,35 @@
     }
   },
   "actualHttpsAcceptance": {
-    "artifact": "/workspace/work/jekyll-grammar/acceptance/wave1-actual-https-summary.json",
+    "artifact": {
+      "evidenceRef": "wave1-actual-https-summary-3c99a1f2a907",
+      "record": "evidence/wave1-actual-https-summary-3c99a1f2a907.json",
+      "rawBytesIncluded": false
+    },
     "sha256": "ff095220f116b08aa8317fcf3f792a3559c2f7ab11cac4a5ac9bfff721dae880"
   },
   "publicMetadataReceipt": {
-    "artifact": "/workspace/work/jekyll-grammar/ci/wave1-public.json",
+    "artifact": {
+      "evidenceRef": "wave1-public-2448cf7a563d",
+      "record": "evidence/wave1-public-2448cf7a563d.json",
+      "rawBytesIncluded": false
+    },
     "sha256": "171215cdc8f8b96b0f4b75854a9584a02880626c64e42a87f21fc8d35be4dda6"
   },
   "premergeGates": {
-    "artifact": "/workspace/work/jekyll-grammar/evidence/wave1/premerge-gates.json",
+    "artifact": {
+      "evidenceRef": "premerge-gates-8ec75de18155",
+      "record": "evidence/premerge-gates-8ec75de18155.json",
+      "rawBytesIncluded": false
+    },
     "sha256": "1e5e67a02c8a83b7ce446de257775cd4d148c0ac744476690358a78cd79e1bf6"
   },
   "earlyAll50BehaviorParity": {
-    "artifact": "/workspace/work/jekyll-grammar/acceptance/early-paired-behavior-parity.json",
+    "artifact": {
+      "evidenceRef": "early-paired-behavior-parity-3c4aba25fcf3",
+      "record": "evidence/early-paired-behavior-parity-3c4aba25fcf3.json",
+      "rawBytesIncluded": false
+    },
     "sha256": "292e4254a0fc7895f99beac15648e77a911aae7d8d596dff35e4030bbb60a14f"
   },
   "all50GlobalAccessibilityPassed": false,
@@ -160,16 +192,25 @@
     "reports": [
       {
         "base": "",
-        "artifact": "/workspace/work/jekyll-grammar/acceptance/wave1-v2-root-contracts.json",
+        "artifact": {
+          "evidenceRef": "wave1-v2-root-contracts-b6c96371fec1",
+          "record": "evidence/wave1-v2-root-contracts-b6c96371fec1.json",
+          "rawBytesIncluded": false
+        },
         "sha256": "c4ab7544977c8f4ecfd3a69186825f7796ee970ce8f833696578bfe296709ed5"
       },
       {
         "base": "/preview",
-        "artifact": "/workspace/work/jekyll-grammar/acceptance/wave1-v2-preview-contracts.json",
+        "artifact": {
+          "evidenceRef": "wave1-v2-preview-contracts-d595309d37be",
+          "record": "evidence/wave1-v2-preview-contracts-d595309d37be.json",
+          "rawBytesIncluded": false
+        },
         "sha256": "1ad803f93ff9e22ad9a843f168bedbd94f8c3c2f6da5707f27324c074147fff0"
       }
     ],
     "result": "Both50route families pass at both basepaths; content/data/IDs/links/native behavior unchanged.",
     "limits": "Does not turn the six recorded baseline axe region-name failures into passes."
-  }
+  },
+  "portableEvidenceRegistry": "evidence-registry.json"
 }

@@ -1,0 +1,14 @@
+{
+  "id": "final-restored-native-production-snapshot-3fae8b2b9fe4",
+  "record": "evidence/final-restored-native-production-snapshot-3fae8b2b9fe4.json",
+  "originalName": "final-restored-native-production-snapshot.json",
+  "kind": "file",
+  "rawSha256": "5fbc70213a7f396156484e95a25fe964fcd1f6a9e63037bf7f265ed13a1aa147",
+  "rawBytesIncluded": false,
+  "retentionStatus": "preserved-locally-not-bundled",
+  "summaryDocuments": [
+    "final-acceptance.json"
+  ],
+  "sourceBindings": {},
+  "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository."
+}

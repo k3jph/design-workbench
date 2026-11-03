@@ -1,0 +1,16 @@
+{
+  "id": "martlet-pr-native-verification-2be70a4474d3",
+  "record": "evidence/martlet-pr-native-verification-2be70a4474d3.json",
+  "originalName": "martlet-pr-native-verification.json",
+  "kind": "file",
+  "rawSha256": "41a12f119a784368f7b68adbbd45991b592f92d3f372d101facec1810efe21ea",
+  "rawBytesIncluded": false,
+  "retentionStatus": "preserved-locally-not-bundled",
+  "summaryDocuments": [
+    "final-acceptance.json"
+  ],
+  "sourceBindings": {
+    "sourceCommit": "0c0e0a7452444c41a3876c2f8732c6439c6097b9"
+  },
+  "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository."
+}

@@ -129,3 +129,8 @@ The [historical native-failure record](native-failure-history.json) distinguishe
 All final technical checks have zero known failure exceptions. Independent source-bound all50 visual judgment, the approved portable book and final normal integration SHAs remain separate completion gates until their receipts are recorded. No universal visual-fidelity claim, exhaustive assistive-technology claim or immutable-hosting guarantee is made. The earlier 616-checkpoint raw packet was not retained; its historical summary records that limitation. The complete frozen 692v2 baseline/tool and current exact-source contracts provide final verification.
 
 Feature and evidence PRs target `develop`. This work does not merge `main`, deploy production, publish npm, modify the canonical websites or relax archive/publication/deployment authority. Release/promotion requires separate authorization.
+
+
+## Portable evidence records
+
+Local original paths are represented by relative records in [the evidence registry](evidence-registry.json). Those records state raw-source hashes, retention and exact source bindings. Hashes beside an evidence reference describe the original raw artifact, not the small registry record. Full original captures remain outside the repository; these machine records do not bundle raw capture binaries. The separately approved screenshot book and final integration status are linked from the report.

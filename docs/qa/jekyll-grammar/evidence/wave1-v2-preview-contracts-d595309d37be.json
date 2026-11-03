@@ -1,0 +1,17 @@
+{
+  "id": "wave1-v2-preview-contracts-d595309d37be",
+  "record": "evidence/wave1-v2-preview-contracts-d595309d37be.json",
+  "originalName": "wave1-v2-preview-contracts.json",
+  "kind": "file",
+  "rawSha256": "1ad803f93ff9e22ad9a843f168bedbd94f8c3c2f6da5707f27324c074147fff0",
+  "rawBytesIncluded": false,
+  "retentionStatus": "preserved-locally-not-bundled",
+  "summaryDocuments": [
+    "wave1-acceptance.json"
+  ],
+  "sourceBindings": {
+    "martlet": "cff96a8586ab5300a38c68847cdbdee8c6aa5dab",
+    "krigsvold": "8dfcca47b5c312e125ac320643c442b1a00f8490"
+  },
+  "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository."
+}

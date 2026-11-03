@@ -1,5 +1,9 @@
 {
-  "sourceManifestArtifact": "/workspace/work/jekyll-grammar/visual/source-authorities/retrieval.json",
+  "sourceManifestArtifact": {
+    "evidenceRef": "retrieval-cfafcc61a1d9",
+    "record": "evidence/retrieval-cfafcc61a1d9.json",
+    "rawBytesIncluded": false
+  },
   "sourceManifestSha256": "e9e43630e84d624d6709ac3ce1e3799f8762c6bee6c1317b6a595d6fed654f74",
   "sources": [
     {
@@ -88,9 +92,17 @@
     }
   ],
   "baselineCapture": {
-    "provenanceArtifact": "/workspace/work/jekyll-grammar/visual/baseline-provenance.json",
+    "provenanceArtifact": {
+      "evidenceRef": "baseline-provenance-f4ee11320a48",
+      "record": "evidence/baseline-provenance-f4ee11320a48.json",
+      "rawBytesIncluded": false
+    },
     "provenanceSha256": "865d9738d655f15d8e71c010c69b7aa4591260b0bfd6b24cc9dedbcc94750513",
-    "reviewArtifact": "/workspace/work/jekyll-grammar/visual/before/review.json",
+    "reviewArtifact": {
+      "evidenceRef": "review-e711b8290537",
+      "record": "evidence/review-e711b8290537.json",
+      "rawBytesIncluded": false
+    },
     "reviewSha256": "54800a8c55c71a7eff5165c3fb176012c85d328bea859af1dd4de0eb1c45c5e0",
     "caseCount": 72,
     "normalScreenshots": 72,
@@ -142,7 +154,11 @@
     }
   ],
   "renderedSourceEvidence": {
-    "artifact": "/workspace/work/jekyll-grammar/visual/source-authorities/rendered-source-review.json",
+    "artifact": {
+      "evidenceRef": "rendered-source-review-ae74b252abfe",
+      "record": "evidence/rendered-source-review-ae74b252abfe.json",
+      "rawBytesIncluded": false
+    },
     "sha256": "57b5406c8dbae2455a0706ae624126b58bd817d1a9943f6b425614391e3e9fa9",
     "rows": [
       {
@@ -240,7 +256,11 @@
     ]
   },
   "supplementalReadingOriginEvidence": {
-    "artifact": "/workspace/work/jekyll-grammar/visual/source-authorities/rendered-reading-source-review.json",
+    "artifact": {
+      "evidenceRef": "rendered-reading-source-review-ee91664eaee2",
+      "record": "evidence/rendered-reading-source-review-ee91664eaee2.json",
+      "rawBytesIncluded": false
+    },
     "sha256": "3cf199bb0c0facce46813f12518de51bb1239567f748d2b5b6c15071516905f2",
     "rows": [
       {
@@ -267,7 +287,11 @@
     "classification": "Observed source objects; geometry is contextual and must not become a universal forced frame."
   },
   "completeInitialBaselineScreenshotIntegrity": {
-    "sourceIndex": "/workspace/work/jekyll-grammar/evidence/baseline-all50-index-78ebb0fc6c89.json",
+    "sourceIndex": {
+      "evidenceRef": "baseline-all50-index-78ebb0fc6c89-0e7fde71e9c4",
+      "record": "evidence/baseline-all50-index-78ebb0fc6c89-0e7fde71e9c4.json",
+      "rawBytesIncluded": false
+    },
     "sha256": "78ebb0fc6c8928b70b3e6dff8358ecfab71aea27b6cc6a5e61c4f63395a13320",
     "sourceCommits": {
       "martlet": "ac0a64c6cd5167ccbdf96bb20e46e5d547a49a5d",
@@ -289,7 +313,11 @@
     "scope": "Immutable initial baseline captures only. This is not final-after capture or global visual/behavior/accessibility acceptance.",
     "originalFullCapturesPreservedLocally": true,
     "binaryCopyIntoRepositoryPerformed": false,
-    "sourceIndexProducerPath": "/workspace/work/jekyll-grammar/visual/baseline-all50-screenshot-index.json",
+    "sourceIndexProducerPath": {
+      "evidenceRef": "baseline-all50-screenshot-index-59a2e5555acb",
+      "record": "evidence/baseline-all50-screenshot-index-59a2e5555acb.json",
+      "rawBytesIncluded": false
+    },
     "searchStatesIndependentlyMatchedToRawReports": 12,
     "sourceIndexIsImmutableCopiedBytes": true,
     "reviewScope": "All50 initial baselines and12 observed populated-search states are hashed; final-after captures, visual decisions and global accessibility remain separate."
@@ -311,8 +339,13 @@
     }
   },
   "finalActualCapture": {
-    "artifact": "/workspace/work/jekyll-grammar/visual/final-after-index.json",
+    "artifact": {
+      "evidenceRef": "final-after-index-5c09e2074977",
+      "record": "evidence/final-after-index-5c09e2074977.json",
+      "rawBytesIncluded": false
+    },
     "sha256": "f2623024491a62aa3a5742198d951dd63f48e993efdfa2538b559a3b0206fb47"
   },
-  "finalAuthorityRule": "Canonical origins primary; React differentiated catalogs are supporting evidence only. All contextual translations and retained anatomy are independently reasoned in disposition.json."
+  "finalAuthorityRule": "Canonical origins primary; React differentiated catalogs are supporting evidence only. All contextual translations and retained anatomy are independently reasoned in disposition.json.",
+  "portableEvidenceRegistry": "evidence-registry.json"
 }

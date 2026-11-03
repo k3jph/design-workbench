@@ -1,0 +1,16 @@
+{
+  "id": "krigsvold-wave1-local-verification-5c31e1da554b",
+  "record": "evidence/krigsvold-wave1-local-verification-5c31e1da554b.json",
+  "originalName": "krigsvold-wave1-local-verification.json",
+  "kind": "file",
+  "rawSha256": "bf3cc9844ac75b8b35152aba5082f95998e173a6785ee3ed4a73a0c09dd00c5b",
+  "rawBytesIncluded": false,
+  "retentionStatus": "preserved-locally-not-bundled",
+  "summaryDocuments": [
+    "disposition.json"
+  ],
+  "sourceBindings": {
+    "sourceCommit": "8dfcca47b5c312e125ac320643c442b1a00f8490"
+  },
+  "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository."
+}

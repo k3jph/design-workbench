@@ -1,5 +1,10 @@
 {
-  "sourceArtifact": "/workspace/work/jekyll-grammar/acceptance/baseline-contracts.json",
+  "sourceArtifact": {
+    "status": "historical616packet-not-retained",
+    "observedRawSha256": "f56462da6fe22eb6081fb2557bb9ad0d627a77c96e886faa3f6adacc6a6603d9",
+    "rawArtifactLinkProvided": false,
+    "currentVerification": "Use the frozen692 v2 baseline and accepted-wave receipts. This is not a current verification gap."
+  },
   "sha256": "f56462da6fe22eb6081fb2557bb9ad0d627a77c96e886faa3f6adacc6a6603d9",
   "observation": "Pinned baseline rendered meaning/semantics, not post-implementation acceptance",
   "families": {
@@ -1075,5 +1080,6 @@
   "status": "superseded observed616-checkpoint summary; original raw packet was not retained",
   "historicalRawArtifactRetained": false,
   "rawPathIsMutableAndSuperseded": true,
-  "replacement": "baseline-contract-summary.json (v2)"
+  "replacement": "baseline-contract-summary.json (v2)",
+  "portableEvidenceRegistry": "evidence-registry.json"
 }

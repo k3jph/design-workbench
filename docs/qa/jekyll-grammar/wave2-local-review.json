@@ -1,6 +1,10 @@
 {
   "scope": "Wave2 local candidates only; not hosted/CI acceptance",
-  "sourceArtifact": "/workspace/work/jekyll-grammar/acceptance/wave2-local-summary.json",
+  "sourceArtifact": {
+    "evidenceRef": "wave2-local-summary-2185a98c7c5c",
+    "record": "evidence/wave2-local-summary-2185a98c7c5c.json",
+    "rawBytesIncluded": false
+  },
   "sha256": "3c13f03d579e31c51468132d1712065d0b21aef65e7be18ea58a58ca646ee7ad",
   "localAcceptance": {
     "scope": "Reading-wave local acceptance; global operations landmark remains unfixed and is not waived",
@@ -14,7 +18,11 @@
         "axeScans": 100,
         "knownOperationsLabelFailures": 2,
         "otherFailures": 0,
-        "rawReport": "/workspace/work/jekyll-grammar/acceptance/martlet-local-wave2-all50-chromium/report.json",
+        "rawReport": {
+          "evidenceRef": "report-e58709ee1cbf",
+          "record": "evidence/report-e58709ee1cbf.json",
+          "rawBytesIncluded": false
+        },
         "readingScopePassed": true
       },
       "krigsvold": {
@@ -26,7 +34,11 @@
         "axeScans": 100,
         "knownOperationsLabelFailures": 2,
         "otherFailures": 0,
-        "rawReport": "/workspace/work/jekyll-grammar/acceptance/krigsvold-local-wave2-all50-chromium/report.json",
+        "rawReport": {
+          "evidenceRef": "report-91231fa37419",
+          "record": "evidence/report-91231fa37419.json",
+          "rawBytesIncluded": false
+        },
         "readingScopePassed": true
       }
     },
@@ -40,12 +52,20 @@
   },
   "tableEvidence": {
     "wave2-table-contracts.json": {
-      "artifact": "/workspace/work/jekyll-grammar/acceptance/wave2-table-contracts.json",
+      "artifact": {
+        "evidenceRef": "wave2-table-contracts-423521e2a55d",
+        "record": "evidence/wave2-table-contracts-423521e2a55d.json",
+        "rawBytesIncluded": false
+      },
       "sha256": "5e5898d8d8a343068cfc54f95efe6d677c11e71be06fca38429e143a111203fb",
       "tablesChecked": 52
     },
     "wave2-table-keyboard-summary.json": {
-      "artifact": "/workspace/work/jekyll-grammar/acceptance/wave2-table-keyboard-summary.json",
+      "artifact": {
+        "evidenceRef": "wave2-table-keyboard-summary-db7f3d074fb9",
+        "record": "evidence/wave2-table-keyboard-summary-db7f3d074fb9.json",
+        "rawBytesIncluded": false
+      },
       "sha256": "8d412aae61e429c48051d9576d59a16d7b1719220c1f751aef00c941da4f5118",
       "caseCount": 96,
       "focusableRegions": 156,
@@ -55,5 +75,6 @@
   },
   "acceptedIntoDevelop": false,
   "remainingGlobalAccessibilityRoute": "dashboard-operations",
-  "manualAssistiveTechnologyClaimed": false
+  "manualAssistiveTechnologyClaimed": false,
+  "portableEvidenceRegistry": "evidence-registry.json"
 }

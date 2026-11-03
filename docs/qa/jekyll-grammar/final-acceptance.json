@@ -70,13 +70,33 @@
         "knownFailureExceptions": [],
         "all50SemanticsBothBasesPassed": true,
         "staticPairedCounterpartExplicitlyProspective": "krigsvold154ce8d (not a final K claim)",
-        "rawReport": "/workspace/work/jekyll-grammar/acceptance/martlet-https-final0c0e0a-all50-chromium/report.json",
+        "rawReport": {
+          "evidenceRef": "report-5a091b3b0b85",
+          "record": "evidence/report-5a091b3b0b85.json",
+          "rawBytesIncluded": false
+        },
         "sourceStaticReceipts": [
-          "/workspace/work/jekyll-grammar/acceptance/martlet-final0c-v2-root-contracts.json",
-          "/workspace/work/jekyll-grammar/acceptance/martlet-final0c-v2-preview-contracts.json",
-          "/workspace/work/jekyll-grammar/acceptance/martlet-final0c-table-contracts.json"
+          {
+            "evidenceRef": "martlet-final0c-v2-root-contracts-e6486316a28b",
+            "record": "evidence/martlet-final0c-v2-root-contracts-e6486316a28b.json",
+            "rawBytesIncluded": false
+          },
+          {
+            "evidenceRef": "martlet-final0c-v2-preview-contracts-039314995005",
+            "record": "evidence/martlet-final0c-v2-preview-contracts-039314995005.json",
+            "rawBytesIncluded": false
+          },
+          {
+            "evidenceRef": "martlet-final0c-table-contracts-7d610b0c4be5",
+            "record": "evidence/martlet-final0c-table-contracts-7d610b0c4be5.json",
+            "rawBytesIncluded": false
+          }
         ],
-        "rootIndependentPayloadReceipt": "/workspace/work/jekyll-grammar/evidence/wave4/martlet-pr-native-verification.json",
+        "rootIndependentPayloadReceipt": {
+          "evidenceRef": "martlet-pr-native-verification-2be70a4474d3",
+          "record": "evidence/martlet-pr-native-verification-2be70a4474d3.json",
+          "rawBytesIncluded": false
+        },
         "rootPayloadFilesVerified": 567,
         "browsersClosed": true,
         "browserSlotReleased": true,
@@ -85,16 +105,28 @@
         "universalVisualFidelityClaimed": false
       },
       "nativeReceipt": {
-        "artifact": "/workspace/work/jekyll-grammar/evidence/wave4/martlet-pr-native-verification.json",
+        "artifact": {
+          "evidenceRef": "martlet-pr-native-verification-2be70a4474d3",
+          "record": "evidence/martlet-pr-native-verification-2be70a4474d3.json",
+          "rawBytesIncluded": false
+        },
         "sha256": "41a12f119a784368f7b68adbbd45991b592f92d3f372d101facec1810efe21ea"
       },
       "actualHTTPSReceipt": {
-        "artifact": "/workspace/work/jekyll-grammar/acceptance/martlet-final0c-actual-summary.json",
+        "artifact": {
+          "evidenceRef": "martlet-final0c-actual-summary-b7122e38c152",
+          "record": "evidence/martlet-final0c-actual-summary-b7122e38c152.json",
+          "rawBytesIncluded": false
+        },
         "sha256": "96995613a2f3494bbfc69f4add71678eb595aef39628378525db00c50029f702"
       },
       "allSixGenuineGitHubActionsChecksPassed": true,
       "ciReceipt": {
-        "artifact": "/workspace/work/jekyll-grammar/ci/final-restored-github-snapshot.json",
+        "artifact": {
+          "evidenceRef": "final-restored-github-snapshot-b13ae3197ac2",
+          "record": "evidence/final-restored-github-snapshot-b13ae3197ac2.json",
+          "rawBytesIncluded": false
+        },
         "sha256": "d96e941dbbcab8dfd6676b1dcbf4c92efae9074e2da33cea22e21a1e3565fb04"
       },
       "checks": [
@@ -149,7 +181,11 @@
       ],
       "headReadbackAt": "2026-11-03T22:34:14.443Z",
       "nativeAndProductionReadback": {
-        "artifact": "/workspace/work/jekyll-grammar/ci/final-restored-native-production-snapshot.json",
+        "artifact": {
+          "evidenceRef": "final-restored-native-production-snapshot-3fae8b2b9fe4",
+          "record": "evidence/final-restored-native-production-snapshot-3fae8b2b9fe4.json",
+          "rawBytesIncluded": false
+        },
         "sha256": "5fbc70213a7f396156484e95a25fe964fcd1f6a9e63037bf7f265ed13a1aa147"
       },
       "firefoxTiming": {
@@ -158,7 +194,11 @@
         "deadlineSeconds": 900,
         "marginSeconds": 61.0,
         "receipt": {
-          "artifact": "/workspace/work/jekyll-grammar/ci/browser-budget-evidence.json",
+          "artifact": {
+            "evidenceRef": "browser-budget-evidence-f45d66d5ec76",
+            "record": "evidence/browser-budget-evidence-f45d66d5ec76.json",
+            "rawBytesIncluded": false
+          },
           "sha256": "b72b0c046db5f81a81c022bc800ddee19e4524656d5214b2e593048dc17f4c7b"
         }
       }
@@ -235,17 +275,45 @@
         "actualNativeHorizontalScrolls": 38,
         "exactNativeCSVAndDraftQueryBaseCases": 2,
         "rawReports": [
-          "/workspace/work/jekyll-grammar/acceptance/krigsvold-https-final983dee5-all50-chromium/report.json",
-          "/workspace/work/jekyll-grammar/acceptance/krigsvold-https-final983-table-keyboard/report.json",
-          "/workspace/work/jekyll-grammar/acceptance/krigsvold-https-final983-collections-extra/report.json"
+          {
+            "evidenceRef": "report-deaf240cba5c",
+            "record": "evidence/report-deaf240cba5c.json",
+            "rawBytesIncluded": false
+          },
+          {
+            "evidenceRef": "report-e3221dc4dbea",
+            "record": "evidence/report-e3221dc4dbea.json",
+            "rawBytesIncluded": false
+          },
+          {
+            "evidenceRef": "report-e8b0176fa873",
+            "record": "evidence/report-e8b0176fa873.json",
+            "rawBytesIncluded": false
+          }
         ],
         "all50FinalPairSemanticsRootSubpathPassed": true,
         "finalPairStaticReceipts": [
-          "/workspace/work/jekyll-grammar/acceptance/final-pair-v2-root-contracts.json",
-          "/workspace/work/jekyll-grammar/acceptance/final-pair-v2-preview-contracts.json",
-          "/workspace/work/jekyll-grammar/acceptance/final-pair-table-contracts.json"
+          {
+            "evidenceRef": "final-pair-v2-root-contracts-1c0969650463",
+            "record": "evidence/final-pair-v2-root-contracts-1c0969650463.json",
+            "rawBytesIncluded": false
+          },
+          {
+            "evidenceRef": "final-pair-v2-preview-contracts-3e74d617235b",
+            "record": "evidence/final-pair-v2-preview-contracts-3e74d617235b.json",
+            "rawBytesIncluded": false
+          },
+          {
+            "evidenceRef": "final-pair-table-contracts-1b4c1d8a4530",
+            "record": "evidence/final-pair-table-contracts-1b4c1d8a4530.json",
+            "rawBytesIncluded": false
+          }
         ],
-        "rootIndependentPayloadReceipt": "/workspace/work/jekyll-grammar/evidence/wave4/krigsvold-pr-native-verification.json",
+        "rootIndependentPayloadReceipt": {
+          "evidenceRef": "krigsvold-pr-native-verification-215279467a20",
+          "record": "evidence/krigsvold-pr-native-verification-215279467a20.json",
+          "rawBytesIncluded": false
+        },
         "rootPayloadFilesVerified": 561,
         "browsersClosed": true,
         "browserSlotReleased": true,
@@ -254,16 +322,28 @@
         "universalVisualFidelityClaimed": false
       },
       "nativeReceipt": {
-        "artifact": "/workspace/work/jekyll-grammar/evidence/wave4/krigsvold-pr-native-verification.json",
+        "artifact": {
+          "evidenceRef": "krigsvold-pr-native-verification-215279467a20",
+          "record": "evidence/krigsvold-pr-native-verification-215279467a20.json",
+          "rawBytesIncluded": false
+        },
         "sha256": "311ddb5c27d6a452210076bc89f2732bbb0e43aa33eafb386b848f38774b022b"
       },
       "actualHTTPSReceipt": {
-        "artifact": "/workspace/work/jekyll-grammar/acceptance/krigsvold-final983-actual-summary.json",
+        "artifact": {
+          "evidenceRef": "krigsvold-final983-actual-summary-3659f814abcd",
+          "record": "evidence/krigsvold-final983-actual-summary-3659f814abcd.json",
+          "rawBytesIncluded": false
+        },
         "sha256": "89bba823a81b7a47d4c777f914e75e74c5720031ebd0f76190ace6e090e3676b"
       },
       "allSixGenuineGitHubActionsChecksPassed": true,
       "ciReceipt": {
-        "artifact": "/workspace/work/jekyll-grammar/ci/final-restored-github-snapshot.json",
+        "artifact": {
+          "evidenceRef": "final-restored-github-snapshot-b13ae3197ac2",
+          "record": "evidence/final-restored-github-snapshot-b13ae3197ac2.json",
+          "rawBytesIncluded": false
+        },
         "sha256": "d96e941dbbcab8dfd6676b1dcbf4c92efae9074e2da33cea22e21a1e3565fb04"
       },
       "checks": [
@@ -318,7 +398,11 @@
       ],
       "headReadbackAt": "2026-11-03T22:34:14.443Z",
       "nativeAndProductionReadback": {
-        "artifact": "/workspace/work/jekyll-grammar/ci/final-restored-native-production-snapshot.json",
+        "artifact": {
+          "evidenceRef": "final-restored-native-production-snapshot-3fae8b2b9fe4",
+          "record": "evidence/final-restored-native-production-snapshot-3fae8b2b9fe4.json",
+          "rawBytesIncluded": false
+        },
         "sha256": "5fbc70213a7f396156484e95a25fe964fcd1f6a9e63037bf7f265ed13a1aa147"
       },
       "firefoxTiming": {
@@ -327,7 +411,11 @@
         "deadlineSeconds": 900,
         "marginSeconds": 278.0,
         "receipt": {
-          "artifact": "/workspace/work/jekyll-grammar/ci/browser-budget-evidence.json",
+          "artifact": {
+            "evidenceRef": "browser-budget-evidence-f45d66d5ec76",
+            "record": "evidence/browser-budget-evidence-f45d66d5ec76.json",
+            "rawBytesIncluded": false
+          },
           "sha256": "b72b0c046db5f81a81c022bc800ddee19e4524656d5214b2e593048dc17f4c7b"
         }
       }
@@ -359,13 +447,33 @@
     "all50FrozenSemanticsBothFamiliesBothBasesPassed": true,
     "nativeTableContractsChecked": 52,
     "familyReceipts": {
-      "martlet": "/workspace/work/jekyll-grammar/acceptance/martlet-final0c-actual-summary.json",
-      "krigsvold": "/workspace/work/jekyll-grammar/acceptance/krigsvold-final983-actual-summary.json"
+      "martlet": {
+        "evidenceRef": "martlet-final0c-actual-summary-b7122e38c152",
+        "record": "evidence/martlet-final0c-actual-summary-b7122e38c152.json",
+        "rawBytesIncluded": false
+      },
+      "krigsvold": {
+        "evidenceRef": "krigsvold-final983-actual-summary-3659f814abcd",
+        "record": "evidence/krigsvold-final983-actual-summary-3659f814abcd.json",
+        "rawBytesIncluded": false
+      }
     },
     "finalPairStaticReceipts": [
-      "/workspace/work/jekyll-grammar/acceptance/final-pair-v2-root-contracts.json",
-      "/workspace/work/jekyll-grammar/acceptance/final-pair-v2-preview-contracts.json",
-      "/workspace/work/jekyll-grammar/acceptance/final-pair-table-contracts.json"
+      {
+        "evidenceRef": "final-pair-v2-root-contracts-1c0969650463",
+        "record": "evidence/final-pair-v2-root-contracts-1c0969650463.json",
+        "rawBytesIncluded": false
+      },
+      {
+        "evidenceRef": "final-pair-v2-preview-contracts-3e74d617235b",
+        "record": "evidence/final-pair-v2-preview-contracts-3e74d617235b.json",
+        "rawBytesIncluded": false
+      },
+      {
+        "evidenceRef": "final-pair-table-contracts-1b4c1d8a4530",
+        "record": "evidence/final-pair-table-contracts-1b4c1d8a4530.json",
+        "rawBytesIncluded": false
+      }
     ],
     "allBrowserProcessesClosed": true,
     "manualAssistiveTechnologyClaimed": false,
@@ -384,11 +492,19 @@
     "fixtureSha256": "4795e34b2eaea8fa506cca6d7679e93f38c6019cea704834ae736ef2064afd37",
     "receipts": [
       {
-        "artifact": "/workspace/work/jekyll-grammar/acceptance/final-pair-v2-root-contracts.json",
+        "artifact": {
+          "evidenceRef": "final-pair-v2-root-contracts-1c0969650463",
+          "record": "evidence/final-pair-v2-root-contracts-1c0969650463.json",
+          "rawBytesIncluded": false
+        },
         "sha256": "a241bebe04d44b148833f76fed2efbe59277578b07e3c7565dce0dac8cff1682"
       },
       {
-        "artifact": "/workspace/work/jekyll-grammar/acceptance/final-pair-v2-preview-contracts.json",
+        "artifact": {
+          "evidenceRef": "final-pair-v2-preview-contracts-3e74d617235b",
+          "record": "evidence/final-pair-v2-preview-contracts-3e74d617235b.json",
+          "rawBytesIncluded": false
+        },
         "sha256": "a102d8a5cf3af024a6a0c7519d9097a018da15e4e456066dfa8a64c9a1db1d0f"
       }
     ],
@@ -398,14 +514,22 @@
     "status": "passed",
     "tablesChecked": 52,
     "receipt": {
-      "artifact": "/workspace/work/jekyll-grammar/acceptance/final-pair-table-contracts.json",
+      "artifact": {
+        "evidenceRef": "final-pair-table-contracts-1b4c1d8a4530",
+        "record": "evidence/final-pair-table-contracts-1b4c1d8a4530.json",
+        "rawBytesIncluded": false
+      },
       "sha256": "5e5898d8d8a343068cfc54f95efe6d677c11e71be06fca38429e143a111203fb"
     }
   },
   "protectedSourceReview": {
     "status": "passed",
     "receipt": {
-      "artifact": "/workspace/work/jekyll-grammar/evidence/wave4-protected-security-review.json",
+      "artifact": {
+        "evidenceRef": "wave4-protected-security-review-941674907322",
+        "record": "evidence/wave4-protected-security-review-941674907322.json",
+        "rawBytesIncluded": false
+      },
       "sha256": "75b870616ace39954b352c3a66fc15731ab304331442710fa1c45baf67ac00d4"
     },
     "protected": "Fixture/data, art, fonts, JS controllers, canonical shell, source archive/deployment/publication authority and dependencies preserved; explicitly appended host/family CSS is separately reviewed."
@@ -416,11 +540,19 @@
     "normalAndStrictMainFramesPerFamily": 405,
     "fullPageDetailFramesPerFamily": 12,
     "receipt": {
-      "artifact": "/workspace/work/jekyll-grammar/visual/final-after-index.json",
+      "artifact": {
+        "evidenceRef": "final-after-index-5c09e2074977",
+        "record": "evidence/final-after-index-5c09e2074977.json",
+        "rawBytesIncluded": false
+      },
       "sha256": "f2623024491a62aa3a5742198d951dd63f48e993efdfa2538b559a3b0206fb47"
     },
     "bindings": {
-      "artifact": "/workspace/work/jekyll-grammar/visual/expected-final-after.json",
+      "artifact": {
+        "evidenceRef": "expected-final-after-de8970749178",
+        "record": "evidence/expected-final-after-de8970749178.json",
+        "rawBytesIncluded": false
+      },
       "sha256": "82c5b43f37e2755210afd23dca15e1cb881bfd728b04b1199d02a61e5e13da9e"
     },
     "manualVisualReview": "Pending separate source-bound all50 review receipt; capture completion alone is not visual acceptance."
@@ -457,9 +589,14 @@
     "assertionsSkippedOrWeakened": false,
     "serverRequiredStatusCheckEnforcementClaimed": false,
     "branchMetadata": {
-      "artifact": "/workspace/work/jekyll-grammar/ci/final-restored-branch-metadata.json",
+      "artifact": {
+        "evidenceRef": "final-restored-branch-metadata-3df59afeb00d",
+        "record": "evidence/final-restored-branch-metadata-3df59afeb00d.json",
+        "rawBytesIncluded": false
+      },
       "sha256": "5e3a12471c71c7fc00fa8d00aefba7208115e500f1aa4f848f397f2b5866700c"
     },
     "integrationGuard": "Coordinator explicitly verifies exact PR head, all six genuine successful check identities, genuine native preview and source/payload/visual acceptance before ordinary develop merge. Current develop metadata does not show server-enforced required checks."
-  }
+  },
+  "portableEvidenceRegistry": "evidence-registry.json"
 }

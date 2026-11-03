@@ -1,0 +1,17 @@
+{
+  "id": "expected-final-after-de8970749178",
+  "record": "evidence/expected-final-after-de8970749178.json",
+  "originalName": "expected-final-after.json",
+  "kind": "file",
+  "rawSha256": "82c5b43f37e2755210afd23dca15e1cb881bfd728b04b1199d02a61e5e13da9e",
+  "rawBytesIncluded": false,
+  "retentionStatus": "preserved-locally-not-bundled",
+  "summaryDocuments": [
+    "final-acceptance.json"
+  ],
+  "sourceBindings": {
+    "martlet": "0c0e0a7452444c41a3876c2f8732c6439c6097b9",
+    "krigsvold": "983dee5d27ad02458baef6edc5a39279e24028ea"
+  },
+  "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository."
+}

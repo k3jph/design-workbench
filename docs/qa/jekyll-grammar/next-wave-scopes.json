@@ -427,5 +427,6 @@
     "Keep no-JS boundary honest; do not introduce backend search or change index data to manufacture a visual result.",
     "Capture populated?q=protocol state at320/768/1440; a blank empty query is insufficient visual evidence."
   ],
-  "documentStatus": "Historical scoped planning/review preserved. Current exact final source, resolved global blockers and acceptance are in final-acceptance.json and README.md."
+  "documentStatus": "Historical scoped planning/review preserved. Current exact final source, resolved global blockers and acceptance are in final-acceptance.json and README.md.",
+  "portableEvidenceRegistry": "evidence-registry.json"
 }

@@ -1,0 +1,16 @@
+{
+  "id": "early-all50-audit-8c54110049bf",
+  "record": "evidence/early-all50-audit-8c54110049bf.json",
+  "originalName": "early-all50-audit.json",
+  "kind": "file",
+  "rawSha256": "20942974865294f2ce3613ac99d6a978deb1c04cf931028cd199b435746bcf34",
+  "rawBytesIncluded": false,
+  "retentionStatus": "preserved-locally-not-bundled",
+  "summaryDocuments": [
+    "disposition.json"
+  ],
+  "sourceBindings": {
+    "sourceCommit": "d025637e1fe4c11d84c691276d6b3652719b9a30"
+  },
+  "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository."
+}

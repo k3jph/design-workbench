@@ -1,0 +1,14 @@
+{
+  "id": "early-paired-behavior-parity-3c4aba25fcf3",
+  "record": "evidence/early-paired-behavior-parity-3c4aba25fcf3.json",
+  "originalName": "early-paired-behavior-parity.json",
+  "kind": "file",
+  "rawSha256": "292e4254a0fc7895f99beac15648e77a911aae7d8d596dff35e4030bbb60a14f",
+  "rawBytesIncluded": false,
+  "retentionStatus": "preserved-locally-not-bundled",
+  "summaryDocuments": [
+    "wave1-acceptance.json"
+  ],
+  "sourceBindings": {},
+  "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository."
+}

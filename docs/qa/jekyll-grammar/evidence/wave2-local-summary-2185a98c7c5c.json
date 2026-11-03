@@ -1,0 +1,17 @@
+{
+  "id": "wave2-local-summary-2185a98c7c5c",
+  "record": "evidence/wave2-local-summary-2185a98c7c5c.json",
+  "originalName": "wave2-local-summary.json",
+  "kind": "file",
+  "rawSha256": "3c13f03d579e31c51468132d1712065d0b21aef65e7be18ea58a58ca646ee7ad",
+  "rawBytesIncluded": false,
+  "retentionStatus": "preserved-locally-not-bundled",
+  "summaryDocuments": [
+    "wave2-local-review.json"
+  ],
+  "sourceBindings": {
+    "martlet": "434b8543dbc5ee07abfebe78a5fc0f8ce13ed637",
+    "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
+  },
+  "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository."
+}

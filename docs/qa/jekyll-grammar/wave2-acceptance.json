@@ -66,11 +66,19 @@
         }
       },
       "nativeSourceReceipt": {
-        "artifact": "/workspace/work/jekyll-grammar/evidence/wave2/martlet-source.json",
+        "artifact": {
+          "evidenceRef": "martlet-source-f590faf81a53",
+          "record": "evidence/martlet-source-f590faf81a53.json",
+          "rawBytesIncluded": false
+        },
         "sha256": "b59e73d7eaad8574014e8752ff685d700c79aa0bcc8d40085bbabf2ecc5e352e"
       },
       "visualReceipt": {
-        "artifact": "/workspace/work/jekyll-grammar/visual/wave2-hosted/martlet-0e507e424a78/review.json",
+        "artifact": {
+          "evidenceRef": "review-1cf0d2177c78",
+          "record": "evidence/review-1cf0d2177c78.json",
+          "rawBytesIncluded": false
+        },
         "sha256": "d33311d04893fd26e99b6d33d2849f7b0d514ce732a707b59dbdb051e206de64"
       },
       "actualVisualCases": 88,
@@ -130,11 +138,19 @@
         }
       },
       "nativeSourceReceipt": {
-        "artifact": "/workspace/work/jekyll-grammar/evidence/wave2/krigsvold-source.json",
+        "artifact": {
+          "evidenceRef": "krigsvold-source-d419f60b3d4e",
+          "record": "evidence/krigsvold-source-d419f60b3d4e.json",
+          "rawBytesIncluded": false
+        },
         "sha256": "f2d19b5bb66fe1959834bdcf23ea24468a8e23d8064237c4f66491142bd9d55d"
       },
       "visualReceipt": {
-        "artifact": "/workspace/work/jekyll-grammar/visual/wave2-hosted/krigsvold-45a4166d5bbb/review.json",
+        "artifact": {
+          "evidenceRef": "review-5289d67a4ffa",
+          "record": "evidence/review-5289d67a4ffa.json",
+          "rawBytesIncluded": false
+        },
         "sha256": "730fdee831caf1ecb6f38101b2b19f330115b54cdd86c3815edac25b5efa3146"
       },
       "actualVisualCases": 88,
@@ -152,11 +168,19 @@
     }
   },
   "actualHttpsReceipt": {
-    "artifact": "/workspace/work/jekyll-grammar/acceptance/wave2-actual-https-summary.json",
+    "artifact": {
+      "evidenceRef": "wave2-actual-https-summary-5aad4223eb40",
+      "record": "evidence/wave2-actual-https-summary-5aad4223eb40.json",
+      "rawBytesIncluded": false
+    },
     "sha256": "f0c134047766ffb3fbf5c4f87f6014ab6d4dd118eb364312b6c54fa037b694e5"
   },
   "premergeGates": {
-    "artifact": "/workspace/work/jekyll-grammar/evidence/wave2/premerge-gates.json",
+    "artifact": {
+      "evidenceRef": "premerge-gates-043a1ad48a8b",
+      "record": "evidence/premerge-gates-043a1ad48a8b.json",
+      "rawBytesIncluded": false
+    },
     "sha256": "c342e7a774f1357256a3fe7111628a8ac3f1361d4e121bcb54c031753529d6b2"
   },
   "protectedSourceReview": "wave2-protected-security-review.json",
@@ -165,5 +189,6 @@
   "manualAssistiveTechnologyClaimed": false,
   "independentBuildIdentityAttestationClaimed": false,
   "productionPromotionPerformed": false,
-  "pixelMethod": "Measurements use original actual captures, not resized/compressed portable contact-sheet pixels. Initial offscreen samples were not passes; native-scroll supplemental capture resolves coverage."
+  "pixelMethod": "Measurements use original actual captures, not resized/compressed portable contact-sheet pixels. Initial offscreen samples were not passes; native-scroll supplemental capture resolves coverage.",
+  "portableEvidenceRegistry": "evidence-registry.json"
 }

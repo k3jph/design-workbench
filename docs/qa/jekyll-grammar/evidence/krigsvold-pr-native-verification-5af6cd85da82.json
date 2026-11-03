@@ -1,0 +1,14 @@
+{
+  "id": "krigsvold-pr-native-verification-5af6cd85da82",
+  "record": "evidence/krigsvold-pr-native-verification-5af6cd85da82.json",
+  "originalName": "krigsvold-pr-native-verification.json",
+  "kind": "file",
+  "rawSha256": "54b1ecbcee32e807cca9f169896311f78021af10de657047b2b386d8d07d01d7",
+  "rawBytesIncluded": false,
+  "retentionStatus": "preserved-locally-not-bundled",
+  "summaryDocuments": [
+    "wave1-acceptance.json"
+  ],
+  "sourceBindings": {},
+  "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository."
+}

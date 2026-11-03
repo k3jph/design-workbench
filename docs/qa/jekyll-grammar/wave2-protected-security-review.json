@@ -121,5 +121,6 @@
       ],
       "securityVerdict": "No blocking finding"
     }
-  ]
+  ],
+  "portableEvidenceRegistry": "evidence-registry.json"
 }

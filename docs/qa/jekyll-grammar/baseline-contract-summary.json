@@ -1,10 +1,22 @@
 {
   "schemaVersion": 2,
-  "sourceArtifact": "/workspace/work/jekyll-grammar/acceptance/baseline-contracts-v2.json",
+  "sourceArtifact": {
+    "evidenceRef": "baseline-contracts-v2-59ca588a3e6d",
+    "record": "evidence/baseline-contracts-v2-59ca588a3e6d.json",
+    "rawBytesIncluded": false
+  },
   "sha256": "f6078aaaeb483f48271e4ecbdcaa736d6d2d862c8c3320ef8a27b2a8a608cd0e",
-  "toolArtifact": "/workspace/work/jekyll-grammar/acceptance/contracts-v2.py",
+  "toolArtifact": {
+    "evidenceRef": "contracts-v2-c76b45d75031",
+    "record": "evidence/contracts-v2-c76b45d75031.json",
+    "rawBytesIncluded": false
+  },
   "toolSha256": "a1f0310ff67abeedc73a7a4b4eb494a421b5ace22ceb7e235a831b1cb3c9d628",
-  "provenanceArtifact": "/workspace/work/jekyll-grammar/acceptance/semantic-v2-provenance.json",
+  "provenanceArtifact": {
+    "evidenceRef": "semantic-v2-provenance-5a91208ee67e",
+    "record": "evidence/semantic-v2-provenance-5a91208ee67e.json",
+    "rawBytesIncluded": false
+  },
   "provenanceSha256": "cc4c8fc76ffa5d3bbaa37e3203ec1b4751f43d53244ce96fb39ed9e21bdac227",
   "observation": "Frozen v2 pinned baseline rendered meaning/semantics; final acceptance recorded separately",
   "normalization": "Preserve real inline whitespace and code spans; normalize whitespace runs and add block separators. Table headers/cells and machine-readable time/native capabilities included.",
@@ -1178,5 +1190,6 @@
         }
       ]
     }
-  }
+  },
+  "portableEvidenceRegistry": "evidence-registry.json"
 }

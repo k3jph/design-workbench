@@ -1,0 +1,18 @@
+{
+  "id": "baseline-contracts-v2-59ca588a3e6d",
+  "record": "evidence/baseline-contracts-v2-59ca588a3e6d.json",
+  "originalName": "baseline-contracts-v2.json",
+  "kind": "file",
+  "rawSha256": "f6078aaaeb483f48271e4ecbdcaa736d6d2d862c8c3320ef8a27b2a8a608cd0e",
+  "rawBytesIncluded": false,
+  "retentionStatus": "preserved-locally-not-bundled",
+  "summaryDocuments": [
+    "baseline-contract-summary.json",
+    "disposition.json"
+  ],
+  "sourceBindings": {
+    "martlet": "ac0a64c6cd5167ccbdf96bb20e46e5d547a49a5d",
+    "krigsvold": "35c7f54aa9418286956f8aa50c2a3dd141006ab2"
+  },
+  "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository."
+}

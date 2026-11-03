@@ -1,0 +1,14 @@
+{
+  "id": "contracts-v2-c76b45d75031",
+  "record": "evidence/contracts-v2-c76b45d75031.json",
+  "originalName": "contracts-v2.py",
+  "kind": "file",
+  "rawSha256": "a1f0310ff67abeedc73a7a4b4eb494a421b5ace22ceb7e235a831b1cb3c9d628",
+  "rawBytesIncluded": false,
+  "retentionStatus": "preserved-locally-not-bundled",
+  "summaryDocuments": [
+    "baseline-contract-summary.json"
+  ],
+  "sourceBindings": {},
+  "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository."
+}

@@ -1,0 +1,14 @@
+{
+  "id": "semantic-v2-provenance-5a91208ee67e",
+  "record": "evidence/semantic-v2-provenance-5a91208ee67e.json",
+  "originalName": "semantic-v2-provenance.json",
+  "kind": "file",
+  "rawSha256": "cc4c8fc76ffa5d3bbaa37e3203ec1b4751f43d53244ce96fb39ed9e21bdac227",
+  "rawBytesIncluded": false,
+  "retentionStatus": "preserved-locally-not-bundled",
+  "summaryDocuments": [
+    "baseline-contract-summary.json"
+  ],
+  "sourceBindings": {},
+  "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository."
+}
