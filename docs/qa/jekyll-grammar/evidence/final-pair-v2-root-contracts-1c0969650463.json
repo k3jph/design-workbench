@@ -1,0 +1,18 @@
+{
+  "id": "final-pair-v2-root-contracts-1c0969650463",
+  "record": "evidence/final-pair-v2-root-contracts-1c0969650463.json",
+  "originalName": "final-pair-v2-root-contracts.json",
+  "kind": "file",
+  "rawSha256": "a241bebe04d44b148833f76fed2efbe59277578b07e3c7565dce0dac8cff1682",
+  "rawBytesIncluded": false,
+  "retentionStatus": "preserved-locally-not-bundled",
+  "summaryDocuments": [
+    "final-acceptance.json"
+  ],
+  "sourceBindings": {
+    "martlet": "0c0e0a7452444c41a3876c2f8732c6439c6097b9",
+    "krigsvold": "983dee5d27ad02458baef6edc5a39279e24028ea",
+    "sourceCommit": "983dee5d27ad02458baef6edc5a39279e24028ea"
+  },
+  "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository."
+}

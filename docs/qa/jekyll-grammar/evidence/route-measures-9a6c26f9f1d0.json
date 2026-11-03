@@ -1,0 +1,17 @@
+{
+  "id": "route-measures-9a6c26f9f1d0",
+  "record": "evidence/route-measures-9a6c26f9f1d0.json",
+  "originalName": "route-measures.json",
+  "kind": "file",
+  "rawSha256": "5c2092d1ce1fb7edcac01fd16173d1d198f04729794e21116a08a56a7d9d4a3d",
+  "rawBytesIncluded": false,
+  "retentionStatus": "preserved-locally-not-bundled",
+  "summaryDocuments": [
+    "disposition.json"
+  ],
+  "sourceBindings": {
+    "martlet": "434b8543dbc5ee07abfebe78a5fc0f8ce13ed637",
+    "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
+  },
+  "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository."
+}

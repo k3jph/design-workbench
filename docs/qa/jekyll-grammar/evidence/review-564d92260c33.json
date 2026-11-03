@@ -1,0 +1,17 @@
+{
+  "id": "review-564d92260c33",
+  "record": "evidence/review-564d92260c33.json",
+  "originalName": "review.json",
+  "kind": "file",
+  "rawSha256": "b75337720476cfdfb9be5f6dcc13827f6cc332c24e8c0ee7c397f7137db63b67",
+  "rawBytesIncluded": false,
+  "retentionStatus": "preserved-locally-not-bundled",
+  "summaryDocuments": [
+    "disposition.json"
+  ],
+  "sourceBindings": {
+    "martlet": "434b8543dbc5ee07abfebe78a5fc0f8ce13ed637",
+    "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
+  },
+  "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository."
+}

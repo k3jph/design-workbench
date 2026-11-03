@@ -1,0 +1,14 @@
+{
+  "id": "premerge-gates-043a1ad48a8b",
+  "record": "evidence/premerge-gates-043a1ad48a8b.json",
+  "originalName": "premerge-gates.json",
+  "kind": "file",
+  "rawSha256": "c342e7a774f1357256a3fe7111628a8ac3f1361d4e121bcb54c031753529d6b2",
+  "rawBytesIncluded": false,
+  "retentionStatus": "preserved-locally-not-bundled",
+  "summaryDocuments": [
+    "wave2-acceptance.json"
+  ],
+  "sourceBindings": {},
+  "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository."
+}

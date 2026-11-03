@@ -1,0 +1,351 @@
+{
+  "sourceManifestArtifact": {
+    "evidenceRef": "retrieval-cfafcc61a1d9",
+    "record": "evidence/retrieval-cfafcc61a1d9.json",
+    "rawBytesIncluded": false
+  },
+  "sourceManifestSha256": "e9e43630e84d624d6709ac3ce1e3799f8762c6bee6c1317b6a595d6fed654f74",
+  "sources": [
+    {
+      "name": "martlet-origin",
+      "requestedUrl": "https://jameshoward.us/",
+      "finalUrl": "https://jameshoward.us/",
+      "status": 200,
+      "retrievedAt": "2026-11-03T20:04:59.545378+00:00",
+      "sha256": "61fa43271a9708e34351d07bb1220b233ecc9142cef82136cf1f7a53e32ce1c4",
+      "stylesheets": [
+        {
+          "url": "https://jameshoward.us/assets/css/ukraine.css?v=20260927-1",
+          "sha256": "a03001c4a38a717bd26255b04f903eb9cbf28a74c72061b14974ed599d299bd8"
+        },
+        {
+          "url": "https://jameshoward.us/_astro/BaseLayout.Vddcf7CK.css",
+          "sha256": "f9c96297195b4101f63fdd8ecfab6afec507d6bbb6eae507a73783a199631cd2"
+        },
+        {
+          "url": "https://jameshoward.us/_astro/index.CXznNZ2K.css",
+          "sha256": "7e16c2ef253a70b2550d1b2998cebdc87c52e368f6618c6f8b73db964ab0d9cc"
+        },
+        {
+          "url": "https://jameshoward.us/assets/css/gdpr-cookie.css",
+          "sha256": "b9d448b7c06658161e7e79ab35412404d41dd3f9bedc6361d55be48ca81502d6"
+        }
+      ],
+      "authorityRole": "canonical-origin",
+      "savedHtmlDigestIndependentlyVerified": true
+    },
+    {
+      "name": "krigsvold-origin",
+      "requestedUrl": "https://krigsvold.org/",
+      "finalUrl": "https://krigsvold.org/",
+      "status": 200,
+      "retrievedAt": "2026-11-03T20:04:59.651906+00:00",
+      "sha256": "4e1f9a4b83efa8249521045e5b490ba78d8765ea216914a26dc8c8d0c8903803",
+      "stylesheets": [
+        {
+          "url": "https://krigsvold.org/assets/css/material-kit.css?v=3.0.4",
+          "sha256": "f279a09d5875efb5688153e084b7857873d4697229b1ab68421fadb3718f4976"
+        },
+        {
+          "url": "https://krigsvold.org/assets/css/gdpr-cookie.css",
+          "sha256": "5040adc3fe893f93b7cf7b170502117c52384ed1655e081b6c9bddda9d19c26f"
+        },
+        {
+          "url": "https://krigsvold.org/_astro/Page.7T515cpF.css",
+          "sha256": "2d2203baeaf2013ba46f30d26d81f0946f99508e8ee8895cab15da77ee5631f8"
+        }
+      ],
+      "authorityRole": "canonical-origin",
+      "savedHtmlDigestIndependentlyVerified": true
+    },
+    {
+      "name": "martlet-react",
+      "requestedUrl": "https://react.martletdesign.dev/",
+      "finalUrl": "https://react.martletdesign.dev/",
+      "status": 200,
+      "retrievedAt": "2026-11-03T20:05:00.771568+00:00",
+      "sha256": "9b120afffbc5bd1e7caf124fe76077d42748eaa325a059b409d929f20f4d4c88",
+      "stylesheets": [
+        {
+          "url": "https://react.martletdesign.dev/assets/index-DLDsFAYc.css",
+          "sha256": "fa527ea7199f1ce396a13f6f0b7572cec245b2a58672f930f536e7690edd40ae"
+        }
+      ],
+      "authorityRole": "supporting React precedent; not origin authority or an implementation API claim",
+      "savedHtmlDigestIndependentlyVerified": true
+    },
+    {
+      "name": "krigsvold-react",
+      "requestedUrl": "https://react.krigsvolddesign.dev/",
+      "finalUrl": "https://react.krigsvolddesign.dev/",
+      "status": 200,
+      "retrievedAt": "2026-11-03T20:05:00.790327+00:00",
+      "sha256": "ba1e0abacaf74199063f64320a1ea6d737f437df52fe24b18791de2c1e86d37f",
+      "stylesheets": [
+        {
+          "url": "https://react.krigsvolddesign.dev/assets/index-BAIYZBXM.css",
+          "sha256": "e20afc3b2cd9978121ef37ebb86770556240d88115ef371750ecc987815c795d"
+        }
+      ],
+      "authorityRole": "supporting React precedent; not origin authority or an implementation API claim",
+      "savedHtmlDigestIndependentlyVerified": true
+    }
+  ],
+  "baselineCapture": {
+    "provenanceArtifact": {
+      "evidenceRef": "baseline-provenance-f4ee11320a48",
+      "record": "evidence/baseline-provenance-f4ee11320a48.json",
+      "rawBytesIncluded": false
+    },
+    "provenanceSha256": "865d9738d655f15d8e71c010c69b7aa4591260b0bfd6b24cc9dedbcc94750513",
+    "reviewArtifact": {
+      "evidenceRef": "review-e711b8290537",
+      "record": "evidence/review-e711b8290537.json",
+      "rawBytesIncluded": false
+    },
+    "reviewSha256": "54800a8c55c71a7eff5165c3fb176012c85d328bea859af1dd4de0eb1c45c5e0",
+    "caseCount": 72,
+    "normalScreenshots": 72,
+    "maskedDiagnosticScreenshots": 72,
+    "routes": [
+      "changelog",
+      "collection",
+      "dashboard-administration",
+      "dashboard-components",
+      "documentation",
+      "faq"
+    ],
+    "widths": [
+      320,
+      768,
+      1440
+    ],
+    "appearances": [
+      "dark",
+      "light"
+    ],
+    "observedPageErrors": 0,
+    "observedOverflowCases": [],
+    "acceptanceScope": "baseline captures only, not universal visual acceptance or final compliance"
+  },
+  "sourceCssObservations": [
+    {
+      "family": "martlet",
+      "kind": "observed-declarations-not-computed-cascade",
+      "selectorsOrTokens": [
+        "--martlet-reading-width:48rem",
+        "--martlet-font-serif:\"Cambo\"",
+        "--martlet-font-sans:\"Lato\"",
+        ".reading-container{--container-width:var(--reading-width)}"
+      ],
+      "judgment": "Bounded source reading has a distinct measure; current Jekyll index-plus-body wrapper must be measured separately. A rootstylesheet token alone does not prove every deeper document layout."
+    },
+    {
+      "family": "krigsvold",
+      "kind": "observed-declarations-not-computed-cascade",
+      "selectorsOrTokens": [
+        "--krigsvold-reading-width:760px",
+        "--krigsvold-font-serif:\"Roboto Slab\"",
+        "--krigsvold-font-sans:\"Roboto\"",
+        ".news-listing grid-template-columns:minmax(200px,34%) 1fr",
+        ".krigsvold-faq summary:after plus/open-minus cues"
+      ],
+      "judgment": "Source has purposeful news regions and native disclosure states; these are precedents for task translations, not universal tables or a compulsory register."
+    }
+  ],
+  "renderedSourceEvidence": {
+    "artifact": {
+      "evidenceRef": "rendered-source-review-ae74b252abfe",
+      "record": "evidence/rendered-source-review-ae74b252abfe.json",
+      "rawBytesIncluded": false
+    },
+    "sha256": "57b5406c8dbae2455a0706ae624126b58bd817d1a9943f6b425614391e3e9fa9",
+    "rows": [
+      {
+        "name": "martlet-home",
+        "requestedUrl": "https://jameshoward.us/",
+        "finalUrl": "https://jameshoward.us/",
+        "status": 200,
+        "observedAt": "2026-11-03T20:08:49.161Z",
+        "renderedDomSha256": "5cf4012d93c65aa4802e4c21de33079d8447713d4cfee1352a847cde47ccc0ad",
+        "paragraphFont": "Cambo, Georgia, serif",
+        "observedPageErrors": []
+      },
+      {
+        "name": "martlet-blog",
+        "requestedUrl": "https://jameshoward.us/blog/",
+        "finalUrl": "https://jameshoward.us/blog/",
+        "status": 200,
+        "observedAt": "2026-11-03T20:08:50.735Z",
+        "renderedDomSha256": "17a0e7cd8964d2c2ea2f4a185528035d1fa6a2ae9c9432a023dd2daddf6a0ae7",
+        "paragraphFont": "Cambo, Georgia, serif",
+        "observedPageErrors": []
+      },
+      {
+        "name": "krigsvold-home",
+        "requestedUrl": "https://krigsvold.org/",
+        "finalUrl": "https://krigsvold.org/",
+        "status": 200,
+        "observedAt": "2026-11-03T20:08:52.273Z",
+        "renderedDomSha256": "7129a29cc8022793288e584e7b053f108ba502bce91e8c4514e16fac4cad0f76",
+        "paragraphFont": "Roboto, Arial, sans-serif",
+        "observedPageErrors": []
+      },
+      {
+        "name": "krigsvold-faq",
+        "requestedUrl": "https://krigsvold.org/faq/",
+        "finalUrl": "https://krigsvold.org/faq/",
+        "status": 200,
+        "observedAt": "2026-11-03T20:08:53.696Z",
+        "renderedDomSha256": "0d06d5395d94e9e8bf2e9b836abaa02c621ab2dd3cae24e9d330a1b4146d7ce9",
+        "paragraphFont": "Roboto, Arial, sans-serif",
+        "observedPageErrors": []
+      },
+      {
+        "name": "krigsvold-news",
+        "requestedUrl": "https://krigsvold.org/news/",
+        "finalUrl": "https://krigsvold.org/news/",
+        "status": 200,
+        "observedAt": "2026-11-03T20:08:54.985Z",
+        "renderedDomSha256": "d483e926b5434409fde6e91aef7f44e3e07073f55f1527327bde0832aeed08c0",
+        "paragraphFont": "Roboto, Arial, sans-serif",
+        "observedPageErrors": []
+      },
+      {
+        "name": "martlet-react",
+        "requestedUrl": "https://react.martletdesign.dev/",
+        "finalUrl": "https://react.martletdesign.dev/",
+        "status": 200,
+        "observedAt": "2026-11-03T20:08:56.586Z",
+        "renderedDomSha256": "511eccbd0a5f0394327fd176e7bd43b48541af0f19ad9c56a2192e27c8138ef9",
+        "paragraphFont": "Lato, \"Helvetica Neue\", Arial, sans-serif",
+        "observedPageErrors": []
+      },
+      {
+        "name": "krigsvold-react",
+        "requestedUrl": "https://react.krigsvolddesign.dev/",
+        "finalUrl": "https://react.krigsvolddesign.dev/",
+        "status": 200,
+        "observedAt": "2026-11-03T20:08:57.846Z",
+        "renderedDomSha256": "3b02301c77ea2e2446d4e7fc5a2f4abe07ef2f5ef8e785f4088436fab31d4bc8",
+        "paragraphFont": "Roboto, Arial, sans-serif",
+        "observedPageErrors": []
+      }
+    ],
+    "observations": [
+      {
+        "source": "martlet-blog",
+        "classification": "origin-observed",
+        "detail": "Lead story with secondary annotation and subsequent card grid demonstrates that Martlet is not restricted to a prose-only page."
+      },
+      {
+        "source": "krigsvold-news",
+        "classification": "origin-observed",
+        "detail": "Actual news-listing DOM has an image column beside a date/title/summary/action column. Measured grid columns are291.031px and 532.969px in an 856px region at 1440px. This supports purposeful regional alignment; it is not an observed release/version-field register."
+      },
+      {
+        "source": "krigsvold-faq",
+        "classification": "origin-observed",
+        "detail": "Topic headings and native FAQ disclosures with plus/minus cues are present. New Jekyll desktop topic-label columns are a contextual translation, not a literal copy of that FAQ."
+      },
+      {
+        "source": "martlet-react/krigsvold-react",
+        "classification": "supporting-framework-precedent",
+        "detail": "Independently viewed diagnostic captures: Martlet groups annotated component links beside categories; Krigsvold aligns Component/Purpose table fields. They support independent organization but do not authorize inventing22records in the four-section Jekyll fixture."
+      }
+    ]
+  },
+  "supplementalReadingOriginEvidence": {
+    "artifact": {
+      "evidenceRef": "rendered-reading-source-review-ee91664eaee2",
+      "record": "evidence/rendered-reading-source-review-ee91664eaee2.json",
+      "rawBytesIncluded": false
+    },
+    "sha256": "3cf199bb0c0facce46813f12518de51bb1239567f748d2b5b6c15071516905f2",
+    "rows": [
+      {
+        "name": "martlet-article",
+        "requestedUrl": "https://jameshoward.us/2026/10/25/what-the-hell-does-temperature-actually-measure/",
+        "finalUrl": "https://jameshoward.us/2026/10/25/what-the-hell-does-temperature-actually-measure/",
+        "status": 200,
+        "observedAt": "2026-11-03T20:44:55.050Z",
+        "renderedDomSha256": "9339d584ee344c0a5f7328dd979ebae4ee211923c5f68ef061a8770c89af4cc9"
+      },
+      {
+        "name": "krigsvold-method",
+        "requestedUrl": "https://krigsvold.org/mission-and-method/",
+        "finalUrl": "https://krigsvold.org/mission-and-method/",
+        "status": 200,
+        "observedAt": "2026-11-03T20:44:56.621Z",
+        "renderedDomSha256": "1655565a847d6a27e771300ba919cc382a7bbddb04e1a5ec79053cfed3ad5617"
+      }
+    ],
+    "observations": [
+      "Actual JPH temperature-article body is768px withCambo17.2px; its inline TOC usesa p.eyebrow UIlabel, not a Cambo content heading. The candidate caption-role correction is separately tracked.",
+      "Actual Krigsvold mission/method body is856px withRoboto16px at this viewport/pagegenre. The profile760px token is not a universal reading-width mandate."
+    ],
+    "classification": "Observed source objects; geometry is contextual and must not become a universal forced frame."
+  },
+  "completeInitialBaselineScreenshotIntegrity": {
+    "sourceIndex": {
+      "evidenceRef": "baseline-all50-index-78ebb0fc6c89-0e7fde71e9c4",
+      "record": "evidence/baseline-all50-index-78ebb0fc6c89-0e7fde71e9c4.json",
+      "rawBytesIncluded": false
+    },
+    "sha256": "78ebb0fc6c8928b70b3e6dff8358ecfab71aea27b6cc6a5e61c4f63395a13320",
+    "sourceCommits": {
+      "martlet": "ac0a64c6cd5167ccbdf96bb20e46e5d547a49a5d",
+      "krigsvold": "35c7f54aa9418286956f8aa50c2a3dd141006ab2"
+    },
+    "statePairsVerified": 404,
+    "normalPngDigestsVerified": 404,
+    "strictMainMaskedPngDigestsVerified": 404,
+    "canonicalRouteCount": 50,
+    "widths": [
+      320,
+      1440
+    ],
+    "appearances": [
+      "light",
+      "dark"
+    ],
+    "extraSearchWidth": 768,
+    "scope": "Immutable initial baseline captures only. This is not final-after capture or global visual/behavior/accessibility acceptance.",
+    "originalFullCapturesPreservedLocally": true,
+    "binaryCopyIntoRepositoryPerformed": false,
+    "sourceIndexProducerPath": {
+      "evidenceRef": "baseline-all50-screenshot-index-59a2e5555acb",
+      "record": "evidence/baseline-all50-screenshot-index-59a2e5555acb.json",
+      "rawBytesIncluded": false
+    },
+    "searchStatesIndependentlyMatchedToRawReports": 12,
+    "sourceIndexIsImmutableCopiedBytes": true,
+    "reviewScope": "All50 initial baselines and12 observed populated-search states are hashed; final-after captures, visual decisions and global accessibility remain separate."
+  },
+  "finalActualSourceBindings": {
+    "martlet": {
+      "sourceCommit": "0c0e0a7452444c41a3876c2f8732c6439c6097b9",
+      "sourceTree": "6d1810333cbdc157f2b9de56a9906fbe97536736",
+      "artifactSha256": "50764c3bfa049ff9a9886e04c9f7c38afc739d79137240cd51ad47b2104ad770",
+      "sourceZipSha256": "86f3eb4937a42d418823056b3071a72cf084fdf2c396fe0b1321e17e5360cf4d",
+      "origin": "https://pr-feature-gram-558d733a5d-martletdesign-jekyll-reference.k3jph.workers.dev"
+    },
+    "krigsvold": {
+      "sourceCommit": "983dee5d27ad02458baef6edc5a39279e24028ea",
+      "sourceTree": "a019a52c5ba2edddcbc6a8f4582527da0dfe4ab2",
+      "artifactSha256": "a8fb65593f80613e28e8cdc6e87476ae1f229c19e144f33089a47fd630c41963",
+      "sourceZipSha256": "21aafa55d853ecfea950835f9e0291b98b05c22edb01d6f8ae51816f343d5a90",
+      "origin": "https://pr-feature-gram-558d733a5d-krigsvolddesign-jekyll-reference.k3jph.workers.dev"
+    }
+  },
+  "finalActualCapture": {
+    "artifact": {
+      "evidenceRef": "final-after-index-5c09e2074977",
+      "record": "evidence/final-after-index-5c09e2074977.json",
+      "rawBytesIncluded": false
+    },
+    "sha256": "f2623024491a62aa3a5742198d951dd63f48e993efdfa2538b559a3b0206fb47"
+  },
+  "finalAuthorityRule": "Canonical origins primary; React differentiated catalogs are supporting evidence only. All contextual translations and retained anatomy are independently reasoned in disposition.json.",
+  "portableEvidenceRegistry": "evidence-registry.json"
+}

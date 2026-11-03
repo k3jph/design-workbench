@@ -1,0 +1,14 @@
+{
+  "id": "readme-45b6e84b39de",
+  "record": "evidence/readme-45b6e84b39de.json",
+  "originalName": "README.md",
+  "kind": "file",
+  "rawSha256": "93d4465d616a8418971992008ec25f0e0af6cbc467d87a8561d977b4e8eff098",
+  "rawBytesIncluded": false,
+  "retentionStatus": "preserved-locally-not-bundled",
+  "summaryDocuments": [
+    "disposition.json"
+  ],
+  "sourceBindings": {},
+  "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository."
+}

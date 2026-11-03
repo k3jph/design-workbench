@@ -1,0 +1,14 @@
+{
+  "id": "final-restored-github-snapshot-b13ae3197ac2",
+  "record": "evidence/final-restored-github-snapshot-b13ae3197ac2.json",
+  "originalName": "final-restored-github-snapshot.json",
+  "kind": "file",
+  "rawSha256": "d96e941dbbcab8dfd6676b1dcbf4c92efae9074e2da33cea22e21a1e3565fb04",
+  "rawBytesIncluded": false,
+  "retentionStatus": "preserved-locally-not-bundled",
+  "summaryDocuments": [
+    "final-acceptance.json"
+  ],
+  "sourceBindings": {},
+  "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository."
+}

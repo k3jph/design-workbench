@@ -1,0 +1,14 @@
+{
+  "id": "wave4-protected-security-review-941674907322",
+  "record": "evidence/wave4-protected-security-review-941674907322.json",
+  "originalName": "wave4-protected-security-review.json",
+  "kind": "file",
+  "rawSha256": "75b870616ace39954b352c3a66fc15731ab304331442710fa1c45baf67ac00d4",
+  "rawBytesIncluded": false,
+  "retentionStatus": "preserved-locally-not-bundled",
+  "summaryDocuments": [
+    "final-acceptance.json"
+  ],
+  "sourceBindings": {},
+  "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository."
+}

@@ -1,0 +1,14 @@
+{
+  "id": "rendered-source-review-ae74b252abfe",
+  "record": "evidence/rendered-source-review-ae74b252abfe.json",
+  "originalName": "rendered-source-review.json",
+  "kind": "file",
+  "rawSha256": "57b5406c8dbae2455a0706ae624126b58bd817d1a9943f6b425614391e3e9fa9",
+  "rawBytesIncluded": false,
+  "retentionStatus": "preserved-locally-not-bundled",
+  "summaryDocuments": [
+    "source-and-capture-evidence.json"
+  ],
+  "sourceBindings": {},
+  "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository."
+}

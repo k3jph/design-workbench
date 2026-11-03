@@ -1,0 +1,14 @@
+{
+  "id": "final-develop-merge-source-proof-d0c941a669bd",
+  "record": "evidence/final-develop-merge-source-proof-d0c941a669bd.json",
+  "originalName": "final-develop-merge-source-proof.json",
+  "kind": "file",
+  "rawSha256": "ad1e3f7b9a0dc04ef16e4a7a5e6a449fb004e7879aeb55b6304974c6204837f0",
+  "rawBytesIncluded": false,
+  "retentionStatus": "preserved-locally-not-bundled",
+  "summaryDocuments": [
+    "final-acceptance.json"
+  ],
+  "sourceBindings": {},
+  "note": "Hash identifies original raw evidence retained outside this repository. Linked portable summaries contain observations and public source/CI/preview URLs."
+}

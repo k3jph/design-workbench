@@ -1,0 +1,1211 @@
+{
+  "schemaVersion": 1,
+  "sourceWorkbenchCommit": "5c8dbbd0b6312fca4140e41dab42c232bdd9119d",
+  "scope": "Portable source-bound all50 implementation and exact technical/visual/integration summaries; each completion gate remains explicit in final-acceptance.json.",
+  "rawArtifactsBundled": false,
+  "imagesCopied": false,
+  "records": {
+    "baseline-contracts-v2-59ca588a3e6d": {
+      "id": "baseline-contracts-v2-59ca588a3e6d",
+      "record": "evidence/baseline-contracts-v2-59ca588a3e6d.json",
+      "originalName": "baseline-contracts-v2.json",
+      "kind": "file",
+      "rawSha256": "f6078aaaeb483f48271e4ecbdcaa736d6d2d862c8c3320ef8a27b2a8a608cd0e",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "baseline-contract-summary.json",
+        "disposition.json"
+      ],
+      "sourceBindings": {
+        "martlet": "ac0a64c6cd5167ccbdf96bb20e46e5d547a49a5d",
+        "krigsvold": "35c7f54aa9418286956f8aa50c2a3dd141006ab2"
+      },
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "9e48dffe954940603436cdffe8e49f5e2bbd077095120d13c8e653f2c672a371"
+    },
+    "contracts-v2-c76b45d75031": {
+      "id": "contracts-v2-c76b45d75031",
+      "record": "evidence/contracts-v2-c76b45d75031.json",
+      "originalName": "contracts-v2.py",
+      "kind": "file",
+      "rawSha256": "a1f0310ff67abeedc73a7a4b4eb494a421b5ace22ceb7e235a831b1cb3c9d628",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "baseline-contract-summary.json"
+      ],
+      "sourceBindings": {},
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "8eeb112d00574ba8c44fdd895f754774d4e48825f3117c49bba8b2f6e3a699d1"
+    },
+    "semantic-v2-provenance-5a91208ee67e": {
+      "id": "semantic-v2-provenance-5a91208ee67e",
+      "record": "evidence/semantic-v2-provenance-5a91208ee67e.json",
+      "originalName": "semantic-v2-provenance.json",
+      "kind": "file",
+      "rawSha256": "cc4c8fc76ffa5d3bbaa37e3203ec1b4751f43d53244ce96fb39ed9e21bdac227",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "baseline-contract-summary.json"
+      ],
+      "sourceBindings": {},
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "ca85754bd7280467010e0ff91a071b02238fdeac9b4e9b3dc7960057c92570ad"
+    },
+    "wave1-final-root-contracts-e879fa8f0fb6": {
+      "id": "wave1-final-root-contracts-e879fa8f0fb6",
+      "record": "evidence/wave1-final-root-contracts-e879fa8f0fb6.json",
+      "originalName": "wave1-final-root-contracts.json",
+      "kind": "file",
+      "rawSha256": "85a3a37f7eaf65aaba1978795d9cd24162ec866a73cea5f6727e3f7dbb2e129e",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "disposition.json"
+      ],
+      "sourceBindings": {
+        "martlet": "d025637e1fe4c11d84c691276d6b3652719b9a30",
+        "krigsvold": "8dfcca47b5c312e125ac320643c442b1a00f8490"
+      },
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "63c367a912b7bfa7672a1f3f915eb0d29129570692b4709f7d777a63f48582fc"
+    },
+    "wave1-final-preview-contracts-d27a53d95e8d": {
+      "id": "wave1-final-preview-contracts-d27a53d95e8d",
+      "record": "evidence/wave1-final-preview-contracts-d27a53d95e8d.json",
+      "originalName": "wave1-final-preview-contracts.json",
+      "kind": "file",
+      "rawSha256": "ae4c752cae9d9647f4ea4e5de7987704a29a985fe4bdcde6be11ca7f5d1cb4ca",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "disposition.json"
+      ],
+      "sourceBindings": {
+        "martlet": "d025637e1fe4c11d84c691276d6b3652719b9a30",
+        "krigsvold": "8dfcca47b5c312e125ac320643c442b1a00f8490"
+      },
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "995e01ee7002ea7e1a86de7980a33e6e0059a8f3f23d0fcb0137ba59c2a778d2"
+    },
+    "review-564d92260c33": {
+      "id": "review-564d92260c33",
+      "record": "evidence/review-564d92260c33.json",
+      "originalName": "review.json",
+      "kind": "file",
+      "rawSha256": "b75337720476cfdfb9be5f6dcc13827f6cc332c24e8c0ee7c397f7137db63b67",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "disposition.json"
+      ],
+      "sourceBindings": {
+        "martlet": "434b8543dbc5ee07abfebe78a5fc0f8ce13ed637",
+        "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
+      },
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "fbecf381678b09b9903db9e1a8ac21438e4d18a429e5727c80718e94cd827292"
+    },
+    "route-measures-9a6c26f9f1d0": {
+      "id": "route-measures-9a6c26f9f1d0",
+      "record": "evidence/route-measures-9a6c26f9f1d0.json",
+      "originalName": "route-measures.json",
+      "kind": "file",
+      "rawSha256": "5c2092d1ce1fb7edcac01fd16173d1d198f04729794e21116a08a56a7d9d4a3d",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "disposition.json"
+      ],
+      "sourceBindings": {
+        "martlet": "434b8543dbc5ee07abfebe78a5fc0f8ce13ed637",
+        "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
+      },
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "8168e02fc2f5016f5b982ad9946358e5702327fd838c6954b83c293331b97664"
+    },
+    "document-widths-6f77881c9d73": {
+      "id": "document-widths-6f77881c9d73",
+      "record": "evidence/document-widths-6f77881c9d73.json",
+      "originalName": "document-widths.json",
+      "kind": "file",
+      "rawSha256": "c3867d5ade7626ba3b1ac544eb2506c0a35f0d51041c76ca6adb4580466602e9",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "disposition.json"
+      ],
+      "sourceBindings": {},
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "0afb8b6ab3a5c41476f9d07459d04961c4a5adf2224047063ee75e0cd94b1cbf"
+    },
+    "readme-45b6e84b39de": {
+      "id": "readme-45b6e84b39de",
+      "record": "evidence/readme-45b6e84b39de.json",
+      "originalName": "README.md",
+      "kind": "file",
+      "rawSha256": "93d4465d616a8418971992008ec25f0e0af6cbc467d87a8561d977b4e8eff098",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "disposition.json"
+      ],
+      "sourceBindings": {},
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "9d5b88717e7f516d212a1f059f43aa328de2cd56f55e4c08e768708f23ed0781"
+    },
+    "report-39b18e25da0b": {
+      "id": "report-39b18e25da0b",
+      "record": "evidence/report-39b18e25da0b.json",
+      "originalName": "report.json",
+      "kind": "file",
+      "rawSha256": "2f803bdac9662de2cc99275e5f2e7704b34944ab9348d0df28f6961f1c0e7bc0",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "disposition.json"
+      ],
+      "sourceBindings": {
+        "sourceCommit": "d025637e1fe4c11d84c691276d6b3652719b9a30"
+      },
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "74f4f84aba7188cad451e0765c412d3dd1ee7dd3017f05f8aa019b810c044a6a"
+    },
+    "early-all50-audit-8c54110049bf": {
+      "id": "early-all50-audit-8c54110049bf",
+      "record": "evidence/early-all50-audit-8c54110049bf.json",
+      "originalName": "early-all50-audit.json",
+      "kind": "file",
+      "rawSha256": "20942974865294f2ce3613ac99d6a978deb1c04cf931028cd199b435746bcf34",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "disposition.json"
+      ],
+      "sourceBindings": {
+        "sourceCommit": "d025637e1fe4c11d84c691276d6b3652719b9a30"
+      },
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "fa0a535c67d80e8721ef591203c38892dfa6c81f3fef80a16b0eedc86dcc8189"
+    },
+    "template-bf79ceeddb58": {
+      "id": "template-bf79ceeddb58",
+      "record": "evidence/template-bf79ceeddb58.json",
+      "originalName": "template.zip",
+      "kind": "file",
+      "rawSha256": "9f736850fb4ae8edd64aa85862d419a261f60c4a22484c5ecda79d735c1bf269",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "disposition.json"
+      ],
+      "sourceBindings": {
+        "sourceCommit": "d025637e1fe4c11d84c691276d6b3652719b9a30"
+      },
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "5c5638396068da89bdc187c58084ed4a256ae41082e213cb75ba19cfdcd4a83f"
+    },
+    "template-22b8df58a9af": {
+      "id": "template-22b8df58a9af",
+      "record": "evidence/template-22b8df58a9af.json",
+      "originalName": "template.zip",
+      "kind": "file",
+      "rawSha256": "43c96fb97484cf434341ca95c0ba20d290cb117273d24f1542b52b77ece307d9",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "disposition.json"
+      ],
+      "sourceBindings": {
+        "sourceCommit": "8dfcca47b5c312e125ac320643c442b1a00f8490"
+      },
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "bf8aa65dd5bbf76a61a874c99edc64c4fc4a8f7eff1c14edb9527766d26dacb0"
+    },
+    "krigsvold-wave1-local-verification-5c31e1da554b": {
+      "id": "krigsvold-wave1-local-verification-5c31e1da554b",
+      "record": "evidence/krigsvold-wave1-local-verification-5c31e1da554b.json",
+      "originalName": "krigsvold-wave1-local-verification.json",
+      "kind": "file",
+      "rawSha256": "bf3cc9844ac75b8b35152aba5082f95998e173a6785ee3ed4a73a0c09dd00c5b",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "disposition.json"
+      ],
+      "sourceBindings": {
+        "sourceCommit": "8dfcca47b5c312e125ac320643c442b1a00f8490"
+      },
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "3902fb1aee08998450303f9f9d2c56a1eb4496db754cac1f5e12950d156a574c"
+    },
+    "final-after-index-5c09e2074977": {
+      "id": "final-after-index-5c09e2074977",
+      "record": "evidence/final-after-index-5c09e2074977.json",
+      "originalName": "final-after-index.json",
+      "kind": "file",
+      "rawSha256": "f2623024491a62aa3a5742198d951dd63f48e993efdfa2538b559a3b0206fb47",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "disposition.json",
+        "final-acceptance.json",
+        "source-and-capture-evidence.json"
+      ],
+      "sourceBindings": {
+        "martlet": "0c0e0a7452444c41a3876c2f8732c6439c6097b9",
+        "krigsvold": "983dee5d27ad02458baef6edc5a39279e24028ea"
+      },
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "b336bc33eab715c05a8dc6e4e0d8821310ebcfcd2e38891e901b4f716a4b6a5c"
+    },
+    "martlet-w3-header320-text200-53d6e7d0572e": {
+      "id": "martlet-w3-header320-text200-53d6e7d0572e",
+      "record": "evidence/martlet-w3-header320-text200-53d6e7d0572e.json",
+      "originalName": "martlet-w3-header320-text200.png",
+      "kind": "file",
+      "rawSha256": "9022c06410eb711e77e283acca35865d269701ae7b8403c0ac061a199c72ac28",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "disposition.json"
+      ],
+      "sourceBindings": {
+        "sourceCommit": "378fe1701aa996678c4d33acbbbe33e36a2abc54"
+      },
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "2ac2af31b055ce402f9e0e8a0091f5feb9ba6eaf6770340ede79e4d9f3900d73"
+    },
+    "report-5a091b3b0b85": {
+      "id": "report-5a091b3b0b85",
+      "record": "evidence/report-5a091b3b0b85.json",
+      "originalName": "report.json",
+      "kind": "file",
+      "rawSha256": "ca21092fc2b006760b3ab9d600dba16de7d824c597b53d5350afef1264ad959b",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "final-acceptance.json"
+      ],
+      "sourceBindings": {
+        "sourceCommit": "0c0e0a7452444c41a3876c2f8732c6439c6097b9"
+      },
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "e56554104de822ca4be3c2cda3d8de819ea8f0b7f593264c43313b0d039234f6"
+    },
+    "martlet-final0c-v2-root-contracts-e6486316a28b": {
+      "id": "martlet-final0c-v2-root-contracts-e6486316a28b",
+      "record": "evidence/martlet-final0c-v2-root-contracts-e6486316a28b.json",
+      "originalName": "martlet-final0c-v2-root-contracts.json",
+      "kind": "file",
+      "rawSha256": "7ec21036ef63b2e367eadc7add66f32370660d5415157f1ca26ca4f561ad04c0",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "final-acceptance.json"
+      ],
+      "sourceBindings": {
+        "martlet": "0c0e0a7452444c41a3876c2f8732c6439c6097b9",
+        "krigsvold": "154ce8d7f2c5b86230f5e1860e8cb274c8ae2237",
+        "sourceCommit": "0c0e0a7452444c41a3876c2f8732c6439c6097b9"
+      },
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "e742a7bef48950d7201550575fb406e24f74743fb77a988f2816e31f93f70590"
+    },
+    "martlet-final0c-v2-preview-contracts-039314995005": {
+      "id": "martlet-final0c-v2-preview-contracts-039314995005",
+      "record": "evidence/martlet-final0c-v2-preview-contracts-039314995005.json",
+      "originalName": "martlet-final0c-v2-preview-contracts.json",
+      "kind": "file",
+      "rawSha256": "fa3ddc8ada6b0bf9b2bfd2fe8bce54de1aa2b8f30fc452c3fabd039aaf9f4369",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "final-acceptance.json"
+      ],
+      "sourceBindings": {
+        "martlet": "0c0e0a7452444c41a3876c2f8732c6439c6097b9",
+        "krigsvold": "154ce8d7f2c5b86230f5e1860e8cb274c8ae2237",
+        "sourceCommit": "0c0e0a7452444c41a3876c2f8732c6439c6097b9"
+      },
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "8ab283fb1e1b2e37aaea0b25874839abbae64180a792f9da628c13349561484a"
+    },
+    "martlet-final0c-table-contracts-7d610b0c4be5": {
+      "id": "martlet-final0c-table-contracts-7d610b0c4be5",
+      "record": "evidence/martlet-final0c-table-contracts-7d610b0c4be5.json",
+      "originalName": "martlet-final0c-table-contracts.json",
+      "kind": "file",
+      "rawSha256": "5e5898d8d8a343068cfc54f95efe6d677c11e71be06fca38429e143a111203fb",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "final-acceptance.json"
+      ],
+      "sourceBindings": {
+        "sourceCommit": "0c0e0a7452444c41a3876c2f8732c6439c6097b9"
+      },
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "166588ebd27e2196cdad577653b413128bbfa7fb65389bbd35ade0d22cdeedf0"
+    },
+    "martlet-pr-native-verification-2be70a4474d3": {
+      "id": "martlet-pr-native-verification-2be70a4474d3",
+      "record": "evidence/martlet-pr-native-verification-2be70a4474d3.json",
+      "originalName": "martlet-pr-native-verification.json",
+      "kind": "file",
+      "rawSha256": "41a12f119a784368f7b68adbbd45991b592f92d3f372d101facec1810efe21ea",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "final-acceptance.json"
+      ],
+      "sourceBindings": {
+        "sourceCommit": "0c0e0a7452444c41a3876c2f8732c6439c6097b9"
+      },
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "882a01885b51d65a12daacf3b562fe0f0d0894cc038923e4254d535943a01665"
+    },
+    "martlet-final0c-actual-summary-b7122e38c152": {
+      "id": "martlet-final0c-actual-summary-b7122e38c152",
+      "record": "evidence/martlet-final0c-actual-summary-b7122e38c152.json",
+      "originalName": "martlet-final0c-actual-summary.json",
+      "kind": "file",
+      "rawSha256": "96995613a2f3494bbfc69f4add71678eb595aef39628378525db00c50029f702",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "final-acceptance.json"
+      ],
+      "sourceBindings": {},
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "0abe058595815db9308be26b04376871c16eb7deb168c6efdf374a90ce8a9783"
+    },
+    "final-restored-github-snapshot-b13ae3197ac2": {
+      "id": "final-restored-github-snapshot-b13ae3197ac2",
+      "record": "evidence/final-restored-github-snapshot-b13ae3197ac2.json",
+      "originalName": "final-restored-github-snapshot.json",
+      "kind": "file",
+      "rawSha256": "d96e941dbbcab8dfd6676b1dcbf4c92efae9074e2da33cea22e21a1e3565fb04",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "final-acceptance.json"
+      ],
+      "sourceBindings": {},
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "a72e9f22c504a0e4677fb6168b05d730339212482c0eeb5ff29ce9dcb61408ab"
+    },
+    "final-restored-native-production-snapshot-3fae8b2b9fe4": {
+      "id": "final-restored-native-production-snapshot-3fae8b2b9fe4",
+      "record": "evidence/final-restored-native-production-snapshot-3fae8b2b9fe4.json",
+      "originalName": "final-restored-native-production-snapshot.json",
+      "kind": "file",
+      "rawSha256": "5fbc70213a7f396156484e95a25fe964fcd1f6a9e63037bf7f265ed13a1aa147",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "final-acceptance.json"
+      ],
+      "sourceBindings": {},
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "b20c254e147cdba720b0a7b514feaaacc573d3b69abcc6c54b43b89c55d7adb2"
+    },
+    "browser-budget-evidence-f45d66d5ec76": {
+      "id": "browser-budget-evidence-f45d66d5ec76",
+      "record": "evidence/browser-budget-evidence-f45d66d5ec76.json",
+      "originalName": "browser-budget-evidence.json",
+      "kind": "file",
+      "rawSha256": "b72b0c046db5f81a81c022bc800ddee19e4524656d5214b2e593048dc17f4c7b",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "final-acceptance.json"
+      ],
+      "sourceBindings": {},
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "c48f30ea6971433c93d09c52488b5755cabcd4574a7c415388d70eadadc2917d"
+    },
+    "report-deaf240cba5c": {
+      "id": "report-deaf240cba5c",
+      "record": "evidence/report-deaf240cba5c.json",
+      "originalName": "report.json",
+      "kind": "file",
+      "rawSha256": "84022248d11311632344444b8e7178270901c3ddcda8cfe2b10671e33f3a69e6",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "final-acceptance.json"
+      ],
+      "sourceBindings": {
+        "sourceCommit": "983dee5d27ad02458baef6edc5a39279e24028ea"
+      },
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "44b50e935096982b6f91f9d372a9a7b4fbe1ecd8ab5414a1322e042eb9cd789d"
+    },
+    "report-e3221dc4dbea": {
+      "id": "report-e3221dc4dbea",
+      "record": "evidence/report-e3221dc4dbea.json",
+      "originalName": "report.json",
+      "kind": "file",
+      "rawSha256": "b697c3182e3184ca0b73e6c48daeb4a463187622dda3e5219adb1dcc17f1d1e2",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "final-acceptance.json"
+      ],
+      "sourceBindings": {
+        "sourceCommit": "983dee5d27ad02458baef6edc5a39279e24028ea"
+      },
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "6fc1629d896bb11b31146c48a06f49609eab23f5b420b6ecd647d4546ea3a604"
+    },
+    "report-e8b0176fa873": {
+      "id": "report-e8b0176fa873",
+      "record": "evidence/report-e8b0176fa873.json",
+      "originalName": "report.json",
+      "kind": "file",
+      "rawSha256": "0d47a15e1dd5b77784b9ecd887c37f5a5cca31125eebb99323f84605348031b2",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "final-acceptance.json"
+      ],
+      "sourceBindings": {
+        "sourceCommit": "983dee5d27ad02458baef6edc5a39279e24028ea"
+      },
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "9d618fd8389da57e59a75548cda434286b58d72ad966888a876d7952f7a73c18"
+    },
+    "final-pair-v2-root-contracts-1c0969650463": {
+      "id": "final-pair-v2-root-contracts-1c0969650463",
+      "record": "evidence/final-pair-v2-root-contracts-1c0969650463.json",
+      "originalName": "final-pair-v2-root-contracts.json",
+      "kind": "file",
+      "rawSha256": "a241bebe04d44b148833f76fed2efbe59277578b07e3c7565dce0dac8cff1682",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "final-acceptance.json"
+      ],
+      "sourceBindings": {
+        "martlet": "0c0e0a7452444c41a3876c2f8732c6439c6097b9",
+        "krigsvold": "983dee5d27ad02458baef6edc5a39279e24028ea",
+        "sourceCommit": "983dee5d27ad02458baef6edc5a39279e24028ea"
+      },
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "014468eab3a85c0a2d519d4d4f96075a255b341e07727e6e2ed4fc1e80597bf2"
+    },
+    "final-pair-v2-preview-contracts-3e74d617235b": {
+      "id": "final-pair-v2-preview-contracts-3e74d617235b",
+      "record": "evidence/final-pair-v2-preview-contracts-3e74d617235b.json",
+      "originalName": "final-pair-v2-preview-contracts.json",
+      "kind": "file",
+      "rawSha256": "a102d8a5cf3af024a6a0c7519d9097a018da15e4e456066dfa8a64c9a1db1d0f",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "final-acceptance.json"
+      ],
+      "sourceBindings": {
+        "martlet": "0c0e0a7452444c41a3876c2f8732c6439c6097b9",
+        "krigsvold": "983dee5d27ad02458baef6edc5a39279e24028ea",
+        "sourceCommit": "983dee5d27ad02458baef6edc5a39279e24028ea"
+      },
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "5e99ca04c6c198ae24a428c030686000391add2dca4d6acd320f9f5e1697f638"
+    },
+    "final-pair-table-contracts-1b4c1d8a4530": {
+      "id": "final-pair-table-contracts-1b4c1d8a4530",
+      "record": "evidence/final-pair-table-contracts-1b4c1d8a4530.json",
+      "originalName": "final-pair-table-contracts.json",
+      "kind": "file",
+      "rawSha256": "5e5898d8d8a343068cfc54f95efe6d677c11e71be06fca38429e143a111203fb",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "final-acceptance.json"
+      ],
+      "sourceBindings": {
+        "sourceCommit": "983dee5d27ad02458baef6edc5a39279e24028ea"
+      },
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "6c7d87aba4b33f1e9c55d356d57f42edb685fdfddf549d870765ac63303cdbc2"
+    },
+    "krigsvold-pr-native-verification-215279467a20": {
+      "id": "krigsvold-pr-native-verification-215279467a20",
+      "record": "evidence/krigsvold-pr-native-verification-215279467a20.json",
+      "originalName": "krigsvold-pr-native-verification.json",
+      "kind": "file",
+      "rawSha256": "311ddb5c27d6a452210076bc89f2732bbb0e43aa33eafb386b848f38774b022b",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "final-acceptance.json"
+      ],
+      "sourceBindings": {
+        "sourceCommit": "983dee5d27ad02458baef6edc5a39279e24028ea"
+      },
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "3a323320327f2d7ca222267e902e21dd016f012290c56aa40777f653f2ccbf3c"
+    },
+    "krigsvold-final983-actual-summary-3659f814abcd": {
+      "id": "krigsvold-final983-actual-summary-3659f814abcd",
+      "record": "evidence/krigsvold-final983-actual-summary-3659f814abcd.json",
+      "originalName": "krigsvold-final983-actual-summary.json",
+      "kind": "file",
+      "rawSha256": "89bba823a81b7a47d4c777f914e75e74c5720031ebd0f76190ace6e090e3676b",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "final-acceptance.json"
+      ],
+      "sourceBindings": {},
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "061647126f89be66a9bf9f9b3e7e90bd2c2073a6d3180fe87d0d01674a1bcaa5"
+    },
+    "wave4-protected-security-review-941674907322": {
+      "id": "wave4-protected-security-review-941674907322",
+      "record": "evidence/wave4-protected-security-review-941674907322.json",
+      "originalName": "wave4-protected-security-review.json",
+      "kind": "file",
+      "rawSha256": "75b870616ace39954b352c3a66fc15731ab304331442710fa1c45baf67ac00d4",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "final-acceptance.json"
+      ],
+      "sourceBindings": {},
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "5294d4b2ccbfba093927624dd83b5136c109a1c2b35e0ed9b3009dc67143df84"
+    },
+    "expected-final-after-de8970749178": {
+      "id": "expected-final-after-de8970749178",
+      "record": "evidence/expected-final-after-de8970749178.json",
+      "originalName": "expected-final-after.json",
+      "kind": "file",
+      "rawSha256": "82c5b43f37e2755210afd23dca15e1cb881bfd728b04b1199d02a61e5e13da9e",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "final-acceptance.json"
+      ],
+      "sourceBindings": {
+        "martlet": "0c0e0a7452444c41a3876c2f8732c6439c6097b9",
+        "krigsvold": "983dee5d27ad02458baef6edc5a39279e24028ea"
+      },
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "35fb39fc42349075e528686878dc0d9d5c85b27e3f5aa12f56675e033f85dede"
+    },
+    "final-restored-branch-metadata-3df59afeb00d": {
+      "id": "final-restored-branch-metadata-3df59afeb00d",
+      "record": "evidence/final-restored-branch-metadata-3df59afeb00d.json",
+      "originalName": "final-restored-branch-metadata.json",
+      "kind": "file",
+      "rawSha256": "5e3a12471c71c7fc00fa8d00aefba7208115e500f1aa4f848f397f2b5866700c",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "final-acceptance.json"
+      ],
+      "sourceBindings": {},
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "866357af5e9125e4dc923f3f0f0ea0c0a8a6f78da8f99098fa7be8a7a52b832a"
+    },
+    "krigsvold-original-native-failure-diagnosis-d0d4075bc625": {
+      "id": "krigsvold-original-native-failure-diagnosis-d0d4075bc625",
+      "record": "evidence/krigsvold-original-native-failure-diagnosis-d0d4075bc625.json",
+      "originalName": "krigsvold-original-native-failure-diagnosis.json",
+      "kind": "file",
+      "rawSha256": "fee7aa35bf837d5c159332b46ce53e5342324bc3d6ca04ebf81b361a405ce430",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "native-failure-history.json"
+      ],
+      "sourceBindings": {},
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "0a4049e9e01f51d3270b035cfd489ae43192597fe7bee2891d9ba0cb762811a7"
+    },
+    "retrieval-cfafcc61a1d9": {
+      "id": "retrieval-cfafcc61a1d9",
+      "record": "evidence/retrieval-cfafcc61a1d9.json",
+      "originalName": "retrieval.json",
+      "kind": "file",
+      "rawSha256": "e9e43630e84d624d6709ac3ce1e3799f8762c6bee6c1317b6a595d6fed654f74",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "source-and-capture-evidence.json"
+      ],
+      "sourceBindings": {},
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "2d06d39d489b4cd6af4c790954038badd1619253b0b8eae96ff856124e759e15"
+    },
+    "baseline-provenance-f4ee11320a48": {
+      "id": "baseline-provenance-f4ee11320a48",
+      "record": "evidence/baseline-provenance-f4ee11320a48.json",
+      "originalName": "baseline-provenance.json",
+      "kind": "file",
+      "rawSha256": "865d9738d655f15d8e71c010c69b7aa4591260b0bfd6b24cc9dedbcc94750513",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "source-and-capture-evidence.json"
+      ],
+      "sourceBindings": {
+        "martlet": "ac0a64c6cd5167ccbdf96bb20e46e5d547a49a5d",
+        "krigsvold": "35c7f54aa9418286956f8aa50c2a3dd141006ab2"
+      },
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "0a3272b49b93a0d6a6c18a54cb811e4f862d4f770b0ae11543d5c2dcf7812e66"
+    },
+    "review-e711b8290537": {
+      "id": "review-e711b8290537",
+      "record": "evidence/review-e711b8290537.json",
+      "originalName": "review.json",
+      "kind": "file",
+      "rawSha256": "54800a8c55c71a7eff5165c3fb176012c85d328bea859af1dd4de0eb1c45c5e0",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "source-and-capture-evidence.json"
+      ],
+      "sourceBindings": {},
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "3c20be5d30f81a115626fb7d3deca5aa58c177fd1a87a42c47ca96dab675566e"
+    },
+    "rendered-source-review-ae74b252abfe": {
+      "id": "rendered-source-review-ae74b252abfe",
+      "record": "evidence/rendered-source-review-ae74b252abfe.json",
+      "originalName": "rendered-source-review.json",
+      "kind": "file",
+      "rawSha256": "57b5406c8dbae2455a0706ae624126b58bd817d1a9943f6b425614391e3e9fa9",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "source-and-capture-evidence.json"
+      ],
+      "sourceBindings": {},
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "3945c56fc5b6371305f09cae97e6ba1806547520d6054ebfda439c942d790ba1"
+    },
+    "rendered-reading-source-review-ee91664eaee2": {
+      "id": "rendered-reading-source-review-ee91664eaee2",
+      "record": "evidence/rendered-reading-source-review-ee91664eaee2.json",
+      "originalName": "rendered-reading-source-review.json",
+      "kind": "file",
+      "rawSha256": "3cf199bb0c0facce46813f12518de51bb1239567f748d2b5b6c15071516905f2",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "source-and-capture-evidence.json"
+      ],
+      "sourceBindings": {},
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "82e4b547d97650595bebe439fd2bf1586ad8c432b046a79e0e4d741049245cc4"
+    },
+    "baseline-all50-index-78ebb0fc6c89-0e7fde71e9c4": {
+      "id": "baseline-all50-index-78ebb0fc6c89-0e7fde71e9c4",
+      "record": "evidence/baseline-all50-index-78ebb0fc6c89-0e7fde71e9c4.json",
+      "originalName": "baseline-all50-index-78ebb0fc6c89.json",
+      "kind": "file",
+      "rawSha256": "78ebb0fc6c8928b70b3e6dff8358ecfab71aea27b6cc6a5e61c4f63395a13320",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "source-and-capture-evidence.json"
+      ],
+      "sourceBindings": {
+        "martlet": "ac0a64c6cd5167ccbdf96bb20e46e5d547a49a5d",
+        "krigsvold": "35c7f54aa9418286956f8aa50c2a3dd141006ab2"
+      },
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "35ea366d539632e93d01fbdd9d5455b6bb80a84d8b5e3a0c7f526e4387797c51"
+    },
+    "baseline-all50-screenshot-index-59a2e5555acb": {
+      "id": "baseline-all50-screenshot-index-59a2e5555acb",
+      "record": "evidence/baseline-all50-screenshot-index-59a2e5555acb.json",
+      "originalName": "baseline-all50-screenshot-index.json",
+      "kind": "file",
+      "rawSha256": "78ebb0fc6c8928b70b3e6dff8358ecfab71aea27b6cc6a5e61c4f63395a13320",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "source-and-capture-evidence.json"
+      ],
+      "sourceBindings": {
+        "martlet": "ac0a64c6cd5167ccbdf96bb20e46e5d547a49a5d",
+        "krigsvold": "35c7f54aa9418286956f8aa50c2a3dd141006ab2"
+      },
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "f3e066ef2f0807f2883804a29cd4c15bed687a2e67da30e7ab6f7b8b666799c2"
+    },
+    "martlet-pr-native-verification-b6e7d43773f2": {
+      "id": "martlet-pr-native-verification-b6e7d43773f2",
+      "record": "evidence/martlet-pr-native-verification-b6e7d43773f2.json",
+      "originalName": "martlet-pr-native-verification.json",
+      "kind": "file",
+      "rawSha256": "e689b49d766c70e6b45f8dbde678c94a6e203201d080633e3dafaa912a00b368",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "wave1-acceptance.json"
+      ],
+      "sourceBindings": {},
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "60669a2808b1ea6f5765ae4c38433bdf866ce3d91626f6609182f7fe43fb4b93"
+    },
+    "review-6f519c76b5db": {
+      "id": "review-6f519c76b5db",
+      "record": "evidence/review-6f519c76b5db.json",
+      "originalName": "review.json",
+      "kind": "file",
+      "rawSha256": "9d15262c1bebae77835a9c08946de5d86856f4cd165816dd7708fc678f2626a8",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "wave1-acceptance.json"
+      ],
+      "sourceBindings": {},
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "e6be9b955c40ff1dcca0eef80d1dc8c8fd7cb0a61141ebab3354092b53a61ecb"
+    },
+    "krigsvold-pr-native-verification-5af6cd85da82": {
+      "id": "krigsvold-pr-native-verification-5af6cd85da82",
+      "record": "evidence/krigsvold-pr-native-verification-5af6cd85da82.json",
+      "originalName": "krigsvold-pr-native-verification.json",
+      "kind": "file",
+      "rawSha256": "54b1ecbcee32e807cca9f169896311f78021af10de657047b2b386d8d07d01d7",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "wave1-acceptance.json"
+      ],
+      "sourceBindings": {},
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "1d0f0e8455a6d2ca008c137a0e1e47d339372ce4dd31002f60408531b0b41b33"
+    },
+    "review-77a3c5b77c93": {
+      "id": "review-77a3c5b77c93",
+      "record": "evidence/review-77a3c5b77c93.json",
+      "originalName": "review.json",
+      "kind": "file",
+      "rawSha256": "ba3cf409f08ddd93b9309a938696f3233c5e301bc630baf8238fe04118a5f04f",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "wave1-acceptance.json"
+      ],
+      "sourceBindings": {},
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "fc7450851f4cccf24c7e5edc7fd66fed403f2fa9e67d17a10bdb6528ae2bb63f"
+    },
+    "wave1-actual-https-summary-3c99a1f2a907": {
+      "id": "wave1-actual-https-summary-3c99a1f2a907",
+      "record": "evidence/wave1-actual-https-summary-3c99a1f2a907.json",
+      "originalName": "wave1-actual-https-summary.json",
+      "kind": "file",
+      "rawSha256": "ff095220f116b08aa8317fcf3f792a3559c2f7ab11cac4a5ac9bfff721dae880",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "wave1-acceptance.json"
+      ],
+      "sourceBindings": {},
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "d1125ed7fbb3ccc575c339cc7c2a4c8c4267539120927ef6686961d6c95b5675"
+    },
+    "wave1-public-2448cf7a563d": {
+      "id": "wave1-public-2448cf7a563d",
+      "record": "evidence/wave1-public-2448cf7a563d.json",
+      "originalName": "wave1-public.json",
+      "kind": "file",
+      "rawSha256": "171215cdc8f8b96b0f4b75854a9584a02880626c64e42a87f21fc8d35be4dda6",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "wave1-acceptance.json"
+      ],
+      "sourceBindings": {},
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "b2b3d0ed0b61ab96159bcea9c4d1f5c1079c06a8f3df76a0b5558fa661feff2d"
+    },
+    "premerge-gates-8ec75de18155": {
+      "id": "premerge-gates-8ec75de18155",
+      "record": "evidence/premerge-gates-8ec75de18155.json",
+      "originalName": "premerge-gates.json",
+      "kind": "file",
+      "rawSha256": "1e5e67a02c8a83b7ce446de257775cd4d148c0ac744476690358a78cd79e1bf6",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "wave1-acceptance.json"
+      ],
+      "sourceBindings": {},
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "bcbee0c6863e419767f5d11b7894ca55d5fc9307c4cb42fedd70d08937e0e37e"
+    },
+    "early-paired-behavior-parity-3c4aba25fcf3": {
+      "id": "early-paired-behavior-parity-3c4aba25fcf3",
+      "record": "evidence/early-paired-behavior-parity-3c4aba25fcf3.json",
+      "originalName": "early-paired-behavior-parity.json",
+      "kind": "file",
+      "rawSha256": "292e4254a0fc7895f99beac15648e77a911aae7d8d596dff35e4030bbb60a14f",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "wave1-acceptance.json"
+      ],
+      "sourceBindings": {},
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "450232f7fc14b7a1d0d69fe1e13fddc4c950651d5e9ee094ca230d8e3489c392"
+    },
+    "wave1-v2-root-contracts-b6c96371fec1": {
+      "id": "wave1-v2-root-contracts-b6c96371fec1",
+      "record": "evidence/wave1-v2-root-contracts-b6c96371fec1.json",
+      "originalName": "wave1-v2-root-contracts.json",
+      "kind": "file",
+      "rawSha256": "c4ab7544977c8f4ecfd3a69186825f7796ee970ce8f833696578bfe296709ed5",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "wave1-acceptance.json"
+      ],
+      "sourceBindings": {
+        "martlet": "cff96a8586ab5300a38c68847cdbdee8c6aa5dab",
+        "krigsvold": "8dfcca47b5c312e125ac320643c442b1a00f8490"
+      },
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "0c9ed3bbc36dadd757a0e9cf96a3047ad8d124d06d53716a00c392753797714a"
+    },
+    "wave1-v2-preview-contracts-d595309d37be": {
+      "id": "wave1-v2-preview-contracts-d595309d37be",
+      "record": "evidence/wave1-v2-preview-contracts-d595309d37be.json",
+      "originalName": "wave1-v2-preview-contracts.json",
+      "kind": "file",
+      "rawSha256": "1ad803f93ff9e22ad9a843f168bedbd94f8c3c2f6da5707f27324c074147fff0",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "wave1-acceptance.json"
+      ],
+      "sourceBindings": {
+        "martlet": "cff96a8586ab5300a38c68847cdbdee8c6aa5dab",
+        "krigsvold": "8dfcca47b5c312e125ac320643c442b1a00f8490"
+      },
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "12f32678d890475609287051f0d6d6d0b560901d2ed211e79146d75ff3401051"
+    },
+    "martlet-source-f590faf81a53": {
+      "id": "martlet-source-f590faf81a53",
+      "record": "evidence/martlet-source-f590faf81a53.json",
+      "originalName": "martlet-source.json",
+      "kind": "file",
+      "rawSha256": "b59e73d7eaad8574014e8752ff685d700c79aa0bcc8d40085bbabf2ecc5e352e",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "wave2-acceptance.json"
+      ],
+      "sourceBindings": {},
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "c73c35eae138373a9760864439f06661128ef7f7e1c02f99b0c97c249a1abd6c"
+    },
+    "review-1cf0d2177c78": {
+      "id": "review-1cf0d2177c78",
+      "record": "evidence/review-1cf0d2177c78.json",
+      "originalName": "review.json",
+      "kind": "file",
+      "rawSha256": "d33311d04893fd26e99b6d33d2849f7b0d514ce732a707b59dbdb051e206de64",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "wave2-acceptance.json"
+      ],
+      "sourceBindings": {},
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "e5d455d67c60b38f3fe9b660b585eddd106f61a024d09a48f25df106b7d3d93e"
+    },
+    "krigsvold-source-d419f60b3d4e": {
+      "id": "krigsvold-source-d419f60b3d4e",
+      "record": "evidence/krigsvold-source-d419f60b3d4e.json",
+      "originalName": "krigsvold-source.json",
+      "kind": "file",
+      "rawSha256": "f2d19b5bb66fe1959834bdcf23ea24468a8e23d8064237c4f66491142bd9d55d",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "wave2-acceptance.json"
+      ],
+      "sourceBindings": {},
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "3f73192fd76e297d634a0c8d913b1e0d040178969ada973f1faca21d9bf0e462"
+    },
+    "review-5289d67a4ffa": {
+      "id": "review-5289d67a4ffa",
+      "record": "evidence/review-5289d67a4ffa.json",
+      "originalName": "review.json",
+      "kind": "file",
+      "rawSha256": "730fdee831caf1ecb6f38101b2b19f330115b54cdd86c3815edac25b5efa3146",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "wave2-acceptance.json"
+      ],
+      "sourceBindings": {},
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "41ad8184d441e05cbfd14f49efef52c98b511b575f0172ff53698b550ecfaf57"
+    },
+    "wave2-actual-https-summary-5aad4223eb40": {
+      "id": "wave2-actual-https-summary-5aad4223eb40",
+      "record": "evidence/wave2-actual-https-summary-5aad4223eb40.json",
+      "originalName": "wave2-actual-https-summary.json",
+      "kind": "file",
+      "rawSha256": "f0c134047766ffb3fbf5c4f87f6014ab6d4dd118eb364312b6c54fa037b694e5",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "wave2-acceptance.json"
+      ],
+      "sourceBindings": {},
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "375aef8d0fd605fd04d5e45fe9865d41d2ebf761f9d0ae75c5c1eae9b26b00be"
+    },
+    "premerge-gates-043a1ad48a8b": {
+      "id": "premerge-gates-043a1ad48a8b",
+      "record": "evidence/premerge-gates-043a1ad48a8b.json",
+      "originalName": "premerge-gates.json",
+      "kind": "file",
+      "rawSha256": "c342e7a774f1357256a3fe7111628a8ac3f1361d4e121bcb54c031753529d6b2",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "wave2-acceptance.json"
+      ],
+      "sourceBindings": {},
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "aed89a5f8b1b1fdba6606df3ad9ca7206b36ad034d6f5878959bf3c7b915320d"
+    },
+    "wave2-local-summary-2185a98c7c5c": {
+      "id": "wave2-local-summary-2185a98c7c5c",
+      "record": "evidence/wave2-local-summary-2185a98c7c5c.json",
+      "originalName": "wave2-local-summary.json",
+      "kind": "file",
+      "rawSha256": "3c13f03d579e31c51468132d1712065d0b21aef65e7be18ea58a58ca646ee7ad",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "wave2-local-review.json"
+      ],
+      "sourceBindings": {
+        "martlet": "434b8543dbc5ee07abfebe78a5fc0f8ce13ed637",
+        "krigsvold": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
+      },
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "ef50432d963fc10e8c19aa7d668f609701d5498076cb2afce1a8318c61a4bf3d"
+    },
+    "report-e58709ee1cbf": {
+      "id": "report-e58709ee1cbf",
+      "record": "evidence/report-e58709ee1cbf.json",
+      "originalName": "report.json",
+      "kind": "file",
+      "rawSha256": "4377857e3c1db1452bc6416ae6895db1f07b9557b6132dd32333018af946c710",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "wave2-local-review.json"
+      ],
+      "sourceBindings": {
+        "sourceCommit": "434b8543dbc5ee07abfebe78a5fc0f8ce13ed637"
+      },
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "af13a0e6b371260c4770540c7e5c54cc01c8a5f9d2eecabf76d8cbcf3258431f"
+    },
+    "report-91231fa37419": {
+      "id": "report-91231fa37419",
+      "record": "evidence/report-91231fa37419.json",
+      "originalName": "report.json",
+      "kind": "file",
+      "rawSha256": "5691e3b108b1278e39ab2f4d03e3a69f0eb97d331d09e9ba29653490c0dd9665",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "wave2-local-review.json"
+      ],
+      "sourceBindings": {
+        "sourceCommit": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303"
+      },
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "c96ad2e60294442c7407cb7b821f2272950fc2a9133be888bddf466f5e75ccc3"
+    },
+    "wave2-table-contracts-423521e2a55d": {
+      "id": "wave2-table-contracts-423521e2a55d",
+      "record": "evidence/wave2-table-contracts-423521e2a55d.json",
+      "originalName": "wave2-table-contracts.json",
+      "kind": "file",
+      "rawSha256": "5e5898d8d8a343068cfc54f95efe6d677c11e71be06fca38429e143a111203fb",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "wave2-local-review.json"
+      ],
+      "sourceBindings": {},
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "a8776f12efad81d48e08ed9af11f67a18fbc5b88cf8cde48ff77fd88153040af"
+    },
+    "wave2-table-keyboard-summary-db7f3d074fb9": {
+      "id": "wave2-table-keyboard-summary-db7f3d074fb9",
+      "record": "evidence/wave2-table-keyboard-summary-db7f3d074fb9.json",
+      "originalName": "wave2-table-keyboard-summary.json",
+      "kind": "file",
+      "rawSha256": "8d412aae61e429c48051d9576d59a16d7b1719220c1f751aef00c941da4f5118",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "wave2-local-review.json"
+      ],
+      "sourceBindings": {},
+      "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository.",
+      "portableRecordSha256": "031f4173fca1c8f8c67ed4b5d9dd95b585ffffaf39d7304b83e4bbb4436c710e"
+    },
+    "final-premerge-github-guards-8145a2e0ff0e": {
+      "id": "final-premerge-github-guards-8145a2e0ff0e",
+      "record": "evidence/final-premerge-github-guards-8145a2e0ff0e.json",
+      "originalName": "final-premerge-github-guards.json",
+      "kind": "file",
+      "rawSha256": "8b7588a3be58976addf54aba5a0b49f6b0b50401aebb046dc49a909f82621b83",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "final-acceptance.json"
+      ],
+      "sourceBindings": {},
+      "note": "Hash identifies original raw evidence retained outside this repository. Linked portable summaries contain observations and public source/CI/preview URLs.",
+      "portableRecordSha256": "6b6d5d9a8a034987957cb330817e393e494e97816ccb9da32321da0b6ff62523"
+    },
+    "final-premerge-native-source-guards-8b0d2f8519a1": {
+      "id": "final-premerge-native-source-guards-8b0d2f8519a1",
+      "record": "evidence/final-premerge-native-source-guards-8b0d2f8519a1.json",
+      "originalName": "final-premerge-native-source-guards.json",
+      "kind": "file",
+      "rawSha256": "20fa0876ce4e7d30d251be925f9908fb5d450036ac83537bbe7a1701a4b3f503",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "final-acceptance.json"
+      ],
+      "sourceBindings": {},
+      "note": "Hash identifies original raw evidence retained outside this repository. Linked portable summaries contain observations and public source/CI/preview URLs.",
+      "portableRecordSha256": "a35f772fb3e7c34639b5e7d13a5b82aac0d8734e7c29df41d2c226555c1d1324"
+    },
+    "final-route-review-e8a3f77052f1": {
+      "id": "final-route-review-e8a3f77052f1",
+      "record": "evidence/final-route-review-e8a3f77052f1.json",
+      "originalName": "final-route-review.json",
+      "kind": "file",
+      "rawSha256": "24f51a01d90e348ef4f254a484ac0ca11b4ba6a8445efe65834785b88db9259d",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "final-acceptance.json",
+        "visual-review.json"
+      ],
+      "sourceBindings": {},
+      "note": "Hash identifies original raw evidence retained outside this repository. Linked portable summaries contain observations and public source/CI/preview URLs.",
+      "portableRecordSha256": "580ba9602d9283acb5079bfe679ee6bc0e79f36fd43e5fdf70a8dcf52a79e6fb"
+    },
+    "final-develop-merge-source-proof-d0c941a669bd": {
+      "id": "final-develop-merge-source-proof-d0c941a669bd",
+      "record": "evidence/final-develop-merge-source-proof-d0c941a669bd.json",
+      "originalName": "final-develop-merge-source-proof.json",
+      "kind": "file",
+      "rawSha256": "ad1e3f7b9a0dc04ef16e4a7a5e6a449fb004e7879aeb55b6304974c6204837f0",
+      "rawBytesIncluded": false,
+      "retentionStatus": "preserved-locally-not-bundled",
+      "summaryDocuments": [
+        "final-acceptance.json"
+      ],
+      "sourceBindings": {},
+      "note": "Hash identifies original raw evidence retained outside this repository. Linked portable summaries contain observations and public source/CI/preview URLs.",
+      "portableRecordSha256": "8a41c552fc9a83c2b2786ead604269168bcd7cd2d25e9f34d55d3b05a606abad"
+    }
+  },
+  "documents": [
+    {
+      "path": "baseline-contract-summary-616-checkpoint.json",
+      "sourceSha256": "06384b7e9d9ad552b7d65a744616983d96a4d183a1994321110a54f10c482f3c",
+      "portableSha256": "b549a979f1f7710a61ce7486d88831b51755a261384d8f24d3be2386c05aea33"
+    },
+    {
+      "path": "baseline-contract-summary.json",
+      "sourceSha256": "770a78d4d6c4ac605712feb41231b95fdbfb20f356bf0a6f41ab7017df953418",
+      "portableSha256": "6b74d778e645db3e2999d15ee4c9b3a9e7bbe673d6d16d02116861e9bde3e528"
+    },
+    {
+      "path": "disposition.json",
+      "sourceSha256": "716305bb82427e18bcc386c5e08a2c949b7fbc2e341ed049365c91cc12c8c60f",
+      "portableSha256": "279e9eb0b24f845e7c3f12b4789539538b624e77690fc8865610db26f7a71db9"
+    },
+    {
+      "path": "final-acceptance.json",
+      "sourceSha256": "78d7147b65cec8d5733fcd8e84ee770c58babab891c403ba80d605a6f77a9dcc",
+      "portableSha256": "bd72109ed7bc1ec127249912b1d6c2223af325b302497da8d747cc4700ad04fb"
+    },
+    {
+      "path": "native-failure-history.json",
+      "sourceSha256": "ca4439ebd3cf71d0d6cde3c2d122dc82e718a3028489686f8a9069474db2cdf2",
+      "portableSha256": "ffa2c93d39862e321a2006790f0210c86149d0699698500f486d33055c5899fb"
+    },
+    {
+      "path": "next-wave-scopes.json",
+      "sourceSha256": "68ed9b19380c880ccdad9e4fb6a7c47b9e06a95ecba937bac9c359eebb025404",
+      "portableSha256": "edfa5b43ca322a06ab08cbf049a7e40c1ea3974904cf928b4ce8b8f55f0c3ad3"
+    },
+    {
+      "path": "source-and-capture-evidence.json",
+      "sourceSha256": "e651e350a2f309327a24176dd953c90da8d4772a8bf5cfef6c0f49d0a86ea573",
+      "portableSha256": "2581c3f52ea004cb51f749a31829666d214b6b87cd6838e607d577effbd02098"
+    },
+    {
+      "path": "visual-book-approval.json",
+      "sourceSha256": null,
+      "portableSha256": "e30a123afb6b8363e669ff8767ea36c60eac56a5111b4564ba1be52b47676bce"
+    },
+    {
+      "path": "visual-review.json",
+      "sourceSha256": null,
+      "portableSha256": "ab885e3c5dc279a0691edcef5ccca554f750b605caa6b7da00f217ff5cf58ad2"
+    },
+    {
+      "path": "wave1-acceptance.json",
+      "sourceSha256": "659259cd4dd61cb25e0e905ae72eb34eff6f621670d74cfcda42499b7f22e96a",
+      "portableSha256": "4843c9a93c09227d4cab828c4cc998b88cea85caca383fc0f4a38b1dcd806408"
+    },
+    {
+      "path": "wave2-acceptance.json",
+      "sourceSha256": "f48bbe4980a9703f683dbde17d8f0e7ee37a8e9ef3910824511d853471f6601f",
+      "portableSha256": "2ac4edbf91b6e32e9b0e0494f0ce83aa0eee1547f0706f2960517e9fe82fc687"
+    },
+    {
+      "path": "wave2-local-review.json",
+      "sourceSha256": "9093ee596405a31978c525d1a0b0c78513414eadd0e85ad1b3f73a45ac470f39",
+      "portableSha256": "1bc38c5acc9e72dacec0f21e9d7612d8c5635d1d78ef1b9ee7adebafd44ddfb4"
+    },
+    {
+      "path": "wave2-protected-security-review.json",
+      "sourceSha256": "e71e11ab711d8c48fce0a606b11729fc2035c73b4dd18bad687e5fba017309ab",
+      "portableSha256": "2394121495695c8da0acefb26fab7d4c37aa63dfbc421ab5e8f429e610175ba9"
+    },
+    {
+      "path": "wave3-protected-security-review.json",
+      "sourceSha256": "64410626e8b347cdaf052a9e495bbfbd325515ffc9861210274da618a5b0902e",
+      "portableSha256": "b82bd53a17a669730fbee860a33dc7c0187d1c3f989a6bcd5d303231baa25814"
+    }
+  ],
+  "versionMismatches": [],
+  "unresolvedVersionMismatchCount": 0,
+  "historical616Exception": "The observed616raw packet was not retained; its historical summary explicitly records this limitation. Current frozen v2 baseline/tool are separately pinned.",
+  "evolutionNote": "Initial local raw-reference conversion used sourceWorkbenchCommit. Subsequent normal commits update summaries and append hash records without changing historical raw evidence; final Git commit identifies the reviewable bundle."
+}

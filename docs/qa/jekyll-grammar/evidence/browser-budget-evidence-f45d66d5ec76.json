@@ -1,0 +1,14 @@
+{
+  "id": "browser-budget-evidence-f45d66d5ec76",
+  "record": "evidence/browser-budget-evidence-f45d66d5ec76.json",
+  "originalName": "browser-budget-evidence.json",
+  "kind": "file",
+  "rawSha256": "b72b0c046db5f81a81c022bc800ddee19e4524656d5214b2e593048dc17f4c7b",
+  "rawBytesIncluded": false,
+  "retentionStatus": "preserved-locally-not-bundled",
+  "summaryDocuments": [
+    "final-acceptance.json"
+  ],
+  "sourceBindings": {},
+  "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository."
+}

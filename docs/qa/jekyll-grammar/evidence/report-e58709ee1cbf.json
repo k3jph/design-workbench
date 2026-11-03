@@ -1,0 +1,16 @@
+{
+  "id": "report-e58709ee1cbf",
+  "record": "evidence/report-e58709ee1cbf.json",
+  "originalName": "report.json",
+  "kind": "file",
+  "rawSha256": "4377857e3c1db1452bc6416ae6895db1f07b9557b6132dd32333018af946c710",
+  "rawBytesIncluded": false,
+  "retentionStatus": "preserved-locally-not-bundled",
+  "summaryDocuments": [
+    "wave2-local-review.json"
+  ],
+  "sourceBindings": {
+    "sourceCommit": "434b8543dbc5ee07abfebe78a5fc0f8ce13ed637"
+  },
+  "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository."
+}

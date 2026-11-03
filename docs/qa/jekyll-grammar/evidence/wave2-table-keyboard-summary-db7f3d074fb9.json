@@ -1,0 +1,14 @@
+{
+  "id": "wave2-table-keyboard-summary-db7f3d074fb9",
+  "record": "evidence/wave2-table-keyboard-summary-db7f3d074fb9.json",
+  "originalName": "wave2-table-keyboard-summary.json",
+  "kind": "file",
+  "rawSha256": "8d412aae61e429c48051d9576d59a16d7b1719220c1f751aef00c941da4f5118",
+  "rawBytesIncluded": false,
+  "retentionStatus": "preserved-locally-not-bundled",
+  "summaryDocuments": [
+    "wave2-local-review.json"
+  ],
+  "sourceBindings": {},
+  "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository."
+}

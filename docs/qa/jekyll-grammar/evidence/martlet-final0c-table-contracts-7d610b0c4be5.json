@@ -1,0 +1,16 @@
+{
+  "id": "martlet-final0c-table-contracts-7d610b0c4be5",
+  "record": "evidence/martlet-final0c-table-contracts-7d610b0c4be5.json",
+  "originalName": "martlet-final0c-table-contracts.json",
+  "kind": "file",
+  "rawSha256": "5e5898d8d8a343068cfc54f95efe6d677c11e71be06fca38429e143a111203fb",
+  "rawBytesIncluded": false,
+  "retentionStatus": "preserved-locally-not-bundled",
+  "summaryDocuments": [
+    "final-acceptance.json"
+  ],
+  "sourceBindings": {
+    "sourceCommit": "0c0e0a7452444c41a3876c2f8732c6439c6097b9"
+  },
+  "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository."
+}

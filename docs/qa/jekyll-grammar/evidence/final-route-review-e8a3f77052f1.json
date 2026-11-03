@@ -1,0 +1,15 @@
+{
+  "id": "final-route-review-e8a3f77052f1",
+  "record": "evidence/final-route-review-e8a3f77052f1.json",
+  "originalName": "final-route-review.json",
+  "kind": "file",
+  "rawSha256": "24f51a01d90e348ef4f254a484ac0ca11b4ba6a8445efe65834785b88db9259d",
+  "rawBytesIncluded": false,
+  "retentionStatus": "preserved-locally-not-bundled",
+  "summaryDocuments": [
+    "final-acceptance.json",
+    "visual-review.json"
+  ],
+  "sourceBindings": {},
+  "note": "Hash identifies original raw evidence retained outside this repository. Linked portable summaries contain observations and public source/CI/preview URLs."
+}

@@ -1,0 +1,18 @@
+{
+  "id": "final-pair-v2-preview-contracts-3e74d617235b",
+  "record": "evidence/final-pair-v2-preview-contracts-3e74d617235b.json",
+  "originalName": "final-pair-v2-preview-contracts.json",
+  "kind": "file",
+  "rawSha256": "a102d8a5cf3af024a6a0c7519d9097a018da15e4e456066dfa8a64c9a1db1d0f",
+  "rawBytesIncluded": false,
+  "retentionStatus": "preserved-locally-not-bundled",
+  "summaryDocuments": [
+    "final-acceptance.json"
+  ],
+  "sourceBindings": {
+    "martlet": "0c0e0a7452444c41a3876c2f8732c6439c6097b9",
+    "krigsvold": "983dee5d27ad02458baef6edc5a39279e24028ea",
+    "sourceCommit": "983dee5d27ad02458baef6edc5a39279e24028ea"
+  },
+  "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository."
+}
