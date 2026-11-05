@@ -120,6 +120,49 @@ try {
    item.pageErrors.push(...errors.map(error=>({size:size.name,mode,error})));
    await context.close();
   }
+  /* Separately capture the 200% and 400% enlarged-type acceptance states.
+     These are evidence only, not a substitute for human visual inspection. */
+  for(const scale of [200,400])for(const route of ['/','/examples/sign-up/']){
+   const context=await browser.newContext({viewport:{width:320,height:1100},reducedMotion:'reduce'});
+   const page=await context.newPage();
+   try{
+    const response=await page.goto(host.origin+route,{waitUntil:'load',timeout:20000});
+    await page.evaluate(v=>document.documentElement.style.fontSize=v+'%',scale);
+    await page.waitForTimeout(300);
+    const observed=await page.evaluate(()=>{
+     const rect=el=>{if(!el)return null;const r=el.getBoundingClientRect();return{x:r.x,y:r.y,width:r.width,height:r.height,bottom:r.bottom,right:r.right}};
+     const header=document.querySelector('.site-header,.nav-shell');
+     const firstText=document.querySelector('main .eyebrow, main h1, header[data-hero-variant] h1');
+     const checkbox=document.querySelector('.example-checkbox input[type=checkbox]');
+     const label=checkbox?.closest('label');
+     const text=label?.querySelector('span');
+     const brand=document.querySelector('.site-header .brand span, .navbar-brand span');
+     let wordFragments=null;
+     if(brand?.firstChild?.nodeType===Node.TEXT_NODE){
+      const node=brand.firstChild;const end=node.textContent.trim().split(' ')[0].length;
+      const range=document.createRange();range.setStart(node,0);range.setEnd(node,Math.min(end,node.textContent.length));
+      wordFragments=range.getClientRects().length;
+     }
+     return{rootFont:getComputedStyle(document.documentElement).fontSize,header:rect(header),
+      headerPosition:header?getComputedStyle(header).position:null,
+      headerInFlow:header?getComputedStyle(header).position!=='fixed':null,
+      firstMastheadText:rect(firstText),brandWordFragments:wordFragments,
+      checkbox:rect(checkbox),checkboxLabelText:rect(text),checkboxAssociated:!!label&&label.contains(checkbox),
+      overflowX:document.documentElement.scrollWidth>innerWidth};
+    });
+    const slug=route==='/'?'home':'sign-up';
+    const filename=host.family+'--reflow-320--'+scale+'pct--'+slug+'.jpg';
+    if(route!=='/'){
+     const input=page.locator('.example-checkbox').first();
+     if(await input.count())await input.scrollIntoViewIfNeeded({timeout:5000}).catch(()=>{});
+    }
+    await page.screenshot({path:join(out,'screenshots',filename),type:'jpeg',quality:82,animations:'disabled'});
+    item.captures.push({route,size:'reflow-320',scale,mode:'light',status:response?.status()||0,
+      filename,observed});
+    item.screenshots.push(filename);
+   }catch(e){item.captures.push({route,size:'reflow-320',scale,error:safe(e.message)});}
+   finally{await context.close();}
+  }
  }
 }catch(e){records.push({fatalError:safe(e.stack||e.message)});process.exitCode=1;}
 finally{
