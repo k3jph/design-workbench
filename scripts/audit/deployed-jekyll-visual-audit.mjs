@@ -51,7 +51,7 @@ for(const site of BASES){
     entry.documentTitle=await page.title();
     entry.render=await page.evaluate(()=>{
      const found=s=>document.querySelector(s),b=e=>{if(!e)return null;let q=e.getBoundingClientRect();return{x:q.x,y:q.y,width:q.width,height:q.height,bottom:q.bottom,right:q.right}};
-     const hero=found('.page-intro'),art=found('.page-intro__art'),head=found('.site-header'),title=found('main h1'),credit=found('.hero-credit'),footer=found('.site-footer'),main=found('main');
+     const hero=found('.page-intro, .page-masthead'),art=found('.page-intro__art, .page-masthead__art img'),head=found('.site-header, .nav-shell'),title=found('main h1'),credit=found('.hero-credit, .hero-image-credit'),footer=found('.site-footer'),main=found('main');
      const artStyle=art?getComputedStyle(art):null,nav=head?getComputedStyle(head):null;
      const img=art&&art.tagName==='IMG'?art:hero?.querySelector('img');
      return {width:innerWidth,scrollWidth:document.documentElement.scrollWidth,scrollOverflow:document.documentElement.scrollWidth>innerWidth+1,
@@ -71,10 +71,10 @@ for(const site of BASES){
       await sleep(120);
       entry.footerScreenshot=stub+'--footer.jpg';
       await page.screenshot({path:join(OUT,entry.footerScreenshot),type:'jpeg',quality:75,animations:'disabled'});
-      entry.scrolledNav=await page.locator('.site-header').evaluate(el=>({classes:el.className,color:getComputedStyle(el).backgroundColor,gradient:getComputedStyle(el).backgroundImage}));
+      entry.scrolledNav=await page.locator('.site-header, .nav-shell').evaluate(el=>({classes:el.className,color:getComputedStyle(el).backgroundColor,gradient:getComputedStyle(el).backgroundImage}));
       if(view.name==='mobile'&&name==='home'){
         await page.evaluate(()=>scrollTo(0,0));
-        const m=page.locator('.menu-button');
+        const m=page.locator('.menu-button, .navbar-toggler');
         if(await m.isVisible()){
           await m.click({timeout:2500});
           entry.mobileMenuScreenshot=stub+'--menu.jpg';
