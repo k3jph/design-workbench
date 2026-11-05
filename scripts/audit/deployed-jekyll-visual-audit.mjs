@@ -1,97 +1,132 @@
 import { chromium } from '@playwright/test';
-import { mkdir, writeFile } from 'node:fs/promises';
-import { join } from 'node:path';
+import {mkdir,writeFile} from 'node:fs/promises';
+import {join} from 'node:path';
 
-const OUT = 'visual-audit-output';
-const BASES = [
- {id:'martlet',url:'https://develop-martletdesign-jekyll-reference.k3jph.workers.dev',sha:'632bab9f8bd2b1dc2edaaecdf96bd4ff1359fe56'},
- {id:'krigsvold',url:'https://develop-krigsvolddesign-jekyll-reference.k3jph.workers.dev',sha:'a9c95263bd15d528de8627735f92e0448ecc5f9e'}
+const OUT='visual-audit-output';
+const SITES=[
+ {id:'martlet',base:'https://develop-martletdesign-jekyll-reference.k3jph.workers.dev',repo:'martletdesign/jekyll',sha:'154a853cc3c170d121b5a4e794ad4de7918a3bbb'},
+ {id:'krigsvold',base:'https://develop-krigsvolddesign-jekyll-reference.k3jph.workers.dev',repo:'krigsvolddesign/jekyll',sha:'9fabe11fc87de6dba271b7bf893169b45397c0f3'}
 ];
-const ROUTES = process.env.AUDIT_QUICK==='1' ? [['home','/'],['examples','/examples/']] : [['home','/'],['language','/language/'],['examples','/examples/'],['journal','/journal/'],['faq','/examples/faq/'],['changelog','/examples/changelog/'],['analytics','/examples/dashboard-analytics/']];
-const VIEWS = [{name:'desktop',width:1440,height:900},{name:'mobile',width:390,height:844}];
-const APPEARANCES = process.env.AUDIT_QUICK==='1' ? ['light'] : ['light','dark'];
-const browser = await chromium.launch({headless:true});
+const report={purpose:'P2 deployed Jekyll accessibility acceptance recheck',created:new Date().toISOString(),sites:[],checks:[],summary:{}};
 await mkdir(OUT,{recursive:true});
-const report={generatedAt:new Date().toISOString(),purpose:'Independent review of PUBLIC deployed Jekyll development sites only',sites:[],pages:[],browserErrors:[]};
-const sleep=ms=>new Promise(r=>setTimeout(r,ms));
-const rect=el=>el?{x:el.x,y:el.y,width:el.width,height:el.height,bottom:el.y+el.height}:null;
-function slimError(e){return String(e).slice(0,900)}
-for(const site of BASES){
- let deployment={requested:site.url+'/.well-known/deployment.json',expectedDevelopSha:site.sha};
- try{
-  const response=await fetch(deployment.requested,{signal:AbortSignal.timeout(18000),redirect:'follow'});
-  deployment.httpStatus=response.status;
-  deployment.body=(await response.text()).slice(0,2200);
-  try{deployment.parsed=JSON.parse(deployment.body)}catch{}
-  deployment.shaVerified=JSON.stringify(deployment.parsed||{}).includes(site.sha);
- }catch(e){deployment.error=slimError(e);deployment.shaVerified=false}
- let reachability={};
- try{
-  const probe=await fetch(site.url+'/',{signal:AbortSignal.timeout(12000),redirect:'follow'});
-  reachability.httpStatus=probe.status;
-  reachability.contentType=probe.headers.get('content-type');
-  reachability.reachable=probe.ok;
- }catch(e){reachability.error=slimError(e);reachability.reachable=false}
- report.sites.push({...site,deployment,reachability});
- if(!reachability.reachable){console.log('SKIP_UNREACHABLE_SITE '+site.id+' '+JSON.stringify(reachability));continue}
- for(const view of VIEWS)for(const appearance of APPEARANCES){
-  const context=await browser.newContext({viewport:{width:view.width,height:view.height},colorScheme:appearance,reducedMotion:'reduce',deviceScaleFactor:1});
-  await context.addInitScript(mode=>{try{localStorage.setItem('design-appearance',mode)}catch{}},appearance);
-  const page=await context.newPage();page.setDefaultNavigationTimeout(18000);
-  const errors=[];page.on('pageerror',e=>errors.push(e.message.slice(0,400)));
-  page.on('console',msg=>{if(msg.type()==='error')errors.push('console: '+msg.text().slice(0,250))});
-  for(const [name,path] of ROUTES){
-   const entry={site:site.id,url:site.url+path,route:name,appearance,view:view.name,viewport:view,errors:[]};
-   const stub=[site.id,name,appearance,view.name].join('--');
-   try{
-    const response=await page.goto(entry.url,{waitUntil:'load',timeout:7000});
-    entry.httpStatus=response?.status()??null;
-    await page.evaluate(async()=>{if(document.fonts)await document.fonts.ready});
-    await sleep(120);
-    entry.documentTitle=await page.title();
-    entry.render=await page.evaluate(()=>{
-     const found=s=>document.querySelector(s),b=e=>{if(!e)return null;let q=e.getBoundingClientRect();return{x:q.x,y:q.y,width:q.width,height:q.height,bottom:q.bottom,right:q.right}};
-     const hero=found('.page-intro, .page-masthead'),art=found('.page-intro__art, .page-masthead__art img'),head=found('.site-header, .nav-shell'),title=found('main h1'),credit=found('.hero-credit, .hero-image-credit'),footer=found('.site-footer'),main=found('main');
-     const artStyle=art?getComputedStyle(art):null,nav=head?getComputedStyle(head):null;
-     const img=art&&art.tagName==='IMG'?art:hero?.querySelector('img');
-     return {width:innerWidth,scrollWidth:document.documentElement.scrollWidth,scrollOverflow:document.documentElement.scrollWidth>innerWidth+1,
-       bodyVariant:document.body.dataset.heroVariant,appearance:document.documentElement.dataset.appearance,
-       hero:b(hero),art:b(art),header:b(head),title:b(title),credit:b(credit),footer:b(footer),main:b(main),
-       heading:title?.innerText?.slice(0,180),navColor:nav?.backgroundColor,navImage:nav?.backgroundImage,navTransition:nav?.transitionDuration,
-       heroAfter:hero?getComputedStyle(hero,'::after').backgroundImage:null,
-       artFit:artStyle?.objectFit,artPosition:artStyle?.objectPosition,artPositionMode:artStyle?.position,
-       artSource:img?.currentSrc,artNaturalSize:img?{width:img.naturalWidth,height:img.naturalHeight,loaded:img.complete}:null};
-    });
-    entry.heroBottomGap=entry.render.hero&&entry.render.art?Math.round((entry.render.hero.bottom-entry.render.art.bottom)*10)/10:null;
-    entry.artTopGap=entry.render.hero&&entry.render.art?Math.round((entry.render.art.y-entry.render.hero.y)*10)/10:null;
-    entry.screenshot=stub+'--top.jpg';
-    await page.screenshot({path:join(OUT,entry.screenshot),type:'jpeg',quality:80,animations:'disabled'});
-    if(name==='home'||name==='faq'||name==='analytics'){
-      await page.evaluate(()=>scrollTo(0,document.documentElement.scrollHeight));
-      await sleep(120);
-      entry.footerScreenshot=stub+'--footer.jpg';
-      await page.screenshot({path:join(OUT,entry.footerScreenshot),type:'jpeg',quality:75,animations:'disabled'});
-      entry.scrolledNav=await page.locator('.site-header, .nav-shell').evaluate(el=>({classes:el.className,color:getComputedStyle(el).backgroundColor,gradient:getComputedStyle(el).backgroundImage}));
-      if(view.name==='mobile'&&name==='home'){
-        await page.evaluate(()=>scrollTo(0,0));
-        const m=page.locator('.menu-button, .navbar-toggler');
-        if(await m.isVisible()){
-          await m.click({timeout:2500});
-          entry.mobileMenuScreenshot=stub+'--menu.jpg';
-          await page.screenshot({path:join(OUT,entry.mobileMenuScreenshot),type:'jpeg',quality:75});
-          entry.menuExpanded=await m.getAttribute('aria-expanded');
-          await page.keyboard.press('Escape');
-        }
-      }
-    }
-   }catch(e){entry.errors.push(slimError(e))}
-   entry.errors.push(...errors.splice(0));
-   report.pages.push(entry);
-   console.log(JSON.stringify({site:site.id,route:name,view:view.name,appearance,status:entry.httpStatus,bottomGap:entry.heroBottomGap,errors:entry.errors.length}));
-  }
-  await context.close();
- }
+const save=()=>writeFile(join(OUT,'report.json'),JSON.stringify(report,null,2)+'\n');
+const sleep=ms=>new Promise(resolve=>setTimeout(resolve,ms));
+const error=e=>String(e?.stack||e).slice(0,600);
+function rgb(color){
+ const m=color?.match(/^rgba?\(\s*([\d.]+)(?:,\s*|\s+)([\d.]+)(?:,\s*|\s+)([\d.]+)(?:,\s*|\s+\/\s*|\s*,\s*)?([\d.]+)?/);
+ if(!m)throw Error('Unrecognized computed color '+color);
+ return [Number(m[1]),Number(m[2]),Number(m[3]),m[4]===undefined?1:Number(m[4])];
 }
-await writeFile(join(OUT,'report.json'),JSON.stringify(report,null,2));
-await browser.close();
-console.log('VISUAL_AUDIT_DONE pages='+report.pages.length+' sites='+report.sites.length);
+function lum(c){
+ const [r,g,b]=c.slice(0,3).map(v=>{v/=255;return v<=.04045?v/12.92:((v+.055)/1.055)**2.4});
+ return .2126*r+.7152*g+.0722*b;
+}
+function contrast(fg,bg,opacity=1){
+ const f=rgb(fg), b=rgb(bg); const alpha=f[3]*opacity;
+ const apparent=f.slice(0,3).map((v,i)=>v*alpha+b[i]*(1-alpha));
+ const l1=lum(apparent),l2=lum(b);
+ return (Math.max(l1,l2)+.05)/(Math.min(l1,l2)+.05);
+}
+const browser=await chromium.launch({headless:true});
+let problems=0;
+try{
+ for(const site of SITES){
+  const info={id:site.id,url:site.base,expectedSha:site.sha,manifestStatus:null,observedSha:null,verified:false,attempts:0};
+  report.sites.push(info);
+  for(let n=1;n<=12;n++){
+   info.attempts=n;
+   try{
+    const res=await fetch(site.base+'/.well-known/deployment.json',{signal:AbortSignal.timeout(14000),redirect:'follow'});
+    info.manifestStatus=res.status;
+    const data=await res.json();
+    info.observedSha=data.sourceCommit;
+    info.branch=data.branch;
+    info.repository=data.repository;
+    info.builtAt=data.builtAt;
+    info.verified=res.ok&&data.sourceCommit===site.sha&&data.branch==='develop'&&data.repository===site.repo;
+    if(info.verified)break;
+   }catch(e){info.lastError=error(e)}
+   if(n<12)await sleep(12000);
+  }
+  console.log('DEPLOYMENT_CHECK '+JSON.stringify(info));
+  await save();
+  if(!info.verified){problems++;continue}
+  const context=await browser.newContext({viewport:{width:1440,height:900},colorScheme:'dark',reducedMotion:'reduce'});
+  await context.addInitScript(()=>{try{localStorage.setItem('design-appearance','dark')}catch{}});
+  const page=await context.newPage();
+  page.setDefaultNavigationTimeout(16000);
+  let candidates=new Set(['/examples/search/','/examples/contact/','/examples/sign-up/']);
+  try {
+   const response=await page.goto(site.base+'/examples/',{waitUntil:'load'});
+   if(!response.ok())throw Error('examples index HTTP '+response.status());
+   const hrefs=await page.locator('a[href]').evaluateAll(links=>links.map(a=>{try{return new URL(a.href).pathname}catch{return ''}}));
+   for(const path of hrefs)if(path.startsWith('/examples/')&&/^\/examples\/[a-z-]+\/$/.test(path))candidates.add(path);
+  }catch(e){report.checks.push({site:site.id,type:'catalogue-discovery',pass:false,error:error(e)});problems++}
+  let placeholderCount=0,routeCount=0;
+  for(const route of [...candidates].sort()){
+   const check={site:site.id,type:'chromium-dark-placeholders',route,fields:[],pass:true};
+   try{
+    const resp=await page.goto(site.base+route,{waitUntil:'load'});
+    check.status=resp.status();routeCount++;
+    if(resp.status()!==200)throw Error('HTTP '+resp.status());
+    const fields=await page.locator('input[placeholder], textarea[placeholder]').evaluateAll(els=>els.filter(el=>{
+     const box=el.getBoundingClientRect(),style=getComputedStyle(el);
+     return box.width>0&&box.height>0&&style.visibility!=='hidden'&&style.display!=='none';
+    }).map(el=>{
+     const pseudo=getComputedStyle(el,'::placeholder'),input=getComputedStyle(el);
+     return {id:el.id,type:el.getAttribute('type')||el.tagName.toLowerCase(),placeholder:el.getAttribute('placeholder'),
+       foreground:pseudo.color,opacity:pseudo.opacity,background:input.backgroundColor};
+    }));
+    for(const f of fields){
+     const ratio=contrast(f.foreground,f.background,Number(f.opacity));
+     f.ratio=Number(ratio.toFixed(3));f.pass=ratio>=4.5;
+     placeholderCount++;
+     if(!f.pass){check.pass=false;problems++}
+    }
+    check.fields=fields;
+    if(fields.length||!check.pass)report.checks.push(check);
+    if(fields.length){await page.screenshot({path:join(OUT,site.id+'--'+route.replaceAll('/','_')+'--dark-fields.png'),animations:'disabled'})}
+   }catch(e){check.pass=false;check.error=error(e);report.checks.push(check);problems++}
+  }
+  report.checks.push({site:site.id,type:'dark-placeholder-coverage',routesVisited:routeCount,fieldsChecked:placeholderCount,pass:placeholderCount>0});
+  if(!placeholderCount)problems++;
+  await context.close();
+  if(site.id==='krigsvold'){
+   for(const appearance of ['light','dark']){
+    const pc=await browser.newContext({viewport:{width:1440,height:900},colorScheme:appearance,reducedMotion:'reduce'});
+    await pc.addInitScript(mode=>{try{localStorage.setItem('design-appearance',mode)}catch{}},appearance);
+    const page=await pc.newPage();
+    for(const route of ['/language/','/examples/','/journal/']){
+     const check={site:site.id,type:'print-credit-contrast',appearance,route,pass:true};
+     try{
+      const res=await page.goto(site.base+route,{waitUntil:'load'});
+      if(res.status()!==200)throw Error('HTTP '+res.status());
+      await page.emulateMedia({media:'print'});
+      const links=await page.locator('.hero-image-credit a').evaluateAll(els=>els.map(el=>{
+       const style=getComputedStyle(el),box=el.getBoundingClientRect();
+       return {text:el.textContent?.trim(),url:el.href,color:style.color,visibility:style.visibility,
+         display:style.display,width:box.width,height:box.height};
+      }));
+      check.links=links.map(el=>({...el,contrast:Number(contrast(el.color,'rgb(255, 255, 255)').toFixed(3))}));
+      check.pass=check.links.length>0&&check.links.every(el=>el.width>0&&el.height>0&&el.display!=='none'&&el.visibility!=='hidden'&&el.contrast>=4.5);
+      if(!check.pass)problems++;
+      if(route==='/language/'){
+       const pdf=site.id+'--'+appearance+'--language-print.pdf';
+       await page.pdf({path:join(OUT,pdf),format:'A4',printBackground:false,preferCSSPageSize:true});
+       check.pdf=pdf;
+      }
+      await page.emulateMedia({media:'screen'});
+     }catch(e){check.pass=false;check.error=error(e);problems++}
+     report.checks.push(check);
+    }
+    await pc.close();
+   }
+  }
+  await save();
+ }
+}finally{await browser.close();}
+report.summary={pass:problems===0,failedChecks:problems,verifiedDeployments:report.sites.filter(s=>s.verified).length,
+  placeholderFields:report.checks.filter(c=>c.type==='chromium-dark-placeholders').flatMap(c=>c.fields).length};
+await save();
+console.log('P2_ACCEPTANCE_RESULT '+JSON.stringify(report.summary));
+if(problems)process.exitCode=1;
