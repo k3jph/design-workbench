@@ -7,9 +7,9 @@ const BASES = [
  {id:'martlet',url:'https://develop-martletdesign-jekyll-reference.k3jph.workers.dev',sha:'632bab9f8bd2b1dc2edaaecdf96bd4ff1359fe56'},
  {id:'krigsvold',url:'https://develop-krigsvolddesign-jekyll-reference.k3jph.workers.dev',sha:'a9c95263bd15d528de8627735f92e0448ecc5f9e'}
 ];
-const ROUTES = [['home','/'],['language','/language/'],['examples','/examples/'],['journal','/journal/'],['faq','/examples/faq/'],['changelog','/examples/changelog/'],['analytics','/examples/dashboard-analytics/']];
+const ROUTES = process.env.AUDIT_QUICK==='1' ? [['home','/'],['examples','/examples/']] : [['home','/'],['language','/language/'],['examples','/examples/'],['journal','/journal/'],['faq','/examples/faq/'],['changelog','/examples/changelog/'],['analytics','/examples/dashboard-analytics/']];
 const VIEWS = [{name:'desktop',width:1440,height:900},{name:'mobile',width:390,height:844}];
-const APPEARANCES = ['light','dark'];
+const APPEARANCES = process.env.AUDIT_QUICK==='1' ? ['light'] : ['light','dark'];
 const browser = await chromium.launch({headless:true});
 await mkdir(OUT,{recursive:true});
 const report={generatedAt:new Date().toISOString(),purpose:'Independent review of PUBLIC deployed Jekyll development sites only',sites:[],pages:[],browserErrors:[]};
@@ -44,7 +44,7 @@ for(const site of BASES){
    const entry={site:site.id,url:site.url+path,route:name,appearance,view:view.name,viewport:view,errors:[]};
    const stub=[site.id,name,appearance,view.name].join('--');
    try{
-    const response=await page.goto(entry.url,{waitUntil:'load',timeout:12000});
+    const response=await page.goto(entry.url,{waitUntil:'load',timeout:7000});
     entry.httpStatus=response?.status()??null;
     await page.evaluate(async()=>{if(document.fonts)await document.fonts.ready});
     await sleep(120);
