@@ -25,7 +25,15 @@ for(const site of BASES){
   try{deployment.parsed=JSON.parse(deployment.body)}catch{}
   deployment.shaVerified=JSON.stringify(deployment.parsed||{}).includes(site.sha);
  }catch(e){deployment.error=slimError(e);deployment.shaVerified=false}
- report.sites.push({...site,deployment});
+ let reachability={};
+ try{
+  const probe=await fetch(site.url+'/',{signal:AbortSignal.timeout(12000),redirect:'follow'});
+  reachability.httpStatus=probe.status;
+  reachability.contentType=probe.headers.get('content-type');
+  reachability.reachable=probe.ok;
+ }catch(e){reachability.error=slimError(e);reachability.reachable=false}
+ report.sites.push({...site,deployment,reachability});
+ if(!reachability.reachable){console.log('SKIP_UNREACHABLE_SITE '+site.id+' '+JSON.stringify(reachability));continue}
  for(const view of VIEWS)for(const appearance of APPEARANCES){
   const context=await browser.newContext({viewport:{width:view.width,height:view.height},colorScheme:appearance,reducedMotion:'reduce',deviceScaleFactor:1});
   await context.addInitScript(mode=>{try{localStorage.setItem('design-appearance',mode)}catch{}},appearance);
@@ -36,7 +44,7 @@ for(const site of BASES){
    const entry={site:site.id,url:site.url+path,route:name,appearance,view:view.name,viewport:view,errors:[]};
    const stub=[site.id,name,appearance,view.name].join('--');
    try{
-    const response=await page.goto(entry.url,{waitUntil:'load',timeout:18000});
+    const response=await page.goto(entry.url,{waitUntil:'load',timeout:12000});
     entry.httpStatus=response?.status()??null;
     await page.evaluate(async()=>{if(document.fonts)await document.fonts.ready});
     await sleep(120);
