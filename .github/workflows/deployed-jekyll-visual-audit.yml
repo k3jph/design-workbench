@@ -25,6 +25,8 @@ jobs:
           if [ -f /etc/apt/apt-mirrors.txt ]; then sudo sed -i 's|http://azure.archive.ubuntu.com/ubuntu|https://archive.ubuntu.com/ubuntu|g' /etc/apt/apt-mirrors.txt; fi
           npx playwright install --with-deps chromium
       - name: Inspect public deployed develop sites
+        env:
+          AUDIT_QUICK: '1'
         run: node scripts/audit/deployed-jekyll-visual-audit.mjs
       - name: Upload visual evidence including failures
         if: always()
