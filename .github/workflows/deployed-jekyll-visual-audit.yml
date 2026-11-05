@@ -1,0 +1,36 @@
+name: Capture deployed Jekyll visual evidence
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/deployed-jekyll-visual-audit.yml'
+      - 'scripts/audit/deployed-jekyll-visual-audit.mjs'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci --ignore-scripts --no-audit
+      - name: Configure Playwright Chromium
+        run: |
+          if [ -f /etc/apt/apt-mirrors.txt ]; then sudo sed -i 's|http://azure.archive.ubuntu.com/ubuntu|https://archive.ubuntu.com/ubuntu|g' /etc/apt/apt-mirrors.txt; fi
+          npx playwright install --with-deps chromium
+      - name: Inspect public deployed develop sites
+        run: node scripts/audit/deployed-jekyll-visual-audit.mjs
+      - name: Upload visual evidence including failures
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: deployed-jekyll-visual-audit
+          path: visual-audit-output/
+          if-no-files-found: warn
+          retention-days: 7
