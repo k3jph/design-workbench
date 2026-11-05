@@ -1,0 +1,140 @@
+#!/usr/bin/env node
+/**
+ * Read-only, evidence-first capture of the TWO actual deployed Jekyll develop sites.
+ * Never logs in, modifies a site, publishes code, or infers Cloudflare deploy success.
+ * A matched /.well-known/deployment.json sourceCommit is the deployment gate.
+ */
+import {chromium} from '@playwright/test';
+import {mkdirSync,writeFileSync} from 'node:fs';
+import {join,resolve} from 'node:path';
+
+const out=resolve(process.env.LIVE_JEKYLL_EVIDENCE_DIR||'live-jekyll-evidence');
+mkdirSync(out,{recursive:true});
+const hosts=[
+ {family:'martlet',repo:'martletdesign/jekyll',origin:'https://develop-martletdesign-jekyll-reference.k3jph.workers.dev'},
+ {family:'krigsvold',repo:'krigsvolddesign/jekyll',origin:'https://develop-krigsvolddesign-jekyll-reference.k3jph.workers.dev'}
+];
+const routes=['/','/language/','/examples/','/journal/','/examples/faq/','/examples/dashboard-analytics/','/examples/sign-up/'];
+const sizes=[{name:'desktop',width:1440,height:900},{name:'mobile',width:390,height:844}];
+const pause=ms=>new Promise(r=>setTimeout(r,ms));
+const safe=(x)=>String(x).slice(0,600);
+async function jsonAt(url,timeout=15000){
+ const r=await fetch(url,{headers:{'User-Agent':'Jekyll-live-audit-capture/1.0','Accept':'application/json'},signal:AbortSignal.timeout(timeout),redirect:'follow'});
+ if(!r.ok)throw Error('HTTP '+r.status+' at '+url);
+ return r.json();
+}
+function reportState(checked){writeFileSync(join(out,'report.json'),JSON.stringify({schemaVersion:1,readOnly:true,checkedAt:new Date().toISOString(),hosts:checked},null,2)+'\n');}
+const records=[];
+let browser;
+try {
+ for(const host of hosts){
+  const result={family:host.family,repo:host.repo,origin:host.origin,verified:false,expectedCommit:null,
+   deployedCommit:null,manifest:null,verificationErrors:[],screenshots:[],captures:[],pageErrors:[]};
+  records.push(result);
+  try {
+   const ref=await jsonAt('https://api.github.com/repos/'+host.repo+'/git/ref/heads/develop');
+   result.expectedCommit=ref?.object?.sha||null;
+   if(!/^[a-f0-9]{40}$/.test(result.expectedCommit||''))throw Error('No valid GitHub develop commit identity');
+  }catch(e){result.verificationErrors.push('GitHub develop ref: '+safe(e.message));}
+  for(let attempt=1;attempt<=6;attempt++){
+   try{
+    const manifest=await jsonAt(host.origin+'/.well-known/deployment.json');
+    result.manifest={repository:manifest.repository,branch:manifest.branch,
+      sourceCommit:manifest.sourceCommit,deploymentKind:manifest.deploymentKind};
+    result.deployedCommit=manifest.sourceCommit||null;
+    result.verified=manifest.repository===host.repo&&manifest.branch==='develop'&&manifest.sourceCommit===result.expectedCommit;
+    if(result.verified)break;
+    result.verificationErrors.push('Attempt '+attempt+': manifest does not match current develop SHA');
+   }catch(e){result.verificationErrors.push('Attempt '+attempt+': '+safe(e.message));}
+   if(attempt<6)await pause(10000);
+  }
+ }
+ // Even if commit verification fails, capture pages that can be reached, but
+ // prominently mark such evidence UNVERIFIED rather than declaring acceptance.
+ browser=await chromium.launch({headless:true});
+ for(const host of hosts){
+  const item=records.find(x=>x.family===host.family);
+  for(const size of sizes)for(const mode of ['light','dark']){
+   const context=await browser.newContext({viewport:{width:size.width,height:size.height},deviceScaleFactor:1,
+     reducedMotion:'reduce',colorScheme:mode==='dark'?'dark':'light'});
+   await context.addInitScript(m=>{try{localStorage.setItem('design-appearance',m)}catch{}},mode);
+   const page=await context.newPage();
+   const errors=[];page.on('pageerror',e=>errors.push(safe(e.message)));
+   for(const route of routes){
+    const slug=route==='/'?'home':route.replace(/^\/|\/$/g,'').replaceAll('/','--');
+    const filename=host.family+'--'+size.name+'--'+mode+'--'+slug+'.jpg';
+    try{
+     const response=await page.goto(host.origin+route,{waitUntil:'domcontentloaded',timeout:20000});
+     try{await page.waitForLoadState('load',{timeout:10000})}catch{}
+     const observed=await page.evaluate(()=>{
+      const rect=el=>{if(!el)return null;const r=el.getBoundingClientRect();return{x:r.x,y:r.y,width:r.width,height:r.height,bottom:r.bottom}};
+      const hero=document.querySelector('.page-intro')||document.querySelector('header[data-hero-variant]');
+      const art=hero?.querySelector('img');
+      const header=document.querySelector('.site-header')||document.querySelector('.nav-shell');
+      const footer=document.querySelector('.site-footer')||document.querySelector('footer');
+      const checkbox=document.querySelector('.example-checkbox');
+      const check=checkbox?.querySelector('input[type=checkbox]');
+      const label=checkbox?.querySelector('span');
+      const h=rect(hero),img=rect(art);
+      return {
+       title:document.title,bodyWidth:document.documentElement.scrollWidth,viewport:innerWidth,
+       overflowX:document.documentElement.scrollWidth>innerWidth,appearance:document.documentElement.dataset.appearance||'',
+       header:rect(header),headerBackground:header?getComputedStyle(header).backgroundColor:null,
+       headerBackgroundImage:header?getComputedStyle(header).backgroundImage:null,
+       hero:h,heroArt:img,heroImageSource:art?.currentSrc||null,
+       imageBottomGap:h&&img?Math.round((h.bottom-img.bottom)*100)/100:null,
+       heading:rect(document.querySelector('main h1')||hero?.querySelector('h1')),
+       footer:rect(footer),checkbox:rect(check),checkboxText:rect(label),
+       navigationItems:document.querySelectorAll('nav a').length
+      };
+     });
+     const file=join(out,'screenshots',filename);mkdirSync(join(out,'screenshots'),{recursive:true});
+     await page.screenshot({path:file,type:'jpeg',quality:79,fullPage:false,animations:'disabled'});
+     item.captures.push({route,size:size.name,mode,status:response?.status()||0,filename,observed});
+     item.screenshots.push(filename);
+     if(route==='/'){
+      await page.evaluate(()=>scrollTo(0,450));await page.waitForTimeout(650);
+      const scrolled=filename.replace('.jpg','--scrolled.jpg');
+      await page.screenshot({path:join(out,'screenshots',scrolled),type:'jpeg',quality:79,fullPage:false,animations:'disabled'});
+      item.screenshots.push(scrolled);
+      if(size.name==='desktop'){
+       await page.evaluate(()=>scrollTo(0,document.documentElement.scrollHeight));
+       await page.waitForTimeout(400);
+       const footerCapture=filename.replace('.jpg','--footer.jpg');
+       await page.screenshot({path:join(out,'screenshots',footerCapture),type:'jpeg',quality:79,fullPage:false,animations:'disabled'});
+       item.screenshots.push(footerCapture);
+      }
+      if(size.name==='mobile'){
+       await page.evaluate(()=>scrollTo(0,0));
+       const menu=page.locator('.menu-button,.navbar-toggler').first();
+       if(await menu.isVisible().catch(()=>false)){
+        await menu.click({timeout:2500}).catch(()=>{});
+        const opened=filename.replace('.jpg','--menu-open.jpg');
+        await page.screenshot({path:join(out,'screenshots',opened),type:'jpeg',quality:79,fullPage:false,animations:'disabled'});
+        item.screenshots.push(opened);
+       }
+      }
+     }
+    }catch(e){item.captures.push({route,size:size.name,mode,error:safe(e.message)});}
+   }
+   item.pageErrors.push(...errors.map(error=>({size:size.name,mode,error})));
+   await context.close();
+  }
+ }
+}catch(e){records.push({fatalError:safe(e.stack||e.message)});process.exitCode=1;}
+finally{
+ if(browser)await browser.close();
+ reportState(records);
+ const verified=records.filter(x=>x.repo).every(x=>x.verified);
+ const failed=records.filter(x=>x.repo).some(x=>x.captures.length===0);
+ writeFileSync(join(out,'README.md'),
+  '# Jekyll deployed develop visual evidence\n\n' +
+  'These are READ-ONLY screenshots and computed geometry from the LIVE Cloudflare Worker URLs. '+
+  'Source-commit identity is independently checked against GitHub develop via /.well-known/deployment.json. '+
+  'If report.json has verified=false, DO NOT claim source identity or visual acceptance; screenshots are illustrative only. '+
+  'Review hero image end gaps, navbar transparency/scroll, brand/menu reflow, checkbox grouping, '+
+  'footer and responsive light/dark behavior. No scripts modified either site.\n');
+ console.log(JSON.stringify({verified,failed,hosts:records.map(x=>({family:x.family,verified:x.verified,
+  expected:x.expectedCommit,observed:x.deployedCommit,screenshots:x.screenshots?.length,errors:x.verificationErrors?.slice(-2)}))},null,2));
+ if(!verified||failed)process.exitCode=1;
+}
