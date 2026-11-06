@@ -19,7 +19,7 @@ const sizes=[{name:'desktop',width:1440,height:900},{name:'mobile',width:390,hei
 const pause=ms=>new Promise(r=>setTimeout(r,ms));
 const safe=(x)=>String(x).slice(0,600);
 async function jsonAt(url,timeout=15000){
- const r=await fetch(url,{headers:{'User-Agent':'Jekyll-live-audit-capture/1.0','Accept':'application/json'},signal:AbortSignal.timeout(timeout),redirect:'follow'});
+ const r=await fetch(url,{headers:{'User-Agent':'Jekyll-live-audit-capture/1.0','Accept':'application/json',...(process.env.GITHUB_TOKEN&&url.startsWith('https://api.github.com/')?{Authorization:'Bearer '+process.env.GITHUB_TOKEN}:{})},signal:AbortSignal.timeout(timeout),redirect:'follow'});
  if(!r.ok)throw Error('HTTP '+r.status+' at '+url);
  return r.json();
 }
