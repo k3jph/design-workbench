@@ -147,7 +147,7 @@ try {
       const walker=document.createTreeWalker(el,NodeFilter.SHOW_TEXT);
       while(walker.nextNode()&&wordsChecked<64){
        const node=walker.currentNode;
-       for(const match of node.textContent.matchAll(/\\S+/g)){
+       for(const match of node.textContent.matchAll(/\S+/g)){
         if(wordsChecked++>=64)break;
         const range=document.createRange();
         range.setStart(node,match.index);
