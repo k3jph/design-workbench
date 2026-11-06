@@ -196,6 +196,44 @@ try {
    finally{await context.close();}
   }
  }
+
+ // Motion-enabled read-only transition evidence; previous static captures
+ // request reduced motion and therefore cannot certify a nav fade.
+ for(const host of hosts){
+  const item=records.find(x=>x.family===host.family);
+  item.navTransitions=[];
+  for(const mode of ['light','dark']){
+   const context=await browser.newContext({viewport:{width:1440,height:900},reducedMotion:'no-preference',
+    colorScheme:mode==='dark'?'dark':'light'});
+   await context.addInitScript(m=>{try{localStorage.setItem('design-appearance',m)}catch{}},mode);
+   const page=await context.newPage();
+   try{
+    const response=await page.goto(host.origin+'/',{waitUntil:'load',timeout:20000});
+    const nav=page.locator('.site-header,.site-navbar,.nav-shell').first();
+    const sample=async(stage)=>{
+     const observed=await nav.evaluate(el=>{
+      const s=getComputedStyle(el);
+      return{backgroundColor:s.backgroundColor,backgroundImage:s.backgroundImage,
+       opacity:s.opacity,transitionProperty:s.transitionProperty,
+       transitionDuration:s.transitionDuration,position:s.position,classes:el.className};
+     });
+     const file=host.family+'--motion--'+mode+'--'+stage+'.jpg';
+     await page.screenshot({path:join(out,'screenshots',file),type:'jpeg',quality:83,animations:'allow'});
+     item.screenshots.push(file);
+     return{stage,file,observed};
+    };
+    const samples=[await sample('top')];
+    await page.evaluate(()=>scrollTo(0,450));
+    await page.waitForTimeout(100);
+    samples.push(await sample('scroll-100ms'));
+    await page.waitForTimeout(500);
+    samples.push(await sample('scroll-600ms'));
+    item.navTransitions.push({mode,status:response?.status()||0,samples});
+   }catch(e){item.navTransitions.push({mode,error:safe(e.message)});}
+   finally{await context.close();}
+  }
+ }
+
 }catch(e){records.push({fatalError:safe(e.stack||e.message)});process.exitCode=1;}
 finally{
  if(browser)await browser.close();
