@@ -14,7 +14,7 @@ const targets=[
 const records=[];
 const safe=e=>String(e?.message||e).slice(0,500);
 async function json(url){
- const r=await fetch(url,{headers:{'Accept':'application/vnd.github+json','User-Agent':'independent-jekyll-preview-capture/1.0'},signal:AbortSignal.timeout(20000)});
+ const r=await fetch(url,{headers:{'Accept':'application/vnd.github+json','User-Agent':'independent-jekyll-preview-capture/1.0',...(process.env.GITHUB_TOKEN&&url.startsWith('https://api.github.com/')?{Authorization:'Bearer '+process.env.GITHUB_TOKEN}:{})},signal:AbortSignal.timeout(20000)});
  if(!r.ok)throw Error('HTTP '+r.status+' at '+url);
  return r.json();
 }
