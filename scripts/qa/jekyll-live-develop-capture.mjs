@@ -228,7 +228,27 @@ try {
     samples.push(await sample('scroll-100ms'));
     await page.waitForTimeout(500);
     samples.push(await sample('scroll-600ms'));
-    item.navTransitions.push({mode,status:response?.status()||0,samples});
+    // Sample actual computed colors at bounded times with no screenshot
+    // waits in between, after restoring a fully transparent top state.
+    await page.evaluate(()=>scrollTo({top:0,behavior:'instant'}));
+    await page.waitForTimeout(650);
+    const timeline=await page.evaluate(async()=>{
+     const nav=document.querySelector('.site-header,.site-navbar,.nav-shell');
+     const sleep=ms=>new Promise(r=>setTimeout(r,ms));
+     const t0=performance.now();
+     const read=label=>({label,tMs:Math.round(performance.now()-t0),backgroundColor:getComputedStyle(nav).backgroundColor,
+      classes:nav.className,scrollY:window.scrollY});
+     window.scrollTo({top:450,behavior:'instant'});
+     const out=[read('immediate')];
+     let last=0;
+     for(const ms of [30,90,180,300,500]){
+      await sleep(ms-last);
+      out.push(read(String(ms)+'ms'));
+      last=ms;
+     }
+     return out;
+    });
+    item.navTransitions.push({mode,status:response?.status()||0,samples,timeline});
    }catch(e){item.navTransitions.push({mode,error:safe(e.message)});}
    finally{await context.close();}
   }
