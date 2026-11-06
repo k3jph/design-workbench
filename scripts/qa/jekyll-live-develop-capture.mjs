@@ -137,6 +137,37 @@ try {
      const label=checkbox?.closest('label');
      const text=label?.querySelector('span');
      const brand=document.querySelector('.site-header .brand span, .navbar-brand span');
+     // Document-level overflow misses text clipped by an internal scroll/clip box.
+     // Measure each visible word's actual text-range fragments against both the
+     // viewport and its overflow-clipping ancestors; screenshots remain decisive.
+     const wordGeometry=(el)=>{
+      if(!el)return null;
+      const clippedWords=[];
+      let wordsChecked=0;
+      const walker=document.createTreeWalker(el,NodeFilter.SHOW_TEXT);
+      while(walker.nextNode()&&wordsChecked<64){
+       const node=walker.currentNode;
+       for(const match of node.textContent.matchAll(/\\S+/g)){
+        if(wordsChecked++>=64)break;
+        const range=document.createRange();
+        range.setStart(node,match.index);
+        range.setEnd(node,match.index+match[0].length);
+        const fragments=[...range.getClientRects()];
+        const escapes=fragments.some(r=>{
+         if(r.right>innerWidth+.5||r.left<-.5)return true;
+         for(let a=node.parentElement;a;a=a.parentElement){
+          const s=getComputedStyle(a);
+          if(!/(hidden|clip|auto|scroll)/.test(s.overflowX))continue;
+          const box=a.getBoundingClientRect();
+          if(r.left<box.left-.5||r.right>box.right+.5)return true;
+         }
+         return false;
+        });
+        if(escapes)clippedWords.push({word:match[0].slice(0,48),fragments:fragments.map(r=>({left:+r.left.toFixed(1),right:+r.right.toFixed(1)}))});
+       }
+      }
+      return{wordsChecked,clippedWords};
+     };
      let wordFragments=null;
      if(brand?.firstChild?.nodeType===Node.TEXT_NODE){
       const node=brand.firstChild;const end=node.textContent.trim().split(' ')[0].length;
@@ -147,6 +178,7 @@ try {
       headerPosition:header?getComputedStyle(header).position:null,
       headerInFlow:header?getComputedStyle(header).position!=='fixed':null,
       firstMastheadText:rect(firstText),brandWordFragments:wordFragments,
+      textClipping:{brand:wordGeometry(brand),eyebrow:wordGeometry(document.querySelector('main .eyebrow')),heading:wordGeometry(document.querySelector('main h1'))},
       checkbox:rect(checkbox),checkboxLabelText:rect(text),checkboxAssociated:!!label&&label.contains(checkbox),
       overflowX:document.documentElement.scrollWidth>innerWidth};
     });
