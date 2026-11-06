@@ -37,7 +37,7 @@ try{
    record.cloudflareBuild=build.details_url;
    const manifest=await json(record.origin+'/.well-known/deployment.json');
    record.manifest={repository:manifest.repository,branch:manifest.branch,sourceCommit:manifest.sourceCommit,deploymentKind:manifest.deploymentKind};
-   record.verified=manifest.repository===t.repo&&manifest.sourceCommit===record.headSha&&manifest.branch===record.headBranch&&manifest.deploymentKind==='preview';
+   record.verified=manifest.repository===t.repo&&manifest.sourceCommit===record.headSha&&manifest.branch===record.headBranch&&manifest.deploymentKind==='isolated-pull-request-preview';
    if(!record.verified){record.errors.push('PR SHA/branch/preview-kind manifest mismatch; screenshots are NOT acceptance proof');continue;}
    for(const scale of [100,200,400]){
     for(const route of ['/','/examples/sign-up/']){
