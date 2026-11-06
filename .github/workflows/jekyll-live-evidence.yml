@@ -3,6 +3,7 @@ on:
   pull_request:
     paths:
       - 'scripts/qa/jekyll-live-develop-capture.mjs'
+      - 'scripts/qa/jekyll-pr-preview-capture.mjs'
       - '.github/workflows/jekyll-live-evidence.yml'
   workflow_dispatch:
 permissions:
@@ -25,6 +26,11 @@ jobs:
         run: npx playwright install --with-deps chromium
       - name: Capture actual Cloudflare develop pages and verify deployed source SHAs
         run: node scripts/qa/jekyll-live-develop-capture.mjs
+        env:
+          LIVE_JEKYLL_EVIDENCE_DIR: ${{ runner.temp }}/jekyll-live-evidence
+      - name: Independently capture Jekyll PR previews at their exact source SHA
+        if: always()
+        run: node scripts/qa/jekyll-pr-preview-capture.mjs
         env:
           LIVE_JEKYLL_EVIDENCE_DIR: ${{ runner.temp }}/jekyll-live-evidence
       - name: Archive all available evidence, including failure reports
