@@ -208,7 +208,7 @@ try {
    await context.addInitScript(m=>{try{localStorage.setItem('design-appearance',m)}catch{}},mode);
    const page=await context.newPage();
    try{
-    const response=await page.goto(host.origin+'/',{waitUntil:'load',timeout:20000});
+    const response=await page.goto(host.origin+'/language/',{waitUntil:'load',timeout:20000});
     const nav=page.locator('.site-header,.site-navbar,.nav-shell').first();
     const sample=async(stage)=>{
      const observed=await nav.evaluate(el=>{
@@ -217,7 +217,7 @@ try {
        opacity:s.opacity,transitionProperty:s.transitionProperty,
        transitionDuration:s.transitionDuration,position:s.position,classes:el.className};
      });
-     const file=host.family+'--motion--'+mode+'--'+stage+'.jpg';
+     const file=host.family+'--motion--section--'+mode+'--'+stage+'.jpg';
      await page.screenshot({path:join(out,'screenshots',file),type:'jpeg',quality:83,animations:'allow'});
      item.screenshots.push(file);
      return{stage,file,observed};
