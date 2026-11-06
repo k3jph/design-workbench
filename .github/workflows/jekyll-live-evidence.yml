@@ -28,11 +28,13 @@ jobs:
         run: node scripts/qa/jekyll-live-develop-capture.mjs
         env:
           LIVE_JEKYLL_EVIDENCE_DIR: ${{ runner.temp }}/jekyll-live-evidence
+          GITHUB_TOKEN: ${{ github.token }}
       - name: Independently capture Jekyll PR previews at their exact source SHA
         if: always()
         run: node scripts/qa/jekyll-pr-preview-capture.mjs
         env:
           LIVE_JEKYLL_EVIDENCE_DIR: ${{ runner.temp }}/jekyll-live-evidence
+          GITHUB_TOKEN: ${{ github.token }}
       - name: Archive all available evidence, including failure reports
         if: always()
         uses: actions/upload-artifact@v4
