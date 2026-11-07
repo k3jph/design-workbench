@@ -21,8 +21,8 @@ import type { StoredDraft } from "./draft-types";
 import { WorkbenchSettings } from "./settings";
 import { readPreferences } from "./preferences.mjs";
 import { RevisionReview } from "./revisions";
-import "@martlet/react/styles.css";
-import "@krigsvold/react/styles.css";
+import "@martlet/react-runtime/styles.css";
+import "@krigsvold/react-runtime/styles.css";
 import "@martlet/core/fonts.css";
 import "@krigsvold/core/fonts.css";
 import {

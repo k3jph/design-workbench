@@ -13,79 +13,136 @@
       "packages": {
         "core": {
           "name": "@martlet/core",
-          "version": "2.2.3",
+          "version": "2.2.4",
           "published": true,
           "tag": "latest",
           "repository": "https://github.com/martletdesign/core",
           "tarball": {
-            "url": "https://registry.npmjs.org/@martlet/core/-/core-2.2.3.tgz",
-            "sha256": "1395eb206514b54500e4a098b1aafe59492c516c301a7e8c81a18672f6f4ce42",
-            "integrity": "sha512-Yan9LJSOTAP+BDeqXMZfZ+uq9oVOb7xGczHEM7fxKTAwI3SQgoLu06te5R1qLu/IB/KHNL2WuAfRLvXU/XsXwQ==",
+            "url": "https://registry.npmjs.org/@martlet/core/-/core-2.2.4.tgz",
+            "sha256": "4c2dbefea210cdda29369d7a0bf315623f11ed5a5356316260da67e9575bf39d",
+            "integrity": "sha512-LY8Fkh1KUIdF+dU/RVxPE+XebiXLRCDjeWjnDeqPlrkv7795v9m6vN2kkeu3PdFy5qlQjWQ6TYJnyVLKcJKpIg==",
+            "bytes": 52746,
             "available": true,
-            "source": "npm registry independently matched reviewed archive SHA-256"
+            "source": "Official npm bytes and GitHub Release download matched accepted source archive; npm signatures and staging provenance verified"
           },
           "distTags": {
-            "latest": "2.2.3"
+            "latest": "2.2.4"
+          },
+          "sourceCommit": "52d5835c49aea2dc3b048e80acf1efc6a869ef2e",
+          "releaseTag": "v2.2.4",
+          "release": "https://github.com/martletdesign/core/releases/tag/v2.2.4",
+          "releaseAssetImmutable": false,
+          "sourceArchive": {
+            "url": "https://github.com/martletdesign/core/releases/download/v2.2.4/martlet-core-2.2.4.tgz",
+            "sha256": "4c2dbefea210cdda29369d7a0bf315623f11ed5a5356316260da67e9575bf39d",
+            "bytes": 52746,
+            "available": true,
+            "reviewedBytesMatched": true
+          },
+          "checksums": {
+            "url": "https://github.com/martletdesign/core/releases/download/v2.2.4/SHA256SUMS",
+            "sha256": "52afc914a422cc5297c1f9445b74a260c07cd727b2183e6c19f82844ea966ba0",
+            "bytes": 89,
+            "available": true
+          },
+          "provenance": {
+            "url": "https://registry.npmjs.org/-/npm/v1/attestations/@martlet%2fcore@2.2.4",
+            "predicateType": "https://slsa.dev/provenance/v1",
+            "sourceCommit": "52d5835c49aea2dc3b048e80acf1efc6a869ef2e"
           }
         },
         "Astro": {
           "name": "@martlet/astro",
-          "version": "2.0.0",
+          "version": "2.0.1",
           "published": true,
           "maturity": "experimental",
           "tag": "latest",
           "distTags": {
-            "latest": "2.0.0",
-            "next": "1.2.2"
+            "next": "1.2.2",
+            "latest": "2.0.1"
           },
           "repository": "https://github.com/martletdesign/astro",
           "core": {
             "name": "@martlet/core",
-            "version": "2.2.3"
+            "version": "2.2.4"
           },
-          "install": "npm install @martlet/core@2.2.3 @martlet/astro@2.0.0 astro",
+          "install": "npm install @martlet/core@2.2.4 @martlet/astro@2.0.1 astro",
           "peerDependencies": {
             "astro": "^5.14.0 || ^6.0.0 || ^7.0.0",
-            "@martlet/core": "^2.2.3"
+            "@martlet/core": "^2.2.4"
           },
           "tarball": {
-            "url": "https://registry.npmjs.org/@martlet/astro/-/astro-2.0.0.tgz",
-            "integrity": "sha512-POsa+jvWpwEq7KyHrMDsuMsBzQvZ45AcTLmPVFYAYZ90dzWiPxNQDV2bx9t9TrTROFyvhhjbuunGRjRJgXdrGA==",
+            "url": "https://registry.npmjs.org/@martlet/astro/-/astro-2.0.1.tgz",
+            "sha256": "25ed4adb21ec022835806dfc724cd29e4db424a9d537dd99d8a5ff8cf0b370dd",
+            "integrity": "sha512-qmLoKHfDq6z0SM6uQP2rVc5EpNZ8J8sC1DNtIdrhHtdy9RpjTyqIt3jHyDVycrpdQsmgvVGhYD6M78kwat810w==",
+            "bytes": 107627,
             "available": true,
-            "source": "npm registry metadata"
+            "source": "Official npm bytes and GitHub Release download matched accepted source archive; npm signatures and staging provenance verified"
+          },
+          "sourceCommit": "f3e88c84f0c447b83058a7957fd16c12195d2bdb",
+          "releaseTag": "v2.0.1",
+          "release": "https://github.com/martletdesign/astro/releases/tag/v2.0.1",
+          "releaseAssetImmutable": false,
+          "sourceArchive": {
+            "url": "https://github.com/martletdesign/astro/releases/download/v2.0.1/martlet-astro-2.0.1.tgz",
+            "sha256": "25ed4adb21ec022835806dfc724cd29e4db424a9d537dd99d8a5ff8cf0b370dd",
+            "bytes": 107627,
+            "available": true,
+            "reviewedBytesMatched": true
+          },
+          "checksums": {
+            "url": "https://github.com/martletdesign/astro/releases/download/v2.0.1/SHA256SUMS",
+            "sha256": "2338f6a07cfbcf009faba8f7375820a8af27dad8ee82ffdd5c6ab4bc27e94cda",
+            "bytes": 90,
+            "available": true
+          },
+          "provenance": {
+            "url": "https://registry.npmjs.org/-/npm/v1/attestations/@martlet%2fastro@2.0.1",
+            "predicateType": "https://slsa.dev/provenance/v1",
+            "sourceCommit": "f3e88c84f0c447b83058a7957fd16c12195d2bdb"
+          },
+          "productionUrl": "https://astro.martletdesign.dev",
+          "deployment": {
+            "sourceCommit": "f3e88c84f0c447b83058a7957fd16c12195d2bdb",
+            "artifactSha256": "071f813e557d7cd07cd20ab8af05df74cbffe8b8cacc8203f979c755658c0035",
+            "verifiedAt": "2026-11-07T21:51:34.325309+00:00",
+            "filesVerified": 406,
+            "method": "Complete canonical live payload and source identity verification",
+            "noindex": false
           }
         },
         "React": {
           "name": "@martlet/react",
-          "version": "0.2.0",
+          "version": "0.2.1",
           "published": true,
           "maturity": "experimental",
           "tag": "latest",
           "distTags": {
-            "latest": "0.2.0",
-            "next": "0.1.0"
+            "next": "0.1.0",
+            "latest": "0.2.1"
           },
           "repository": "https://github.com/martletdesign/react",
           "core": {
             "name": "@martlet/core",
-            "version": "2.2.3"
+            "version": "2.2.4"
           },
-          "install": "npm install @martlet/react@0.2.0 react@19 react-dom@19",
+          "install": "npm install @martlet/react@0.2.1 react@19 react-dom@19",
           "peerDependencies": {
             "react": "^19.0.0"
           },
-          "sourceCommit": "322e549d15812d74257ace37207f62410d6f0911",
+          "sourceCommit": "8eeb43f172bbd89634f6c1cbaee993130d3525b3",
           "tarball": {
-            "url": "https://registry.npmjs.org/@martlet/react/-/react-0.2.0.tgz",
-            "sha256": "185bf53ada0b4bdb792a1ba78223068ec3eda29ba1e74a6f85415c6cdf98f6d1",
-            "integrity": "sha512-IIAJRRgbpyEtea4hZpGSsQ3rynC+GAjOk/phrCgx/2bWM34yKvmB38qCAOx65ScSY19//1EmE5Y7APghZdfH9w==",
+            "url": "https://registry.npmjs.org/@martlet/react/-/react-0.2.1.tgz",
+            "sha256": "1ba283289b4f5aba5ac9daa892ee0e179e469699a7adf41bfdae8fc1239727de",
+            "integrity": "sha512-ME2aFqcjaucDykxgrpCAfk2dy8KOR2mIna+f4DutxCNwcUrtNe0a6VTxPKukAux+Z5Hh335hcCQOjXMf4DmUdw==",
+            "bytes": 16618,
             "available": true,
-            "source": "npm registry bytes matched published SHA-512 integrity"
+            "source": "Official npm bytes and GitHub Release download matched accepted source archive; npm signatures and staging provenance verified"
           },
           "provenance": {
-            "url": "https://registry.npmjs.org/-/npm/v1/attestations/@martlet%2freact@0.2.0",
+            "url": "https://registry.npmjs.org/-/npm/v1/attestations/@martlet%2freact@0.2.1",
             "predicateType": "https://slsa.dev/provenance/v1",
-            "sourceCommit": "322e549d15812d74257ace37207f62410d6f0911"
+            "sourceCommit": "8eeb43f172bbd89634f6c1cbaee993130d3525b3"
           },
           "historicalArchive": {
             "version": "0.1.0",
@@ -97,7 +154,34 @@
               "source": "public GitHub pre-release react-v0.1.0"
             },
             "role": "Original experimental workbench snapshot; not the current npm package"
-          }
+          },
+          "releaseTag": "v0.2.1",
+          "release": "https://github.com/martletdesign/react/releases/tag/v0.2.1",
+          "releaseAssetImmutable": false,
+          "sourceArchive": {
+            "url": "https://github.com/martletdesign/react/releases/download/v0.2.1/martlet-react-0.2.1.tgz",
+            "sha256": "1ba283289b4f5aba5ac9daa892ee0e179e469699a7adf41bfdae8fc1239727de",
+            "bytes": 16618,
+            "available": true,
+            "reviewedBytesMatched": true
+          },
+          "checksums": {
+            "url": "https://github.com/martletdesign/react/releases/download/v0.2.1/SHA256SUMS",
+            "sha256": "b570e50e7792a2ed2d6a6a8cef8e191bc1ba97e7f1bed3f0ce54b9b6a21311ef",
+            "bytes": 90,
+            "available": true
+          },
+          "productionUrl": "https://react.martletdesign.dev/",
+          "deployment": {
+            "sourceCommit": "c73f5aa6d6b9dc8898974e4e4601b216e51edc2f",
+            "sourceTree": "bcb289fff7a622f8278833db15636f41549a18db",
+            "artifactSha256": "e15784eded04fb75661759834b86d269fbf28b1a79604f16620b6ec505379f26",
+            "verifiedAt": "2026-11-07T22:15:21.831Z",
+            "filesVerified": 793,
+            "method": "Complete canonical live payload and source identity verification",
+            "noindex": false
+          },
+          "sourceTree": "1efc90a1b6e1cca5dfa5fc3240018612cc053893"
         },
         "legacyTheme": {
           "name": "@martlet/theme",
@@ -154,79 +238,136 @@
       "packages": {
         "core": {
           "name": "@krigsvold/core",
-          "version": "2.2.4",
+          "version": "2.2.5",
           "published": true,
           "tag": "latest",
           "repository": "https://github.com/krigsvolddesign/core",
           "tarball": {
-            "url": "https://registry.npmjs.org/@krigsvold/core/-/core-2.2.4.tgz",
-            "sha256": "c2088b2585e913c11f74a045805bcef186e8e830f5c626e46c0c299e6a6eb7c4",
-            "integrity": "sha512-bApvYVgYbGl/lkOYI1i/HYr1uS8ZwITrr/H1SBT2C3/ziA0UvXSsAS2Pppk/L6E46uxboArsfxaSaUwZ7rV2GQ==",
+            "url": "https://registry.npmjs.org/@krigsvold/core/-/core-2.2.5.tgz",
+            "sha256": "3138e154dd2473777e43e17e02b5375bace1f87dc891d1aa27854d85534a1ad8",
+            "integrity": "sha512-un5CmNf21E7UKVARQTmNdmhppp+WAjR+O1bwGMTbCEr8P7ELLCQ7T9bIwGJ5d7cTakXhgOdNfSP/hzgBH6BrrA==",
+            "bytes": 60703,
             "available": true,
-            "source": "npm registry independently matched reviewed archive SHA-256"
+            "source": "Official npm bytes and GitHub Release download matched accepted source archive; npm signatures and staging provenance verified"
           },
           "distTags": {
-            "latest": "2.2.4"
+            "latest": "2.2.5"
+          },
+          "sourceCommit": "984e838c5cb465ae70490297e0c3960697bfcd7b",
+          "releaseTag": "v2.2.5",
+          "release": "https://github.com/krigsvolddesign/core/releases/tag/v2.2.5",
+          "releaseAssetImmutable": false,
+          "sourceArchive": {
+            "url": "https://github.com/krigsvolddesign/core/releases/download/v2.2.5/krigsvold-core-2.2.5.tgz",
+            "sha256": "3138e154dd2473777e43e17e02b5375bace1f87dc891d1aa27854d85534a1ad8",
+            "bytes": 60703,
+            "available": true,
+            "reviewedBytesMatched": true
+          },
+          "checksums": {
+            "url": "https://github.com/krigsvolddesign/core/releases/download/v2.2.5/SHA256SUMS",
+            "sha256": "62e9a32b8ae57eb3e3a6d60de0f40099ea656f0b8231d9022e5f5fec3328ee70",
+            "bytes": 91,
+            "available": true
+          },
+          "provenance": {
+            "url": "https://registry.npmjs.org/-/npm/v1/attestations/@krigsvold%2fcore@2.2.5",
+            "predicateType": "https://slsa.dev/provenance/v1",
+            "sourceCommit": "984e838c5cb465ae70490297e0c3960697bfcd7b"
           }
         },
         "Astro": {
           "name": "@krigsvold/astro",
-          "version": "2.0.0",
+          "version": "2.0.1",
           "published": true,
           "maturity": "experimental",
           "tag": "latest",
           "distTags": {
-            "latest": "2.0.0",
-            "next": "1.2.2"
+            "next": "1.2.2",
+            "latest": "2.0.1"
           },
           "repository": "https://github.com/krigsvolddesign/astro",
           "core": {
             "name": "@krigsvold/core",
-            "version": "2.2.4"
+            "version": "2.2.5"
           },
-          "install": "npm install @krigsvold/core@2.2.4 @krigsvold/astro@2.0.0 astro",
+          "install": "npm install @krigsvold/core@2.2.5 @krigsvold/astro@2.0.1 astro",
           "peerDependencies": {
             "astro": "^5.14.0 || ^6.0.0 || ^7.0.0",
-            "@krigsvold/core": "^2.2.4"
+            "@krigsvold/core": "^2.2.5"
           },
           "tarball": {
-            "url": "https://registry.npmjs.org/@krigsvold/astro/-/astro-2.0.0.tgz",
-            "integrity": "sha512-JqvW9TEsSHeznZQQByq3HgjWre7Qx4GSP3WPm1jY1SYffv9CFXvVxMSVmrpyyCkJOcf4Nww5OhCI6ycwohhuRg==",
+            "url": "https://registry.npmjs.org/@krigsvold/astro/-/astro-2.0.1.tgz",
+            "sha256": "d7d947d54ef1357ca4b129dcbb53283e03e1fce31d4609e8a7f62d43a6957f42",
+            "integrity": "sha512-QES3IeNQUV96kg+k/hQuouI94OV+OTllYdIY7CKzBhkj7eBcNtpZXk899wfNPxgS7qlJ50qn90oliRGDV5s7YQ==",
+            "bytes": 97593,
             "available": true,
-            "source": "npm registry metadata"
+            "source": "Official npm bytes and GitHub Release download matched accepted source archive; npm signatures and staging provenance verified"
+          },
+          "sourceCommit": "5d8e8f874d28e85ba07089b82a30a34b692d70b7",
+          "releaseTag": "v2.0.1",
+          "release": "https://github.com/krigsvolddesign/astro/releases/tag/v2.0.1",
+          "releaseAssetImmutable": false,
+          "sourceArchive": {
+            "url": "https://github.com/krigsvolddesign/astro/releases/download/v2.0.1/krigsvold-astro-2.0.1.tgz",
+            "sha256": "d7d947d54ef1357ca4b129dcbb53283e03e1fce31d4609e8a7f62d43a6957f42",
+            "bytes": 97593,
+            "available": true,
+            "reviewedBytesMatched": true
+          },
+          "checksums": {
+            "url": "https://github.com/krigsvolddesign/astro/releases/download/v2.0.1/SHA256SUMS",
+            "sha256": "160da37c8a3321a98b3fc819d8b2a31bb5ba4d42d2c475bcc825853802ce1c1d",
+            "bytes": 92,
+            "available": true
+          },
+          "provenance": {
+            "url": "https://registry.npmjs.org/-/npm/v1/attestations/@krigsvold%2fastro@2.0.1",
+            "predicateType": "https://slsa.dev/provenance/v1",
+            "sourceCommit": "5d8e8f874d28e85ba07089b82a30a34b692d70b7"
+          },
+          "productionUrl": "https://astro.krigsvolddesign.dev",
+          "deployment": {
+            "sourceCommit": "5d8e8f874d28e85ba07089b82a30a34b692d70b7",
+            "artifactSha256": "6eaa719efcab04cd29128c3ae1ad654707a66186b426d13e8363364bf0e9a27b",
+            "verifiedAt": "2026-11-07T21:52:51.523329+00:00",
+            "filesVerified": 590,
+            "method": "Complete canonical live payload and source identity verification",
+            "noindex": false
           }
         },
         "React": {
           "name": "@krigsvold/react",
-          "version": "0.2.0",
+          "version": "0.2.1",
           "published": true,
           "maturity": "experimental",
           "tag": "latest",
           "distTags": {
-            "latest": "0.2.0",
-            "next": "0.1.0"
+            "next": "0.1.0",
+            "latest": "0.2.1"
           },
           "repository": "https://github.com/krigsvolddesign/react",
           "core": {
             "name": "@krigsvold/core",
-            "version": "2.2.4"
+            "version": "2.2.5"
           },
-          "install": "npm install @krigsvold/react@0.2.0 react@19 react-dom@19",
+          "install": "npm install @krigsvold/react@0.2.1 react@19 react-dom@19",
           "peerDependencies": {
             "react": "^19.0.0"
           },
-          "sourceCommit": "5128c6bf26cdba8ddb3c2d88de65b2307d3661b4",
+          "sourceCommit": "bbe40be08abb24e51fc5e31e1e67786a271b1edf",
           "tarball": {
-            "url": "https://registry.npmjs.org/@krigsvold/react/-/react-0.2.0.tgz",
-            "sha256": "26db29737f69e5bb20ecc7b138acb35656c68c3f4eea80defdfb6a3d1bfb9961",
-            "integrity": "sha512-35kPqHPuFEyLP03Kps5JujlHN3PmhU59W0+39/CUjWbkUa90nFNiV3V2UnmkngVzjN3YBk/h4rRV4vWgNwBqIw==",
+            "url": "https://registry.npmjs.org/@krigsvold/react/-/react-0.2.1.tgz",
+            "sha256": "589695c54597f6a89f0cbf07c86226c97660997d1dad1999f9044632d2f19b2a",
+            "integrity": "sha512-FvrS3agHN1rodVRK2aUTPs1RQZV6JqiKZZEXTNaOjnW7yvSLo4B0vaLbZE/x/U1AT5cXCN33e84YKE+fqms4xw==",
+            "bytes": 16528,
             "available": true,
-            "source": "npm registry bytes matched published SHA-512 integrity"
+            "source": "Official npm bytes and GitHub Release download matched accepted source archive; npm signatures and staging provenance verified"
           },
           "provenance": {
-            "url": "https://registry.npmjs.org/-/npm/v1/attestations/@krigsvold%2freact@0.2.0",
+            "url": "https://registry.npmjs.org/-/npm/v1/attestations/@krigsvold%2freact@0.2.1",
             "predicateType": "https://slsa.dev/provenance/v1",
-            "sourceCommit": "5128c6bf26cdba8ddb3c2d88de65b2307d3661b4"
+            "sourceCommit": "bbe40be08abb24e51fc5e31e1e67786a271b1edf"
           },
           "historicalArchive": {
             "version": "0.1.0",
@@ -238,7 +379,34 @@
               "source": "public GitHub pre-release react-v0.1.0"
             },
             "role": "Original experimental workbench snapshot; not the current npm package"
-          }
+          },
+          "releaseTag": "v0.2.1",
+          "release": "https://github.com/krigsvolddesign/react/releases/tag/v0.2.1",
+          "releaseAssetImmutable": false,
+          "sourceArchive": {
+            "url": "https://github.com/krigsvolddesign/react/releases/download/v0.2.1/krigsvold-react-0.2.1.tgz",
+            "sha256": "589695c54597f6a89f0cbf07c86226c97660997d1dad1999f9044632d2f19b2a",
+            "bytes": 16528,
+            "available": true,
+            "reviewedBytesMatched": true
+          },
+          "checksums": {
+            "url": "https://github.com/krigsvolddesign/react/releases/download/v0.2.1/SHA256SUMS",
+            "sha256": "dd18abcef2972da24a19843d36d756d4068b493ad36f5bcef19131dc7ae8349d",
+            "bytes": 92,
+            "available": true
+          },
+          "productionUrl": "https://react.krigsvolddesign.dev/",
+          "deployment": {
+            "sourceCommit": "f9fe292f1b06185e64f98b6005754dd0a2d088e9",
+            "sourceTree": "91c6ab40d68f132e111a8070115dd17f9ac6e941",
+            "artifactSha256": "a5cce717f47dac6362607ffe81991be5d379ecccf77e0ecbb79ca1c8e74a8d41",
+            "verifiedAt": "2026-11-07T22:16:38.479Z",
+            "filesVerified": 1161,
+            "method": "Complete canonical live payload and source identity verification",
+            "noindex": false
+          },
+          "sourceTree": "4c5fd8ffc33731e04416169518ca78dfa234ee96"
         },
         "legacyTheme": {
           "name": "@krigsvold/theme",
