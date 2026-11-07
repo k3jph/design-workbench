@@ -4,6 +4,7 @@ import { createHash } from "node:crypto";
 import { Client } from "@modelcontextprotocol/client";
 import { StdioClientTransport } from "@modelcontextprotocol/client/stdio";
 import { resolve } from "node:path";
+import { readFile } from "node:fs/promises";
 import distribution from "../docs/distribution.json" with {type:"json"};
 for (const family of ["martlet", "krigsvold"])
   test(
@@ -43,8 +44,9 @@ for (const family of ["martlet", "krigsvold"])
         assert.equal(manifest.family, family);
         assert.equal(manifest.version, distribution.preview.version);
         assert.equal(manifest.platforms.Astro.version, distribution.families[family].packages.Astro.version);
-        assert.equal(manifest.references.length, 62);
+        assert.equal(manifest.references.length, 66);
         assert.equal(manifest.platforms.React.published, distribution.families[family].packages.React.published);
+        assert.deepEqual(manifest.platforms.React.foundation, distribution.families[family].packages.React.core);
         assert.equal(manifest.platforms.Astro.published, distribution.families[family].packages.Astro.published);
         assert.equal(manifest.platforms.Astro.examples, true);
         assert.equal(manifest.canonicalGuidance.repository, `${family}theme/npm`);
@@ -89,6 +91,23 @@ for (const family of ["martlet", "krigsvold"])
           grammar.contentSha256,
         );
         assert.ok(grammar.content.includes(`--${family}-field-gap`));
+        for (const [id,path] of [
+          ['pattern:canonical-examples','README.md'],
+          ['pattern:dashboard-applications','DASHBOARDS.md'],
+          ['pattern:scientific-workspace','SCIENTIFIC.md'],
+          ['pattern:interaction-recovery','INTERACTION-CONTRACTS.md'],
+        ]) {
+          const reference=(await call('get_reference',{id})).value;
+          assert.equal(reference.family,family);
+          assert.equal(reference.content,await readFile(`examples/page-archetypes/${path}`,'utf8'));
+          assert.equal(createHash('sha256').update(reference.content).digest('hex'),reference.contentSha256);
+        }
+        const science=(await call('search_guidance',{query:'scientific thermal calculation',kind:'pattern'})).value;
+        assert.equal(science.results[0].id,'pattern:scientific-workspace');
+        const tokens=(await call('get_reference',{id:'tokens:foundation'})).value;
+        const core=distribution.families[family].packages.React.core;
+        assert.equal(tokens.source,`npm:${core.name}@${core.version}/foundation.json`);
+        assert.equal(tokens.content,await readFile(`node_modules/${core.name}/dist/foundation.json`,'utf8'));
         const example = (await call("get_reference", { id: "example:Field" }))
           .value;
         assert.ok(example.content.includes(`@${family}/react`));
@@ -118,7 +137,7 @@ for (const family of ["martlet", "krigsvold"])
         ).value;
         assert.equal(noMatch.results.length, 0);
         const resources = await client.listResources();
-        assert.equal(resources.resources.length, 62);
+        assert.equal(resources.resources.length, 66);
         const resource = resources.resources.find((r) => r.name === "grammar");
         const exact = await client.readResource({ uri: resource.uri });
         assert.equal(

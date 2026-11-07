@@ -1,0 +1,17 @@
+{
+  "id": "baseline-all50-screenshot-index-59a2e5555acb",
+  "record": "evidence/baseline-all50-screenshot-index-59a2e5555acb.json",
+  "originalName": "baseline-all50-screenshot-index.json",
+  "kind": "file",
+  "rawSha256": "78ebb0fc6c8928b70b3e6dff8358ecfab71aea27b6cc6a5e61c4f63395a13320",
+  "rawBytesIncluded": false,
+  "retentionStatus": "preserved-locally-not-bundled",
+  "summaryDocuments": [
+    "source-and-capture-evidence.json"
+  ],
+  "sourceBindings": {
+    "martlet": "ac0a64c6cd5167ccbdf96bb20e46e5d547a49a5d",
+    "krigsvold": "35c7f54aa9418286956f8aa50c2a3dd141006ab2"
+  },
+  "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository."
+}

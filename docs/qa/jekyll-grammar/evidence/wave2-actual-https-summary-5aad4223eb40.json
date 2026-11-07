@@ -1,0 +1,14 @@
+{
+  "id": "wave2-actual-https-summary-5aad4223eb40",
+  "record": "evidence/wave2-actual-https-summary-5aad4223eb40.json",
+  "originalName": "wave2-actual-https-summary.json",
+  "kind": "file",
+  "rawSha256": "f0c134047766ffb3fbf5c4f87f6014ab6d4dd118eb364312b6c54fa037b694e5",
+  "rawBytesIncluded": false,
+  "retentionStatus": "preserved-locally-not-bundled",
+  "summaryDocuments": [
+    "wave2-acceptance.json"
+  ],
+  "sourceBindings": {},
+  "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository."
+}

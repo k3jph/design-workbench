@@ -11,7 +11,7 @@ const commit = process.env.DESIGN_SOURCE_COMMIT ?? null;
 if (commit !== null && !/^[a-f0-9]{40}$/.test(commit))
   throw new Error("DESIGN_SOURCE_COMMIT must be a full commit");
 const repo = "https://github.com/k3jph/design-workbench";
-const ref = commit ?? "work/registry-foundations";
+const ref = commit ?? "develop";
 const distribution=JSON.parse(await readFile("docs/distribution.json","utf8"));
 const componentSource = await readFile("docs/components.md", "utf8");
 const contracts = componentSource
@@ -31,6 +31,8 @@ for (const family of ["martlet", "krigsvold"]) {
   const canonicalUrl = path => `https://github.com/${canonical.repository}/blob/${canonical.commit}/${path}`;
   const delivery=distribution.families[family];
   const reactFoundation=delivery.packages.React.core??{name:`@${family}/theme`,version:delivery.packages.React.theme??"2.1.0"};
+  const installedFoundation=JSON.parse(await readFile(`node_modules/${reactFoundation.name}/package.json`,"utf8"));
+  if(installedFoundation.version!==reactFoundation.version) throw new Error(`Installed ${reactFoundation.name} does not match the documented reference dependency`);
   await writeFile(`mcp/catalogs/${family}-distribution.json`, JSON.stringify(delivery,null,2)+"\n");
   const entries = [];
   function add(
@@ -119,6 +121,14 @@ for (const family of ["martlet", "krigsvold"]) {
     ['pattern:query-results','pattern','Applied query, results, selection and modal recovery','query-results.md'],
     ['coverage','grammar','Grammar coverage, corrections and open evidence','coverage.md'],
   ]) add(id,kind,`${family} ${title}`,await readFile(`docs/languages/${family}/${path}`,'utf8'),canonicalUrl(canonical.files[path].sourcePath),['forms','validation','query','selection','scope','pending','recovery','coverage']);
+  // Reuse the authored shared contracts; these are not new public component APIs
+  // and do not prescribe the same rendered composition in both languages.
+  for (const [id,title,path,tags] of [
+    ['pattern:canonical-examples','50 canonical examples and framework boundaries','README.md',['canonical','examples','50','composition','content','semantics']],
+    ['pattern:dashboard-applications','Analytics, administration and operations contracts','DASHBOARDS.md',['dashboard','analytics','administration','operations','selection','editing','CSV']],
+    ['pattern:scientific-workspace','Scientific calculation, retained results and recovery','SCIENTIFIC.md',['scientific','thermal','calculation','validation','CSV','fallback']],
+    ['pattern:interaction-recovery','Portable interaction, applied state and recovery','INTERACTION-CONTRACTS.md',['interaction','recovery','draft','applied','focus','failure','retry']],
+  ]) add(id,'pattern',`${family} ${title}`,await readFile(`examples/page-archetypes/${path}`,'utf8'),`examples/page-archetypes/${path}`,tags);
   const tmp = await mkdtemp(resolve("test-results/knowledge-"));
   try {
     const source = (
@@ -159,9 +169,9 @@ for (const family of ["martlet", "krigsvold"]) {
     add(
       `tokens:${name}`,
       "tokens",
-      `${family} theme 2.1.0 ${name}`,
-      await readFile(`node_modules/@${family}/theme/dist/${name}.json`, "utf8"),
-      `npm:@${family}/theme@2.1.0/${name}.json`,
+      `${reactFoundation.name} ${reactFoundation.version} ${name}`,
+      await readFile(`node_modules/${reactFoundation.name}/dist/${name}.json`, "utf8"),
+      `npm:${reactFoundation.name}@${reactFoundation.version}/${name}.json`,
       ["tokens", "colors", "typography", "spacing", "layout"],
       "published",
     );
@@ -181,7 +191,7 @@ for (const family of ["martlet", "krigsvold"]) {
     "compatibility",
     "compatibility",
     `${family} support and compatibility`,
-    `React ${delivery.packages.React.version} is experimental; React 19 and ${reactFoundation.name} ${reactFoundation.version}. Retrieve platform:React for the pinned npm install command and alternative immutable archive checksum; publication does not imply API stability. Retrieve platform:HTML and styling:forms for core native markup. Publication status is recorded separately from the immutable canonical guidance snapshot: ${JSON.stringify(delivery.packages)}. Component examples are React-specific; platform:Astro supplies a complete reading composition and the neutral starter route. Do not treat shared styling as an Astro controller. Do not translate React event or focus props into Astro or Jekyll APIs. Retrieve platform:Jekyll for standalone source, legacy-theme authority and independently verified source-release availability. Canonical migration guide: ${canonicalUrl('docs/consolidation.md')}. Vue, Svelte and native APIs are not implemented. Manual assistive technology, localization, RTL and sustained use remain open.\n\n${JSON.stringify(implementations,null,2)}`,
+    `React ${delivery.packages.React.version} is experimental; React 19 and ${reactFoundation.name} ${reactFoundation.version}. Retrieve platform:React for the pinned npm install command and exact registry artifact checksum; publication does not imply API stability. Retrieve platform:HTML and styling:forms for the pinned native-markup grammar snapshot. Publication status is recorded separately from immutable canonical guidance: ${JSON.stringify(delivery.packages)}. Component examples are React-specific; platform:Astro supplies native APIs and starter composition. Do not translate React event/focus props into Astro or Jekyll APIs. Retrieve platform:Jekyll for the accepted source release and its legacy-theme authority. The existing canonical, dashboard, scientific and interaction/recovery pattern references document equivalent capabilities with independent family compositions. Vue, Svelte and native APIs are not implemented. Manual assistive technology, localization, RTL and sustained use remain open.\n\n${await readFile('docs/distribution.md','utf8')}\n\nOriginal canonical snapshot metadata (historical versions, not current npm availability):\n${JSON.stringify(implementations,null,2)}`,
     "docs/maturity.md",
     ["platform", "version", "support", "migration"],
   );
@@ -194,21 +204,21 @@ for (const family of ["martlet", "krigsvold"]) {
     version: distribution.preview.version,
     themeVersion: delivery.packages.React.theme??null,
     referenceLegacyThemeVersion: "2.1.0",
-    themeVersionRole: "React reference dependency; current core release is distribution.packages.core",
+    themeVersionRole: "Legacy theme only when declared by React; current foundation is platforms.React.foundation",
     grammarVersion: implementations.grammarVersion,
     sourceCommit: commit,
     sourceDigest,
     platforms: {
       React: { version: delivery.packages.React.version, maturity: "experimental", published: delivery.packages.React.published, foundation: reactFoundation },
-      Astro: { version: delivery.packages.Astro.version, maturity: "experimental", published: delivery.packages.Astro.published, examples: true, formController: "host-owned starter specimen", core: "^"+delivery.packages.core.version },
-      Jekyll: { version: delivery.packages.Jekyll.version, maturity: "experimental", kind: "git", published: delivery.packages.Jekyll.published, sourceAvailable: true, examples: true, core: null, legacyTheme: delivery.packages.Jekyll.legacyTheme },
+      Astro: { version: delivery.packages.Astro.version, maturity: "experimental", published: delivery.packages.Astro.published, examples: true, formController: "host-owned starter specimen", core: delivery.packages.Astro.peerDependencies?.[delivery.packages.Astro.core.name]??("^"+delivery.packages.Astro.core.version) },
+      Jekyll: { version: delivery.packages.Jekyll.version, maturity: "accepted-source-release", kind: "git", published: delivery.packages.Jekyll.published, sourceAvailable: true, examples: true, core: null, legacyTheme: delivery.packages.Jekyll.legacyTheme },
     },
     distribution: {...delivery, reviewedAt:distribution.reviewedAt},
     canonicalGuidance: canonical,
     limitations: [
       "Read-only stateless HTTP and local stdio; check distribution metadata for live endpoint status.",
       "Search and exact retrieval; no code audit or migration automation.",
-      "Reference patterns cover collection/editor, validated forms and query/results; they are session-only specimens.",
+      "Reference patterns include collection/editor, validated forms, query/results, 50 canonical examples, three dashboard applications and a separate scientific workspace; application data is local and synthetic without service adapters.",
       "No registry database, user drafts, or write operations.",
     ],
     entries,

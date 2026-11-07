@@ -34,7 +34,7 @@
     "test:tabs-consumer": "node scripts/test-tabs-consumer.mjs && node scripts/test-tabs-packed-dynamic.mjs",
     "test:error-summary-consumer": "node scripts/test-error-summary-consumer.mjs",
     "test:fields-consumer": "node scripts/test-fields-consumer.mjs",
-    "test:examples": "node examples/page-archetypes/scripts/verify.mjs && node --test examples/page-archetypes/tests/dashboard-model.test.mjs examples/page-archetypes/tests/catalog-date.test.mjs examples/page-archetypes/tests/event-time.test.mjs",
+    "test:examples": "node examples/page-archetypes/scripts/verify.mjs && node --test examples/page-archetypes/tests/dashboard-model.test.mjs examples/page-archetypes/tests/catalog-date.test.mjs examples/page-archetypes/tests/event-time.test.mjs examples/page-archetypes/tests/thermal-model.test.mjs",
     "test:portable-runner": "node --test tests/portable-runner.test.mjs",
     "test:dashboards": "playwright test --config playwright.dashboard.config.ts",
     "test:search-safety": "node --test examples/page-archetypes/tests/search-index-safety.test.mjs",

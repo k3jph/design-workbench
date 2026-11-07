@@ -1,0 +1,738 @@
+{
+  "schemaVersion": 1,
+  "issue": "https://github.com/k3jph/design-workbench/issues/91",
+  "updatedAt": "2026-11-03T22:54:40.575041+00:00",
+  "status": "complete: all50implemented-or-justifiably-retained, exact technical and independent visual gates passed, approved source normally integrated into develop",
+  "scope": "All 50 paired Jekyll recipes, identical fixture/capability contracts; final source-bound nonproduction acceptance",
+  "families": {
+    "martlet": {
+      "repository": "martletdesign/jekyll",
+      "pullRequest": 24,
+      "pullRequestUrl": "https://github.com/martletdesign/jekyll/pull/24",
+      "sourceHead": "0c0e0a7452444c41a3876c2f8732c6439c6097b9",
+      "sourceTree": "6d1810333cbdc157f2b9de56a9906fbe97536736",
+      "sourceZipSha256": "86f3eb4937a42d418823056b3071a72cf084fdf2c396fe0b1321e17e5360cf4d",
+      "sourceZipExactEntries": 245,
+      "nativePayload": {
+        "status": "passed",
+        "filesVerified": 567,
+        "artifactSha256": "50764c3bfa049ff9a9886e04c9f7c38afc739d79137240cd51ad47b2104ad770",
+        "origin": "https://pr-feature-gram-558d733a5d-martletdesign-jekyll-reference.k3jph.workers.dev",
+        "overallDeadlineSeconds": 300,
+        "requestWallClockDeadlineSeconds": 25,
+        "maxInFlightRequests": 4,
+        "tlsVerificationDisabled": false,
+        "sourceCommit": "0c0e0a7452444c41a3876c2f8732c6439c6097b9",
+        "sourceTree": "6d1810333cbdc157f2b9de56a9906fbe97536736",
+        "sourceZipSha256": "86f3eb4937a42d418823056b3071a72cf084fdf2c396fe0b1321e17e5360cf4d",
+        "pullRequest": 24,
+        "sourceBranch": "feature/grammar-workspaces",
+        "verifiedAt": "2026-11-03T22:11:15.240898+00:00",
+        "verificationMode": "independently reproduced payload plus validated native metadata",
+        "nativeBuild": {
+          "branch": "feature/grammar-workspaces",
+          "buildUuid": "55e89343-f296-4c76-ba7d-a4acd1dc437f",
+          "commitSha": "0c0e0a7452444c41a3876c2f8732c6439c6097b9",
+          "evidence": "environment-reported",
+          "independentAttestationClaimed": false
+        },
+        "nativeCheck": {
+          "id": 126238921942,
+          "url": "https://dash.cloudflare.com/f6142510bef6212dfa78bc6932acc80f/workers/services/view/martletdesign-jekyll-reference/production/previews/pr-feature-gram-558d733a5d/builds/55e89343-f296-4c76-ba7d-a4acd1dc437f",
+          "conclusion": "success"
+        },
+        "previewId": "aaf144a8a42b4976be2380d6fa8ead6a",
+        "previewName": "pr-feature-gram-558d733a5d",
+        "deploymentId": "5d8a268c-c79d-42b4-8c9e-6a3638f1bae2",
+        "deployedAt": "2026-11-03T22:09:41.367789Z",
+        "automaticNativeDeploymentVerified": true,
+        "manualUploadPerformed": false,
+        "productionDeployInvoked": false,
+        "independentAttestationClaimed": false,
+        "completeBindingReadbackClaimed": false
+      },
+      "actualHTTPS": {
+        "status": "passed",
+        "scope": "Independent exact final Martlet actual HTTPS technical acceptance; no merge performed and no universal visual/manual assistive-technology claim",
+        "sourceCommit": "0c0e0a7452444c41a3876c2f8732c6439c6097b9",
+        "sourceTree": "6d1810333cbdc157f2b9de56a9906fbe97536736",
+        "artifactSha256": "50764c3bfa049ff9a9886e04c9f7c38afc739d79137240cd51ad47b2104ad770",
+        "nativeBuildUuid": "55e89343-f296-4c76-ba7d-a4acd1dc437f",
+        "origin": "https://pr-feature-gram-558d733a5d-martletdesign-jekyll-reference.k3jph.workers.dev",
+        "startedAt": "2026-11-03T22:11:40.776Z",
+        "finishedAt": "2026-11-03T22:15:45.792Z",
+        "actualExitCode": 0,
+        "cases": 516,
+        "checks": 564,
+        "axeScans": 100,
+        "axeViolations": 0,
+        "errors": 0,
+        "knownFailureExceptions": [],
+        "all50SemanticsBothBasesPassed": true,
+        "staticPairedCounterpartExplicitlyProspective": "krigsvold154ce8d (not a final K claim)",
+        "rawReport": {
+          "evidenceRef": "report-5a091b3b0b85",
+          "record": "evidence/report-5a091b3b0b85.json",
+          "rawBytesIncluded": false
+        },
+        "sourceStaticReceipts": [
+          {
+            "evidenceRef": "martlet-final0c-v2-root-contracts-e6486316a28b",
+            "record": "evidence/martlet-final0c-v2-root-contracts-e6486316a28b.json",
+            "rawBytesIncluded": false
+          },
+          {
+            "evidenceRef": "martlet-final0c-v2-preview-contracts-039314995005",
+            "record": "evidence/martlet-final0c-v2-preview-contracts-039314995005.json",
+            "rawBytesIncluded": false
+          },
+          {
+            "evidenceRef": "martlet-final0c-table-contracts-7d610b0c4be5",
+            "record": "evidence/martlet-final0c-table-contracts-7d610b0c4be5.json",
+            "rawBytesIncluded": false
+          }
+        ],
+        "rootIndependentPayloadReceipt": {
+          "evidenceRef": "martlet-pr-native-verification-2be70a4474d3",
+          "record": "evidence/martlet-pr-native-verification-2be70a4474d3.json",
+          "rawBytesIncluded": false
+        },
+        "rootPayloadFilesVerified": 567,
+        "browsersClosed": true,
+        "browserSlotReleased": true,
+        "externalMutationPerformed": false,
+        "manualAssistiveTechnologyClaimed": false,
+        "universalVisualFidelityClaimed": false
+      },
+      "nativeReceipt": {
+        "artifact": {
+          "evidenceRef": "martlet-pr-native-verification-2be70a4474d3",
+          "record": "evidence/martlet-pr-native-verification-2be70a4474d3.json",
+          "rawBytesIncluded": false
+        },
+        "sha256": "41a12f119a784368f7b68adbbd45991b592f92d3f372d101facec1810efe21ea"
+      },
+      "actualHTTPSReceipt": {
+        "artifact": {
+          "evidenceRef": "martlet-final0c-actual-summary-b7122e38c152",
+          "record": "evidence/martlet-final0c-actual-summary-b7122e38c152.json",
+          "rawBytesIncluded": false
+        },
+        "sha256": "96995613a2f3494bbfc69f4add71678eb595aef39628378525db00c50029f702"
+      },
+      "allSixGenuineGitHubActionsChecksPassed": true,
+      "ciReceipt": {
+        "artifact": {
+          "evidenceRef": "final-restored-github-snapshot-b13ae3197ac2",
+          "record": "evidence/final-restored-github-snapshot-b13ae3197ac2.json",
+          "rawBytesIncluded": false
+        },
+        "sha256": "d96e941dbbcab8dfd6676b1dcbf4c92efae9074e2da33cea22e21a1e3565fb04"
+      },
+      "checks": [
+        {
+          "name": "verify",
+          "id": 126236905737,
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/martletdesign/jekyll/actions/runs/41727760871/job/126236905737",
+          "stepsPassed": 7
+        },
+        {
+          "name": "browser (firefox)",
+          "id": 126236905978,
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/martletdesign/jekyll/actions/runs/41727760990/job/126236905978",
+          "stepsPassed": 18
+        },
+        {
+          "name": "browser (webkit)",
+          "id": 126236906552,
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/martletdesign/jekyll/actions/runs/41727760990/job/126236906552",
+          "stepsPassed": 18
+        },
+        {
+          "name": "browser (chromium)",
+          "id": 126236906638,
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/martletdesign/jekyll/actions/runs/41727760990/job/126236906638",
+          "stepsPassed": 18
+        },
+        {
+          "name": "guard",
+          "id": 126236905524,
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/martletdesign/jekyll/actions/runs/41727760615/job/126236905524",
+          "stepsPassed": 7
+        },
+        {
+          "name": "archive-build",
+          "id": 126236906155,
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/martletdesign/jekyll/actions/runs/41727760615/job/126236906155",
+          "stepsPassed": 11
+        }
+      ],
+      "headReadbackAt": "2026-11-03T22:34:14.443Z",
+      "nativeAndProductionReadback": {
+        "artifact": {
+          "evidenceRef": "final-restored-native-production-snapshot-3fae8b2b9fe4",
+          "record": "evidence/final-restored-native-production-snapshot-3fae8b2b9fe4.json",
+          "rawBytesIncluded": false
+        },
+        "sha256": "5fbc70213a7f396156484e95a25fe964fcd1f6a9e63037bf7f265ed13a1aa147"
+      },
+      "firefoxTiming": {
+        "jobId": 126236905978,
+        "elapsedSeconds": 839.0,
+        "deadlineSeconds": 900,
+        "marginSeconds": 61.0,
+        "receipt": {
+          "artifact": {
+            "evidenceRef": "browser-budget-evidence-f45d66d5ec76",
+            "record": "evidence/browser-budget-evidence-f45d66d5ec76.json",
+            "rawBytesIncluded": false
+          },
+          "sha256": "b72b0c046db5f81a81c022bc800ddee19e4524656d5214b2e593048dc17f4c7b"
+        }
+      },
+      "developMergeCommit": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5",
+      "exactReviewedTreePreservedInDevelop": true
+    },
+    "krigsvold": {
+      "repository": "krigsvolddesign/jekyll",
+      "pullRequest": 22,
+      "pullRequestUrl": "https://github.com/krigsvolddesign/jekyll/pull/22",
+      "sourceHead": "983dee5d27ad02458baef6edc5a39279e24028ea",
+      "sourceTree": "a019a52c5ba2edddcbc6a8f4582527da0dfe4ab2",
+      "sourceZipSha256": "21aafa55d853ecfea950835f9e0291b98b05c22edb01d6f8ae51816f343d5a90",
+      "sourceZipExactEntries": 237,
+      "nativePayload": {
+        "status": "passed",
+        "filesVerified": 561,
+        "artifactSha256": "a8fb65593f80613e28e8cdc6e87476ae1f229c19e144f33089a47fd630c41963",
+        "origin": "https://pr-feature-gram-558d733a5d-krigsvolddesign-jekyll-reference.k3jph.workers.dev",
+        "overallDeadlineSeconds": 300,
+        "requestWallClockDeadlineSeconds": 25,
+        "maxInFlightRequests": 4,
+        "tlsVerificationDisabled": false,
+        "sourceCommit": "983dee5d27ad02458baef6edc5a39279e24028ea",
+        "sourceTree": "a019a52c5ba2edddcbc6a8f4582527da0dfe4ab2",
+        "sourceZipSha256": "21aafa55d853ecfea950835f9e0291b98b05c22edb01d6f8ae51816f343d5a90",
+        "pullRequest": 22,
+        "sourceBranch": "feature/grammar-workspaces",
+        "verifiedAt": "2026-11-03T22:17:45.906129+00:00",
+        "verificationMode": "independently reproduced payload plus validated native metadata",
+        "nativeBuild": {
+          "branch": "feature/grammar-workspaces",
+          "buildUuid": "0bacc335-e319-4ca2-834c-15510b71c31b",
+          "commitSha": "983dee5d27ad02458baef6edc5a39279e24028ea",
+          "evidence": "environment-reported",
+          "independentAttestationClaimed": false
+        },
+        "nativeCheck": {
+          "id": 126241906397,
+          "url": "https://dash.cloudflare.com/f6142510bef6212dfa78bc6932acc80f/workers/services/view/krigsvolddesign-jekyll-reference/production/previews/pr-feature-gram-558d733a5d/builds/0bacc335-e319-4ca2-834c-15510b71c31b",
+          "conclusion": "success"
+        },
+        "previewId": "d138d4ab0dc745cea45d54e97bea7d8a",
+        "previewName": "pr-feature-gram-558d733a5d",
+        "deploymentId": "c1add6e8-88b5-40fb-8b02-a38ba1975505",
+        "deployedAt": "2026-11-03T22:15:22.299076Z",
+        "automaticNativeDeploymentVerified": true,
+        "manualUploadPerformed": false,
+        "productionDeployInvoked": false,
+        "independentAttestationClaimed": false,
+        "completeBindingReadbackClaimed": false
+      },
+      "actualHTTPS": {
+        "status": "passed",
+        "scope": "Exact final Krigsvold actual HTTPS technical acceptance; separate from merge/source-fidelity judgment",
+        "sourceCommit": "983dee5d27ad02458baef6edc5a39279e24028ea",
+        "sourceTree": "a019a52c5ba2edddcbc6a8f4582527da0dfe4ab2",
+        "artifactSha256": "a8fb65593f80613e28e8cdc6e87476ae1f229c19e144f33089a47fd630c41963",
+        "nativeBuildUuid": "0bacc335-e319-4ca2-834c-15510b71c31b",
+        "origin": "https://pr-feature-gram-558d733a5d-krigsvolddesign-jekyll-reference.k3jph.workers.dev",
+        "startedAt": "2026-11-03T22:19:20.226Z",
+        "finishedAt": "2026-11-03T22:24:36.147Z",
+        "actualExitCodes": {
+          "all50": 0,
+          "nativeTables": 0,
+          "nativeCSVQuery": 0
+        },
+        "cases": 516,
+        "checks": 564,
+        "axeScans": 100,
+        "axeViolations": 0,
+        "errors": 0,
+        "knownFailureExceptions": [],
+        "nativeTableKeyboardCases": 24,
+        "nativeTableRegionObservations": 54,
+        "actualNativeHorizontalScrolls": 38,
+        "exactNativeCSVAndDraftQueryBaseCases": 2,
+        "rawReports": [
+          {
+            "evidenceRef": "report-deaf240cba5c",
+            "record": "evidence/report-deaf240cba5c.json",
+            "rawBytesIncluded": false
+          },
+          {
+            "evidenceRef": "report-e3221dc4dbea",
+            "record": "evidence/report-e3221dc4dbea.json",
+            "rawBytesIncluded": false
+          },
+          {
+            "evidenceRef": "report-e8b0176fa873",
+            "record": "evidence/report-e8b0176fa873.json",
+            "rawBytesIncluded": false
+          }
+        ],
+        "all50FinalPairSemanticsRootSubpathPassed": true,
+        "finalPairStaticReceipts": [
+          {
+            "evidenceRef": "final-pair-v2-root-contracts-1c0969650463",
+            "record": "evidence/final-pair-v2-root-contracts-1c0969650463.json",
+            "rawBytesIncluded": false
+          },
+          {
+            "evidenceRef": "final-pair-v2-preview-contracts-3e74d617235b",
+            "record": "evidence/final-pair-v2-preview-contracts-3e74d617235b.json",
+            "rawBytesIncluded": false
+          },
+          {
+            "evidenceRef": "final-pair-table-contracts-1b4c1d8a4530",
+            "record": "evidence/final-pair-table-contracts-1b4c1d8a4530.json",
+            "rawBytesIncluded": false
+          }
+        ],
+        "rootIndependentPayloadReceipt": {
+          "evidenceRef": "krigsvold-pr-native-verification-215279467a20",
+          "record": "evidence/krigsvold-pr-native-verification-215279467a20.json",
+          "rawBytesIncluded": false
+        },
+        "rootPayloadFilesVerified": 561,
+        "browsersClosed": true,
+        "browserSlotReleased": true,
+        "externalMutationPerformed": false,
+        "manualAssistiveTechnologyClaimed": false,
+        "universalVisualFidelityClaimed": false
+      },
+      "nativeReceipt": {
+        "artifact": {
+          "evidenceRef": "krigsvold-pr-native-verification-215279467a20",
+          "record": "evidence/krigsvold-pr-native-verification-215279467a20.json",
+          "rawBytesIncluded": false
+        },
+        "sha256": "311ddb5c27d6a452210076bc89f2732bbb0e43aa33eafb386b848f38774b022b"
+      },
+      "actualHTTPSReceipt": {
+        "artifact": {
+          "evidenceRef": "krigsvold-final983-actual-summary-3659f814abcd",
+          "record": "evidence/krigsvold-final983-actual-summary-3659f814abcd.json",
+          "rawBytesIncluded": false
+        },
+        "sha256": "89bba823a81b7a47d4c777f914e75e74c5720031ebd0f76190ace6e090e3676b"
+      },
+      "allSixGenuineGitHubActionsChecksPassed": true,
+      "ciReceipt": {
+        "artifact": {
+          "evidenceRef": "final-restored-github-snapshot-b13ae3197ac2",
+          "record": "evidence/final-restored-github-snapshot-b13ae3197ac2.json",
+          "rawBytesIncluded": false
+        },
+        "sha256": "d96e941dbbcab8dfd6676b1dcbf4c92efae9074e2da33cea22e21a1e3565fb04"
+      },
+      "checks": [
+        {
+          "name": "archive-build",
+          "id": 126238097643,
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/krigsvolddesign/jekyll/actions/runs/41728111364/job/126238097643",
+          "stepsPassed": 11
+        },
+        {
+          "name": "guard",
+          "id": 126238098178,
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/krigsvolddesign/jekyll/actions/runs/41728111364/job/126238098178",
+          "stepsPassed": 7
+        },
+        {
+          "name": "verify",
+          "id": 126238096832,
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/krigsvolddesign/jekyll/actions/runs/41728111326/job/126238096832",
+          "stepsPassed": 9
+        },
+        {
+          "name": "browser (chromium)",
+          "id": 126238097018,
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/krigsvolddesign/jekyll/actions/runs/41728111224/job/126238097018",
+          "stepsPassed": 19
+        },
+        {
+          "name": "browser (firefox)",
+          "id": 126238097414,
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/krigsvolddesign/jekyll/actions/runs/41728111224/job/126238097414",
+          "stepsPassed": 19
+        },
+        {
+          "name": "browser (webkit)",
+          "id": 126238097511,
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/krigsvolddesign/jekyll/actions/runs/41728111224/job/126238097511",
+          "stepsPassed": 19
+        }
+      ],
+      "headReadbackAt": "2026-11-03T22:34:14.443Z",
+      "nativeAndProductionReadback": {
+        "artifact": {
+          "evidenceRef": "final-restored-native-production-snapshot-3fae8b2b9fe4",
+          "record": "evidence/final-restored-native-production-snapshot-3fae8b2b9fe4.json",
+          "rawBytesIncluded": false
+        },
+        "sha256": "5fbc70213a7f396156484e95a25fe964fcd1f6a9e63037bf7f265ed13a1aa147"
+      },
+      "firefoxTiming": {
+        "jobId": 126238097414,
+        "elapsedSeconds": 622.0,
+        "deadlineSeconds": 900,
+        "marginSeconds": 278.0,
+        "receipt": {
+          "artifact": {
+            "evidenceRef": "browser-budget-evidence-f45d66d5ec76",
+            "record": "evidence/browser-budget-evidence-f45d66d5ec76.json",
+            "rawBytesIncluded": false
+          },
+          "sha256": "b72b0c046db5f81a81c022bc800ddee19e4524656d5214b2e593048dc17f4c7b"
+        }
+      },
+      "developMergeCommit": "c85e01c4975bbb490637f06a9db62af525ffbbde",
+      "exactReviewedTreePreservedInDevelop": true
+    }
+  },
+  "actualHTTPS": {
+    "status": "passed",
+    "scope": "Final independent actual HTTPS Chromium technical gate for both exact candidates; merge requires Root remaining CI/source-fidelity gates",
+    "sourceBindings": {
+      "martlet": {
+        "sourceCommit": "0c0e0a7452444c41a3876c2f8732c6439c6097b9",
+        "sourceTree": "6d1810333cbdc157f2b9de56a9906fbe97536736",
+        "artifactSha256": "50764c3bfa049ff9a9886e04c9f7c38afc739d79137240cd51ad47b2104ad770",
+        "nativeBuildUuid": "55e89343-f296-4c76-ba7d-a4acd1dc437f"
+      },
+      "krigsvold": {
+        "sourceCommit": "983dee5d27ad02458baef6edc5a39279e24028ea",
+        "sourceTree": "a019a52c5ba2edddcbc6a8f4582527da0dfe4ab2",
+        "artifactSha256": "a8fb65593f80613e28e8cdc6e87476ae1f229c19e144f33089a47fd630c41963",
+        "nativeBuildUuid": "0bacc335-e319-4ca2-834c-15510b71c31b"
+      }
+    },
+    "hostedCases": 1032,
+    "hostedChecks": 1128,
+    "axeScans": 200,
+    "axeViolations": 0,
+    "errors": 0,
+    "knownFailureExceptions": [],
+    "all50FrozenSemanticsBothFamiliesBothBasesPassed": true,
+    "nativeTableContractsChecked": 52,
+    "familyReceipts": {
+      "martlet": {
+        "evidenceRef": "martlet-final0c-actual-summary-b7122e38c152",
+        "record": "evidence/martlet-final0c-actual-summary-b7122e38c152.json",
+        "rawBytesIncluded": false
+      },
+      "krigsvold": {
+        "evidenceRef": "krigsvold-final983-actual-summary-3659f814abcd",
+        "record": "evidence/krigsvold-final983-actual-summary-3659f814abcd.json",
+        "rawBytesIncluded": false
+      }
+    },
+    "finalPairStaticReceipts": [
+      {
+        "evidenceRef": "final-pair-v2-root-contracts-1c0969650463",
+        "record": "evidence/final-pair-v2-root-contracts-1c0969650463.json",
+        "rawBytesIncluded": false
+      },
+      {
+        "evidenceRef": "final-pair-v2-preview-contracts-3e74d617235b",
+        "record": "evidence/final-pair-v2-preview-contracts-3e74d617235b.json",
+        "rawBytesIncluded": false
+      },
+      {
+        "evidenceRef": "final-pair-table-contracts-1b4c1d8a4530",
+        "record": "evidence/final-pair-table-contracts-1b4c1d8a4530.json",
+        "rawBytesIncluded": false
+      }
+    ],
+    "allBrowserProcessesClosed": true,
+    "manualAssistiveTechnologyClaimed": false,
+    "universalVisualFidelityClaimed": false,
+    "externalMutationPerformed": false,
+    "createdAt": "2026-11-03T22:25:11.014169+00:00"
+  },
+  "frozenSemanticContracts": {
+    "status": "passed",
+    "routesPerFamilyPerBase": 50,
+    "meaningChunksPerFamily": 692,
+    "bases": [
+      "/",
+      "/preview"
+    ],
+    "fixtureSha256": "4795e34b2eaea8fa506cca6d7679e93f38c6019cea704834ae736ef2064afd37",
+    "receipts": [
+      {
+        "artifact": {
+          "evidenceRef": "final-pair-v2-root-contracts-1c0969650463",
+          "record": "evidence/final-pair-v2-root-contracts-1c0969650463.json",
+          "rawBytesIncluded": false
+        },
+        "sha256": "a241bebe04d44b148833f76fed2efbe59277578b07e3c7565dce0dac8cff1682"
+      },
+      {
+        "artifact": {
+          "evidenceRef": "final-pair-v2-preview-contracts-3e74d617235b",
+          "record": "evidence/final-pair-v2-preview-contracts-3e74d617235b.json",
+          "rawBytesIncluded": false
+        },
+        "sha256": "a102d8a5cf3af024a6a0c7519d9097a018da15e4e456066dfa8a64c9a1db1d0f"
+      }
+    ],
+    "historical616Limitation": "Earlier raw616 packet was not retained. Its summary remains historical; final692v2 baseline/tool and both exact final candidates are separately pinned."
+  },
+  "nativeTableContracts": {
+    "status": "passed",
+    "tablesChecked": 52,
+    "receipt": {
+      "artifact": {
+        "evidenceRef": "final-pair-table-contracts-1b4c1d8a4530",
+        "record": "evidence/final-pair-table-contracts-1b4c1d8a4530.json",
+        "rawBytesIncluded": false
+      },
+      "sha256": "5e5898d8d8a343068cfc54f95efe6d677c11e71be06fca38429e143a111203fb"
+    }
+  },
+  "protectedSourceReview": {
+    "status": "passed",
+    "receipt": {
+      "artifact": {
+        "evidenceRef": "wave4-protected-security-review-941674907322",
+        "record": "evidence/wave4-protected-security-review-941674907322.json",
+        "rawBytesIncluded": false
+      },
+      "sha256": "75b870616ace39954b352c3a66fc15731ab304331442710fa1c45baf67ac00d4"
+    },
+    "protected": "Fixture/data, art, fonts, JS controllers, canonical shell, source archive/deployment/publication authority and dependencies preserved; explicitly appended host/family CSS is separately reviewed."
+  },
+  "captureIntegrity": {
+    "status": "complete",
+    "actualHTTPSStates": 406,
+    "normalAndStrictMainFramesPerFamily": 405,
+    "fullPageDetailFramesPerFamily": 12,
+    "receipt": {
+      "artifact": {
+        "evidenceRef": "final-after-index-5c09e2074977",
+        "record": "evidence/final-after-index-5c09e2074977.json",
+        "rawBytesIncluded": false
+      },
+      "sha256": "f2623024491a62aa3a5742198d951dd63f48e993efdfa2538b559a3b0206fb47"
+    },
+    "bindings": {
+      "artifact": {
+        "evidenceRef": "expected-final-after-de8970749178",
+        "record": "evidence/expected-final-after-de8970749178.json",
+        "rawBytesIncluded": false
+      },
+      "sha256": "82c5b43f37e2755210afd23dca15e1cb881bfd728b04b1199d02a61e5e13da9e"
+    },
+    "manualVisualReview": "Independent all50 bounded composition review passed; see visual-review.json for exact source bindings and initialization-state/capture limits.",
+    "captureStateQualification": "Eight baseline analytics frames and eight baseline operations frames contain the literal initial/unavailable fallback metrics or em dashes, with empty captured error arrays; final actual frames show initialized browser values. These are differing initialization states, not matched hydration timing or evidence that reconciliation introduced fixture data. Original captures remain unchanged; frozen data/controller hashes and actual behavior acceptance establish preservation separately."
+  },
+  "integration": {
+    "target": "develop",
+    "status": "completed-normal-two-parent-merges-with-exact-reviewed-source-trees",
+    "families": {
+      "martlet": {
+        "repository": "martletdesign/jekyll",
+        "mergeCommit": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5",
+        "tree": "6d1810333cbdc157f2b9de56a9906fbe97536736",
+        "develop": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5",
+        "parents": [
+          "343bfb64d6f4a8159bf5f85f1ebbd226f9185177",
+          "0c0e0a7452444c41a3876c2f8732c6439c6097b9"
+        ],
+        "exactCandidateTreePreserved": true,
+        "candidateHeadIsDirectParent": true
+      },
+      "krigsvold": {
+        "repository": "krigsvolddesign/jekyll",
+        "mergeCommit": "c85e01c4975bbb490637f06a9db62af525ffbbde",
+        "tree": "a019a52c5ba2edddcbc6a8f4582527da0dfe4ab2",
+        "develop": "c85e01c4975bbb490637f06a9db62af525ffbbde",
+        "parents": [
+          "bdbf62c0d37b705b6dbd35900bcaf40cd7dfb787",
+          "983dee5d27ad02458baef6edc5a39279e24028ea"
+        ],
+        "exactCandidateTreePreserved": true,
+        "candidateHeadIsDirectParent": true,
+        "reviewedCollectionAncestor": "3e5d49dcf47cc3b9e6646e66274fb246d5848df2",
+        "collectionAncestryProved": true,
+        "collectionComparisonStatus": "ahead",
+        "supersededPR21": {
+          "state": "closed",
+          "merged": false,
+          "mergedAt": null,
+          "head": "3e5d49dcf47cc3b9e6646e66274fb246d5848df2"
+        }
+      }
+    },
+    "verifiedAt": "2026-11-03T22:53:26.443896+00:00",
+    "receipt": {
+      "artifact": {
+        "evidenceRef": "final-develop-merge-source-proof-d0c941a669bd",
+        "record": "evidence/final-develop-merge-source-proof-d0c941a669bd.json",
+        "rawBytesIncluded": false
+      },
+      "sha256": "ad1e3f7b9a0dc04ef16e4a7a5e6a449fb004e7879aeb55b6304974c6204837f0"
+    },
+    "mainMerged": false
+  },
+  "limitations": [
+    "Automated axe/keyboard checks are not manual assistive-technology certification.",
+    "Canonical-source grammar informs contextual applications; no claim every exact recipe exists at either origin.",
+    "Full payload reproduction verifies public bytes and native reported metadata, not independent build-identity attestation or complete binding readback.",
+    "Public preview and CI links are mutable services; exact hashes, source trees and raw local receipts identify observations.",
+    "Historical failed receipts remain failed and are not replaced by later passing evidence."
+  ],
+  "productionPromotionPerformed": false,
+  "npmPublicationPerformed": false,
+  "canonicalSourceSitesChanged": false,
+  "runnerControls": {
+    "browserEngines": [
+      "chromium",
+      "firefox",
+      "webkit"
+    ],
+    "rootAndSubpathRetained": true,
+    "browserMatrixMaxParallel": 2,
+    "browserJobTimeoutMinutes": 15,
+    "newNavigationAndWorkspaceStepTimeoutMinutes": 3,
+    "newBrowserOverallWatchdogSeconds": 180,
+    "obsoleteRunConcurrencyCancellation": true,
+    "assertionFailuresAndTimeoutsRemainFailures": true,
+    "assertionsSkippedOrWeakened": false,
+    "serverRequiredStatusCheckEnforcementClaimed": false,
+    "branchMetadata": {
+      "artifact": {
+        "evidenceRef": "final-restored-branch-metadata-3df59afeb00d",
+        "record": "evidence/final-restored-branch-metadata-3df59afeb00d.json",
+        "rawBytesIncluded": false
+      },
+      "sha256": "5e3a12471c71c7fc00fa8d00aefba7208115e500f1aa4f848f397f2b5866700c"
+    },
+    "integrationGuard": "Coordinator explicitly verifies exact PR head, all six genuine successful check identities, genuine native preview and source/payload/visual acceptance before ordinary develop merge. Current develop metadata does not show server-enforced required checks."
+  },
+  "portableEvidenceRegistry": "evidence-registry.json",
+  "latestPremergeReadback": {
+    "at": "2026-11-03T22:43:17.674566+00:00",
+    "allTwelveGenuineActionsChecksPassed": true,
+    "bothGenuineNativeChecksPassed": true,
+    "exactHeadsAndTreesMatched": true,
+    "mainAndProductionUnchangedAtObservation": true,
+    "receipts": [
+      {
+        "artifact": {
+          "evidenceRef": "final-premerge-github-guards-8145a2e0ff0e",
+          "record": "evidence/final-premerge-github-guards-8145a2e0ff0e.json",
+          "rawBytesIncluded": false
+        },
+        "sha256": "8b7588a3be58976addf54aba5a0b49f6b0b50401aebb046dc49a909f82621b83"
+      },
+      {
+        "artifact": {
+          "evidenceRef": "final-premerge-native-source-guards-8b0d2f8519a1",
+          "record": "evidence/final-premerge-native-source-guards-8b0d2f8519a1.json",
+          "rawBytesIncluded": false
+        },
+        "sha256": "20fa0876ce4e7d30d251be925f9908fb5d450036ac83537bbe7a1701a4b3f503"
+      }
+    ]
+  },
+  "supersededOriginalKrigsvoldPR": {
+    "number": 21,
+    "head": "3e5d49dcf47cc3b9e6646e66274fb246d5848df2",
+    "state": "closed-unmerged-as-superseded",
+    "closedAt": "2026-11-03T22:45:11Z",
+    "commentUrl": "https://github.com/krigsvolddesign/jekyll/pull/21#issuecomment-6617395960",
+    "reviewedAncestryPreservedInFinal983": true,
+    "originalNativeFailureRelabeledAsSuccess": false
+  },
+  "visualAcceptance": {
+    "status": "passed-bounded-source-backed-composition-review",
+    "summary": "visual-review.json",
+    "readableSummary": "visual-review.md",
+    "rawReceipt": {
+      "artifact": {
+        "evidenceRef": "final-route-review-e8a3f77052f1",
+        "record": "evidence/final-route-review-e8a3f77052f1.json",
+        "rawBytesIncluded": false
+      },
+      "sha256": "24f51a01d90e348ef4f254a484ac0ca11b4ba6a8445efe65834785b88db9259d"
+    },
+    "pairedRoutes": 50,
+    "contactSheetsIndependentlyInspected": 80,
+    "readableDetailsIndependentlyInspected": 12,
+    "remainingVisualBlockers": [],
+    "manualAssistiveTechnologyClaimed": false,
+    "universalVisualFidelityClaimed": false,
+    "bookCopyStatus": "Root approved exact final manifest;97files copied byte-for-byte and all96manifest checksums verified.",
+    "portableBook": {
+      "directory": "visual-book/",
+      "readme": "visual-book/README.md",
+      "index": "visual-book/index.json",
+      "checksumManifest": "visual-book/SHA256SUMS",
+      "files": 97,
+      "bytes": 18552704,
+      "hardByteCap": 20000000,
+      "checksumManifestSha256": "e0f8bdf9348b1244a1d831ee4e76e0f7b954eac5f3be70302a6bcfcc0baba4ee",
+      "indexSha256": "41535de094b4e2f303f0cbc6fde71009b08b5267a75ef9122a6ef881db3bd9c7",
+      "approval": "visual-book-approval.json",
+      "all92ImagesByteIdenticalToIndependentlyReviewedDraft": true,
+      "copyReencodedOrRegeneratedImages": false
+    }
+  },
+  "postMergeAutomaticDevelopDelivery": {
+    "status": "Native ordinary develop builds observed in progress at exact merge heads; delivery success not yet claimed",
+    "evidenceLocation": "Final coordinator completion comment on https://github.com/k3jph/design-workbench/issues/91 will record the exact ordinary native develop delivery receipts and any actual exception.",
+    "independentExactPRNativeAcceptanceAlreadyPassed": true,
+    "newBuildOrBrowserRerunRequestedByEvidenceTask": false,
+    "noSecondEvidencePushForTimingMetadata": true,
+    "lastKnownNativeBuilds": {
+      "observationSource": "Root coordinating agent live native status handoff at document finalization",
+      "martlet": {
+        "commit": "8c19cad7b403da5fc65f2a8d4336170a4dbc5de5",
+        "nativeBuildUuid": "1588a98d-7168-49a9-9b11-55bfdae056bc",
+        "status": "in-progress"
+      },
+      "krigsvold": {
+        "commit": "c85e01c4975bbb490637f06a9db62af525ffbbde",
+        "nativeBuildUuid": "6093179a-53a2-49af-b177-fb0d59d98cbc",
+        "status": "in-progress"
+      }
+    }
+  }
+}

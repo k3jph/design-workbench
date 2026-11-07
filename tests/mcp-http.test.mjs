@@ -16,7 +16,7 @@ for(const family of ['martlet','krigsvold']) for(const mode of ['legacy',{pin:'2
       assert.equal(tools.length,3);assert.ok(tools.every(t=>t.annotations.readOnlyHint));
       const call=async(name,args={})=>{const raw=await client.callTool({name,arguments:args});return {raw,value:JSON.parse(raw.content[0].text)};};
       const manifest=(await call('get_manifest')).value;
-      assert.equal(manifest.family,family);assert.equal(manifest.references.length,62);
+      assert.equal(manifest.family,family);assert.equal(manifest.references.length,66);
       const found=(await call('search_guidance',{query:'validation form retained work'})).value;
       assert.ok(found.results.some(r=>r.id==='pattern:validated-form'));
       const astro=await call('search_guidance',{query:'Astro slots',kind:'platform'});assert.ok(!astro.raw.isError);assert.equal(astro.value.results[0].id,'platform:Astro');
@@ -26,7 +26,7 @@ for(const family of ['martlet','krigsvold']) for(const mode of ['legacy',{pin:'2
       assert.equal((await call('get_reference',{id:'grammar',version:'nonexistent'})).raw.isError,true);
       assert.equal((await call('get_reference',{id:'../registry.sqlite'})).raw.isError,true);
       assert.equal((await client.callTool({name:'search_guidance',arguments:{query:'x',limit:99}})).isError,true);
-      const resources=await client.listResources();assert.equal(resources.resources.length,62);
+      const resources=await client.listResources();assert.equal(resources.resources.length,66);
       assert.ok(resources.resources.every(r=>r.uri.startsWith(family+'://')));
     } finally {await client.close();await handler.close();}
   });

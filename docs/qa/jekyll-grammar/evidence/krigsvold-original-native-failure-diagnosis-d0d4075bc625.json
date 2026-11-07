@@ -1,0 +1,14 @@
+{
+  "id": "krigsvold-original-native-failure-diagnosis-d0d4075bc625",
+  "record": "evidence/krigsvold-original-native-failure-diagnosis-d0d4075bc625.json",
+  "originalName": "krigsvold-original-native-failure-diagnosis.json",
+  "kind": "file",
+  "rawSha256": "fee7aa35bf837d5c159332b46ce53e5342324bc3d6ca04ebf81b361a405ce430",
+  "rawBytesIncluded": false,
+  "retentionStatus": "preserved-locally-not-bundled",
+  "summaryDocuments": [
+    "native-failure-history.json"
+  ],
+  "sourceBindings": {},
+  "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository."
+}

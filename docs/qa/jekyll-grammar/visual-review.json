@@ -1,0 +1,2472 @@
+{
+  "schemaVersion": 1,
+  "status": "complete",
+  "sourceAfter": {
+    "martlet": "0c0e0a7452444c41a3876c2f8732c6439c6097b9",
+    "krigsvold": "983dee5d27ad02458baef6edc5a39279e24028ea"
+  },
+  "reviewer": "visual_finalization independent manual comparison",
+  "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+  "method": "Opened all80 exported sheets and all12 readable details using view_image; compared each paired actual final-source rendering with preserved BEFORE frames, using canonical origin decisions and grayscale main-only organization as supporting diagnosis. Route-specific judgments below are independent of peer first20 review. No browser recapture or test reclassification.",
+  "sheetCount": 80,
+  "readableDetailCount": 12,
+  "pairedRoutes": 50,
+  "changedRecipeCount": 18,
+  "retainedRecipeCount": 32,
+  "normalFramesPrimary": true,
+  "strictFramesDiagnosticOnly": true,
+  "sourceAuthorities": {
+    "martlet": "https://jameshoward.us/",
+    "krigsvold": "https://krigsvold.org/"
+  },
+  "baselineDashboardInitialization": {
+    "status": "historical_baseline_difference_preserved",
+    "sourceReceiptSha256": "cccee7db921d92fe45b46f6a045995627da4889a546b2de3c7a97947d0b8cd54",
+    "cases": [
+      {
+        "family": "martlet",
+        "route": "dashboard-analytics",
+        "width": 320,
+        "mode": "light",
+        "unavailableControlFallbackObserved": true,
+        "metricDashFallbackObserved": true,
+        "captureErrors": [],
+        "frameSha256": "15798eefab6f7c943979b9de20c105a55b3ec5fe640133ad756914f901803ffa"
+      },
+      {
+        "family": "martlet",
+        "route": "dashboard-operations",
+        "width": 320,
+        "mode": "light",
+        "unavailableControlFallbackObserved": true,
+        "metricDashFallbackObserved": true,
+        "captureErrors": [],
+        "frameSha256": "6dc0d3e3d9e676c6a70095996bb928ffdef4dcab44d8d55b219e8c634d7a900b"
+      },
+      {
+        "family": "martlet",
+        "route": "dashboard-analytics",
+        "width": 320,
+        "mode": "dark",
+        "unavailableControlFallbackObserved": true,
+        "metricDashFallbackObserved": true,
+        "captureErrors": [],
+        "frameSha256": "fe46e43de0bb9864e589f3cd08bb143b498fe43faa584b13b3da8546d0067316"
+      },
+      {
+        "family": "martlet",
+        "route": "dashboard-operations",
+        "width": 320,
+        "mode": "dark",
+        "unavailableControlFallbackObserved": true,
+        "metricDashFallbackObserved": true,
+        "captureErrors": [],
+        "frameSha256": "8d768329f3f47e4a61db2264b1b23ea6a3fe89bae7fae1f0f1e0b23f4941e5b4"
+      },
+      {
+        "family": "martlet",
+        "route": "dashboard-analytics",
+        "width": 1440,
+        "mode": "light",
+        "unavailableControlFallbackObserved": true,
+        "metricDashFallbackObserved": true,
+        "captureErrors": [],
+        "frameSha256": "0590366981a496fc19a3f5a48da1275ef4e5c4719fdb2171a007dc1e6269bc1b"
+      },
+      {
+        "family": "martlet",
+        "route": "dashboard-operations",
+        "width": 1440,
+        "mode": "light",
+        "unavailableControlFallbackObserved": true,
+        "metricDashFallbackObserved": true,
+        "captureErrors": [],
+        "frameSha256": "b3b4a9e73b83075dc87d21acabd6d408de20a38e2a5c7ef74c25e154496251fa"
+      },
+      {
+        "family": "martlet",
+        "route": "dashboard-analytics",
+        "width": 1440,
+        "mode": "dark",
+        "unavailableControlFallbackObserved": true,
+        "metricDashFallbackObserved": true,
+        "captureErrors": [],
+        "frameSha256": "158fbbd9487f5217a7a12fd2b380cbe498e520b4a178caa2a4a822fbd46b7ecf"
+      },
+      {
+        "family": "martlet",
+        "route": "dashboard-operations",
+        "width": 1440,
+        "mode": "dark",
+        "unavailableControlFallbackObserved": true,
+        "metricDashFallbackObserved": true,
+        "captureErrors": [],
+        "frameSha256": "38798c565d5c87fc11ffbeaf867329a96a5910c016abbcd23fb676f470a00539"
+      },
+      {
+        "family": "krigsvold",
+        "route": "dashboard-analytics",
+        "width": 320,
+        "mode": "light",
+        "unavailableControlFallbackObserved": true,
+        "metricDashFallbackObserved": true,
+        "captureErrors": [],
+        "frameSha256": "f2739fdc909874abf9ddf30d429b61b48686659126c388f6d1cde6f13edb149d"
+      },
+      {
+        "family": "krigsvold",
+        "route": "dashboard-operations",
+        "width": 320,
+        "mode": "light",
+        "unavailableControlFallbackObserved": true,
+        "metricDashFallbackObserved": true,
+        "captureErrors": [],
+        "frameSha256": "6d5c3a876c7f6bc23967c31f41a810a950e69fb430a4868c0b399f343f64cfd8"
+      },
+      {
+        "family": "krigsvold",
+        "route": "dashboard-analytics",
+        "width": 320,
+        "mode": "dark",
+        "unavailableControlFallbackObserved": true,
+        "metricDashFallbackObserved": true,
+        "captureErrors": [],
+        "frameSha256": "3994ef5925580dfb930c04317107a8042f7ef7eca5f9addcfcde076af45fcb42"
+      },
+      {
+        "family": "krigsvold",
+        "route": "dashboard-operations",
+        "width": 320,
+        "mode": "dark",
+        "unavailableControlFallbackObserved": true,
+        "metricDashFallbackObserved": true,
+        "captureErrors": [],
+        "frameSha256": "9351e4bbdb02256e845e71e770147c9d8ef439f8bcecad1b92db066f85019b93"
+      },
+      {
+        "family": "krigsvold",
+        "route": "dashboard-analytics",
+        "width": 1440,
+        "mode": "light",
+        "unavailableControlFallbackObserved": true,
+        "metricDashFallbackObserved": true,
+        "captureErrors": [],
+        "frameSha256": "f99e17ec4b6933254fcbcc01d06c51df915a0dab033afb7f3b4ed284f7e020e5"
+      },
+      {
+        "family": "krigsvold",
+        "route": "dashboard-operations",
+        "width": 1440,
+        "mode": "light",
+        "unavailableControlFallbackObserved": true,
+        "metricDashFallbackObserved": true,
+        "captureErrors": [],
+        "frameSha256": "d8cd06e706a2c9a801fa59d4adffc44ccbc10e2c6733e280335147b8b1d0aab5"
+      },
+      {
+        "family": "krigsvold",
+        "route": "dashboard-analytics",
+        "width": 1440,
+        "mode": "dark",
+        "unavailableControlFallbackObserved": true,
+        "metricDashFallbackObserved": true,
+        "captureErrors": [],
+        "frameSha256": "85de18f1be2c61fcd8dedf20307534471fdc322f8f0a4898b2d843fdb86bdb9f"
+      },
+      {
+        "family": "krigsvold",
+        "route": "dashboard-operations",
+        "width": 1440,
+        "mode": "dark",
+        "unavailableControlFallbackObserved": true,
+        "metricDashFallbackObserved": true,
+        "captureErrors": [],
+        "frameSha256": "8ee13b1fcdbb6e70caaecc6fe4b8f0787f0880cd37d2279455de6cb24a6add35"
+      }
+    ],
+    "interpretation": "All8 analytics and all8 operations baseline frames show explicit unavailable-control fallback and em-dash metrics with empty captureErrors arrays. Final frames are initialized. This is not matched hydration timing; no new fixture-data or functional-regression inference is made from this screenshot difference. Technical data/controller parity is independent.",
+    "originalSourceReceiptIdentifier": "before-missing-04/review.json"
+  },
+  "limits": [
+    "This is a bounded visual composition review of actual final-source captures, not universal source identity, usability certification, or manual assistive-technology testing.",
+    "All80 contacts were opened and inspected: all50 paired routes at1440px/320px in light/dark mode, normal primary and strict main-only diagnostic. Normal contacts show the first1000px; strict clips are main-only and bounded. Twelve larger detail comparisons supplement selected archetypes. Full-resolution originals remain authoritative outside the portable book.",
+    "The older analytics and operations captures contain literal unavailable-control fallback and em-dash metrics in all16 paired baseline states. Final frames show initialized values. They are not perfectly matched initialization/hydration states; screenshots do not establish when initialization completed or that fixture data was added by reconciliation. The unchanged data/controller contract is supported by independent technical receipts.",
+    "Horizontal overflow inside named tables/code regions is intentional for genuinely two-dimensional content. Contact sheets show the left viewport only; keyboard scrolling, right-edge access, region names, and complete-file/data checks are separate technical evidence.",
+    "Dark full-page treatments and unobserved application compositions remain contextual or experimental extensions. Canonical light-mode origin observations and supporting React catalogs are precedents, not certification of every Jekyll archetype.",
+    "The18 recipe-local changed routes include retained semantic anatomy with measured CSS or accessible-name refinements. The other32 retain recipe anatomy/style; both families also include separately recorded shared-header200% repairs. Retain does not mean globally byte-identical.",
+    "Both200%header details use exact accepted reading-source BEFORE pins whose host stylesheet is byte-identical to the earlier all50 baseline, explicitly separate from that baseline source commit. Actual final AFTER captures preserve native/artifact bindings.",
+    "Static forms, account flows, chat, sensors, fleet, and scene demonstrations remain local or synthetic specimens. These images do not verify live auth, persistence, delivery, devices, commerce, or server-error status."
+  ],
+  "reviewedDetails": [
+    {
+      "path": "visual-book/details/article.webp",
+      "sha256": "d67641382bef49d3dfe60f0d5efbbbdfd0ce8251a49fad8d32d5b88d384ac035"
+    },
+    {
+      "path": "visual-book/details/changelog.webp",
+      "sha256": "7c2f7cb0c229e733155839db97a80f3cee729c3187ce2bb27000c34149a10570"
+    },
+    {
+      "path": "visual-book/details/dashboard-components.webp",
+      "sha256": "f6d85b8dfae6927a1bddb4578f88b01114dc6756783dfe937afd1de48485f6de"
+    },
+    {
+      "path": "visual-book/details/dashboards.webp",
+      "sha256": "53b6f7ff6f9bcfd3e80585f0a8a9ca4027909d70453f1216b699c56175d2b704"
+    },
+    {
+      "path": "visual-book/details/documentation.webp",
+      "sha256": "63323a1283a0b63972ec27f646cfea403e93074e992229b3d7703d98117417f7"
+    },
+    {
+      "path": "visual-book/details/faq.webp",
+      "sha256": "b891203db1add400264340752d85b3dcd6f1951d6518f2802ff9c1bb0f258c80"
+    },
+    {
+      "path": "visual-book/details/header-krigsvold-text200.webp",
+      "sha256": "9fea5c5e24fcacdc19995b471f82573aab2a426872605eaba917379fbfda7d4b"
+    },
+    {
+      "path": "visual-book/details/header-martlet-text200.webp",
+      "sha256": "01184b02c32a253a1a24b41cb1949db3a964dad707811c374f6a0461a1e88a49"
+    },
+    {
+      "path": "visual-book/details/reference.webp",
+      "sha256": "63917cfd26197e294bde7edf014e42cdda34d6cc44c230f57d7e3d6e91ff772b"
+    },
+    {
+      "path": "visual-book/details/report-and-collection.webp",
+      "sha256": "c68a6ffbc9159e43698761ecb187aa12000620602efa5ac8177437f168bb0e3e"
+    },
+    {
+      "path": "visual-book/details/search.webp",
+      "sha256": "624bad42935928d1583fc634ded25f7a0b173d913d32ba8d376d6f48788a5e17"
+    },
+    {
+      "path": "visual-book/details/workspace.webp",
+      "sha256": "5d7f8f75c14d76bc0f078cbb755b46888bb48f77454d2ea2c1bb2bc7d9ecbf26"
+    }
+  ],
+  "routes": [
+    {
+      "route": "home",
+      "verdict": "pass",
+      "normalReviewed": true,
+      "strictMainReviewed": true,
+      "disposition": "retain recipe-local anatomy and style; shared host refinements recorded separately",
+      "findings": "The introductory reading sequence, two actions, and three routes remain intact. Martlet keeps its bounded lead and subsequent choices; Krigsvold aligns the introduction and choices within purposeful regions. Narrow reflow preserves the sequence in both modes.",
+      "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+      "reviewedSheets": [
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-dark/routes-01-05.webp",
+          "sha256": "aa4f8ee90f2643bb789a49ff876997218de3bf80bd36c23f182110b1fc452eea"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-light/routes-01-05.webp",
+          "sha256": "814c0947c95abc6b86e135853c39acfec7c0a5231bc8afc85620b4fe45f6a9ab"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-dark/routes-01-05.webp",
+          "sha256": "f1e2a7bbfde0637865c10d4ab1bbff2a1dd2112e7c7a299026d295f2affdfc1d"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-light/routes-01-05.webp",
+          "sha256": "829a03d59db937c6d25d7d9aa5b65baac36cdf87bd63c81f48faa3536258a6af"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-dark/routes-01-05.webp",
+          "sha256": "0b969f904eddcb29f056e6a4b5073739a51932a9a83a3f3a074240e69eb8d9bd"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-light/routes-01-05.webp",
+          "sha256": "af4d4d64609aeb40576d419c851058a70dfe4be08f20bc7918360dc7851446d5"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-dark/routes-01-05.webp",
+          "sha256": "4bf5448ce81d39ca755507de72af85e3d2fb9fce35e681be1fea3dc7f6d05c4e"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-light/routes-01-05.webp",
+          "sha256": "0681f5842aa45902540bd170ae2497af1b6275a3b232758176ac861b387e0b38"
+        }
+      ],
+      "remainingVisualBlockers": []
+    },
+    {
+      "route": "about",
+      "verdict": "pass",
+      "normalReviewed": true,
+      "strictMainReviewed": true,
+      "disposition": "retain recipe-local anatomy and style; shared host refinements recorded separately",
+      "findings": "Mission, working principles, and people remain a readable progression. Martlet uses heading-led prose and linked groups; Krigsvold uses aligned label/content regions. No extra card or invented organization capability was introduced.",
+      "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+      "reviewedSheets": [
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-dark/routes-01-05.webp",
+          "sha256": "aa4f8ee90f2643bb789a49ff876997218de3bf80bd36c23f182110b1fc452eea"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-light/routes-01-05.webp",
+          "sha256": "814c0947c95abc6b86e135853c39acfec7c0a5231bc8afc85620b4fe45f6a9ab"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-dark/routes-01-05.webp",
+          "sha256": "f1e2a7bbfde0637865c10d4ab1bbff2a1dd2112e7c7a299026d295f2affdfc1d"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-light/routes-01-05.webp",
+          "sha256": "829a03d59db937c6d25d7d9aa5b65baac36cdf87bd63c81f48faa3536258a6af"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-dark/routes-01-05.webp",
+          "sha256": "0b969f904eddcb29f056e6a4b5073739a51932a9a83a3f3a074240e69eb8d9bd"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-light/routes-01-05.webp",
+          "sha256": "af4d4d64609aeb40576d419c851058a70dfe4be08f20bc7918360dc7851446d5"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-dark/routes-01-05.webp",
+          "sha256": "4bf5448ce81d39ca755507de72af85e3d2fb9fce35e681be1fea3dc7f6d05c4e"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-light/routes-01-05.webp",
+          "sha256": "0681f5842aa45902540bd170ae2497af1b6275a3b232758176ac861b387e0b38"
+        }
+      ],
+      "remainingVisualBlockers": []
+    },
+    {
+      "route": "article",
+      "verdict": "pass",
+      "normalReviewed": true,
+      "strictMainReviewed": true,
+      "disposition": "recipe-local composition/CSS/accessible-name refinement; semantic anatomy as recorded separately",
+      "findings": "Martlet now uses the observed cream inline contents block with its small gold interface label; it is not a new serif heading. Krigsvold keeps an unboxed contents sequence and ruled reading sections. Author links, three sections, and final actions remain present.",
+      "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+      "reviewedSheets": [
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-dark/routes-01-05.webp",
+          "sha256": "aa4f8ee90f2643bb789a49ff876997218de3bf80bd36c23f182110b1fc452eea"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-light/routes-01-05.webp",
+          "sha256": "814c0947c95abc6b86e135853c39acfec7c0a5231bc8afc85620b4fe45f6a9ab"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-dark/routes-01-05.webp",
+          "sha256": "f1e2a7bbfde0637865c10d4ab1bbff2a1dd2112e7c7a299026d295f2affdfc1d"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-light/routes-01-05.webp",
+          "sha256": "829a03d59db937c6d25d7d9aa5b65baac36cdf87bd63c81f48faa3536258a6af"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-dark/routes-01-05.webp",
+          "sha256": "0b969f904eddcb29f056e6a4b5073739a51932a9a83a3f3a074240e69eb8d9bd"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-light/routes-01-05.webp",
+          "sha256": "af4d4d64609aeb40576d419c851058a70dfe4be08f20bc7918360dc7851446d5"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-dark/routes-01-05.webp",
+          "sha256": "4bf5448ce81d39ca755507de72af85e3d2fb9fce35e681be1fea3dc7f6d05c4e"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-light/routes-01-05.webp",
+          "sha256": "0681f5842aa45902540bd170ae2497af1b6275a3b232758176ac861b387e0b38"
+        }
+      ],
+      "remainingVisualBlockers": []
+    },
+    {
+      "route": "archive",
+      "verdict": "pass",
+      "normalReviewed": true,
+      "strictMainReviewed": true,
+      "disposition": "retain recipe-local anatomy and style; shared host refinements recorded separately",
+      "findings": "Dates, subject labels, linked titles, summaries, and pagination remain together. Martlet retains a reading-led list; Krigsvold retains aligned records with a stable section label. Both stack clearly at320px without forcing different behavior.",
+      "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+      "reviewedSheets": [
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-dark/routes-01-05.webp",
+          "sha256": "aa4f8ee90f2643bb789a49ff876997218de3bf80bd36c23f182110b1fc452eea"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-light/routes-01-05.webp",
+          "sha256": "814c0947c95abc6b86e135853c39acfec7c0a5231bc8afc85620b4fe45f6a9ab"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-dark/routes-01-05.webp",
+          "sha256": "f1e2a7bbfde0637865c10d4ab1bbff2a1dd2112e7c7a299026d295f2affdfc1d"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-light/routes-01-05.webp",
+          "sha256": "829a03d59db937c6d25d7d9aa5b65baac36cdf87bd63c81f48faa3536258a6af"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-dark/routes-01-05.webp",
+          "sha256": "0b969f904eddcb29f056e6a4b5073739a51932a9a83a3f3a074240e69eb8d9bd"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-light/routes-01-05.webp",
+          "sha256": "af4d4d64609aeb40576d419c851058a70dfe4be08f20bc7918360dc7851446d5"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-dark/routes-01-05.webp",
+          "sha256": "4bf5448ce81d39ca755507de72af85e3d2fb9fce35e681be1fea3dc7f6d05c4e"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-light/routes-01-05.webp",
+          "sha256": "0681f5842aa45902540bd170ae2497af1b6275a3b232758176ac861b387e0b38"
+        }
+      ],
+      "remainingVisualBlockers": []
+    },
+    {
+      "route": "category",
+      "verdict": "pass",
+      "normalReviewed": true,
+      "strictMainReviewed": true,
+      "disposition": "retain recipe-local anatomy and style; shared host refinements recorded separately",
+      "findings": "The same two dated records and subject context remain. The narrow single-column sequence is appropriate in both families; desktop organization and family-native type distinguish the treatments without changing taxonomy.",
+      "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+      "reviewedSheets": [
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-dark/routes-01-05.webp",
+          "sha256": "aa4f8ee90f2643bb789a49ff876997218de3bf80bd36c23f182110b1fc452eea"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-light/routes-01-05.webp",
+          "sha256": "814c0947c95abc6b86e135853c39acfec7c0a5231bc8afc85620b4fe45f6a9ab"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-dark/routes-01-05.webp",
+          "sha256": "f1e2a7bbfde0637865c10d4ab1bbff2a1dd2112e7c7a299026d295f2affdfc1d"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-light/routes-01-05.webp",
+          "sha256": "829a03d59db937c6d25d7d9aa5b65baac36cdf87bd63c81f48faa3536258a6af"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-dark/routes-01-05.webp",
+          "sha256": "0b969f904eddcb29f056e6a4b5073739a51932a9a83a3f3a074240e69eb8d9bd"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-light/routes-01-05.webp",
+          "sha256": "af4d4d64609aeb40576d419c851058a70dfe4be08f20bc7918360dc7851446d5"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-dark/routes-01-05.webp",
+          "sha256": "4bf5448ce81d39ca755507de72af85e3d2fb9fce35e681be1fea3dc7f6d05c4e"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-light/routes-01-05.webp",
+          "sha256": "0681f5842aa45902540bd170ae2497af1b6275a3b232758176ac861b387e0b38"
+        }
+      ],
+      "remainingVisualBlockers": []
+    },
+    {
+      "route": "categories",
+      "verdict": "pass",
+      "normalReviewed": true,
+      "strictMainReviewed": true,
+      "disposition": "retain recipe-local anatomy and style; shared host refinements recorded separately",
+      "findings": "All three subject destinations and descriptions remain visible. Martlet uses a heading and linked groups; Krigsvold places them in a region aligned to its label. Light/dark and narrow states retain the same hierarchy.",
+      "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+      "reviewedSheets": [
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-dark/routes-06-10.webp",
+          "sha256": "3a40703b30af867d29043734dcf6450516975c009e3385d7e3f4e93376deb954"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-light/routes-06-10.webp",
+          "sha256": "4d1e1d94fa47fedc3ef74dd804a185a42af42b36420c03f6f47fa3c2fec4ccbd"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-dark/routes-06-10.webp",
+          "sha256": "5bebeae43e61fb309ae95e0797700552694aff45c46232e5c99d5eb691996579"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-light/routes-06-10.webp",
+          "sha256": "c3bbe433c73376636e4e09f5eb2e791b6efe20a02c9059e3a644527319552d76"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-dark/routes-06-10.webp",
+          "sha256": "9167ebb3886516dcb11929d1f2ee4661636d0e63e150c57288baac0f39721781"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-light/routes-06-10.webp",
+          "sha256": "2d4b7932ef09b36d02f20b1866307ca31a76b4a22353b860985f27508b255d60"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-dark/routes-06-10.webp",
+          "sha256": "aedb2669b287c6338bb90cf99d2dee3d8401dafd5d3b0503a5a02fdbc3bcf9fd"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-light/routes-06-10.webp",
+          "sha256": "8708149a19f80ce360ca3556edc00be0feb607cb552560aa7a1a87159bf79956"
+        }
+      ],
+      "remainingVisualBlockers": []
+    },
+    {
+      "route": "person",
+      "verdict": "pass",
+      "normalReviewed": true,
+      "strictMainReviewed": true,
+      "disposition": "retain recipe-local anatomy and style; shared host refinements recorded separately",
+      "findings": "Biography, three facts, and selected writing retain their roles. Martlet separates biography from supporting facts through reading order; Krigsvold aligns each region and its label. The fiction boundary and contact route remain explicit.",
+      "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+      "reviewedSheets": [
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-dark/routes-06-10.webp",
+          "sha256": "3a40703b30af867d29043734dcf6450516975c009e3385d7e3f4e93376deb954"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-light/routes-06-10.webp",
+          "sha256": "4d1e1d94fa47fedc3ef74dd804a185a42af42b36420c03f6f47fa3c2fec4ccbd"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-dark/routes-06-10.webp",
+          "sha256": "5bebeae43e61fb309ae95e0797700552694aff45c46232e5c99d5eb691996579"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-light/routes-06-10.webp",
+          "sha256": "c3bbe433c73376636e4e09f5eb2e791b6efe20a02c9059e3a644527319552d76"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-dark/routes-06-10.webp",
+          "sha256": "9167ebb3886516dcb11929d1f2ee4661636d0e63e150c57288baac0f39721781"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-light/routes-06-10.webp",
+          "sha256": "2d4b7932ef09b36d02f20b1866307ca31a76b4a22353b860985f27508b255d60"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-dark/routes-06-10.webp",
+          "sha256": "aedb2669b287c6338bb90cf99d2dee3d8401dafd5d3b0503a5a02fdbc3bcf9fd"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-light/routes-06-10.webp",
+          "sha256": "8708149a19f80ce360ca3556edc00be0feb607cb552560aa7a1a87159bf79956"
+        }
+      ],
+      "remainingVisualBlockers": []
+    },
+    {
+      "route": "projects",
+      "verdict": "pass",
+      "normalReviewed": true,
+      "strictMainReviewed": true,
+      "disposition": "retain recipe-local anatomy and style; shared host refinements recorded separately",
+      "findings": "Published, ongoing, and annual statuses stay with the same three project links. Stable label/title/description groupings survive narrow reflow; family type and section relationships remain coherent after identity masking.",
+      "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+      "reviewedSheets": [
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-dark/routes-06-10.webp",
+          "sha256": "3a40703b30af867d29043734dcf6450516975c009e3385d7e3f4e93376deb954"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-light/routes-06-10.webp",
+          "sha256": "4d1e1d94fa47fedc3ef74dd804a185a42af42b36420c03f6f47fa3c2fec4ccbd"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-dark/routes-06-10.webp",
+          "sha256": "5bebeae43e61fb309ae95e0797700552694aff45c46232e5c99d5eb691996579"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-light/routes-06-10.webp",
+          "sha256": "c3bbe433c73376636e4e09f5eb2e791b6efe20a02c9059e3a644527319552d76"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-dark/routes-06-10.webp",
+          "sha256": "9167ebb3886516dcb11929d1f2ee4661636d0e63e150c57288baac0f39721781"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-light/routes-06-10.webp",
+          "sha256": "2d4b7932ef09b36d02f20b1866307ca31a76b4a22353b860985f27508b255d60"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-dark/routes-06-10.webp",
+          "sha256": "aedb2669b287c6338bb90cf99d2dee3d8401dafd5d3b0503a5a02fdbc3bcf9fd"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-light/routes-06-10.webp",
+          "sha256": "8708149a19f80ce360ca3556edc00be0feb607cb552560aa7a1a87159bf79956"
+        }
+      ],
+      "remainingVisualBlockers": []
+    },
+    {
+      "route": "case-study",
+      "verdict": "pass",
+      "normalReviewed": true,
+      "strictMainReviewed": true,
+      "disposition": "retain recipe-local anatomy and style; shared host refinements recorded separately",
+      "findings": "The question, approach, learned facts, uncertainty, and actions remain a continuous account. Both use the same semantic sequence; Martlet's heading-led reading and Krigsvold's aligned regional labels are legitimate distinct compositions.",
+      "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+      "reviewedSheets": [
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-dark/routes-06-10.webp",
+          "sha256": "3a40703b30af867d29043734dcf6450516975c009e3385d7e3f4e93376deb954"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-light/routes-06-10.webp",
+          "sha256": "4d1e1d94fa47fedc3ef74dd804a185a42af42b36420c03f6f47fa3c2fec4ccbd"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-dark/routes-06-10.webp",
+          "sha256": "5bebeae43e61fb309ae95e0797700552694aff45c46232e5c99d5eb691996579"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-light/routes-06-10.webp",
+          "sha256": "c3bbe433c73376636e4e09f5eb2e791b6efe20a02c9059e3a644527319552d76"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-dark/routes-06-10.webp",
+          "sha256": "9167ebb3886516dcb11929d1f2ee4661636d0e63e150c57288baac0f39721781"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-light/routes-06-10.webp",
+          "sha256": "2d4b7932ef09b36d02f20b1866307ca31a76b4a22353b860985f27508b255d60"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-dark/routes-06-10.webp",
+          "sha256": "aedb2669b287c6338bb90cf99d2dee3d8401dafd5d3b0503a5a02fdbc3bcf9fd"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-light/routes-06-10.webp",
+          "sha256": "8708149a19f80ce360ca3556edc00be0feb607cb552560aa7a1a87159bf79956"
+        }
+      ],
+      "remainingVisualBlockers": []
+    },
+    {
+      "route": "documentation",
+      "verdict": "pass",
+      "normalReviewed": true,
+      "strictMainReviewed": true,
+      "disposition": "recipe-local composition/CSS/accessible-name refinement; semantic anatomy as recorded separately",
+      "findings": "The three task links are preserved. Martlet replaces the generic card grid with a flowing definition-style link sequence; Krigsvold uses aligned link-and-description rows. Larger details confirm readable links and subordinate descriptions.",
+      "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+      "reviewedSheets": [
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-dark/routes-06-10.webp",
+          "sha256": "3a40703b30af867d29043734dcf6450516975c009e3385d7e3f4e93376deb954"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-light/routes-06-10.webp",
+          "sha256": "4d1e1d94fa47fedc3ef74dd804a185a42af42b36420c03f6f47fa3c2fec4ccbd"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-dark/routes-06-10.webp",
+          "sha256": "5bebeae43e61fb309ae95e0797700552694aff45c46232e5c99d5eb691996579"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-light/routes-06-10.webp",
+          "sha256": "c3bbe433c73376636e4e09f5eb2e791b6efe20a02c9059e3a644527319552d76"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-dark/routes-06-10.webp",
+          "sha256": "9167ebb3886516dcb11929d1f2ee4661636d0e63e150c57288baac0f39721781"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-light/routes-06-10.webp",
+          "sha256": "2d4b7932ef09b36d02f20b1866307ca31a76b4a22353b860985f27508b255d60"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-dark/routes-06-10.webp",
+          "sha256": "aedb2669b287c6338bb90cf99d2dee3d8401dafd5d3b0503a5a02fdbc3bcf9fd"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-light/routes-06-10.webp",
+          "sha256": "8708149a19f80ce360ca3556edc00be0feb607cb552560aa7a1a87159bf79956"
+        }
+      ],
+      "remainingVisualBlockers": []
+    },
+    {
+      "route": "guide",
+      "verdict": "pass",
+      "normalReviewed": true,
+      "strictMainReviewed": true,
+      "disposition": "recipe-local composition/CSS/accessible-name refinement; semantic anatomy as recorded separately",
+      "findings": "The same prerequisites, ordered arrival steps, and follow-up actions remain. Martlet widens the bounded task document while retaining the contents index; Krigsvold gives each stage an aligned labeled region. At320px, index and stages follow a coherent single reading order.",
+      "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+      "reviewedSheets": [
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-dark/routes-11-15.webp",
+          "sha256": "ab0cf0ad8eb54a6602f322fe7ee50666b8b1dba6a297b92decf9f2a863e17689"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-light/routes-11-15.webp",
+          "sha256": "d7faaea307c78a9def5cfbfc9266f89f7903247b0e88b4ea415e3acc82aaf93b"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-dark/routes-11-15.webp",
+          "sha256": "c875a6e6ab9e572b943ff9fe79621301f191da60fb20087d3e49aba7822bcc36"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-light/routes-11-15.webp",
+          "sha256": "b266011e8c960a5688abce94918dd69e50639d22f14accd4a7266c96f2a44844"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-dark/routes-11-15.webp",
+          "sha256": "2a336ed5c0fd9cdc630d210273c1234938622d2b71ae3938afeb22e680d33cf4"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-light/routes-11-15.webp",
+          "sha256": "08997c25ee7924fb371efda23285251ac02cfda70470dd1f86dfdca081034fe7"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-dark/routes-11-15.webp",
+          "sha256": "31f175f5e89236daccc135f49b66a09655664a4456585367b59dce1c4dd84569"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-light/routes-11-15.webp",
+          "sha256": "f845621c25449906c7b2558255ec75b0eaa9f99eead7f361b1e0978cff079136"
+        }
+      ],
+      "remainingVisualBlockers": []
+    },
+    {
+      "route": "reference",
+      "verdict": "pass",
+      "normalReviewed": true,
+      "strictMainReviewed": true,
+      "disposition": "recipe-local composition/CSS/accessible-name refinement; semantic anatomy as recorded separately",
+      "findings": "The four field records, sample JSON, scope, and correction guidance remain. Martlet presents a readable technical document with source-native table treatment; Krigsvold aligns labeled sections and its own table vocabulary. Tables intentionally have bounded horizontal overflow at narrow widths, separately verified by technical tests.",
+      "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+      "reviewedSheets": [
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-dark/routes-11-15.webp",
+          "sha256": "ab0cf0ad8eb54a6602f322fe7ee50666b8b1dba6a297b92decf9f2a863e17689"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-light/routes-11-15.webp",
+          "sha256": "d7faaea307c78a9def5cfbfc9266f89f7903247b0e88b4ea415e3acc82aaf93b"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-dark/routes-11-15.webp",
+          "sha256": "c875a6e6ab9e572b943ff9fe79621301f191da60fb20087d3e49aba7822bcc36"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-light/routes-11-15.webp",
+          "sha256": "b266011e8c960a5688abce94918dd69e50639d22f14accd4a7266c96f2a44844"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-dark/routes-11-15.webp",
+          "sha256": "2a336ed5c0fd9cdc630d210273c1234938622d2b71ae3938afeb22e680d33cf4"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-light/routes-11-15.webp",
+          "sha256": "08997c25ee7924fb371efda23285251ac02cfda70470dd1f86dfdca081034fe7"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-dark/routes-11-15.webp",
+          "sha256": "31f175f5e89236daccc135f49b66a09655664a4456585367b59dce1c4dd84569"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-light/routes-11-15.webp",
+          "sha256": "f845621c25449906c7b2558255ec75b0eaa9f99eead7f361b1e0978cff079136"
+        }
+      ],
+      "remainingVisualBlockers": []
+    },
+    {
+      "route": "contact",
+      "verdict": "pass",
+      "normalReviewed": true,
+      "strictMainReviewed": true,
+      "disposition": "retain recipe-local anatomy and style; shared host refinements recorded separately",
+      "findings": "The research, visits, and corrections routes remain above the same labeled form. Both retain familiar controls and the local-demonstration notice. Similar form geometry is justified by the task and shared accessibility obligations.",
+      "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+      "reviewedSheets": [
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-dark/routes-11-15.webp",
+          "sha256": "ab0cf0ad8eb54a6602f322fe7ee50666b8b1dba6a297b92decf9f2a863e17689"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-light/routes-11-15.webp",
+          "sha256": "d7faaea307c78a9def5cfbfc9266f89f7903247b0e88b4ea415e3acc82aaf93b"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-dark/routes-11-15.webp",
+          "sha256": "c875a6e6ab9e572b943ff9fe79621301f191da60fb20087d3e49aba7822bcc36"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-light/routes-11-15.webp",
+          "sha256": "b266011e8c960a5688abce94918dd69e50639d22f14accd4a7266c96f2a44844"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-dark/routes-11-15.webp",
+          "sha256": "2a336ed5c0fd9cdc630d210273c1234938622d2b71ae3938afeb22e680d33cf4"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-light/routes-11-15.webp",
+          "sha256": "08997c25ee7924fb371efda23285251ac02cfda70470dd1f86dfdca081034fe7"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-dark/routes-11-15.webp",
+          "sha256": "31f175f5e89236daccc135f49b66a09655664a4456585367b59dce1c4dd84569"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-light/routes-11-15.webp",
+          "sha256": "f845621c25449906c7b2558255ec75b0eaa9f99eead7f361b1e0978cff079136"
+        }
+      ],
+      "remainingVisualBlockers": []
+    },
+    {
+      "route": "faq",
+      "verdict": "pass",
+      "normalReviewed": true,
+      "strictMainReviewed": true,
+      "disposition": "recipe-local composition/CSS/accessible-name refinement; semantic anatomy as recorded separately",
+      "findings": "Both retain the four disclosure questions and answers in two named groups. Martlet uses flowing group headings and native triangular disclosures; Krigsvold uses labeled ruled rows and plus indicators. The strict main comparisons show structural differences without the marks or color.",
+      "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+      "reviewedSheets": [
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-dark/routes-11-15.webp",
+          "sha256": "ab0cf0ad8eb54a6602f322fe7ee50666b8b1dba6a297b92decf9f2a863e17689"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-light/routes-11-15.webp",
+          "sha256": "d7faaea307c78a9def5cfbfc9266f89f7903247b0e88b4ea415e3acc82aaf93b"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-dark/routes-11-15.webp",
+          "sha256": "c875a6e6ab9e572b943ff9fe79621301f191da60fb20087d3e49aba7822bcc36"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-light/routes-11-15.webp",
+          "sha256": "b266011e8c960a5688abce94918dd69e50639d22f14accd4a7266c96f2a44844"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-dark/routes-11-15.webp",
+          "sha256": "2a336ed5c0fd9cdc630d210273c1234938622d2b71ae3938afeb22e680d33cf4"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-light/routes-11-15.webp",
+          "sha256": "08997c25ee7924fb371efda23285251ac02cfda70470dd1f86dfdca081034fe7"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-dark/routes-11-15.webp",
+          "sha256": "31f175f5e89236daccc135f49b66a09655664a4456585367b59dce1c4dd84569"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-light/routes-11-15.webp",
+          "sha256": "f845621c25449906c7b2558255ec75b0eaa9f99eead7f361b1e0978cff079136"
+        }
+      ],
+      "remainingVisualBlockers": []
+    },
+    {
+      "route": "privacy",
+      "verdict": "pass",
+      "normalReviewed": true,
+      "strictMainReviewed": true,
+      "disposition": "recipe-local composition/CSS/accessible-name refinement; semantic anatomy as recorded separately",
+      "findings": "The same scope, demonstration boundaries, effective date, and contact/history actions remain. The wider readable document is a recipe-level CSS refinement, while its semantic anatomy is retained. Any short eyebrow cut at a contact-cell edge is packaging crop, not a current product finding.",
+      "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+      "reviewedSheets": [
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-dark/routes-11-15.webp",
+          "sha256": "ab0cf0ad8eb54a6602f322fe7ee50666b8b1dba6a297b92decf9f2a863e17689"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-light/routes-11-15.webp",
+          "sha256": "d7faaea307c78a9def5cfbfc9266f89f7903247b0e88b4ea415e3acc82aaf93b"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-dark/routes-11-15.webp",
+          "sha256": "c875a6e6ab9e572b943ff9fe79621301f191da60fb20087d3e49aba7822bcc36"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-light/routes-11-15.webp",
+          "sha256": "b266011e8c960a5688abce94918dd69e50639d22f14accd4a7266c96f2a44844"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-dark/routes-11-15.webp",
+          "sha256": "2a336ed5c0fd9cdc630d210273c1234938622d2b71ae3938afeb22e680d33cf4"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-light/routes-11-15.webp",
+          "sha256": "08997c25ee7924fb371efda23285251ac02cfda70470dd1f86dfdca081034fe7"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-dark/routes-11-15.webp",
+          "sha256": "31f175f5e89236daccc135f49b66a09655664a4456585367b59dce1c4dd84569"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-light/routes-11-15.webp",
+          "sha256": "f845621c25449906c7b2558255ec75b0eaa9f99eead7f361b1e0978cff079136"
+        }
+      ],
+      "remainingVisualBlockers": []
+    },
+    {
+      "route": "terms",
+      "verdict": "pass",
+      "normalReviewed": true,
+      "strictMainReviewed": true,
+      "disposition": "recipe-local composition/CSS/accessible-name refinement; semantic anatomy as recorded separately",
+      "findings": "The same three policy sections, effective date, and actions remain. Martlet uses measured prose; Krigsvold retains aligned headings and reading regions. The refinement changes available reading width rather than policy meaning.",
+      "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+      "reviewedSheets": [
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-dark/routes-16-20.webp",
+          "sha256": "ef0407c7cffeffea9d51ea6f490871374d4cc5fb992776ec9c9165e422dd01e7"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-light/routes-16-20.webp",
+          "sha256": "b7c0be2f23dcbfb054500873510a5f9b862d38b3ecd923a6106e3e550ce32d34"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-dark/routes-16-20.webp",
+          "sha256": "5b23614364a7d4986ef33e3b1242bd1f078c1b521864229456a902ba53f56fc4"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-light/routes-16-20.webp",
+          "sha256": "c6780179416c92d366262c92da8cfc4a935105401a50917faf5942f0a6ae3b95"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-dark/routes-16-20.webp",
+          "sha256": "23ea42306abea7e8428e1784a005918269219a972b1d156f5c9dcb2df0ad8088"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-light/routes-16-20.webp",
+          "sha256": "c3c58195e40f317575d7dbee8a10ca9ea7ecf6587b18e5031bfa856668394a42"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-dark/routes-16-20.webp",
+          "sha256": "58c5f4e581bbe92a232f6d32a536eff4c06f58c2c858474770d239328d0dbb80"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-light/routes-16-20.webp",
+          "sha256": "f9aa753916720628bb5f2a0a7a0dbfb69f71826f3fb551735d59841abf1fda8e"
+        }
+      ],
+      "remainingVisualBlockers": []
+    },
+    {
+      "route": "service",
+      "verdict": "pass",
+      "normalReviewed": true,
+      "strictMainReviewed": true,
+      "disposition": "retain recipe-local anatomy and style; shared host refinements recorded separately",
+      "findings": "Offer, three preparation stages, and session actions remain intact. Martlet's lead and subsequent groups and Krigsvold's label/content regions remain visible in strict comparisons. Neither composition implies a live booking service.",
+      "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+      "reviewedSheets": [
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-dark/routes-16-20.webp",
+          "sha256": "ef0407c7cffeffea9d51ea6f490871374d4cc5fb992776ec9c9165e422dd01e7"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-light/routes-16-20.webp",
+          "sha256": "b7c0be2f23dcbfb054500873510a5f9b862d38b3ecd923a6106e3e550ce32d34"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-dark/routes-16-20.webp",
+          "sha256": "5b23614364a7d4986ef33e3b1242bd1f078c1b521864229456a902ba53f56fc4"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-light/routes-16-20.webp",
+          "sha256": "c6780179416c92d366262c92da8cfc4a935105401a50917faf5942f0a6ae3b95"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-dark/routes-16-20.webp",
+          "sha256": "23ea42306abea7e8428e1784a005918269219a972b1d156f5c9dcb2df0ad8088"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-light/routes-16-20.webp",
+          "sha256": "c3c58195e40f317575d7dbee8a10ca9ea7ecf6587b18e5031bfa856668394a42"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-dark/routes-16-20.webp",
+          "sha256": "58c5f4e581bbe92a232f6d32a536eff4c06f58c2c858474770d239328d0dbb80"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-light/routes-16-20.webp",
+          "sha256": "f9aa753916720628bb5f2a0a7a0dbfb69f71826f3fb551735d59841abf1fda8e"
+        }
+      ],
+      "remainingVisualBlockers": []
+    },
+    {
+      "route": "place",
+      "verdict": "pass",
+      "normalReviewed": true,
+      "strictMainReviewed": true,
+      "disposition": "retain recipe-local anatomy and style; shared host refinements recorded separately",
+      "findings": "The original station illustration, caption, facilities, access, location, and visit actions remain. Removing media in diagnostic masks leaves the intended text relationships visible; the primary normal images confirm the illustration is still present.",
+      "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+      "reviewedSheets": [
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-dark/routes-16-20.webp",
+          "sha256": "ef0407c7cffeffea9d51ea6f490871374d4cc5fb992776ec9c9165e422dd01e7"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-light/routes-16-20.webp",
+          "sha256": "b7c0be2f23dcbfb054500873510a5f9b862d38b3ecd923a6106e3e550ce32d34"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-dark/routes-16-20.webp",
+          "sha256": "5b23614364a7d4986ef33e3b1242bd1f078c1b521864229456a902ba53f56fc4"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-light/routes-16-20.webp",
+          "sha256": "c6780179416c92d366262c92da8cfc4a935105401a50917faf5942f0a6ae3b95"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-dark/routes-16-20.webp",
+          "sha256": "23ea42306abea7e8428e1784a005918269219a972b1d156f5c9dcb2df0ad8088"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-light/routes-16-20.webp",
+          "sha256": "c3c58195e40f317575d7dbee8a10ca9ea7ecf6587b18e5031bfa856668394a42"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-dark/routes-16-20.webp",
+          "sha256": "58c5f4e581bbe92a232f6d32a536eff4c06f58c2c858474770d239328d0dbb80"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-light/routes-16-20.webp",
+          "sha256": "f9aa753916720628bb5f2a0a7a0dbfb69f71826f3fb551735d59841abf1fda8e"
+        }
+      ],
+      "remainingVisualBlockers": []
+    },
+    {
+      "route": "pricing",
+      "verdict": "pass",
+      "normalReviewed": true,
+      "strictMainReviewed": true,
+      "disposition": "retain recipe-local anatomy and style; shared host refinements recorded separately",
+      "findings": "All three illustrative packages, prices, inclusions, and actions retain their associations. The comparison uses columns on desktop and readable sequential packages on mobile in both families. Native controls and family hierarchy remain legible in dark mode.",
+      "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+      "reviewedSheets": [
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-dark/routes-16-20.webp",
+          "sha256": "ef0407c7cffeffea9d51ea6f490871374d4cc5fb992776ec9c9165e422dd01e7"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-light/routes-16-20.webp",
+          "sha256": "b7c0be2f23dcbfb054500873510a5f9b862d38b3ecd923a6106e3e550ce32d34"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-dark/routes-16-20.webp",
+          "sha256": "5b23614364a7d4986ef33e3b1242bd1f078c1b521864229456a902ba53f56fc4"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-light/routes-16-20.webp",
+          "sha256": "c6780179416c92d366262c92da8cfc4a935105401a50917faf5942f0a6ae3b95"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-dark/routes-16-20.webp",
+          "sha256": "23ea42306abea7e8428e1784a005918269219a972b1d156f5c9dcb2df0ad8088"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-light/routes-16-20.webp",
+          "sha256": "c3c58195e40f317575d7dbee8a10ca9ea7ecf6587b18e5031bfa856668394a42"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-dark/routes-16-20.webp",
+          "sha256": "58c5f4e581bbe92a232f6d32a536eff4c06f58c2c858474770d239328d0dbb80"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-light/routes-16-20.webp",
+          "sha256": "f9aa753916720628bb5f2a0a7a0dbfb69f71826f3fb551735d59841abf1fda8e"
+        }
+      ],
+      "remainingVisualBlockers": []
+    },
+    {
+      "route": "careers",
+      "verdict": "pass",
+      "normalReviewed": true,
+      "strictMainReviewed": true,
+      "disposition": "retain recipe-local anatomy and style; shared host refinements recorded separately",
+      "findings": "The two fictional opportunities retain type, arrangement, deadline, and linked destinations. Both use scannable records rather than inventing application behavior; narrow grouping and metadata remain coherent.",
+      "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+      "reviewedSheets": [
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-dark/routes-16-20.webp",
+          "sha256": "ef0407c7cffeffea9d51ea6f490871374d4cc5fb992776ec9c9165e422dd01e7"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-light/routes-16-20.webp",
+          "sha256": "b7c0be2f23dcbfb054500873510a5f9b862d38b3ecd923a6106e3e550ce32d34"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-dark/routes-16-20.webp",
+          "sha256": "5b23614364a7d4986ef33e3b1242bd1f078c1b521864229456a902ba53f56fc4"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-light/routes-16-20.webp",
+          "sha256": "c6780179416c92d366262c92da8cfc4a935105401a50917faf5942f0a6ae3b95"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-dark/routes-16-20.webp",
+          "sha256": "23ea42306abea7e8428e1784a005918269219a972b1d156f5c9dcb2df0ad8088"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-light/routes-16-20.webp",
+          "sha256": "c3c58195e40f317575d7dbee8a10ca9ea7ecf6587b18e5031bfa856668394a42"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-dark/routes-16-20.webp",
+          "sha256": "58c5f4e581bbe92a232f6d32a536eff4c06f58c2c858474770d239328d0dbb80"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-light/routes-16-20.webp",
+          "sha256": "f9aa753916720628bb5f2a0a7a0dbfb69f71826f3fb551735d59841abf1fda8e"
+        }
+      ],
+      "remainingVisualBlockers": []
+    },
+    {
+      "route": "opportunity",
+      "verdict": "pass",
+      "normalReviewed": true,
+      "strictMainReviewed": true,
+      "disposition": "recipe-local composition/CSS/accessible-name refinement; semantic anatomy as recorded separately",
+      "findings": "Responsibilities, three qualifications, arrangement facts, and application route remain. Martlet uses a measured document progression; Krigsvold aligns labeled stages and facts. The explicit fictional-vacancy boundary remains visible.",
+      "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+      "reviewedSheets": [
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-dark/routes-21-25.webp",
+          "sha256": "99c792cfe3f320b283aacea686a0ac237f32263c501abd9b248dd99fa9e46070"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-light/routes-21-25.webp",
+          "sha256": "60f1a323ce7102182d85a9939ef853109c56d68aed860132fa65bd37178f0ca0"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-dark/routes-21-25.webp",
+          "sha256": "0ec32ba2a91db8e5da131cfd9dcacc58b1afaada27bf6e063946c5287d147a78"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-light/routes-21-25.webp",
+          "sha256": "62712abdd8b3fe66fbb05bd289d0df78bcc639553b11b4b7d51e6e4a27774761"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-dark/routes-21-25.webp",
+          "sha256": "90f3712defa671315ea660a2245335d0224771aa87ba61914a043a0dd4f0f560"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-light/routes-21-25.webp",
+          "sha256": "82d0bd5ae99c58301a257ef242987c0f7356e6a7ecd71f7b18c990c3d07f11a1"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-dark/routes-21-25.webp",
+          "sha256": "f1af53e604b101ecc5ad03a61ede316b21c8d4924bcf411db0cb045a2908bdc3"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-light/routes-21-25.webp",
+          "sha256": "14198315b8fa4c1e4f59802be23e4eeaeaf65e0efacbaeb406219e103f06e6c3"
+        }
+      ],
+      "remainingVisualBlockers": []
+    },
+    {
+      "route": "software",
+      "verdict": "pass",
+      "normalReviewed": true,
+      "strictMainReviewed": true,
+      "disposition": "retain recipe-local anatomy and style; shared host refinements recorded separately",
+      "findings": "Product explanation, three capability destinations, and integration actions remain. Martlet keeps a reading-led progression; Krigsvold groups them into purposeful aligned regions. The local preview and integration boundary remain explicit.",
+      "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+      "reviewedSheets": [
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-dark/routes-21-25.webp",
+          "sha256": "99c792cfe3f320b283aacea686a0ac237f32263c501abd9b248dd99fa9e46070"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-light/routes-21-25.webp",
+          "sha256": "60f1a323ce7102182d85a9939ef853109c56d68aed860132fa65bd37178f0ca0"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-dark/routes-21-25.webp",
+          "sha256": "0ec32ba2a91db8e5da131cfd9dcacc58b1afaada27bf6e063946c5287d147a78"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-light/routes-21-25.webp",
+          "sha256": "62712abdd8b3fe66fbb05bd289d0df78bcc639553b11b4b7d51e6e4a27774761"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-dark/routes-21-25.webp",
+          "sha256": "90f3712defa671315ea660a2245335d0224771aa87ba61914a043a0dd4f0f560"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-light/routes-21-25.webp",
+          "sha256": "82d0bd5ae99c58301a257ef242987c0f7356e6a7ecd71f7b18c990c3d07f11a1"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-dark/routes-21-25.webp",
+          "sha256": "f1af53e604b101ecc5ad03a61ede316b21c8d4924bcf411db0cb045a2908bdc3"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-light/routes-21-25.webp",
+          "sha256": "14198315b8fa4c1e4f59802be23e4eeaeaf65e0efacbaeb406219e103f06e6c3"
+        }
+      ],
+      "remainingVisualBlockers": []
+    },
+    {
+      "route": "product",
+      "verdict": "pass",
+      "normalReviewed": true,
+      "strictMainReviewed": true,
+      "disposition": "retain recipe-local anatomy and style; shared host refinements recorded separately",
+      "findings": "The notebook illustration, caption, specifications, and purchasing boundary remain. The primary normal images show the unchanged artwork; strict views isolate specification grouping. No checkout or commerce service has been implied.",
+      "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+      "reviewedSheets": [
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-dark/routes-21-25.webp",
+          "sha256": "99c792cfe3f320b283aacea686a0ac237f32263c501abd9b248dd99fa9e46070"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-light/routes-21-25.webp",
+          "sha256": "60f1a323ce7102182d85a9939ef853109c56d68aed860132fa65bd37178f0ca0"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-dark/routes-21-25.webp",
+          "sha256": "0ec32ba2a91db8e5da131cfd9dcacc58b1afaada27bf6e063946c5287d147a78"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-light/routes-21-25.webp",
+          "sha256": "62712abdd8b3fe66fbb05bd289d0df78bcc639553b11b4b7d51e6e4a27774761"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-dark/routes-21-25.webp",
+          "sha256": "90f3712defa671315ea660a2245335d0224771aa87ba61914a043a0dd4f0f560"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-light/routes-21-25.webp",
+          "sha256": "82d0bd5ae99c58301a257ef242987c0f7356e6a7ecd71f7b18c990c3d07f11a1"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-dark/routes-21-25.webp",
+          "sha256": "f1af53e604b101ecc5ad03a61ede316b21c8d4924bcf411db0cb045a2908bdc3"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-light/routes-21-25.webp",
+          "sha256": "14198315b8fa4c1e4f59802be23e4eeaeaf65e0efacbaeb406219e103f06e6c3"
+        }
+      ],
+      "remainingVisualBlockers": []
+    },
+    {
+      "route": "collection",
+      "verdict": "pass",
+      "normalReviewed": true,
+      "strictMainReviewed": true,
+      "disposition": "retain recipe-local anatomy and style; shared host refinements recorded separately",
+      "findings": "The same notebook, protocol, exhibition records, and pagination remain. Desktop record alignment and narrow reading order remain coherent. Similar content structures are justified; type and region organization retain each language's identity.",
+      "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+      "reviewedSheets": [
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-dark/routes-21-25.webp",
+          "sha256": "99c792cfe3f320b283aacea686a0ac237f32263c501abd9b248dd99fa9e46070"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-light/routes-21-25.webp",
+          "sha256": "60f1a323ce7102182d85a9939ef853109c56d68aed860132fa65bd37178f0ca0"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-dark/routes-21-25.webp",
+          "sha256": "0ec32ba2a91db8e5da131cfd9dcacc58b1afaada27bf6e063946c5287d147a78"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-light/routes-21-25.webp",
+          "sha256": "62712abdd8b3fe66fbb05bd289d0df78bcc639553b11b4b7d51e6e4a27774761"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-dark/routes-21-25.webp",
+          "sha256": "90f3712defa671315ea660a2245335d0224771aa87ba61914a043a0dd4f0f560"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-light/routes-21-25.webp",
+          "sha256": "82d0bd5ae99c58301a257ef242987c0f7356e6a7ecd71f7b18c990c3d07f11a1"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-dark/routes-21-25.webp",
+          "sha256": "f1af53e604b101ecc5ad03a61ede316b21c8d4924bcf411db0cb045a2908bdc3"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-light/routes-21-25.webp",
+          "sha256": "14198315b8fa4c1e4f59802be23e4eeaeaf65e0efacbaeb406219e103f06e6c3"
+        }
+      ],
+      "remainingVisualBlockers": []
+    },
+    {
+      "route": "collection-item",
+      "verdict": "pass",
+      "normalReviewed": true,
+      "strictMainReviewed": true,
+      "disposition": "retain recipe-local anatomy and style; shared host refinements recorded separately",
+      "findings": "The original notebook image, caption, identifier, creator, date, rights, and context remain associated. Martlet uses a heading-led record; Krigsvold uses labeled regions. The normal frame, not the photo-free diagnostic mask, establishes image presence.",
+      "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+      "reviewedSheets": [
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-dark/routes-21-25.webp",
+          "sha256": "99c792cfe3f320b283aacea686a0ac237f32263c501abd9b248dd99fa9e46070"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-light/routes-21-25.webp",
+          "sha256": "60f1a323ce7102182d85a9939ef853109c56d68aed860132fa65bd37178f0ca0"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-dark/routes-21-25.webp",
+          "sha256": "0ec32ba2a91db8e5da131cfd9dcacc58b1afaada27bf6e063946c5287d147a78"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-light/routes-21-25.webp",
+          "sha256": "62712abdd8b3fe66fbb05bd289d0df78bcc639553b11b4b7d51e6e4a27774761"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-dark/routes-21-25.webp",
+          "sha256": "90f3712defa671315ea660a2245335d0224771aa87ba61914a043a0dd4f0f560"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-light/routes-21-25.webp",
+          "sha256": "82d0bd5ae99c58301a257ef242987c0f7356e6a7ecd71f7b18c990c3d07f11a1"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-dark/routes-21-25.webp",
+          "sha256": "f1af53e604b101ecc5ad03a61ede316b21c8d4924bcf411db0cb045a2908bdc3"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-light/routes-21-25.webp",
+          "sha256": "14198315b8fa4c1e4f59802be23e4eeaeaf65e0efacbaeb406219e103f06e6c3"
+        }
+      ],
+      "remainingVisualBlockers": []
+    },
+    {
+      "route": "events",
+      "verdict": "pass",
+      "normalReviewed": true,
+      "strictMainReviewed": true,
+      "disposition": "retain recipe-local anatomy and style; shared host refinements recorded separately",
+      "findings": "Upcoming workshop and past programme entries retain dates, timezone, location, and destination. Both preserve scannable event grouping; Krigsvold's regional label alignment and Martlet's heading-led sequence remain consistent at both widths.",
+      "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+      "reviewedSheets": [
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-dark/routes-26-30.webp",
+          "sha256": "8d24453ecc2d1bddb82c13d6732da629802c43cd194e300a71d75b43d900fe27"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-light/routes-26-30.webp",
+          "sha256": "87866ddedbf6dc37c196e3e149d161ff9dfa23a0e3454ff6f2e0aaf753b099d1"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-dark/routes-26-30.webp",
+          "sha256": "e6d89875f0b2529c52590f59fa6f43697649589a2e6791912c4ef1dbc58040cd"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-light/routes-26-30.webp",
+          "sha256": "bf1d774cecb28c8292d517bd00789397f41a36528c6a5aa05ca4734718629c91"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-dark/routes-26-30.webp",
+          "sha256": "82f39a2ea3a730151954da89604b85cc9a96e3cbe06243ed4d97c66c5cdd3723"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-light/routes-26-30.webp",
+          "sha256": "5c35622b709bc882d4ff0e3553557b9af1340041d932f75d13dad238e3df7ef1"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-dark/routes-26-30.webp",
+          "sha256": "409db6f0d02e29e3550701ac8afdeea7033fc8e2da011948e27ca0cc7d3e5ce5"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-light/routes-26-30.webp",
+          "sha256": "319aafa0586fd36580f7e12e89cfa5c41ccfec39a2cee4baafc4c2b9896cc60a"
+        }
+      ],
+      "remainingVisualBlockers": []
+    },
+    {
+      "route": "event",
+      "verdict": "pass",
+      "normalReviewed": true,
+      "strictMainReviewed": true,
+      "disposition": "recipe-local composition/CSS/accessible-name refinement; semantic anatomy as recorded separately",
+      "findings": "The event notice, schedule, access facts, and unavailable-registration explanation remain. The event anatomy remains retained; its recorded technical refinement gives the native table scroll region a unique accessible name. The normal states preserve the same local-only registration boundary.",
+      "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+      "reviewedSheets": [
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-dark/routes-26-30.webp",
+          "sha256": "8d24453ecc2d1bddb82c13d6732da629802c43cd194e300a71d75b43d900fe27"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-light/routes-26-30.webp",
+          "sha256": "87866ddedbf6dc37c196e3e149d161ff9dfa23a0e3454ff6f2e0aaf753b099d1"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-dark/routes-26-30.webp",
+          "sha256": "e6d89875f0b2529c52590f59fa6f43697649589a2e6791912c4ef1dbc58040cd"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-light/routes-26-30.webp",
+          "sha256": "bf1d774cecb28c8292d517bd00789397f41a36528c6a5aa05ca4734718629c91"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-dark/routes-26-30.webp",
+          "sha256": "82f39a2ea3a730151954da89604b85cc9a96e3cbe06243ed4d97c66c5cdd3723"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-light/routes-26-30.webp",
+          "sha256": "5c35622b709bc882d4ff0e3553557b9af1340041d932f75d13dad238e3df7ef1"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-dark/routes-26-30.webp",
+          "sha256": "409db6f0d02e29e3550701ac8afdeea7033fc8e2da011948e27ca0cc7d3e5ce5"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-light/routes-26-30.webp",
+          "sha256": "319aafa0586fd36580f7e12e89cfa5c41ccfec39a2cee4baafc4c2b9896cc60a"
+        }
+      ],
+      "remainingVisualBlockers": []
+    },
+    {
+      "route": "report",
+      "verdict": "pass",
+      "normalReviewed": true,
+      "strictMainReviewed": true,
+      "disposition": "recipe-local composition/CSS/accessible-name refinement; semantic anatomy as recorded separately",
+      "findings": "The reporting period,12/4/2 measures, four observation rows, methodology, CSV, and protocol action remain. Martlet adds a document index beside narrative; Krigsvold uses horizontal navigation and labeled regional rows. The larger detail confirms no data was dropped by this reorganization.",
+      "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+      "reviewedSheets": [
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-dark/routes-26-30.webp",
+          "sha256": "8d24453ecc2d1bddb82c13d6732da629802c43cd194e300a71d75b43d900fe27"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-light/routes-26-30.webp",
+          "sha256": "87866ddedbf6dc37c196e3e149d161ff9dfa23a0e3454ff6f2e0aaf753b099d1"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-dark/routes-26-30.webp",
+          "sha256": "e6d89875f0b2529c52590f59fa6f43697649589a2e6791912c4ef1dbc58040cd"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-light/routes-26-30.webp",
+          "sha256": "bf1d774cecb28c8292d517bd00789397f41a36528c6a5aa05ca4734718629c91"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-dark/routes-26-30.webp",
+          "sha256": "82f39a2ea3a730151954da89604b85cc9a96e3cbe06243ed4d97c66c5cdd3723"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-light/routes-26-30.webp",
+          "sha256": "5c35622b709bc882d4ff0e3553557b9af1340041d932f75d13dad238e3df7ef1"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-dark/routes-26-30.webp",
+          "sha256": "409db6f0d02e29e3550701ac8afdeea7033fc8e2da011948e27ca0cc7d3e5ce5"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-light/routes-26-30.webp",
+          "sha256": "319aafa0586fd36580f7e12e89cfa5c41ccfec39a2cee4baafc4c2b9896cc60a"
+        }
+      ],
+      "remainingVisualBlockers": []
+    },
+    {
+      "route": "gallery",
+      "verdict": "pass",
+      "normalReviewed": true,
+      "strictMainReviewed": true,
+      "disposition": "retain recipe-local anatomy and style; shared host refinements recorded separately",
+      "findings": "All three illustrations, enlargement links, captions, and exhibition explanation remain. Martlet's three-across and Krigsvold's regional two-across desktop presentation reflow to a readable narrow sequence. Media-free masks are diagnostic blanks, not missing-image claims.",
+      "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+      "reviewedSheets": [
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-dark/routes-26-30.webp",
+          "sha256": "8d24453ecc2d1bddb82c13d6732da629802c43cd194e300a71d75b43d900fe27"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-light/routes-26-30.webp",
+          "sha256": "87866ddedbf6dc37c196e3e149d161ff9dfa23a0e3454ff6f2e0aaf753b099d1"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-dark/routes-26-30.webp",
+          "sha256": "e6d89875f0b2529c52590f59fa6f43697649589a2e6791912c4ef1dbc58040cd"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-light/routes-26-30.webp",
+          "sha256": "bf1d774cecb28c8292d517bd00789397f41a36528c6a5aa05ca4734718629c91"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-dark/routes-26-30.webp",
+          "sha256": "82f39a2ea3a730151954da89604b85cc9a96e3cbe06243ed4d97c66c5cdd3723"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-light/routes-26-30.webp",
+          "sha256": "5c35622b709bc882d4ff0e3553557b9af1340041d932f75d13dad238e3df7ef1"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-dark/routes-26-30.webp",
+          "sha256": "409db6f0d02e29e3550701ac8afdeea7033fc8e2da011948e27ca0cc7d3e5ce5"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-light/routes-26-30.webp",
+          "sha256": "319aafa0586fd36580f7e12e89cfa5c41ccfec39a2cee4baafc4c2b9896cc60a"
+        }
+      ],
+      "remainingVisualBlockers": []
+    },
+    {
+      "route": "changelog",
+      "verdict": "pass",
+      "normalReviewed": true,
+      "strictMainReviewed": true,
+      "disposition": "recipe-local composition/CSS/accessible-name refinement; semantic anatomy as recorded separately",
+      "findings": "All three versions, dates, additions, migration notes, and fragment links remain. Martlet uses a quiet version/date column beside narrative; Krigsvold uses ruled release rows with precise metadata. No table is invented as a universal family rule.",
+      "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+      "reviewedSheets": [
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-dark/routes-26-30.webp",
+          "sha256": "8d24453ecc2d1bddb82c13d6732da629802c43cd194e300a71d75b43d900fe27"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-light/routes-26-30.webp",
+          "sha256": "87866ddedbf6dc37c196e3e149d161ff9dfa23a0e3454ff6f2e0aaf753b099d1"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-dark/routes-26-30.webp",
+          "sha256": "e6d89875f0b2529c52590f59fa6f43697649589a2e6791912c4ef1dbc58040cd"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-light/routes-26-30.webp",
+          "sha256": "bf1d774cecb28c8292d517bd00789397f41a36528c6a5aa05ca4734718629c91"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-dark/routes-26-30.webp",
+          "sha256": "82f39a2ea3a730151954da89604b85cc9a96e3cbe06243ed4d97c66c5cdd3723"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-light/routes-26-30.webp",
+          "sha256": "5c35622b709bc882d4ff0e3553557b9af1340041d932f75d13dad238e3df7ef1"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-dark/routes-26-30.webp",
+          "sha256": "409db6f0d02e29e3550701ac8afdeea7033fc8e2da011948e27ca0cc7d3e5ce5"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-light/routes-26-30.webp",
+          "sha256": "319aafa0586fd36580f7e12e89cfa5c41ccfec39a2cee4baafc4c2b9896cc60a"
+        }
+      ],
+      "remainingVisualBlockers": []
+    },
+    {
+      "route": "search",
+      "verdict": "pass",
+      "normalReviewed": true,
+      "strictMainReviewed": true,
+      "disposition": "recipe-local composition/CSS/accessible-name refinement; semantic anatomy as recorded separately",
+      "findings": "The protocol query returns the same single protocol result. Martlet's source-observed serif query prompt and gold-topped group now lead a readable result; Krigsvold uses a scoped query region and aligned result. The before captures' narrow desktop result wrapping is historical and preserved.",
+      "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+      "reviewedSheets": [
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-dark/routes-31-35.webp",
+          "sha256": "2da624ba2c64b6f4ea2d0e5becde7b84995dc839684916af2d151bf10043ba56"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-light/routes-31-35.webp",
+          "sha256": "4415755ba1bdc0c8a6e1815baac17b0140e383c143eccb2435127a0308788bbd"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-dark/routes-31-35.webp",
+          "sha256": "57af2018bd3c325e17391afe91b69c8232577d98250d78605de1307b10887e8f"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-light/routes-31-35.webp",
+          "sha256": "5723cb2369c745c990f84fbe239256c36b54333fa9ac0b813174ab6aca44668f"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-dark/routes-31-35.webp",
+          "sha256": "b914199c1ec03abfa7a58a0e3117fb5ec523d47b7185cb630a00c36cb738b079"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-light/routes-31-35.webp",
+          "sha256": "6d8a9f8e8848d80cc379a54ff9886adeb7012ac9ce12175807bd81d47fa88aa6"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-dark/routes-31-35.webp",
+          "sha256": "34d90fe5beb88e3a7ba60adaff887a92cd336ab01ecb7ca3b9e0488d6f77a74c"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-light/routes-31-35.webp",
+          "sha256": "7d9a89fb8cb2bf31361c40b8ef2055f8353627ae8d3ce369222a881598d694eb"
+        }
+      ],
+      "remainingVisualBlockers": []
+    },
+    {
+      "route": "sign-in",
+      "verdict": "pass",
+      "normalReviewed": true,
+      "strictMainReviewed": true,
+      "disposition": "retain recipe-local anatomy and style; shared host refinements recorded separately",
+      "findings": "The email/password specimen, hint, validation/clear actions, and account routes retain conventional geometry. Family type, notices, actions, and reading relationships remain coherent. These images do not certify authentication or durable state.",
+      "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+      "reviewedSheets": [
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-dark/routes-31-35.webp",
+          "sha256": "2da624ba2c64b6f4ea2d0e5becde7b84995dc839684916af2d151bf10043ba56"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-light/routes-31-35.webp",
+          "sha256": "4415755ba1bdc0c8a6e1815baac17b0140e383c143eccb2435127a0308788bbd"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-dark/routes-31-35.webp",
+          "sha256": "57af2018bd3c325e17391afe91b69c8232577d98250d78605de1307b10887e8f"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-light/routes-31-35.webp",
+          "sha256": "5723cb2369c745c990f84fbe239256c36b54333fa9ac0b813174ab6aca44668f"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-dark/routes-31-35.webp",
+          "sha256": "b914199c1ec03abfa7a58a0e3117fb5ec523d47b7185cb630a00c36cb738b079"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-light/routes-31-35.webp",
+          "sha256": "6d8a9f8e8848d80cc379a54ff9886adeb7012ac9ce12175807bd81d47fa88aa6"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-dark/routes-31-35.webp",
+          "sha256": "34d90fe5beb88e3a7ba60adaff887a92cd336ab01ecb7ca3b9e0488d6f77a74c"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-light/routes-31-35.webp",
+          "sha256": "7d9a89fb8cb2bf31361c40b8ef2055f8353627ae8d3ce369222a881598d694eb"
+        }
+      ],
+      "remainingVisualBlockers": []
+    },
+    {
+      "route": "sign-up",
+      "verdict": "pass",
+      "normalReviewed": true,
+      "strictMainReviewed": true,
+      "disposition": "retain recipe-local anatomy and style; shared host refinements recorded separately",
+      "findings": "The same name/email/password and local-demonstration acknowledgement remain in order. Both retain ordinary form semantics with visible labels. No account provisioning is claimed; the similarity of task controls is intentional.",
+      "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+      "reviewedSheets": [
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-dark/routes-31-35.webp",
+          "sha256": "2da624ba2c64b6f4ea2d0e5becde7b84995dc839684916af2d151bf10043ba56"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-light/routes-31-35.webp",
+          "sha256": "4415755ba1bdc0c8a6e1815baac17b0140e383c143eccb2435127a0308788bbd"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-dark/routes-31-35.webp",
+          "sha256": "57af2018bd3c325e17391afe91b69c8232577d98250d78605de1307b10887e8f"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-light/routes-31-35.webp",
+          "sha256": "5723cb2369c745c990f84fbe239256c36b54333fa9ac0b813174ab6aca44668f"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-dark/routes-31-35.webp",
+          "sha256": "b914199c1ec03abfa7a58a0e3117fb5ec523d47b7185cb630a00c36cb738b079"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-light/routes-31-35.webp",
+          "sha256": "6d8a9f8e8848d80cc379a54ff9886adeb7012ac9ce12175807bd81d47fa88aa6"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-dark/routes-31-35.webp",
+          "sha256": "34d90fe5beb88e3a7ba60adaff887a92cd336ab01ecb7ca3b9e0488d6f77a74c"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-light/routes-31-35.webp",
+          "sha256": "7d9a89fb8cb2bf31361c40b8ef2055f8353627ae8d3ce369222a881598d694eb"
+        }
+      ],
+      "remainingVisualBlockers": []
+    },
+    {
+      "route": "password-reset",
+      "verdict": "pass",
+      "normalReviewed": true,
+      "strictMainReviewed": true,
+      "disposition": "retain recipe-local anatomy and style; shared host refinements recorded separately",
+      "findings": "The single email field and validate/clear actions remain with their local-only boundary and account links. Both provide a focused sequence without unnecessary invented family differences.",
+      "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+      "reviewedSheets": [
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-dark/routes-31-35.webp",
+          "sha256": "2da624ba2c64b6f4ea2d0e5becde7b84995dc839684916af2d151bf10043ba56"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-light/routes-31-35.webp",
+          "sha256": "4415755ba1bdc0c8a6e1815baac17b0140e383c143eccb2435127a0308788bbd"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-dark/routes-31-35.webp",
+          "sha256": "57af2018bd3c325e17391afe91b69c8232577d98250d78605de1307b10887e8f"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-light/routes-31-35.webp",
+          "sha256": "5723cb2369c745c990f84fbe239256c36b54333fa9ac0b813174ab6aca44668f"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-dark/routes-31-35.webp",
+          "sha256": "b914199c1ec03abfa7a58a0e3117fb5ec523d47b7185cb630a00c36cb738b079"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-light/routes-31-35.webp",
+          "sha256": "6d8a9f8e8848d80cc379a54ff9886adeb7012ac9ce12175807bd81d47fa88aa6"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-dark/routes-31-35.webp",
+          "sha256": "34d90fe5beb88e3a7ba60adaff887a92cd336ab01ecb7ca3b9e0488d6f77a74c"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-light/routes-31-35.webp",
+          "sha256": "7d9a89fb8cb2bf31361c40b8ef2055f8353627ae8d3ce369222a881598d694eb"
+        }
+      ],
+      "remainingVisualBlockers": []
+    },
+    {
+      "route": "two-factor",
+      "verdict": "pass",
+      "normalReviewed": true,
+      "strictMainReviewed": true,
+      "disposition": "retain recipe-local anatomy and style; shared host refinements recorded separately",
+      "findings": "The six-digit example field, format hint, validate/clear actions, and account routes remain. Clear labels and task sequence survive both modes and widths; no real second-factor service is represented.",
+      "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+      "reviewedSheets": [
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-dark/routes-31-35.webp",
+          "sha256": "2da624ba2c64b6f4ea2d0e5becde7b84995dc839684916af2d151bf10043ba56"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-light/routes-31-35.webp",
+          "sha256": "4415755ba1bdc0c8a6e1815baac17b0140e383c143eccb2435127a0308788bbd"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-dark/routes-31-35.webp",
+          "sha256": "57af2018bd3c325e17391afe91b69c8232577d98250d78605de1307b10887e8f"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-light/routes-31-35.webp",
+          "sha256": "5723cb2369c745c990f84fbe239256c36b54333fa9ac0b813174ab6aca44668f"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-dark/routes-31-35.webp",
+          "sha256": "b914199c1ec03abfa7a58a0e3117fb5ec523d47b7185cb630a00c36cb738b079"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-light/routes-31-35.webp",
+          "sha256": "6d8a9f8e8848d80cc379a54ff9886adeb7012ac9ce12175807bd81d47fa88aa6"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-dark/routes-31-35.webp",
+          "sha256": "34d90fe5beb88e3a7ba60adaff887a92cd336ab01ecb7ca3b9e0488d6f77a74c"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-light/routes-31-35.webp",
+          "sha256": "7d9a89fb8cb2bf31361c40b8ef2055f8353627ae8d3ce369222a881598d694eb"
+        }
+      ],
+      "remainingVisualBlockers": []
+    },
+    {
+      "route": "coming-soon",
+      "verdict": "pass",
+      "normalReviewed": true,
+      "strictMainReviewed": true,
+      "disposition": "retain recipe-local anatomy and style; shared host refinements recorded separately",
+      "findings": "Purpose, programme-update form, and explicit local-demonstration notice remain. The page uses a focused reading sequence and conventional fields in each family. No launch date or subscription backend was invented.",
+      "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+      "reviewedSheets": [
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-dark/routes-36-40.webp",
+          "sha256": "f40cd2700f90480daa7895ff576af9d54621418f3c7b4f56cf4a5a3493c6cb89"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-light/routes-36-40.webp",
+          "sha256": "d72c7b7f36f038fca3563628a8b8391893ef4b497dd4bde623debe0288e4a102"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-dark/routes-36-40.webp",
+          "sha256": "da599aa132193355130fa46d81bb339250b7c22ca426691491361ec1ee965e49"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-light/routes-36-40.webp",
+          "sha256": "7d19f70a565e753b891ad267fbbf1c1e1ae1b791b52b8fbbae519beb19f96421"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-dark/routes-36-40.webp",
+          "sha256": "b37b234951ffbf356673ecbccb5d3576cc24f88fc37fc24ac478a895b6b2f731"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-light/routes-36-40.webp",
+          "sha256": "baa24af2e26afbd97dcf5c3c8d3af2456d0182c5addf5191dfc2c0ef6f2f194c"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-dark/routes-36-40.webp",
+          "sha256": "0e526b5087b6b2033a7f038d902823368fce282de34aa7361abaea085281e82e"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-light/routes-36-40.webp",
+          "sha256": "968730fcb0c54df7755c1ab08bbf1035478417de7fbdf8c986de040f280ab92a"
+        }
+      ],
+      "remainingVisualBlockers": []
+    },
+    {
+      "route": "not-found",
+      "verdict": "pass",
+      "normalReviewed": true,
+      "strictMainReviewed": true,
+      "disposition": "retain recipe-local anatomy and style; shared host refinements recorded separately",
+      "findings": "The missing-page explanation and two recovery routes remain immediately usable. Both retain a short, task-focused composition; shared error conventions need no forced stylistic opposition.",
+      "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+      "reviewedSheets": [
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-dark/routes-36-40.webp",
+          "sha256": "f40cd2700f90480daa7895ff576af9d54621418f3c7b4f56cf4a5a3493c6cb89"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-light/routes-36-40.webp",
+          "sha256": "d72c7b7f36f038fca3563628a8b8391893ef4b497dd4bde623debe0288e4a102"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-dark/routes-36-40.webp",
+          "sha256": "da599aa132193355130fa46d81bb339250b7c22ca426691491361ec1ee965e49"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-light/routes-36-40.webp",
+          "sha256": "7d19f70a565e753b891ad267fbbf1c1e1ae1b791b52b8fbbae519beb19f96421"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-dark/routes-36-40.webp",
+          "sha256": "b37b234951ffbf356673ecbccb5d3576cc24f88fc37fc24ac478a895b6b2f731"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-light/routes-36-40.webp",
+          "sha256": "baa24af2e26afbd97dcf5c3c8d3af2456d0182c5addf5191dfc2c0ef6f2f194c"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-dark/routes-36-40.webp",
+          "sha256": "0e526b5087b6b2033a7f038d902823368fce282de34aa7361abaea085281e82e"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-light/routes-36-40.webp",
+          "sha256": "968730fcb0c54df7755c1ab08bbf1035478417de7fbdf8c986de040f280ab92a"
+        }
+      ],
+      "remainingVisualBlockers": []
+    },
+    {
+      "route": "server-error",
+      "verdict": "pass",
+      "normalReviewed": true,
+      "strictMainReviewed": true,
+      "disposition": "retain recipe-local anatomy and style; shared host refinements recorded separately",
+      "findings": "The retained-work guidance and help/contact actions remain readable. The page explicitly says it is a static specimen and does not generateHTTP500. The contact book is not evidence of a real server failure or recovery service.",
+      "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+      "reviewedSheets": [
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-dark/routes-36-40.webp",
+          "sha256": "f40cd2700f90480daa7895ff576af9d54621418f3c7b4f56cf4a5a3493c6cb89"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-light/routes-36-40.webp",
+          "sha256": "d72c7b7f36f038fca3563628a8b8391893ef4b497dd4bde623debe0288e4a102"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-dark/routes-36-40.webp",
+          "sha256": "da599aa132193355130fa46d81bb339250b7c22ca426691491361ec1ee965e49"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-light/routes-36-40.webp",
+          "sha256": "7d19f70a565e753b891ad267fbbf1c1e1ae1b791b52b8fbbae519beb19f96421"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-dark/routes-36-40.webp",
+          "sha256": "b37b234951ffbf356673ecbccb5d3576cc24f88fc37fc24ac478a895b6b2f731"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-light/routes-36-40.webp",
+          "sha256": "baa24af2e26afbd97dcf5c3c8d3af2456d0182c5addf5191dfc2c0ef6f2f194c"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-dark/routes-36-40.webp",
+          "sha256": "0e526b5087b6b2033a7f038d902823368fce282de34aa7361abaea085281e82e"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-light/routes-36-40.webp",
+          "sha256": "968730fcb0c54df7755c1ab08bbf1035478417de7fbdf8c986de040f280ab92a"
+        }
+      ],
+      "remainingVisualBlockers": []
+    },
+    {
+      "route": "workspace",
+      "verdict": "pass",
+      "normalReviewed": true,
+      "strictMainReviewed": true,
+      "disposition": "retain recipe-local anatomy and style; shared host refinements recorded separately",
+      "findings": "Three observation records, filter, selection, and review/reset commands remain. Martlet keeps its record collection above the selected-record block; Krigsvold uses a simultaneous result/detail region on desktop. Both reflow sensibly at320px; state behavior is verified separately.",
+      "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+      "reviewedSheets": [
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-dark/routes-36-40.webp",
+          "sha256": "f40cd2700f90480daa7895ff576af9d54621418f3c7b4f56cf4a5a3493c6cb89"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-light/routes-36-40.webp",
+          "sha256": "d72c7b7f36f038fca3563628a8b8391893ef4b497dd4bde623debe0288e4a102"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-dark/routes-36-40.webp",
+          "sha256": "da599aa132193355130fa46d81bb339250b7c22ca426691491361ec1ee965e49"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-light/routes-36-40.webp",
+          "sha256": "7d19f70a565e753b891ad267fbbf1c1e1ae1b791b52b8fbbae519beb19f96421"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-dark/routes-36-40.webp",
+          "sha256": "b37b234951ffbf356673ecbccb5d3576cc24f88fc37fc24ac478a895b6b2f731"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-light/routes-36-40.webp",
+          "sha256": "baa24af2e26afbd97dcf5c3c8d3af2456d0182c5addf5191dfc2c0ef6f2f194c"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-dark/routes-36-40.webp",
+          "sha256": "0e526b5087b6b2033a7f038d902823368fce282de34aa7361abaea085281e82e"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-light/routes-36-40.webp",
+          "sha256": "968730fcb0c54df7755c1ab08bbf1035478417de7fbdf8c986de040f280ab92a"
+        }
+      ],
+      "remainingVisualBlockers": []
+    },
+    {
+      "route": "chat",
+      "verdict": "pass",
+      "normalReviewed": true,
+      "strictMainReviewed": true,
+      "disposition": "retain recipe-local anatomy and style; shared host refinements recorded separately",
+      "findings": "The two initial messages, composition field, add/reset actions, and page-memory boundary remain. Familiar message/form sequencing is retained in both families, with native typography and action roles. No delivery service is implied.",
+      "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+      "reviewedSheets": [
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-dark/routes-36-40.webp",
+          "sha256": "f40cd2700f90480daa7895ff576af9d54621418f3c7b4f56cf4a5a3493c6cb89"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-light/routes-36-40.webp",
+          "sha256": "d72c7b7f36f038fca3563628a8b8391893ef4b497dd4bde623debe0288e4a102"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-dark/routes-36-40.webp",
+          "sha256": "da599aa132193355130fa46d81bb339250b7c22ca426691491361ec1ee965e49"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-light/routes-36-40.webp",
+          "sha256": "7d19f70a565e753b891ad267fbbf1c1e1ae1b791b52b8fbbae519beb19f96421"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-dark/routes-36-40.webp",
+          "sha256": "b37b234951ffbf356673ecbccb5d3576cc24f88fc37fc24ac478a895b6b2f731"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-light/routes-36-40.webp",
+          "sha256": "baa24af2e26afbd97dcf5c3c8d3af2456d0182c5addf5191dfc2c0ef6f2f194c"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-dark/routes-36-40.webp",
+          "sha256": "0e526b5087b6b2033a7f038d902823368fce282de34aa7361abaea085281e82e"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-light/routes-36-40.webp",
+          "sha256": "968730fcb0c54df7755c1ab08bbf1035478417de7fbdf8c986de040f280ab92a"
+        }
+      ],
+      "remainingVisualBlockers": []
+    },
+    {
+      "route": "sensors",
+      "verdict": "pass",
+      "normalReviewed": true,
+      "strictMainReviewed": true,
+      "disposition": "retain recipe-local anatomy and style; shared host refinements recorded separately",
+      "findings": "The18\u00b0C/72%/Simulation measures, condition selector, ventilation control, and no-device boundary remain. Related controls remain grouped and legible; both deliberately use the same shared synthetic values.",
+      "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+      "reviewedSheets": [
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-dark/routes-41-45.webp",
+          "sha256": "af10486c2bae53fb7fc05f4ddd93513021a7e95b1f46b8538862071d9c5c64dd"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-light/routes-41-45.webp",
+          "sha256": "8bc11f5ac197dc67f947f0f115184093a397f39f652b583c5acc0aa5d9fcb4af"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-dark/routes-41-45.webp",
+          "sha256": "bebc891c918c40497159136f578f886633640c571aa8cc621e3b8099559bd3d5"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-light/routes-41-45.webp",
+          "sha256": "d4197dcc9e708aad708d58099816c33563c9d63050b8264b35446e518cdd1867"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-dark/routes-41-45.webp",
+          "sha256": "5d767f601cbbc410110a55282a5e299892ddce5de97b0406054b4023c0e6b45a"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-light/routes-41-45.webp",
+          "sha256": "3dbb460591164a02e04d395977dcfa4eef48e179d095c71b6e26ef3947457533"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-dark/routes-41-45.webp",
+          "sha256": "530410d150e4c83585c78da1083205a7f9cd0e3e740c10af3e34a78728af2871"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-light/routes-41-45.webp",
+          "sha256": "7258186c8bcf975db77d4bb6aafc17314d09773afd17e002df8a16f659cfd596"
+        }
+      ],
+      "remainingVisualBlockers": []
+    },
+    {
+      "route": "fleet",
+      "verdict": "pass",
+      "normalReviewed": true,
+      "strictMainReviewed": true,
+      "disposition": "retain recipe-local anatomy and style; shared host refinements recorded separately",
+      "findings": "The two vehicles, charge/status context, filter, selected-record block, and review/reset actions remain. Martlet uses collection-first reading order; Krigsvold uses aligned result/detail regions. Narrow states preserve the same object/action associations.",
+      "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+      "reviewedSheets": [
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-dark/routes-41-45.webp",
+          "sha256": "af10486c2bae53fb7fc05f4ddd93513021a7e95b1f46b8538862071d9c5c64dd"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-light/routes-41-45.webp",
+          "sha256": "8bc11f5ac197dc67f947f0f115184093a397f39f652b583c5acc0aa5d9fcb4af"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-dark/routes-41-45.webp",
+          "sha256": "bebc891c918c40497159136f578f886633640c571aa8cc621e3b8099559bd3d5"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-light/routes-41-45.webp",
+          "sha256": "d4197dcc9e708aad708d58099816c33563c9d63050b8264b35446e518cdd1867"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-dark/routes-41-45.webp",
+          "sha256": "5d767f601cbbc410110a55282a5e299892ddce5de97b0406054b4023c0e6b45a"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-light/routes-41-45.webp",
+          "sha256": "3dbb460591164a02e04d395977dcfa4eef48e179d095c71b6e26ef3947457533"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-dark/routes-41-45.webp",
+          "sha256": "530410d150e4c83585c78da1083205a7f9cd0e3e740c10af3e34a78728af2871"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-light/routes-41-45.webp",
+          "sha256": "7258186c8bcf975db77d4bb6aafc17314d09773afd17e002df8a16f659cfd596"
+        }
+      ],
+      "remainingVisualBlockers": []
+    },
+    {
+      "route": "scene",
+      "verdict": "pass",
+      "normalReviewed": true,
+      "strictMainReviewed": true,
+      "disposition": "retain recipe-local anatomy and style; shared host refinements recorded separately",
+      "findings": "The viewpoint control, coastline illustration and caption, static fallback, and no-hardware explanation remain. Media masking correctly removes the illustration only for diagnosis. The primary normal views establish a coherent accessible image-viewer specimen.",
+      "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+      "reviewedSheets": [
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-dark/routes-41-45.webp",
+          "sha256": "af10486c2bae53fb7fc05f4ddd93513021a7e95b1f46b8538862071d9c5c64dd"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-light/routes-41-45.webp",
+          "sha256": "8bc11f5ac197dc67f947f0f115184093a397f39f652b583c5acc0aa5d9fcb4af"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-dark/routes-41-45.webp",
+          "sha256": "bebc891c918c40497159136f578f886633640c571aa8cc621e3b8099559bd3d5"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-light/routes-41-45.webp",
+          "sha256": "d4197dcc9e708aad708d58099816c33563c9d63050b8264b35446e518cdd1867"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-dark/routes-41-45.webp",
+          "sha256": "5d767f601cbbc410110a55282a5e299892ddce5de97b0406054b4023c0e6b45a"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-light/routes-41-45.webp",
+          "sha256": "3dbb460591164a02e04d395977dcfa4eef48e179d095c71b6e26ef3947457533"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-dark/routes-41-45.webp",
+          "sha256": "530410d150e4c83585c78da1083205a7f9cd0e3e740c10af3e34a78728af2871"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-light/routes-41-45.webp",
+          "sha256": "7258186c8bcf975db77d4bb6aafc17314d09773afd17e002df8a16f659cfd596"
+        }
+      ],
+      "remainingVisualBlockers": []
+    },
+    {
+      "route": "integrations",
+      "verdict": "pass",
+      "normalReviewed": true,
+      "strictMainReviewed": true,
+      "disposition": "recipe-local composition/CSS/accessible-name refinement; semantic anatomy as recorded separately",
+      "findings": "The same capability/integration/boundary table and role-porting guidance remain. The widened document retains native table geometry and bounded overflow; no backend, auth, payment, sensor, orHTTP integration is represented as shipped functionality.",
+      "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+      "reviewedSheets": [
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-dark/routes-41-45.webp",
+          "sha256": "af10486c2bae53fb7fc05f4ddd93513021a7e95b1f46b8538862071d9c5c64dd"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-light/routes-41-45.webp",
+          "sha256": "8bc11f5ac197dc67f947f0f115184093a397f39f652b583c5acc0aa5d9fcb4af"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-dark/routes-41-45.webp",
+          "sha256": "bebc891c918c40497159136f578f886633640c571aa8cc621e3b8099559bd3d5"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-light/routes-41-45.webp",
+          "sha256": "d4197dcc9e708aad708d58099816c33563c9d63050b8264b35446e518cdd1867"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-dark/routes-41-45.webp",
+          "sha256": "5d767f601cbbc410110a55282a5e299892ddce5de97b0406054b4023c0e6b45a"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-light/routes-41-45.webp",
+          "sha256": "3dbb460591164a02e04d395977dcfa4eef48e179d095c71b6e26ef3947457533"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-dark/routes-41-45.webp",
+          "sha256": "530410d150e4c83585c78da1083205a7f9cd0e3e740c10af3e34a78728af2871"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-light/routes-41-45.webp",
+          "sha256": "7258186c8bcf975db77d4bb6aafc17314d09773afd17e002df8a16f659cfd596"
+        }
+      ],
+      "remainingVisualBlockers": []
+    },
+    {
+      "route": "stress-test",
+      "verdict": "pass",
+      "normalReviewed": true,
+      "strictMainReviewed": true,
+      "disposition": "recipe-local composition/CSS/accessible-name refinement; semantic anatomy as recorded separately",
+      "findings": "Long title, unbroken identifier, nested lists, quote, footnote, and technical sections remain. Wider document geometry is a measured CSS refinement. At320px the long identifier wraps rather than forcing page-width overflow; detailed table behavior is separately tested.",
+      "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+      "reviewedSheets": [
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-dark/routes-41-45.webp",
+          "sha256": "af10486c2bae53fb7fc05f4ddd93513021a7e95b1f46b8538862071d9c5c64dd"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-light/routes-41-45.webp",
+          "sha256": "8bc11f5ac197dc67f947f0f115184093a397f39f652b583c5acc0aa5d9fcb4af"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-dark/routes-41-45.webp",
+          "sha256": "bebc891c918c40497159136f578f886633640c571aa8cc621e3b8099559bd3d5"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-light/routes-41-45.webp",
+          "sha256": "d4197dcc9e708aad708d58099816c33563c9d63050b8264b35446e518cdd1867"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-dark/routes-41-45.webp",
+          "sha256": "5d767f601cbbc410110a55282a5e299892ddce5de97b0406054b4023c0e6b45a"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-light/routes-41-45.webp",
+          "sha256": "3dbb460591164a02e04d395977dcfa4eef48e179d095c71b6e26ef3947457533"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-dark/routes-41-45.webp",
+          "sha256": "530410d150e4c83585c78da1083205a7f9cd0e3e740c10af3e34a78728af2871"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-light/routes-41-45.webp",
+          "sha256": "7258186c8bcf975db77d4bb6aafc17314d09773afd17e002df8a16f659cfd596"
+        }
+      ],
+      "remainingVisualBlockers": []
+    },
+    {
+      "route": "patterns",
+      "verdict": "pass",
+      "normalReviewed": true,
+      "strictMainReviewed": true,
+      "disposition": "retain recipe-local anatomy and style; shared host refinements recorded separately",
+      "findings": "The facts, dated measures, disclosures, and action remain a compact vocabulary specimen. Martlet's reading progression and Krigsvold's aligned labeled regions remain visible after masking; the same native disclosure behavior can legitimately serve both.",
+      "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+      "reviewedSheets": [
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-dark/routes-46-50.webp",
+          "sha256": "fc5a1c7bed26aa4401c0272543a66e605fd297b8ed247e352dc1f630b522b35f"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-light/routes-46-50.webp",
+          "sha256": "e14f7338afb5aaf5b0b9ea9ff2880daa6a326b6c1a7840ec53256c5d9bccd1fb"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-dark/routes-46-50.webp",
+          "sha256": "ae686f3c8b8e29f52078a79a853e34579afa4001a2ac0104bcc918c200601aeb"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-light/routes-46-50.webp",
+          "sha256": "fa68d62042f01ac407d043fee15f62dc1efcf1c3a56d3332ecb04e135481b7b4"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-dark/routes-46-50.webp",
+          "sha256": "51cab73e62f89bc4ffb4d60fe14de2fd5f4783156f5d06017ff2b3111302b7d9"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-light/routes-46-50.webp",
+          "sha256": "e7626b64a7477ad907bf56e850f77df6ddc05c71003a10a61e7e9bad1cdadd5b"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-dark/routes-46-50.webp",
+          "sha256": "2f92cef7d2481814a598a8502462d1e3a2c8bd5fd5618ee0f29c502d1981e0db"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-light/routes-46-50.webp",
+          "sha256": "49b28fbc5dfb540642ff3e15f1f5ad50e608226b2ca189f77f4c189e17bb2a25"
+        }
+      ],
+      "remainingVisualBlockers": []
+    },
+    {
+      "route": "dashboard-analytics",
+      "verdict": "pass",
+      "normalReviewed": true,
+      "strictMainReviewed": true,
+      "disposition": "recipe-local composition/CSS/accessible-name refinement; semantic anatomy as recorded separately",
+      "findings": "The final initialized analytics view shows a scoped filter form and four dated metrics, with Martlet's heading-led sections and Krigsvold's bounded regions. Mobile dashboard navigation remains coherent; the shared host navigation repair is documented separately. Baseline frames show unavailable-control fallback and em-dashes; they are not matched initialization-state comparisons, and displayed values do not imply added fixture data.",
+      "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+      "reviewedSheets": [
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-dark/routes-46-50.webp",
+          "sha256": "fc5a1c7bed26aa4401c0272543a66e605fd297b8ed247e352dc1f630b522b35f"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-light/routes-46-50.webp",
+          "sha256": "e14f7338afb5aaf5b0b9ea9ff2880daa6a326b6c1a7840ec53256c5d9bccd1fb"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-dark/routes-46-50.webp",
+          "sha256": "ae686f3c8b8e29f52078a79a853e34579afa4001a2ac0104bcc918c200601aeb"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-light/routes-46-50.webp",
+          "sha256": "fa68d62042f01ac407d043fee15f62dc1efcf1c3a56d3332ecb04e135481b7b4"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-dark/routes-46-50.webp",
+          "sha256": "51cab73e62f89bc4ffb4d60fe14de2fd5f4783156f5d06017ff2b3111302b7d9"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-light/routes-46-50.webp",
+          "sha256": "e7626b64a7477ad907bf56e850f77df6ddc05c71003a10a61e7e9bad1cdadd5b"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-dark/routes-46-50.webp",
+          "sha256": "2f92cef7d2481814a598a8502462d1e3a2c8bd5fd5618ee0f29c502d1981e0db"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-light/routes-46-50.webp",
+          "sha256": "49b28fbc5dfb540642ff3e15f1f5ad50e608226b2ca189f77f4c189e17bb2a25"
+        }
+      ],
+      "remainingVisualBlockers": []
+    },
+    {
+      "route": "dashboard-components",
+      "verdict": "pass",
+      "normalReviewed": true,
+      "strictMainReviewed": true,
+      "disposition": "recipe-local composition/CSS/accessible-name refinement; semantic anatomy as recorded separately",
+      "findings": "All four capability sections and their content remain. Martlet uses a readable document sequence; Krigsvold splits each section into label and explanatory region. This Jekyll page is not the22-record React inventory, and the comparison does not claim all React APIs were ported.",
+      "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+      "reviewedSheets": [
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-dark/routes-46-50.webp",
+          "sha256": "fc5a1c7bed26aa4401c0272543a66e605fd297b8ed247e352dc1f630b522b35f"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-light/routes-46-50.webp",
+          "sha256": "e14f7338afb5aaf5b0b9ea9ff2880daa6a326b6c1a7840ec53256c5d9bccd1fb"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-dark/routes-46-50.webp",
+          "sha256": "ae686f3c8b8e29f52078a79a853e34579afa4001a2ac0104bcc918c200601aeb"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-light/routes-46-50.webp",
+          "sha256": "fa68d62042f01ac407d043fee15f62dc1efcf1c3a56d3332ecb04e135481b7b4"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-dark/routes-46-50.webp",
+          "sha256": "51cab73e62f89bc4ffb4d60fe14de2fd5f4783156f5d06017ff2b3111302b7d9"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-light/routes-46-50.webp",
+          "sha256": "e7626b64a7477ad907bf56e850f77df6ddc05c71003a10a61e7e9bad1cdadd5b"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-dark/routes-46-50.webp",
+          "sha256": "2f92cef7d2481814a598a8502462d1e3a2c8bd5fd5618ee0f29c502d1981e0db"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-light/routes-46-50.webp",
+          "sha256": "49b28fbc5dfb540642ff3e15f1f5ad50e608226b2ca189f77f4c189e17bb2a25"
+        }
+      ],
+      "remainingVisualBlockers": []
+    },
+    {
+      "route": "dashboard-administration",
+      "verdict": "pass",
+      "normalReviewed": true,
+      "strictMainReviewed": true,
+      "disposition": "recipe-local composition/CSS/accessible-name refinement; semantic anatomy as recorded separately",
+      "findings": "The final initialized directory keeps filter, selection, bulk commands, person editor, and pagination scope distinct. Martlet places editing after the directory; Krigsvold places a working editor beside it at desktop. Mobile navigation and controls retain a coherent sequence; horizontal table access is covered by separate technical receipts.",
+      "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+      "reviewedSheets": [
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-dark/routes-46-50.webp",
+          "sha256": "fc5a1c7bed26aa4401c0272543a66e605fd297b8ed247e352dc1f630b522b35f"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-light/routes-46-50.webp",
+          "sha256": "e14f7338afb5aaf5b0b9ea9ff2880daa6a326b6c1a7840ec53256c5d9bccd1fb"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-dark/routes-46-50.webp",
+          "sha256": "ae686f3c8b8e29f52078a79a853e34579afa4001a2ac0104bcc918c200601aeb"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-light/routes-46-50.webp",
+          "sha256": "fa68d62042f01ac407d043fee15f62dc1efcf1c3a56d3332ecb04e135481b7b4"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-dark/routes-46-50.webp",
+          "sha256": "51cab73e62f89bc4ffb4d60fe14de2fd5f4783156f5d06017ff2b3111302b7d9"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-light/routes-46-50.webp",
+          "sha256": "e7626b64a7477ad907bf56e850f77df6ddc05c71003a10a61e7e9bad1cdadd5b"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-dark/routes-46-50.webp",
+          "sha256": "2f92cef7d2481814a598a8502462d1e3a2c8bd5fd5618ee0f29c502d1981e0db"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-light/routes-46-50.webp",
+          "sha256": "49b28fbc5dfb540642ff3e15f1f5ad50e608226b2ca189f77f4c189e17bb2a25"
+        }
+      ],
+      "remainingVisualBlockers": []
+    },
+    {
+      "route": "dashboard-operations",
+      "verdict": "pass",
+      "normalReviewed": true,
+      "strictMainReviewed": true,
+      "disposition": "recipe-local composition/CSS/accessible-name refinement; semantic anatomy as recorded separately",
+      "findings": "The final initialized view separates monitoring scope, metrics, latency/activity, service status, and alert commands. Martlet retains heading-led flow; Krigsvold uses distinct working regions with native tables. The literal unavailable-control/em-dash baseline differs in initialization state; metrics and synthetic data parity require the separate frozen-controller evidence.",
+      "reviewedAt": "2026-11-03T22:50:36.727263+00:00",
+      "reviewedSheets": [
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-dark/routes-46-50.webp",
+          "sha256": "fc5a1c7bed26aa4401c0272543a66e605fd297b8ed247e352dc1f630b522b35f"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/desktop-light/routes-46-50.webp",
+          "sha256": "e14f7338afb5aaf5b0b9ea9ff2880daa6a326b6c1a7840ec53256c5d9bccd1fb"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-dark/routes-46-50.webp",
+          "sha256": "ae686f3c8b8e29f52078a79a853e34579afa4001a2ac0104bcc918c200601aeb"
+        },
+        {
+          "path": "visual-book/contacts/normal-before-after/mobile-light/routes-46-50.webp",
+          "sha256": "fa68d62042f01ac407d043fee15f62dc1efcf1c3a56d3332ecb04e135481b7b4"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-dark/routes-46-50.webp",
+          "sha256": "51cab73e62f89bc4ffb4d60fe14de2fd5f4783156f5d06017ff2b3111302b7d9"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/desktop-light/routes-46-50.webp",
+          "sha256": "e7626b64a7477ad907bf56e850f77df6ddc05c71003a10a61e7e9bad1cdadd5b"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-dark/routes-46-50.webp",
+          "sha256": "2f92cef7d2481814a598a8502462d1e3a2c8bd5fd5618ee0f29c502d1981e0db"
+        },
+        {
+          "path": "visual-book/contacts/strict-main-before-after/mobile-light/routes-46-50.webp",
+          "sha256": "49b28fbc5dfb540642ff3e15f1f5ad50e608226b2ca189f77f4c189e17bb2a25"
+        }
+      ],
+      "remainingVisualBlockers": []
+    }
+  ],
+  "remainingVisualBlockers": [],
+  "manualAssistiveTechnologyClaimed": false,
+  "mergeApprovalClaimed": false,
+  "repositoryCopyApproved": false,
+  "rawReceipt": {
+    "artifact": {
+      "evidenceRef": "final-route-review-e8a3f77052f1",
+      "record": "evidence/final-route-review-e8a3f77052f1.json",
+      "rawBytesIncluded": false
+    },
+    "sha256": "24f51a01d90e348ef4f254a484ac0ca11b4ba6a8445efe65834785b88db9259d"
+  },
+  "portableAdaptation": "Full route findings and original source/capture hashes retained. Reviewed contact/detail paths are relative to the exact Root-approved visual-book copy. Original supporting IDs refer raw evidence retained outside this repository; source-and-capture-evidence.json gives linked portable summaries and authority URLs.",
+  "originalSupportingEvidenceIdentifiers": [
+    "source-authorities/rendered-source-review.json",
+    "source-authorities/rendered-reading-source-review.json",
+    "source-authorities/rendered-search-source-review.json",
+    "cross-family-first20/review.json"
+  ],
+  "coordinatorBookCopyApproval": "visual-book-approval.json"
+}

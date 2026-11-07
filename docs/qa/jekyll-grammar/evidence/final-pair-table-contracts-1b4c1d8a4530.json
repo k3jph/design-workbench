@@ -1,0 +1,16 @@
+{
+  "id": "final-pair-table-contracts-1b4c1d8a4530",
+  "record": "evidence/final-pair-table-contracts-1b4c1d8a4530.json",
+  "originalName": "final-pair-table-contracts.json",
+  "kind": "file",
+  "rawSha256": "5e5898d8d8a343068cfc54f95efe6d677c11e71be06fca38429e143a111203fb",
+  "rawBytesIncluded": false,
+  "retentionStatus": "preserved-locally-not-bundled",
+  "summaryDocuments": [
+    "final-acceptance.json"
+  ],
+  "sourceBindings": {
+    "sourceCommit": "983dee5d27ad02458baef6edc5a39279e24028ea"
+  },
+  "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository."
+}

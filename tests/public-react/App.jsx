@@ -1,7 +1,7 @@
 import React, {useState, useRef, useLayoutEffect} from 'react';
 import {AppShell, Button, Field, TextInput, Textarea, Fieldset, Radio, Checkbox, ErrorSummary, Notice, Dialog} from '@F/react';
 import '@F/react/styles.css';
-import '@F/theme/fonts.css';
+import '@F/core/fonts.css';
 import './host.css';
 // Consumer composition and simulated service state. All controls are real release exports.
 export default function App(){

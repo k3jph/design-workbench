@@ -1,0 +1,16 @@
+{
+  "id": "report-e3221dc4dbea",
+  "record": "evidence/report-e3221dc4dbea.json",
+  "originalName": "report.json",
+  "kind": "file",
+  "rawSha256": "b697c3182e3184ca0b73e6c48daeb4a463187622dda3e5219adb1dcc17f1d1e2",
+  "rawBytesIncluded": false,
+  "retentionStatus": "preserved-locally-not-bundled",
+  "summaryDocuments": [
+    "final-acceptance.json"
+  ],
+  "sourceBindings": {
+    "sourceCommit": "983dee5d27ad02458baef6edc5a39279e24028ea"
+  },
+  "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository."
+}

@@ -28,10 +28,10 @@ Edits update the local registry and its revision history. Earlier contracts can 
 
 ## React packages
 
-- [@martlet/react](packages/martlet-react/README.md): warm editorial hierarchy, horizontal navigation, spacious grouping, Cambo/Lato/Cinzel typography.
-- [@krigsvold/react](packages/krigsvold-react/README.md): precise workspace hierarchy, side navigation, aligned regions, Roboto/Roboto Slab typography.
+- [@martlet/react](https://github.com/martletdesign/react): readable hierarchy, related groups, continuity, Cambo/Lato/Cinzel typography.
+- [@krigsvold/react](https://github.com/krigsvolddesign/react): purposeful regions, alignment, precise state, Roboto/Roboto Slab typography.
 
-Both export AppShell, Button, TextInput, Select, Textarea, Field, Notice, Badge, DataTable, Dialog, Checkbox, Fieldset, Disclosure, ErrorSummary, Article, TableOfContents, FileInput, Radio, Pagination, DefinitionList, Switch, and Tabs. They consume the existing `@martlet/theme` / `@krigsvold/theme` 2.1.0 tokens and work in light and dark modes. Both React packages are published on npm at 0.1.0 under `latest` and `next`. Package APIs remain experimental. `npm run pack:react` produces tarballs for local installation. The release workflow publishes verified packages under `next` with provenance; `latest` stays unchanged.
+Both export AppShell, Button, TextInput, Select, Textarea, Field, Notice, Badge, DataTable, Dialog, Checkbox, Fieldset, Disclosure, ErrorSummary, Article, TableOfContents, FileInput, Radio, Pagination, DefinitionList, Switch, and Tabs. Their independent npm 0.2.0 releases use matching `@martlet/core` 2.2.3 / `@krigsvold/core` 2.2.4 foundations and support light/dark modes. `latest` resolves to 0.2.0; historical `next` remains 0.1.0 with theme 2.1.0. Package APIs remain experimental. The private workbench copies and `npm run pack:react` are local test fixtures; publication belongs to the independent repositories. Both families support top, side or focused frames according to the task. See [current distribution and capability status](docs/distribution.md).
 
 ## Independent React reference apps
 
@@ -112,7 +112,7 @@ The [review queue](docs/review-queue.md) prioritizes saved observations needing 
 
 [Browser specification recovery and settings](docs/browser-drafts.md) protect unfinished specifications across reloads when browser storage is available, retain explicit revision-safe recovery, and provide saved workspace preferences with confirmed clearing of recovery copies. Readiness observations and comparison choices remain memory-only. Queue entry now reads its selected record before opening, including records added in another window after the parent inventory loaded.
 
-See [experimental release preparation](docs/release-policy.md), the [changelog](CHANGELOG.md), and [independent React site direction](docs/react-sites.md). React documentation homes are planned at react.martletdesign.dev and react.krigsvolddesign.org; no DNS setup or deployment is claimed.
+See [experimental release preparation](docs/release-policy.md), the [changelog](CHANGELOG.md), and [independent React references](docs/react-sites.md). Current reference destinations are https://react.martletdesign.dev/ and https://react.krigsvolddesign.dev/. A build or merge alone does not establish their deployed source identity.
 
 Browser engine selection: `WORKBENCH_BROWSER=firefox npm run test:browser` or `WORKBENCH_BROWSER=webkit npm run test:browser`; Chromium remains the default. Install the selected Playwright engine and host dependencies first. `WORKBENCH_TEST_PORT` selects an isolated test-server port when running independent engines concurrently. CI runs all three engines.
 

@@ -1,0 +1,14 @@
+{
+  "id": "review-e711b8290537",
+  "record": "evidence/review-e711b8290537.json",
+  "originalName": "review.json",
+  "kind": "file",
+  "rawSha256": "54800a8c55c71a7eff5165c3fb176012c85d328bea859af1dd4de0eb1c45c5e0",
+  "rawBytesIncluded": false,
+  "retentionStatus": "preserved-locally-not-bundled",
+  "summaryDocuments": [
+    "source-and-capture-evidence.json"
+  ],
+  "sourceBindings": {},
+  "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository."
+}

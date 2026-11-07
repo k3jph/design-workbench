@@ -1,0 +1,16 @@
+{
+  "id": "template-22b8df58a9af",
+  "record": "evidence/template-22b8df58a9af.json",
+  "originalName": "template.zip",
+  "kind": "file",
+  "rawSha256": "43c96fb97484cf434341ca95c0ba20d290cb117273d24f1542b52b77ece307d9",
+  "rawBytesIncluded": false,
+  "retentionStatus": "preserved-locally-not-bundled",
+  "summaryDocuments": [
+    "disposition.json"
+  ],
+  "sourceBindings": {
+    "sourceCommit": "8dfcca47b5c312e125ac320643c442b1a00f8490"
+  },
+  "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository."
+}

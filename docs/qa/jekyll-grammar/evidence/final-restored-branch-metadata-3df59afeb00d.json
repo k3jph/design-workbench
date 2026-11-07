@@ -1,0 +1,14 @@
+{
+  "id": "final-restored-branch-metadata-3df59afeb00d",
+  "record": "evidence/final-restored-branch-metadata-3df59afeb00d.json",
+  "originalName": "final-restored-branch-metadata.json",
+  "kind": "file",
+  "rawSha256": "5e3a12471c71c7fc00fa8d00aefba7208115e500f1aa4f848f397f2b5866700c",
+  "rawBytesIncluded": false,
+  "retentionStatus": "preserved-locally-not-bundled",
+  "summaryDocuments": [
+    "final-acceptance.json"
+  ],
+  "sourceBindings": {},
+  "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository."
+}

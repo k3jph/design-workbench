@@ -1,0 +1,14 @@
+{
+  "id": "review-5289d67a4ffa",
+  "record": "evidence/review-5289d67a4ffa.json",
+  "originalName": "review.json",
+  "kind": "file",
+  "rawSha256": "730fdee831caf1ecb6f38101b2b19f330115b54cdd86c3815edac25b5efa3146",
+  "rawBytesIncluded": false,
+  "retentionStatus": "preserved-locally-not-bundled",
+  "summaryDocuments": [
+    "wave2-acceptance.json"
+  ],
+  "sourceBindings": {},
+  "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository."
+}

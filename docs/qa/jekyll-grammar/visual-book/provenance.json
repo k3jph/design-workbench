@@ -1,0 +1,417 @@
+{
+  "sourceBefore": {
+    "martlet": "ac0a64c6cd5167ccbdf96bb20e46e5d547a49a5d",
+    "krigsvold": "35c7f54aa9418286956f8aa50c2a3dd141006ab2"
+  },
+  "sourceAfter": {
+    "martlet": {
+      "sourceCommit": "0c0e0a7452444c41a3876c2f8732c6439c6097b9",
+      "nativeBuildUuid": "55e89343-f296-4c76-ba7d-a4acd1dc437f",
+      "artifactSha256": "50764c3bfa049ff9a9886e04c9f7c38afc739d79137240cd51ad47b2104ad770",
+      "origin": "https://pr-feature-gram-558d733a5d-martletdesign-jekyll-reference.k3jph.workers.dev",
+      "nativeCheckConclusion": "success",
+      "nativeCheckUrl": "https://dash.cloudflare.com/f6142510bef6212dfa78bc6932acc80f/workers/services/view/martletdesign-jekyll-reference/production/previews/pr-feature-gram-558d733a5d/builds/55e89343-f296-4c76-ba7d-a4acd1dc437f",
+      "coordinatorReceiptSha256": "41a12f119a784368f7b68adbbd45991b592f92d3f372d101facec1810efe21ea"
+    },
+    "krigsvold": {
+      "sourceCommit": "983dee5d27ad02458baef6edc5a39279e24028ea",
+      "nativeBuildUuid": "0bacc335-e319-4ca2-834c-15510b71c31b",
+      "artifactSha256": "a8fb65593f80613e28e8cdc6e87476ae1f229c19e144f33089a47fd630c41963",
+      "origin": "https://pr-feature-gram-558d733a5d-krigsvolddesign-jekyll-reference.k3jph.workers.dev",
+      "nativeCheckConclusion": "success",
+      "nativeCheckUrl": "https://dash.cloudflare.com/f6142510bef6212dfa78bc6932acc80f/workers/services/view/krigsvolddesign-jekyll-reference/production/previews/pr-feature-gram-558d733a5d/builds/0bacc335-e319-4ca2-834c-15510b71c31b",
+      "coordinatorReceiptSha256": "311ddb5c27d6a452210076bc89f2732bbb0e43aa33eafb386b848f38774b022b"
+    }
+  },
+  "capturePhase": "wave4-final-actual-https",
+  "captureIndexSha256": "f2623024491a62aa3a5742198d951dd63f48e993efdfa2538b559a3b0206fb47",
+  "baselineIndexSha256": "78ebb0fc6c8928b70b3e6dff8358ecfab71aea27b6cc6a5e61c4f63395a13320",
+  "expectedSourceContractSha256": "82c5b43f37e2755210afd23dca15e1cb881bfd728b04b1199d02a61e5e13da9e",
+  "captureReceipts": [
+    {
+      "sha256": "ef444fc2ed64428463ba2a7fcf917266bf55a18ee164167ff6ebb75ba9f7dfef",
+      "family": "martlet",
+      "origin": "https://pr-feature-gram-558d733a5d-martletdesign-jekyll-reference.k3jph.workers.dev",
+      "publicBefore": {
+        "sourceCommit": "0c0e0a7452444c41a3876c2f8732c6439c6097b9",
+        "nativeBuildUuid": "55e89343-f296-4c76-ba7d-a4acd1dc437f",
+        "artifactSha256": "50764c3bfa049ff9a9886e04c9f7c38afc739d79137240cd51ad47b2104ad770",
+        "observedAt": "2026-11-03T22:14:28.990Z"
+      },
+      "publicAfter": {
+        "sourceCommit": "0c0e0a7452444c41a3876c2f8732c6439c6097b9",
+        "nativeBuildUuid": "55e89343-f296-4c76-ba7d-a4acd1dc437f",
+        "artifactSha256": "50764c3bfa049ff9a9886e04c9f7c38afc739d79137240cd51ad47b2104ad770",
+        "observedAt": "2026-11-03T22:15:21.901Z"
+      }
+    },
+    {
+      "sha256": "cdd5a6b1e3983c85ae9b99c4391e8c9649a2cef0f6c13ecdca01f261202cc7a9",
+      "family": "martlet",
+      "origin": "https://pr-feature-gram-558d733a5d-martletdesign-jekyll-reference.k3jph.workers.dev",
+      "publicBefore": {
+        "sourceCommit": "0c0e0a7452444c41a3876c2f8732c6439c6097b9",
+        "nativeBuildUuid": "55e89343-f296-4c76-ba7d-a4acd1dc437f",
+        "artifactSha256": "50764c3bfa049ff9a9886e04c9f7c38afc739d79137240cd51ad47b2104ad770",
+        "observedAt": "2026-11-03T22:15:48.436Z"
+      },
+      "publicAfter": {
+        "sourceCommit": "0c0e0a7452444c41a3876c2f8732c6439c6097b9",
+        "nativeBuildUuid": "55e89343-f296-4c76-ba7d-a4acd1dc437f",
+        "artifactSha256": "50764c3bfa049ff9a9886e04c9f7c38afc739d79137240cd51ad47b2104ad770",
+        "observedAt": "2026-11-03T22:16:35.044Z"
+      }
+    },
+    {
+      "sha256": "7b19b5f963d0a2f005a46fb1a6d5b0ff0d101552802e96598d5d66e5d024a5a3",
+      "family": "martlet",
+      "origin": "https://pr-feature-gram-558d733a5d-martletdesign-jekyll-reference.k3jph.workers.dev",
+      "publicBefore": {
+        "sourceCommit": "0c0e0a7452444c41a3876c2f8732c6439c6097b9",
+        "nativeBuildUuid": "55e89343-f296-4c76-ba7d-a4acd1dc437f",
+        "artifactSha256": "50764c3bfa049ff9a9886e04c9f7c38afc739d79137240cd51ad47b2104ad770",
+        "observedAt": "2026-11-03T22:16:46.905Z"
+      },
+      "publicAfter": {
+        "sourceCommit": "0c0e0a7452444c41a3876c2f8732c6439c6097b9",
+        "nativeBuildUuid": "55e89343-f296-4c76-ba7d-a4acd1dc437f",
+        "artifactSha256": "50764c3bfa049ff9a9886e04c9f7c38afc739d79137240cd51ad47b2104ad770",
+        "observedAt": "2026-11-03T22:17:35.636Z"
+      }
+    },
+    {
+      "sha256": "320d2d221d5849db7958e3a338151ca273f57793b9898ddba0859907b12d2ec9",
+      "family": "martlet",
+      "origin": "https://pr-feature-gram-558d733a5d-martletdesign-jekyll-reference.k3jph.workers.dev",
+      "publicBefore": {
+        "sourceCommit": "0c0e0a7452444c41a3876c2f8732c6439c6097b9",
+        "nativeBuildUuid": "55e89343-f296-4c76-ba7d-a4acd1dc437f",
+        "artifactSha256": "50764c3bfa049ff9a9886e04c9f7c38afc739d79137240cd51ad47b2104ad770",
+        "observedAt": "2026-11-03T22:18:03.437Z"
+      },
+      "publicAfter": {
+        "sourceCommit": "0c0e0a7452444c41a3876c2f8732c6439c6097b9",
+        "nativeBuildUuid": "55e89343-f296-4c76-ba7d-a4acd1dc437f",
+        "artifactSha256": "50764c3bfa049ff9a9886e04c9f7c38afc739d79137240cd51ad47b2104ad770",
+        "observedAt": "2026-11-03T22:18:52.467Z"
+      }
+    },
+    {
+      "sha256": "5106693f206d9f6aa4c8339b496fe8a068d8e0951a44e8008fb6cab2518b8fd5",
+      "family": "martlet",
+      "origin": "https://pr-feature-gram-558d733a5d-martletdesign-jekyll-reference.k3jph.workers.dev",
+      "publicBefore": {
+        "sourceCommit": "0c0e0a7452444c41a3876c2f8732c6439c6097b9",
+        "nativeBuildUuid": "55e89343-f296-4c76-ba7d-a4acd1dc437f",
+        "artifactSha256": "50764c3bfa049ff9a9886e04c9f7c38afc739d79137240cd51ad47b2104ad770",
+        "observedAt": "2026-11-03T22:19:18.007Z"
+      },
+      "publicAfter": {
+        "sourceCommit": "0c0e0a7452444c41a3876c2f8732c6439c6097b9",
+        "nativeBuildUuid": "55e89343-f296-4c76-ba7d-a4acd1dc437f",
+        "artifactSha256": "50764c3bfa049ff9a9886e04c9f7c38afc739d79137240cd51ad47b2104ad770",
+        "observedAt": "2026-11-03T22:20:12.056Z"
+      }
+    },
+    {
+      "sha256": "c3c592839714c20a5aee83ad1ce576b0f2fd0f0765db65590a3723edb9a63e06",
+      "family": "krigsvold",
+      "origin": "https://pr-feature-gram-558d733a5d-krigsvolddesign-jekyll-reference.k3jph.workers.dev",
+      "publicBefore": {
+        "sourceCommit": "983dee5d27ad02458baef6edc5a39279e24028ea",
+        "nativeBuildUuid": "0bacc335-e319-4ca2-834c-15510b71c31b",
+        "artifactSha256": "a8fb65593f80613e28e8cdc6e87476ae1f229c19e144f33089a47fd630c41963",
+        "observedAt": "2026-11-03T22:19:50.031Z"
+      },
+      "publicAfter": {
+        "sourceCommit": "983dee5d27ad02458baef6edc5a39279e24028ea",
+        "nativeBuildUuid": "0bacc335-e319-4ca2-834c-15510b71c31b",
+        "artifactSha256": "a8fb65593f80613e28e8cdc6e87476ae1f229c19e144f33089a47fd630c41963",
+        "observedAt": "2026-11-03T22:20:44.455Z"
+      }
+    },
+    {
+      "sha256": "612d0b56a5d4d6106a66026f3b9f4386bc52867345a04371e71dd775b51c233c",
+      "family": "krigsvold",
+      "origin": "https://pr-feature-gram-558d733a5d-krigsvolddesign-jekyll-reference.k3jph.workers.dev",
+      "publicBefore": {
+        "sourceCommit": "983dee5d27ad02458baef6edc5a39279e24028ea",
+        "nativeBuildUuid": "0bacc335-e319-4ca2-834c-15510b71c31b",
+        "artifactSha256": "a8fb65593f80613e28e8cdc6e87476ae1f229c19e144f33089a47fd630c41963",
+        "observedAt": "2026-11-03T22:20:45.078Z"
+      },
+      "publicAfter": {
+        "sourceCommit": "983dee5d27ad02458baef6edc5a39279e24028ea",
+        "nativeBuildUuid": "0bacc335-e319-4ca2-834c-15510b71c31b",
+        "artifactSha256": "a8fb65593f80613e28e8cdc6e87476ae1f229c19e144f33089a47fd630c41963",
+        "observedAt": "2026-11-03T22:21:36.520Z"
+      }
+    },
+    {
+      "sha256": "d4b042a78500514c5d5ddd2d39f49a14267959417f29dc83bcb73a243feca0b5",
+      "family": "krigsvold",
+      "origin": "https://pr-feature-gram-558d733a5d-krigsvolddesign-jekyll-reference.k3jph.workers.dev",
+      "publicBefore": {
+        "sourceCommit": "983dee5d27ad02458baef6edc5a39279e24028ea",
+        "nativeBuildUuid": "0bacc335-e319-4ca2-834c-15510b71c31b",
+        "artifactSha256": "a8fb65593f80613e28e8cdc6e87476ae1f229c19e144f33089a47fd630c41963",
+        "observedAt": "2026-11-03T22:21:37.227Z"
+      },
+      "publicAfter": {
+        "sourceCommit": "983dee5d27ad02458baef6edc5a39279e24028ea",
+        "nativeBuildUuid": "0bacc335-e319-4ca2-834c-15510b71c31b",
+        "artifactSha256": "a8fb65593f80613e28e8cdc6e87476ae1f229c19e144f33089a47fd630c41963",
+        "observedAt": "2026-11-03T22:22:32.621Z"
+      }
+    },
+    {
+      "sha256": "94d7bc3e5ae93c82fcdefc28233b0562e71e0147cf1b728fc66b5eee47999dbf",
+      "family": "krigsvold",
+      "origin": "https://pr-feature-gram-558d733a5d-krigsvolddesign-jekyll-reference.k3jph.workers.dev",
+      "publicBefore": {
+        "sourceCommit": "983dee5d27ad02458baef6edc5a39279e24028ea",
+        "nativeBuildUuid": "0bacc335-e319-4ca2-834c-15510b71c31b",
+        "artifactSha256": "a8fb65593f80613e28e8cdc6e87476ae1f229c19e144f33089a47fd630c41963",
+        "observedAt": "2026-11-03T22:22:33.207Z"
+      },
+      "publicAfter": {
+        "sourceCommit": "983dee5d27ad02458baef6edc5a39279e24028ea",
+        "nativeBuildUuid": "0bacc335-e319-4ca2-834c-15510b71c31b",
+        "artifactSha256": "a8fb65593f80613e28e8cdc6e87476ae1f229c19e144f33089a47fd630c41963",
+        "observedAt": "2026-11-03T22:23:28.162Z"
+      }
+    },
+    {
+      "sha256": "4f9f8e542ac8bde71fc9ca60b3b06813189f30d345c72c5e275e8cad741adf73",
+      "family": "krigsvold",
+      "origin": "https://pr-feature-gram-558d733a5d-krigsvolddesign-jekyll-reference.k3jph.workers.dev",
+      "publicBefore": {
+        "sourceCommit": "983dee5d27ad02458baef6edc5a39279e24028ea",
+        "nativeBuildUuid": "0bacc335-e319-4ca2-834c-15510b71c31b",
+        "artifactSha256": "a8fb65593f80613e28e8cdc6e87476ae1f229c19e144f33089a47fd630c41963",
+        "observedAt": "2026-11-03T22:23:28.941Z"
+      },
+      "publicAfter": {
+        "sourceCommit": "983dee5d27ad02458baef6edc5a39279e24028ea",
+        "nativeBuildUuid": "0bacc335-e319-4ca2-834c-15510b71c31b",
+        "artifactSha256": "a8fb65593f80613e28e8cdc6e87476ae1f229c19e144f33089a47fd630c41963",
+        "observedAt": "2026-11-03T22:24:22.734Z"
+      }
+    }
+  ],
+  "originAuthorities": {
+    "martlet": "https://jameshoward.us/",
+    "krigsvold": "https://krigsvold.org/"
+  },
+  "independentCloudflareAttestationClaimed": false,
+  "ordinarySourceFramesEdited": false,
+  "normalFramesPrimary": true,
+  "strictFramesDiagnosticOnly": true,
+  "originalFramesRetainedOutsideRepository": true,
+  "canonicalAndReactEvidence": [
+    {
+      "reportSha256": "e9e43630e84d624d6709ac3ce1e3799f8762c6bee6c1317b6a595d6fed654f74",
+      "reportName": "retrieval.json",
+      "observations": [
+        {
+          "name": "martlet-origin",
+          "requestedUrl": "https://jameshoward.us/",
+          "finalUrl": "https://jameshoward.us/",
+          "status": 200,
+          "retrievedAt": "2026-11-03T20:04:59.545378+00:00",
+          "sha256": "61fa43271a9708e34351d07bb1220b233ecc9142cef82136cf1f7a53e32ce1c4",
+          "styles": [
+            {
+              "url": "https://jameshoward.us/assets/css/ukraine.css?v=20260927-1",
+              "sha256": "a03001c4a38a717bd26255b04f903eb9cbf28a74c72061b14974ed599d299bd8"
+            },
+            {
+              "url": "https://jameshoward.us/_astro/BaseLayout.Vddcf7CK.css",
+              "sha256": "f9c96297195b4101f63fdd8ecfab6afec507d6bbb6eae507a73783a199631cd2"
+            },
+            {
+              "url": "https://jameshoward.us/_astro/index.CXznNZ2K.css",
+              "sha256": "7e16c2ef253a70b2550d1b2998cebdc87c52e368f6618c6f8b73db964ab0d9cc"
+            },
+            {
+              "url": "https://jameshoward.us/assets/css/gdpr-cookie.css",
+              "sha256": "b9d448b7c06658161e7e79ab35412404d41dd3f9bedc6361d55be48ca81502d6"
+            }
+          ]
+        },
+        {
+          "name": "krigsvold-origin",
+          "requestedUrl": "https://krigsvold.org/",
+          "finalUrl": "https://krigsvold.org/",
+          "status": 200,
+          "retrievedAt": "2026-11-03T20:04:59.651906+00:00",
+          "sha256": "4e1f9a4b83efa8249521045e5b490ba78d8765ea216914a26dc8c8d0c8903803",
+          "styles": [
+            {
+              "url": "https://krigsvold.org/assets/css/material-kit.css?v=3.0.4",
+              "sha256": "f279a09d5875efb5688153e084b7857873d4697229b1ab68421fadb3718f4976"
+            },
+            {
+              "url": "https://krigsvold.org/assets/css/gdpr-cookie.css",
+              "sha256": "5040adc3fe893f93b7cf7b170502117c52384ed1655e081b6c9bddda9d19c26f"
+            },
+            {
+              "url": "https://krigsvold.org/_astro/Page.7T515cpF.css",
+              "sha256": "2d2203baeaf2013ba46f30d26d81f0946f99508e8ee8895cab15da77ee5631f8"
+            }
+          ]
+        },
+        {
+          "name": "martlet-react",
+          "requestedUrl": "https://react.martletdesign.dev/",
+          "finalUrl": "https://react.martletdesign.dev/",
+          "status": 200,
+          "retrievedAt": "2026-11-03T20:05:00.771568+00:00",
+          "sha256": "9b120afffbc5bd1e7caf124fe76077d42748eaa325a059b409d929f20f4d4c88",
+          "styles": [
+            {
+              "url": "https://react.martletdesign.dev/assets/index-DLDsFAYc.css",
+              "sha256": "fa527ea7199f1ce396a13f6f0b7572cec245b2a58672f930f536e7690edd40ae"
+            }
+          ]
+        },
+        {
+          "name": "krigsvold-react",
+          "requestedUrl": "https://react.krigsvolddesign.dev/",
+          "finalUrl": "https://react.krigsvolddesign.dev/",
+          "status": 200,
+          "retrievedAt": "2026-11-03T20:05:00.790327+00:00",
+          "sha256": "ba1e0abacaf74199063f64320a1ea6d737f437df52fe24b18791de2c1e86d37f",
+          "styles": [
+            {
+              "url": "https://react.krigsvolddesign.dev/assets/index-BAIYZBXM.css",
+              "sha256": "e20afc3b2cd9978121ef37ebb86770556240d88115ef371750ecc987815c795d"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "reportSha256": "57b5406c8dbae2455a0706ae624126b58bd817d1a9943f6b425614391e3e9fa9",
+      "reportName": "rendered-source-review.json",
+      "observations": [
+        {
+          "name": "martlet-home",
+          "requestedUrl": "https://jameshoward.us/",
+          "finalUrl": "https://jameshoward.us/",
+          "status": 200,
+          "observedAt": "2026-11-03T20:08:49.161Z",
+          "renderedDomSha256": "5cf4012d93c65aa4802e4c21de33079d8447713d4cfee1352a847cde47ccc0ad"
+        },
+        {
+          "name": "martlet-blog",
+          "requestedUrl": "https://jameshoward.us/blog/",
+          "finalUrl": "https://jameshoward.us/blog/",
+          "status": 200,
+          "observedAt": "2026-11-03T20:08:50.735Z",
+          "renderedDomSha256": "17a0e7cd8964d2c2ea2f4a185528035d1fa6a2ae9c9432a023dd2daddf6a0ae7"
+        },
+        {
+          "name": "krigsvold-home",
+          "requestedUrl": "https://krigsvold.org/",
+          "finalUrl": "https://krigsvold.org/",
+          "status": 200,
+          "observedAt": "2026-11-03T20:08:52.273Z",
+          "renderedDomSha256": "7129a29cc8022793288e584e7b053f108ba502bce91e8c4514e16fac4cad0f76"
+        },
+        {
+          "name": "krigsvold-faq",
+          "requestedUrl": "https://krigsvold.org/faq/",
+          "finalUrl": "https://krigsvold.org/faq/",
+          "status": 200,
+          "observedAt": "2026-11-03T20:08:53.696Z",
+          "renderedDomSha256": "0d06d5395d94e9e8bf2e9b836abaa02c621ab2dd3cae24e9d330a1b4146d7ce9"
+        },
+        {
+          "name": "krigsvold-news",
+          "requestedUrl": "https://krigsvold.org/news/",
+          "finalUrl": "https://krigsvold.org/news/",
+          "status": 200,
+          "observedAt": "2026-11-03T20:08:54.985Z",
+          "renderedDomSha256": "d483e926b5434409fde6e91aef7f44e3e07073f55f1527327bde0832aeed08c0"
+        },
+        {
+          "name": "martlet-react",
+          "requestedUrl": "https://react.martletdesign.dev/",
+          "finalUrl": "https://react.martletdesign.dev/",
+          "status": 200,
+          "observedAt": "2026-11-03T20:08:56.586Z",
+          "renderedDomSha256": "511eccbd0a5f0394327fd176e7bd43b48541af0f19ad9c56a2192e27c8138ef9"
+        },
+        {
+          "name": "krigsvold-react",
+          "requestedUrl": "https://react.krigsvolddesign.dev/",
+          "finalUrl": "https://react.krigsvolddesign.dev/",
+          "status": 200,
+          "observedAt": "2026-11-03T20:08:57.846Z",
+          "renderedDomSha256": "3b02301c77ea2e2446d4e7fc5a2f4abe07ef2f5ef8e785f4088436fab31d4bc8"
+        }
+      ]
+    },
+    {
+      "reportSha256": "3cf199bb0c0facce46813f12518de51bb1239567f748d2b5b6c15071516905f2",
+      "reportName": "rendered-reading-source-review.json",
+      "observations": [
+        {
+          "name": "martlet-article",
+          "requestedUrl": "https://jameshoward.us/2026/10/25/what-the-hell-does-temperature-actually-measure/",
+          "finalUrl": "https://jameshoward.us/2026/10/25/what-the-hell-does-temperature-actually-measure/",
+          "status": 200,
+          "observedAt": "2026-11-03T20:44:55.050Z",
+          "renderedDomSha256": "9339d584ee344c0a5f7328dd979ebae4ee211923c5f68ef061a8770c89af4cc9"
+        },
+        {
+          "name": "krigsvold-method",
+          "requestedUrl": "https://krigsvold.org/mission-and-method/",
+          "finalUrl": "https://krigsvold.org/mission-and-method/",
+          "status": 200,
+          "observedAt": "2026-11-03T20:44:56.621Z",
+          "renderedDomSha256": "1655565a847d6a27e771300ba919cc382a7bbddb04e1a5ec79053cfed3ad5617"
+        }
+      ]
+    },
+    {
+      "reportSha256": "7a701054ad54e39d54cc3b0688728763c7cd17c86de08de1bbd8732a8eaaa887",
+      "reportName": "rendered-search-source-review.json",
+      "observations": [
+        {
+          "name": "martlet-search",
+          "requestedUrl": "https://jameshoward.us/search/",
+          "finalUrl": "https://jameshoward.us/search/",
+          "status": 200,
+          "observedAt": "2026-11-03T21:12:58.413Z",
+          "renderedDomSha256": "3416b31e6cfd8e55b3e4bc741efa168447ed5895a784f2b31e3a61ff200add9e"
+        }
+      ]
+    }
+  ],
+  "sharedHeaderBefore": {
+    "martlet": {
+      "sourceCommit": "d983fcc22218de9e96dd932d5d0cb149740b1dbd",
+      "acceptedAll50Baseline": "ac0a64c6cd5167ccbdf96bb20e46e5d547a49a5d",
+      "hostCssByteIdenticalToAcceptedAll50Baseline": true,
+      "hostCssSha256": "ecac401298146b90aefef1eeb246afa35ceb29644ec3f0845de79590b05976b2",
+      "sha256": "5bbea3c0637709b5b9efb383eeedc27b239f000a5bd574da89d08b2cf8804bfe",
+      "receiptSha256": "bafcd94327294aa7fa062093c9ebeb6de5af44f7aa8636df74e50720ca79cf51",
+      "width": 320,
+      "mode": "light",
+      "focusState": "menu"
+    },
+    "krigsvold": {
+      "sourceCommit": "bdbf62c0d37b705b6dbd35900bcaf40cd7dfb787",
+      "acceptedAll50Baseline": "35c7f54aa9418286956f8aa50c2a3dd141006ab2",
+      "hostCssByteIdenticalToAcceptedAll50Baseline": true,
+      "hostCssSha256": "57398182691e0dc1e3eb8331e3ec842bb032eb8056752f4de76db0d34bbe5e69",
+      "sha256": "3389ec12e0c77ac0bdb4bd5789cbef9dbe2d70e68c966f388e01f1e4a555720f",
+      "receiptSha256": "a2b5ab7c4aa8a225727f51c525859888db75cb54aa083835e3ca36d5f92a76a4",
+      "width": 1440,
+      "mode": "light",
+      "focusState": "none"
+    }
+  }
+}

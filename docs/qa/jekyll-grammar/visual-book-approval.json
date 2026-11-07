@@ -1,0 +1,36 @@
+{
+  "at": "2026-11-03T22:52:32.839073+00:00",
+  "status": "approved_for_exact_repository_copy_and_source_integration",
+  "reviewer": "root coordinating agent",
+  "files": 97,
+  "bytes": 18552704,
+  "hardByteCap": 20000000,
+  "checksummedFiles": 96,
+  "checksumManifestSha256": "e0f8bdf9348b1244a1d831ee4e76e0f7b954eac5f3be70302a6bcfcc0baba4ee",
+  "indexSha256": "41535de094b4e2f303f0cbc6fde71009b08b5267a75ef9122a6ef881db3bd9c7",
+  "manualReviewSha256": "24f51a01d90e348ef4f254a484ac0ca11b4ba6a8445efe65834785b88db9259d",
+  "all50ManualVerdictsPassed": true,
+  "remainingVisualBlockers": 0,
+  "all92ImagesByteIdenticalToReviewedDraft": true,
+  "rootDirectInspection": [
+    "normal mobile light11\u201315",
+    "strict main desktop light26\u201330",
+    "normal desktop dark46\u201350",
+    "readableFAQ",
+    "readablepopulatedsearch",
+    "bothactual200percentheadercomparisons"
+  ],
+  "expectedSourceHeads": {
+    "martlet": "0c0e0a7452444c41a3876c2f8732c6439c6097b9",
+    "krigsvold": "983dee5d27ad02458baef6edc5a39279e24028ea"
+  },
+  "allowedCopyDestination": "docs/qa/jekyll-grammar/visual-book/",
+  "limits": [
+    "Bounded composition judgment; not universal fidelity or manualassistivetechnologycertification",
+    "Preserved baseline dashboard fallback vs final initialized state explicitly qualified",
+    "Original raw images staylocal; portablecontactwindow1000px with selectedreadabledetails"
+  ],
+  "productionAuthorization": false,
+  "mainMergeAuthorization": false,
+  "npmAuthorization": false
+}

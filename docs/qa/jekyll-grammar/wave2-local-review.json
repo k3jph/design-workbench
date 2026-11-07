@@ -1,0 +1,80 @@
+{
+  "scope": "Wave2 local candidates only; not hosted/CI acceptance",
+  "sourceArtifact": {
+    "evidenceRef": "wave2-local-summary-2185a98c7c5c",
+    "record": "evidence/wave2-local-summary-2185a98c7c5c.json",
+    "rawBytesIncluded": false
+  },
+  "sha256": "3c13f03d579e31c51468132d1712065d0b21aef65e7be18ea58a58ca646ee7ad",
+  "localAcceptance": {
+    "scope": "Reading-wave local acceptance; global operations landmark remains unfixed and is not waived",
+    "families": {
+      "martlet": {
+        "sourceCommit": "434b8543dbc5ee07abfebe78a5fc0f8ce13ed637",
+        "sourceTree": "675577fddce1b5f0672f505c05d2dccb2c0187e3",
+        "checks": 498,
+        "routeAppearanceCasesAttempted": 450,
+        "routeAppearanceCasesPassed": 448,
+        "axeScans": 100,
+        "knownOperationsLabelFailures": 2,
+        "otherFailures": 0,
+        "rawReport": {
+          "evidenceRef": "report-e58709ee1cbf",
+          "record": "evidence/report-e58709ee1cbf.json",
+          "rawBytesIncluded": false
+        },
+        "readingScopePassed": true
+      },
+      "krigsvold": {
+        "sourceCommit": "45a4166d5bbb6e2b0daf96db6a0d2353ae9c5303",
+        "sourceTree": "46b195412f90375b212493f6d2f070106032dec1",
+        "checks": 498,
+        "routeAppearanceCasesAttempted": 450,
+        "routeAppearanceCasesPassed": 448,
+        "axeScans": 100,
+        "knownOperationsLabelFailures": 2,
+        "otherFailures": 0,
+        "rawReport": {
+          "evidenceRef": "report-91231fa37419",
+          "record": "evidence/report-91231fa37419.json",
+          "rawBytesIncluded": false
+        },
+        "readingScopePassed": true
+      }
+    },
+    "all50GlobalAccessibilityPassed": false,
+    "knownRemainingRoute": "dashboard-operations",
+    "semanticsRoot": "wave2-final-v2-root-contracts.json",
+    "semanticsPreview": "wave2-final-v2-preview-contracts.json",
+    "nativeTableData": "wave2-table-contracts.json",
+    "nativeTableKeyboard": "wave2-table-keyboard-summary.json",
+    "readingWaveStatus": "passed"
+  },
+  "tableEvidence": {
+    "wave2-table-contracts.json": {
+      "artifact": {
+        "evidenceRef": "wave2-table-contracts-423521e2a55d",
+        "record": "evidence/wave2-table-contracts-423521e2a55d.json",
+        "rawBytesIncluded": false
+      },
+      "sha256": "5e5898d8d8a343068cfc54f95efe6d677c11e71be06fca38429e143a111203fb",
+      "tablesChecked": 52
+    },
+    "wave2-table-keyboard-summary.json": {
+      "artifact": {
+        "evidenceRef": "wave2-table-keyboard-summary-db7f3d074fb9",
+        "record": "evidence/wave2-table-keyboard-summary-db7f3d074fb9.json",
+        "rawBytesIncluded": false
+      },
+      "sha256": "8d412aae61e429c48051d9576d59a16d7b1719220c1f751aef00c941da4f5118",
+      "caseCount": 96,
+      "focusableRegions": 156,
+      "actuallyScrolledRegions": 84,
+      "originalNoScriptPollingFailure": "Preserved harness failure, not counted as a source pass. Corrected bounded Node-clock polling retains actual native keyboard/focus/visibility assertions."
+    }
+  },
+  "acceptedIntoDevelop": false,
+  "remainingGlobalAccessibilityRoute": "dashboard-operations",
+  "manualAssistiveTechnologyClaimed": false,
+  "portableEvidenceRegistry": "evidence-registry.json"
+}

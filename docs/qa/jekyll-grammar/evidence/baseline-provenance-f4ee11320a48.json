@@ -1,0 +1,17 @@
+{
+  "id": "baseline-provenance-f4ee11320a48",
+  "record": "evidence/baseline-provenance-f4ee11320a48.json",
+  "originalName": "baseline-provenance.json",
+  "kind": "file",
+  "rawSha256": "865d9738d655f15d8e71c010c69b7aa4591260b0bfd6b24cc9dedbcc94750513",
+  "rawBytesIncluded": false,
+  "retentionStatus": "preserved-locally-not-bundled",
+  "summaryDocuments": [
+    "source-and-capture-evidence.json"
+  ],
+  "sourceBindings": {
+    "martlet": "ac0a64c6cd5167ccbdf96bb20e46e5d547a49a5d",
+    "krigsvold": "35c7f54aa9418286956f8aa50c2a3dd141006ab2"
+  },
+  "note": "This record identifies the original evidence by hash. Read the linked portable summary for observations and public CI/preview/source URLs; full original captures are kept outside the repository."
+}
