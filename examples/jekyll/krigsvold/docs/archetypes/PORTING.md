@@ -14,7 +14,7 @@ Sections are a discriminated union: prose (no `kind`), cards, listing, facts, fi
 
 ## Adapter boundaries
 
-- **Astro:** implement the seven composition frames as layouts and section roles as components; emit the shared browser enhancement script or equivalent island behaviour. Generate routes from the catalog and apply `BASE_URL` to structured local destinations and media. Use the family's native shell and fonts.
+- **Astro:** implement the eight composition frames as layouts and section roles as components; emit the shared browser enhancement script or equivalent island behaviour. Generate routes from the catalog and apply `BASE_URL` to structured local destinations and media. Use the family's native shell and fonts.
 - **React:** implement a typed discriminated union from the schema and a section renderer keyed by `kind`; use the family's existing components where their contracts fit. Keep browser state in the relevant component, with effect cleanup. Use the chosen router's base-path handling. Do not import both families' CSS or fonts into a single-family build.
 - **Shared:** reuse the content and acceptance criteria. The existing dependency-free browser script is a reference for behaviour, not a requirement to use imperative DOM code in React.
 
