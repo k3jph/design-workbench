@@ -37,13 +37,23 @@ try {
         page.on('response', response => { if (response.status() >= 400) errors.push(`${response.status()} ${response.url()}`); });
         for (const [route, label] of routes) {
           await page.goto(`${origin}/examples/${route}/`, {waitUntil: 'networkidle'});
-          await page.evaluate(() => document.fonts.ready);
+          await page.waitForFunction(() => { void document.body.offsetHeight; return document.fonts.status === 'loaded'; }, undefined, {timeout: 15000});
           const style = locator => locator.evaluate(node => { const s = getComputedStyle(node); return {family: s.fontFamily, size: parseFloat(s.fontSize), weight: s.fontWeight}; });
           const h1 = await style(page.locator('h1'));
           const h2 = await style(page.getByRole('heading', {name: label, exact: true}));
           assert.match(h1.family, family === 'martlet' ? /Cambo/ : /Roboto Slab/, `${family} ${framework} ${route} h1 family`);
           assert.match(h2.family, family === 'martlet' ? /Cambo/ : /^Roboto,/, `${family} ${framework} ${route} h2 family`);
-          const expectedH1 = width === 320 ? 32 : family === 'martlet' ? 79.2 : 86.4;
+          let expectedH1 = width === 320 ? 32 : family === 'martlet' ? 79.2 : 86.4;
+          if (framework === 'jekyll') {
+            const masthead = page.locator(family === 'martlet' ? '.page-intro' : '.page-masthead');
+            assert.equal(await masthead.getAttribute('data-hero-variant'), 'compact');
+            const classes = (await masthead.getAttribute('class')).split(/\s+/);
+            assert.ok(classes.includes(family === 'martlet' ? 'page-intro--compact' : 'hero--compact'));
+            assert.ok(!classes.includes(family === 'martlet' ? 'page-intro--illustrated' : 'page-masthead--illustrated'));
+            // The accepted Jekyll 1.1.0 reading routes use the compact family
+            // scale, not the older display masthead used by the other hosts.
+            expectedH1 = family === 'martlet' ? (width === 320 ? 24 : 34.56) : (width === 320 ? 32 : 56);
+          }
           assert.ok(Math.abs(h1.size - expectedH1) < 0.2, `${family} ${framework} ${route} h1 ${h1.size}`);
           assert.ok(Math.abs(h2.size - (width === 320 ? 24 : 32)) < 0.2, `${family} ${framework} ${route} h2 ${h2.size}`);
           assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), `${family} ${framework} ${route} ${width} overflow`);
