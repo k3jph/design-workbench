@@ -12,11 +12,19 @@ A portable, MIT-licensed collection of **50 page recipes** rendered independentl
 | `jekyll/_includes/examples/` | Section renderers and class-specific context such as article navigation and event details |
 | `jekyll/assets/` | Shared interaction mechanics, original illustrations, and sample data |
 | `families/<family>/` | Family composition rules and mapping to existing shell roles |
-| `../jekyll/<family>/` | Complete standalone Jekyll projects, including their authoritative exported shell and generated adapters |
+| `../jekyll/<family>/` | Historical exporter and mutation-test fixtures with pinned shell snapshots; accepted Jekyll references remain in the independent repositories |
 
 Edit canonical files here, then run `python3 examples/page-archetypes/scripts/sync.py` from the repository root. Do not hand-edit generated example pages or `_data/examples.json`. Generated exports are committed so each project remains usable without Node or Python. The sync operation overlays owned files and preserves unrelated site content; removing or renaming a recipe requires explicitly removing its old generated page too.
 
 A semantic class describes what the content is. A composition describes how it is arranged. A new content class warrants a class-specific include or layout when it introduces meaningful required fields, ordering, behaviour, or accessibility semantics. A new colour scheme or hero illustration does not, by itself, justify a new template. Shared frames may support several classes.
+
+## Current independent conformance inputs
+
+The advisory workflow builds one paired set from the actual independent repositories and reuses it across Chromium, Firefox and WebKit. Astro and React `main` refs are resolved once to exact commits; each native owner builder creates the root and `/preview` output and retains its provenance. Jekyll uses the accepted 1.1.0 source ZIP with its recorded SHA-256 and existing `nightjar/build.py`. The builder checks both complete canonical datasets before rendering. These source snapshots describe what that run tested; they do not claim moving refs remain latest or that a source version is already on npm.
+
+Run `npm run build:conformance-inputs -- --output /absolute/new-input-directory` with the locked Node/Ruby toolchains. Optional `--family martlet` and `--framework react` prepare a limited local rehearsal; the full advisory suite requires all six inputs. The builder uses public Git refs, bounded commands and verified archives. It performs no publication, deployment or PR/review/CI-history lookup.
+
+Point the existing `NIGHTJAR_JEKYLL_ROOT`, `NIGHTJAR_ASTRO_ROOT` and `NIGHTJAR_REACT_ROOT` variables at the resulting `jekyll`, `astro` and `react` directories. `--verify /absolute/new-input-directory` checks the complete input identity before consumption. The existing in-tree renderers remain isolated exporter, composition and hostile-data fixtures; they do not replace the current independent presentation implementations. Keep their regression assertions and canonical data, and never sync them over an accepted independent Jekyll repository.
 
 ## Run and verify
 

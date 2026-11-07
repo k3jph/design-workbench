@@ -38,7 +38,7 @@ test('reference rollout has only static runtime authority and preserves main Wor
  assert.deepEqual(plan.existingMainWorkers.map(x=>x.worker),['martlettheme','krigsvoldtheme']);
  for(const family of ['martlet','krigsvold'])for(const framework of ['astro','react','jekyll']){
   const entry=plan.newReferenceWorkers.find(x=>x.family===family&&x.framework===framework);
-  assert.equal(entry.host,`${framework}.${family}design.dev`);assert.equal(entry.legacyQueryReference,framework==='react');assert.equal(entry.deliveryMode,framework==='react'?'custom-worker-with-assets':'native-static-assets');assert.deepEqual(entry.runtimeBindings,framework==='react'?['ASSETS']:[]);
+  assert.equal(entry.host,`${framework}.${family}design.dev`);assert.equal(entry.legacyQueryReference,false);assert.equal(entry.deliveryMode,'native-static-assets');assert.deepEqual(entry.runtimeBindings,[]);
   assert.ok(!plan.existingMainWorkers.some(x=>x.worker===entry.worker));
  }
 });
@@ -60,7 +60,7 @@ test('gallery pagination and non-root query routes remain assets instead of lega
  for(const path of paths){let calls=0;const response=await react.fetch(new Request('https://reference.invalid'+path),{ASSETS:{fetch:async()=>{calls++;return new Response('exact asset')}}});assert.equal(calls,1);assert.equal(response.status,200);assert.equal(await response.text(),'exact asset');}
 });
 
-test('default Astro/Jekyll delivery never redirects React-like root selectors',async()=>{
+test('native delivery preserves root selectors while the legacy adapter stays opt-in',async()=>{
  for(const path of ['/?page=2','/index.html?component=Card','/preview/?page=unknown','/preview/index.html?workspace=notes','/?shell=side']){
   let calls=0;const response=await worker.fetch(new Request('https://reference.invalid'+path),{ASSETS:{fetch:async()=>{calls++;return new Response('framework asset')}}});
   assert.equal(calls,1);assert.equal(response.status,200);assert.equal(response.headers.get('location'),null);assert.equal(await response.text(),'framework asset');

@@ -18,11 +18,9 @@
       "host": "react.martletdesign.dev",
       "zone": "69dea64caef3fdd16cbd2e46daa534b2",
       "previousWorker": "martlettheme",
-      "legacyQueryReference": true,
-      "deliveryMode": "custom-worker-with-assets",
-      "runtimeBindings": [
-        "ASSETS"
-      ]
+      "legacyQueryReference": false,
+      "deliveryMode": "native-static-assets",
+      "runtimeBindings": []
     },
     {
       "family": "martlet",
@@ -51,11 +49,9 @@
       "host": "react.krigsvolddesign.dev",
       "zone": "c59d0469424ebea0c460d455b30af1c6",
       "previousWorker": "krigsvoldtheme",
-      "legacyQueryReference": true,
-      "deliveryMode": "custom-worker-with-assets",
-      "runtimeBindings": [
-        "ASSETS"
-      ]
+      "legacyQueryReference": false,
+      "deliveryMode": "native-static-assets",
+      "runtimeBindings": []
     },
     {
       "family": "krigsvold",
@@ -83,7 +79,7 @@
     }
   ],
   "advancedArchiveEnabled": false,
-  "deploymentGate": "Exact main source, passing local/hosted verification, registry-backed dependency identity; then live smoke and cross-browser checks before accepting adoption",
+  "deploymentGate": "Accepted main source identity and artifact integrity, then exact live payload verification and controlled rollback; no PR, reviewer or historical CI lookup during deployment",
   "assetsRunWorkerFirst": true,
   "allowedRuntimeBindings": [
     "ASSETS"
