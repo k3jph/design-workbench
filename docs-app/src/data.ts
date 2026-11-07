@@ -3,7 +3,7 @@ import delivery from 'docs-distribution';
 export const implementationVersion = '0.2.0';
 export const repo = `https://github.com/${family}design/react`;
 export const sharedContractRepo = 'https://github.com/k3jph/design-workbench';
-const reviewedSource={martlet:'ec9d3515c2233514304908d0e343bfd291505ebe',krigsvold:'2bb52de74314f50c854429f3f90f11631f5aeb8b'};
+const reviewedSource={martlet:'322e549d15812d74257ace37207f62410d6f0911',krigsvold:'5128c6bf26cdba8ddb3c2d88de65b2307d3661b4'};
 export const implementationSourceCommit = delivery.packages.React.sourceCommit??reviewedSource[family];
 export const groups: Record<string, string[]> = {
   "Actions & feedback": ["Button", "Notice", "Badge", "Dialog", "ErrorSummary"],

@@ -1,6 +1,6 @@
 # Standalone Jekyll source contract
 
-Each design family owns its public standalone Jekyll repository and full50-page
+Each design family owns its public standalone Jekyll repository and full 50-page
 reference catalog. Jekyll is consumed as Git/source releases, not an invented npm
 package. The attached current distribution record identifies the immutable source
 commit and, only after independent verification, the public release tag, source
@@ -9,7 +9,7 @@ facts; inspect `published` and `sourceZip.available` before claiming release ava
 
 The standalone repository's Gemfile.lock pins Ruby/Jekyll dependencies. Follow its
 README: install the locked bundle and run `bundle exec jekyll build`; run again
-with `--baseurl /preview` to exercise subpath assets and links. Preserve its50
+with `--baseurl /preview` to exercise subpath assets and links. Preserve its 50
 canonical recipes, representative data, form/navigation/dashboard behavior and
 all browser/accessibility checks. Do not translate React props, state or focus
 controllers into Jekyll APIs. Family composition and typography remain independent.

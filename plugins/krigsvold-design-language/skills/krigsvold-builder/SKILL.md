@@ -18,9 +18,11 @@ Discover the Krigsvold MCP tools and call `get_manifest`. Confirm `family` is `k
 
 If MCP is unavailable, read [the bundled grammar](references/grammar.md) and relevant [component contracts](references/components.md). Their offline snapshot applies to experimental React 0.1.0 and theme 2.1.0. Consult [source and setup](references/source.md) for provenance. State missing/unsupported capabilities; do not silently use Martlet or a fictional API.
 
-Read [framework availability](references/implementation.json) before choosing imports. For Astro, retrieve `platform:Astro` or read [Astro APIs](references/astro.md); never translate React props by name. The pinned canonical file records its original review status. Check the connected MCP manifest for separately verified publication status; React examples retain theme 2.1.0. Shared grammar does not imply shared props or state/focus APIs.
+Read the current platform setup reference and connected manifest before choosing imports; [implementation.json](references/implementation.json) retains the original snapshot availability. For Astro, retrieve `platform:Astro` or read [Astro APIs](references/astro.md); never translate React props by name. The pinned canonical file records its original review status. Check the connected MCP manifest for separately verified publication status; React examples retain theme 2.1.0. Shared grammar does not imply shared props or state/focus APIs.
 
 For a substantial form, retrieve `pattern:validated-form`; for querying, sorting, paging, selection or batch commands, retrieve `pattern:query-results`. Read `coverage` to distinguish checked reference behavior from remaining evidence. Offline, use [forms](references/forms.md), [query/results](references/query-results.md) and [coverage](references/coverage.md). These patterns use existing React exports; do not invent Astro controllers or treat simulated operations as durable services.
+
+For canonical applications, retrieve `pattern:canonical-examples`, `pattern:interaction-recovery`, `pattern:dashboard-applications` and `pattern:scientific-workspace` as relevant. These expose existing shared content and behavior contracts, not new public controller APIs. Preserve independent family composition and the documented local/synthetic service boundary.
 
 ## Trace existing objects first
 

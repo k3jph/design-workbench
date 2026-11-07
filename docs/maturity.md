@@ -13,18 +13,17 @@ The editor requires evidence before choosing stable, but it cannot establish whe
 
 | Implementation | Current inventory | Contract position |
 | --- | --- | --- |
-| @martlet/theme | 2.1.0 published | Existing palette/foundation/layout contracts retained |
-| @krigsvold/theme | 2.1.0 published | Existing palette/foundation/layout contracts retained |
-| @martlet/astro | 1.1.0 published | Existing exports retained; broader component maturity under review |
-| @krigsvold/astro | 1.1.0 published | Existing exports retained; broader component maturity under review |
-| @martlet/react | 0.1.0 workspace, unpublished | Experimental; React 19; theme 2.1.0 |
-| @krigsvold/react | 0.1.0 workspace, unpublished | Experimental; React 19; theme 2.1.0 |
+| @martlet/core / @krigsvold/core | 2.2.3 / 2.2.4 published, `latest` | Independent foundations; application extensions retain documented limits |
+| @martlet/theme / @krigsvold/theme | 2.1.0 `latest`; 2.2.2 / 2.2.3 `next` | Existing legacy consumers and original snapshots remain supported explicitly |
+| @martlet/astro / @krigsvold/astro | 2.0.0 published, `latest` | Native Astro exports with matching Core peers; API maturity and availability remain separate |
+| @martlet/react / @krigsvold/react | 0.2.0 published, `latest` | Experimental; React 19; matching Core dependencies; independent repositories own publication |
+| Martlet / Krigsvold Jekyll | 1.1.0 accepted source releases | Deployed and source-published; not npm packages |
 | Registry API and database | API/export 1; SQLite 2 | Experimental; Node 24.19+ within Node 24 |
 | Vue, Svelte, native components, web components | Planned | No implementation support claimed |
 
-The React packages are private workspace packages to prevent premature publication, while their source remains publicly available under MIT. Remove the private flag only as part of a reviewed release setup with package names, trusted publishers, release verification, changelog, and compatibility documentation. No npm token is committed or required to build.
+The private React workspace copies remain local fixtures. They are not the publication authority for the genuine independent npm releases. Keep their private flags and use the independent repositories' established trusted-publishing workflows. No npm token is committed or required to build. Exact current versions, channels and artifacts are recorded in [distribution.json](distribution.json), with the baseline and remaining capability limits in [distribution.md](distribution.md).
 
-The [source consolidation review](qa/source-consolidation.md) adds unreleased core 2.2.0 and Astro 1.2.0 candidates. These do not replace the published inventory above. Canonical grammar and source decisions live in each core repository; this workbench and its agent bundles pin exact revisions and hashes. Astro candidate contracts are documented, while copied examples remain React-specific. The grammar remains experimental 0.2.
+The [source consolidation review](qa/source-consolidation.md) preserves the historical Core 2.2.0/Astro 1.2.0 candidate investigation. Later releases are now published; the old report is not the current inventory. Canonical grammar and source decisions remain pinned to exact original revisions and hashes. Current installation references identify the independent packages separately. Grammar 0.3 and unobserved application extensions retain explicit experimental status; a published version is not universal consumer or accessibility evidence.
 
 For stable APIs, compatible fixes use patch versions, compatible additions minor versions, and breaking changes major versions. Experimental releases still describe every breaking change and provide upgrade notes. Stable deprecation requires a named replacement, steps, examples, an announced minimum support window, and a major-version removal. The exact support window must be adopted before the first stable React release. No window is invented retroactively.
 
@@ -34,4 +33,4 @@ Structured readiness reviews record six local observation areas, bound to the co
 
 
 
-[Experimental React release policy](release-policy.md) now specifies proposed `next` distribution, pre-1.0 version increments, per-package changelogs, exact-tarball verification, rollback/migration procedure and a proposed six-month stable deprecation window. Publication/trusted publishing and adoption of the stable window remain separate release work; current private manifests are retained. Browser recovery/preferences use independent versioned origin-scoped formats and do not change database schema 2 or API/export 1.
+[Experimental React release policy](release-policy.md) preserves pre-1.0 version increments, changelogs, exact-tarball verification and rollback/migration obligations, alongside the historical workbench release process. The proposed six-month stable deprecation window remains a proposal. Current independent publication uses its existing workflows; private workspace manifests remain private. Browser recovery/preferences use independent versioned origin-scoped formats and do not change database schema 2 or API/export 1. Product maturity records are separate from [GitFlow acceptance](GITFLOW-ACCEPTANCE.md) and do not add repository approval or deployment gates.
