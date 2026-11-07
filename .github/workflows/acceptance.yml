@@ -27,3 +27,5 @@ jobs:
           npm run build
           npm run build:docs
       - run: npm test
+      - name: Validate the branch-ruleset setup script without GitHub writes
+        run: python3 scripts/governance/apply-gitflow-rules.py > /dev/null
