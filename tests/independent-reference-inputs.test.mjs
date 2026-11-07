@@ -5,7 +5,17 @@ import {tmpdir} from 'node:os';
 import {join} from 'node:path';
 import {spawnSync} from 'node:child_process';
 import distribution from '../docs/distribution.json' with {type:'json'};
-import {checkedJekyllRelease,checkSharedFixtures,extractSourceZip,verifyInputs} from '../examples/page-archetypes/scripts/build-independent-inputs.mjs';
+import {checkedJekyllRelease,checkSharedFixtures,extractSourceZip,verifyInputs,independentSourceEnvironment} from '../examples/page-archetypes/scripts/build-independent-inputs.mjs';
+
+test('foreign builds receive runtime settings without inheriting the workbench GitHub event',()=>{
+ const parent={PATH:process.env.PATH,CI:'true',HTTPS_PROXY:'http://proxy.invalid:8080',NODE_USE_ENV_PROXY:'1',NIGHTJAR_BROWSER:'firefox',GITHUB_SHA:'a'.repeat(40),GITHUB_REF:'refs/pull/107/merge',GITHUB_REPOSITORY:'k3jph/design-workbench',GITHUB_EVENT_NAME:'pull_request',GITHUB_EVENT_PATH:'/workbench/event.json',GITHUB_ACTIONS:'true',GITHUB_TOKEN:'synthetic-test-placeholder'};
+ const before={...parent},env=independentSourceEnvironment(parent);
+ assert.deepEqual(parent,before,'Parent workbench identity must remain untouched');
+ assert.deepEqual(env,{PATH:parent.PATH,CI:'true',HTTPS_PROXY:parent.HTTPS_PROXY,NODE_USE_ENV_PROXY:'1',NIGHTJAR_BROWSER:'firefox'});
+ const child=spawnSync(process.execPath,['-e',"console.log(JSON.stringify({identity:Object.keys(process.env).filter(k=>k.startsWith('GITHUB_')),proxy:process.env.HTTPS_PROXY,browser:process.env.NIGHTJAR_BROWSER,ci:process.env.CI}))"],{env,encoding:'utf8'});
+ assert.equal(child.status,0,child.stderr);
+ assert.deepEqual(JSON.parse(child.stdout),{identity:[],proxy:parent.HTTPS_PROXY,browser:'firefox',ci:'true'});
+});
 
 test('independent inputs retain the accepted Jekyll source identity and reject unverified or cross-family archives',()=>{
  for(const family of ['martlet','krigsvold']){
