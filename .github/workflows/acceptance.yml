@@ -22,4 +22,8 @@ jobs:
           node-version: '24'
           cache: npm
       - run: npm ci --ignore-scripts --no-audit --no-fund
+      - name: Build package exports and generated documentation test fixtures
+        run: |
+          npm run build
+          npm run build:docs
       - run: npm test
