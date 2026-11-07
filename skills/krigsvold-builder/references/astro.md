@@ -1,6 +1,6 @@
 # Krigsvold Astro APIs
 
-Use the installed `@krigsvold/astro` source as the API authority. This reference covers Astro 1.2.x with core 2.2.x; package publication is recorded separately in the MCP manifest. Install the experimental channel with `npm install @krigsvold/theme@2.2.3 @krigsvold/astro@1.2.2 astro` in an Astro project. Verify engine requirements for the chosen Astro version.
+Use the installed `@krigsvold/astro` source as the API authority. This reference covers the published Astro 2.0.0 package with its matching Core dependency; component and application-extension maturity remain separately documented. Install with `npm install @krigsvold/core@2.2.4 @krigsvold/astro@2.0.0 astro` in an Astro project. Verify engine requirements for the chosen Astro version.
 
 ## Framework boundaries
 
@@ -10,7 +10,7 @@ Use the installed `@krigsvold/astro` source as the API authority. This reference
 - `TableOfContents` takes `items: {href:string,label:string,depth?:2|3}[]`, `label`, `variant: 'index'|'inline'`, `class`. Use `href:'#section'`, not React’s `id` prop. A depth-3 item needs a preceding parent. It emits native links and nested lists; target IDs and heading order belong to the host.
 - `SiteHeader` takes `name`, `home`, `links:{href,label,current?}[]`, `navigationLabel`, `class`; slots `brand`, `navigation`, `actions`. It is the existing generic wrapping-link header. The audited source masthead and dropdown controller are not exported Astro components. Adapt host navigation deliberately.
 - `SiteFooter` takes `links`, `groups:{label,links:{href,label}[]}[]`, `variant:'plain'|'grouped'`, `navigationLabel`, `class`; slots default, `identity`, `base`. Supply the host’s identity, destinations and ownership wording. Do not copy source-site personal details.
-- Import `@krigsvold/theme/source-profile.css` after regular styles and opt in with `bodyClass="krigsvold-source-profile"`. Existing defaults remain available. Full dark appearance remains experimental.
+- Import `@krigsvold/core/source-profile.css` after regular styles and opt in with `bodyClass="krigsvold-source-profile"`. Existing defaults remain available. Full dark appearance remains experimental.
 - Contents remain visible in print by default. React print behavior is not the Astro contract.
 - Forms, query state, selection, dialog behavior, persistence and cancellation use native HTML plus host logic. No Astro Form or QueryResults controller is exported. Follow grammar obligations without inventing imports.
 
@@ -21,7 +21,7 @@ This example adapts the shipped Astro starter. Replace content and destinations 
 ```astro
 ---
 import { ArticleLayout, SiteHeader, SiteFooter, Stack, TableOfContents } from '@krigsvold/astro';
-import '@krigsvold/theme/source-profile.css';
+import '@krigsvold/core/source-profile.css';
 ---
 <ArticleLayout title="A clear account of the work" summary="A short introduction gives the reader enough context to begin." eyebrow="An example article" sidebarLabel="Related reading" bodyClass="krigsvold-source-profile">
   <meta slot="head" name="example-head" content="forwarded" />
@@ -44,8 +44,8 @@ import '@krigsvold/theme/source-profile.css';
 
 Check production build, local font assets, one main/h1, skip-link and fragment focus, source order, narrow and enlarged text, and actual print output. Automated browser evidence does not establish manual screen-reader support, RTL completeness or sustained consumer use.
 
-## Adoption repair, Astro 1.2.2 and core 2.2.3
+## Adoption with Astro 2.0.0 and Core 2.2.4
 
-Obtain the neutral starter with `npm pack @krigsvold/astro@1.2.2`, extract the downloaded archive, and copy `package/starter/` to your new directory. Or copy `node_modules/@krigsvold/astro/starter/` from an installed package. Install dependencies and run `npm run dev`; `npm run build` verifies the production output. The `/form/` route is a complete, explicitly simulated host controller using supported core classes; no data is sent or stored durably.
+Obtain the neutral starter with `npm pack @krigsvold/astro@2.0.0`, extract the downloaded archive, and copy `package/starter/` to your new directory. Or copy `node_modules/@krigsvold/astro/starter/` from an installed package. Install dependencies and run `npm run dev`; `npm run build` verifies the production output. The `/form/` route is a complete, explicitly simulated host controller using supported core classes; no data is sent or stored durably.
 
 Core `forms.css` is included in `full.css`. Retrieve `styling:forms` for exact field/hint/error/summary/notice/dialog anatomy, and `platform:HTML` for layout classes. `Button type="submit"` and `type="reset"` render the native type once. Use `class="krigsvold-button--secondary"` on `Button` for a secondary action, not a fictional `variant` prop. Validation, announcements, busy/draft state and focus remain host code. Fragment targets should have `tabindex="-1"` when their activation needs to move focus. Runtime appearance changes set the nearest `data-krigsvold` attribute; persistence and preference policy are host choices.

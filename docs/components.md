@@ -2,7 +2,7 @@
 
 Version 0.1 · Experimental · October 22, 2026
 
-Both packages expose the same behavioral surface. Family-specific typography, spacing, emphasis, and shell composition come from their own styles and theme dependencies. The workbench consumes these exports directly. These are working requirements, not claims of sustained production validation. React 19 is the current supported rendering platform.
+Both packages expose the same behavioral surface. Family-specific typography, spacing, emphasis, and shell composition come from their own styles and matching Core dependencies in the independent 0.2.0 releases. Historical 0.1.0 used theme 2.1.0. The workbench consumes these exports directly. These are working requirements, not claims of sustained production validation. React 19 is the current supported rendering platform.
 
 Every interactive component must preserve its native keyboard model, consumer attributes, a visible focus indicator, and text that survives resizing and translation. Field names must stay visible. Color, shape, and motion cannot be the only status indicator. Errors retain entered data. A caller remains responsible for correct copy, unique document landmarks, and a coherent overall heading/focus order.
 
@@ -78,4 +78,4 @@ The paired analytics, administration and operations references extend the existi
 - `collectionView` provides configurable search/sort fields, stable ordering, bounded pages and result counts, independent of a renderer or theme.
 - Native form controls, buttons, fieldsets, tables, status/alert regions, disclosures and dialogs remain the starting primitives. Sortable headers and scoped selection compose them; row selection never silently broadens to all matching records.
 
-These are implemented Jekyll and framework-neutral capabilities. Existing React component exports are unchanged; no React dashboard implementation or package release is claimed.
+These are shared capability contracts implemented by the canonical Jekyll, Astro and React examples. They are not new public dashboard component exports. Independent React 0.2.0 is published; that availability does not turn synthetic application controllers into stable service APIs. See the existing dashboard and scientific workspace contracts for exact behavior and limitations.

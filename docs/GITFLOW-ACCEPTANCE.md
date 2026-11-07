@@ -22,7 +22,7 @@ The accepted-branch rules must be enforced on **both** `main` and `develop`:
 - Both merge commits and squash merges are allowed; select the appropriate method for the change. Prefer squash for routine feature work into `develop`; preserve meaningful release merges into `main`.
 - A failure of an *optional* check does not prevent work on a candidate. A failure of the *required* check prevents acceptance, not experimentation.
 
-GitHub ruleset status is an independently verifiable configuration fact. A sentence in a repository, a workflow, or a Cloudflare script does **not** establish that a rule is active. At this decision point, only the two React repositories have active GitFlow branch rulesets; the others have immutable `v*` tag rules but unprotected `main`/`develop` branches. Correct that before representing branch membership as a technically enforced acceptance guarantee.
+All nine repositories now have active GitFlow branch rulesets in addition to protected version tags. GitHub ruleset status remains an independently verifiable configuration fact: a sentence, workflow or Cloudflare script alone does not establish enforcement. Inspect the current configuration read-only when needed; do not recreate the existing controls because an older audit recorded a different state.
 
 ### Minimum required check per repository
 
@@ -36,7 +36,7 @@ GitHub ruleset status is an independently verifiable configuration fact. A sente
 
 These choices deliberately distinguish **minimum safe acceptance** from **comprehensive quality measurement**. Test failures in advisory suites should be visible and actionable, but need not force every candidate to idle.
 
-Use `python3 scripts/governance/apply-gitflow-rules.py` to inspect the exact proposed GitHub ruleset configuration. An authorized owner can apply it with `--apply` using an authenticated `gh` CLI. The tool modifies only `main`/`develop` branch rules; it must preserve immutable version-tag protections. GitHub ruleset administration is not available through the current connected GitHub integration.
+`python3 scripts/governance/apply-gitflow-rules.py` prints the reference configuration without GitHub writes. Its `--apply` mode is an administration tool for a separately authorized configuration change, not an integration or deployment prerequisite. The current consolidation requires no ruleset changes and must preserve immutable version-tag protections.
 
 ## Deployment contract
 

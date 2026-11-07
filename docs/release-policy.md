@@ -2,17 +2,19 @@
 
 Experimental release workflow · October 25, 2026. Source and all components, styles, specifications, patterns, and reference applications remain MIT and freely available. The separate distribution record reports observed publication; this policy does not claim verified stable accessibility.
 
+**Current authority, 7 November 2026.** Both independent React repositories have published 0.2.0 on npm `latest`, using their matching Core packages. Historical `next` remains 0.1.0. Private workbench copies and the original workbench publication/archive procedures below are retained as historical context, not instructions to reactivate a second publisher. Current release preparation follows each independent repository and the ratified [GitFlow policy](GITFLOW-ACCEPTANCE.md); preserve trusted publishing, protected tags, provenance and required npm stage approval. See [current distribution](distribution.md). Maturity evidence does not add a human-review requirement to GitFlow integration.
+
 The public design-language preview is 0.3.0. Preview releases may remain below 1.0; support follows explicit contracts and documented maturity. Package versions are independent. See [preview scope and canonical homes](preview-0.3.md).
 
 ## Compatibility and versions
 
-Both React packages currently target React 19, ES modules and modern browser CSS, with the matching family theme pinned to 2.1.0. The packed consumer check currently verifies React/ReactDOM 19.3.1; it does not establish every React 19 minor or other rendering framework. The local registry requires Node 24.19 or later within Node 24. Database schema 2 and API/export schema 1 remain unchanged by browser drafts/settings.
+Current independent React 0.2.0 targets React 19, ES modules and modern browser CSS, with matching Core dependencies. Original React 0.1.0 pinned theme 2.1.0. The packed consumer check currently verifies React/ReactDOM 19.3.1; it does not establish every React 19 minor or other rendering framework. The local registry requires Node 24.19 or later within Node 24. Database schema 2 and API/export schema 1 remain unchanged by browser drafts/settings.
 
-The first proposed npm release is experimental 0.1.0, distributed with the `next` tag. The initial packages do not replace existing theme or Astro packages. While below 1.0, incompatible API changes increment the minor version and include migration examples; compatible additions and corrections increment patch versions. Every release records public API, visual contract, behavioral and accessibility changes, supported dependencies, known limitations, and source commit. The families may release independently; shared behavior changes must be checked against both consumers.
+The original experimental 0.1.0 release remains on the historical `next` channel; current independent 0.2.0 is published on `latest`. The initial packages do not replace existing theme or Astro packages. While below 1.0, incompatible API changes increment the minor version and include migration examples; compatible additions and corrections increment patch versions. Every release records public API, visual contract, behavioral and accessibility changes, supported dependencies, known limitations, and source commit. The families may release independently; shared behavior changes must be checked against both consumers.
 
 Before 1.0, adopt and publish a stable support policy. Proposed minimum: deprecated stable APIs remain available for at least six months and until the next major version, whichever is later. Removal needs a named replacement, migration steps, examples, and an announced date. This proposed support window is not an existing maintenance guarantee.
 
-## Release preparation
+## Original workbench release preparation (historical)
 
 1. Complete clean installation, builds/native-ref types, Node tests, supported-browser regression checks, packed-package consumer checks, and visual review at the exact proposed commit.
 2. Review manual assistive-technology observations and real consumer evidence separately from automated results. Label remaining gaps prominently; experimental publication never certifies every component stable.
@@ -29,6 +31,6 @@ The release manifests use `private: false`, public access, `next` and provenance
 
 Never silently replace a published tarball. Correct a bad experimental release with a new patch/minor and an explicit upgrade note; deprecate a defective version with a useful explanation when appropriate. Keep database backups independent of package rollback. Browser specification drafts and workspace preferences use versioned, origin-scoped keys; unknown formats are retained and explained rather than reinterpreted. A fresh origin, port, browser profile, cleared storage, or unavailable storage cannot recover those copies. Source-site changes remain deliberate consumers of generalized fixes, with their own validation.
 
-## Automated reference archives
+## Original reference-host archive pipeline (historical)
 
 The tested React reference sites have a separate archive/adoption pipeline, documented in [reference automation and setup](reference-automation.md). Existing verification gates publication of commit-qualified `design-v…` prereleases. The exact archived bytes pass three-browser reference tests before publication; each host adoption PR pins the version, source commit and SHA-256. Strict host CI protection gates merging, followed by Cloudflare and live `/preview.json` verification. This does not change the experimental npm publication job or its trusted-publisher configuration.

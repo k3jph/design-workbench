@@ -2,6 +2,8 @@
 
 October 24, 2026 · Experimental 0.1.0 · MIT
 
+**Current authority, 7 November 2026.** Native React implementations and reference catalogs now belong to https://github.com/martletdesign/react and https://github.com/krigsvolddesign/react. Their published npm version is 0.2.0 (`latest`), and current reference destinations are https://react.martletdesign.dev/ and https://react.krigsvolddesign.dev/. The workbench owns shared contracts and representative data. The original 0.1.0 review-site and host-copy investigation below is preserved as historical evidence; its unpublished status and staging commands are not current deployment instructions. Use each independent repository's native build/deploy process and verify its actual live source identity. See [current distribution](distribution.md).
+
 The two reference applications have separate experimental layouts, existing system marks, theme semantic palettes, and proposed application grammars. They demonstrate a collection/reading/editor pattern in each language alongside all 22 component specimens, API and keyboard contracts, standalone JSX examples, and agent-tooling setup. The [October 23 origin audit](qa/origin-audit-2026-10-23.md) is a fixed baseline. Its [67-item reconciliation ledger](qa/origin-reconciliation.md) now records restored source objects, removed unsupported decoration, explicit application extensions and remaining vocabulary. Neither grammar is locked.
 
 | Family | Private review site | Public preview home | Output |
