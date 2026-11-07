@@ -216,9 +216,6 @@ jobs:
       NIGHTJAR_BROWSER: ${{ matrix.browser }}
       ASTRO_TELEMETRY_DISABLED: '1'
       BUNDLE_FROZEN: 'true'
-      NIGHTJAR_JEKYLL_ROOT: ${{ runner.temp }}/independent-references/jekyll
-      NIGHTJAR_ASTRO_ROOT: ${{ runner.temp }}/independent-references/astro
-      NIGHTJAR_REACT_ROOT: ${{ runner.temp }}/independent-references/react
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -235,6 +232,11 @@ jobs:
           path: ${{ runner.temp }}/independent-references/
       - name: Verify independent input identity and completeness
         run: node examples/page-archetypes/scripts/build-independent-inputs.mjs --verify "$RUNNER_TEMP/independent-references"
+      - name: Set independent reference paths for browser checks
+        run: |
+          printf 'NIGHTJAR_JEKYLL_ROOT=%s/independent-references/jekyll\n' "$RUNNER_TEMP" >> "$GITHUB_ENV"
+          printf 'NIGHTJAR_ASTRO_ROOT=%s/independent-references/astro\n' "$RUNNER_TEMP" >> "$GITHUB_ENV"
+          printf 'NIGHTJAR_REACT_ROOT=%s/independent-references/react\n' "$RUNNER_TEMP" >> "$GITHUB_ENV"
       - name: Use the Ubuntu archive for browser dependencies
         run: |
           if [ -f /etc/apt/apt-mirrors.txt ]; then
