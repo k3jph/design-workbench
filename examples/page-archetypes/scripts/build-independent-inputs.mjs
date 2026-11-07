@@ -45,12 +45,18 @@ with zipfile.ZipFile(sys.argv[1]) as archive:
  archive.extractall(root)
 `;
 function progress(family,framework,operation,details={}){console.log(JSON.stringify({family,framework,operation,...details}));}
-function command(executable,args,{cwd,deadline,env={}}){
+export function independentSourceEnvironment(parent){
+ // These are local builds of a different repository, not that owner's GitHub
+ // event. Keep runtime/proxy settings without forwarding workbench identity.
+ return Object.fromEntries(Object.entries(parent).filter(([key])=>!key.startsWith('GITHUB_')));
+}
+function command(executable,args,{cwd,deadline,env={},foreignSource=false}){
  const remaining=deadline-Date.now();assert.ok(remaining>0,'Independent input build deadline exceeded');
  const timeout=Math.min(480000,remaining);
  return new Promise((resolveRun,reject)=>{
   const grouped=process.platform!=='win32';let timedOut=false,ended=false,result;
-  const child=spawn(executable,args,{cwd,env:{...process.env,...env},stdio:'inherit',detached:grouped});
+  const inherited={...process.env,...env};
+  const child=spawn(executable,args,{cwd,env:foreignSource?independentSourceEnvironment(inherited):inherited,stdio:'inherit',detached:grouped});
   const kill=signal=>{try{if(grouped)process.kill(-child.pid,signal);else child.kill(signal);}catch(error){if(error.code!=='ESRCH')throw error;}};
   const finish=()=>{if(ended)return;ended=true;clearTimeout(timer);result?.code===0&&!timedOut?resolveRun():reject(Error(`${executable} failed (${timedOut?'deadline':result?.signal||result?.code}) in ${cwd}`));};
   const timer=setTimeout(()=>{timedOut=true;kill('SIGTERM');setTimeout(()=>{kill('SIGKILL');finish();},2000);},timeout);
@@ -114,7 +120,7 @@ async function build(output,{family,framework}={}){
     await command('git',['fetch','--depth=1','origin',source.commit],{cwd:directory,deadline});git(directory,'checkout','--quiet','--detach','FETCH_HEAD');assert.equal(git(directory,'rev-parse','HEAD'),source.commit);
    }
    await checkSharedFixtures(directory,framework);
-   const run=(exe,args,env={})=>command(exe,args,{cwd:directory,deadline,env});
+   const run=(exe,args,env={})=>command(exe,args,{cwd:directory,deadline,env,foreignSource:true});
    progress(family,framework,'install-locked-dependencies');
    if(framework==='jekyll'){
     await run('bundle',['config','set','--local','path','vendor/bundle']);await run('bundle',['install'],{BUNDLE_FROZEN:'true'});
