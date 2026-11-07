@@ -124,7 +124,9 @@ async function build(output,{family,framework}={}){
      await run('python3',['nightjar/build.py','--destination',base?join(destination,'preview'):destination,'--baseurl',base]);
     }
    }else{
-    await run('npm',['ci','--ignore-scripts','--no-audit','--no-fund','--fetch-retries=0','--fetch-timeout=20000']);
+    // Astro's package-source lock omits consumer peers, matching its own CI.
+    // Its native starter builder installs and checks the exact Core/Astro pins.
+    await run('npm',['ci','--ignore-scripts',...(framework==='astro'?['--legacy-peer-deps']:[]),'--no-audit','--no-fund','--fetch-retries=0','--fetch-timeout=20000']);
     if(framework==='react'){
      await run('npm',['run','build']);await mkdir(dirname(destination),{recursive:true});
      progress(family,framework,'native-root-subpath-build');await run('npm',['run','build:reference','--',destination]);
