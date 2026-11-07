@@ -1,7 +1,7 @@
 // Compile consumer-native props and refs against both public package APIs.
 import { createRef } from "react";
-import * as Martlet from "@martlet/react";
-import * as Krigsvold from "@krigsvold/react";
+import * as Martlet from "@martlet/react-runtime";
+import * as Krigsvold from "@krigsvold/react-runtime";
 export const consumerContracts = [Martlet, Krigsvold].map((UI) => (
   <UI.Field label="Email">
     {(props) => (

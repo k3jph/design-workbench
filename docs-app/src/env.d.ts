@@ -1,5 +1,5 @@
 declare module "docs-family" {
-  export * from "@martlet/react";
+  export * from "@martlet/react-runtime";
   export const family: "martlet" | "krigsvold";
   export const familyName: string;
 }
@@ -38,6 +38,6 @@ declare module "docs-decisions" {
 }
 
 declare module 'docs-distribution' {
- const value: {home:string;preview:{version:string;stage:string};mcp:{url:string;published:boolean};packages:{React:{version:string;published:boolean;install:string;sourceCommit?:string}}};
+ const value: {home:string;preview:{version:string;stage:string};mcp:{url:string;published:boolean};packages:{React:{version:string;published:boolean;install:string;sourceCommit:string}}};
  export default value;
 }

@@ -1,6 +1,6 @@
 # @krigsvold/react
 
-Experimental React 0.2.0. MIT licensed. The published package is maintained at https://github.com/krigsvolddesign/react and uses matching Core 2.2.4. npm `latest` is 0.2.0; historical `next` remains 0.1.0. This private workbench copy is a local test fixture, not the publication authority.
+Private React 0.2.0 test fixture, intentionally retaining Core 2.2.4. MIT licensed. The current independently published package is `@krigsvold/react` 0.2.1 at https://github.com/krigsvolddesign/react, using Core 2.2.5. npm `latest` is 0.2.1; historical `next` remains 0.1.0. This workbench fixture keeps its historical source and manifest; it is not the publication authority.
 
 ```tsx
 import { Button, Field, TextInput } from '@krigsvold/react';
@@ -16,7 +16,7 @@ import '@krigsvold/core/fonts.css'; // optional local fonts
 ```
 
 ```sh
-npm install @krigsvold/react@0.2.0 react@19 react-dom@19
+npm install @krigsvold/react@0.2.1 react@19 react-dom@19
 ```
 
 Exports: AppShell, Button, TextInput, Select, Textarea, Field, Notice, Badge, DataTable, Dialog, Checkbox, Fieldset, Disclosure, ErrorSummary, Article, TableOfContents, FileInput, Radio, Pagination, DefinitionList, Switch, Tabs, and FieldControl/SummaryError/ContentsItem/DefinitionItem/TabItem (types). Native attributes and refs on native controls follow React 19 conventions. Button defaults to `type="button"`. Field supplies a stable id and associated hint/error descriptions through a render function. Dialog uses the native modal top layer; keep it mounted and control `open`. Escape and native dialog-form closure call `onDismiss`; update `open` in that callback and provide visible dismissal buttons. Prop-driven closure does not call `onDismiss`. Pagination returns focus to the available direction when its focused control becomes disabled at a page boundary; external updates do not take focus from elsewhere. DataTable wraps a semantic table in a named, focusable overflow region. Notice announces success/info politely and errors assertively.
