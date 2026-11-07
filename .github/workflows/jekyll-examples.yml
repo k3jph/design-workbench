@@ -1,17 +1,48 @@
 name: Verify portable examples
 on:
   pull_request:
-    paths: ['examples/**', 'packages/**', 'package.json', 'package-lock.json', 'playwright.dashboard.config.ts', '.github/workflows/jekyll-examples.yml']
+    paths: ['docs/distribution.json', 'examples/**', 'packages/**', 'package.json', 'package-lock.json', 'playwright.dashboard.config.ts', '.github/workflows/jekyll-examples.yml']
   push:
     branches: [main]
-    paths: ['examples/**', 'packages/**', 'package.json', 'package-lock.json', 'playwright.dashboard.config.ts', '.github/workflows/jekyll-examples.yml']
+    paths: ['docs/distribution.json', 'examples/**', 'packages/**', 'package.json', 'package-lock.json', 'playwright.dashboard.config.ts', '.github/workflows/jekyll-examples.yml']
 permissions:
   contents: read
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
-  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+  cancel-in-progress: true
 jobs:
+  reference-inputs:
+    name: Prepare independent advisory inputs
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    outputs:
+      artifact-name: ${{ steps.build.outputs.artifact-name }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler: '2.4.19'
+      - name: Build source-pinned native references once
+        id: build
+        run: |
+          node examples/page-archetypes/scripts/build-independent-inputs.mjs --output "$RUNNER_TEMP/independent-references"
+          printf 'artifact-name=independent-reference-inputs-%s\n' "$GITHUB_RUN_ATTEMPT" >> "$GITHUB_OUTPUT"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ steps.build.outputs.artifact-name }}
+          path: ${{ runner.temp }}/independent-references/
+          include-hidden-files: true
+          retention-days: 3
+          if-no-files-found: error
+
   examples:
+    needs: reference-inputs
     runs-on: ubuntu-latest
     timeout-minutes: 45
     steps:
@@ -24,6 +55,12 @@ jobs:
         with:
           ruby-version: '3.2'
       - run: npm ci --ignore-scripts
+      - uses: actions/download-artifact@v4
+        with:
+          name: ${{ needs.reference-inputs.outputs.artifact-name }}
+          path: ${{ runner.temp }}/independent-references/
+      - name: Verify independent input identity and completeness
+        run: node examples/page-archetypes/scripts/build-independent-inputs.mjs --verify "$RUNNER_TEMP/independent-references"
       - name: Check canonical exports and portable contracts
         run: |
           python3 examples/page-archetypes/scripts/sync.py
@@ -40,12 +77,12 @@ jobs:
           python3 examples/page-archetypes/tests/source-archive.test.py
           node examples/page-archetypes/tests/event-time-parity.mjs
           node examples/page-archetypes/tests/event-order-parity.mjs
-      - name: Build and verify root-hosted references
+      - name: Build and verify root-hosted exporter fixtures
         run: |
           python3 examples/page-archetypes/scripts/build.py
           python3 examples/page-archetypes/scripts/verify-html.py examples/jekyll/martlet/dist
           python3 examples/page-archetypes/scripts/verify-html.py examples/jekyll/krigsvold/dist
-      - name: Build and verify subpath-hosted references
+      - name: Build and verify subpath-hosted exporter fixtures
         run: |
           python3 examples/page-archetypes/scripts/build.py --family martlet --baseurl /preview --destination "$RUNNER_TEMP/martlet-subpath"
           python3 examples/page-archetypes/scripts/verify-html.py "$RUNNER_TEMP/martlet-subpath" --baseurl /preview
@@ -71,17 +108,13 @@ jobs:
           node examples/page-archetypes/tests/content-security.mjs
           node examples/page-archetypes/tests/gallery-composition.mjs
           node examples/page-archetypes/tests/chat-composition.mjs
-      - name: Verify multilingual long-content reflow across frameworks
+      - name: Verify independent cross-implementation semantics and adaptation
         env:
           ASTRO_TELEMETRY_DISABLED: '1'
+          NIGHTJAR_JEKYLL_ROOT: ${{ runner.temp }}/independent-references/jekyll
+          NIGHTJAR_ASTRO_ROOT: ${{ runner.temp }}/independent-references/astro
+          NIGHTJAR_REACT_ROOT: ${{ runner.temp }}/independent-references/react
         run: |
-          export NIGHTJAR_JEKYLL_ROOT="$RUNNER_TEMP/nightjar-i18n"
-          python3 examples/page-archetypes/scripts/build.py --family martlet --destination "$NIGHTJAR_JEKYLL_ROOT/martlet"
-          python3 examples/page-archetypes/scripts/build.py --family krigsvold --destination "$NIGHTJAR_JEKYLL_ROOT/krigsvold"
-          NIGHTJAR_FAMILY=martlet NIGHTJAR_BASE=/ npm --prefix examples/astro-slice run build
-          NIGHTJAR_FAMILY=krigsvold NIGHTJAR_BASE=/ npm --prefix examples/astro-slice run build
-          NIGHTJAR_FAMILY=martlet NIGHTJAR_BASE=/ node examples/react-catalog/build.mjs
-          NIGHTJAR_FAMILY=krigsvold NIGHTJAR_BASE=/ node examples/react-catalog/build.mjs
           node examples/page-archetypes/tests/dashboard-framework-parity.mjs
           node examples/page-archetypes/tests/content-semantic-inventory.mjs
           node examples/page-archetypes/tests/axe-route-inventory.mjs
@@ -102,15 +135,23 @@ jobs:
           node examples/page-archetypes/tests/gallery-link-contract.mjs
           node examples/page-archetypes/tests/dense-table-reflow.mjs
           node examples/page-archetypes/tests/search-history-state.mjs
+      - name: Verify isolated renderer composition fixtures
+        env:
+          ASTRO_TELEMETRY_DISABLED: '1'
+        run: |
           node examples/page-archetypes/tests/form-composition.mjs
           node examples/page-archetypes/tests/workspace-composition.mjs
           node examples/page-archetypes/tests/search-composition.mjs
       - name: Verify real browser zoom with keyboard interactions
         timeout-minutes: 6
+        env:
+          NIGHTJAR_JEKYLL_ROOT: ${{ runner.temp }}/independent-references/jekyll
+          NIGHTJAR_ASTRO_ROOT: ${{ runner.temp }}/independent-references/astro
+          NIGHTJAR_REACT_ROOT: ${{ runner.temp }}/independent-references/react
         run: |
           sudo apt-get update
           sudo apt-get install -y xdotool xvfb xauth
-          NIGHTJAR_JEKYLL_ROOT="$RUNNER_TEMP/nightjar-i18n" xvfb-run -a --server-args="-screen 0 1280x900x24 -nolisten tcp" node examples/page-archetypes/tests/real-browser-zoom.mjs
+          xvfb-run -a --server-args="-screen 0 1280x900x24 -nolisten tcp" node examples/page-archetypes/tests/real-browser-zoom.mjs
       - name: Verify large directory and duplicate-name controls
         timeout-minutes: 10
         env:
@@ -163,6 +204,7 @@ jobs:
   # Exercise representative portable routes in the two engines not covered by
   # the full Chromium example suite; do not repeat the large fixture matrix.
   portable-browser-smoke:
+    needs: reference-inputs
     runs-on: ubuntu-latest
     timeout-minutes: 20
     strategy:
@@ -174,6 +216,9 @@ jobs:
       NIGHTJAR_BROWSER: ${{ matrix.browser }}
       ASTRO_TELEMETRY_DISABLED: '1'
       BUNDLE_FROZEN: 'true'
+      NIGHTJAR_JEKYLL_ROOT: ${{ runner.temp }}/independent-references/jekyll
+      NIGHTJAR_ASTRO_ROOT: ${{ runner.temp }}/independent-references/astro
+      NIGHTJAR_REACT_ROOT: ${{ runner.temp }}/independent-references/react
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -183,20 +228,13 @@ jobs:
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.2'
-      - name: Install dependencies and build portable sites
-        run: |
-          export NIGHTJAR_JEKYLL_ROOT="$RUNNER_TEMP/portable-browser-jekyll"
-          npm ci --ignore-scripts
-          npm ci --prefix examples/astro-slice --ignore-scripts
-          (cd examples/jekyll/martlet && bundle install)
-          (cd examples/jekyll/krigsvold && bundle install)
-          python3 examples/page-archetypes/scripts/build.py --family martlet --destination "$NIGHTJAR_JEKYLL_ROOT/martlet"
-          python3 examples/page-archetypes/scripts/build.py --family krigsvold --destination "$NIGHTJAR_JEKYLL_ROOT/krigsvold"
-          NIGHTJAR_FAMILY=martlet NIGHTJAR_BASE=/ npm --prefix examples/astro-slice run build
-          NIGHTJAR_FAMILY=krigsvold NIGHTJAR_BASE=/ npm --prefix examples/astro-slice run build
-          npm run build --workspaces
-          NIGHTJAR_FAMILY=martlet NIGHTJAR_BASE=/ node examples/react-catalog/build.mjs
-          NIGHTJAR_FAMILY=krigsvold NIGHTJAR_BASE=/ node examples/react-catalog/build.mjs
+      - run: npm ci --ignore-scripts
+      - uses: actions/download-artifact@v4
+        with:
+          name: ${{ needs.reference-inputs.outputs.artifact-name }}
+          path: ${{ runner.temp }}/independent-references/
+      - name: Verify independent input identity and completeness
+        run: node examples/page-archetypes/scripts/build-independent-inputs.mjs --verify "$RUNNER_TEMP/independent-references"
       - name: Use the Ubuntu archive for browser dependencies
         run: |
           if [ -f /etc/apt/apt-mirrors.txt ]; then
@@ -206,9 +244,11 @@ jobs:
         timeout-minutes: 10
         run: npx playwright install --with-deps "$NIGHTJAR_BROWSER"
       - name: Check reading, forms, analytics and scientific workspace across portable frameworks
-        run: NIGHTJAR_JEKYLL_ROOT="$RUNNER_TEMP/portable-browser-jekyll" NIGHTJAR_CONTRAST_EVIDENCE="$RUNNER_TEMP/nightjar-ii-contrast-$NIGHTJAR_BROWSER" node examples/page-archetypes/tests/portable-browser-smoke.mjs
+        run: NIGHTJAR_CONTRAST_EVIDENCE="$RUNNER_TEMP/nightjar-ii-contrast-$NIGHTJAR_BROWSER" node examples/page-archetypes/tests/portable-browser-smoke.mjs
+      - name: Check enlarged text, whole navigation words and reduced motion
+        run: node examples/page-archetypes/tests/enlarged-text-motion.mjs
       - name: Measure bounded contrast contexts and capture review evidence
-        run: NIGHTJAR_JEKYLL_ROOT="$RUNNER_TEMP/portable-browser-jekyll" NIGHTJAR_CONTRAST_SCREENSHOTS="$RUNNER_TEMP/nightjar-ii-contrast-$NIGHTJAR_BROWSER" node examples/page-archetypes/tests/contrast-bounded.mjs
+        run: NIGHTJAR_CONTRAST_SCREENSHOTS="$RUNNER_TEMP/nightjar-ii-contrast-$NIGHTJAR_BROWSER" node examples/page-archetypes/tests/contrast-bounded.mjs
       - name: Upload contrast review evidence
         if: always()
         uses: actions/upload-artifact@v4
@@ -218,7 +258,7 @@ jobs:
           if-no-files-found: ignore
       - name: Check form validity recovery in the selected browser
         timeout-minutes: 5
-        run: NIGHTJAR_TEST_PREBUILT=1 NIGHTJAR_JEKYLL_ROOT="$RUNNER_TEMP/portable-browser-jekyll" node examples/page-archetypes/tests/form-stale-validity.mjs
+        run: NIGHTJAR_TEST_PREBUILT=1 node examples/page-archetypes/tests/form-stale-validity.mjs
 
   # Group the expensive isolated builds to bound parallelism and setup cost.
   fixture-regressions:

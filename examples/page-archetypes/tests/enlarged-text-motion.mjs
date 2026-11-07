@@ -3,14 +3,16 @@ import assert from 'node:assert/strict';
 import {createServer} from 'node:http';
 import {readFile} from 'node:fs/promises';
 import {resolve,extname} from 'node:path';
-import {chromium,expect} from '@playwright/test';
+import {chromium,firefox,webkit,expect} from '@playwright/test';
 const root=process.cwd(),only=process.env.NIGHTJAR_SCALE_FRAMEWORK||'all';
 if(!['all','Jekyll','Astro','React'].includes(only))throw Error('Choose all, Jekyll, Astro or React');
 const families=process.env.NIGHTJAR_SCALE_FAMILY?[process.env.NIGHTJAR_SCALE_FAMILY]:['martlet','krigsvold'];
 if(families.some(family=>!['martlet','krigsvold'].includes(family)))throw Error('Choose martlet or krigsvold');
 const sources=[['Jekyll',process.env.NIGHTJAR_JEKYLL_ROOT],['Astro',process.env.NIGHTJAR_ASTRO_ROOT||resolve(root,'examples/astro-slice/dist')],['React',process.env.NIGHTJAR_REACT_ROOT||resolve(root,'examples/react-catalog/dist')]];
 if((only==='all'||only==='Jekyll')&&!sources[0][1])throw Error('Set NIGHTJAR_JEKYLL_ROOT to the paired root-path builds');
-const browser=await chromium.launch({headless:true,timeout:20000,...(process.env.CHROMIUM_PATH?{executablePath:process.env.CHROMIUM_PATH}:{})});
+const engine=process.env.NIGHTJAR_BROWSER||'chromium',engines={chromium,firefox,webkit};
+assert.ok(engines[engine],'Choose chromium, firefox or webkit');
+const browser=await engines[engine].launch({headless:true,timeout:20000,...(engine==='chromium'&&process.env.CHROMIUM_PATH?{executablePath:process.env.CHROMIUM_PATH}:{})});
 const deadline=setTimeout(()=>{console.error('Enlarged-text regression exceeded its 10-minute deadline');void browser.close().finally(()=>process.exit(1));setTimeout(()=>process.exit(1),5000).unref();},600000);
 async function bounded(label,operation,ms=15000){let timer;try{return await Promise.race([operation(),new Promise((_,reject)=>timer=setTimeout(()=>reject(Error(`${label}: deadline exceeded (${ms}ms)`)),ms))]);}finally{clearTimeout(timer);}}
 try {for(const [framework,source] of sources.filter(([name])=>only==='all'||name===only))for(const family of families){
