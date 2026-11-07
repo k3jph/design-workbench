@@ -1,5 +1,5 @@
-import * as Martlet from "@martlet/react";
-import * as Krigsvold from "@krigsvold/react";
+import * as Martlet from "@martlet/react-runtime";
+import * as Krigsvold from "@krigsvold/react-runtime";
 export const family = location.pathname.startsWith("/krigsvold")
   ? "krigsvold"
   : "martlet";

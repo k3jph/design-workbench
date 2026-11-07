@@ -1,6 +1,6 @@
 # Martlet Astro APIs
 
-Use the installed `@martlet/astro` source as the API authority. This reference covers the published Astro 2.0.0 package with its matching Core dependency; component and application-extension maturity remain separately documented. Install with `npm install @martlet/core@2.2.3 @martlet/astro@2.0.0 astro` in an Astro project. Verify engine requirements for the chosen Astro version.
+Use the installed `@martlet/astro` source as the API authority. This reference covers the published Astro 2.0.1 package with its matching Core dependency; component and application-extension maturity remain separately documented. Install with `npm install @martlet/core@2.2.4 @martlet/astro@2.0.1 astro` in an Astro project. Verify engine requirements for the chosen Astro version.
 
 ## Framework boundaries
 
@@ -44,8 +44,12 @@ import '@martlet/core/source-profile.css';
 
 Check production build, local font assets, one main/h1, skip-link and fragment focus, source order, narrow and enlarged text, and actual print output. Automated browser evidence does not establish manual screen-reader support, RTL completeness or sustained consumer use.
 
-## Adoption with Astro 2.0.0 and Core 2.2.3
+## Adoption with Astro 2.0.1 and Core 2.2.4
 
-Obtain the neutral starter with `npm pack @martlet/astro@2.0.0`, extract the downloaded archive, and copy `package/starter/` to your new directory. Or copy `node_modules/@martlet/astro/starter/` from an installed package. Install dependencies and run `npm run dev`; `npm run build` verifies the production output. The `/form/` route is a complete, explicitly simulated host controller using supported core classes; no data is sent or stored durably.
+Obtain the neutral starter with `npm pack @martlet/astro@2.0.1`, extract the downloaded archive, and copy `package/starter/` to your new directory. Or copy `node_modules/@martlet/astro/starter/` from an installed package. Install dependencies and run `npm run dev`; `npm run build` verifies the production output. The `/form/` route is a complete, explicitly simulated host controller using supported core classes; no data is sent or stored durably.
 
 Core `forms.css` is included in `full.css`. Retrieve `styling:forms` for exact field/hint/error/summary/notice/dialog anatomy, and `platform:HTML` for layout classes. `Button type="submit"` and `type="reset"` render the native type once. Use `class="martlet-button--secondary"` on `Button` for a secondary action, not a fictional `variant` prop. Validation, announcements, busy/draft state and focus remain host code. Fragment targets should have `tabindex="-1"` when their activation needs to move focus. Runtime appearance changes set the nearest `data-martlet` attribute; persistence and preference policy are host choices.
+
+## Verified source and package distribution
+
+The current npm archive is https://registry.npmjs.org/@martlet/astro/-/astro-2.0.1.tgz with SHA-256 `25ed4adb21ec022835806dfc724cd29e4db424a9d537dd99d8a5ff8cf0b370dd` and integrity `sha512-qmLoKHfDq6z0SM6uQP2rVc5EpNZ8J8sC1DNtIdrhHtdy9RpjTyqIt3jHyDVycrpdQsmgvVGhYD6M78kwat810w==`. Cryptographic staging provenance identifies accepted source `f3e88c84f0c447b83058a7957fd16c12195d2bdb`. The matching GitHub source release is https://github.com/martletdesign/astro/releases/tag/v2.0.1; archive and SHA256SUMS downloads were verified against the npm bytes. Retain the consumer lockfile and the matching Core peer dependency.

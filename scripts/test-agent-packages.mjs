@@ -6,6 +6,7 @@ import { createHash } from "node:crypto";
 import assert from "node:assert/strict";
 import { Client } from "@modelcontextprotocol/client";
 import { StdioClientTransport } from "@modelcontextprotocol/client/stdio";
+import distribution from "../docs/distribution.json" with {type:"json"};
 // The archives are referenced by checksum. Rebuild twice under the same
 // environment to catch accidental timestamp, ordering or metadata drift.
 async function archiveHashes() {
@@ -68,6 +69,7 @@ for (const family of ["martlet", "krigsvold"]) {
       const manifest = JSON.parse(raw.content[0].text);
       assert.equal(manifest.family, family);
       assert.equal(manifest.references.length, 66);
+      assert.deepEqual(manifest.distribution, {...distribution.families[family],reviewedAt:distribution.reviewedAt});
     } finally {
       await client.close();
     }

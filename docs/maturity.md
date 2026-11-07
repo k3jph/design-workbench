@@ -13,10 +13,10 @@ The editor requires evidence before choosing stable, but it cannot establish whe
 
 | Implementation | Current inventory | Contract position |
 | --- | --- | --- |
-| @martlet/core / @krigsvold/core | 2.2.3 / 2.2.4 published, `latest` | Independent foundations; application extensions retain documented limits |
+| @martlet/core / @krigsvold/core | 2.2.4 / 2.2.5 published, `latest` | Independent foundations; application extensions retain documented limits |
 | @martlet/theme / @krigsvold/theme | 2.1.0 `latest`; 2.2.2 / 2.2.3 `next` | Existing legacy consumers and original snapshots remain supported explicitly |
-| @martlet/astro / @krigsvold/astro | 2.0.0 published, `latest` | Native Astro exports with matching Core peers; API maturity and availability remain separate |
-| @martlet/react / @krigsvold/react | 0.2.0 published, `latest` | Experimental; React 19; matching Core dependencies; independent repositories own publication |
+| @martlet/astro / @krigsvold/astro | 2.0.1 published, `latest` | Native Astro exports with matching Core peers; API maturity and availability remain separate |
+| @martlet/react / @krigsvold/react | 0.2.1 published, `latest` | Experimental; React 19; matching Core dependencies; independent repositories own publication |
 | Martlet / Krigsvold Jekyll | 1.1.0 accepted source releases | Deployed and source-published; not npm packages |
 | Registry API and database | API/export 1; SQLite 2 | Experimental; Node 24.19+ within Node 24 |
 | Vue, Svelte, native components, web components | Planned | No implementation support claimed |

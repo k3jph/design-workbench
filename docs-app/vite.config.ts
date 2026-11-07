@@ -31,7 +31,7 @@ export default defineConfig(({ mode }) => {
                   : undefined,
         load: (id) =>
           id === "\0docs-family"
-            ? `export * from '@${mode}/react'; import '@${mode}/react/styles.css'; import '@${mode}/core/fonts.css'; export const family = '${mode}'; export const familyName = '${name}';`
+            ? `export * from '@${mode}/react-runtime'; import '@${mode}/react-runtime/styles.css'; import '@${mode}/core/fonts.css'; export const family = '${mode}'; export const familyName = '${name}';`
             : id === "\0docs-grammar" || id === "\0docs-decisions"
               ? `export default ${JSON.stringify(readFileSync(new URL(`../docs/languages/${mode}/${id === "\0docs-grammar" ? "grammar" : "decisions"}.md`, import.meta.url), "utf8"))}`
               : undefined,
