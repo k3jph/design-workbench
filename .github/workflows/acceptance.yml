@@ -1,0 +1,31 @@
+name: Fast acceptance
+on:
+  pull_request:
+    branches: [main, develop]
+  push:
+    branches: [main, develop]
+permissions:
+  contents: read
+concurrency:
+  group: workbench-accept-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+jobs:
+  accept:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci --ignore-scripts --no-audit --no-fund
+      - name: Build package exports and generated documentation test fixtures
+        run: |
+          npm run build
+          npm run build:docs
+      - run: npm test
+      - name: Validate the branch-ruleset setup script without GitHub writes
+        run: python3 scripts/governance/apply-gitflow-rules.py > /dev/null
