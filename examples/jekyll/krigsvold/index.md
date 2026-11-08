@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Krigsvold, in plain sight.
+title: Krigsvold for Jekyll
 eyebrow: The Jekyll reference
-description: The same shell. Markdown, Liquid, and a little JavaScript. Nothing hiding the design.
+description: Jekyll layouts and examples for publishing, services, and applications.
 ---
 ## A smaller engine. The same language.
 
