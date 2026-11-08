@@ -6,7 +6,7 @@ Both packages expose the same behavioral surface. Family-specific typography, sp
 
 Every interactive component must preserve its native keyboard model, consumer attributes, a visible focus indicator, and text that survives resizing and translation. Field names must stay visible. Color, shape, and motion cannot be the only status indicator. Errors retain entered data. A caller remains responsible for correct copy, unique document landmarks, and a coherent overall heading/focus order.
 
-Current Krigsvold contents policy (8 November 2026), reflected in React 0.2.2: contents are manually authored and opt-in, with no automatically generated TOC. When supplied, `Article.contents` appears inline above prose. `TableOfContents` defaults to `inline`; the accepted legacy `index` variant also stays in normal reading flow. A TOC does not create a margin rail. This updates the contents guidance below while preserving the historical scope of the other experimental contracts and the original source snapshots. Site-navigation and application sidebars serve separate purposes and are unaffected.
+Current Krigsvold contents policy (7 November 2026), reflected in React 0.2.2: contents are manually authored and opt-in, with no automatically generated TOC. When supplied, `Article.contents` appears inline above prose. `TableOfContents` defaults to `inline`; the accepted legacy `index` variant also stays in normal reading flow. A TOC does not create a margin rail. This updates the contents guidance below while preserving the historical scope of the other experimental contracts and the original source snapshots. Site-navigation and application sidebars serve separate purposes and are unaffected.
 
 ## API, states, and acceptance criteria
 
