@@ -157,7 +157,7 @@ for (const family of ["martlet", "krigsvold"]) {
         `example:${c.name}`,
         "example",
         `${c.name} standalone React example`,
-        exampleCode(c.name, defaults, family),
+        exampleCode(c.name, family === "krigsvold" ? {...defaults, tocVariant: "inline"} : defaults, family),
         "docs-app/src/examples.tsx",
         [c.name, "React", "code", "imports"],
       );

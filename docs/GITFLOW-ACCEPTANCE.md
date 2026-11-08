@@ -28,7 +28,7 @@ All nine repositories now have active GitFlow branch rulesets in addition to pro
 
 | Repository | Required GitHub Actions check | Extended CI |
 | --- | --- | --- |
-| `martletdesign/core`, `krigsvolddesign/core` | `verify` | Archive/provenance rehearsal and npm staging |
+| `martletdesign/core`, `krigsvolddesign/core` | `verify` | Archive/provenance rehearsal and trusted npm publication |
 | `martletdesign/astro`, `krigsvolddesign/astro` | `accept` | Six Astro-version/browser compatibility jobs, documentation and remote-archive experiments |
 | `martletdesign/react`, `krigsvolddesign/react` | `test` | Browser/gallery matrices, published provenance and release rehearsal |
 | `martletdesign/jekyll`, `krigsvolddesign/jekyll` | `verify` | Three-browser conformance, deterministic archives, visual crop tests and PR previews |
@@ -50,7 +50,11 @@ Any deployment that cannot establish its source identity or artifact integrity f
 
 ## Publication remains separate
 
-A deployment does not itself create a public version. The versioned Jekyll source release still requires a unique, protected `v*` tag pointing at eligible `main` history, correct `VERSION`, deterministic `source.zip`, verified `SHA256SUMS`, and genuine GitHub Release assets. npm packages require the established registry-provenance and trusted-publishing steps. Do not overwrite or bypass tags, releases, registry stage approvals, or security requirements.
+A deployment does not itself create a public version. The versioned Jekyll source release requires a unique, protected `v*` tag pointing at eligible `main` history, correct `VERSION`, deterministic `source.zip`, verified `SHA256SUMS`, and genuine GitHub Release assets.
+
+The owner has authorized automatic direct npm publication through the existing OIDC trusted publishers. A successful required fast workflow for a push to accepted `main` starts a bounded watcher. It verifies the exact repository, workflow, source event and current main SHA, computes the reproducible package archive, and dispatches the same registered publishing workflow on `main` in direct-publication mode. The publisher retains its exact source, archive, unused-version and provenance guards. No long-lived npm token or recurring human review is introduced. Read-only watchers cancel superseded successful main pushes; skipped PR, failed, cancelled and non-main results have separate concurrency keys. An active publication is not cancelled by a later watcher.
+
+Manual staging remains available and is the default for a manual publisher dispatch. A staged package still needs its separate npm approval; the direct trusted-publisher path does not stage a package or remove account two-factor authentication. After publication, verify actual registry bytes, signatures and exact workflow provenance, create or confirm the protected tag at the published source SHA, and explicitly dispatch source-release completion at that tag. Completion may use the published commit on main's first-parent history after main advances. Existing published versions are skipped after identity validation. Never overwrite versions, tags or releases.
 
 ## Evolution
 

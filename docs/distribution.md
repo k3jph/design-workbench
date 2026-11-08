@@ -5,12 +5,12 @@ Verified inventory: 7 November 2026. [distribution.json](distribution.json) reco
 | Implementation | Martlet | Krigsvold | Current position |
 | --- | --- | --- | --- |
 | Core | 2.2.4, npm `latest` | 2.2.5, npm `latest` | Published independently; optional application/source-profile rules remain documented extensions |
-| Astro | 2.0.1, npm `latest` | 2.0.1, npm `latest` | Published with matching Core peer dependencies; native Astro APIs and host-owned controllers |
-| React | 0.2.1, npm `latest` | 0.2.1, npm `latest` | Published from independent repositories with Core dependencies; component APIs remain experimental |
+| Astro | 2.0.3, npm `latest` | 2.0.6, npm `latest` | Published with matching Core peer dependencies; native Astro APIs and host-owned controllers |
+| React | 0.2.1, npm `latest` | 0.2.2, npm `latest` | Published from independent repositories with Core dependencies; component APIs remain experimental |
 | Legacy theme | 2.1.0 `latest`, 2.2.2 `next` | 2.1.0 `latest`, 2.2.3 `next` | Existing consumers and historical snapshots retain their explicit dependencies |
-| Jekyll | [1.1.0 source release](https://github.com/martletdesign/jekyll/releases/tag/v1.1.0) | [1.1.0 source release](https://github.com/krigsvolddesign/jekyll/releases/tag/v1.1.0) | Accepted, deployed and source-published milestone; no npm package or new Jekyll release |
+| Jekyll | [1.1.0 source release](https://github.com/martletdesign/jekyll/releases/tag/v1.1.0) | [1.1.1 source release](https://github.com/krigsvolddesign/jekyll/releases/tag/v1.1.1) | Accepted, deployed and source-published milestone; independent source releases, with no Jekyll npm package |
 
-All six current Core, Astro and React packages are independently installable from npm `latest`. Fresh qualified registry installs, npm signatures and exact staging-workflow provenance passed. Each now has a genuine GitHub source release with a protected version tag, matching archive and verified SHA256SUMS downloads. The registry and GitHub archive bytes match the independently reproduced accepted-main packages. Release assets themselves are not asserted immutable against administrators. Exact source commits, artifact hashes, release URLs and peer dependencies are recorded in distribution.json. Astro 1.2.2 and React 0.1.0 remain historical `next` channels; they do not supersede `latest`.
+All six current Core, Astro and React packages are independently installable from npm `latest`. Fresh qualified registry installs, npm signatures and exact trusted-publisher workflow provenance passed. Each now has a genuine GitHub source release with a protected version tag, matching archive and verified SHA256SUMS downloads. The registry and GitHub archive bytes match the independently reproduced accepted-main packages. Release assets themselves are not asserted immutable against administrators. Exact source commits, artifact hashes, release URLs and peer dependencies are recorded in distribution.json. Astro 1.2.2 and React 0.1.0 remain historical `next` channels; they do not supersede `latest`.
 
 ## Demonstrated contracts and remaining scope
 
@@ -23,7 +23,9 @@ All six current Core, Astro and React packages are independently installable fro
 | Agent discovery | Existing example, interaction/recovery, dashboard and scientific contracts are exposed through the existing read-only MCP catalogue | No new controller API, write endpoint, migration service or reporting system |
 | Responsive acceptance | Existing enlarged-text regression checks whole dashboard words after layout settles, alongside overflow, keyboard and reduced-motion behavior | Root text scaling is not real browser zoom or full localization/RTL certification |
 
-Canonical records and shared representative data remain owned by the workbench. Core and framework repositories own their implementations and releases. Jekyll 1.1.0 remains an accepted reference, not an export to regenerate over its independent source.
+Canonical records and shared representative data remain owned by the workbench. Core and framework repositories own their implementations and releases. Each accepted Jekyll implementation remains its family’s visual reference, not an export to regenerate over its independent source.
+
+The approved Martlet reference palette is intentional; source-origin comparison does not replace it with jameshoward.us colors. Krigsvold has no automatic/default page TOC. An explicitly authored contents list stays inline above prose; site navigation and application sidebars retain their separate roles.
 
 Use the current `platform:React`, `platform:Astro` and `platform:Jekyll` references before choosing installation paths. The immutable `canonicalGuidance` snapshot records historical grammar/source provenance; its embedded implementation versions describe that snapshot, not today's npm channels. Manual assistive technology, full localization/RTL, sustained use and unsupported Vue/Svelte/native APIs remain explicit limitations rather than invented implementation claims.
 
@@ -31,9 +33,9 @@ Integration follows [GitFlow acceptance](GITFLOW-ACCEPTANCE.md): one required ch
 
 ## Adoption and migration
 
-For new direct-HTML or CSS use, choose the corresponding Core package. Astro uses native components with matching Core peers; install the exact current pair and a supported Astro version. React 0.2.1 brings its exact matching Core dependency and retains React 19 as a peer. Follow `platform:Astro` or `platform:React` for framework-native imports, styles, fonts and controller ownership. Do not layer Core full.css over React component styling or translate framework-specific event and focus APIs.
+For new direct-HTML or CSS use, choose the corresponding Core package. Astro uses native components with matching Core peers; install the exact current pair and a supported Astro version. Each current React package brings its exact matching Core dependency and retains React 19 as a peer. Follow `platform:Astro` or `platform:React` for framework-native imports, styles, fonts and controller ownership. Do not layer Core full.css over React component styling or translate framework-specific event and focus APIs.
 
-Existing legacy-theme consumers and the accepted Jekyll 1.1.0 references retain their pinned dependencies. The private workbench React 0.2.0 workspaces remain historical test fixtures; the workbench app and current token references consume the published React 0.2.1 and corrected Core packages. No private fixture is relabeled as a new release, and publication does not change the original grammar snapshots or every contract maturity record.
+Existing legacy-theme consumers and the accepted Jekyll references retain their pinned dependencies. The private workbench React 0.2.0 workspaces remain historical test fixtures; the workbench app and current token references consume published Martlet React 0.2.1, Krigsvold React 0.2.2 and their matching Core packages. No private fixture is relabeled as a new release, and publication does not change the original grammar snapshots or every contract maturity record.
 
 ## Verified native references
 

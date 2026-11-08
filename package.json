@@ -52,7 +52,7 @@
     "@martlet/core": "2.2.4",
     "@krigsvold/core": "2.2.5",
     "@martlet/react-runtime": "npm:@martlet/react@0.2.1",
-    "@krigsvold/react-runtime": "npm:@krigsvold/react@0.2.1"
+    "@krigsvold/react-runtime": "npm:@krigsvold/react@0.2.2"
   },
   "devDependencies": {
     "@axe-core/playwright": "4.11.1",
