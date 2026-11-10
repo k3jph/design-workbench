@@ -40,6 +40,10 @@ The IDs refer to the canonical eighteen-domain coverage ledgers. The named check
 | G15 frameworks | Exact platform APIs and publication status remain separate from shared grammar. | Existing compiled examples, package checks and pinned implementation/distribution records; independent adoption is separate evidence. |
 | Host navigation | Martlet’s transparent/scrolled/open states and Krigsvold’s inverse floating surfaces retain their independent rules. | Martlet scroll/menu transition checks, Krigsvold hero/overlay/appearance checks, and the main sites' cross-renderer checks. |
 
+## Current React consumer integration
+
+The workbench's archived source shell contains global heading and label ink rules. Its React content adapter resolves those roles through the installed Core semantic tokens, including dark appearance, and uses the Core heading-weight token for the Krigsvold application masthead. Core Fieldset owns field spacing through its grid gap; the host must not add another adjacent-field margin. These are consumer integration rules. The archived source bytes and canonical grammar records remain unchanged.
+
 ## What a passing check means
 
 These are repeatable reference requirements for the current implementation and explicit owner decisions. They do not certify all adopting applications or establish that either grammar is stable. A new composition can satisfy a relationship differently; it must explain that choice and preserve task outcomes. Do not copy reference dimensions indiscriminately into unrelated contexts.
