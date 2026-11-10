@@ -4,9 +4,9 @@ Reviewed 10 November 2026. [distribution.json](distribution.json) records exact 
 
 | Implementation | Martlet | Krigsvold | Contract |
 | --- | --- | --- | --- |
-| Core | 3.0.0 | 3.0.0 | Canonical tokens, fonts and all shared visual rules; npm latest |
+| Core | 3.0.1 | 3.0.1 | Canonical tokens, fonts and all shared visual rules; npm latest |
 | Astro | 3.0.0 | 3.0.0 | Native Astro components with Core ^3.0.0; npm latest |
-| React | 1.0.0 | 1.0.0 | Released React 19 components, exact Core 3.0.0 dependency; npm latest |
+| React | 1.0.1 | 1.0.1 | Released React 19 components, exact Core 3.0.1 dependency; npm latest |
 | Jekyll | 2.0.0 | 2.0.0 | GitHub source release with synchronized Core 3 CSS and fonts |
 
 The six npm tarballs were downloaded and checked against registry SHA-512 integrity and matching GitHub release asset SHA-256 digests. Jekyll source ZIP digests come from GitHub release metadata. This record does not claim a fresh independent signature verification, reproducible build proof or current live deployment for every artifact. Older theme packages and original grammar snapshots retain their identities.
@@ -40,3 +40,5 @@ Retrieve platform:Astro, platform:React or platform:Jekyll before choosing APIs.
 | Jekyll | https://jekyll.martletdesign.dev/ | https://jekyll.krigsvolddesign.dev/ |
 
 Integration follows the existing GitFlow policy: feature work to develop, release or hotfix promotion to main, and backmerge to develop. Repository workflows publish accepted releases automatically. This guidance introduces no additional approval or deployment gate. A public URL is a destination, not proof that the latest release has deployed; check the live reference when deployment identity matters.
+
+Core 3.0.1 restores bounded control-label and action reflow; Martlet also corrects the light-mode contents-heading contrast. React 1.0.1 adopts that patch. These fixes preserve the Core 3 and React 1 APIs.
