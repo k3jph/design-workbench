@@ -120,3 +120,6 @@
  .research-krigsvold .research-regions,.research-krigsvold .reference-form-groups { grid-template-columns:minmax(0,1fr); }
  .research-krigsvold .research-context { border-inline-start:0; padding-inline-start:0; border-block-start:1px solid var(--ui-line); padding-block-start:1.5rem; }
 }
+
+/* The application reference uses the published heading role inside its masthead. */
+.krigsvold .reference-shell .page-masthead h1 { font-weight:var(--krigsvold-weight-heading); }

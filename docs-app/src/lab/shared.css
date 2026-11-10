@@ -22,6 +22,6 @@
 .reference-selection {margin-block:1.5rem 2rem;}
 .reference-empty {padding-block:1.5rem;}
 .reference-form-groups fieldset {min-inline-size:0;}
-.reference-form-groups fieldset > * + * {margin-block-start:1.5rem;}
+/* Core Fieldset owns its grid gap; an adjacent margin would double it. */
 @media(max-width:32rem){.reference-query {display:grid;grid-template-columns:minmax(0,1fr);}.reference-query > * {max-inline-size:100%;}}
 @media print {.reference-pattern-inspection,.reference-pattern-nav {display:none;}.reference-results table {min-inline-size:0;}}
