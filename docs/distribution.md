@@ -1,49 +1,42 @@
 # Current distribution and capability baseline
 
-Verified inventory: 7 November 2026. [distribution.json](distribution.json) records exact package channels, source identities and artifact integrity. Availability, contract maturity, and a verified deployment are separate facts.
+Reviewed 10 November 2026. [distribution.json](distribution.json) records exact package versions, source commits, release links, dependency contracts and artifact hashes. Package releases, design grammar snapshots and deployed references have independent versions.
 
-| Implementation | Martlet | Krigsvold | Current position |
+| Implementation | Martlet | Krigsvold | Contract |
 | --- | --- | --- | --- |
-| Core | 2.2.4, npm `latest` | 2.2.5, npm `latest` | Published independently; optional application/source-profile rules remain documented extensions |
-| Astro | 2.0.1, npm `latest` | 2.0.1, npm `latest` | Published with matching Core peer dependencies; native Astro APIs and host-owned controllers |
-| React | 0.2.1, npm `latest` | 0.2.1, npm `latest` | Published from independent repositories with Core dependencies; component APIs remain experimental |
-| Legacy theme | 2.1.0 `latest`, 2.2.2 `next` | 2.1.0 `latest`, 2.2.3 `next` | Existing consumers and historical snapshots retain their explicit dependencies |
-| Jekyll | [1.1.0 source release](https://github.com/martletdesign/jekyll/releases/tag/v1.1.0) | [1.1.0 source release](https://github.com/krigsvolddesign/jekyll/releases/tag/v1.1.0) | Accepted, deployed and source-published milestone; no npm package or new Jekyll release |
+| Core | 3.0.0 | 3.0.0 | Canonical tokens, fonts and all shared visual rules; npm latest |
+| Astro | 3.0.0 | 3.0.0 | Native Astro components with Core ^3.0.0; npm latest |
+| React | 1.0.0 | 1.0.0 | Released React 19 components, exact Core 3.0.0 dependency; npm latest |
+| Jekyll | 2.0.0 | 2.0.0 | GitHub source release with synchronized Core 3 CSS and fonts |
 
-All six current Core, Astro and React packages are independently installable from npm `latest`. Fresh qualified registry installs, npm signatures and exact staging-workflow provenance passed. Each now has a genuine GitHub source release with a protected version tag, matching archive and verified SHA256SUMS downloads. The registry and GitHub archive bytes match the independently reproduced accepted-main packages. Release assets themselves are not asserted immutable against administrators. Exact source commits, artifact hashes, release URLs and peer dependencies are recorded in distribution.json. Astro 1.2.2 and React 0.1.0 remain historical `next` channels; they do not supersede `latest`.
+The six npm tarballs were downloaded and checked against registry SHA-512 integrity and matching GitHub release asset SHA-256 digests. Jekyll source ZIP digests come from GitHub release metadata. This record does not claim a fresh independent signature verification, reproducible build proof or current live deployment for every artifact. Older theme packages and original grammar snapshots retain their identities.
 
-## Demonstrated contracts and remaining scope
+## Coherent systems with native implementations
 
-| Capability | Baseline and completed work | Limits |
-| --- | --- | --- |
-| Language grammar | Independent charters, origin observations and versioned source decisions; both languages support reading and complex applications | Original experimental snapshots remain attributed and unchanged; publication does not make every extension stable |
-| Canonical examples | 50 records, eight composition families, common schemas and representative data | Equivalent content and capabilities permit independent family layouts and framework APIs |
-| Applications | Three dashboard applications, directory/editor, applied-query recovery and a separate scientific workspace | Local synthetic state; no identity, payments, messaging, device or durable-service implementation is implied |
-| Domain verification | Schema/destination/data parity and dashboard, event/date and thermal model tests | Browser, visual and manual accessibility evidence are separate from these fast checks |
-| Agent discovery | Existing example, interaction/recovery, dashboard and scientific contracts are exposed through the existing read-only MCP catalogue | No new controller API, write endpoint, migration service or reporting system |
-| Responsive acceptance | Existing enlarged-text regression checks whole dashboard words after layout settles, alongside overflow, keyboard and reduced-motion behavior | Root text scaling is not real browser zoom or full localization/RTL certification |
+Each family defines a complete design language for publishing, services and applications. Core owns its visual rules. Astro, React and Jekyll own native markup and behavior; shared content and interaction contracts do not require identical framework APIs or identical composition between families. Astro and Jekyll share the canonical family stylesheet. React's public styles.css entry delegates to Core's react.css.
 
-Canonical records and shared representative data remain owned by the workbench. Core and framework repositories own their implementations and releases. Jekyll 1.1.0 remains an accepted reference, not an export to regenerate over its independent source.
-
-Use the current `platform:React`, `platform:Astro` and `platform:Jekyll` references before choosing installation paths. The immutable `canonicalGuidance` snapshot records historical grammar/source provenance; its embedded implementation versions describe that snapshot, not today's npm channels. Manual assistive technology, full localization/RTL, sustained use and unsupported Vue/Svelte/native APIs remain explicit limitations rather than invented implementation claims.
-
-Integration follows [GitFlow acceptance](GITFLOW-ACCEPTANCE.md): one required check, zero required human reviewers, advisory extended suites, and exact accepted source/artifact verification at deployment. This document adds no approval stage or publication authority.
+The workbench owns 50 canonical examples, equivalent representative content and datasets, three dashboard applications, a scientific workspace, and shared interaction/recovery contracts. The independent Core and framework repositories own their implementations and releases. Reference data and simulated operations do not implement durable services.
 
 ## Adoption and migration
 
-For new direct-HTML or CSS use, choose the corresponding Core package. Astro uses native components with matching Core peers; install the exact current pair and a supported Astro version. React 0.2.1 brings its exact matching Core dependency and retains React 19 as a peer. Follow `platform:Astro` or `platform:React` for framework-native imports, styles, fonts and controller ownership. Do not layer Core full.css over React component styling or translate framework-specific event and focus APIs.
+Install Core 3 for direct HTML/CSS. Install Astro 3 with Core 3 and a supported Astro runtime. Clone the separate family astro-starter repository for initial project files; starters are not bundled in the component package. React 1 installs its exact Core dependency and requires React 19. Jekyll 2 is consumed from its standalone repository or source release.
 
-Existing legacy-theme consumers and the accepted Jekyll 1.1.0 references retain their pinned dependencies. The private workbench React 0.2.0 workspaces remain historical test fixtures; the workbench app and current token references consume the published React 0.2.1 and corrected Core packages. No private fixture is relabeled as a new release, and publication does not change the original grammar snapshots or every contract maturity record.
+When moving from Core 2, replace canonical reference.css imports with martlet.css or krigsvold.css. Upgrade Astro to 3 together with Core; existing component names, props and slots remain available. Remove copied framework styling in favor of Core's exports. Keep the documented React styles.css import, and do not layer full.css over it. Follow each repository's migration notes and verify your application's complete interactions after upgrading.
 
-## Verified native references
+Package versions follow their own semantic-versioning histories. Core/Astro 3, React 1 and Jekyll 2 describe different contracts; forcing their numbers to match would hide that history. Compatible fixes are patches, compatible additions are minor releases, and breaking changes require majors. The MCP catalog has its own version, independent of grammar 0.3 and package releases.
 
-Both Astro and React families now serve their accepted main releases on the canonical reference domains:
+## Evidence and limits
 
-| Reference | Martlet | Krigsvold |
+Automated verification covers schema/data parity, model behavior, builds, exercised browser interactions, keyboard/focus, responsive layouts and reduced motion. Coverage applies to the states actually tested. Manual assistive technology, full localization/RTL and sustained consumer use remain open. Vue, Svelte and native platform APIs are not implemented.
+
+Retrieve platform:Astro, platform:React or platform:Jekyll before choosing APIs. The canonicalGuidance snapshot preserves original source provenance; embedded implementation versions describe that snapshot. The current manifest and platform setup guidance describe today's releases. Private React 0.2.0 workspaces remain historical fixtures; the workbench runtime uses published React 1 through internal npm aliases.
+
+## References and release process
+
+| Framework | Martlet | Krigsvold |
 | --- | --- | --- |
 | Astro | https://astro.martletdesign.dev/ | https://astro.krigsvolddesign.dev/ |
 | React | https://react.martletdesign.dev/ | https://react.krigsvolddesign.dev/ |
+| Jekyll | https://jekyll.martletdesign.dev/ | https://jekyll.krigsvolddesign.dev/ |
 
-Complete canonical live-payload comparisons verified the accepted source SHA and deterministic artifact inventory for all four sites. The distribution record includes the exact source, artifact digest, verification time and file count. This automated artifact proof is separate from manual accessibility or service behavior; R2 publication remains disabled.
-
-The workbench uses internal npm runtime aliases for published React packages because npm gives the same-named private workspace priority even when the root asks for a newer version. The aliases retain the genuine registry package name, tarball and integrity. Public installation examples continue to use the canonical `@martlet/react` and `@krigsvold/react` names; fixture manifests and private source histories stay unchanged.
+Integration follows the existing GitFlow policy: feature work to develop, release or hotfix promotion to main, and backmerge to develop. Repository workflows publish accepted releases automatically. This guidance introduces no additional approval or deployment gate. A public URL is a destination, not proof that the latest release has deployed; check the live reference when deployment identity matters.

@@ -1,30 +1,11 @@
 # Standalone Jekyll source contract
 
-Each design family owns its public standalone Jekyll repository and full 50-page
-reference catalog. Jekyll is consumed as Git/source releases, not an invented npm
-package. The attached current distribution record identifies the immutable source
-commit and, only after independent verification, the public release tag, source
-ZIP URL and SHA-256. A public source commit and a published release are distinct
-facts; inspect `published` and `sourceZip.available` before claiming release availability.
+Each family owns a standalone Jekyll repository, a 50-page canonical catalog, dashboard applications and a scientific workspace. Jekyll 2.0.0 is a Git/source release, not an invented npm package. The attached distribution record identifies its release, immutable source commit and source ZIP digest. Inspect the recorded verification method before describing artifact evidence.
 
-The standalone repository's Gemfile.lock pins Ruby/Jekyll dependencies. Follow its
-README: install the locked bundle and run `bundle exec jekyll build`; run again
-with `--baseurl /preview` to exercise subpath assets and links. Preserve its 50
-canonical recipes, representative data, form/navigation/dashboard behavior and
-all browser/accessibility checks. Do not translate React props, state or focus
-controllers into Jekyll APIs. Family composition and typography remain independent.
+The repository's Gemfile.lock pins Ruby/Jekyll dependencies. Follow its README: install the locked bundle and run `bundle exec jekyll build`; repeat with `--baseurl /preview` to exercise subpath assets and links. Its Node tooling synchronizes the exact Core 3 dependency into checked-in CSS and font assets. End-user Jekyll builds consume those assets; Node is needed when maintaining or updating them.
 
-Jekyll's current foundation authority is its checked-in legacy theme shell CSS
-and source-shell provenance, recorded in `scripts/source-shell-provenance.json`.
-Its manifest has `core:null`, `implementation.kind:git`, and explicit legacyTheme
-name/version/integrity/sourceShellSha256. This is not an npm Core dependency or
-permission to rename or overwrite historical @martlet/theme or @krigsvold/theme.
+Core owns the canonical family stylesheet and fonts. Astro and Jekyll consume identical family CSS; their markup and controllers remain native to each framework. Use the repository's styles:sync and styles:check scripts when updating Core. Do not edit generated assets or add local style overrides to reproduce a shared rule. Core 3 replaces the canonical reference.css name with martlet.css or krigsvold.css. The source manifest records the Core version, dependency source and file hashes.
 
-The advanced remote archive write pathway remains disabled in production. The
-working static/versioned-documentation build path can ship independently. Do not
-claim administrator-proof immutability, Worker-only R2 write isolation or independent
-anti-rollback checkpoints from a source ZIP or static site deployment.
+Preserve the canonical content, representative data, form/navigation/dashboard behavior and browser checks. React props, state and focus controllers are not Jekyll APIs. The host owns validation, routing, persistence and service integration. Example operations use local synthetic data.
 
-Automated Chromium, Firefox and WebKit checks are evidence for the exercised
-states, root/subpath builds and synthetic examples. Manual assistive technology,
-localization/RTL and sustained use are not certified by these automated checks.
+Automated Chromium, Firefox and WebKit checks cover exercised states and root/subpath builds. Manual assistive technology, localization/RTL and sustained consumer use remain separate evidence.

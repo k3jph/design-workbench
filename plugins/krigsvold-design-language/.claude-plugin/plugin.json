@@ -1,6 +1,6 @@
 {
   "name": "krigsvold-design-language",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Build Krigsvold interfaces with its independent UI grammar, source decisions, platform APIs, task patterns and read-only guidance MCP. Experimental application grammar; explicit framework and evidence limits.",
   "author": {
     "name": "James P. Howard, II"
