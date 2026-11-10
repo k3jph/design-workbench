@@ -1,12 +1,12 @@
 # Martlet React setup
 
-React 1.0.0 is published on npm `latest` from https://github.com/martletdesign/react. It provides the released React component contract with canonical Core 3 styling. The original grammar snapshots and explicitly experimental patterns retain their recorded maturity. Historical `next` tags do not supersede `latest`.
+React 1.0.1 is published on npm `latest` from https://github.com/martletdesign/react. It provides the released React component contract with canonical Core 3 styling. The original grammar snapshots and explicitly experimental patterns retain their recorded maturity. Historical `next` tags do not supersede `latest`.
 
 ```sh
-npm install @martlet/react@1.0.0 react@19 react-dom@19
+npm install @martlet/react@1.0.1 react@19 react-dom@19
 ```
 
-The package depends on `@martlet/core` 3.0.0; React 19 is its peer. Pin versions and commit the consumer lockfile, then verify a clean `npm ci` and production build. Use the installed package's API rather than translating another framework's props.
+The package depends on `@martlet/core` 3.0.1; React 19 is its peer. Pin versions and commit the consumer lockfile, then verify a clean `npm ci` and production build. Use the installed package's API rather than translating another framework's props.
 
 ```tsx
 import { Button, Field, TextInput } from '@martlet/react';
@@ -29,14 +29,14 @@ This is a component probe, not a service or complete validation controller. Retr
 
 ## Exact current registry artifact
 
-URL: https://registry.npmjs.org/@martlet/react/-/react-1.0.0.tgz
+URL: https://registry.npmjs.org/@martlet/react/-/react-1.0.1.tgz
 
-SHA-256: `5e2e0c410f5f77cde839cb35802a38c2ad97c7c2542e2d3fbaedd8209cecec93`. The downloaded bytes match registry SHA-512 integrity `sha512-rkorso0DNGLcsQGanxGJ2yy3DFDJu3pItU4/yuCoLTXQ01rLO0zGPb3mprJM6rUqpFMqMcJ+VXdROrfbTXoD5A==` and the matching GitHub release asset digest. Source release: https://github.com/martletdesign/react/releases/tag/v1.0.0, commit `c54e95a7e6bc469845a9a8ed99bbd2dd6621676c`. Archive: https://github.com/martletdesign/react/releases/download/v1.0.0/martlet-react-1.0.0.tgz; checksums: https://github.com/martletdesign/react/releases/download/v1.0.0/SHA256SUMS. These checks establish artifact identity, not independently verified signatures or current deployment status.
+SHA-256: `74e2e3e5292088fc53326e2750f40a6d8668b9a0ba89ff8f1ba12088235f7b71`. The downloaded bytes match registry SHA-512 integrity `sha512-JPD/FWbiUaqj3xvkjZbWsvUlaCqUA4B7BPpSi0eWIND5V1FAO8s+wl0BzfkqJ4pwocgUXkWflhniH2qB91msyA==` and the matching GitHub release asset digest. Source release: https://github.com/martletdesign/react/releases/tag/v1.0.1, commit `2b7e1c497ad6009e05679b354b65e73a8fb9fc36`. Archive: https://github.com/martletdesign/react/releases/download/v1.0.1/martlet-react-1.0.1.tgz; checksums: https://github.com/martletdesign/react/releases/download/v1.0.1/SHA256SUMS. These checks establish artifact identity, not independently verified signatures or current deployment status.
 
 Upgrade React and its exact Core dependency together. Remove copied React visual definitions and keep `@martlet/react/styles.css` as the public import. Applications still own state, services, routing and their identity. Verify the full interaction after updating a pre-1.0 installation.
 
 ## Original snapshot and framework boundaries
 
-The immutable original React 0.1.0 workbench archive remains https://github.com/howardjp/design-workbench/releases/download/react-v0.1.0/martlet-react-0.1.0.tgz with SHA-256 `42a501d06ef7114ed5640b52d9889998ae70ca1846e0bdfba9e1ba487c3c1a41`. It uses theme 2.1.0 and belongs to the historical source snapshot; its checksum and dependency instructions do not describe 1.0.0. The original grammar/decision provenance remains intact.
+The immutable original React 0.1.0 workbench archive remains https://github.com/howardjp/design-workbench/releases/download/react-v0.1.0/martlet-react-0.1.0.tgz with SHA-256 `42a501d06ef7114ed5640b52d9889998ae70ca1846e0bdfba9e1ba487c3c1a41`. It uses theme 2.1.0 and belongs to the historical source snapshot; its checksum and dependency instructions do not describe 1.0.1. The original grammar/decision provenance remains intact.
 
 Use actual exported APIs, the family data attribute and host identity. Top, side and focused navigation follow the task. The shared 50 canonical examples, dashboard applications and scientific workspace are semantic/behavioral references, not new public React dashboard exports. Their local synthetic data is not durable service behavior. Manual assistive technology, complete localization/RTL and sustained adoption remain explicit open evidence. If a package cannot be obtained, report the real failure; theme-only HTML does not validate React component contracts.

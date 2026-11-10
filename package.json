@@ -45,10 +45,10 @@
     "test:contracts": "node --test scripts/docs-versions/*.test.mjs scripts/gitflow/*.test.mjs"
   },
   "dependencies": {
-    "@krigsvold/core": "3.0.0",
-    "@krigsvold/react-runtime": "npm:@krigsvold/react@1.0.0",
-    "@martlet/core": "3.0.0",
-    "@martlet/react-runtime": "npm:@martlet/react@1.0.0",
+    "@krigsvold/core": "3.0.1",
+    "@krigsvold/react-runtime": "npm:@krigsvold/react@1.0.1",
+    "@martlet/core": "3.0.1",
+    "@martlet/react-runtime": "npm:@martlet/react@1.0.1",
     "@modelcontextprotocol/server": "2.3.1",
     "react": "19.3.1",
     "react-dom": "19.3.1",
