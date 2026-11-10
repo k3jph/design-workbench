@@ -23,7 +23,7 @@ export function checkedJekyllRelease(family,release){
  return release;
 }
 export async function checkSharedFixtures(directory,framework){
- const content=framework==='jekyll'?'_data':framework==='astro'?'starter/page-archetypes/content':'examples/page-archetypes/content';
+ const content=framework==='jekyll'?'_data':framework==='astro'?'reference/page-archetypes/content':'examples/page-archetypes/content';
  for(const [canonical,name] of [['catalog.json',framework==='jekyll'?'examples.json':'catalog.json'],['dashboards.json','dashboards.json']]){
   assert.deepEqual(await json(join(directory,content,name)),await json(join(workbench,'examples/page-archetypes/content',canonical)),`${framework}: independent ${canonical} differs from shared semantic data`);
  }
@@ -75,7 +75,7 @@ export async function verifyInputs(output){
  for(const family of families)for(const framework of frameworks){
   const entries=manifest.sources.filter(source=>source.family===family&&source.framework===framework);assert.equal(entries.length,1);
   assert.match(entries[0].commit,/^[a-f0-9]{40}$/);
-  if(framework==='react')assert.equal((await json(join(output,framework,family,'version.json'))).source.commit,entries[0].commit);
+  if(framework==='react')assert.equal(entries[0].provenance.sourceCommit,entries[0].commit);
   if(framework==='astro')assert.equal(entries[0].provenance.sourceCommit,entries[0].commit);
   if(framework==='jekyll'){
    const current=checkedJekyllRelease(family,(await json(join(workbench,'docs/distribution.json'))).families[family].packages.Jekyll);
@@ -130,20 +130,20 @@ async function build(output,{family,framework}={}){
      await run('python3',['nightjar/build.py','--destination',base?join(destination,'preview'):destination,'--baseurl',base]);
     }
    }else{
-    // Astro's package-source lock omits consumer peers, matching its own CI.
-    // Its native starter builder installs and checks the exact Core/Astro pins.
     await run('npm',['ci','--ignore-scripts',...(framework==='astro'?['--legacy-peer-deps']:[]),'--no-audit','--no-fund','--fetch-retries=0','--fetch-timeout=20000']);
-    if(framework==='react'){
-     await run('npm',['run','build']);await mkdir(dirname(destination),{recursive:true});
-     progress(family,framework,'native-root-subpath-build');await run('npm',['run','build:reference','--',destination]);
-     const version=await json(join(destination,'version.json'));assert.equal(version.family,family);assert.equal(version.source.commit,source.commit);
-     source.provenance=version;
-    }else{
-     progress(family,framework,'native-root-subpath-build');
-     await run('npm',['exec','--yes','--package=npm@11.15.0','--','node','scripts/deployment/build-reference.mjs'],{ASTRO_TELEMETRY_DISABLED:'1'});
-     const version=await json(join(directory,'.cloudflare-build-provenance.json'));assert.equal(version.family,family);assert.equal(version.sourceCommit,source.commit);
-     source.provenance=version;await mkdir(dirname(destination),{recursive:true});await cp(join(directory,'.cloudflare-site'),destination,{recursive:true});
+    if(framework==='astro')await run('npm',['ci','--prefix','reference','--no-audit','--no-fund']);
+    else await run('npm',['run','build:package']);
+    for(const base of ['','/preview']){
+     progress(family,framework,'native-build',{base:base||'/'});
+     if(framework==='astro')await run('npm',['run','build','--prefix','reference'],{ASTRO_TELEMETRY_DISABLED:'1',NIGHTJAR_BASE:base?base+'/':'/'});
+     else await run('npm',['run','build:reference'],{NIGHTJAR_BASE:base?base+'/':'/'});
+     const built=framework==='astro'?join(directory,'reference/dist'):join(directory,'examples/react-catalog/dist',family);
+     const target=base?join(destination,'preview'):destination;
+     await mkdir(dirname(target),{recursive:true});await cp(built,target,{recursive:true});
     }
+    // Git checkout above establishes source identity; ordinary framework builds
+    // no longer emit the retired deployment-provenance wrapper files.
+    source.provenance={sourceCommit:source.commit,packageVersion:(await json(join(directory,'package.json'))).version};
    }
    manifest.sources.push(source);progress(family,framework,'complete',{commit:source.commit});await rm(directory,{recursive:true,force:true});
   }
