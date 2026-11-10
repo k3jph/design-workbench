@@ -59,10 +59,10 @@ for (const family of ["martlet", "krigsvold"]) {
   add("builder-skill","skill",`${family} builder method`,await readFile(`skills/${family}-builder/SKILL.md`,"utf8"),`skills/${family}-builder/SKILL.md`,["method","workflow","builder","skill"]);
   add("platform:Astro","platform",`${family} Astro API and composition`,await readFile(`skills/${family}-builder/references/astro.md`,"utf8"),`skills/${family}-builder/references/astro.md`,["Astro","API","slots","imports","contents","footer","print"]);
   add("platform:React","platform",`${family} React installation and actual component route`,await readFile(`skills/${family}-builder/references/react-setup.md`,"utf8"),`skills/${family}-builder/references/react-setup.md`,["React","install","npm","tarball","setup","available","package","checksum"]);
-  for (const [id,name,title] of [["platform:HTML","native-html.md","Direct HTML class anatomy"],["styling:forms","form-styling.md","Native HTML form styling and states"]]) add(id,"platform",`${family} ${title}`,await readFile(`docs/languages/${family}/${name}`,"utf8"),canonicalUrl(canonical.files[name].sourcePath),["HTML","Astro","forms","CSS","classes","field","error","dialog","styling"]);
+  for (const [id,name,title] of [["platform:HTML","native-html.md","Direct HTML class anatomy"],["styling:forms","form-styling.md","Native HTML form styling and states"]]) add(id,"platform",`${family} ${title}`,await readFile(`skills/${family}-builder/references/current-${name}`,"utf8"),`skills/${family}-builder/references/current-${name}`,["HTML","Astro","forms","CSS","classes","field","error","dialog","styling"]);
   add("platform:Jekyll","platform",`${family} standalone Jekyll source and verified release`,
     (await readFile('docs/jekyll-source-contract.md','utf8'))+`\n\nCurrent ${family} source/release authority:\n${JSON.stringify(delivery.packages.Jekyll,null,2)}`,
-    'docs/jekyll-source-contract.md',['Jekyll','source','Git','release','Ruby','build','baseurl','legacyTheme','provenance']);
+    'docs/jekyll-source-contract.md',['Jekyll','source','Git','release','Ruby','build','baseurl','Core','provenance']);
   const grammar = await readFile(`docs/languages/${family}/grammar.md`, "utf8");
   add(
     "grammar",
@@ -191,7 +191,7 @@ for (const family of ["martlet", "krigsvold"]) {
     "compatibility",
     "compatibility",
     `${family} support and compatibility`,
-    `React ${delivery.packages.React.version} is experimental; React 19 and ${reactFoundation.name} ${reactFoundation.version}. Retrieve platform:React for the pinned npm install command and exact registry artifact checksum; publication does not imply API stability. Retrieve platform:HTML and styling:forms for the pinned native-markup grammar snapshot. Publication status is recorded separately from immutable canonical guidance: ${JSON.stringify(delivery.packages)}. Component examples are React-specific; platform:Astro supplies native APIs and starter composition. Do not translate React event/focus props into Astro or Jekyll APIs. Retrieve platform:Jekyll for the accepted source release and its legacy-theme authority. The existing canonical, dashboard, scientific and interaction/recovery pattern references document equivalent capabilities with independent family compositions. Vue, Svelte and native APIs are not implemented. Manual assistive technology, localization, RTL and sustained use remain open.\n\n${await readFile('docs/distribution.md','utf8')}\n\nOriginal canonical snapshot metadata (historical versions, not current npm availability):\n${JSON.stringify(implementations,null,2)}`,
+    `React ${delivery.packages.React.version} is released; React 19 and ${reactFoundation.name} ${reactFoundation.version}. Retrieve platform:React for the pinned npm install command and exact registry artifact checksum; original grammar snapshots and experimental patterns retain their recorded maturity. Retrieve platform:HTML and styling:forms for the pinned native-markup grammar snapshot. Publication status is recorded separately from immutable canonical guidance: ${JSON.stringify(delivery.packages)}. Component examples are React-specific; platform:Astro supplies native APIs and the separate starter repository. Do not translate React event/focus props into Astro or Jekyll APIs. Retrieve platform:Jekyll for the accepted source release and its canonical Core stylesheet authority. The existing canonical, dashboard, scientific and interaction/recovery pattern references document equivalent capabilities with independent family compositions. Vue, Svelte and native APIs are not implemented. Manual assistive technology, localization, RTL and sustained use remain open.\n\n${await readFile('docs/distribution.md','utf8')}\n\nOriginal canonical snapshot metadata (historical versions, not current npm availability):\n${JSON.stringify(implementations,null,2)}`,
     "docs/maturity.md",
     ["platform", "version", "support", "migration"],
   );
@@ -201,17 +201,17 @@ for (const family of ["martlet", "krigsvold"]) {
   const catalog = {
     schemaVersion: 1,
     family,
-    version: distribution.preview.version,
+    version: distribution.mcpVersion ?? distribution.preview.version,
     themeVersion: delivery.packages.React.theme??null,
     referenceLegacyThemeVersion: "2.1.0",
-    themeVersionRole: "Legacy theme only when declared by React; current foundation is platforms.React.foundation",
+    themeVersionRole: "Original theme snapshot only; current foundation is platforms.React.foundation",
     grammarVersion: implementations.grammarVersion,
     sourceCommit: commit,
     sourceDigest,
     platforms: {
-      React: { version: delivery.packages.React.version, maturity: "experimental", published: delivery.packages.React.published, foundation: reactFoundation },
-      Astro: { version: delivery.packages.Astro.version, maturity: "experimental", published: delivery.packages.Astro.published, examples: true, formController: "host-owned starter specimen", core: delivery.packages.Astro.peerDependencies?.[delivery.packages.Astro.core.name]??("^"+delivery.packages.Astro.core.version) },
-      Jekyll: { version: delivery.packages.Jekyll.version, maturity: "accepted-source-release", kind: "git", published: delivery.packages.Jekyll.published, sourceAvailable: true, examples: true, core: null, legacyTheme: delivery.packages.Jekyll.legacyTheme },
+      React: { version: delivery.packages.React.version, maturity: delivery.packages.React.maturity, published: delivery.packages.React.published, foundation: reactFoundation },
+      Astro: { version: delivery.packages.Astro.version, maturity: delivery.packages.Astro.maturity, published: delivery.packages.Astro.published, examples: true, formController: "host-owned starter specimen", core: delivery.packages.Astro.peerDependencies?.[delivery.packages.Astro.core.name]??("^"+delivery.packages.Astro.core.version) },
+      Jekyll: { version: delivery.packages.Jekyll.version, maturity: "accepted-source-release", kind: "git", published: delivery.packages.Jekyll.published, sourceAvailable: true, examples: true, core: delivery.packages.Jekyll.core },
     },
     distribution: {...delivery, reviewedAt:distribution.reviewedAt},
     canonicalGuidance: canonical,
@@ -252,7 +252,7 @@ for (const family of ["martlet", "krigsvold"]) {
     JSON.stringify(
       {
         name: `${family}-design-language-mcp`,
-        version: distribution.preview.version,
+        version: distribution.mcpVersion ?? distribution.preview.version,
         private: true,
         type: "module",
         license: "MIT",
@@ -265,6 +265,8 @@ for (const family of ["martlet", "krigsvold"]) {
   );
   lock.name = `${family}-design-language-mcp`;
   lock.packages[""].name = lock.name;
+  lock.version = catalog.version;
+  lock.packages[""].version = catalog.version;
   await writeFile(
     `${dir}/package-lock.json`,
     JSON.stringify(lock, null, 2) + "\n",

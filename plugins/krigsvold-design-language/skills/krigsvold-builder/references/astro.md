@@ -1,10 +1,10 @@
 # Krigsvold Astro APIs
 
-Use the installed `@krigsvold/astro` source as the API authority. This reference covers the published Astro 2.0.1 package with its matching Core dependency; component and application-extension maturity remain separately documented. Install with `npm install @krigsvold/core@2.2.5 @krigsvold/astro@2.0.1 astro` in an Astro project. Verify engine requirements for the chosen Astro version.
+Use the installed `@krigsvold/astro` source as the API authority. This reference covers the published Astro 3.0.0 package with its matching Core dependency; component and application-extension maturity remain separately documented. Install with `npm install @krigsvold/core@3.0.0 @krigsvold/astro@3.0.0 astro` in an Astro project. Verify engine requirements for the chosen Astro version.
 
 ## Framework boundaries
 
-- `Layout` emits the document, a skip link and one main landmark. Do not wrap it in another document or main. It takes `title`, `description`, `lang`, `mode`, `mainId`, `mainTabindex`, `class`, `bodyClass`, `skipLabel`; slots: default, `head`, `header`, `footer`, `body-end`.
+- `Layout` emits the document, a skip link and one main landmark. Do not wrap it in another document or main. It takes `title`, `description`, `lang`, `mode`, `mainId`, `mainTabindex`, `class`, `bodyClass`, `skipLabel`, and optional external `stylesheet`; slots: default, `head`, `header`, `footer`, `body-end`.
 - `ArticleLayout` adds page heading and prose. It takes `title`, `documentTitle`, `description`, `summary`, `eyebrow`, `mode`, `lang`, `mainId`, `class`, `bodyClass`, `sidebarLabel`; slots: default prose, `metadata`, `contents`, `sidebar` and the four document slots. Supporting sidebar follows prose in source order. Do not add another h1.
 - `DocumentationLayout` uses `navigation` for its leading sidebar. Do not substitute ArticleLayout’s `contents` slot.
 - `TableOfContents` takes `items: {href:string,label:string,depth?:2|3}[]`, `label`, `variant: 'index'|'inline'`, `class`. Use `href:'#section'`, not React’s `id` prop. A depth-3 item needs a preceding parent. It emits native links and nested lists; target IDs and heading order belong to the host.
@@ -16,7 +16,7 @@ Use the installed `@krigsvold/astro` source as the API authority. This reference
 
 ## Complete reading-page composition
 
-This example adapts the shipped Astro starter. Replace content and destinations with the host’s. Default light appearance is inherited.
+This example uses the published Astro components. Replace content and destinations with the host’s. Default light appearance is inherited.
 
 ```astro
 ---
@@ -44,12 +44,16 @@ import '@krigsvold/core/source-profile.css';
 
 Check production build, local font assets, one main/h1, skip-link and fragment focus, source order, narrow and enlarged text, and actual print output. Automated browser evidence does not establish manual screen-reader support, RTL completeness or sustained consumer use.
 
-## Adoption with Astro 2.0.1 and Core 2.2.5
+## Adoption with Astro 3.0.0 and Core 3.0.0
 
-Obtain the neutral starter with `npm pack @krigsvold/astro@2.0.1`, extract the downloaded archive, and copy `package/starter/` to your new directory. Or copy `node_modules/@krigsvold/astro/starter/` from an installed package. Install dependencies and run `npm run dev`; `npm run build` verifies the production output. The `/form/` route is a complete, explicitly simulated host controller using supported core classes; no data is sent or stored durably.
+Clone the separate starter at https://github.com/krigsvolddesign/astro-starter, install its dependencies, then run `npm run dev` or `npm run build`. The npm component package does not contain a starter. The full reference at https://astro.krigsvolddesign.dev/ includes a simulated registration form; no data is sent or stored durably.
 
 Core `forms.css` is included in `full.css`. Retrieve `styling:forms` for exact field/hint/error/summary/notice/dialog anatomy, and `platform:HTML` for layout classes. `Button type="submit"` and `type="reset"` render the native type once. Use `class="krigsvold-button--secondary"` on `Button` for a secondary action, not a fictional `variant` prop. Validation, announcements, busy/draft state and focus remain host code. Fragment targets should have `tabindex="-1"` when their activation needs to move focus. Runtime appearance changes set the nearest `data-krigsvold` attribute; persistence and preference policy are host choices.
 
-## Verified source and package distribution
+## Current distribution and migration
 
-The current npm archive is https://registry.npmjs.org/@krigsvold/astro/-/astro-2.0.1.tgz with SHA-256 `d7d947d54ef1357ca4b129dcbb53283e03e1fce31d4609e8a7f62d43a6957f42` and integrity `sha512-QES3IeNQUV96kg+k/hQuouI94OV+OTllYdIY7CKzBhkj7eBcNtpZXk899wfNPxgS7qlJ50qn90oliRGDV5s7YQ==`. Cryptographic staging provenance identifies accepted source `5d8e8f874d28e85ba07089b82a30a34b692d70b7`. The matching GitHub source release is https://github.com/krigsvolddesign/astro/releases/tag/v2.0.1; archive and SHA256SUMS downloads were verified against the npm bytes. Retain the consumer lockfile and the matching Core peer dependency.
+Astro 3 requires Core 3. Replace canonical `@krigsvold/core/reference.css` imports with `@krigsvold/core/krigsvold.css`. Existing component names, props and slots remain available. The `stylesheet` prop on document layouts accepts the canonical Core stylesheet URL; omit it to retain the bundled defaults. Core owns the visual rules, including shared reference and dashboard styles. Astro owns markup and native component APIs; host code owns application behavior.
+
+Migration: https://github.com/krigsvolddesign/astro/blob/main/docs/migration-3.md
+
+The npm archive is https://registry.npmjs.org/@krigsvold/astro/-/astro-3.0.0.tgz with SHA-256 `899820a6f96244ae0966834109703a698689626c3cd2fb499fc56a35c0904a03` and integrity `sha512-m5xDz4VUskO+RqZNqoLb0mcl4ql5TFIfAaFIRVpV7IragKRiUJfeMt5/bHrbs3h9DHhAsEaffhpBpUC4Zj8BEg==`. Its bytes match the registry integrity and GitHub release asset digest. Source release: https://github.com/krigsvolddesign/astro/releases/tag/v3.0.0, commit `946e69babef0649ed6dcebefdf1e43e180cdba83`. Retain the consumer lockfile and matching Core peer dependency. These byte checks do not assert independently verified npm signatures or deployment status.
