@@ -2,7 +2,7 @@
 
 This current installation guide adapts the preserved grammar snapshot to the published Core 3 package. Original grammar and review records remain available separately. Core owns these visual contracts; controllers and services belong to the host.
 
-Core 3.0.0 · Framework-independent classes. Import `@krigsvold/core/full.css` and optional `fonts.css`, then use `class="krigsvold" data-krigsvold="light"` on your shell. A class beginning `krigsvold-` is namespaced; a primitive name in `layout.json` is not itself an HTML class. These contracts work in server HTML, Astro and React JSX (`className`) without reconstructing another framework's implementation.
+Core 3.0.1 · Framework-independent classes. Import `@krigsvold/core/full.css` and optional `fonts.css`, then use `class="krigsvold" data-krigsvold="light"` on your shell. A class beginning `krigsvold-` is namespaced; a primitive name in `layout.json` is not itself an HTML class. These contracts work in server HTML, Astro and React JSX (`className`) without reconstructing another framework's implementation.
 
 | Object | Classes / native structure |
 | --- | --- |

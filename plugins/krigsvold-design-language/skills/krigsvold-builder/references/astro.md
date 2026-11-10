@@ -1,6 +1,6 @@
 # Krigsvold Astro APIs
 
-Use the installed `@krigsvold/astro` source as the API authority. This reference covers the published Astro 3.0.0 package with its matching Core dependency; component and application-extension maturity remain separately documented. Install with `npm install @krigsvold/core@3.0.0 @krigsvold/astro@3.0.0 astro` in an Astro project. Verify engine requirements for the chosen Astro version.
+Use the installed `@krigsvold/astro` source as the API authority. This reference covers the published Astro 3.0.0 package with its matching Core dependency; component and application-extension maturity remain separately documented. Install with `npm install @krigsvold/core@3.0.1 @krigsvold/astro@3.0.0 astro` in an Astro project. Verify engine requirements for the chosen Astro version.
 
 ## Framework boundaries
 
@@ -44,7 +44,7 @@ import '@krigsvold/core/source-profile.css';
 
 Check production build, local font assets, one main/h1, skip-link and fragment focus, source order, narrow and enlarged text, and actual print output. Automated browser evidence does not establish manual screen-reader support, RTL completeness or sustained consumer use.
 
-## Adoption with Astro 3.0.0 and Core 3.0.0
+## Adoption with Astro 3.0.0 and Core 3.0.1
 
 Clone the separate starter at https://github.com/krigsvolddesign/astro-starter, install its dependencies, then run `npm run dev` or `npm run build`. The npm component package does not contain a starter. The full reference at https://astro.krigsvolddesign.dev/ includes a simulated registration form; no data is sent or stored durably.
 
