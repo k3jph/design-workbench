@@ -42,7 +42,7 @@ for (const family of ["martlet", "krigsvold"])
         };
         const manifest = (await call("get_manifest")).value;
         assert.equal(manifest.family, family);
-        assert.equal(manifest.version, distribution.preview.version);
+        assert.equal(manifest.version, distribution.mcpVersion ?? distribution.preview.version);
         assert.equal(manifest.platforms.Astro.version, distribution.families[family].packages.Astro.version);
         assert.equal(manifest.references.length, 66);
         assert.equal(manifest.platforms.React.published, distribution.families[family].packages.React.published);
@@ -55,9 +55,9 @@ for (const family of ["martlet", "krigsvold"])
         assert.equal(manifest.grammarVersion, '0.3');
         for (const id of ['coverage','pattern:validated-form','pattern:query-results']) { const reference=(await call('get_reference',{id})).value; assert.equal(reference.family,family); assert.match(reference.source,new RegExp(family+'theme/npm/blob/'+manifest.canonicalGuidance.commit)); }
         const jekyll=(await call('get_reference',{id:'platform:Jekyll'})).value;
-        assert.equal(manifest.platforms.Jekyll.kind,'git');assert.equal(manifest.platforms.Jekyll.core,null);
+        assert.equal(manifest.platforms.Jekyll.kind,'git');assert.deepEqual(manifest.platforms.Jekyll.core,distribution.families[family].packages.Jekyll.core);
         assert.equal(manifest.platforms.Jekyll.published,distribution.families[family].packages.Jekyll.published);
-        assert.equal(manifest.platforms.Jekyll.legacyTheme.name,`@${family}/theme`);
+        assert.equal(manifest.platforms.Jekyll.core.name,`@${family}/core`);
         assert.ok(jekyll.content.includes(distribution.families[family].packages.Jekyll.sourceCommit));
         assert.ok(jekyll.content.includes('not an invented npm'));
         assert.ok(jekyll.content.includes('Manual assistive technology'));

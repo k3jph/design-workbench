@@ -14,10 +14,10 @@ const git=(cwd,...args)=>execFileSync('git',args,{cwd,encoding:'utf8',stdio:['ig
 
 export function checkedJekyllRelease(family,release){
  assert.ok(families.includes(family),'Unknown family');
- assert.equal(release.version,'1.1.0','Use the accepted Jekyll 1.1.0 reference');
+ assert.equal(release.version,'2.0.0','Use the accepted Jekyll 2.0.0 reference');
  assert.equal(release.published,true);assert.equal(release.sourceZip?.available,true);
  assert.equal(release.repository,`https://github.com/${family}design/jekyll`);
- assert.equal(release.sourceZip.url,`${release.repository}/releases/download/v1.1.0/source.zip`);
+ assert.equal(release.sourceZip.url,`${release.repository}/releases/download/v2.0.0/source.zip`);
  assert.match(release.sourceZip.sha256,/^[a-f0-9]{64}$/);
  assert.match(release.sourceCommit,/^[a-f0-9]{40}$/);
  return release;
