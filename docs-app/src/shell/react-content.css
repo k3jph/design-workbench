@@ -15,3 +15,9 @@
 .reference-content .krigsvold-hint { margin:0; }
 
 .reference-content.martlet-reference,.reference-content.krigsvold-reference {padding-block-start:0;}
+
+/* Keep the archived host's global ink rules outside the React content canvas. */
+.reference-content :is(h1,h2,h3,h4,h5,h6) { color:var(--ui-heading); }
+.reference-content :is(.martlet-checkbox,.krigsvold-checkbox,.martlet-radio,.krigsvold-radio) { color:var(--ui-text); }
+/* The application reference uses the published heading role inside its masthead. */
+.krigsvold .reference-shell .page-masthead h1 { font-weight:var(--krigsvold-weight-heading); }
