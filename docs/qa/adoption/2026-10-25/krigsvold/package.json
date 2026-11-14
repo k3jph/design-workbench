@@ -14,7 +14,7 @@
   "dependencies": {
     "@krigsvold/astro": "1.2.0",
     "@krigsvold/theme": "2.2.0",
-    "astro": "5.18.2"
+    "astro": "7.4.12"
   },
   "private": true
 }
