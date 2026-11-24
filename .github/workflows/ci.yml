@@ -61,6 +61,7 @@ jobs:
         with:
           name: reference-pattern-proof-${{ matrix.browser }}
           path: test-results/reference-proof/
+          retention-days: 3
           if-no-files-found: ignore
 
       - uses: actions/upload-artifact@v4
@@ -68,4 +69,5 @@ jobs:
         with:
           name: public-react-consumers-${{ matrix.browser }}
           path: test-results/public-react/
+          retention-days: 3
           if-no-files-found: ignore
