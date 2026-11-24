@@ -33,41 +33,6 @@ jobs:
         run: |
           if [ -f /etc/apt/apt-mirrors.txt ]; then
             sudo sed -i 's|http://azure.archive.ubuntu.com/ubuntu|https://archive.ubuntu.com/ubuntu|g' /etc/apt/apt-mirrors.txt
-name: Verify workbench
-on:
-  push:
-    branches: [main]
-  pull_request:
-permissions:
-  contents: read
-concurrency:
-  group: workbench-${{ github.ref }}
-  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
-jobs:
-  verify:
-    runs-on: ubuntu-latest
-    timeout-minutes: 45
-    strategy:
-      fail-fast: false
-      max-parallel: 2
-      matrix:
-        browser: [chromium, firefox, webkit]
-    env:
-      WORKBENCH_BROWSER: ${{ matrix.browser }}
-      DESIGN_SOURCE_COMMIT: ${{ github.sha }}
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '24'
-          cache: npm
-      - run: npm ci --ignore-scripts
-      - run: npm run check
-      - run: npm run test:contracts
-      - name: Use the Ubuntu archive for browser dependencies
-        run: |
-          if [ -f /etc/apt/apt-mirrors.txt ]; then
-            sudo sed -i 's|http://azure.archive.ubuntu.com/ubuntu|https://archive.ubuntu.com/ubuntu|g' /etc/apt/apt-mirrors.txt
           fi
       - run: npx playwright install --with-deps ${{ matrix.browser }}
         timeout-minutes: 10
@@ -105,39 +70,4 @@ jobs:
           name: public-react-consumers-${{ matrix.browser }}
           path: test-results/public-react/
           retention-days: 3
-          if-no-files-found: ignore          fi
-      - run: npx playwright install --with-deps ${{ matrix.browser }}
-        timeout-minutes: 10
-      - run: npm run test:browser
-      - run: npm run test:core-bases
-      - run: npm run test:dialog-consumer
-      - run: npm run test:pagination-consumer
-      - run: npm run test:tabs-consumer
-      - run: npm run test:error-summary-consumer
-      - run: npm run test:fields-consumer
-      - name: Test the packaged reference bytes
-        run: |
-          export DESIGN_PREVIEW_ARTIFACT_VERSION="$(node -p "JSON.parse(require('fs').readFileSync('docs/distribution.json')).preview.version")-sha.$DESIGN_SOURCE_COMMIT"
-          npm run package:preview
-          node scripts/reference-release/check-archives.mjs
-      - run: npm run test:reference
-      - run: npm run test:public-react
-      - run: npm run test:packages
-      - run: npm run test:agents
-      - run: npm run build:plugins
-      - run: git diff --exit-code -- plugins
-      - run: npm run build:hosted
-
-      - uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: reference-pattern-proof-${{ matrix.browser }}
-          path: test-results/reference-proof/
-          if-no-files-found: ignore
-
-      - uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: public-react-consumers-${{ matrix.browser }}
-          path: test-results/public-react/
           if-no-files-found: ignore
