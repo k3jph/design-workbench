@@ -192,11 +192,13 @@ jobs:
         if: always()
         with:
           name: dashboard-browser-evidence
+          retention-days: 3
           path: test-results/dashboards
           if-no-files-found: ignore
       - uses: actions/upload-artifact@v4
         with:
           name: jekyll-example-sites
+          retention-days: 3
           path: |
             examples/jekyll/martlet/dist
             examples/jekyll/krigsvold/dist
@@ -256,6 +258,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: nightjar-ii-contrast-${{ matrix.browser }}
+          retention-days: 3
           path: ${{ runner.temp }}/nightjar-ii-contrast-${{ matrix.browser }}/
           if-no-files-found: ignore
       - name: Check form validity recovery in the selected browser
